@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+Commands/OpenAI.txt
+*api_key*
+*secret*
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+
+# Temporary office files
+~$*
+.~lock.*
+
+# Generated audio
+*.wav
+
+# Latest runtime outputs
+results/**/live_*_latest.wav
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Commands/

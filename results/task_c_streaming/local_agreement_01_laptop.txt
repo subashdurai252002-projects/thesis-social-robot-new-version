@@ -1,0 +1,64 @@
+Loading Faster-Whisper...
+Model ready.
+Audio duration: 20.00 seconds
+
+[Audio available:  2 s]
+Full hypothesis: Yeah.
+Confirmed text: [none]
+Temporary text: yeah
+Inference time: 0.49 s
+
+[Audio available:  4 s]
+Full hypothesis: Today I am testing incremental
+Confirmed text: [none]
+Temporary text: today i am testing incremental
+Inference time: 0.45 s
+
+[Audio available:  6 s]
+Full hypothesis: Today, I am testing incremental speech recognition, the system's
+Confirmed text: today i am testing incremental
+Temporary text: speech recognition the system's
+Inference time: 0.45 s
+
+[Audio available:  8 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text.
+Confirmed text: today i am testing incremental speech recognition the
+Temporary text: system should display partial text
+Inference time: 0.48 s
+
+[Audio available: 10 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text
+Temporary text: while more audio becomes available
+Inference time: 0.89 s
+
+[Audio available: 12 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final trance.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text while more audio becomes available
+Temporary text: and then produce a final trance
+Inference time: 0.99 s
+
+[Audio available: 14 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text while more audio becomes available and then produce a final
+Temporary text: transcription
+Inference time: 0.55 s
+
+[Audio available: 16 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text while more audio becomes available and then produce a final transcription
+Temporary text: [none]
+Inference time: 1.00 s
+
+[Audio available: 18 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text while more audio becomes available and then produce a final transcription
+Temporary text: [none]
+Inference time: 0.99 s
+
+[Audio available: 20 s]
+Full hypothesis: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Confirmed text: today i am testing incremental speech recognition the system should display partial text while more audio becomes available and then produce a final transcription
+Temporary text: [none]
+Inference time: 1.00 s
+

@@ -1,0 +1,47 @@
+Loading Faster-Whisper...
+Model ready.
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 62.3
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.1 s audio]
+Full hypothesis: Today I am testing lives
+Confirmed text: [none]
+Temporary text: today i am testing lives
+Partial inference time: 0.53 seconds
+
+[LIVE UPDATE: 4.1 s audio]
+Full hypothesis: Today I am testing live streaming speech resignation and
+Confirmed text: today i am testing
+Temporary text: live streaming speech resignation and
+Partial inference time: 0.46 seconds
+
+[LIVE UPDATE: 6.1 s audio]
+Full hypothesis: Today, I am testing live streaming speech recognition and the system is displaying
+Confirmed text: today i am testing live streaming speech
+Temporary text: recognition and the system is displaying
+Partial inference time: 0.89 seconds
+
+[LIVE UPDATE: 8.1 s audio]
+Full hypothesis: Today, I am testing live streaming speech recognition and the system is displaying partial text while I continue.
+Confirmed text: today i am testing live streaming speech recognition and the system is displaying
+Temporary text: partial text while i continue
+Partial inference time: 0.52 seconds
+
+[LIVE UPDATE: 10.1 s audio]
+Full hypothesis: Today I am testing live streaming speech resignation and the system is displaying partial text while I continue speaking into the microphone.
+Confirmed text: today i am testing live streaming speech
+Temporary text: resignation and the system is displaying partial text while i continue speaking into the microphone
+Partial inference time: 0.61 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Today, I am testing live streaming speech recognition and the system is displaying partial text while I continue speaking into the microphone.
+Final inference time: 0.56 seconds
+Utterance duration: 9.63 seconds
+Speech-end-to-final-text latency: 1.58 seconds
+Saved audio: results/task_c_streaming/live_streaming_latest.wav

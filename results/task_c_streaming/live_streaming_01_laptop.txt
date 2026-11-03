@@ -1,0 +1,35 @@
+Loading Faster-Whisper...
+Model ready.
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 850.6
+Speech threshold: 2551.9
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Today I am testing live
+Confirmed text: [none]
+Temporary text: today i am testing live
+Partial inference time: 0.51 seconds
+
+[LIVE UPDATE: 4.0 s audio]
+Full hypothesis: Today I am testing live incremental speech recognition.
+Confirmed text: today i am testing live
+Temporary text: incremental speech recognition
+Partial inference time: 0.51 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[LIVE UPDATE: 6.0 s audio]
+Full hypothesis: Today I am testing live incremental speech recognition with a re-speaker microphone, that's it.
+Confirmed text: today i am testing live incremental speech recognition
+Temporary text: with a re speaker microphone that's it
+Partial inference time: 0.53 seconds
+
+[FINAL TRANSCRIPTION]
+Final text: Today, I am testing live in cream metal speech recognition with a re-speaker microphone That's it.
+Final inference time: 0.91 seconds
+Utterance duration: 4.88 seconds
+Speech-end-to-final-text latency: 2.1 seconds
+Saved audio: results/task_c_streaming/live_streaming_latest.wav

@@ -1,0 +1,196 @@
+Loading faster-whisper...
+Model ready.
+Loading barge-in detector...
+Loading shared DTLN-512 detector...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Loading shared openWakeWord V4...
+Loading shared Faster-Whisper small.en...
+Shared barge-in detector ready.
+OpenAI API selected. Internet connection required.
+
+Continuous conversation started.
+Say 'goodbye', 'stop conversation', 'exit', or 'quit' to stop.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 75.2
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: explains social robots in one sentence.
+Utterance duration: 2.62 seconds
+Inference time: 0.62 seconds
+Speech-start-to-text time: 4.1 seconds
+Speech-end-to-text latency: 1.47 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Generating OpenAI reply...
+OpenAI reply: Social robots are machines designed to interact with people using social cues such as speech, gestures, and facial expressions.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 3.98 seconds
+Piper synthesis time: 1.36 seconds
+Whisper-text-to-speaker-start time: 5.35 seconds
+Speech-end-to-speaker-start latency: 6.82 seconds
+Playback duration: 8.43 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 56.5
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: a social robot is a good thing.
+Utterance duration: 2.5 seconds
+Inference time: 0.5 seconds
+Speech-start-to-text time: 3.86 seconds
+Speech-end-to-text latency: 1.36 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Generating OpenAI reply...
+OpenAI reply: Social robots can be helpful when they support people safely, respectfully, and effectively.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.8286
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second:  | 5-second: '
+Verification time: 0.07 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.98 seconds
+Piper synthesis time: 1.29 seconds
+Whisper-text-to-speaker-start time: 3.27 seconds
+Speech-end-to-speaker-start latency: 4.63 seconds
+Playback duration: 6.88 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 54.7
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: What was my previous question about?
+Utterance duration: 2.25 seconds
+Inference time: 0.5 seconds
+Speech-start-to-text time: 3.61 seconds
+Speech-end-to-text latency: 1.36 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Generating OpenAI reply...
+OpenAI reply: Your previous question asked whether a social robot is a good thing.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.9453
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second:  | 5-second: '
+Verification time: 0.01 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 2.78 seconds
+Piper synthesis time: 1.11 seconds
+Whisper-text-to-speaker-start time: 3.89 seconds
+Speech-end-to-speaker-start latency: 5.25 seconds
+Playback duration: 4.87 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 88.4
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: Explanate social robots in one sentence.
+Utterance duration: 2.25 seconds
+Inference time: 0.51 seconds
+Speech-start-to-text time: 3.61 seconds
+Speech-end-to-text latency: 1.36 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Generating OpenAI reply...
+OpenAI reply: Social robots are robots designed to interact with people through conversation, gestures, or other social cues.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.6045
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: 'stop robot'
+Verification time: 1.31 seconds
+Complete 'Stop robot' verified.
+Piper playback interrupted.
+Barge-in interrupted playback: True
+Verified barge-in transcript: 'stop robot'
+
+OpenAI response time: 2.33 seconds
+Piper synthesis time: 1.25 seconds
+Whisper-text-to-speaker-start time: 3.58 seconds
+Speech-end-to-speaker-start latency: 4.95 seconds
+Playback duration: 6.26 seconds
+
+Robot reply interrupted by 'Stop robot'.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 92.1
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: Goodbye
+Utterance duration: 0.5 seconds
+Inference time: 0.47 seconds
+Speech-start-to-text time: 1.85 seconds
+Speech-end-to-text latency: 1.35 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Exit command detected.
+Conversation ended.

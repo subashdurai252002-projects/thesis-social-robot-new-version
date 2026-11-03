@@ -1,0 +1,44 @@
+Loading Faster-Whisper...
+Model ready.
+Audio duration: 20.00 seconds
+
+[Audio available:  2 s]
+Partial text: Yeah.
+Inference time: 1.30 s
+
+[Audio available:  4 s]
+Partial text: Today I am testing incremental
+Inference time: 0.42 s
+
+[Audio available:  6 s]
+Partial text: Today, I am testing incremental speech recognition, the system's
+Inference time: 0.45 s
+
+[Audio available:  8 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text.
+Inference time: 0.48 s
+
+[Audio available: 10 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available.
+Inference time: 0.87 s
+
+[Audio available: 12 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final trance.
+Inference time: 0.98 s
+
+[Audio available: 14 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Inference time: 0.55 s
+
+[Audio available: 16 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Inference time: 1.00 s
+
+[Audio available: 18 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Inference time: 0.98 s
+
+[Audio available: 20 s]
+Partial text: Today I am testing incremental speech recognition, the system should display partial text while more audio becomes available and then produce a final transcription.
+Inference time: 1.02 s
+

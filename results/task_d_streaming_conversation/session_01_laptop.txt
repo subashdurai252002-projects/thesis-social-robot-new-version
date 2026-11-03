@@ -1,0 +1,190 @@
+Loading Faster-Whisper...
+Model ready.
+Loading barge-in detector...
+Loading shared DTLN-512 detector...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Loading shared openWakeWord V4...
+Loading shared Faster-Whisper small.en...
+Shared barge-in detector ready.
+Shared barge-in detector ready.
+OpenAI API selected. Internet connection required.
+
+Live-streaming conversation started.
+Say 'goodbye', 'stop conversation', 'exit', or 'quit' to stop.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 185.6
+Speech threshold: 556.7
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Today I am testing like
+Confirmed text: [none]
+Temporary text: today i am testing like
+Partial inference time: 0.53 seconds
+
+[LIVE UPDATE: 4.0 s audio]
+Full hypothesis: Today I am testing Life Speech Resonation with mes-
+Confirmed text: today i am testing
+Temporary text: life speech resonation with mes
+Partial inference time: 0.49 seconds
+
+[LIVE UPDATE: 6.0 s audio]
+Full hypothesis: Today I am testing live speech resignation with my social robot, please text me.
+Confirmed text: today i am testing
+Temporary text: live speech resignation with my social robot please text me
+Partial inference time: 0.56 seconds
+
+[LIVE UPDATE: 8.0 s audio]
+Full hypothesis: Today I am testing live speech resignation with my social robot, please explain how social robot interact.
+Confirmed text: today i am testing live speech resignation with my social robot please
+Temporary text: explain how social robot interact
+Partial inference time: 0.57 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Today I am testing live speech resignation with my social robot, please explain how social robot interact with humans.
+Final inference time: 0.54 seconds
+Utterance duration: 8.38 seconds
+Speech-start-to-final-text time: 9.91 seconds
+Speech-end-to-final-text latency: 1.53 seconds
+Saved audio: results/task_d_streaming_conversation/live_conversation_latest.wav
+Generating OpenAI reply...
+OpenAI reply: Social robots interact with people by sensing cues such as speech, gestures, and facial expressions, then responding with conversation, movement, or other actions.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.6714
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second: Thank you. | 5-second: '
+Verification time: 7.47 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 4.66 seconds
+Piper synthesis time: 3.64 seconds
+Final-text-to-speaker-start time: 8.3 seconds
+Speech-end-to-speaker-start latency: 9.83 seconds
+Playback duration: 12.4 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 111.4
+Speech threshold: 334.3
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: What was my previous question?
+Confirmed text: [none]
+Temporary text: what was my previous question
+Partial inference time: 0.52 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: What was my previous question about?
+Final inference time: 0.49 seconds
+Utterance duration: 2.0 seconds
+Speech-start-to-final-text time: 3.49 seconds
+Speech-end-to-final-text latency: 1.49 seconds
+Saved audio: results/task_d_streaming_conversation/live_conversation_latest.wav
+Generating OpenAI reply...
+OpenAI reply: Your previous question asked how social robots interact with humans.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.6 seconds
+Piper synthesis time: 3.02 seconds
+Final-text-to-speaker-start time: 4.63 seconds
+Speech-end-to-speaker-start latency: 6.12 seconds
+Playback duration: 5.24 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 295.3
+Speech threshold: 886.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: explain the applications of source
+Confirmed text: [none]
+Temporary text: explain the applications of source
+Partial inference time: 0.46 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: explain the applications of social robots.
+Final inference time: 0.52 seconds
+Utterance duration: 2.5 seconds
+Speech-start-to-final-text time: 4.04 seconds
+Speech-end-to-final-text latency: 1.54 seconds
+Saved audio: results/task_d_streaming_conversation/live_conversation_latest.wav
+Generating OpenAI reply...
+OpenAI reply: Social robots are used in healthcare, education, elder care, customer service, and entertainment to support, teach, or engage people through social interaction.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.761
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: 'Stop robot'
+Verification time: 1.29 seconds
+Complete 'Stop robot' verified.
+Piper playback interrupted.
+Barge-in interrupted playback: True
+Verified barge-in transcript: 'Stop robot'
+
+OpenAI response time: 3.16 seconds
+Piper synthesis time: 1.71 seconds
+Final-text-to-speaker-start time: 4.88 seconds
+Speech-end-to-speaker-start latency: 6.42 seconds
+Playback duration: 7.93 seconds
+
+Robot reply interrupted by 'Stop robot'.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 266.4
+Speech threshold: 799.3
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Goodbye
+Final inference time: 0.46 seconds
+Utterance duration: 0.25 seconds
+Speech-start-to-final-text time: 1.71 seconds
+Speech-end-to-final-text latency: 1.46 seconds
+Saved audio: results/task_d_streaming_conversation/live_conversation_latest.wav
+Exit command detected.
+Conversation ended.

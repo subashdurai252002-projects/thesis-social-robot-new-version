@@ -1,0 +1,21 @@
+Loading faster-whisper...
+Model ready.
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 300.0
+Speech threshold: 899.9
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+Transcribing...
+
+Transcription: Hello Robot
+Utterance duration: 0.5 seconds
+Inference time: 0.42 seconds
+Speech-start-to-text time: 1.77 seconds
+Speech-end-to-text latency: 1.27 seconds
+Saved audio: /home/subash/thesis-social-robot/test_audio/live_respeaker.wav
+Generating speech with Piper...
+Playing generated speech...
+Playing WAVE '/home/subash/thesis-social-robot/test_audio/piper_echo.wav' : Signed 16 bit Little Endian, Rate 22050 Hz, Mono
