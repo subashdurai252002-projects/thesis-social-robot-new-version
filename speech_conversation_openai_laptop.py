@@ -7,6 +7,7 @@ import time
 import urllib.request
 import wave
 from collections import deque
+from pathlib import Path
 
 import numpy as np
 from faster_whisper import WhisperModel
@@ -14,16 +15,22 @@ from openai import OpenAI
 from barge_in_detector import BargeInDetector
 
 
-AUDIO_FILE = "/home/subash/thesis-social-robot/test_audio/live_respeaker.wav"
+ROOT = Path(__file__).resolve().parent
 
-PIPER_MODEL = (
-    "/home/subash/thesis-social-robot/"
-    "piper_voices/en_US-lessac-medium.onnx"
+AUDIO_FILE = str(
+    ROOT / "runtime_audio" / "conversation_live_respeaker.wav"
 )
 
-PIPER_AUDIO_FILE = (
-    "/home/subash/thesis-social-robot/"
-    "test_audio/piper_echo.wav"
+PIPER_MODEL = str(
+    ROOT / "models" / "piper" / "en_US-lessac-medium.onnx"
+)
+
+PIPER_AUDIO_FILE = str(
+    ROOT / "runtime_audio" / "conversation_piper_echo.wav"
+)
+
+PIPER_COMMAND = str(
+    ROOT / ".venv-stt" / "bin" / "piper"
 )
 
 OPENAI_MODEL = "gpt-6-luna"
@@ -551,7 +558,7 @@ def main():
 
             subprocess.run(
                 [
-                    "/home/subash/thesis-social-robot/.venv-stt/bin/piper",
+                    PIPER_COMMAND,
                     "--model",
                     PIPER_MODEL,
                     "--output-file",

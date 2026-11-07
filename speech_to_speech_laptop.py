@@ -4,14 +4,26 @@ import subprocess
 import time
 import wave
 from collections import deque
+from pathlib import Path
 
 import numpy as np
 from faster_whisper import WhisperModel
 
 
-AUDIO_FILE = "/home/subash/thesis-social-robot/test_audio/live_respeaker.wav"
-PIPER_MODEL = "/home/subash/thesis-social-robot/piper_voices/en_US-lessac-medium.onnx"
-PIPER_AUDIO_FILE = "/home/subash/thesis-social-robot/test_audio/piper_echo.wav"
+ROOT = Path(__file__).resolve().parent
+
+AUDIO_FILE = str(
+    ROOT / "runtime_audio" / "task_a_live_respeaker.wav"
+)
+PIPER_MODEL = str(
+    ROOT / "models" / "piper" / "en_US-lessac-medium.onnx"
+)
+PIPER_AUDIO_FILE = str(
+    ROOT / "runtime_audio" / "task_a_piper_echo.wav"
+)
+PIPER_COMMAND = str(
+    ROOT / ".venv-stt" / "bin" / "piper"
+)
 
 SAMPLE_RATE = 16000
 CHANNELS = 6
@@ -289,7 +301,7 @@ def main():
 
         subprocess.run(
             [
-                "piper",
+                PIPER_COMMAND,
                 "--model",
                 PIPER_MODEL,
                 "--output-file",

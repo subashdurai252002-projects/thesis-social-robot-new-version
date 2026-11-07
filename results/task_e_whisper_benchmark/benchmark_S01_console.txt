@@ -1,0 +1,389 @@
+
+======================================================================
+Loading model: tiny
+Model load time: 1.324 seconds
+
+tiny P01
+Expected: Hello robot.
+Recognized: Hello robot.
+WER: 0.0 %
+Inference: 0.711 seconds
+
+tiny P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 0.254 seconds
+
+tiny P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what this social robot is.
+WER: 14.29 %
+Inference: 0.275 seconds
+
+tiny P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 0.24 seconds
+
+tiny P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures and facial expressions.
+WER: 0.0 %
+Inference: 0.246 seconds
+
+tiny P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please, describe how we as service robot can assist visitors in say the public building.
+WER: 38.46 %
+Inference: 0.264 seconds
+
+tiny P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user, understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 0.281 seconds
+
+tiny P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today, I am testing whether the speech recognition system can accurately process your longer sentence while background equipment is operating.
+WER: 5.0 %
+Inference: 0.278 seconds
+
+tiny P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: compare the advantages and limitations of using local speech recognition instead of your cloud-based speech recognition service.
+WER: 5.56 %
+Inference: 0.265 seconds
+
+tiny P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot, explain how gas, detection and speech activation could help identify the intended user.
+WER: 4.76 %
+Inference: 0.297 seconds
+
+======================================================================
+Loading model: tiny.en
+Model load time: 1.395 seconds
+
+tiny.en P01
+Expected: Hello robot.
+Recognized: Hello robot.
+WER: 0.0 %
+Inference: 0.212 seconds
+
+tiny.en P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 0.221 seconds
+
+tiny.en P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what is social properties.
+WER: 42.86 %
+Inference: 0.249 seconds
+
+tiny.en P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 0.246 seconds
+
+tiny.en P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures and facial expressions.
+WER: 0.0 %
+Inference: 0.292 seconds
+
+tiny.en P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please describe how we as service robot can assist visitors in the above building.
+WER: 38.46 %
+Inference: 0.251 seconds
+
+tiny.en P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 0.266 seconds
+
+tiny.en P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today, I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+WER: 0.0 %
+Inference: 0.281 seconds
+
+tiny.en P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: Compare the advantages and limitations of using local speech recognition instead of your cloud-based speech recognition service.
+WER: 5.56 %
+Inference: 0.272 seconds
+
+tiny.en P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot explain how gas, detection and speech activation could help identify the intended user.
+WER: 4.76 %
+Inference: 0.286 seconds
+
+======================================================================
+Loading model: base
+Model load time: 0.228 seconds
+
+base P01
+Expected: Hello robot.
+Recognized: Hello Robot!
+WER: 0.0 %
+Inference: 0.409 seconds
+
+base P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 0.426 seconds
+
+base P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what a social robot is.
+WER: 0.0 %
+Inference: 0.452 seconds
+
+base P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 0.456 seconds
+
+base P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures and facial expressions.
+WER: 0.0 %
+Inference: 0.546 seconds
+
+base P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please describe how a service robot can assist visitors inside the public building.
+WER: 7.69 %
+Inference: 0.471 seconds
+
+base P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user, understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 0.52 seconds
+
+base P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+WER: 0.0 %
+Inference: 0.525 seconds
+
+base P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: Compare the advantages and limitations of using local speech recognition instead of a cloud-based speech recognition service.
+WER: 0.0 %
+Inference: 0.511 seconds
+
+base P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot, explain how gas, detection and speech activation could help identify the intended user.
+WER: 4.76 %
+Inference: 0.545 seconds
+
+======================================================================
+Loading model: base.en
+Model load time: 3.599 seconds
+
+base.en P01
+Expected: Hello robot.
+Recognized: Hello robot.
+WER: 0.0 %
+Inference: 0.386 seconds
+
+base.en P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 0.392 seconds
+
+base.en P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what a social robot is.
+WER: 0.0 %
+Inference: 0.416 seconds
+
+base.en P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 0.418 seconds
+
+base.en P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures and facial expressions.
+WER: 0.0 %
+Inference: 0.445 seconds
+
+base.en P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please describe how a service robot can assist visitors inside the public building.
+WER: 7.69 %
+Inference: 0.488 seconds
+
+base.en P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user, understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 0.511 seconds
+
+base.en P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today, I am testing whether the speech examination system can accurately process a longer sentence while background equipment is operating.
+WER: 5.0 %
+Inference: 0.503 seconds
+
+base.en P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: Compare the advantages and limitations of using local speech recognition instead of a cloud-based speech recognition service.
+WER: 0.0 %
+Inference: 0.485 seconds
+
+base.en P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot, explain how gaze, detection and speech activation could help identify the intended user.
+WER: 0.0 %
+Inference: 0.525 seconds
+
+======================================================================
+Loading model: small
+Model load time: 14.679 seconds
+
+small P01
+Expected: Hello robot.
+Recognized: Hello Robot
+WER: 0.0 %
+Inference: 1.177 seconds
+
+small P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 1.244 seconds
+
+small P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what a social robot is.
+WER: 0.0 %
+Inference: 1.252 seconds
+
+small P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 1.336 seconds
+
+small P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures, and facial expressions.
+WER: 0.0 %
+Inference: 1.377 seconds
+
+small P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please describe how a service robot can assist visitors inside a public building.
+WER: 0.0 %
+Inference: 1.368 seconds
+
+small P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user, understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 1.53 seconds
+
+small P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+WER: 0.0 %
+Inference: 1.541 seconds
+
+small P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: Compare the advantages and limitations of using local speech recognition instead of a cloud-based speech recognition service.
+WER: 0.0 %
+Inference: 1.532 seconds
+
+small P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot, explain how gaze, detection and speech activation could help identify the intended user.
+WER: 0.0 %
+Inference: 1.741 seconds
+
+======================================================================
+Loading model: small.en
+Model load time: 18.763 seconds
+
+small.en P01
+Expected: Hello robot.
+Recognized: Hello robot.
+WER: 0.0 %
+Inference: 1.197 seconds
+
+small.en P02
+Expected: What time is it?
+Recognized: What time is it?
+WER: 0.0 %
+Inference: 1.255 seconds
+
+small.en P03
+Expected: Please explain what a social robot is.
+Recognized: Please explain what a social robot is.
+WER: 0.0 %
+Inference: 1.29 seconds
+
+small.en P04
+Expected: Tell me how robots help people at home.
+Recognized: Tell me how robots help people at home.
+WER: 0.0 %
+Inference: 1.284 seconds
+
+small.en P05
+Expected: Social robots communicate with people using speech, gestures, and facial expressions.
+Recognized: Social robots communicate with people using speech, gestures and facial expressions.
+WER: 0.0 %
+Inference: 1.381 seconds
+
+small.en P06
+Expected: Please describe how a service robot can assist visitors inside a public building.
+Recognized: Please describe how a service robot can assist visitors inside a public building.
+WER: 0.0 %
+Inference: 1.392 seconds
+
+small.en P07
+Expected: The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay.
+Recognized: The robot should listen to the user, understand the spoken request and provide a clear response without unnecessary delay.
+WER: 0.0 %
+Inference: 1.518 seconds
+
+small.en P08
+Expected: Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating.
+Recognized: Today, I am testing whether the speech recognition system can accurately process your longer sentence while background equipment is operating.
+WER: 5.0 %
+Inference: 1.551 seconds
+
+small.en P09
+Expected: Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service.
+Recognized: Compare the advantages and limitations of using local speech recognition instead of a cloud-based speech recognition service.
+WER: 0.0 %
+Inference: 1.568 seconds
+
+small.en P10
+Expected: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+Recognized: If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user.
+WER: 0.0 %
+Inference: 1.739 seconds
+
+======================================================================
+Benchmark complete.
+Detailed results: results/task_e_whisper_benchmark/whisper_results_S01.csv
+Summary results: results/task_e_whisper_benchmark/whisper_summary_S01.csv

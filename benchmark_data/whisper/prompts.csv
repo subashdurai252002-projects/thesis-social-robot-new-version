@@ -1,0 +1,11 @@
+prompt_id,category,reference_text
+P01,very_short,"Hello robot."
+P02,very_short,"What time is it?"
+P03,short,"Please explain what a social robot is."
+P04,short,"Tell me how robots help people at home."
+P05,medium,"Social robots communicate with people using speech, gestures, and facial expressions."
+P06,medium,"Please describe how a service robot can assist visitors inside a public building."
+P07,long,"The robot should listen to the user, understand the spoken request, and provide a clear response without unnecessary delay."
+P08,long,"Today I am testing whether the speech recognition system can accurately process a longer sentence while background equipment is operating."
+P09,complex,"Compare the advantages and limitations of using local speech recognition instead of a cloud based speech recognition service."
+P10,complex,"If several people are standing near the robot, explain how gaze detection and speech activation could help identify the intended user."

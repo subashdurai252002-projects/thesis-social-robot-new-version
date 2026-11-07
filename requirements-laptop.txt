@@ -1,0 +1,9 @@
+
+# Tested laptop dependencies
+faster-whisper==1.2.1
+ctranslate2==4.8.1
+openai==3.42.1
+piper-tts==1.7.0
+ai-edge-litert==2.3.0
+scikit-learn==1.9.1
+Brotli==1.2.0

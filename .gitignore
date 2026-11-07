@@ -29,3 +29,12 @@ results/**/live_*_latest.wav
 .idea/
 .DS_Store
 Commands/
+
+
+# Local model assets
+models/**/*.onnx
+models/**/*.onnx.json
+models/**/*.tflite
+
+# Runtime-generated files
+runtime_audio/

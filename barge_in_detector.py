@@ -16,7 +16,7 @@ from faster_whisper import WhisperModel
 from openwakeword.model import Model
 
 
-ROOT = Path("/home/subash/thesis-social-robot")
+ROOT = Path(__file__).resolve().parent
 
 WAKEWORD_MODEL = (
     ROOT
@@ -26,7 +26,8 @@ WAKEWORD_MODEL = (
 
 DTLN_MODEL_PREFIX = (
     ROOT
-    / "tools/DTLN-aec/pretrained_models"
+    / "models"
+    / "dtln"
     / "dtln_aec_512"
 )
 

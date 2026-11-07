@@ -5,6 +5,7 @@ import subprocess
 import threading
 import time
 import wave
+from pathlib import Path
 
 from faster_whisper import WhisperModel
 from openai import OpenAI
@@ -20,26 +21,34 @@ from live_streaming_stt_local_agreement import (
     transcribe as transcribe_streaming_audio,
 )
 
+ROOT = Path(__file__).resolve().parent
 
-AUDIO_FILE = (
-    "results/task_d_streaming_conversation/"
-    "live_conversation_latest.wav"
+AUDIO_FILE = str(
+    ROOT
+    / "runtime_audio"
+    / "live_conversation_latest.wav"
 )
 
-PIPER_MODEL = (
-    "/home/subash/thesis-social-robot/"
-    "piper_voices/en_US-lessac-medium.onnx"
+PIPER_MODEL = str(
+    ROOT
+    / "models"
+    / "piper"
+    / "en_US-lessac-medium.onnx"
 )
 
-PIPER_AUDIO_FILE = (
-    "/home/subash/thesis-social-robot/"
-    "test_audio/piper_echo.wav"
+PIPER_AUDIO_FILE = str(
+    ROOT
+    / "runtime_audio"
+    / "piper_echo.wav"
 )
 
-PIPER_COMMAND = (
-    "/home/subash/thesis-social-robot/"
-    ".venv-stt/bin/piper"
+PIPER_COMMAND = str(
+    ROOT
+    / ".venv-stt"
+    / "bin"
+    / "piper"
 )
+
 
 OPENAI_MODEL = "gpt-6-luna"
 

@@ -1,0 +1,7 @@
+model,speaker_id,prompts,exact_matches,total_reference_words,total_word_errors,overall_wer_percent,mean_inference_seconds,median_inference_seconds,model_load_seconds
+tiny,S01,10,5,123,9,7.317,0.311,0.27,1.324
+tiny.en,S01,10,6,123,10,8.13,0.258,0.259,1.395
+base,S01,10,8,123,2,1.626,0.486,0.491,0.228
+base.en,S01,10,8,123,2,1.626,0.457,0.465,3.599
+small,S01,10,10,123,0,0.0,1.41,1.373,14.679
+small.en,S01,10,9,123,1,0.813,1.417,1.386,18.763
