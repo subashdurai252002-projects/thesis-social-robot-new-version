@@ -1,0 +1,10 @@
+prompt_id,category,question,quality_requirements
+Q01,short,"What is the capital of Germany?","State Berlin directly and accurately."
+Q02,short,"What is a social robot?","Give a clear definition suitable for a general visitor."
+Q03,short,"Give one benefit of regular exercise.","Give one accurate benefit without unnecessary detail."
+Q04,medium,"Explain two ways social robots can assist older adults.","Give two distinct and realistic examples."
+Q05,medium,"Explain the difference between speech recognition and speech synthesis.","Correctly distinguish speech recognition from speech generation."
+Q06,medium,"How should a service robot respond when it does not understand a visitor's request?","Mention clarification and safe helpful behaviour."
+Q07,complex,"What privacy and safety risks can arise when a gaze-activated social robot operates in a public building, and how can those risks be reduced?","Cover privacy and safety with practical solutions."
+Q08,complex,"If several people look at and speak near a social robot simultaneously, how should it identify the intended user and manage the interaction?","Discuss gaze duration, speaker direction, turn-taking and clarification."
+Q09,complex,"Compare local and cloud speech processing for a service robot and recommend a practical architecture considering latency, privacy, reliability and computational limits.","Explain the trade-offs and provide a justified recommendation."

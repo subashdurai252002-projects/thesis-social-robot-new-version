@@ -1,0 +1,660 @@
+Run type: full
+Models: 4
+Questions: 9
+Repetitions: 3
+Total requests: 108
+
+======================================================================
+Request 1/108
+gpt-6-luna Q01 repetition 1
+Response time: 3.03 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 2/108
+gpt-6.1-terra Q01 repetition 1
+Response time: 1.472 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 3/108
+gpt-6.1-sol Q01 repetition 1
+Response time: 2.354 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 4/108
+gpt-6-astra Q01 repetition 1
+Response time: 2.867 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 5/108
+gpt-6-luna Q02 repetition 1
+Response time: 1.74 seconds
+Answer: A social robot is a robot designed to interact with people using social cues, such as speech, facial expressions, or gestures. It may help, teach, entertain, or provide companionship.
+
+======================================================================
+Request 6/108
+gpt-6.1-terra Q02 repetition 1
+Response time: 2.355 seconds
+Answer: A social robot is a robot designed to interact with people in ways that feel social, such as through conversation, gestures, or facial expressions. It might help people learn, provide companionship, or assist with everyday tasks.
+
+======================================================================
+Request 7/108
+gpt-6.1-sol Q02 repetition 1
+Response time: 3.072 seconds
+Answer: A social robot is a physical robot designed to interact with people using social behaviors, such as conversation, gestures, or facial expressions. It might welcome visitors, help someone learn, or provide companionship. It can seem friendly or attentive without actually having feelings.
+
+======================================================================
+Request 8/108
+gpt-6-astra Q02 repetition 1
+Response time: 3.481 seconds
+Answer: A social robot is a robot designed to interact and communicate with people using speech, gestures, or facial expressions. It might help customers, support learning, or provide companionship. Unlike a chatbot, it has a physical body, but it does not necessarily have human-like feelings or understanding.
+
+======================================================================
+Request 9/108
+gpt-6-luna Q03 repetition 1
+Response time: 1.536 seconds
+Answer: Regular exercise can improve your heart health.
+
+======================================================================
+Request 10/108
+gpt-6.1-terra Q03 repetition 1
+Response time: 1.74 seconds
+Answer: Regular exercise can improve your heart health.
+
+======================================================================
+Request 11/108
+gpt-6.1-sol Q03 repetition 1
+Response time: 1.945 seconds
+Answer: Regular exercise strengthens your heart and lowers your risk of heart disease.
+
+======================================================================
+Request 12/108
+gpt-6-astra Q03 repetition 1
+Response time: 3.173 seconds
+Answer: Regular exercise strengthens your heart and lowers your risk of heart disease.
+
+======================================================================
+Request 13/108
+gpt-6-luna Q04 repetition 1
+Response time: 1.842 seconds
+Answer: Social robots can remind older adults to take medication or attend appointments. They can also offer conversation and activities, helping reduce loneliness and support daily routines.
+
+======================================================================
+Request 14/108
+gpt-6.1-terra Q04 repetition 1
+Response time: 1.842 seconds
+Answer: Social robots can remind older adults to take medication or attend appointments. They can also provide companionship through conversation and activities, helping reduce loneliness.
+
+======================================================================
+Request 15/108
+gpt-6.1-sol Q04 repetition 1
+Response time: 2.559 seconds
+Answer: Social robots can remind older adults to take medication, attend appointments, and follow daily routines. They can also offer companionship through conversation, games, and activities, helping reduce loneliness while complementing human contact.
+
+======================================================================
+Request 16/108
+gpt-6-astra Q04 repetition 1
+Response time: 2.662 seconds
+Answer: Social robots can help older adults manage daily routines by reminding them to take medication, attend appointments, or stay active. They can also offer companionship through conversation and games, helping reduce loneliness while supporting—not replacing—human contact.
+
+======================================================================
+Request 17/108
+gpt-6-luna Q05 repetition 1
+Response time: 1.945 seconds
+Answer: Speech recognition converts spoken words into text or commands. Speech synthesis does the reverse: it turns text or other input into spoken audio.
+
+======================================================================
+Request 18/108
+gpt-6.1-terra Q05 repetition 1
+Response time: 2.311 seconds
+Answer: Speech recognition converts spoken words into text or commands. Speech synthesis does the opposite: it generates spoken audio from text.
+
+======================================================================
+Request 19/108
+gpt-6.1-sol Q05 repetition 1
+Response time: 3.012 seconds
+Answer: Speech recognition turns spoken words into text, like when you dictate a message. Speech synthesis turns text into spoken audio, like when a digital assistant reads a message aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 20/108
+gpt-6-astra Q05 repetition 1
+Response time: 2.764 seconds
+Answer: Speech recognition turns spoken words into text, like when you dictate a message. Speech synthesis turns text into spoken audio, like when a navigation app reads directions aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 21/108
+gpt-6-luna Q06 repetition 1
+Response time: 1.638 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to rephrase or clarify. For example: “Sorry, I didn’t catch that. Could you say it another way?”
+
+======================================================================
+Request 22/108
+gpt-6.1-terra Q06 repetition 1
+Response time: 1.74 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to repeat or rephrase the request. If it still can’t help, it should offer to find a person who can.
+
+======================================================================
+Request 23/108
+gpt-6.1-sol Q06 repetition 1
+Response time: 2.764 seconds
+Answer: The robot should politely acknowledge that it did not understand and ask the visitor to repeat or rephrase the request. For example: “I’m sorry, I didn’t quite understand—could you say that another way?” If it still cannot understand, it should offer help from a staff member rather than guess.
+
+======================================================================
+Request 24/108
+gpt-6-astra Q06 repetition 1
+Response time: 3.174 seconds
+Answer: The robot should politely say it did not understand and ask the visitor to repeat or rephrase the request. It can offer a specific clarification, such as, “Are you looking for directions or information about an event?” If it still cannot understand, it should offer help from a staff member rather than guess.
+
+======================================================================
+Request 25/108
+gpt-6-luna Q07 repetition 1
+Response time: 3.174 seconds
+Answer: Gaze can reveal a person’s identity, attention, or interests, and may capture bystanders who never agreed to participate; risks grow if data is recorded, shared, or stored insecurely. Use clear notices and consent, process gaze locally where possible, collect only what is needed, avoid retaining or sharing it, and provide an easy way to opt out. Misread gaze or robot movement can startle, distract, or endanger people, so use cautious movement, obstacle detection, accessible non-gaze controls, and testing and supervision in the building.
+
+======================================================================
+Request 26/108
+gpt-6.1-terra Q07 repetition 1
+Response time: 2.704 seconds
+Answer: Gaze tracking can reveal where people look or collect images of bystanders without their consent. Use clear notices, minimize and locally process data, protect or quickly delete recordings, and offer a way to opt out. Prevent collisions and distractions with slow movement, obstacle detection, and an accessible stop button.
+
+======================================================================
+Request 27/108
+gpt-6.1-sol Q07 repetition 1
+Response time: 5.488 seconds
+Answer: A gaze-activated robot can expose where people look, enable unwanted tracking, or capture bystanders who never consented, especially if camera data is stored or shared. It may also mistake a glance for consent, misread some users’ gaze, distract people, or move unsafely near crowds. Reduce these risks by processing data locally, minimizing retention, securing access, clearly signaling when sensing is active, offering non-gaze controls, requiring confirmation before sensitive actions, and testing accessibility and collision safeguards.
+
+======================================================================
+Request 28/108
+gpt-6-astra Q07 repetition 1
+Response time: 4.323 seconds
+Answer: A gaze-activated robot can expose sensitive data about people’s attention, movements, or identity, including bystanders who never agreed to tracking. It may also misread a glance as consent, respond to the wrong person, or startle, distract, or obstruct someone. Reduce these risks with clear notices, minimal on-device processing, no unnecessary recording, strong data security, explicit confirmation before sensitive actions, accessible non-gaze controls, and safe movement with an easy stop option.
+
+======================================================================
+Request 29/108
+gpt-6-luna Q08 repetition 1
+Response time: 3.05 seconds
+Answer: The robot should combine cues such as who is facing or looking at it, where speech is coming from, and who appears to be addressing it, rather than relying on loudness alone. If the cues are unclear or several people seem to be speaking to it, it should ask who wants to interact or invite people to take turns. It should acknowledge others and keep track of any requests waiting.
+
+======================================================================
+Request 30/108
+gpt-6.1-terra Q08 repetition 1
+Response time: 2.659 seconds
+Answer: It should combine cues such as who is facing it, speaking to it, saying its name, or taking a conversational turn, rather than relying on any one cue. If the intended user is unclear, it can politely ask who would like to speak and take turns. It should also avoid assuming that everyone nearby wants to interact or have their speech recorded.
+
+======================================================================
+Request 31/108
+gpt-6.1-sol Q08 repetition 1
+Response time: 4.401 seconds
+Answer: The robot should combine gaze, speech direction, proximity, and conversational context to infer who is addressing it, rather than relying on one cue. If several people seem to be speaking to it, it should acknowledge the group and ask who would like to go first. It should then track the active speaker, manage turns fairly, and confirm before switching users when the intent is unclear.
+
+======================================================================
+Request 32/108
+gpt-6-astra Q08 repetition 1
+Response time: 3.582 seconds
+Answer: The robot should combine gaze, body orientation, speech direction, and conversational context to estimate who is addressing it, rather than assume the loudest person is the intended user. If it is unsure, it should ask a brief clarifying question, such as, “Who would like to speak first?” It should then acknowledge the others, manage turns fairly, and reassess who it is addressing as the conversation changes.
+
+======================================================================
+Request 33/108
+gpt-6-luna Q09 repetition 1
+Response time: 3.174 seconds
+Answer: Local speech processing offers low latency, better privacy, and offline operation, but is limited by the robot’s compute, memory, and model accuracy; cloud processing can handle more complex speech with larger models, but adds network delay and depends on connectivity while sending audio off-device. A practical hybrid is to detect wake words and handle common commands locally, then use the cloud for optional complex requests with clear consent and minimal audio retention. Keep essential commands and a simple fallback speech interface on-device so the robot remains useful when the network fails.
+
+======================================================================
+Request 34/108
+gpt-6.1-terra Q09 repetition 1
+Response time: 3.992 seconds
+Answer: Local processing is fast, private and works offline, but is limited by the robot’s computing power. Cloud processing can handle more complex speech tasks, but adds network delay, privacy risks and dependence on connectivity. A practical hybrid keeps wake-word detection and essential commands local, while sending complex requests to the cloud with consent and an offline fallback.
+
+======================================================================
+Request 35/108
+gpt-6.1-sol Q09 repetition 1
+Response time: 5.017 seconds
+Answer: Local speech processing offers low latency, stronger privacy, and offline reliability, but robot hardware limits model size and accuracy; cloud processing supports larger models but adds network delays, outages, and data exposure. Use a local-first hybrid: handle wake words, common commands, safety-critical commands, and basic speech output onboard, sending complex requests to the cloud only with consent and minimal necessary data. Keep robot control local, set cloud timeouts, and fall back to a compact offline speech model or simple clarification prompts when connectivity fails.
+
+======================================================================
+Request 36/108
+gpt-6-astra Q09 repetition 1
+Response time: 4.913 seconds
+Answer: Local speech processing offers low latency, privacy, and offline reliability, but onboard computing limits model size and accuracy; cloud processing supports larger models but adds network delay, privacy risks, and outage dependence. Use a hybrid design: run wake-word detection, basic command recognition, essential responses, and safety-related controls locally, with cloud support for complex requests. Send only necessary audio with consent, apply strict retention limits, and fall back to local commands or clarification whenever connectivity fails.
+
+======================================================================
+Request 37/108
+gpt-6-luna Q01 repetition 2
+Response time: 1.33 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 38/108
+gpt-6.1-terra Q01 repetition 2
+Response time: 1.432 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 39/108
+gpt-6.1-sol Q01 repetition 2
+Response time: 1.637 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 40/108
+gpt-6-astra Q01 repetition 2
+Response time: 1.739 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 41/108
+gpt-6-luna Q02 repetition 2
+Response time: 1.727 seconds
+Answer: A social robot is a robot designed to interact with people through communication, gestures, or other social cues. It might help, teach, entertain, or provide companionship.
+
+======================================================================
+Request 42/108
+gpt-6.1-terra Q02 repetition 2
+Response time: 1.907 seconds
+Answer: A social robot is a robot designed to interact with people in a social way. It may use speech, facial expressions, or gestures to communicate and respond to people.
+
+======================================================================
+Request 43/108
+gpt-6.1-sol Q02 repetition 2
+Response time: 3.496 seconds
+Answer: A social robot is a robot designed to interact with people using social cues, such as speech, gestures, or facial expressions. It might help customers, support learning, or provide companionship. Unlike a basic automated machine, it’s designed to make interaction feel more natural and engaging.
+
+======================================================================
+Request 44/108
+gpt-6-astra Q02 repetition 2
+Response time: 3.243 seconds
+Answer: A social robot is a physical robot designed to interact with people using social cues, such as speech, gestures, or facial expressions. It might welcome visitors, help students learn, or provide companionship. It can respond in socially familiar ways without having human feelings or understanding.
+
+======================================================================
+Request 45/108
+gpt-6-luna Q03 repetition 2
+Response time: 1.393 seconds
+Answer: Regular exercise can improve heart health.
+
+======================================================================
+Request 46/108
+gpt-6.1-terra Q03 repetition 2
+Response time: 1.636 seconds
+Answer: Regular exercise can improve your heart health.
+
+======================================================================
+Request 47/108
+gpt-6.1-sol Q03 repetition 2
+Response time: 2.149 seconds
+Answer: Regular exercise strengthens your heart, helping lower your risk of heart disease.
+
+======================================================================
+Request 48/108
+gpt-6-astra Q03 repetition 2
+Response time: 2.046 seconds
+Answer: Regular exercise strengthens your heart, helping lower your risk of heart disease.
+
+======================================================================
+Request 49/108
+gpt-6-luna Q04 repetition 2
+Response time: 1.637 seconds
+Answer: Social robots can remind older adults to take medication and help them keep track of daily routines. They can also offer conversation and companionship, which may reduce feelings of loneliness.
+
+======================================================================
+Request 50/108
+gpt-6.1-terra Q04 repetition 2
+Response time: 2.251 seconds
+Answer: Social robots can remind older adults to take medication, attend appointments, or drink water. They can also provide companionship through conversation and help them stay connected with family.
+
+======================================================================
+Request 51/108
+gpt-6.1-sol Q04 repetition 2
+Response time: 2.66 seconds
+Answer: Social robots can remind older adults to take medication and attend appointments, helping them manage daily routines. They can also offer companionship through conversation and games, which may reduce loneliness and keep the mind engaged.
+
+======================================================================
+Request 52/108
+gpt-6-astra Q04 repetition 2
+Response time: 2.661 seconds
+Answer: Social robots can help older adults manage daily routines by reminding them to take medication and attend appointments. They can also offer companionship through conversation and games, helping reduce loneliness while encouraging contact with family and friends.
+
+======================================================================
+Request 53/108
+gpt-6-luna Q05 repetition 2
+Response time: 1.739 seconds
+Answer: Speech recognition converts spoken words into text or commands. Speech synthesis does the reverse: it turns text or other input into spoken audio.
+
+======================================================================
+Request 54/108
+gpt-6.1-terra Q05 repetition 2
+Response time: 1.739 seconds
+Answer: Speech recognition converts spoken words into text or commands. Speech synthesis does the reverse: it generates spoken audio from text.
+
+======================================================================
+Request 55/108
+gpt-6.1-sol Q05 repetition 2
+Response time: 3.21 seconds
+Answer: Speech recognition turns spoken words into text, like when you dictate a message. Speech synthesis turns text into spoken words, like when a navigation app reads directions aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 56/108
+gpt-6-astra Q05 repetition 2
+Response time: 3.236 seconds
+Answer: Speech recognition turns spoken words into text, like when you dictate a message. Speech synthesis turns text into spoken words, like when a device reads that message aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 57/108
+gpt-6-luna Q06 repetition 2
+Response time: 1.738 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to rephrase or give more detail. For example: “Sorry, I didn’t catch that. Could you say it another way?”
+
+======================================================================
+Request 58/108
+gpt-6.1-terra Q06 repetition 2
+Response time: 1.739 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to repeat or rephrase the request. If it still can’t help, it should offer to connect the visitor with a staff member.
+
+======================================================================
+Request 59/108
+gpt-6.1-sol Q06 repetition 2
+Response time: 3.377 seconds
+Answer: The robot should politely say it did not understand and ask the visitor to repeat or rephrase the request. It can offer a few relevant options to help clarify, without guessing what the visitor means. For example: “I’m sorry, I didn’t quite understand—are you looking for directions or information about an event?”
+
+======================================================================
+Request 60/108
+gpt-6-astra Q06 repetition 2
+Response time: 3.172 seconds
+Answer: The robot should politely acknowledge that it didn’t understand and ask the visitor to repeat or rephrase the request. For example: “I’m sorry, I didn’t quite understand—could you say that another way?” If it still cannot understand, it should offer help from a staff member rather than guess.
+
+======================================================================
+Request 61/108
+gpt-6-luna Q07 repetition 2
+Response time: 3.581 seconds
+Answer: A gaze-activated robot may inadvertently track bystanders, infer sensitive traits or attention, or expose identifiable video and interaction data through misuse or a security breach; it can also distract people, obstruct paths, or exclude visitors who cannot use gaze controls. Reduce these risks by clearly notifying visitors, offering a non-gaze option, processing gaze locally where possible, collecting and retaining as little data as possible, and securing or deleting any necessary data. Place and test the robot to keep routes clear, avoid unintended activation, and make its behavior safe and predictable.
+
+======================================================================
+Request 62/108
+gpt-6.1-terra Q07 repetition 2
+Response time: 4.093 seconds
+Answer: Gaze tracking can reveal sensitive information about where people look and may make bystanders feel monitored. Clear notices, local processing, minimal data retention, and an easy opt-out can reduce privacy risks. To prevent unwanted activation or physical harm, use confirmation before actions, keep movements slow, and provide an accessible stop button.
+
+======================================================================
+Request 63/108
+gpt-6.1-sol Q07 repetition 2
+Response time: 4.913 seconds
+Answer: A gaze-activated robot can expose visitors’ identities, movements, or sensitive interests, including those of bystanders who never agreed to be tracked. Misread glances, biased detection, hacking, or unexpected movement can cause unwanted interactions, exclusion, or injury. Reduce these risks with clear notices and opt-outs, minimal on-device processing without storing identifiable gaze data, strong security, accessible alternative controls, confirmation before sensitive actions, and tested movement limits with emergency stops.
+
+======================================================================
+Request 64/108
+gpt-6-astra Q07 repetition 2
+Response time: 4.719 seconds
+Answer: A gaze-activated social robot may accidentally engage people, misread their attention or intentions, or expose sensitive information by tracking faces, eye movements, and conversations—including those of bystanders and children. Misinterpretation, unexpected movement, or overtrust in its advice can also cause distress, exclusion, or physical harm. Reduce these risks with clear notices and opt-outs, explicit confirmation before sensitive interactions, minimal on-device data processing with short retention and strong security, and accessible controls, safe movement limits, emergency stops, and human oversight.
+
+======================================================================
+Request 65/108
+gpt-6-luna Q08 repetition 2
+Response time: 3.058 seconds
+Answer: The robot should combine cues such as who is facing it, making eye contact, speaking its name, and where each voice is coming from. If the intended user is still unclear, it should ask who wants to interact rather than guess. It should address one person at a time, acknowledge others who are waiting, and manage turn-taking politely.
+
+======================================================================
+Request 66/108
+gpt-6.1-terra Q08 repetition 2
+Response time: 2.762 seconds
+Answer: The robot can combine cues such as gaze, proximity, speech direction, and whether someone addresses it by name to identify the likely speaker. If the intended user is unclear, it should politely ask who would like to speak. It should then acknowledge that person and manage turn-taking so others can participate.
+
+======================================================================
+Request 67/108
+gpt-6.1-sol Q08 repetition 2
+Response time: 3.581 seconds
+Answer: The robot should combine gaze, body orientation, proximity, speech direction, and conversational context to infer who is addressing it, rather than relying on one cue. If it’s uncertain, it should ask, “Who would like to speak with me?” instead of guessing. Once someone is engaged, it should maintain attention, acknowledge others, and manage turn-taking fairly, shifting users when the current speaker finishes or explicitly hands over.
+
+======================================================================
+Request 68/108
+gpt-6-astra Q08 repetition 2
+Response time: 4.198 seconds
+Answer: The robot should combine gaze, body orientation, proximity, speech direction, and direct address to estimate who is engaging it, rather than relying on one cue. If intent is unclear, it should ask who wants to speak instead of guessing. It should acknowledge others, invite one person to speak at a time, and maintain the current speaker’s turn unless they finish, hand over, or an urgent interruption occurs.
+
+======================================================================
+Request 69/108
+gpt-6-luna Q09 repetition 2
+Response time: 2.885 seconds
+Answer: Local speech processing offers low latency, works without a network, and keeps audio private, but it can be less capable and demands computing resources. Cloud processing can provide stronger speech recognition and language models, but adds network delay, may expose sensitive audio, and can fail when connectivity drops. Use a hybrid design: handle wake words, basic commands, and safety-critical interactions locally, and send more complex requests to the cloud only with user consent, falling back to local functions when offline.
+
+======================================================================
+Request 70/108
+gpt-6.1-terra Q09 repetition 2
+Response time: 2.602 seconds
+Answer: Local processing offers low latency and keeps speech private, but it is limited by the robot’s computing power. Cloud processing can handle more complex requests, but adds network delay, privacy risks, and dependence on connectivity. A practical design uses local wake-word detection and basic commands, sending complex requests to the cloud with user consent and falling back to local functions when offline.
+
+======================================================================
+Request 71/108
+gpt-6.1-sol Q09 repetition 2
+Response time: 5.666 seconds
+Answer: Local speech processing offers low latency, privacy, and offline reliability, but onboard compute limits model size; cloud processing supports more capable models but adds network delays, outage risk, and data exposure. Use a hybrid architecture: keep wake-word detection, common commands, and safety-critical controls local, and send complex requests to the cloud when connectivity permits. Set strict cloud timeouts, minimize and encrypt uploaded audio with user consent, and fall back to local commands or clarification when the cloud is unavailable.
+
+======================================================================
+Request 72/108
+gpt-6-astra Q09 repetition 2
+Response time: 4.607 seconds
+Answer: Local speech processing offers low latency, keeps audio private, and works offline, but onboard computing limits model size and accuracy; cloud processing supports larger models but adds network delays, privacy risks, and dependence on connectivity. Use a hybrid architecture: handle wake words, basic commands, and safety-critical interactions locally, and send complex requests to the cloud only with appropriate consent and minimal data. Keep an offline command set and spoken responses available, enforce cloud timeouts, and choose local models that fit the robot’s memory, power, and processing budget.
+
+======================================================================
+Request 73/108
+gpt-6-luna Q01 repetition 3
+Response time: 1.53 seconds
+Answer: Berlin is the capital of Germany.
+
+======================================================================
+Request 74/108
+gpt-6.1-terra Q01 repetition 3
+Response time: 1.435 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 75/108
+gpt-6.1-sol Q01 repetition 3
+Response time: 2.043 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 76/108
+gpt-6-astra Q01 repetition 3
+Response time: 1.942 seconds
+Answer: The capital of Germany is Berlin.
+
+======================================================================
+Request 77/108
+gpt-6-luna Q02 repetition 3
+Response time: 1.881 seconds
+Answer: A social robot is a robot designed to interact with people using social cues, such as speech, gestures, or facial expressions. It may help, teach, entertain, or provide companionship.
+
+======================================================================
+Request 78/108
+gpt-6.1-terra Q02 repetition 3
+Response time: 1.709 seconds
+Answer: A social robot is a machine designed to interact with people in socially meaningful ways. It may use speech, gestures, or facial expressions to communicate.
+
+======================================================================
+Request 79/108
+gpt-6.1-sol Q02 repetition 3
+Response time: 3.261 seconds
+Answer: A social robot is a robot designed to interact with people using social cues, such as speech, gestures, or facial expressions. It might help customers, support learning, or provide companionship. It can respond in friendly ways, but that doesn’t mean it has feelings.
+
+======================================================================
+Request 80/108
+gpt-6-astra Q02 repetition 3
+Response time: 3.174 seconds
+Answer: A social robot is a robot designed to interact with people using social behaviors, such as speaking, making gestures, or responding to facial expressions. Social robots can provide companionship, help with learning, or assist customers, but they don’t necessarily have feelings or understand people the way humans do.
+
+======================================================================
+Request 81/108
+gpt-6-luna Q03 repetition 3
+Response time: 1.428 seconds
+Answer: Regular exercise can improve your heart health.
+
+======================================================================
+Request 82/108
+gpt-6.1-terra Q03 repetition 3
+Response time: 1.434 seconds
+Answer: Regular exercise can improve your heart health.
+
+======================================================================
+Request 83/108
+gpt-6.1-sol Q03 repetition 3
+Response time: 2.144 seconds
+Answer: Regular exercise strengthens your heart and improves cardiovascular health.
+
+======================================================================
+Request 84/108
+gpt-6-astra Q03 repetition 3
+Response time: 2.356 seconds
+Answer: Regular exercise strengthens your heart and lowers your risk of heart disease.
+
+======================================================================
+Request 85/108
+gpt-6-luna Q04 repetition 3
+Response time: 1.841 seconds
+Answer: Social robots can remind older adults to take medication, attend appointments, or follow daily routines. They can also offer conversation and encourage activities, helping reduce loneliness and support emotional well-being.
+
+======================================================================
+Request 86/108
+gpt-6.1-terra Q04 repetition 3
+Response time: 2.77 seconds
+Answer: Social robots can remind older adults to take medication or attend appointments. They can also provide companionship through conversation and help them stay connected with family.
+
+======================================================================
+Request 87/108
+gpt-6.1-sol Q04 repetition 3
+Response time: 5.951 seconds
+Answer: Social robots can remind older adults to take medication, attend appointments, and follow daily routines. They can also provide companionship through conversation and games, helping reduce loneliness while encouraging contact with family and friends.
+
+======================================================================
+Request 88/108
+gpt-6-astra Q04 repetition 3
+Response time: 7.285 seconds
+Answer: Social robots can help older adults manage daily routines by reminding them to take medication, drink water, or attend appointments. They can also provide companionship through conversation and games, helping reduce loneliness without replacing human contact.
+
+======================================================================
+Request 89/108
+gpt-6-luna Q05 repetition 3
+Response time: 25.969 seconds
+Answer: Speech recognition converts spoken words into text or commands. Speech synthesis does the reverse: it generates spoken audio from text or other input.
+
+======================================================================
+Request 90/108
+gpt-6.1-terra Q05 repetition 3
+Response time: 1.691 seconds
+Answer: Speech recognition converts spoken words into text. Speech synthesis does the opposite: it converts text into spoken words.
+
+======================================================================
+Request 91/108
+gpt-6.1-sol Q05 repetition 3
+Response time: 2.657 seconds
+Answer: Speech recognition converts spoken words into text, like when you dictate a message. Speech synthesis converts text into spoken audio, like when a navigation app reads directions aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 92/108
+gpt-6-astra Q05 repetition 3
+Response time: 603.917 seconds
+Answer: Speech recognition turns spoken words into text, like when you dictate a message. Speech synthesis turns text into spoken words, like when a virtual assistant reads that message aloud. In short, recognition listens, while synthesis speaks.
+
+======================================================================
+Request 93/108
+gpt-6-luna Q06 repetition 3
+Response time: 2.699 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to repeat or rephrase the request. For example: “Sorry, I didn’t catch that. Could you say it another way?”
+
+======================================================================
+Request 94/108
+gpt-6.1-terra Q06 repetition 3
+Response time: 2.214 seconds
+Answer: It should politely say it didn’t understand and ask the visitor to repeat or rephrase the request. If it still cannot help, it should offer to find a human staff member.
+
+======================================================================
+Request 95/108
+gpt-6.1-sol Q06 repetition 3
+Response time: 2.35 seconds
+Answer: The robot should politely say it did not understand and ask the visitor to repeat or rephrase the request. For example: “I’m sorry, I didn’t quite understand. Could you say that another way?”
+
+======================================================================
+Request 96/108
+gpt-6-astra Q06 repetition 3
+Response time: 2.556 seconds
+Answer: The robot should politely say it did not understand and ask the visitor to repeat or rephrase the request. If it understood part of the request, it should ask a specific clarifying question rather than guess. If it still cannot help, it should offer to contact a staff member.
+
+======================================================================
+Request 97/108
+gpt-6-luna Q07 repetition 3
+Response time: 3.48 seconds
+Answer: A gaze-activated robot may inadvertently detect or record visitors who haven’t agreed to interact, and gaze patterns can reveal sensitive information such as attention, behavior, or possible health conditions. It may also activate unexpectedly, expose data through weak security, or move in ways that startle or endanger people. Reduce these risks by processing gaze locally, collecting and retaining as little data as possible, clearly notifying visitors and offering an easy opt-out, securing and auditing the system, and using conservative movement limits with a nearby stop or disable control.
+
+======================================================================
+Request 98/108
+gpt-6.1-terra Q07 repetition 3
+Response time: 2.868 seconds
+Answer: A gaze-activated robot may capture faces or infer where people look without their consent, exposing sensitive information or enabling tracking. Clear notices, minimal on-device processing, and avoiding storage or sharing of identifiable data can reduce privacy risks. To improve safety, the robot should avoid obstructing pathways, keep interactions brief and optional, and provide an easy way to stop or disable it.
+
+======================================================================
+Request 99/108
+gpt-6.1-sol Q07 repetition 3
+Response time: 5.831 seconds
+Answer: A gaze-activated robot may track bystanders without consent, expose sensitive patterns of attention, or leak camera recordings and gaze data. Reduce these risks with clear notices, opt-in interaction, on-device processing, minimal data retention, encryption, and restricted access. Mistaken activation, distraction, or unsafe movement can cause harm; use confirmation prompts, accessible alternative controls, obstacle detection, emergency stops, and human oversight.
+
+======================================================================
+Request 100/108
+gpt-6-astra Q07 repetition 3
+Response time: 4.912 seconds
+Answer: A gaze-activated robot may capture faces, attention patterns, or sensitive conversations without meaningful consent, and mistakes can cause unwanted interactions, distraction, or collisions. Reduce privacy risks by processing gaze locally, avoiding identification and unnecessary recording, deleting data quickly, securing access, and clearly explaining how to opt out. Reduce safety risks with an explicit confirmation before interaction, accessible alternative controls, conservative movement limits, emergency stops, and regular testing with diverse users.
+
+======================================================================
+Request 101/108
+gpt-6-luna Q08 repetition 3
+Response time: 2.558 seconds
+Answer: The robot should combine cues such as who is facing it, speaking, and making eye contact, while tracking each person separately rather than assuming the loudest voice is the intended user. If the cues are ambiguous, it should ask who would like to interact and wait for a clear response. It should then address that person, manage turns politely, and let others join when appropriate.
+
+======================================================================
+Request 102/108
+gpt-6.1-terra Q08 repetition 3
+Response time: 3.888 seconds
+Answer: The robot should combine cues such as gaze, body orientation, proximity, speech direction, and whether someone addresses it directly, rather than relying on any one cue. If the intended user is unclear, it should ask a brief clarifying question and let people take turns. It should acknowledge others politely and avoid collecting or retaining more personal information than needed.
+
+======================================================================
+Request 103/108
+gpt-6.1-sol Q08 repetition 3
+Response time: 4.605 seconds
+Answer: The robot should combine cues such as who addressed it, gaze direction, speech direction, and conversational context, rather than assuming the nearest or loudest person is the intended user. If it is unsure, it should ask, “Who would like my help?” and confirm whom it is addressing. It should then manage turn-taking politely, acknowledge others waiting, and allow people to join or hand over the conversation.
+
+======================================================================
+Request 104/108
+gpt-6-astra Q08 repetition 3
+Response time: 5.22 seconds
+Answer: The robot should combine cues like who is facing it, where speech comes from, direct address, and conversational context to identify who is addressing it, rather than relying on gaze alone. If several people seem to be addressing it, it should acknowledge them and ask who wants to go first instead of guessing. It should then manage clear speaking turns, track the current speaker, and let others join or interrupt appropriately.
+
+======================================================================
+Request 105/108
+gpt-6-luna Q09 repetition 3
+Response time: 4.093 seconds
+Answer: Local processing offers low latency, better privacy, and works without internet, but is limited by the robot’s compute and may handle varied speech less accurately. Cloud processing can provide stronger speech recognition and language understanding, but adds network delay, exposes audio to external services, and can fail when connectivity is lost. Use a hybrid design: run wake-word detection, audio filtering, and common commands locally, send only necessary audio or transcripts to the cloud for complex requests with user consent, and keep essential commands working offline.
+
+======================================================================
+Request 106/108
+gpt-6.1-terra Q09 repetition 3
+Response time: 3.786 seconds
+Answer: Local processing is fast, private, and works offline, but it requires computing power and may be less capable. Cloud processing can handle more complex speech tasks, but adds network delay, privacy risks, and dependence on connectivity. A practical hybrid uses local wake-word detection and essential commands, with cloud processing for complex requests when available and offline fallback when it is not.
+
+======================================================================
+Request 107/108
+gpt-6.1-sol Q09 repetition 3
+Response time: 4.577 seconds
+Answer: Local speech processing offers low latency, privacy, and offline reliability, but robot hardware limits model size and accuracy; cloud processing supports larger models but adds network delays, outages, and privacy risks. Use a hybrid architecture: handle wake words, basic commands, and safety-critical requests locally, and send complex requests to the cloud when connected and permitted. Keep a lightweight offline fallback, minimize uploaded audio, and require local safety checks before executing cloud-generated actions.
+
+======================================================================
+Request 108/108
+gpt-6-astra Q09 repetition 3
+Response time: 5.047 seconds
+Answer: Local speech processing offers low latency, privacy, and offline reliability, but robot hardware limits model size and accuracy; cloud processing supports larger models but adds network delays, outages, and data exposure.
+Use a hybrid design: handle wake words, common commands, and safety-critical requests locally, with optional cloud processing for complex speech and conversation.
+Keep a local fallback, set cloud timeouts, and send only necessary audio with consent and encryption.
+
+======================================================================
+Benchmark complete.
+Detailed results: results/task_f_openai_benchmark/openai_full_results_20261107_194257.csv
+Summary results: results/task_f_openai_benchmark/openai_full_summary_20261107_194257.csv

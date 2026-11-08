@@ -1,0 +1,5 @@
+model,requests,successful,errors,short_median_seconds,medium_median_seconds,complex_median_seconds,overall_median_seconds,overall_mean_seconds,maximum_seconds,requests_over_10_seconds,mean_input_tokens,mean_output_tokens,mean_quality_score,speech_suitable_questions,speech_suitable_percent
+gpt-6-luna,27,27,0,1.536,1.841,3.174,1.881,3.174,25.969,1,55.9,69.5,4.56,6/9,66.7
+gpt-6.1-terra,27,27,0,1.636,1.842,2.868,2.214,2.325,4.093,0,55.9,46.7,4.89,9/9,100.0
+gpt-6.1-sol,27,27,0,2.149,2.764,4.913,3.21,3.508,5.951,0,55.9,64.6,4.67,6/9,66.7
+gpt-6-astra,27,27,0,2.867,3.172,4.719,3.236,25.814,603.917,1,55.9,60.3,4.67,6/9,66.7

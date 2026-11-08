@@ -4,9 +4,11 @@
 set -euo pipefail
 
 PROJECT_ROOT="$(
-    cd "$(dirname "${BASH_SOURCE[0]}")"
+    cd "$(dirname "${BASH_SOURCE[0]}")/.."
     pwd
 )"
+
+SETUP_DIR="$PROJECT_ROOT/setup"
 
 cd "$PROJECT_ROOT"
 
@@ -17,7 +19,7 @@ python3 -m venv \
 PYTHON="$PROJECT_ROOT/.venv-stt/bin/python"
 
 "$PYTHON" -m pip install \
--r requirements-laptop.txt
+-r "$SETUP_DIR/requirements-laptop.txt"
 
 "$PYTHON" -m pip install \
 --no-deps \

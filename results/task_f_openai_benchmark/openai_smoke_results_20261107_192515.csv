@@ -1,0 +1,5 @@
+run_id,repetition,prompt_id,category,model,question,quality_requirements,response_text,response_time_seconds,input_tokens,output_tokens,total_tokens,status,error,manual_quality_score,manual_notes
+20261107_192515,1,Q01,short,gpt-6-luna,What is the capital of Germany?,State Berlin directly and accurately.,The capital of Germany is Berlin.,4.301,48,11,59,success,,,
+20261107_192515,1,Q01,short,gpt-6.1-terra,What is the capital of Germany?,State Berlin directly and accurately.,The capital of Germany is Berlin.,1.859,48,11,59,success,,,
+20261107_192515,1,Q01,short,gpt-6.1-sol,What is the capital of Germany?,State Berlin directly and accurately.,The capital of Germany is Berlin.,4.095,48,11,59,success,,,
+20261107_192515,1,Q01,short,gpt-6-astra,What is the capital of Germany?,State Berlin directly and accurately.,The capital of Germany is Berlin.,1.638,48,11,59,success,,,

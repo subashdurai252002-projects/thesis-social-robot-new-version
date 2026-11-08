@@ -1,0 +1,9 @@
+run_id,model,category,requests,successful,errors,mean_response_seconds,median_response_seconds,minimum_response_seconds,maximum_response_seconds,mean_input_tokens,mean_output_tokens
+20261107_192515,gpt-6-luna,short,1,1,0,4.301,4.301,4.301,4.301,48,11
+20261107_192515,gpt-6-luna,all,1,1,0,4.301,4.301,4.301,4.301,48,11
+20261107_192515,gpt-6.1-terra,short,1,1,0,1.859,1.859,1.859,1.859,48,11
+20261107_192515,gpt-6.1-terra,all,1,1,0,1.859,1.859,1.859,1.859,48,11
+20261107_192515,gpt-6.1-sol,short,1,1,0,4.095,4.095,4.095,4.095,48,11
+20261107_192515,gpt-6.1-sol,all,1,1,0,4.095,4.095,4.095,4.095,48,11
+20261107_192515,gpt-6-astra,short,1,1,0,1.638,1.638,1.638,1.638,48,11
+20261107_192515,gpt-6-astra,all,1,1,0,1.638,1.638,1.638,1.638,48,11
