@@ -1,0 +1,624 @@
+Loading Faster-Whisper...
+Model ready.
+Loading barge-in detector...
+Loading shared DTLN-512 detector...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Loading shared openWakeWord V4...
+Loading shared Faster-Whisper small.en...
+Shared barge-in detector ready.
+Shared barge-in detector ready.
+OpenAI API selected. Internet connection required.
+
+Live-streaming conversation started.
+Say 'goodbye', 'stop conversation', 'exit', or 'quit' to stop.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 37.0
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[LIVE UPDATE: 2.1 s audio]
+Full hypothesis: What is the capital of Jir?
+Confirmed text: [none]
+Temporary text: what is the capital of jir
+Partial inference time: 2.93 seconds
+
+[FINAL TRANSCRIPTION]
+Final text: What is the capital of Germany?
+Final inference time: 0.43 seconds
+Utterance duration: 2.0 seconds
+Speech-start-to-final-text time: 4.87 seconds
+Speech-end-to-final-text latency: 2.87 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: simple
+Acknowledgement phrase: One moment.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (6 words; simple request with 6 words)
+OpenAI reply: The capital of Germany is Berlin.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 3.76 seconds
+Piper synthesis time: 2.89 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 2.87 seconds
+Acknowledgement playback duration: 1.38 seconds
+Final-text-to-speaker-start time: 6.65 seconds
+Speech-end-to-speaker-start latency: 9.52 seconds
+Playback duration: 3.62 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 30.4
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: What is 2 plus 2?
+Confirmed text: [none]
+Temporary text: what is 2 plus 2
+Partial inference time: 0.45 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: What is 2 plus 2?
+Final inference time: 0.46 seconds
+Utterance duration: 1.5 seconds
+Speech-start-to-final-text time: 2.81 seconds
+Speech-end-to-final-text latency: 1.31 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: simple
+Acknowledgement phrase: Just a moment.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (5 words; simple request with 5 words)
+OpenAI reply: 2 plus 2 equals 4.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.6796
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: 'Stop robot'
+Verification time: 10.7 seconds
+Complete 'Stop robot' verified.
+Piper playback interrupted.
+Barge-in interrupted playback: True
+Verified barge-in transcript: 'Stop robot'
+
+OpenAI response time: 3.4 seconds
+Piper synthesis time: 1.43 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.31 seconds
+Acknowledgement playback duration: 1.2 seconds
+Final-text-to-speaker-start time: 4.83 seconds
+Speech-end-to-speaker-start latency: 6.14 seconds
+Playback duration: 13.01 seconds
+
+Robot reply interrupted by 'Stop robot'.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 58.9
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Name one primary
+Confirmed text: [none]
+Temporary text: name one primary
+Partial inference time: 0.49 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Name 1 Primary Color
+Final inference time: 0.5 seconds
+Utterance duration: 2.0 seconds
+Speech-start-to-final-text time: 3.49 seconds
+Speech-end-to-final-text latency: 1.49 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: simple
+Acknowledgement phrase: Let me check.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (4 words; simple request with 4 words)
+OpenAI reply: Red is a primary color.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.6024
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second:  | 5-second: '
+Verification time: 0.07 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.9 seconds
+Piper synthesis time: 5.52 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.49 seconds
+Acknowledgement playback duration: 1.09 seconds
+Final-text-to-speaker-start time: 7.42 seconds
+Speech-end-to-speaker-start latency: 8.91 seconds
+Playback duration: 3.92 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 14.2
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: [none]
+Final inference time: 0.48 seconds
+Utterance duration: 0.0 seconds
+Speech-start-to-final-text time: 1.48 seconds
+Speech-end-to-final-text latency: 1.48 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+No meaningful transcription detected. Listening again.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 17.3
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: and explain why barrel
+Confirmed text: [none]
+Temporary text: and explain why barrel
+Partial inference time: 0.5 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[LIVE UPDATE: 4.0 s audio]
+Full hypothesis: Explain why Berlin is important.
+Confirmed text: [none]
+Temporary text: explain why berlin is important
+Partial inference time: 0.49 seconds
+
+[FINAL TRANSCRIPTION]
+Final text: Explain why Berlin is important.
+Final inference time: 0.5 seconds
+Utterance duration: 2.75 seconds
+Speech-start-to-final-text time: 4.5 seconds
+Speech-end-to-final-text latency: 1.75 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: complex
+Acknowledgement phrase: Let me think about that.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; complexity keyword: explain, why)
+OpenAI reply: Berlin is important because it is Germany’s capital and a major center of politics, culture, and history.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.914
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second:  | 5-second: '
+Verification time: 0.01 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.9 seconds
+Piper synthesis time: 1.58 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.75 seconds
+Acknowledgement playback duration: 2.06 seconds
+Final-text-to-speaker-start time: 3.48 seconds
+Speech-end-to-speaker-start latency: 5.23 seconds
+Playback duration: 7.18 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 40.3
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: [none]
+Final inference time: 0.5 seconds
+Utterance duration: 0.0 seconds
+Speech-start-to-final-text time: 1.41 seconds
+Speech-end-to-final-text latency: 1.41 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+No meaningful transcription detected. Listening again.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 11291.9
+Speech threshold: 33875.6
+SPEAK NOW
+Aborted by signal Terminated...
+No speech detected. Listening again.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 15.5
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Come, bear!
+Confirmed text: [none]
+Temporary text: come bear
+Partial inference time: 0.47 seconds
+
+[LIVE UPDATE: 4.0 s audio]
+Full hypothesis: Come, pair, row boat and chatbots.
+Confirmed text: come
+Temporary text: pair row boat and chatbots
+Partial inference time: 0.53 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Come, pair, row boat and chatbots.
+Final inference time: 0.49 seconds
+Utterance duration: 3.25 seconds
+Speech-start-to-final-text time: 4.75 seconds
+Speech-end-to-final-text latency: 1.5 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: simple
+Acknowledgement phrase: Let me see.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (6 words; simple request with 6 words)
+OpenAI reply: A pair of chatbots came to row a boat and chat.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.695
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second:  | 5-second: '
+Verification time: 0.01 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.99 seconds
+Piper synthesis time: 1.69 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.5 seconds
+Acknowledgement playback duration: 1.43 seconds
+Final-text-to-speaker-start time: 3.68 seconds
+Speech-end-to-speaker-start latency: 5.17 seconds
+Playback duration: 4.14 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 29.1
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Compare the robot
+Confirmed text: [none]
+Temporary text: compare the robot
+Partial inference time: 0.47 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Compare their robots and chatbots.
+Final inference time: 0.51 seconds
+Utterance duration: 2.5 seconds
+Speech-start-to-final-text time: 4.03 seconds
+Speech-end-to-final-text latency: 1.53 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: complex
+Acknowledgement phrase: Let me consider that carefully.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; complexity keyword: compare)
+OpenAI reply: Robots interact with the physical world, while chatbots communicate through conversation.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.86 seconds
+Piper synthesis time: 1.57 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.53 seconds
+Acknowledgement playback duration: 2.37 seconds
+Final-text-to-speaker-start time: 3.43 seconds
+Speech-end-to-speaker-start latency: 4.97 seconds
+Playback duration: 6.37 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 16.6
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.1 s audio]
+Full hypothesis: How can robots help?
+Confirmed text: [none]
+Temporary text: how can robots help
+Partial inference time: 0.5 seconds
+
+[LIVE UPDATE: 4.1 s audio]
+Full hypothesis: How can robots help all their adults?
+Confirmed text: how can robots help
+Temporary text: all their adults
+Partial inference time: 0.49 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: How can robots help all their adults?
+Final inference time: 0.52 seconds
+Utterance duration: 3.63 seconds
+Speech-start-to-final-text time: 5.17 seconds
+Speech-end-to-final-text latency: 1.54 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: complex
+Acknowledgement phrase: Let me work through that.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (7 words; complexity keyword: how)
+OpenAI reply: Robots can help older adults by reminding them to take medicine, assisting with daily tasks, and providing companionship.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.89 seconds
+Piper synthesis time: 1.64 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.54 seconds
+Acknowledgement playback duration: 1.5 seconds
+Final-text-to-speaker-start time: 3.53 seconds
+Speech-end-to-speaker-start latency: 5.07 seconds
+Playback duration: 8.62 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 256.5
+Speech threshold: 769.6
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: What did we discuss here?
+Confirmed text: [none]
+Temporary text: what did we discuss here
+Partial inference time: 0.49 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: What did we discuss earlier?
+Final inference time: 0.49 seconds
+Utterance duration: 1.88 seconds
+Speech-start-to-final-text time: 3.39 seconds
+Speech-end-to-final-text latency: 1.51 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: follow_up
+Acknowledgement phrase: Let me recall our discussion.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; context-dependent follow-up: did we discuss, earlier)
+OpenAI reply: We discussed Berlin, simple math, colors, robots, chatbots, and how robots can help older adults.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.9969
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: 'stop robot'
+Verification time: 13.02 seconds
+Complete 'Stop robot' verified.
+Piper playback interrupted.
+Barge-in interrupted playback: True
+Verified barge-in transcript: 'stop robot'
+
+OpenAI response time: 2.05 seconds
+Piper synthesis time: 1.71 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.51 seconds
+Acknowledgement playback duration: 2.46 seconds
+Final-text-to-speaker-start time: 3.76 seconds
+Speech-end-to-speaker-start latency: 5.28 seconds
+Playback duration: 16.15 seconds
+
+Robot reply interrupted by 'Stop robot'.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 55.2
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Tell me more about that.
+Confirmed text: [none]
+Temporary text: tell me more about that
+Partial inference time: 0.52 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Tell me more about that
+Final inference time: 0.49 seconds
+Utterance duration: 1.87 seconds
+Speech-start-to-final-text time: 3.22 seconds
+Speech-end-to-final-text latency: 1.34 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: follow_up
+Acknowledgement phrase: I'll check the earlier context.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; context-dependent follow-up: tell me more)
+OpenAI reply: Robots can help older adults stay independent by providing reminders, helping with household tasks, and connecting them with family or caregivers.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+V4 candidate score: 0.942
+Collecting one trailing second...
+V4 candidate found. Piper continues speaking.
+Microphone capture continues during verification.
+Running exact-command verification...
+Whisper verification: '3-second: Okay | 5-second: ok'
+Verification time: 6.24 seconds
+Candidate rejected; Piper was not stopped.
+Buffered microphone audio will now be processed.
+Barge-in interrupted playback: False
+
+OpenAI response time: 2.53 seconds
+Piper synthesis time: 3.14 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.34 seconds
+Acknowledgement playback duration: 3.23 seconds
+Final-text-to-speaker-start time: 5.67 seconds
+Speech-end-to-speaker-start latency: 7.01 seconds
+Playback duration: 11.0 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 70.2
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: continue from our
+Confirmed text: [none]
+Temporary text: continue from our
+Partial inference time: 0.51 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Continue from our previous point.
+Final inference time: 0.53 seconds
+Utterance duration: 2.25 seconds
+Speech-start-to-final-text time: 3.65 seconds
+Speech-end-to-final-text latency: 1.4 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Acknowledgement category: follow_up
+Acknowledgement phrase: Let me refer back to that.
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; context-dependent follow-up: continue, previous)
+OpenAI reply: For example, a robot could remind someone to take medication or call a caregiver if they need help.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.86 seconds
+Piper synthesis time: 1.87 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.4 seconds
+Acknowledgement playback duration: 1.61 seconds
+Final-text-to-speaker-start time: 3.73 seconds
+Speech-end-to-speaker-start latency: 5.14 seconds
+Playback duration: 6.68 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 43.2
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Goodbye.
+Final inference time: 0.48 seconds
+Utterance duration: 0.5 seconds
+Speech-start-to-final-text time: 1.99 seconds
+Speech-end-to-final-text latency: 1.49 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Exit command detected.
+Conversation ended.

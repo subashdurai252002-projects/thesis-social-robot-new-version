@@ -49,6 +49,51 @@ PIPER_COMMAND = str(
     / "piper"
 )
 
+ACKNOWLEDGEMENT_AUDIO_DIRECTORY = (
+    ROOT
+    / "runtime_audio"
+    / "acknowledgements"
+)
+
+ACKNOWLEDGEMENT_PHRASES = {
+    "simple": [
+        "One moment.",
+        "Just a moment.",
+        "Let me check.",
+        "Let me see.",
+        "I'll check that.",
+        "I'll answer that.",
+        "Let me get that for you.",
+        "I'll look at that now.",
+        "Sure, let me check.",
+        "Okay, one moment please.",
+    ],
+    "complex": [
+        "Let me think about that.",
+        "Let me consider that carefully.",
+        "Let me work through that.",
+        "I'll examine that question.",
+        "Let me prepare a clear answer.",
+        "That needs a little thought.",
+        "I'll consider the important points.",
+        "Let me analyse that for you.",
+        "I'll work through the details.",
+        "Let me give that some thought.",
+    ],
+    "follow_up": [
+        "Let me recall our discussion.",
+        "I'll check the earlier context.",
+        "Let me refer back to that.",
+        "I remember what we discussed.",
+        "Let me connect that with our conversation.",
+        "I'll review what you asked earlier.",
+        "Let me continue from our previous point.",
+        "I'll relate that to what we discussed.",
+        "Let me recall the previous question.",
+        "I'll continue from where we left off.",
+    ],
+}
+
 
 FAST_OPENAI_MODEL = "gpt-6-luna"
 COMPLEX_OPENAI_MODEL = "gpt-6.1-terra"
@@ -80,6 +125,15 @@ FOLLOW_UP_PHRASES = {
     "explain more",
     "why is that",
     "previous question",
+    "last question",
+    "did we discuss",
+    "we discussed",
+    "do you remember",
+    "did i ask",
+    "did you say",
+    "earlier",
+    "previous",
+    "continue",
 }
 
 SAMPLE_RATE = 16000
@@ -181,6 +235,90 @@ def generate_openai_reply(
         )
 
     return reply, response.id
+
+
+def prepare_acknowledgement_audio():
+    ACKNOWLEDGEMENT_AUDIO_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    audio_files = {}
+
+    for category, phrases in (
+        ACKNOWLEDGEMENT_PHRASES.items()
+    ):
+        for index, phrase in enumerate(
+            phrases,
+            start=1,
+        ):
+            audio_file = (
+                ACKNOWLEDGEMENT_AUDIO_DIRECTORY
+                / f"{category}_{index:02d}.wav"
+            )
+            audio_files[(category, index - 1)] = str(
+                audio_file
+            )
+
+            if audio_file.is_file():
+                continue
+
+            print(
+                "Generating acknowledgement audio:",
+                category,
+                f"{index}/{len(phrases)}",
+            )
+            subprocess.run(
+                [
+                    PIPER_COMMAND,
+                    "--model",
+                    PIPER_MODEL,
+                    "--output-file",
+                    str(audio_file),
+                ],
+                input=phrase,
+                text=True,
+                check=True,
+            )
+
+    return audio_files
+
+
+def select_acknowledgement(
+    text,
+    positions,
+    audio_files,
+):
+    selected_model, _, routing_reason = (
+        select_openai_model(text)
+    )
+
+    if routing_reason.startswith(
+        "context-dependent follow-up:"
+    ):
+        category = "follow_up"
+    elif selected_model == COMPLEX_OPENAI_MODEL:
+        category = "complex"
+    else:
+        category = "simple"
+
+    phrases = ACKNOWLEDGEMENT_PHRASES[category]
+    position = positions[category]
+    phrase = phrases[position]
+    audio_file = audio_files[(category, position)]
+    positions[category] = (
+        position + 1
+    ) % len(phrases)
+
+    return category, phrase, audio_file
+
+
+def wait_for_acknowledgement(
+    process,
+    timing,
+):
+    timing["returncode"] = process.wait()
+    timing["finished"] = time.perf_counter()
 
 
 def record_streaming_turn(model):
@@ -390,6 +528,14 @@ def main():
     barge_in = BargeInDetector()
     print("Shared barge-in detector ready.")
 
+    acknowledgement_audio_files = (
+        prepare_acknowledgement_audio()
+    )
+    acknowledgement_positions = {
+        category: 0
+        for category in ACKNOWLEDGEMENT_PHRASES
+    }
+
     if not os.environ.get("OPENAI_API_KEY"):
         raise RuntimeError(
             "OPENAI_API_KEY is not set."
@@ -447,6 +593,63 @@ def main():
                 print("Conversation ended.")
                 break
 
+            (
+                acknowledgement_category,
+                acknowledgement_phrase,
+                acknowledgement_audio_file,
+            ) = select_acknowledgement(
+                text,
+                acknowledgement_positions,
+                acknowledgement_audio_files,
+            )
+
+            print(
+                "Acknowledgement category:",
+                acknowledgement_category,
+            )
+            print(
+                "Acknowledgement phrase:",
+                acknowledgement_phrase,
+            )
+
+            acknowledgement_started = None
+            acknowledgement_process = None
+            acknowledgement_timing = {}
+            acknowledgement_waiter = None
+
+            try:
+                print("Playing acknowledgement...")
+                acknowledgement_started = (
+                    time.perf_counter()
+                )
+                acknowledgement_process = (
+                    subprocess.Popen(
+                        [
+                            "aplay",
+                            acknowledgement_audio_file,
+                        ],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                    )
+                )
+                acknowledgement_waiter = (
+                    threading.Thread(
+                        target=wait_for_acknowledgement,
+                        args=(
+                            acknowledgement_process,
+                            acknowledgement_timing,
+                        ),
+                        daemon=True,
+                    )
+                )
+                acknowledgement_waiter.start()
+            except OSError as error:
+                acknowledgement_started = None
+                print(
+                    "Acknowledgement playback warning:",
+                    str(error),
+                )
+
             print("Generating OpenAI reply...")
             llm_started = time.perf_counter()
 
@@ -480,6 +683,24 @@ def main():
 
             piper_finished = time.perf_counter()
 
+            acknowledgement_finished = None
+
+            if acknowledgement_waiter is not None:
+                acknowledgement_waiter.join()
+                acknowledgement_finished = (
+                    acknowledgement_timing["finished"]
+                )
+
+                if (
+                    acknowledgement_timing["returncode"]
+                    != 0
+                ):
+                    print(
+                        "Acknowledgement playback warning: "
+                        "aplay returned",
+                        acknowledgement_timing["returncode"],
+                    )
+
             print("Playing generated speech...")
             playback_started = time.perf_counter()
 
@@ -504,6 +725,26 @@ def main():
             piper_time = (
                 piper_finished - piper_started
             )
+            text_to_acknowledgement_start = None
+            speech_end_to_acknowledgement_start = None
+            acknowledgement_time = None
+
+            if (
+                acknowledgement_started is not None
+                and acknowledgement_finished is not None
+            ):
+                text_to_acknowledgement_start = (
+                    acknowledgement_started
+                    - transcription_finished
+                )
+                speech_end_to_acknowledgement_start = (
+                    acknowledgement_started
+                    - last_speech_at
+                )
+                acknowledgement_time = (
+                    acknowledgement_finished
+                    - acknowledgement_started
+                )
             text_to_speaker_start = (
                 playback_started
                 - transcription_finished
@@ -526,6 +767,32 @@ def main():
                 round(piper_time, 2),
                 "seconds",
             )
+            if acknowledgement_time is not None:
+                print(
+                    "Final-text-to-acknowledgement-start time:",
+                    round(
+                        text_to_acknowledgement_start,
+                        2,
+                    ),
+                    "seconds",
+                )
+                print(
+                    "Speech-end-to-acknowledgement-start latency:",
+                    round(
+                        speech_end_to_acknowledgement_start,
+                        2,
+                    ),
+                    "seconds",
+                )
+                print(
+                    "Acknowledgement playback duration:",
+                    round(acknowledgement_time, 2),
+                    "seconds",
+                )
+            else:
+                print(
+                    "Acknowledgement timing: unavailable"
+                )
             print(
                 "Final-text-to-speaker-start time:",
                 round(text_to_speaker_start, 2),

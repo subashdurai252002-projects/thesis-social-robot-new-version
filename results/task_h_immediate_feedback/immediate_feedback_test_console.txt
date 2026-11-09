@@ -1,0 +1,168 @@
+Loading Faster-Whisper...
+Model ready.
+Loading barge-in detector...
+Loading shared DTLN-512 detector...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Loading shared openWakeWord V4...
+Loading shared Faster-Whisper small.en...
+Shared barge-in detector ready.
+Shared barge-in detector ready.
+OpenAI API selected. Internet connection required.
+
+Live-streaming conversation started.
+Say 'goodbye', 'stop conversation', 'exit', or 'quit' to stop.
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 65.7
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: What is the capital of
+Confirmed text: [none]
+Temporary text: what is the capital of
+Partial inference time: 0.77 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: What is the capital of Germany?
+Final inference time: 0.46 seconds
+Utterance duration: 2.25 seconds
+Speech-start-to-final-text time: 3.59 seconds
+Speech-end-to-final-text latency: 1.34 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (6 words; simple request with 6 words)
+OpenAI reply: Berlin is the capital of Germany.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 3.34 seconds
+Piper synthesis time: 1.55 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.34 seconds
+Acknowledgement playback duration: 1.24 seconds
+Final-text-to-speaker-start time: 4.94 seconds
+Speech-end-to-speaker-start latency: 6.28 seconds
+Playback duration: 3.15 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 58.8
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: Explain why Berlin is here.
+Confirmed text: [none]
+Temporary text: explain why berlin is here
+Partial inference time: 0.45 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Explain why Berlin is important.
+Final inference time: 0.51 seconds
+Utterance duration: 2.13 seconds
+Speech-start-to-final-text time: 3.52 seconds
+Speech-end-to-final-text latency: 1.39 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6.1-terra (5 words; complexity keyword: explain, why)
+OpenAI reply: Berlin is important as Germany’s capital and a major center of government, culture, history, and business.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.99 seconds
+Piper synthesis time: 1.63 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.39 seconds
+Acknowledgement playback duration: 0.9 seconds
+Final-text-to-speaker-start time: 3.63 seconds
+Speech-end-to-speaker-start latency: 5.02 seconds
+Playback duration: 7.87 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 85.0
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+
+[LIVE UPDATE: 2.0 s audio]
+Full hypothesis: What city did we discuss?
+Confirmed text: [none]
+Temporary text: what city did we discuss
+Partial inference time: 0.45 seconds
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: What city did we discuss?
+Final inference time: 0.46 seconds
+Utterance duration: 1.5 seconds
+Speech-start-to-final-text time: 2.97 seconds
+Speech-end-to-final-text latency: 1.47 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Playing acknowledgement...
+Generating OpenAI reply...
+LLM route: gpt-6-luna (5 words; simple request with 5 words)
+OpenAI reply: We discussed Berlin.
+Generating speech with Piper...
+Playing generated speech...
+Preparing live barge-in monitoring...
+Piper playback started with barge-in monitoring.
+Barge-in interrupted playback: False
+
+OpenAI response time: 1.88 seconds
+Piper synthesis time: 1.55 seconds
+Final-text-to-acknowledgement-start time: 0.0 seconds
+Speech-end-to-acknowledgement-start latency: 1.47 seconds
+Acknowledgement playback duration: 0.91 seconds
+Final-text-to-speaker-start time: 3.43 seconds
+Speech-end-to-speaker-start latency: 4.9 seconds
+Playback duration: 2.62 seconds
+
+Robot reply finished normally.
+Listening for the next turn...
+
+----------------------------------------
+Stay quiet for one second.
+Recording raw data 'stdin' : Signed 16 bit Little Endian, Rate 16000 Hz, Channels 6
+Background level: 85.6
+Speech threshold: 300.0
+SPEAK NOW
+Speech detected.
+Speech ended.
+Aborted by signal Terminated...
+
+[FINAL TRANSCRIPTION]
+Final text: Good bye.
+Final inference time: 0.43 seconds
+Utterance duration: 0.88 seconds
+Speech-start-to-final-text time: 2.18 seconds
+Speech-end-to-final-text latency: 1.31 seconds
+Saved audio: /home/subash/thesis social robot new version/runtime_audio/live_conversation_latest.wav
+Exit command detected.
+Conversation ended.
