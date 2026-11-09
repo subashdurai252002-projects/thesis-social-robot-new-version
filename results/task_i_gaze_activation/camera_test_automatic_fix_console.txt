@@ -1,0 +1,11 @@
+Camera index: 0
+Requested: 640x480 at 30 FPS
+Dynamic frame-rate reduction disabled.
+Actual: 640x480
+Camera-reported FPS: 30.00
+Camera test started.
+Press q or Esc in the video window to stop.
+QSocketNotifier: Can only be used with threads started with QThread
+
+Camera test finished safely.
+Failed frames: 0

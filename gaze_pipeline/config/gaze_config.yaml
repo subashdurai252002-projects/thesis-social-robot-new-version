@@ -1,0 +1,11 @@
+
+camera:
+  index: 0
+  requested_width: 640
+  requested_height: 480
+  requested_fps: 30
+  disable_dynamic_framerate: true
+
+runtime:
+  device: auto
+  display_video: true

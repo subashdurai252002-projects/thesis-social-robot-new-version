@@ -1,0 +1,11 @@
+Camera index: 0
+Requested: 640x480 at 30 FPS
+[ WARN:0@3.537] global ./modules/videoio/src/cap_gstreamer.cpp (1405) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+Actual: 640x480
+Camera-reported FPS: 30.00
+Camera test started.
+Press q or Esc in the video window to stop.
+QSocketNotifier: Can only be used with threads started with QThread
+
+Camera test finished safely.
+Failed frames: 0

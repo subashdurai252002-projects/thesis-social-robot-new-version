@@ -1,0 +1,15 @@
+
+# Laptop gaze-pipeline dependencies
+# Install only after the versions and compatibility have been verified.
+
+opencv-python
+numpy
+PyYAML
+torch
+torchvision
+ultralytics
+
+# Later stages require packages installed from their official repositories:
+# RetinaFace implementation: elliottzheng/face-detection
+# L2CS-Net: Ahmednull/L2CS-Net
+# SAM2: facebookresearch/sam2
