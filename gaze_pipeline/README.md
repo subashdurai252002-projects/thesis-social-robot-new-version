@@ -9,18 +9,28 @@ Detect sustained intentional gaze and use it to activate the robot's conversatio
 
 Camera
 → YOLO person detection
-→ SAM2 person tracking
+→ person tracking
 → face detection
 → L2CS gaze estimation
 → calibration
 → sustained-gaze trigger
 → conversation activation
 
+The laptop uses YOLOv8n with ByteTrack because controlled SAM2 CPU propagation made the laptop unresponsive. The five-model SAM2 comparison is retained as a Jetson GPU laboratory task.
+
+## Directory structure
+
+- `runtime/`: components intended for the final live robot pipeline.
+- `experiments/`: controlled tests, benchmarks, and diagnostics.
+- `config/`: camera, detector, tracker, and later gaze settings.
+- `models/`: local model checkpoints that are not committed by default.
+- `external/`: third-party source code used for reproducible experiments.
+
 ## Development order
 
 1. Test webcam capture.
 2. Add person detection.
-3. Add person tracking.
+3. Add and validate person tracking.
 4. Add face detection.
 5. Add gaze estimation.
 6. Calibrate the gaze target.
@@ -30,8 +40,8 @@ Camera
 
 ## Platform plan
 
-- Laptop: initial CPU implementation and evaluation.
-- Jetson: later CUDA/GPU implementation and robot integration.
+- Laptop: YOLOv8n and ByteTrack CPU implementation and evaluation.
+- Jetson: repeat benchmarks, compare SAM2 models on GPU, and integrate with the robot.
 
 ## Reference
 

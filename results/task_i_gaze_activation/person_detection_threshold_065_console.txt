@@ -1,0 +1,72 @@
+Loading YOLOv8n...
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Device: cpu
+Confidence threshold: 0.65
+YOLO image size: 640
+YOLOv8n loaded successfully in 27.54 ms.
+Warming up YOLO with a blank image...
+YOLO warm-up completed in 985.99 ms.
+Dynamic frame-rate reduction disabled.
+Camera: 640x480
+Person detection started.
+Press q or Esc in the video window to stop.
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Multiple-person detection on frame 334
+  Detection 1: confidence=0.861, box=[108, 141, 573, 479]
+  Detection 2: confidence=0.745, box=[408, 81, 639, 478]
+Multiple-person detection on frame 387
+  Detection 1: confidence=0.873, box=[110, 145, 632, 479]
+  Detection 2: confidence=0.652, box=[403, 40, 639, 479]
+Multiple-person detection on frame 770
+  Detection 1: confidence=0.770, box=[109, 155, 621, 479]
+  Detection 2: confidence=0.682, box=[323, 0, 610, 477]
+Multiple-person detection on frame 774
+  Detection 1: confidence=0.715, box=[111, 154, 584, 479]
+  Detection 2: confidence=0.661, box=[289, 0, 589, 478]
+Multiple-person detection on frame 776
+  Detection 1: confidence=0.711, box=[263, 0, 585, 479]
+  Detection 2: confidence=0.667, box=[110, 155, 577, 479]
+Multiple-person detection on frame 795
+  Detection 1: confidence=0.806, box=[111, 155, 619, 479]
+  Detection 2: confidence=0.673, box=[330, 0, 614, 473]
+Multiple-person detection on frame 796
+  Detection 1: confidence=0.873, box=[102, 152, 616, 479]
+  Detection 2: confidence=0.664, box=[331, 0, 619, 471]
+Multiple-person detection on frame 797
+  Detection 1: confidence=0.897, box=[112, 153, 632, 479]
+  Detection 2: confidence=0.735, box=[335, 0, 631, 470]
+Multiple-person detection on frame 798
+  Detection 1: confidence=0.895, box=[106, 154, 637, 479]
+  Detection 2: confidence=0.663, box=[332, 0, 633, 464]
+Multiple-person detection on frame 880
+  Detection 1: confidence=0.850, box=[106, 154, 619, 479]
+  Detection 2: confidence=0.725, box=[309, 0, 621, 478]
+Multiple-person detection on frame 881
+  Detection 1: confidence=0.861, box=[105, 154, 615, 479]
+  Detection 2: confidence=0.691, box=[291, 0, 616, 477]
+Multiple-person detection on frame 882
+  Detection 1: confidence=0.840, box=[102, 154, 617, 479]
+  Detection 2: confidence=0.716, box=[280, 0, 613, 479]
+Multiple-person detection on frame 883
+  Detection 1: confidence=0.790, box=[105, 155, 605, 479]
+  Detection 2: confidence=0.765, box=[276, 0, 604, 478]
+
+Person-detection test finished safely.
+Processed frames: 1719
+Frames containing people: 1223
+Maximum simultaneous people: 2
+Frames reporting multiple people: 13
+Failed camera frames: 0
+First YOLO processing time: 49.33 ms
+Average later YOLO processing time: 38.87 ms
+Average complete detection-loop FPS: 22.21

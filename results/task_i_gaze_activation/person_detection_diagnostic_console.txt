@@ -1,0 +1,39 @@
+Loading YOLOv8n...
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Device: cpu
+Confidence threshold: 0.5
+YOLO image size: 640
+YOLOv8n loaded successfully in 289.76 ms.
+Warming up YOLO with a blank image...
+YOLO warm-up completed in 5866.28 ms.
+Dynamic frame-rate reduction disabled.
+Camera: 640x480
+Person detection started.
+Press q or Esc in the video window to stop.
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Multiple-person detection on frame 646
+  Detection 1: confidence=0.866, box=[160, 172, 606, 479]
+  Detection 2: confidence=0.510, box=[413, 151, 639, 479]
+Multiple-person detection on frame 992
+  Detection 1: confidence=0.826, box=[373, 74, 639, 479]
+  Detection 2: confidence=0.617, box=[444, 64, 556, 165]
+
+Person-detection test finished safely.
+Processed frames: 1761
+Frames containing people: 1378
+Maximum simultaneous people: 2
+Frames reporting multiple people: 2
+Failed camera frames: 0
+First YOLO processing time: 50.89 ms
+Average later YOLO processing time: 39.04 ms
+Average complete detection-loop FPS: 22.02

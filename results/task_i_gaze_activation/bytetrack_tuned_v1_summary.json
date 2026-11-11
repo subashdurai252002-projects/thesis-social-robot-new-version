@@ -1,0 +1,134 @@
+{
+  "purpose": "YOLOv8n plus ByteTrack laptop tuned_v1 evaluation",
+  "run_name": "tuned_v1",
+  "nms_iou": 0.45,
+  "ultralytics_version": "8.4.208",
+  "model": "yolov8n.pt",
+  "tracker_configuration": "bytetrack_tuned_v1.yaml",
+  "device": "cpu",
+  "video_frames": 2370,
+  "video_fps": 30.0,
+  "detection_confidence": 0.1,
+  "image_size": 640,
+  "model_load_seconds": 0.06532748599965998,
+  "warmup_seconds": 0.9063586130005206,
+  "benchmark_seconds": 94.76970042999983,
+  "effective_fps": 25.007992947604215,
+  "mean_processing_seconds": 0.03976757417931597,
+  "mean_preprocess_ms": 0.8143401805981842,
+  "mean_inference_ms": 36.19447929914993,
+  "mean_postprocess_ms": 0.751813755689867,
+  "initial_rss_mib": 267.20703125,
+  "peak_rss_mib": 466.44140625,
+  "process_cpu_seconds": 662.6600000000001,
+  "average_process_cpu_percent": 699.2319243316207,
+  "maximum_simultaneous_tracks": 2,
+  "track_id_switches": 0,
+  "action_summaries": {
+    "Empty camera view": {
+      "frames": 278,
+      "tracked_frames": 0,
+      "no_track_frames": 278,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.0,
+      "unique_track_ids": [],
+      "dominant_track_id": null,
+      "mean_processing_seconds": 0.033482041697824434,
+      "mean_inference_ms": 30.64481180210429
+    },
+    "Sit normally": {
+      "frames": 299,
+      "tracked_frames": 262,
+      "no_track_frames": 37,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.8762541806020067,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.03556688747491982,
+      "mean_inference_ms": 32.13116220737893
+    },
+    "Move left and right repeatedly": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 0,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.04028153310697162,
+      "mean_inference_ms": 36.521754989969416
+    },
+    "Move hand quickly several times": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 27,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        1,
+        3,
+        4
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.04378522829766282,
+      "mean_inference_ms": 39.58156801672581
+    },
+    "Cover and uncover face repeatedly": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 35,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        1,
+        3
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.04251952220733816,
+      "mean_inference_ms": 38.46392976586542
+    },
+    "Move closer and farther repeatedly": {
+      "frames": 298,
+      "tracked_frames": 298,
+      "no_track_frames": 0,
+      "multiple_track_frames": 0,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.04183964646309633,
+      "mean_inference_ms": 38.00094085908612
+    },
+    "Partially leave and return": {
+      "frames": 299,
+      "tracked_frames": 179,
+      "no_track_frames": 120,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.5986622073578596,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.04043333907357374,
+      "mean_inference_ms": 37.106563016703966
+    },
+    "Completely leave camera view": {
+      "frames": 299,
+      "tracked_frames": 115,
+      "no_track_frames": 184,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.38461538461538464,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.03979786631773101,
+      "mean_inference_ms": 36.72136943477013
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "purpose": "Common YOLO person-box prompt used for every SAM2 model benchmark",
+  "target_time_seconds": 15.0,
+  "timeline_elapsed_seconds": 14.998877,
+  "timeline_action": "Sit normally",
+  "timeline_frame_number": 428,
+  "zero_based_frame_index": 427,
+  "frame_filename": "000427.jpg",
+  "frame_sha256": "b40f08aaa7e0156e55bf070711c4588f147f8f716f02817a512d37af0fef067f",
+  "frame_width": 640,
+  "frame_height": 480,
+  "yolo_model_filename": "yolov8n.pt",
+  "yolo_model_sha256": "31e20dde3def09e2cf938c7be6fe23d9150bbbe503982af13345706515f2ef95",
+  "ultralytics_version": "8.4.208",
+  "device": "cpu",
+  "confidence_threshold": 0.5,
+  "image_size": 640,
+  "person_class_id": 0,
+  "model_load_ms": 117.50385299819754,
+  "warmup_ms": 2643.5609509935603,
+  "inference_ms": 395.3872860001866,
+  "raw_detection_count": 1,
+  "raw_detections": [
+    {
+      "confidence": 0.9218025803565979,
+      "box_xyxy": [
+        152,
+        150,
+        555,
+        479
+      ]
+    }
+  ],
+  "selected_detection": {
+    "confidence": 0.9218025803565979,
+    "box_xyxy": [
+      152,
+      150,
+      555,
+      479
+    ]
+  },
+  "selection_rule": "Highest-confidence person detection"
+}

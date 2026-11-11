@@ -1,0 +1,20 @@
+Loading YOLO model...
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Device: cpu
+Confidence threshold: 0.5
+Target time: 15.00 seconds
+Selected timeline time: 14.998877
+Selected action: Sit normally
+Selected frame index: 427
+Selected frame: 000427.jpg
+YOLO loaded in: 117.50 ms
+YOLO warm-up time: 2643.56 ms
+
+Common SAM2 prompt prepared.
+Raw person detections: 1
+Detection 1: confidence=0.922, box=[152, 150, 555, 479]
+Selected confidence: 0.922
+Selected box: [152, 150, 555, 479]
+Inference time: 395.39 ms
+Saved JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/sam2_common_prompt.json
+Saved preview: /home/subash/thesis social robot new version/results/task_i_gaze_activation/sam2_common_prompt_preview.jpg

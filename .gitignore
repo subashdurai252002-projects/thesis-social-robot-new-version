@@ -38,3 +38,15 @@ models/**/*.tflite
 
 # Runtime-generated files
 runtime_audio/
+# Gaze-pipeline local model weights
+gaze_pipeline/models/*.pt
+
+# External research repositories installed locally
+gaze_pipeline/external/
+
+# Large/private gaze benchmark recordings and extracted frames
+results/task_i_gaze_activation/sam2_benchmark_input.avi
+results/task_i_gaze_activation/sam2_benchmark_frames/
+
+# Generated incomplete SAM2 tracking workspace
+results/task_i_gaze_activation/sam2_tracking_benchmarks/

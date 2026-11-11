@@ -1,0 +1,39 @@
+Loading YOLOv8n...
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Tracker: /home/subash/thesis social robot new version/gaze_pipeline/config/bytetrack_tuned_v1.yaml
+Device: cpu
+Detection confidence: 0.1
+YOLO NMS IoU: 0.45
+Primary release frames: 120
+Model loaded in: 0.056 seconds
+Warming up YOLO...
+Warm-up completed in: 2.645 seconds
+Dynamic frame-rate reduction disabled.
+Camera: 640x480
+Live person tracking started.
+Press q or Esc to stop.
+Primary target selected: 1
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Primary target released: 1
+Primary target changed: 1 -> 13
+Primary target selected: 13
+
+Live person-tracking test finished.
+Processed frames: 2299
+Failed camera frames: 0
+Primary visible frames: 2137
+Frames with secondary tracks: 130
+Maximum raw tracks: 3
+Primary selection events: 2
+Primary release events: 1
+Average tracking time: 41.24 ms

@@ -1,0 +1,67 @@
+SAM2 model-load validation
+SAM2 source: /home/subash/thesis social robot new version/gaze_pipeline/external/sam2/sam2/__init__.py
+PyTorch: 2.15.0+cpu
+CUDA available: False
+Validation device: cpu
+
+[1/5] Validating: sam2_hiera_tiny
+Configuration: configs/sam2/sam2_hiera_t.yaml
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/sam2_hiera_tiny.pt
+Status: PASSED
+Load time: 9.25 seconds
+Parameters: 38,945,986
+RSS before: 231.8 MiB
+RSS after load: 535.1 MiB
+Measured RSS increase: 303.3 MiB
+RSS after release: 409.6 MiB
+
+[2/5] Validating: sam2.1_hiera_tiny
+Configuration: configs/sam2.1/sam2.1_hiera_t.yaml
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/sam2.1_hiera_tiny.pt
+Status: PASSED
+Load time: 4.19 seconds
+Parameters: 38,962,498
+RSS before: 409.6 MiB
+RSS after load: 453.8 MiB
+Measured RSS increase: 44.2 MiB
+RSS after release: 408.0 MiB
+
+[3/5] Validating: sam2.1_hiera_small
+Configuration: configs/sam2.1/sam2.1_hiera_s.yaml
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/sam2.1_hiera_small.pt
+Status: PASSED
+Load time: 2.59 seconds
+Parameters: 46,060,354
+RSS before: 408.0 MiB
+RSS after load: 474.7 MiB
+Measured RSS increase: 66.6 MiB
+RSS after release: 406.6 MiB
+
+[4/5] Validating: sam2.1_hiera_base_plus
+Configuration: configs/sam2.1/sam2.1_hiera_b+.yaml
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/sam2.1_hiera_base_plus.pt
+Status: PASSED
+Load time: 4.97 seconds
+Parameters: 80,850,178
+RSS before: 406.6 MiB
+RSS after load: 607.0 MiB
+Measured RSS increase: 200.4 MiB
+RSS after release: 406.8 MiB
+
+[5/5] Validating: sam2.1_hiera_large
+Configuration: configs/sam2.1/sam2.1_hiera_l.yaml
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/sam2.1_hiera_large.pt
+Status: PASSED
+Load time: 13.29 seconds
+Parameters: 224,446,642
+RSS before: 406.8 MiB
+RSS after load: 1159.1 MiB
+Measured RSS increase: 752.3 MiB
+RSS after release: 421.7 MiB
+
+Validation completed.
+Models tested: 5
+Passed: 5
+Failed: 0
+Saved JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/sam2_model_validation.json
+Saved CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/sam2_model_validation.csv

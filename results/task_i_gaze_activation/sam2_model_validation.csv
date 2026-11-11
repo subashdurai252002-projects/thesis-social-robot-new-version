@@ -1,0 +1,6 @@
+name,release,config,checkpoint,checkpoint_size_mib,status,load_time_seconds,parameter_count,rss_before_mib,rss_after_load_mib,rss_increase_mib,rss_after_release_mib,error
+sam2_hiera_tiny,SAM2,configs/sam2/sam2_hiera_t.yaml,sam2_hiera_tiny.pt,148.68359565734863,passed,9.246528231997218,38945986,231.82421875,535.08203125,303.2578125,409.5625,
+sam2.1_hiera_tiny,SAM2.1,configs/sam2.1/sam2.1_hiera_t.yaml,sam2.1_hiera_tiny.pt,148.7812671661377,passed,4.189308061002521,38962498,409.5625,453.80078125,44.23828125,408.02734375,
+sam2.1_hiera_small,SAM2.1,configs/sam2.1/sam2.1_hiera_s.yaml,sam2.1_hiera_small.pt,175.87307453155518,passed,2.5898294940052438,46060354,408.02734375,474.6640625,66.63671875,406.5546875,
+sam2.1_hiera_base_plus,SAM2.1,configs/sam2.1/sam2.1_hiera_b+.yaml,sam2.1_hiera_base_plus.pt,308.6154956817627,passed,4.968761800999346,80850178,406.5546875,606.9765625,200.421875,406.83203125,
+sam2.1_hiera_large,SAM2.1,configs/sam2.1/sam2.1_hiera_l.yaml,sam2.1_hiera_large.pt,856.4792737960815,passed,13.287045966993901,224446642,406.83203125,1159.08984375,752.2578125,421.72265625,

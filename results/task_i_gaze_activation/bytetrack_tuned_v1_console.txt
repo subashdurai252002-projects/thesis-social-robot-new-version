@@ -1,0 +1,32 @@
+YOLOv8n + ByteTrack benchmark: tuned_v1
+Ultralytics: 8.4.208
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Tracker: /home/subash/thesis social robot new version/gaze_pipeline/config/bytetrack_tuned_v1.yaml
+Device: cpu
+Detection confidence: 0.1
+YOLO NMS IoU: 0.45
+Image size: 640
+Video: 640x480 at 30.00 FPS
+Frames: 2370
+
+YOLO model loaded in: 0.065 seconds
+Warming up YOLO...
+Warm-up completed in: 0.906 seconds
+Starting ByteTrack benchmark...
+Processed frames: 300 / 2370 | tracks: 0 | RSS: 456.8 MiB
+Processed frames: 600 / 2370 | tracks: 1 | RSS: 454.5 MiB
+Processed frames: 900 / 2370 | tracks: 1 | RSS: 459.3 MiB
+Processed frames: 1200 / 2370 | tracks: 2 | RSS: 459.2 MiB
+Processed frames: 1500 / 2370 | tracks: 1 | RSS: 456.8 MiB
+Processed frames: 1800 / 2370 | tracks: 1 | RSS: 449.6 MiB
+Processed frames: 2100 / 2370 | tracks: 1 | RSS: 458.2 MiB
+
+ByteTrack benchmark completed.
+Frames processed: 2370
+Benchmark time: 94.77 seconds
+Effective FPS: 25.01
+Maximum simultaneous tracks: 2
+Track-ID switches: 0
+Peak RSS: 466.4 MiB
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/bytetrack_tuned_v1_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/bytetrack_tuned_v1_summary.json

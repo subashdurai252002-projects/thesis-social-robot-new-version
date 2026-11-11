@@ -9,3 +9,9 @@ camera:
 runtime:
   device: auto
   display_video: true
+
+person_detection:
+  model_path: models/yolov8n.pt
+  confidence_threshold: 0.50
+  image_size: 640
+  class_id: 0

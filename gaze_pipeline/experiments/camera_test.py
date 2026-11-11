@@ -8,8 +8,10 @@ import cv2
 import yaml
 
 
+PIPELINE_DIRECTORY = Path(__file__).resolve().parents[1]
+
 CONFIG_PATH = (
-    Path(__file__).resolve().parent
+    PIPELINE_DIRECTORY
     / "config"
     / "gaze_config.yaml"
 )

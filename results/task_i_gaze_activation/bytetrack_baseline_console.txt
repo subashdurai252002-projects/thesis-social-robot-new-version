@@ -1,0 +1,43 @@
+YOLOv8n + ByteTrack baseline benchmark
+Ultralytics: 8.4.208
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Tracker: /home/subash/thesis social robot new version/gaze_pipeline/config/bytetrack.yaml
+Device: cpu
+Detection confidence: 0.1
+Image size: 640
+Video: 640x480 at 30.00 FPS
+Frames: 2370
+
+YOLO model loaded in: 0.423 seconds
+Warming up YOLO...
+Warm-up completed in: 6.787 seconds
+Starting ByteTrack benchmark...
+[31m[1mrequirements:[0m Ultralytics requirement ['lap>=0.5.12'] not found, attempting AutoUpdate...
+Collecting lap>=0.5.12
+  Downloading lap-0.5.14-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.7 kB)
+Requirement already satisfied: numpy>=1.21.6 in ./.venv-gaze/lib/python3.12/site-packages (from lap>=0.5.12) (2.5.4)
+Downloading lap-0.5.14-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 433.9 kB/s  0:00:03
+Installing collected packages: lap
+Successfully installed lap-0.5.14
+
+[31m[1mrequirements:[0m AutoUpdate success ✅ 10.8s
+WARNING ⚠️ [31m[1mrequirements:[0m [1mRestart runtime or rerun command for updates to take effect[0m
+
+Processed frames: 300 / 2370 | tracks: 0 | RSS: 457.9 MiB
+Processed frames: 600 / 2370 | tracks: 1 | RSS: 458.7 MiB
+Processed frames: 900 / 2370 | tracks: 1 | RSS: 457.8 MiB
+Processed frames: 1200 / 2370 | tracks: 2 | RSS: 459.9 MiB
+Processed frames: 1500 / 2370 | tracks: 1 | RSS: 462.0 MiB
+Processed frames: 1800 / 2370 | tracks: 1 | RSS: 462.3 MiB
+Processed frames: 2100 / 2370 | tracks: 1 | RSS: 461.3 MiB
+
+ByteTrack benchmark completed.
+Frames processed: 2370
+Benchmark time: 102.06 seconds
+Effective FPS: 23.22
+Maximum simultaneous tracks: 3
+Track-ID switches: 6
+Peak RSS: 470.0 MiB
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/bytetrack_baseline_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/bytetrack_baseline_summary.json

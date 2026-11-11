@@ -1,0 +1,2371 @@
+frame_number,elapsed_seconds,planned_action
+1,0.000305,Empty camera view
+2,0.836445,Empty camera view
+3,0.843189,Empty camera view
+4,0.851477,Empty camera view
+5,0.857426,Empty camera view
+6,0.863034,Empty camera view
+7,0.914128,Empty camera view
+8,0.946748,Empty camera view
+9,0.978392,Empty camera view
+10,1.014022,Empty camera view
+11,1.041740,Empty camera view
+12,1.078005,Empty camera view
+13,1.114378,Empty camera view
+14,1.145819,Empty camera view
+15,1.182339,Empty camera view
+16,1.213809,Empty camera view
+17,1.246185,Empty camera view
+18,1.281821,Empty camera view
+19,1.314036,Empty camera view
+20,1.346442,Empty camera view
+21,1.382596,Empty camera view
+22,1.414640,Empty camera view
+23,1.446833,Empty camera view
+24,1.482869,Empty camera view
+25,1.515013,Empty camera view
+26,1.550937,Empty camera view
+27,1.582663,Empty camera view
+28,1.614589,Empty camera view
+29,1.650264,Empty camera view
+30,1.682931,Empty camera view
+31,1.714888,Empty camera view
+32,1.750952,Empty camera view
+33,1.782653,Empty camera view
+34,1.814748,Empty camera view
+35,1.850718,Empty camera view
+36,1.882326,Empty camera view
+37,1.918838,Empty camera view
+38,1.950769,Empty camera view
+39,1.987095,Empty camera view
+40,2.018933,Empty camera view
+41,2.050740,Empty camera view
+42,2.082881,Empty camera view
+43,2.118717,Empty camera view
+44,2.151055,Empty camera view
+45,2.183054,Empty camera view
+46,2.219132,Empty camera view
+47,2.251031,Empty camera view
+48,2.287154,Empty camera view
+49,2.318751,Empty camera view
+50,2.350334,Empty camera view
+51,2.386824,Empty camera view
+52,2.418725,Empty camera view
+53,2.450846,Empty camera view
+54,2.486942,Empty camera view
+55,2.518616,Empty camera view
+56,2.550526,Empty camera view
+57,2.586776,Empty camera view
+58,2.618943,Empty camera view
+59,2.654953,Empty camera view
+60,2.687022,Empty camera view
+61,2.719196,Empty camera view
+62,2.755088,Empty camera view
+63,2.786830,Empty camera view
+64,2.818399,Empty camera view
+65,2.854726,Empty camera view
+66,2.886656,Empty camera view
+67,2.918862,Empty camera view
+68,2.955273,Empty camera view
+69,2.986714,Empty camera view
+70,3.022615,Empty camera view
+71,3.054597,Empty camera view
+72,3.086720,Empty camera view
+73,3.122959,Empty camera view
+74,3.154752,Empty camera view
+75,3.186787,Empty camera view
+76,3.222438,Empty camera view
+77,3.254397,Empty camera view
+78,3.290834,Empty camera view
+79,3.322876,Empty camera view
+80,3.354748,Empty camera view
+81,3.391033,Empty camera view
+82,3.423038,Empty camera view
+83,3.454868,Empty camera view
+84,3.491023,Empty camera view
+85,3.522257,Empty camera view
+86,3.554647,Empty camera view
+87,3.590770,Empty camera view
+88,3.622707,Empty camera view
+89,3.658867,Empty camera view
+90,3.691020,Empty camera view
+91,3.722595,Empty camera view
+92,3.758588,Empty camera view
+93,3.790595,Empty camera view
+94,3.822437,Empty camera view
+95,3.858563,Empty camera view
+96,3.890556,Empty camera view
+97,3.923067,Empty camera view
+98,3.958719,Empty camera view
+99,3.990735,Empty camera view
+100,4.023350,Empty camera view
+101,4.058285,Empty camera view
+102,4.090829,Empty camera view
+103,4.126906,Empty camera view
+104,4.158936,Empty camera view
+105,4.191099,Empty camera view
+106,4.226837,Empty camera view
+107,4.258942,Empty camera view
+108,4.290858,Empty camera view
+109,4.326698,Empty camera view
+110,4.358406,Empty camera view
+111,4.394625,Empty camera view
+112,4.426619,Empty camera view
+113,4.458515,Empty camera view
+114,4.494429,Empty camera view
+115,4.526439,Empty camera view
+116,4.558218,Empty camera view
+117,4.593819,Empty camera view
+118,4.626420,Empty camera view
+119,4.658274,Empty camera view
+120,4.694164,Empty camera view
+121,4.725925,Empty camera view
+122,4.762644,Empty camera view
+123,4.794707,Empty camera view
+124,4.826577,Empty camera view
+125,4.862768,Empty camera view
+126,4.894752,Empty camera view
+127,4.926286,Empty camera view
+128,4.962519,Empty camera view
+129,4.994039,Empty camera view
+130,5.030674,Empty camera view
+131,5.062769,Empty camera view
+132,5.094493,Empty camera view
+133,5.130600,Empty camera view
+134,5.162776,Empty camera view
+135,5.194650,Empty camera view
+136,5.229898,Empty camera view
+137,5.262179,Empty camera view
+138,5.293999,Empty camera view
+139,5.330655,Empty camera view
+140,5.362581,Empty camera view
+141,5.398350,Empty camera view
+142,5.430085,Empty camera view
+143,5.462144,Empty camera view
+144,5.497764,Empty camera view
+145,5.529753,Empty camera view
+146,5.561832,Empty camera view
+147,5.598164,Empty camera view
+148,5.630602,Empty camera view
+149,5.662462,Empty camera view
+150,5.698209,Empty camera view
+151,5.729926,Empty camera view
+152,5.766424,Empty camera view
+153,5.798663,Empty camera view
+154,5.830428,Empty camera view
+155,5.866556,Empty camera view
+156,5.898555,Empty camera view
+157,5.930524,Empty camera view
+158,5.966202,Empty camera view
+159,5.998437,Empty camera view
+160,6.029801,Empty camera view
+161,6.066632,Empty camera view
+162,6.098770,Empty camera view
+163,6.134400,Empty camera view
+164,6.166887,Empty camera view
+165,6.198413,Empty camera view
+166,6.234639,Empty camera view
+167,6.266834,Empty camera view
+168,6.299074,Empty camera view
+169,6.334832,Empty camera view
+170,6.367039,Empty camera view
+171,6.397889,Empty camera view
+172,6.434735,Empty camera view
+173,6.466579,Empty camera view
+174,6.503044,Empty camera view
+175,6.534141,Empty camera view
+176,6.566707,Empty camera view
+177,6.602840,Empty camera view
+178,6.634584,Empty camera view
+179,6.666888,Empty camera view
+180,6.702457,Empty camera view
+181,6.734676,Empty camera view
+182,6.765961,Empty camera view
+183,6.802651,Empty camera view
+184,6.834317,Empty camera view
+185,6.870228,Empty camera view
+186,6.902274,Empty camera view
+187,6.934338,Empty camera view
+188,6.970767,Empty camera view
+189,7.002147,Empty camera view
+190,7.030740,Empty camera view
+191,7.070584,Empty camera view
+192,7.102764,Empty camera view
+193,7.138370,Empty camera view
+194,7.169742,Empty camera view
+195,7.202220,Empty camera view
+196,7.238819,Empty camera view
+197,7.270615,Empty camera view
+198,7.302396,Empty camera view
+199,7.338654,Empty camera view
+200,7.370504,Empty camera view
+201,7.402414,Empty camera view
+202,7.438574,Empty camera view
+203,7.470349,Empty camera view
+204,7.506756,Empty camera view
+205,7.538703,Empty camera view
+206,7.570682,Empty camera view
+207,7.606345,Empty camera view
+208,7.638268,Empty camera view
+209,7.670222,Empty camera view
+210,7.706421,Empty camera view
+211,7.738706,Empty camera view
+212,7.770594,Empty camera view
+213,7.806700,Empty camera view
+214,7.838545,Empty camera view
+215,7.874154,Empty camera view
+216,7.906299,Empty camera view
+217,7.938642,Empty camera view
+218,7.974688,Empty camera view
+219,8.006685,Empty camera view
+220,8.038745,Empty camera view
+221,8.074798,Empty camera view
+222,8.106287,Empty camera view
+223,8.138811,Empty camera view
+224,8.174540,Empty camera view
+225,8.206039,Empty camera view
+226,8.242257,Empty camera view
+227,8.274647,Empty camera view
+228,8.306614,Empty camera view
+229,8.342673,Empty camera view
+230,8.374234,Empty camera view
+231,8.406199,Empty camera view
+232,8.442683,Empty camera view
+233,8.474397,Empty camera view
+234,8.506036,Empty camera view
+235,8.542236,Empty camera view
+236,8.575015,Empty camera view
+237,8.610746,Empty camera view
+238,8.642515,Empty camera view
+239,8.674526,Empty camera view
+240,8.710432,Empty camera view
+241,8.742578,Empty camera view
+242,8.774300,Empty camera view
+243,8.810939,Empty camera view
+244,8.842167,Empty camera view
+245,8.874102,Empty camera view
+246,8.910133,Empty camera view
+247,8.942112,Empty camera view
+248,8.978414,Empty camera view
+249,9.010375,Empty camera view
+250,9.041670,Empty camera view
+251,9.078535,Empty camera view
+252,9.107462,Empty camera view
+253,9.142143,Empty camera view
+254,9.179103,Empty camera view
+255,9.210756,Empty camera view
+256,9.246460,Empty camera view
+257,9.278699,Empty camera view
+258,9.310547,Empty camera view
+259,9.346584,Empty camera view
+260,9.378559,Empty camera view
+261,9.410168,Empty camera view
+262,9.446815,Empty camera view
+263,9.478487,Empty camera view
+264,9.510577,Empty camera view
+265,9.546809,Empty camera view
+266,9.578589,Empty camera view
+267,9.614000,Empty camera view
+268,9.646430,Empty camera view
+269,9.678585,Empty camera view
+270,9.714779,Empty camera view
+271,9.746162,Empty camera view
+272,9.778910,Empty camera view
+273,9.814160,Empty camera view
+274,9.846462,Empty camera view
+275,9.878212,Empty camera view
+276,9.914636,Empty camera view
+277,9.946777,Empty camera view
+278,9.982782,Empty camera view
+279,10.014709,Sit normally
+280,10.047350,Sit normally
+281,10.081945,Sit normally
+282,10.114169,Sit normally
+283,10.145948,Sit normally
+284,10.182363,Sit normally
+285,10.213868,Sit normally
+286,10.246015,Sit normally
+287,10.282296,Sit normally
+288,10.314395,Sit normally
+289,10.350625,Sit normally
+290,10.382139,Sit normally
+291,10.414218,Sit normally
+292,10.450248,Sit normally
+293,10.482608,Sit normally
+294,10.514535,Sit normally
+295,10.550161,Sit normally
+296,10.581980,Sit normally
+297,10.614026,Sit normally
+298,10.649988,Sit normally
+299,10.682047,Sit normally
+300,10.718563,Sit normally
+301,10.750510,Sit normally
+302,10.782542,Sit normally
+303,10.818705,Sit normally
+304,10.850639,Sit normally
+305,10.882098,Sit normally
+306,10.918156,Sit normally
+307,10.950637,Sit normally
+308,10.986546,Sit normally
+309,11.018470,Sit normally
+310,11.050693,Sit normally
+311,11.086691,Sit normally
+312,11.118346,Sit normally
+313,11.150434,Sit normally
+314,11.186615,Sit normally
+315,11.218847,Sit normally
+316,11.250588,Sit normally
+317,11.286461,Sit normally
+318,11.318554,Sit normally
+319,11.354666,Sit normally
+320,11.386882,Sit normally
+321,11.418687,Sit normally
+322,11.454711,Sit normally
+323,11.486572,Sit normally
+324,11.518684,Sit normally
+325,11.555030,Sit normally
+326,11.586752,Sit normally
+327,11.618629,Sit normally
+328,11.654840,Sit normally
+329,11.686615,Sit normally
+330,11.722677,Sit normally
+331,11.754717,Sit normally
+332,11.786947,Sit normally
+333,11.822701,Sit normally
+334,11.854036,Sit normally
+335,11.887011,Sit normally
+336,11.922716,Sit normally
+337,11.954406,Sit normally
+338,11.986387,Sit normally
+339,12.022510,Sit normally
+340,12.054951,Sit normally
+341,12.091128,Sit normally
+342,12.123021,Sit normally
+343,12.154767,Sit normally
+344,12.191125,Sit normally
+345,12.222667,Sit normally
+346,12.255170,Sit normally
+347,12.290812,Sit normally
+348,12.322559,Sit normally
+349,12.354409,Sit normally
+350,12.390887,Sit normally
+351,12.423106,Sit normally
+352,12.459126,Sit normally
+353,12.490856,Sit normally
+354,12.522784,Sit normally
+355,12.558434,Sit normally
+356,12.590895,Sit normally
+357,12.622788,Sit normally
+358,12.658635,Sit normally
+359,12.690893,Sit normally
+360,12.722745,Sit normally
+361,12.758673,Sit normally
+362,12.790439,Sit normally
+363,12.827058,Sit normally
+364,12.858524,Sit normally
+365,12.890392,Sit normally
+366,12.927133,Sit normally
+367,12.959123,Sit normally
+368,12.991003,Sit normally
+369,13.027508,Sit normally
+370,13.058825,Sit normally
+371,13.095021,Sit normally
+372,13.126841,Sit normally
+373,13.159022,Sit normally
+374,13.195185,Sit normally
+375,13.226614,Sit normally
+376,13.259017,Sit normally
+377,13.295104,Sit normally
+378,13.327138,Sit normally
+379,13.359120,Sit normally
+380,13.395144,Sit normally
+381,13.427130,Sit normally
+382,13.463292,Sit normally
+383,13.494714,Sit normally
+384,13.526763,Sit normally
+385,13.563409,Sit normally
+386,13.595248,Sit normally
+387,13.627180,Sit normally
+388,13.663506,Sit normally
+389,13.694988,Sit normally
+390,13.727628,Sit normally
+391,13.762702,Sit normally
+392,13.794815,Sit normally
+393,13.831303,Sit normally
+394,13.863122,Sit normally
+395,13.895000,Sit normally
+396,13.930756,Sit normally
+397,13.962843,Sit normally
+398,13.994804,Sit normally
+399,14.031222,Sit normally
+400,14.062378,Sit normally
+401,14.095083,Sit normally
+402,14.131356,Sit normally
+403,14.163544,Sit normally
+404,14.198894,Sit normally
+405,14.230666,Sit normally
+406,14.262800,Sit normally
+407,14.298758,Sit normally
+408,14.330927,Sit normally
+409,14.362828,Sit normally
+410,14.399139,Sit normally
+411,14.430856,Sit normally
+412,14.462535,Sit normally
+413,14.498555,Sit normally
+414,14.530843,Sit normally
+415,14.567180,Sit normally
+416,14.599109,Sit normally
+417,14.630555,Sit normally
+418,14.666927,Sit normally
+419,14.698585,Sit normally
+420,14.731221,Sit normally
+421,14.767137,Sit normally
+422,14.799383,Sit normally
+423,14.830862,Sit normally
+424,14.866799,Sit normally
+425,14.898891,Sit normally
+426,14.934389,Sit normally
+427,14.966777,Sit normally
+428,14.998877,Sit normally
+429,15.034540,Sit normally
+430,15.066949,Sit normally
+431,15.098908,Sit normally
+432,15.134404,Sit normally
+433,15.166632,Sit normally
+434,15.203154,Sit normally
+435,15.234924,Sit normally
+436,15.266937,Sit normally
+437,15.302986,Sit normally
+438,15.334858,Sit normally
+439,15.366879,Sit normally
+440,15.402517,Sit normally
+441,15.434578,Sit normally
+442,15.466840,Sit normally
+443,15.502638,Sit normally
+444,15.534613,Sit normally
+445,15.571144,Sit normally
+446,15.603520,Sit normally
+447,15.635125,Sit normally
+448,15.671047,Sit normally
+449,15.702941,Sit normally
+450,15.734833,Sit normally
+451,15.770934,Sit normally
+452,15.803316,Sit normally
+453,15.834857,Sit normally
+454,15.871540,Sit normally
+455,15.903705,Sit normally
+456,15.939096,Sit normally
+457,15.970944,Sit normally
+458,16.002670,Sit normally
+459,16.039028,Sit normally
+460,16.071041,Sit normally
+461,16.102566,Sit normally
+462,16.138962,Sit normally
+463,16.171021,Sit normally
+464,16.202774,Sit normally
+465,16.239240,Sit normally
+466,16.271128,Sit normally
+467,16.307136,Sit normally
+468,16.338862,Sit normally
+469,16.371221,Sit normally
+470,16.408764,Sit normally
+471,16.438563,Sit normally
+472,16.470567,Sit normally
+473,16.507029,Sit normally
+474,16.538864,Sit normally
+475,16.570635,Sit normally
+476,16.607330,Sit normally
+477,16.638779,Sit normally
+478,16.674932,Sit normally
+479,16.706589,Sit normally
+480,16.739007,Sit normally
+481,16.775199,Sit normally
+482,16.806710,Sit normally
+483,16.838892,Sit normally
+484,16.875418,Sit normally
+485,16.907300,Sit normally
+486,16.943032,Sit normally
+487,16.974859,Sit normally
+488,17.006780,Sit normally
+489,17.043404,Sit normally
+490,17.074842,Sit normally
+491,17.107375,Sit normally
+492,17.142624,Sit normally
+493,17.174700,Sit normally
+494,17.205964,Sit normally
+495,17.242500,Sit normally
+496,17.275048,Sit normally
+497,17.311041,Sit normally
+498,17.343284,Sit normally
+499,17.375104,Sit normally
+500,17.411034,Sit normally
+501,17.442746,Sit normally
+502,17.474744,Sit normally
+503,17.511140,Sit normally
+504,17.542835,Sit normally
+505,17.574707,Sit normally
+506,17.611313,Sit normally
+507,17.642668,Sit normally
+508,17.678935,Sit normally
+509,17.711258,Sit normally
+510,17.742956,Sit normally
+511,17.779167,Sit normally
+512,17.811051,Sit normally
+513,17.842665,Sit normally
+514,17.878871,Sit normally
+515,17.910726,Sit normally
+516,17.942318,Sit normally
+517,17.978792,Sit normally
+518,18.011019,Sit normally
+519,18.047581,Sit normally
+520,18.079015,Sit normally
+521,18.110841,Sit normally
+522,18.146875,Sit normally
+523,18.178810,Sit normally
+524,18.210837,Sit normally
+525,18.247045,Sit normally
+526,18.278940,Sit normally
+527,18.310889,Sit normally
+528,18.347178,Sit normally
+529,18.378874,Sit normally
+530,18.415249,Sit normally
+531,18.446705,Sit normally
+532,18.479000,Sit normally
+533,18.515008,Sit normally
+534,18.546999,Sit normally
+535,18.579085,Sit normally
+536,18.615140,Sit normally
+537,18.646464,Sit normally
+538,18.678414,Sit normally
+539,18.714729,Sit normally
+540,18.746433,Sit normally
+541,18.782644,Sit normally
+542,18.814676,Sit normally
+543,18.846354,Sit normally
+544,18.883025,Sit normally
+545,18.914551,Sit normally
+546,18.946705,Sit normally
+547,18.983091,Sit normally
+548,19.014660,Sit normally
+549,19.050288,Sit normally
+550,19.082892,Sit normally
+551,19.114658,Sit normally
+552,19.150762,Sit normally
+553,19.182449,Sit normally
+554,19.214762,Sit normally
+555,19.250442,Sit normally
+556,19.282634,Sit normally
+557,19.314567,Sit normally
+558,19.350361,Sit normally
+559,19.382397,Sit normally
+560,19.418821,Sit normally
+561,19.450591,Sit normally
+562,19.482684,Sit normally
+563,19.519099,Sit normally
+564,19.551076,Sit normally
+565,19.582458,Sit normally
+566,19.622635,Sit normally
+567,19.650661,Sit normally
+568,19.682817,Sit normally
+569,19.718642,Sit normally
+570,19.750748,Sit normally
+571,19.786863,Sit normally
+572,19.818797,Sit normally
+573,19.850694,Sit normally
+574,19.886792,Sit normally
+575,19.918793,Sit normally
+576,19.950875,Sit normally
+577,19.986952,Sit normally
+578,20.019062,Move left and right repeatedly
+579,20.051238,Move left and right repeatedly
+580,20.086748,Move left and right repeatedly
+581,20.118933,Move left and right repeatedly
+582,20.155126,Move left and right repeatedly
+583,20.187190,Move left and right repeatedly
+584,20.219514,Move left and right repeatedly
+585,20.255419,Move left and right repeatedly
+586,20.287134,Move left and right repeatedly
+587,20.319137,Move left and right repeatedly
+588,20.355126,Move left and right repeatedly
+589,20.386656,Move left and right repeatedly
+590,20.419032,Move left and right repeatedly
+591,20.454547,Move left and right repeatedly
+592,20.487042,Move left and right repeatedly
+593,20.522709,Move left and right repeatedly
+594,20.554945,Move left and right repeatedly
+595,20.586976,Move left and right repeatedly
+596,20.623012,Move left and right repeatedly
+597,20.655052,Move left and right repeatedly
+598,20.686867,Move left and right repeatedly
+599,20.723204,Move left and right repeatedly
+600,20.755148,Move left and right repeatedly
+601,20.787309,Move left and right repeatedly
+602,20.822923,Move left and right repeatedly
+603,20.855191,Move left and right repeatedly
+604,20.891319,Move left and right repeatedly
+605,20.923656,Move left and right repeatedly
+606,20.955265,Move left and right repeatedly
+607,20.991425,Move left and right repeatedly
+608,21.023286,Move left and right repeatedly
+609,21.054871,Move left and right repeatedly
+610,21.091097,Move left and right repeatedly
+611,21.122901,Move left and right repeatedly
+612,21.159340,Move left and right repeatedly
+613,21.191217,Move left and right repeatedly
+614,21.222859,Move left and right repeatedly
+615,21.258224,Move left and right repeatedly
+616,21.290464,Move left and right repeatedly
+617,21.322870,Move left and right repeatedly
+618,21.358828,Move left and right repeatedly
+619,21.390482,Move left and right repeatedly
+620,21.422651,Move left and right repeatedly
+621,21.458565,Move left and right repeatedly
+622,21.490313,Move left and right repeatedly
+623,21.526332,Move left and right repeatedly
+624,21.558486,Move left and right repeatedly
+625,21.590140,Move left and right repeatedly
+626,21.626819,Move left and right repeatedly
+627,21.658658,Move left and right repeatedly
+628,21.690084,Move left and right repeatedly
+629,21.726446,Move left and right repeatedly
+630,21.758412,Move left and right repeatedly
+631,21.790672,Move left and right repeatedly
+632,21.826146,Move left and right repeatedly
+633,21.857741,Move left and right repeatedly
+634,21.894220,Move left and right repeatedly
+635,21.926143,Move left and right repeatedly
+636,21.958191,Move left and right repeatedly
+637,21.994493,Move left and right repeatedly
+638,22.026137,Move left and right repeatedly
+639,22.058396,Move left and right repeatedly
+640,22.094298,Move left and right repeatedly
+641,22.126095,Move left and right repeatedly
+642,22.158014,Move left and right repeatedly
+643,22.194734,Move left and right repeatedly
+644,22.227050,Move left and right repeatedly
+645,22.262390,Move left and right repeatedly
+646,22.294360,Move left and right repeatedly
+647,22.326201,Move left and right repeatedly
+648,22.363006,Move left and right repeatedly
+649,22.394799,Move left and right repeatedly
+650,22.426578,Move left and right repeatedly
+651,22.462322,Move left and right repeatedly
+652,22.495559,Move left and right repeatedly
+653,22.526162,Move left and right repeatedly
+654,22.562902,Move left and right repeatedly
+655,22.594176,Move left and right repeatedly
+656,22.631272,Move left and right repeatedly
+657,22.662968,Move left and right repeatedly
+658,22.694945,Move left and right repeatedly
+659,22.730876,Move left and right repeatedly
+660,22.763190,Move left and right repeatedly
+661,22.794797,Move left and right repeatedly
+662,22.830951,Move left and right repeatedly
+663,22.862792,Move left and right repeatedly
+664,22.894763,Move left and right repeatedly
+665,22.930577,Move left and right repeatedly
+666,22.963022,Move left and right repeatedly
+667,22.998778,Move left and right repeatedly
+668,23.031005,Move left and right repeatedly
+669,23.062335,Move left and right repeatedly
+670,23.098864,Move left and right repeatedly
+671,23.130905,Move left and right repeatedly
+672,23.162475,Move left and right repeatedly
+673,23.199080,Move left and right repeatedly
+674,23.230439,Move left and right repeatedly
+675,23.266947,Move left and right repeatedly
+676,23.298349,Move left and right repeatedly
+677,23.330533,Move left and right repeatedly
+678,23.366731,Move left and right repeatedly
+679,23.398621,Move left and right repeatedly
+680,23.430942,Move left and right repeatedly
+681,23.466594,Move left and right repeatedly
+682,23.498538,Move left and right repeatedly
+683,23.530480,Move left and right repeatedly
+684,23.566740,Move left and right repeatedly
+685,23.598629,Move left and right repeatedly
+686,23.634620,Move left and right repeatedly
+687,23.666425,Move left and right repeatedly
+688,23.698670,Move left and right repeatedly
+689,23.734629,Move left and right repeatedly
+690,23.766545,Move left and right repeatedly
+691,23.798545,Move left and right repeatedly
+692,23.835009,Move left and right repeatedly
+693,23.866869,Move left and right repeatedly
+694,23.898735,Move left and right repeatedly
+695,23.934779,Move left and right repeatedly
+696,23.966718,Move left and right repeatedly
+697,24.003185,Move left and right repeatedly
+698,24.034630,Move left and right repeatedly
+699,24.066240,Move left and right repeatedly
+700,24.102307,Move left and right repeatedly
+701,24.134214,Move left and right repeatedly
+702,24.166283,Move left and right repeatedly
+703,24.202756,Move left and right repeatedly
+704,24.234762,Move left and right repeatedly
+705,24.266580,Move left and right repeatedly
+706,24.302720,Move left and right repeatedly
+707,24.334560,Move left and right repeatedly
+708,24.370659,Move left and right repeatedly
+709,24.403091,Move left and right repeatedly
+710,24.434457,Move left and right repeatedly
+711,24.470556,Move left and right repeatedly
+712,24.502565,Move left and right repeatedly
+713,24.534554,Move left and right repeatedly
+714,24.570611,Move left and right repeatedly
+715,24.603237,Move left and right repeatedly
+716,24.634966,Move left and right repeatedly
+717,24.670773,Move left and right repeatedly
+718,24.702702,Move left and right repeatedly
+719,24.738621,Move left and right repeatedly
+720,24.770641,Move left and right repeatedly
+721,24.802193,Move left and right repeatedly
+722,24.838550,Move left and right repeatedly
+723,24.870878,Move left and right repeatedly
+724,24.903026,Move left and right repeatedly
+725,24.938677,Move left and right repeatedly
+726,24.970845,Move left and right repeatedly
+727,25.004939,Move left and right repeatedly
+728,25.038397,Move left and right repeatedly
+729,25.070581,Move left and right repeatedly
+730,25.106611,Move left and right repeatedly
+731,25.138570,Move left and right repeatedly
+732,25.170509,Move left and right repeatedly
+733,25.206548,Move left and right repeatedly
+734,25.238399,Move left and right repeatedly
+735,25.270543,Move left and right repeatedly
+736,25.305940,Move left and right repeatedly
+737,25.338217,Move left and right repeatedly
+738,25.374147,Move left and right repeatedly
+739,25.406652,Move left and right repeatedly
+740,25.438543,Move left and right repeatedly
+741,25.474524,Move left and right repeatedly
+742,25.506114,Move left and right repeatedly
+743,25.538288,Move left and right repeatedly
+744,25.574527,Move left and right repeatedly
+745,25.606529,Move left and right repeatedly
+746,25.638695,Move left and right repeatedly
+747,25.674324,Move left and right repeatedly
+748,25.706248,Move left and right repeatedly
+749,25.742697,Move left and right repeatedly
+750,25.774680,Move left and right repeatedly
+751,25.806361,Move left and right repeatedly
+752,25.843028,Move left and right repeatedly
+753,25.874936,Move left and right repeatedly
+754,25.906696,Move left and right repeatedly
+755,25.942572,Move left and right repeatedly
+756,25.974576,Move left and right repeatedly
+757,26.006450,Move left and right repeatedly
+758,26.043152,Move left and right repeatedly
+759,26.074314,Move left and right repeatedly
+760,26.109935,Move left and right repeatedly
+761,26.142113,Move left and right repeatedly
+762,26.174114,Move left and right repeatedly
+763,26.210653,Move left and right repeatedly
+764,26.242163,Move left and right repeatedly
+765,26.274392,Move left and right repeatedly
+766,26.310773,Move left and right repeatedly
+767,26.342616,Move left and right repeatedly
+768,26.374596,Move left and right repeatedly
+769,26.412761,Move left and right repeatedly
+770,26.442362,Move left and right repeatedly
+771,26.478542,Move left and right repeatedly
+772,26.510273,Move left and right repeatedly
+773,26.542159,Move left and right repeatedly
+774,26.578646,Move left and right repeatedly
+775,26.610745,Move left and right repeatedly
+776,26.643028,Move left and right repeatedly
+777,26.678803,Move left and right repeatedly
+778,26.710523,Move left and right repeatedly
+779,26.742745,Move left and right repeatedly
+780,26.778388,Move left and right repeatedly
+781,26.810645,Move left and right repeatedly
+782,26.846775,Move left and right repeatedly
+783,26.878852,Move left and right repeatedly
+784,26.911857,Move left and right repeatedly
+785,26.946787,Move left and right repeatedly
+786,26.978668,Move left and right repeatedly
+787,27.010649,Move left and right repeatedly
+788,27.046911,Move left and right repeatedly
+789,27.079195,Move left and right repeatedly
+790,27.114872,Move left and right repeatedly
+791,27.145528,Move left and right repeatedly
+792,27.177894,Move left and right repeatedly
+793,27.214491,Move left and right repeatedly
+794,27.246372,Move left and right repeatedly
+795,27.278177,Move left and right repeatedly
+796,27.314608,Move left and right repeatedly
+797,27.346831,Move left and right repeatedly
+798,27.378996,Move left and right repeatedly
+799,27.414516,Move left and right repeatedly
+800,27.446225,Move left and right repeatedly
+801,27.483049,Move left and right repeatedly
+802,27.514102,Move left and right repeatedly
+803,27.546223,Move left and right repeatedly
+804,27.588624,Move left and right repeatedly
+805,27.608811,Move left and right repeatedly
+806,27.641561,Move left and right repeatedly
+807,27.682396,Move left and right repeatedly
+808,27.713800,Move left and right repeatedly
+809,27.746217,Move left and right repeatedly
+810,27.781815,Move left and right repeatedly
+811,27.809961,Move left and right repeatedly
+812,27.845154,Move left and right repeatedly
+813,27.882707,Move left and right repeatedly
+814,27.914660,Move left and right repeatedly
+815,27.950444,Move left and right repeatedly
+816,27.982392,Move left and right repeatedly
+817,28.014681,Move left and right repeatedly
+818,28.050604,Move left and right repeatedly
+819,28.082619,Move left and right repeatedly
+820,28.114312,Move left and right repeatedly
+821,28.150085,Move left and right repeatedly
+822,28.182376,Move left and right repeatedly
+823,28.218718,Move left and right repeatedly
+824,28.249961,Move left and right repeatedly
+825,28.282470,Move left and right repeatedly
+826,28.317695,Move left and right repeatedly
+827,28.350684,Move left and right repeatedly
+828,28.382623,Move left and right repeatedly
+829,28.418740,Move left and right repeatedly
+830,28.450712,Move left and right repeatedly
+831,28.482203,Move left and right repeatedly
+832,28.513763,Move left and right repeatedly
+833,28.550115,Move left and right repeatedly
+834,28.586304,Move left and right repeatedly
+835,28.618545,Move left and right repeatedly
+836,28.650626,Move left and right repeatedly
+837,28.686688,Move left and right repeatedly
+838,28.718935,Move left and right repeatedly
+839,28.750115,Move left and right repeatedly
+840,28.786055,Move left and right repeatedly
+841,28.817908,Move left and right repeatedly
+842,28.849712,Move left and right repeatedly
+843,28.886490,Move left and right repeatedly
+844,28.920208,Move left and right repeatedly
+845,28.954667,Move left and right repeatedly
+846,28.985418,Move left and right repeatedly
+847,29.017702,Move left and right repeatedly
+848,29.054116,Move left and right repeatedly
+849,29.085681,Move left and right repeatedly
+850,29.117066,Move left and right repeatedly
+851,29.152880,Move left and right repeatedly
+852,29.186516,Move left and right repeatedly
+853,29.222237,Move left and right repeatedly
+854,29.254610,Move left and right repeatedly
+855,29.285955,Move left and right repeatedly
+856,29.322278,Move left and right repeatedly
+857,29.354385,Move left and right repeatedly
+858,29.386218,Move left and right repeatedly
+859,29.421684,Move left and right repeatedly
+860,29.453675,Move left and right repeatedly
+861,29.485926,Move left and right repeatedly
+862,29.522039,Move left and right repeatedly
+863,29.548706,Move left and right repeatedly
+864,29.589693,Move left and right repeatedly
+865,29.622558,Move left and right repeatedly
+866,29.653579,Move left and right repeatedly
+867,29.690952,Move left and right repeatedly
+868,29.721724,Move left and right repeatedly
+869,29.753746,Move left and right repeatedly
+870,29.790316,Move left and right repeatedly
+871,29.816990,Move left and right repeatedly
+872,29.848732,Move left and right repeatedly
+873,29.889923,Move left and right repeatedly
+874,29.919372,Move left and right repeatedly
+875,29.958605,Move left and right repeatedly
+876,29.989951,Move left and right repeatedly
+877,30.019781,Move hand quickly several times
+878,30.053057,Move hand quickly several times
+879,30.089711,Move hand quickly several times
+880,30.123630,Move hand quickly several times
+881,30.157356,Move hand quickly several times
+882,30.189744,Move hand quickly several times
+883,30.221650,Move hand quickly several times
+884,30.258575,Move hand quickly several times
+885,30.290051,Move hand quickly several times
+886,30.326690,Move hand quickly several times
+887,30.358243,Move hand quickly several times
+888,30.389837,Move hand quickly several times
+889,30.426211,Move hand quickly several times
+890,30.458114,Move hand quickly several times
+891,30.490516,Move hand quickly several times
+892,30.526661,Move hand quickly several times
+893,30.555301,Move hand quickly several times
+894,30.590041,Move hand quickly several times
+895,30.626583,Move hand quickly several times
+896,30.658041,Move hand quickly several times
+897,30.694055,Move hand quickly several times
+898,30.726517,Move hand quickly several times
+899,30.758288,Move hand quickly several times
+900,30.794662,Move hand quickly several times
+901,30.826488,Move hand quickly several times
+902,30.858199,Move hand quickly several times
+903,30.894066,Move hand quickly several times
+904,30.927094,Move hand quickly several times
+905,30.956720,Move hand quickly several times
+906,30.994356,Move hand quickly several times
+907,31.026591,Move hand quickly several times
+908,31.062378,Move hand quickly several times
+909,31.094527,Move hand quickly several times
+910,31.126087,Move hand quickly several times
+911,31.161386,Move hand quickly several times
+912,31.194677,Move hand quickly several times
+913,31.226457,Move hand quickly several times
+914,31.262347,Move hand quickly several times
+915,31.295052,Move hand quickly several times
+916,31.331056,Move hand quickly several times
+917,31.362589,Move hand quickly several times
+918,31.394560,Move hand quickly several times
+919,31.430417,Move hand quickly several times
+920,31.462331,Move hand quickly several times
+921,31.494407,Move hand quickly several times
+922,31.530643,Move hand quickly several times
+923,31.562243,Move hand quickly several times
+924,31.594135,Move hand quickly several times
+925,31.630778,Move hand quickly several times
+926,31.662543,Move hand quickly several times
+927,31.698692,Move hand quickly several times
+928,31.730903,Move hand quickly several times
+929,31.762310,Move hand quickly several times
+930,31.798558,Move hand quickly several times
+931,31.830497,Move hand quickly several times
+932,31.862050,Move hand quickly several times
+933,31.898643,Move hand quickly several times
+934,31.930466,Move hand quickly several times
+935,31.962389,Move hand quickly several times
+936,31.998355,Move hand quickly several times
+937,32.030144,Move hand quickly several times
+938,32.065732,Move hand quickly several times
+939,32.098552,Move hand quickly several times
+940,32.130796,Move hand quickly several times
+941,32.166291,Move hand quickly several times
+942,32.198579,Move hand quickly several times
+943,32.230555,Move hand quickly several times
+944,32.266538,Move hand quickly several times
+945,32.298770,Move hand quickly several times
+946,32.330748,Move hand quickly several times
+947,32.366786,Move hand quickly several times
+948,32.398298,Move hand quickly several times
+949,32.434961,Move hand quickly several times
+950,32.466858,Move hand quickly several times
+951,32.498529,Move hand quickly several times
+952,32.535317,Move hand quickly several times
+953,32.566879,Move hand quickly several times
+954,32.598920,Move hand quickly several times
+955,32.634800,Move hand quickly several times
+956,32.666780,Move hand quickly several times
+957,32.699036,Move hand quickly several times
+958,32.734884,Move hand quickly several times
+959,32.766932,Move hand quickly several times
+960,32.802770,Move hand quickly several times
+961,32.834533,Move hand quickly several times
+962,32.867123,Move hand quickly several times
+963,32.903130,Move hand quickly several times
+964,32.934973,Move hand quickly several times
+965,32.966870,Move hand quickly several times
+966,33.003122,Move hand quickly several times
+967,33.034895,Move hand quickly several times
+968,33.066904,Move hand quickly several times
+969,33.102799,Move hand quickly several times
+970,33.134279,Move hand quickly several times
+971,33.170872,Move hand quickly several times
+972,33.202800,Move hand quickly several times
+973,33.234850,Move hand quickly several times
+974,33.271142,Move hand quickly several times
+975,33.302405,Move hand quickly several times
+976,33.334580,Move hand quickly several times
+977,33.371043,Move hand quickly several times
+978,33.402966,Move hand quickly several times
+979,33.438964,Move hand quickly several times
+980,33.471139,Move hand quickly several times
+981,33.503040,Move hand quickly several times
+982,33.539020,Move hand quickly several times
+983,33.570558,Move hand quickly several times
+984,33.602036,Move hand quickly several times
+985,33.639149,Move hand quickly several times
+986,33.670687,Move hand quickly several times
+987,33.702646,Move hand quickly several times
+988,33.738971,Move hand quickly several times
+989,33.770603,Move hand quickly several times
+990,33.807260,Move hand quickly several times
+991,33.838947,Move hand quickly several times
+992,33.870393,Move hand quickly several times
+993,33.906840,Move hand quickly several times
+994,33.938932,Move hand quickly several times
+995,33.970251,Move hand quickly several times
+996,34.007031,Move hand quickly several times
+997,34.038446,Move hand quickly several times
+998,34.070607,Move hand quickly several times
+999,34.106370,Move hand quickly several times
+1000,34.138711,Move hand quickly several times
+1001,34.174737,Move hand quickly several times
+1002,34.206791,Move hand quickly several times
+1003,34.238800,Move hand quickly several times
+1004,34.274385,Move hand quickly several times
+1005,34.306960,Move hand quickly several times
+1006,34.338625,Move hand quickly several times
+1007,34.374373,Move hand quickly several times
+1008,34.406812,Move hand quickly several times
+1009,34.438389,Move hand quickly several times
+1010,34.475148,Move hand quickly several times
+1011,34.507249,Move hand quickly several times
+1012,34.542120,Move hand quickly several times
+1013,34.574327,Move hand quickly several times
+1014,34.607038,Move hand quickly several times
+1015,34.642674,Move hand quickly several times
+1016,34.673655,Move hand quickly several times
+1017,34.706270,Move hand quickly several times
+1018,34.742595,Move hand quickly several times
+1019,34.774094,Move hand quickly several times
+1020,34.806085,Move hand quickly several times
+1021,34.842395,Move hand quickly several times
+1022,34.874392,Move hand quickly several times
+1023,34.910626,Move hand quickly several times
+1024,34.942786,Move hand quickly several times
+1025,34.974169,Move hand quickly several times
+1026,35.010058,Move hand quickly several times
+1027,35.042584,Move hand quickly several times
+1028,35.074502,Move hand quickly several times
+1029,35.110601,Move hand quickly several times
+1030,35.142075,Move hand quickly several times
+1031,35.178571,Move hand quickly several times
+1032,35.210345,Move hand quickly several times
+1033,35.242144,Move hand quickly several times
+1034,35.278751,Move hand quickly several times
+1035,35.310177,Move hand quickly several times
+1036,35.342364,Move hand quickly several times
+1037,35.378836,Move hand quickly several times
+1038,35.411084,Move hand quickly several times
+1039,35.442743,Move hand quickly several times
+1040,35.478535,Move hand quickly several times
+1041,35.509941,Move hand quickly several times
+1042,35.546313,Move hand quickly several times
+1043,35.577837,Move hand quickly several times
+1044,35.610040,Move hand quickly several times
+1045,35.646666,Move hand quickly several times
+1046,35.678471,Move hand quickly several times
+1047,35.709816,Move hand quickly several times
+1048,35.746423,Move hand quickly several times
+1049,35.778287,Move hand quickly several times
+1050,35.810450,Move hand quickly several times
+1051,35.846135,Move hand quickly several times
+1052,35.878420,Move hand quickly several times
+1053,35.914141,Move hand quickly several times
+1054,35.946587,Move hand quickly several times
+1055,35.978496,Move hand quickly several times
+1056,36.014397,Move hand quickly several times
+1057,36.046468,Move hand quickly several times
+1058,36.077740,Move hand quickly several times
+1059,36.114040,Move hand quickly several times
+1060,36.146760,Move hand quickly several times
+1061,36.178099,Move hand quickly several times
+1062,36.214126,Move hand quickly several times
+1063,36.246333,Move hand quickly several times
+1064,36.282548,Move hand quickly several times
+1065,36.314349,Move hand quickly several times
+1066,36.346201,Move hand quickly several times
+1067,36.382515,Move hand quickly several times
+1068,36.414374,Move hand quickly several times
+1069,36.446138,Move hand quickly several times
+1070,36.482369,Move hand quickly several times
+1071,36.514380,Move hand quickly several times
+1072,36.546435,Move hand quickly several times
+1073,36.582196,Move hand quickly several times
+1074,36.614653,Move hand quickly several times
+1075,36.650614,Move hand quickly several times
+1076,36.682139,Move hand quickly several times
+1077,36.714107,Move hand quickly several times
+1078,36.750471,Move hand quickly several times
+1079,36.782521,Move hand quickly several times
+1080,36.813935,Move hand quickly several times
+1081,36.850244,Move hand quickly several times
+1082,36.882545,Move hand quickly several times
+1083,36.915029,Move hand quickly several times
+1084,36.950874,Move hand quickly several times
+1085,36.982510,Move hand quickly several times
+1086,37.018728,Move hand quickly several times
+1087,37.050036,Move hand quickly several times
+1088,37.082654,Move hand quickly several times
+1089,37.118799,Move hand quickly several times
+1090,37.150804,Move hand quickly several times
+1091,37.182592,Move hand quickly several times
+1092,37.218554,Move hand quickly several times
+1093,37.250428,Move hand quickly several times
+1094,37.286979,Move hand quickly several times
+1095,37.318788,Move hand quickly several times
+1096,37.350574,Move hand quickly several times
+1097,37.386756,Move hand quickly several times
+1098,37.418345,Move hand quickly several times
+1099,37.450203,Move hand quickly several times
+1100,37.486567,Move hand quickly several times
+1101,37.517848,Move hand quickly several times
+1102,37.549644,Move hand quickly several times
+1103,37.586559,Move hand quickly several times
+1104,37.618534,Move hand quickly several times
+1105,37.654407,Move hand quickly several times
+1106,37.686017,Move hand quickly several times
+1107,37.718395,Move hand quickly several times
+1108,37.754540,Move hand quickly several times
+1109,37.786804,Move hand quickly several times
+1110,37.817927,Move hand quickly several times
+1111,37.854218,Move hand quickly several times
+1112,37.886071,Move hand quickly several times
+1113,37.918355,Move hand quickly several times
+1114,37.954298,Move hand quickly several times
+1115,37.985943,Move hand quickly several times
+1116,38.022691,Move hand quickly several times
+1117,38.054403,Move hand quickly several times
+1118,38.086153,Move hand quickly several times
+1119,38.122555,Move hand quickly several times
+1120,38.154219,Move hand quickly several times
+1121,38.186574,Move hand quickly several times
+1122,38.221878,Move hand quickly several times
+1123,38.254278,Move hand quickly several times
+1124,38.286165,Move hand quickly several times
+1125,38.322277,Move hand quickly several times
+1126,38.354093,Move hand quickly several times
+1127,38.390365,Move hand quickly several times
+1128,38.421873,Move hand quickly several times
+1129,38.454032,Move hand quickly several times
+1130,38.490566,Move hand quickly several times
+1131,38.523007,Move hand quickly several times
+1132,38.554278,Move hand quickly several times
+1133,38.590173,Move hand quickly several times
+1134,38.621873,Move hand quickly several times
+1135,38.653806,Move hand quickly several times
+1136,38.690316,Move hand quickly several times
+1137,38.722364,Move hand quickly several times
+1138,38.758688,Move hand quickly several times
+1139,38.790471,Move hand quickly several times
+1140,38.821714,Move hand quickly several times
+1141,38.858341,Move hand quickly several times
+1142,38.890501,Move hand quickly several times
+1143,38.921888,Move hand quickly several times
+1144,38.957939,Move hand quickly several times
+1145,38.990129,Move hand quickly several times
+1146,39.021672,Move hand quickly several times
+1147,39.058124,Move hand quickly several times
+1148,39.089894,Move hand quickly several times
+1149,39.125310,Move hand quickly several times
+1150,39.157539,Move hand quickly several times
+1151,39.190135,Move hand quickly several times
+1152,39.225958,Move hand quickly several times
+1153,39.258651,Move hand quickly several times
+1154,39.290348,Move hand quickly several times
+1155,39.326431,Move hand quickly several times
+1156,39.358517,Move hand quickly several times
+1157,39.394206,Move hand quickly several times
+1158,39.426139,Move hand quickly several times
+1159,39.458533,Move hand quickly several times
+1160,39.494621,Move hand quickly several times
+1161,39.526652,Move hand quickly several times
+1162,39.558648,Move hand quickly several times
+1163,39.594344,Move hand quickly several times
+1164,39.626776,Move hand quickly several times
+1165,39.658845,Move hand quickly several times
+1166,39.693627,Move hand quickly several times
+1167,39.725620,Move hand quickly several times
+1168,39.762222,Move hand quickly several times
+1169,39.794126,Move hand quickly several times
+1170,39.826095,Move hand quickly several times
+1171,39.862140,Move hand quickly several times
+1172,39.894453,Move hand quickly several times
+1173,39.926404,Move hand quickly several times
+1174,39.962662,Move hand quickly several times
+1175,39.994704,Move hand quickly several times
+1176,40.026088,Cover and uncover face repeatedly
+1177,40.063943,Cover and uncover face repeatedly
+1178,40.094092,Cover and uncover face repeatedly
+1179,40.130079,Cover and uncover face repeatedly
+1180,40.162448,Cover and uncover face repeatedly
+1181,40.194416,Cover and uncover face repeatedly
+1182,40.230285,Cover and uncover face repeatedly
+1183,40.262291,Cover and uncover face repeatedly
+1184,40.294416,Cover and uncover face repeatedly
+1185,40.330511,Cover and uncover face repeatedly
+1186,40.362154,Cover and uncover face repeatedly
+1187,40.394218,Cover and uncover face repeatedly
+1188,40.430133,Cover and uncover face repeatedly
+1189,40.462655,Cover and uncover face repeatedly
+1190,40.498273,Cover and uncover face repeatedly
+1191,40.530323,Cover and uncover face repeatedly
+1192,40.562300,Cover and uncover face repeatedly
+1193,40.598516,Cover and uncover face repeatedly
+1194,40.630699,Cover and uncover face repeatedly
+1195,40.662585,Cover and uncover face repeatedly
+1196,40.698297,Cover and uncover face repeatedly
+1197,40.730374,Cover and uncover face repeatedly
+1198,40.762796,Cover and uncover face repeatedly
+1199,40.798739,Cover and uncover face repeatedly
+1200,40.830516,Cover and uncover face repeatedly
+1201,40.866199,Cover and uncover face repeatedly
+1202,40.898364,Cover and uncover face repeatedly
+1203,40.930511,Cover and uncover face repeatedly
+1204,40.966455,Cover and uncover face repeatedly
+1205,40.998692,Cover and uncover face repeatedly
+1206,41.030008,Cover and uncover face repeatedly
+1207,41.066290,Cover and uncover face repeatedly
+1208,41.098164,Cover and uncover face repeatedly
+1209,41.130371,Cover and uncover face repeatedly
+1210,41.166031,Cover and uncover face repeatedly
+1211,41.197944,Cover and uncover face repeatedly
+1212,41.234437,Cover and uncover face repeatedly
+1213,41.266134,Cover and uncover face repeatedly
+1214,41.298439,Cover and uncover face repeatedly
+1215,41.334199,Cover and uncover face repeatedly
+1216,41.366023,Cover and uncover face repeatedly
+1217,41.398422,Cover and uncover face repeatedly
+1218,41.434032,Cover and uncover face repeatedly
+1219,41.465962,Cover and uncover face repeatedly
+1220,41.502455,Cover and uncover face repeatedly
+1221,41.534779,Cover and uncover face repeatedly
+1222,41.566472,Cover and uncover face repeatedly
+1223,41.602532,Cover and uncover face repeatedly
+1224,41.634130,Cover and uncover face repeatedly
+1225,41.666368,Cover and uncover face repeatedly
+1226,41.702336,Cover and uncover face repeatedly
+1227,41.734399,Cover and uncover face repeatedly
+1228,41.766441,Cover and uncover face repeatedly
+1229,41.802454,Cover and uncover face repeatedly
+1230,41.834046,Cover and uncover face repeatedly
+1231,41.870362,Cover and uncover face repeatedly
+1232,41.902147,Cover and uncover face repeatedly
+1233,41.934354,Cover and uncover face repeatedly
+1234,41.970126,Cover and uncover face repeatedly
+1235,42.002332,Cover and uncover face repeatedly
+1236,42.034641,Cover and uncover face repeatedly
+1237,42.070233,Cover and uncover face repeatedly
+1238,42.102724,Cover and uncover face repeatedly
+1239,42.134042,Cover and uncover face repeatedly
+1240,42.170450,Cover and uncover face repeatedly
+1241,42.202584,Cover and uncover face repeatedly
+1242,42.238537,Cover and uncover face repeatedly
+1243,42.270611,Cover and uncover face repeatedly
+1244,42.302291,Cover and uncover face repeatedly
+1245,42.338485,Cover and uncover face repeatedly
+1246,42.370398,Cover and uncover face repeatedly
+1247,42.402391,Cover and uncover face repeatedly
+1248,42.438420,Cover and uncover face repeatedly
+1249,42.470215,Cover and uncover face repeatedly
+1250,42.502383,Cover and uncover face repeatedly
+1251,42.538567,Cover and uncover face repeatedly
+1252,42.570295,Cover and uncover face repeatedly
+1253,42.606117,Cover and uncover face repeatedly
+1254,42.638403,Cover and uncover face repeatedly
+1255,42.670485,Cover and uncover face repeatedly
+1256,42.706638,Cover and uncover face repeatedly
+1257,42.738612,Cover and uncover face repeatedly
+1258,42.770466,Cover and uncover face repeatedly
+1259,42.806365,Cover and uncover face repeatedly
+1260,42.838038,Cover and uncover face repeatedly
+1261,42.870261,Cover and uncover face repeatedly
+1262,42.906486,Cover and uncover face repeatedly
+1263,42.938626,Cover and uncover face repeatedly
+1264,42.974774,Cover and uncover face repeatedly
+1265,43.006538,Cover and uncover face repeatedly
+1266,43.037634,Cover and uncover face repeatedly
+1267,43.074018,Cover and uncover face repeatedly
+1268,43.106018,Cover and uncover face repeatedly
+1269,43.138264,Cover and uncover face repeatedly
+1270,43.174122,Cover and uncover face repeatedly
+1271,43.206672,Cover and uncover face repeatedly
+1272,43.242649,Cover and uncover face repeatedly
+1273,43.274202,Cover and uncover face repeatedly
+1274,43.306158,Cover and uncover face repeatedly
+1275,43.342176,Cover and uncover face repeatedly
+1276,43.373861,Cover and uncover face repeatedly
+1277,43.406309,Cover and uncover face repeatedly
+1278,43.442689,Cover and uncover face repeatedly
+1279,43.474261,Cover and uncover face repeatedly
+1280,43.506327,Cover and uncover face repeatedly
+1281,43.542528,Cover and uncover face repeatedly
+1282,43.573902,Cover and uncover face repeatedly
+1283,43.609738,Cover and uncover face repeatedly
+1284,43.641806,Cover and uncover face repeatedly
+1285,43.674046,Cover and uncover face repeatedly
+1286,43.709885,Cover and uncover face repeatedly
+1287,43.742598,Cover and uncover face repeatedly
+1288,43.773799,Cover and uncover face repeatedly
+1289,43.810526,Cover and uncover face repeatedly
+1290,43.841939,Cover and uncover face repeatedly
+1291,43.873760,Cover and uncover face repeatedly
+1292,43.910473,Cover and uncover face repeatedly
+1293,43.942504,Cover and uncover face repeatedly
+1294,43.978038,Cover and uncover face repeatedly
+1295,44.010708,Cover and uncover face repeatedly
+1296,44.042127,Cover and uncover face repeatedly
+1297,44.077719,Cover and uncover face repeatedly
+1298,44.110339,Cover and uncover face repeatedly
+1299,44.141602,Cover and uncover face repeatedly
+1300,44.177577,Cover and uncover face repeatedly
+1301,44.209905,Cover and uncover face repeatedly
+1302,44.242049,Cover and uncover face repeatedly
+1303,44.277839,Cover and uncover face repeatedly
+1304,44.310190,Cover and uncover face repeatedly
+1305,44.346425,Cover and uncover face repeatedly
+1306,44.378220,Cover and uncover face repeatedly
+1307,44.410446,Cover and uncover face repeatedly
+1308,44.446474,Cover and uncover face repeatedly
+1309,44.477993,Cover and uncover face repeatedly
+1310,44.510671,Cover and uncover face repeatedly
+1311,44.546444,Cover and uncover face repeatedly
+1312,44.578143,Cover and uncover face repeatedly
+1313,44.610268,Cover and uncover face repeatedly
+1314,44.646361,Cover and uncover face repeatedly
+1315,44.678381,Cover and uncover face repeatedly
+1316,44.714550,Cover and uncover face repeatedly
+1317,44.746467,Cover and uncover face repeatedly
+1318,44.778045,Cover and uncover face repeatedly
+1319,44.814590,Cover and uncover face repeatedly
+1320,44.846034,Cover and uncover face repeatedly
+1321,44.878104,Cover and uncover face repeatedly
+1322,44.914644,Cover and uncover face repeatedly
+1323,44.946058,Cover and uncover face repeatedly
+1324,44.978359,Cover and uncover face repeatedly
+1325,45.014810,Cover and uncover face repeatedly
+1326,45.046092,Cover and uncover face repeatedly
+1327,45.082216,Cover and uncover face repeatedly
+1328,45.114454,Cover and uncover face repeatedly
+1329,45.146278,Cover and uncover face repeatedly
+1330,45.181876,Cover and uncover face repeatedly
+1331,45.214097,Cover and uncover face repeatedly
+1332,45.246160,Cover and uncover face repeatedly
+1333,45.282134,Cover and uncover face repeatedly
+1334,45.314336,Cover and uncover face repeatedly
+1335,45.350150,Cover and uncover face repeatedly
+1336,45.381806,Cover and uncover face repeatedly
+1337,45.414484,Cover and uncover face repeatedly
+1338,45.450596,Cover and uncover face repeatedly
+1339,45.482442,Cover and uncover face repeatedly
+1340,45.514261,Cover and uncover face repeatedly
+1341,45.550596,Cover and uncover face repeatedly
+1342,45.581814,Cover and uncover face repeatedly
+1343,45.614584,Cover and uncover face repeatedly
+1344,45.650487,Cover and uncover face repeatedly
+1345,45.682345,Cover and uncover face repeatedly
+1346,45.717956,Cover and uncover face repeatedly
+1347,45.750446,Cover and uncover face repeatedly
+1348,45.782234,Cover and uncover face repeatedly
+1349,45.818501,Cover and uncover face repeatedly
+1350,45.850489,Cover and uncover face repeatedly
+1351,45.882070,Cover and uncover face repeatedly
+1352,45.918164,Cover and uncover face repeatedly
+1353,45.950156,Cover and uncover face repeatedly
+1354,45.982386,Cover and uncover face repeatedly
+1355,46.018734,Cover and uncover face repeatedly
+1356,46.050196,Cover and uncover face repeatedly
+1357,46.086639,Cover and uncover face repeatedly
+1358,46.118930,Cover and uncover face repeatedly
+1359,46.147917,Cover and uncover face repeatedly
+1360,46.186142,Cover and uncover face repeatedly
+1361,46.218034,Cover and uncover face repeatedly
+1362,46.250144,Cover and uncover face repeatedly
+1363,46.286378,Cover and uncover face repeatedly
+1364,46.318238,Cover and uncover face repeatedly
+1365,46.350123,Cover and uncover face repeatedly
+1366,46.386378,Cover and uncover face repeatedly
+1367,46.417773,Cover and uncover face repeatedly
+1368,46.453502,Cover and uncover face repeatedly
+1369,46.486235,Cover and uncover face repeatedly
+1370,46.518151,Cover and uncover face repeatedly
+1371,46.554523,Cover and uncover face repeatedly
+1372,46.586104,Cover and uncover face repeatedly
+1373,46.618139,Cover and uncover face repeatedly
+1374,46.654248,Cover and uncover face repeatedly
+1375,46.686455,Cover and uncover face repeatedly
+1376,46.718044,Cover and uncover face repeatedly
+1377,46.754499,Cover and uncover face repeatedly
+1378,46.785807,Cover and uncover face repeatedly
+1379,46.822105,Cover and uncover face repeatedly
+1380,46.854014,Cover and uncover face repeatedly
+1381,46.885816,Cover and uncover face repeatedly
+1382,46.922114,Cover and uncover face repeatedly
+1383,46.953952,Cover and uncover face repeatedly
+1384,46.986176,Cover and uncover face repeatedly
+1385,47.021437,Cover and uncover face repeatedly
+1386,47.053609,Cover and uncover face repeatedly
+1387,47.086516,Cover and uncover face repeatedly
+1388,47.122457,Cover and uncover face repeatedly
+1389,47.154312,Cover and uncover face repeatedly
+1390,47.190318,Cover and uncover face repeatedly
+1391,47.222102,Cover and uncover face repeatedly
+1392,47.254152,Cover and uncover face repeatedly
+1393,47.290142,Cover and uncover face repeatedly
+1394,47.321727,Cover and uncover face repeatedly
+1395,47.354021,Cover and uncover face repeatedly
+1396,47.390459,Cover and uncover face repeatedly
+1397,47.421807,Cover and uncover face repeatedly
+1398,47.458370,Cover and uncover face repeatedly
+1399,47.489838,Cover and uncover face repeatedly
+1400,47.522129,Cover and uncover face repeatedly
+1401,47.558113,Cover and uncover face repeatedly
+1402,47.590179,Cover and uncover face repeatedly
+1403,47.622135,Cover and uncover face repeatedly
+1404,47.658146,Cover and uncover face repeatedly
+1405,47.690339,Cover and uncover face repeatedly
+1406,47.722434,Cover and uncover face repeatedly
+1407,47.758420,Cover and uncover face repeatedly
+1408,47.789922,Cover and uncover face repeatedly
+1409,47.825780,Cover and uncover face repeatedly
+1410,47.858324,Cover and uncover face repeatedly
+1411,47.890203,Cover and uncover face repeatedly
+1412,47.926743,Cover and uncover face repeatedly
+1413,47.957941,Cover and uncover face repeatedly
+1414,47.990021,Cover and uncover face repeatedly
+1415,48.026445,Cover and uncover face repeatedly
+1416,48.058035,Cover and uncover face repeatedly
+1417,48.090557,Cover and uncover face repeatedly
+1418,48.126842,Cover and uncover face repeatedly
+1419,48.157928,Cover and uncover face repeatedly
+1420,48.194107,Cover and uncover face repeatedly
+1421,48.225945,Cover and uncover face repeatedly
+1422,48.258312,Cover and uncover face repeatedly
+1423,48.294242,Cover and uncover face repeatedly
+1424,48.325849,Cover and uncover face repeatedly
+1425,48.358028,Cover and uncover face repeatedly
+1426,48.394297,Cover and uncover face repeatedly
+1427,48.426618,Cover and uncover face repeatedly
+1428,48.457941,Cover and uncover face repeatedly
+1429,48.494222,Cover and uncover face repeatedly
+1430,48.525678,Cover and uncover face repeatedly
+1431,48.561965,Cover and uncover face repeatedly
+1432,48.594046,Cover and uncover face repeatedly
+1433,48.626037,Cover and uncover face repeatedly
+1434,48.661887,Cover and uncover face repeatedly
+1435,48.694192,Cover and uncover face repeatedly
+1436,48.726102,Cover and uncover face repeatedly
+1437,48.761660,Cover and uncover face repeatedly
+1438,48.794350,Cover and uncover face repeatedly
+1439,48.825744,Cover and uncover face repeatedly
+1440,48.861805,Cover and uncover face repeatedly
+1441,48.894131,Cover and uncover face repeatedly
+1442,48.930272,Cover and uncover face repeatedly
+1443,48.961882,Cover and uncover face repeatedly
+1444,48.994583,Cover and uncover face repeatedly
+1445,49.030544,Cover and uncover face repeatedly
+1446,49.062132,Cover and uncover face repeatedly
+1447,49.094631,Cover and uncover face repeatedly
+1448,49.132409,Cover and uncover face repeatedly
+1449,49.162213,Cover and uncover face repeatedly
+1450,49.193866,Cover and uncover face repeatedly
+1451,49.229823,Cover and uncover face repeatedly
+1452,49.262204,Cover and uncover face repeatedly
+1453,49.297827,Cover and uncover face repeatedly
+1454,49.330510,Cover and uncover face repeatedly
+1455,49.361850,Cover and uncover face repeatedly
+1456,49.398049,Cover and uncover face repeatedly
+1457,49.430435,Cover and uncover face repeatedly
+1458,49.462226,Cover and uncover face repeatedly
+1459,49.497941,Cover and uncover face repeatedly
+1460,49.530052,Cover and uncover face repeatedly
+1461,49.566041,Cover and uncover face repeatedly
+1462,49.598348,Cover and uncover face repeatedly
+1463,49.629986,Cover and uncover face repeatedly
+1464,49.665943,Cover and uncover face repeatedly
+1465,49.700760,Cover and uncover face repeatedly
+1466,49.729681,Cover and uncover face repeatedly
+1467,49.765705,Cover and uncover face repeatedly
+1468,49.797731,Cover and uncover face repeatedly
+1469,49.830116,Cover and uncover face repeatedly
+1470,49.865841,Cover and uncover face repeatedly
+1471,49.898478,Cover and uncover face repeatedly
+1472,49.934652,Cover and uncover face repeatedly
+1473,49.966153,Cover and uncover face repeatedly
+1474,49.997839,Cover and uncover face repeatedly
+1475,50.034125,Move closer and farther repeatedly
+1476,50.067106,Move closer and farther repeatedly
+1477,50.098156,Move closer and farther repeatedly
+1478,50.133923,Move closer and farther repeatedly
+1479,50.166288,Move closer and farther repeatedly
+1480,50.197952,Move closer and farther repeatedly
+1481,50.234039,Move closer and farther repeatedly
+1482,50.266082,Move closer and farther repeatedly
+1483,50.302292,Move closer and farther repeatedly
+1484,50.334651,Move closer and farther repeatedly
+1485,50.366193,Move closer and farther repeatedly
+1486,50.402039,Move closer and farther repeatedly
+1487,50.434008,Move closer and farther repeatedly
+1488,50.466093,Move closer and farther repeatedly
+1489,50.502161,Move closer and farther repeatedly
+1490,50.534168,Move closer and farther repeatedly
+1491,50.566115,Move closer and farther repeatedly
+1492,50.602264,Move closer and farther repeatedly
+1493,50.633927,Move closer and farther repeatedly
+1494,50.670141,Move closer and farther repeatedly
+1495,50.701845,Move closer and farther repeatedly
+1496,50.733743,Move closer and farther repeatedly
+1497,50.770359,Move closer and farther repeatedly
+1498,50.802210,Move closer and farther repeatedly
+1499,50.834467,Move closer and farther repeatedly
+1500,50.870046,Move closer and farther repeatedly
+1501,50.902216,Move closer and farther repeatedly
+1502,50.933984,Move closer and farther repeatedly
+1503,50.970230,Move closer and farther repeatedly
+1504,51.002034,Move closer and farther repeatedly
+1505,51.038310,Move closer and farther repeatedly
+1506,51.069687,Move closer and farther repeatedly
+1507,51.101899,Move closer and farther repeatedly
+1508,51.137431,Move closer and farther repeatedly
+1509,51.170006,Move closer and farther repeatedly
+1510,51.202004,Move closer and farther repeatedly
+1511,51.238109,Move closer and farther repeatedly
+1512,51.269383,Move closer and farther repeatedly
+1513,51.306252,Move closer and farther repeatedly
+1514,51.338168,Move closer and farther repeatedly
+1515,51.369728,Move closer and farther repeatedly
+1516,51.406074,Move closer and farther repeatedly
+1517,51.438142,Move closer and farther repeatedly
+1518,51.470125,Move closer and farther repeatedly
+1519,51.506642,Move closer and farther repeatedly
+1520,51.538269,Move closer and farther repeatedly
+1521,51.570221,Move closer and farther repeatedly
+1522,51.606269,Move closer and farther repeatedly
+1523,51.638171,Move closer and farther repeatedly
+1524,51.674475,Move closer and farther repeatedly
+1525,51.706466,Move closer and farther repeatedly
+1526,51.738488,Move closer and farther repeatedly
+1527,51.774148,Move closer and farther repeatedly
+1528,51.806038,Move closer and farther repeatedly
+1529,51.838393,Move closer and farther repeatedly
+1530,51.874052,Move closer and farther repeatedly
+1531,51.905965,Move closer and farther repeatedly
+1532,51.938362,Move closer and farther repeatedly
+1533,51.974474,Move closer and farther repeatedly
+1534,52.006432,Move closer and farther repeatedly
+1535,52.042278,Move closer and farther repeatedly
+1536,52.074171,Move closer and farther repeatedly
+1537,52.106369,Move closer and farther repeatedly
+1538,52.140995,Move closer and farther repeatedly
+1539,52.173273,Move closer and farther repeatedly
+1540,52.206722,Move closer and farther repeatedly
+1541,52.242498,Move closer and farther repeatedly
+1542,52.274472,Move closer and farther repeatedly
+1543,52.306098,Move closer and farther repeatedly
+1544,52.342299,Move closer and farther repeatedly
+1545,52.374269,Move closer and farther repeatedly
+1546,52.410335,Move closer and farther repeatedly
+1547,52.442235,Move closer and farther repeatedly
+1548,52.474110,Move closer and farther repeatedly
+1549,52.510454,Move closer and farther repeatedly
+1550,52.542900,Move closer and farther repeatedly
+1551,52.574045,Move closer and farther repeatedly
+1552,52.610023,Move closer and farther repeatedly
+1553,52.642247,Move closer and farther repeatedly
+1554,52.674209,Move closer and farther repeatedly
+1555,52.710273,Move closer and farther repeatedly
+1556,52.742357,Move closer and farther repeatedly
+1557,52.778602,Move closer and farther repeatedly
+1558,52.810380,Move closer and farther repeatedly
+1559,52.842150,Move closer and farther repeatedly
+1560,52.878521,Move closer and farther repeatedly
+1561,52.909943,Move closer and farther repeatedly
+1562,52.942042,Move closer and farther repeatedly
+1563,52.978530,Move closer and farther repeatedly
+1564,53.010590,Move closer and farther repeatedly
+1565,53.042450,Move closer and farther repeatedly
+1566,53.078352,Move closer and farther repeatedly
+1567,53.110248,Move closer and farther repeatedly
+1568,53.146030,Move closer and farther repeatedly
+1569,53.178181,Move closer and farther repeatedly
+1570,53.210197,Move closer and farther repeatedly
+1571,53.246035,Move closer and farther repeatedly
+1572,53.277740,Move closer and farther repeatedly
+1573,53.309736,Move closer and farther repeatedly
+1574,53.345553,Move closer and farther repeatedly
+1575,53.377960,Move closer and farther repeatedly
+1576,53.414344,Move closer and farther repeatedly
+1577,53.446330,Move closer and farther repeatedly
+1578,53.478029,Move closer and farther repeatedly
+1579,53.514061,Move closer and farther repeatedly
+1580,53.545610,Move closer and farther repeatedly
+1581,53.577639,Move closer and farther repeatedly
+1582,53.613956,Move closer and farther repeatedly
+1583,53.645535,Move closer and farther repeatedly
+1584,53.677645,Move closer and farther repeatedly
+1585,53.714036,Move closer and farther repeatedly
+1586,53.746122,Move closer and farther repeatedly
+1587,53.782131,Move closer and farther repeatedly
+1588,53.814113,Move closer and farther repeatedly
+1589,53.846220,Move closer and farther repeatedly
+1590,53.881769,Move closer and farther repeatedly
+1591,53.914186,Move closer and farther repeatedly
+1592,53.946043,Move closer and farther repeatedly
+1593,53.982328,Move closer and farther repeatedly
+1594,54.013882,Move closer and farther repeatedly
+1595,54.045446,Move closer and farther repeatedly
+1596,54.081506,Move closer and farther repeatedly
+1597,54.114038,Move closer and farther repeatedly
+1598,54.148032,Move closer and farther repeatedly
+1599,54.181767,Move closer and farther repeatedly
+1600,54.213683,Move closer and farther repeatedly
+1601,54.249856,Move closer and farther repeatedly
+1602,54.281800,Move closer and farther repeatedly
+1603,54.313721,Move closer and farther repeatedly
+1604,54.350158,Move closer and farther repeatedly
+1605,54.381532,Move closer and farther repeatedly
+1606,54.414160,Move closer and farther repeatedly
+1607,54.449862,Move closer and farther repeatedly
+1608,54.482149,Move closer and farther repeatedly
+1609,54.518603,Move closer and farther repeatedly
+1610,54.549952,Move closer and farther repeatedly
+1611,54.581722,Move closer and farther repeatedly
+1612,54.618015,Move closer and farther repeatedly
+1613,54.649686,Move closer and farther repeatedly
+1614,54.682178,Move closer and farther repeatedly
+1615,54.717145,Move closer and farther repeatedly
+1616,54.750047,Move closer and farther repeatedly
+1617,54.781810,Move closer and farther repeatedly
+1618,54.818239,Move closer and farther repeatedly
+1619,54.849957,Move closer and farther repeatedly
+1620,54.886149,Move closer and farther repeatedly
+1621,54.918453,Move closer and farther repeatedly
+1622,54.950357,Move closer and farther repeatedly
+1623,54.985955,Move closer and farther repeatedly
+1624,55.017799,Move closer and farther repeatedly
+1625,55.050179,Move closer and farther repeatedly
+1626,55.085723,Move closer and farther repeatedly
+1627,55.117492,Move closer and farther repeatedly
+1628,55.149671,Move closer and farther repeatedly
+1629,55.186150,Move closer and farther repeatedly
+1630,55.218064,Move closer and farther repeatedly
+1631,55.254031,Move closer and farther repeatedly
+1632,55.285960,Move closer and farther repeatedly
+1633,55.318089,Move closer and farther repeatedly
+1634,55.354038,Move closer and farther repeatedly
+1635,55.386033,Move closer and farther repeatedly
+1636,55.418050,Move closer and farther repeatedly
+1637,55.454013,Move closer and farther repeatedly
+1638,55.486399,Move closer and farther repeatedly
+1639,55.522082,Move closer and farther repeatedly
+1640,55.553927,Move closer and farther repeatedly
+1641,55.585759,Move closer and farther repeatedly
+1642,55.621930,Move closer and farther repeatedly
+1643,55.653964,Move closer and farther repeatedly
+1644,55.685620,Move closer and farther repeatedly
+1645,55.722217,Move closer and farther repeatedly
+1646,55.753978,Move closer and farther repeatedly
+1647,55.785964,Move closer and farther repeatedly
+1648,55.821970,Move closer and farther repeatedly
+1649,55.853774,Move closer and farther repeatedly
+1650,55.889608,Move closer and farther repeatedly
+1651,55.922063,Move closer and farther repeatedly
+1652,55.954072,Move closer and farther repeatedly
+1653,55.989648,Move closer and farther repeatedly
+1654,56.022399,Move closer and farther repeatedly
+1655,56.053853,Move closer and farther repeatedly
+1656,56.089583,Move closer and farther repeatedly
+1657,56.122045,Move closer and farther repeatedly
+1658,56.154323,Move closer and farther repeatedly
+1659,56.190026,Move closer and farther repeatedly
+1660,56.221941,Move closer and farther repeatedly
+1661,56.257781,Move closer and farther repeatedly
+1662,56.289254,Move closer and farther repeatedly
+1663,56.322067,Move closer and farther repeatedly
+1664,56.358079,Move closer and farther repeatedly
+1665,56.390119,Move closer and farther repeatedly
+1666,56.422251,Move closer and farther repeatedly
+1667,56.457739,Move closer and farther repeatedly
+1668,56.489966,Move closer and farther repeatedly
+1669,56.522260,Move closer and farther repeatedly
+1670,56.558277,Move closer and farther repeatedly
+1671,56.589923,Move closer and farther repeatedly
+1672,56.626454,Move closer and farther repeatedly
+1673,56.658296,Move closer and farther repeatedly
+1674,56.690036,Move closer and farther repeatedly
+1675,56.726027,Move closer and farther repeatedly
+1676,56.758210,Move closer and farther repeatedly
+1677,56.789882,Move closer and farther repeatedly
+1678,56.826528,Move closer and farther repeatedly
+1679,56.858314,Move closer and farther repeatedly
+1680,56.890040,Move closer and farther repeatedly
+1681,56.926241,Move closer and farther repeatedly
+1682,56.958330,Move closer and farther repeatedly
+1683,56.994035,Move closer and farther repeatedly
+1684,57.026231,Move closer and farther repeatedly
+1685,57.057675,Move closer and farther repeatedly
+1686,57.093578,Move closer and farther repeatedly
+1687,57.130213,Move closer and farther repeatedly
+1688,57.156090,Move closer and farther repeatedly
+1689,57.194118,Move closer and farther repeatedly
+1690,57.226100,Move closer and farther repeatedly
+1691,57.257552,Move closer and farther repeatedly
+1692,57.293393,Move closer and farther repeatedly
+1693,57.325949,Move closer and farther repeatedly
+1694,57.362306,Move closer and farther repeatedly
+1695,57.394082,Move closer and farther repeatedly
+1696,57.426330,Move closer and farther repeatedly
+1697,57.462051,Move closer and farther repeatedly
+1698,57.493688,Move closer and farther repeatedly
+1699,57.526068,Move closer and farther repeatedly
+1700,57.562228,Move closer and farther repeatedly
+1701,57.593589,Move closer and farther repeatedly
+1702,57.630389,Move closer and farther repeatedly
+1703,57.661775,Move closer and farther repeatedly
+1704,57.694043,Move closer and farther repeatedly
+1705,57.730014,Move closer and farther repeatedly
+1706,57.761899,Move closer and farther repeatedly
+1707,57.793456,Move closer and farther repeatedly
+1708,57.830424,Move closer and farther repeatedly
+1709,57.861487,Move closer and farther repeatedly
+1710,57.894124,Move closer and farther repeatedly
+1711,57.929947,Move closer and farther repeatedly
+1712,57.961800,Move closer and farther repeatedly
+1713,57.997692,Move closer and farther repeatedly
+1714,58.029729,Move closer and farther repeatedly
+1715,58.061101,Move closer and farther repeatedly
+1716,58.097492,Move closer and farther repeatedly
+1717,58.129405,Move closer and farther repeatedly
+1718,58.161281,Move closer and farther repeatedly
+1719,58.197643,Move closer and farther repeatedly
+1720,58.229569,Move closer and farther repeatedly
+1721,58.261847,Move closer and farther repeatedly
+1722,58.297389,Move closer and farther repeatedly
+1723,58.329567,Move closer and farther repeatedly
+1724,58.366129,Move closer and farther repeatedly
+1725,58.397403,Move closer and farther repeatedly
+1726,58.429284,Move closer and farther repeatedly
+1727,58.465596,Move closer and farther repeatedly
+1728,58.497542,Move closer and farther repeatedly
+1729,58.529196,Move closer and farther repeatedly
+1730,58.565268,Move closer and farther repeatedly
+1731,58.597221,Move closer and farther repeatedly
+1732,58.629274,Move closer and farther repeatedly
+1733,58.665721,Move closer and farther repeatedly
+1734,58.697408,Move closer and farther repeatedly
+1735,58.733305,Move closer and farther repeatedly
+1736,58.765392,Move closer and farther repeatedly
+1737,58.797165,Move closer and farther repeatedly
+1738,58.833403,Move closer and farther repeatedly
+1739,58.865709,Move closer and farther repeatedly
+1740,58.897153,Move closer and farther repeatedly
+1741,58.933648,Move closer and farther repeatedly
+1742,58.965751,Move closer and farther repeatedly
+1743,58.997549,Move closer and farther repeatedly
+1744,59.033238,Move closer and farther repeatedly
+1745,59.065425,Move closer and farther repeatedly
+1746,59.101518,Move closer and farther repeatedly
+1747,59.133467,Move closer and farther repeatedly
+1748,59.164649,Move closer and farther repeatedly
+1749,59.202245,Move closer and farther repeatedly
+1750,59.233927,Move closer and farther repeatedly
+1751,59.265996,Move closer and farther repeatedly
+1752,59.302008,Move closer and farther repeatedly
+1753,59.334491,Move closer and farther repeatedly
+1754,59.366329,Move closer and farther repeatedly
+1755,59.402306,Move closer and farther repeatedly
+1756,59.433837,Move closer and farther repeatedly
+1757,59.469837,Move closer and farther repeatedly
+1758,59.501939,Move closer and farther repeatedly
+1759,59.534007,Move closer and farther repeatedly
+1760,59.570239,Move closer and farther repeatedly
+1761,59.602282,Move closer and farther repeatedly
+1762,59.634511,Move closer and farther repeatedly
+1763,59.670100,Move closer and farther repeatedly
+1764,59.701628,Move closer and farther repeatedly
+1765,59.737677,Move closer and farther repeatedly
+1766,59.769752,Move closer and farther repeatedly
+1767,59.802215,Move closer and farther repeatedly
+1768,59.838302,Move closer and farther repeatedly
+1769,59.869677,Move closer and farther repeatedly
+1770,59.901784,Move closer and farther repeatedly
+1771,59.938238,Move closer and farther repeatedly
+1772,59.970132,Move closer and farther repeatedly
+1773,60.001851,Partially leave and return
+1774,60.037655,Partially leave and return
+1775,60.069693,Partially leave and return
+1776,60.106150,Partially leave and return
+1777,60.137731,Partially leave and return
+1778,60.169943,Partially leave and return
+1779,60.205882,Partially leave and return
+1780,60.237896,Partially leave and return
+1781,60.269788,Partially leave and return
+1782,60.305843,Partially leave and return
+1783,60.337809,Partially leave and return
+1784,60.370118,Partially leave and return
+1785,60.406009,Partially leave and return
+1786,60.437829,Partially leave and return
+1787,60.474134,Partially leave and return
+1788,60.505722,Partially leave and return
+1789,60.537901,Partially leave and return
+1790,60.574097,Partially leave and return
+1791,60.606046,Partially leave and return
+1792,60.638034,Partially leave and return
+1793,60.673444,Partially leave and return
+1794,60.706013,Partially leave and return
+1795,60.737635,Partially leave and return
+1796,60.774181,Partially leave and return
+1797,60.805724,Partially leave and return
+1798,60.842333,Partially leave and return
+1799,60.873805,Partially leave and return
+1800,60.906130,Partially leave and return
+1801,60.942271,Partially leave and return
+1802,60.974182,Partially leave and return
+1803,61.006039,Partially leave and return
+1804,61.042094,Partially leave and return
+1805,61.074149,Partially leave and return
+1806,61.106324,Partially leave and return
+1807,61.141875,Partially leave and return
+1808,61.173716,Partially leave and return
+1809,61.210143,Partially leave and return
+1810,61.241848,Partially leave and return
+1811,61.273728,Partially leave and return
+1812,61.309848,Partially leave and return
+1813,61.342029,Partially leave and return
+1814,61.374145,Partially leave and return
+1815,61.410012,Partially leave and return
+1816,61.442140,Partially leave and return
+1817,61.473947,Partially leave and return
+1818,61.510142,Partially leave and return
+1819,61.541625,Partially leave and return
+1820,61.578184,Partially leave and return
+1821,61.609926,Partially leave and return
+1822,61.641262,Partially leave and return
+1823,61.678157,Partially leave and return
+1824,61.710161,Partially leave and return
+1825,61.741618,Partially leave and return
+1826,61.778175,Partially leave and return
+1827,61.810051,Partially leave and return
+1828,61.845676,Partially leave and return
+1829,61.877019,Partially leave and return
+1830,61.909296,Partially leave and return
+1831,61.945174,Partially leave and return
+1832,61.976949,Partially leave and return
+1833,62.008756,Partially leave and return
+1834,62.045285,Partially leave and return
+1835,62.077327,Partially leave and return
+1836,62.109423,Partially leave and return
+1837,62.145054,Partially leave and return
+1838,62.177382,Partially leave and return
+1839,62.213173,Partially leave and return
+1840,62.245405,Partially leave and return
+1841,62.277495,Partially leave and return
+1842,62.313504,Partially leave and return
+1843,62.345301,Partially leave and return
+1844,62.377447,Partially leave and return
+1845,62.413428,Partially leave and return
+1846,62.445272,Partially leave and return
+1847,62.477530,Partially leave and return
+1848,62.513613,Partially leave and return
+1849,62.546010,Partially leave and return
+1850,62.581906,Partially leave and return
+1851,62.613641,Partially leave and return
+1852,62.645861,Partially leave and return
+1853,62.681830,Partially leave and return
+1854,62.714082,Partially leave and return
+1855,62.745673,Partially leave and return
+1856,62.781991,Partially leave and return
+1857,62.814019,Partially leave and return
+1858,62.846405,Partially leave and return
+1859,62.882133,Partially leave and return
+1860,62.914095,Partially leave and return
+1861,62.950155,Partially leave and return
+1862,62.982642,Partially leave and return
+1863,63.014194,Partially leave and return
+1864,63.050102,Partially leave and return
+1865,63.082000,Partially leave and return
+1866,63.114036,Partially leave and return
+1867,63.149133,Partially leave and return
+1868,63.181859,Partially leave and return
+1869,63.213853,Partially leave and return
+1870,63.250680,Partially leave and return
+1871,63.281971,Partially leave and return
+1872,63.318155,Partially leave and return
+1873,63.350025,Partially leave and return
+1874,63.381918,Partially leave and return
+1875,63.418126,Partially leave and return
+1876,63.450154,Partially leave and return
+1877,63.482189,Partially leave and return
+1878,63.518493,Partially leave and return
+1879,63.550589,Partially leave and return
+1880,63.586117,Partially leave and return
+1881,63.618060,Partially leave and return
+1882,63.649836,Partially leave and return
+1883,63.685729,Partially leave and return
+1884,63.718031,Partially leave and return
+1885,63.749709,Partially leave and return
+1886,63.786021,Partially leave and return
+1887,63.818034,Partially leave and return
+1888,63.849959,Partially leave and return
+1889,63.885627,Partially leave and return
+1890,63.917709,Partially leave and return
+1891,63.954169,Partially leave and return
+1892,63.986428,Partially leave and return
+1893,64.018385,Partially leave and return
+1894,64.054156,Partially leave and return
+1895,64.085967,Partially leave and return
+1896,64.117276,Partially leave and return
+1897,64.152936,Partially leave and return
+1898,64.185120,Partially leave and return
+1899,64.217160,Partially leave and return
+1900,64.253372,Partially leave and return
+1901,64.285691,Partially leave and return
+1902,64.321355,Partially leave and return
+1903,64.353655,Partially leave and return
+1904,64.385880,Partially leave and return
+1905,64.421692,Partially leave and return
+1906,64.453940,Partially leave and return
+1907,64.486088,Partially leave and return
+1908,64.521530,Partially leave and return
+1909,64.553730,Partially leave and return
+1910,64.585852,Partially leave and return
+1911,64.621702,Partially leave and return
+1912,64.653599,Partially leave and return
+1913,64.690203,Partially leave and return
+1914,64.722070,Partially leave and return
+1915,64.753320,Partially leave and return
+1916,64.789742,Partially leave and return
+1917,64.822037,Partially leave and return
+1918,64.854065,Partially leave and return
+1919,64.890048,Partially leave and return
+1920,64.922736,Partially leave and return
+1921,64.954143,Partially leave and return
+1922,64.990350,Partially leave and return
+1923,65.022585,Partially leave and return
+1924,65.058973,Partially leave and return
+1925,65.090280,Partially leave and return
+1926,65.121937,Partially leave and return
+1927,65.158159,Partially leave and return
+1928,65.190180,Partially leave and return
+1929,65.222130,Partially leave and return
+1930,65.258462,Partially leave and return
+1931,65.290364,Partially leave and return
+1932,65.322797,Partially leave and return
+1933,65.358640,Partially leave and return
+1934,65.389941,Partially leave and return
+1935,65.426390,Partially leave and return
+1936,65.458093,Partially leave and return
+1937,65.489844,Partially leave and return
+1938,65.525732,Partially leave and return
+1939,65.558039,Partially leave and return
+1940,65.590062,Partially leave and return
+1941,65.625906,Partially leave and return
+1942,65.658037,Partially leave and return
+1943,65.694408,Partially leave and return
+1944,65.726654,Partially leave and return
+1945,65.758509,Partially leave and return
+1946,65.794264,Partially leave and return
+1947,65.825884,Partially leave and return
+1948,65.857889,Partially leave and return
+1949,65.894039,Partially leave and return
+1950,65.926128,Partially leave and return
+1951,65.958095,Partially leave and return
+1952,65.994143,Partially leave and return
+1953,66.025813,Partially leave and return
+1954,66.061932,Partially leave and return
+1955,66.093695,Partially leave and return
+1956,66.125450,Partially leave and return
+1957,66.161480,Partially leave and return
+1958,66.193503,Partially leave and return
+1959,66.225464,Partially leave and return
+1960,66.261659,Partially leave and return
+1961,66.293678,Partially leave and return
+1962,66.325449,Partially leave and return
+1963,66.362147,Partially leave and return
+1964,66.393814,Partially leave and return
+1965,66.429422,Partially leave and return
+1966,66.462176,Partially leave and return
+1967,66.493983,Partially leave and return
+1968,66.530102,Partially leave and return
+1969,66.562137,Partially leave and return
+1970,66.594082,Partially leave and return
+1971,66.630173,Partially leave and return
+1972,66.662226,Partially leave and return
+1973,66.694023,Partially leave and return
+1974,66.730423,Partially leave and return
+1975,66.762273,Partially leave and return
+1976,66.798189,Partially leave and return
+1977,66.830250,Partially leave and return
+1978,66.862360,Partially leave and return
+1979,66.898503,Partially leave and return
+1980,66.930264,Partially leave and return
+1981,66.962430,Partially leave and return
+1982,66.998785,Partially leave and return
+1983,67.029850,Partially leave and return
+1984,67.061782,Partially leave and return
+1985,67.097473,Partially leave and return
+1986,67.129530,Partially leave and return
+1987,67.165413,Partially leave and return
+1988,67.197423,Partially leave and return
+1989,67.229540,Partially leave and return
+1990,67.265511,Partially leave and return
+1991,67.297466,Partially leave and return
+1992,67.328744,Partially leave and return
+1993,67.365421,Partially leave and return
+1994,67.397135,Partially leave and return
+1995,67.429434,Partially leave and return
+1996,67.465481,Partially leave and return
+1997,67.497338,Partially leave and return
+1998,67.533384,Partially leave and return
+1999,67.565033,Partially leave and return
+2000,67.597171,Partially leave and return
+2001,67.633509,Partially leave and return
+2002,67.665672,Partially leave and return
+2003,67.697528,Partially leave and return
+2004,67.733631,Partially leave and return
+2005,67.765615,Partially leave and return
+2006,67.801948,Partially leave and return
+2007,67.833953,Partially leave and return
+2008,67.865324,Partially leave and return
+2009,67.901771,Partially leave and return
+2010,67.933481,Partially leave and return
+2011,67.965482,Partially leave and return
+2012,68.001994,Partially leave and return
+2013,68.033551,Partially leave and return
+2014,68.065856,Partially leave and return
+2015,68.102019,Partially leave and return
+2016,68.134103,Partially leave and return
+2017,68.169010,Partially leave and return
+2018,68.201410,Partially leave and return
+2019,68.233350,Partially leave and return
+2020,68.269635,Partially leave and return
+2021,68.301721,Partially leave and return
+2022,68.333552,Partially leave and return
+2023,68.370103,Partially leave and return
+2024,68.402115,Partially leave and return
+2025,68.433853,Partially leave and return
+2026,68.469872,Partially leave and return
+2027,68.502189,Partially leave and return
+2028,68.538237,Partially leave and return
+2029,68.570030,Partially leave and return
+2030,68.601808,Partially leave and return
+2031,68.637466,Partially leave and return
+2032,68.669752,Partially leave and return
+2033,68.702044,Partially leave and return
+2034,68.737879,Partially leave and return
+2035,68.769878,Partially leave and return
+2036,68.801748,Partially leave and return
+2037,68.837722,Partially leave and return
+2038,68.869767,Partially leave and return
+2039,68.905482,Partially leave and return
+2040,68.937389,Partially leave and return
+2041,68.970361,Partially leave and return
+2042,69.006176,Partially leave and return
+2043,69.038049,Partially leave and return
+2044,69.070237,Partially leave and return
+2045,69.105401,Partially leave and return
+2046,69.138688,Partially leave and return
+2047,69.170578,Partially leave and return
+2048,69.206352,Partially leave and return
+2049,69.238721,Partially leave and return
+2050,69.274751,Partially leave and return
+2051,69.306447,Partially leave and return
+2052,69.338390,Partially leave and return
+2053,69.374034,Partially leave and return
+2054,69.406329,Partially leave and return
+2055,69.438308,Partially leave and return
+2056,69.474525,Partially leave and return
+2057,69.506084,Partially leave and return
+2058,69.538058,Partially leave and return
+2059,69.574446,Partially leave and return
+2060,69.606094,Partially leave and return
+2061,69.642323,Partially leave and return
+2062,69.674363,Partially leave and return
+2063,69.705793,Partially leave and return
+2064,69.742231,Partially leave and return
+2065,69.773655,Partially leave and return
+2066,69.805863,Partially leave and return
+2067,69.842213,Partially leave and return
+2068,69.874120,Partially leave and return
+2069,69.910112,Partially leave and return
+2070,69.941895,Partially leave and return
+2071,69.973955,Partially leave and return
+2072,70.010254,Completely leave camera view
+2073,70.042008,Completely leave camera view
+2074,70.073428,Completely leave camera view
+2075,70.109889,Completely leave camera view
+2076,70.141372,Completely leave camera view
+2077,70.173459,Completely leave camera view
+2078,70.212028,Completely leave camera view
+2079,70.241953,Completely leave camera view
+2080,70.278098,Completely leave camera view
+2081,70.310134,Completely leave camera view
+2082,70.341938,Completely leave camera view
+2083,70.378035,Completely leave camera view
+2084,70.409995,Completely leave camera view
+2085,70.441631,Completely leave camera view
+2086,70.477993,Completely leave camera view
+2087,70.509921,Completely leave camera view
+2088,70.541508,Completely leave camera view
+2089,70.577707,Completely leave camera view
+2090,70.610120,Completely leave camera view
+2091,70.645757,Completely leave camera view
+2092,70.677796,Completely leave camera view
+2093,70.709697,Completely leave camera view
+2094,70.746009,Completely leave camera view
+2095,70.778172,Completely leave camera view
+2096,70.810082,Completely leave camera view
+2097,70.845803,Completely leave camera view
+2098,70.877581,Completely leave camera view
+2099,70.909778,Completely leave camera view
+2100,70.945763,Completely leave camera view
+2101,70.977423,Completely leave camera view
+2102,71.013832,Completely leave camera view
+2103,71.045792,Completely leave camera view
+2104,71.077584,Completely leave camera view
+2105,71.113823,Completely leave camera view
+2106,71.145656,Completely leave camera view
+2107,71.176946,Completely leave camera view
+2108,71.213529,Completely leave camera view
+2109,71.245354,Completely leave camera view
+2110,71.277367,Completely leave camera view
+2111,71.313555,Completely leave camera view
+2112,71.345632,Completely leave camera view
+2113,71.381687,Completely leave camera view
+2114,71.413348,Completely leave camera view
+2115,71.445113,Completely leave camera view
+2116,71.481459,Completely leave camera view
+2117,71.513555,Completely leave camera view
+2118,71.545637,Completely leave camera view
+2119,71.581525,Completely leave camera view
+2120,71.613908,Completely leave camera view
+2121,71.645627,Completely leave camera view
+2122,71.681574,Completely leave camera view
+2123,71.713476,Completely leave camera view
+2124,71.749466,Completely leave camera view
+2125,71.781654,Completely leave camera view
+2126,71.813481,Completely leave camera view
+2127,71.849536,Completely leave camera view
+2128,71.881134,Completely leave camera view
+2129,71.913282,Completely leave camera view
+2130,71.949355,Completely leave camera view
+2131,71.981218,Completely leave camera view
+2132,72.017149,Completely leave camera view
+2133,72.049166,Completely leave camera view
+2134,72.081148,Completely leave camera view
+2135,72.116934,Completely leave camera view
+2136,72.149113,Completely leave camera view
+2137,72.180435,Completely leave camera view
+2138,72.217173,Completely leave camera view
+2139,72.249133,Completely leave camera view
+2140,72.281204,Completely leave camera view
+2141,72.317445,Completely leave camera view
+2142,72.349295,Completely leave camera view
+2143,72.385116,Completely leave camera view
+2144,72.417011,Completely leave camera view
+2145,72.449028,Completely leave camera view
+2146,72.485379,Completely leave camera view
+2147,72.517261,Completely leave camera view
+2148,72.548931,Completely leave camera view
+2149,72.585055,Completely leave camera view
+2150,72.617096,Completely leave camera view
+2151,72.649146,Completely leave camera view
+2152,72.685635,Completely leave camera view
+2153,72.717037,Completely leave camera view
+2154,72.753521,Completely leave camera view
+2155,72.785658,Completely leave camera view
+2156,72.817467,Completely leave camera view
+2157,72.853204,Completely leave camera view
+2158,72.884660,Completely leave camera view
+2159,72.917307,Completely leave camera view
+2160,72.953038,Completely leave camera view
+2161,72.984785,Completely leave camera view
+2162,73.017581,Completely leave camera view
+2163,73.053035,Completely leave camera view
+2164,73.085506,Completely leave camera view
+2165,73.121331,Completely leave camera view
+2166,73.153235,Completely leave camera view
+2167,73.185476,Completely leave camera view
+2168,73.221630,Completely leave camera view
+2169,73.252700,Completely leave camera view
+2170,73.285292,Completely leave camera view
+2171,73.320999,Completely leave camera view
+2172,73.353116,Completely leave camera view
+2173,73.384844,Completely leave camera view
+2174,73.421050,Completely leave camera view
+2175,73.452712,Completely leave camera view
+2176,73.488870,Completely leave camera view
+2177,73.521432,Completely leave camera view
+2178,73.552966,Completely leave camera view
+2179,73.589483,Completely leave camera view
+2180,73.621509,Completely leave camera view
+2181,73.653026,Completely leave camera view
+2182,73.689403,Completely leave camera view
+2183,73.721758,Completely leave camera view
+2184,73.752786,Completely leave camera view
+2185,73.788796,Completely leave camera view
+2186,73.821153,Completely leave camera view
+2187,73.857156,Completely leave camera view
+2188,73.889335,Completely leave camera view
+2189,73.920935,Completely leave camera view
+2190,73.956881,Completely leave camera view
+2191,73.989166,Completely leave camera view
+2192,74.021316,Completely leave camera view
+2193,74.057176,Completely leave camera view
+2194,74.089124,Completely leave camera view
+2195,74.125297,Completely leave camera view
+2196,74.156728,Completely leave camera view
+2197,74.188579,Completely leave camera view
+2198,74.225350,Completely leave camera view
+2199,74.257293,Completely leave camera view
+2200,74.289046,Completely leave camera view
+2201,74.325037,Completely leave camera view
+2202,74.357035,Completely leave camera view
+2203,74.389035,Completely leave camera view
+2204,74.425042,Completely leave camera view
+2205,74.457270,Completely leave camera view
+2206,74.493015,Completely leave camera view
+2207,74.525367,Completely leave camera view
+2208,74.556651,Completely leave camera view
+2209,74.592590,Completely leave camera view
+2210,74.625161,Completely leave camera view
+2211,74.656485,Completely leave camera view
+2212,74.692455,Completely leave camera view
+2213,74.724633,Completely leave camera view
+2214,74.758064,Completely leave camera view
+2215,74.793430,Completely leave camera view
+2216,74.825345,Completely leave camera view
+2217,74.861068,Completely leave camera view
+2218,74.893093,Completely leave camera view
+2219,74.924947,Completely leave camera view
+2220,74.961563,Completely leave camera view
+2221,74.993336,Completely leave camera view
+2222,75.025505,Completely leave camera view
+2223,75.060665,Completely leave camera view
+2224,75.092734,Completely leave camera view
+2225,75.125021,Completely leave camera view
+2226,75.161075,Completely leave camera view
+2227,75.192792,Completely leave camera view
+2228,75.229180,Completely leave camera view
+2229,75.261291,Completely leave camera view
+2230,75.293471,Completely leave camera view
+2231,75.329346,Completely leave camera view
+2232,75.361064,Completely leave camera view
+2233,75.392730,Completely leave camera view
+2234,75.428959,Completely leave camera view
+2235,75.460839,Completely leave camera view
+2236,75.492811,Completely leave camera view
+2237,75.529235,Completely leave camera view
+2238,75.561080,Completely leave camera view
+2239,75.596951,Completely leave camera view
+2240,75.629114,Completely leave camera view
+2241,75.660547,Completely leave camera view
+2242,75.696707,Completely leave camera view
+2243,75.729094,Completely leave camera view
+2244,75.761115,Completely leave camera view
+2245,75.797271,Completely leave camera view
+2246,75.829015,Completely leave camera view
+2247,75.864674,Completely leave camera view
+2248,75.896919,Completely leave camera view
+2249,75.928744,Completely leave camera view
+2250,75.964954,Completely leave camera view
+2251,75.997233,Completely leave camera view
+2252,76.029618,Completely leave camera view
+2253,76.064909,Completely leave camera view
+2254,76.096438,Completely leave camera view
+2255,76.129181,Completely leave camera view
+2256,76.164887,Completely leave camera view
+2257,76.196387,Completely leave camera view
+2258,76.233144,Completely leave camera view
+2259,76.265055,Completely leave camera view
+2260,76.297389,Completely leave camera view
+2261,76.333214,Completely leave camera view
+2262,76.364681,Completely leave camera view
+2263,76.396390,Completely leave camera view
+2264,76.434852,Completely leave camera view
+2265,76.464925,Completely leave camera view
+2266,76.496658,Completely leave camera view
+2267,76.532751,Completely leave camera view
+2268,76.564540,Completely leave camera view
+2269,76.600951,Completely leave camera view
+2270,76.633181,Completely leave camera view
+2271,76.665258,Completely leave camera view
+2272,76.701127,Completely leave camera view
+2273,76.733270,Completely leave camera view
+2274,76.765558,Completely leave camera view
+2275,76.801110,Completely leave camera view
+2276,76.832764,Completely leave camera view
+2277,76.865043,Completely leave camera view
+2278,76.900746,Completely leave camera view
+2279,76.933160,Completely leave camera view
+2280,76.969238,Completely leave camera view
+2281,77.001122,Completely leave camera view
+2282,77.033465,Completely leave camera view
+2283,77.068325,Completely leave camera view
+2284,77.100789,Completely leave camera view
+2285,77.132781,Completely leave camera view
+2286,77.169145,Completely leave camera view
+2287,77.200417,Completely leave camera view
+2288,77.232583,Completely leave camera view
+2289,77.269021,Completely leave camera view
+2290,77.300891,Completely leave camera view
+2291,77.337148,Completely leave camera view
+2292,77.369455,Completely leave camera view
+2293,77.401124,Completely leave camera view
+2294,77.437164,Completely leave camera view
+2295,77.468852,Completely leave camera view
+2296,77.501409,Completely leave camera view
+2297,77.533613,Completely leave camera view
+2298,77.569029,Completely leave camera view
+2299,77.600258,Completely leave camera view
+2300,77.636817,Completely leave camera view
+2301,77.668695,Completely leave camera view
+2302,77.704799,Completely leave camera view
+2303,77.736767,Completely leave camera view
+2304,77.769130,Completely leave camera view
+2305,77.805117,Completely leave camera view
+2306,77.837128,Completely leave camera view
+2307,77.869191,Completely leave camera view
+2308,77.905137,Completely leave camera view
+2309,77.936869,Completely leave camera view
+2310,77.973171,Completely leave camera view
+2311,78.004773,Completely leave camera view
+2312,78.037018,Completely leave camera view
+2313,78.073206,Completely leave camera view
+2314,78.105336,Completely leave camera view
+2315,78.137167,Completely leave camera view
+2316,78.173170,Completely leave camera view
+2317,78.205211,Completely leave camera view
+2318,78.236850,Completely leave camera view
+2319,78.273222,Completely leave camera view
+2320,78.304900,Completely leave camera view
+2321,78.340408,Completely leave camera view
+2322,78.372786,Completely leave camera view
+2323,78.405215,Completely leave camera view
+2324,78.440877,Completely leave camera view
+2325,78.473220,Completely leave camera view
+2326,78.505027,Completely leave camera view
+2327,78.540852,Completely leave camera view
+2328,78.573126,Completely leave camera view
+2329,78.604546,Completely leave camera view
+2330,78.641048,Completely leave camera view
+2331,78.673074,Completely leave camera view
+2332,78.708774,Completely leave camera view
+2333,78.740650,Completely leave camera view
+2334,78.772563,Completely leave camera view
+2335,78.808721,Completely leave camera view
+2336,78.840591,Completely leave camera view
+2337,78.873027,Completely leave camera view
+2338,78.908960,Completely leave camera view
+2339,78.941145,Completely leave camera view
+2340,78.973134,Completely leave camera view
+2341,79.009186,Completely leave camera view
+2342,79.040921,Completely leave camera view
+2343,79.076777,Completely leave camera view
+2344,79.108902,Completely leave camera view
+2345,79.140605,Completely leave camera view
+2346,79.177089,Completely leave camera view
+2347,79.207764,Completely leave camera view
+2348,79.240496,Completely leave camera view
+2349,79.276855,Completely leave camera view
+2350,79.308907,Completely leave camera view
+2351,79.340727,Completely leave camera view
+2352,79.377263,Completely leave camera view
+2353,79.408424,Completely leave camera view
+2354,79.445180,Completely leave camera view
+2355,79.477069,Completely leave camera view
+2356,79.509313,Completely leave camera view
+2357,79.544932,Completely leave camera view
+2358,79.577155,Completely leave camera view
+2359,79.608972,Completely leave camera view
+2360,79.644953,Completely leave camera view
+2361,79.676950,Completely leave camera view
+2362,79.708958,Completely leave camera view
+2363,79.745015,Completely leave camera view
+2364,79.776585,Completely leave camera view
+2365,79.812862,Completely leave camera view
+2366,79.844587,Completely leave camera view
+2367,79.876785,Completely leave camera view
+2368,79.912657,Completely leave camera view
+2369,79.945263,Completely leave camera view
+2370,79.976976,Completely leave camera view
