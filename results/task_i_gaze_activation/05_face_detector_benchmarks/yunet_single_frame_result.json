@@ -1,0 +1,61 @@
+{
+  "detector": "OpenCV YuNet 2026 May",
+  "device": "cpu",
+  "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/face_detection_yunet_2026may.onnx",
+  "model_sha256": "ebafce4e3c118d6554634be5c27ab333b4c047a9a8c3faf1d7cf93101c22f0f0",
+  "source_frame": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/04_sam2_experiments/sam2_benchmark_frames/000427.jpg",
+  "primary_person_box_xyxy": [
+    152,
+    150,
+    555,
+    479
+  ],
+  "raw_confidence_min": 0.6,
+  "acceptance_confidence_min": 0.9,
+  "minimum_face_size_px": 60,
+  "minimum_aspect_ratio": 0.6,
+  "nms_threshold": 0.3,
+  "model_load_ms": 72.52148099905753,
+  "inference_ms": 8.759567999732099,
+  "raw_face_count": 1,
+  "accepted_face_count": 1,
+  "detections": [
+    {
+      "detection_number": 1,
+      "confidence": 0.946635901927948,
+      "box_xyxy": [
+        303,
+        223,
+        441,
+        394
+      ],
+      "width": 138,
+      "height": 171,
+      "aspect_ratio": 0.8070175438596491,
+      "accepted": true,
+      "landmarks": [
+        [
+          344.89013671875,
+          281.6329345703125
+        ],
+        [
+          409.469482421875,
+          286.1240539550781
+        ],
+        [
+          379.15797424316406,
+          322.23760986328125
+        ],
+        [
+          342.64329528808594,
+          344.68475341796875
+        ],
+        [
+          401.3960723876953,
+          349.32342529296875
+        ]
+      ]
+    }
+  ],
+  "preview_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/05_face_detector_benchmarks/yunet_single_frame_preview.jpg"
+}

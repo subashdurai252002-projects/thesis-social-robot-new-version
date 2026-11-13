@@ -11,6 +11,12 @@ import torch
 import yaml
 from ultralytics import YOLO
 
+from face_detector import (
+    FACE_CONFIDENCE_MIN,
+    FaceContinuityLock,
+    YuNetFaceDetector,
+)
+
 
 PIPELINE_DIRECTORY = Path(__file__).resolve().parents[1]
 
@@ -37,8 +43,9 @@ NMS_IOU = 0.45
 IMAGE_SIZE = 640
 PERSON_CLASS_ID = 0
 
-# Tuned ByteTrack keeps a lost track for 120 frames.
-PRIMARY_RELEASE_FRAMES = 120
+# Retain per-person face state while ByteTrack may
+# recover the same temporarily missing track ID.
+TRACK_STATE_RELEASE_FRAMES = 120
 
 
 def load_configuration():
@@ -73,20 +80,6 @@ def disable_dynamic_framerate(camera_index):
             "frame-rate reduction."
         )
         print(result.stderr.strip())
-
-
-def choose_primary_candidate(candidates):
-    if not candidates:
-        return None
-
-    # Prefer a confident, large body box.
-    return max(
-        candidates,
-        key=lambda candidate: (
-            candidate["confidence"]
-            * candidate["area"]
-        ),
-    )
 
 
 def draw_text(
@@ -148,8 +141,8 @@ def main():
     )
     print("YOLO NMS IoU:", NMS_IOU)
     print(
-        "Primary release frames:",
-        PRIMARY_RELEASE_FRAMES,
+        "Per-person state release frames:",
+        TRACK_STATE_RELEASE_FRAMES,
     )
 
     model_load_start = time.perf_counter()
@@ -163,6 +156,16 @@ def main():
         "Model loaded in:",
         f"{model_load_seconds:.3f} seconds",
     )
+
+    print("Loading YuNet face detector...")
+    face_detector = YuNetFaceDetector()
+    # A separate face-continuity lock is created
+    # later for every ByteTrack person ID.
+    print(
+        "Face confidence threshold:",
+        FACE_CONFIDENCE_MIN,
+    )
+    print("Face continuity lock: enabled")
 
     print("Warming up YOLO...")
 
@@ -242,20 +245,29 @@ def main():
         "Camera:",
         f"{actual_width}x{actual_height}",
     )
-    print("Live person tracking started.")
+    print("Live multi-person face tracking started.")
     print("Press q or Esc to stop.")
 
-    primary_track_id = None
-    previous_selected_id = None
-    missing_primary_frames = 0
+    # Face state is stored separately for every
+    # ByteTrack person ID.
+    face_locks = {}
+    face_was_visible_by_id = {}
+    face_ever_acquired_by_id = {}
+    last_seen_frame_by_id = {}
 
     processed_frames = 0
     failed_camera_frames = 0
-    primary_visible_frames = 0
-    secondary_track_frames = 0
     maximum_raw_tracks = 0
-    primary_selection_events = 0
-    primary_release_events = 0
+    processed_person_instances = 0
+    track_state_creation_events = 0
+    track_state_release_events = 0
+
+    face_visible_frames = 0
+    face_missing_frames = 0
+    total_face_detection_ms = 0.0
+    face_acquisition_events = 0
+    face_loss_events = 0
+    face_recovery_events = 0
 
     total_tracking_ms = 0.0
 
@@ -377,87 +389,152 @@ def main():
                 len(candidates),
             )
 
-            candidate_by_id = {
-                candidate["track_id"]: candidate
+            visible_track_ids = {
+                candidate["track_id"]
                 for candidate in candidates
             }
+            selected_faces_by_id = {}
+            face_detection_ms_by_id = {}
 
-            primary_candidate = None
+            for candidate in candidates:
+                track_id = candidate["track_id"]
+                processed_person_instances += 1
+                last_seen_frame_by_id[track_id] = (
+                    processed_frames
+                )
 
-            if primary_track_id is None:
-                selected = (
-                    choose_primary_candidate(
-                        candidates
+                if track_id not in face_locks:
+                    face_locks[track_id] = (
+                        FaceContinuityLock()
+                    )
+                    face_was_visible_by_id[
+                        track_id
+                    ] = False
+                    face_ever_acquired_by_id[
+                        track_id
+                    ] = False
+                    track_state_creation_events += 1
+                    print(
+                        "Person-face state created:",
+                        track_id,
+                    )
+
+                face_start = time.perf_counter()
+                face_candidates = face_detector.detect(
+                    frame,
+                    candidate["box"],
+                )
+                selected_face = face_locks[
+                    track_id
+                ].update(
+                    track_id,
+                    candidate["box"],
+                    face_candidates,
+                )
+                face_detection_ms = (
+                    time.perf_counter() - face_start
+                ) * 1000.0
+                face_detection_ms_by_id[
+                    track_id
+                ] = face_detection_ms
+                total_face_detection_ms += (
+                    face_detection_ms
+                )
+
+                was_visible = (
+                    face_was_visible_by_id.get(
+                        track_id,
+                        False,
                     )
                 )
 
-                if selected is not None:
-                    primary_track_id = selected[
-                        "track_id"
-                    ]
-                    primary_candidate = selected
-                    missing_primary_frames = 0
-                    primary_selection_events += 1
-
-                    if (
-                        previous_selected_id
-                        is not None
-                        and primary_track_id
-                        != previous_selected_id
-                    ):
+                if selected_face is None:
+                    face_missing_frames += 1
+                    if was_visible:
+                        face_loss_events += 1
                         print(
-                            "Primary target changed:",
-                            previous_selected_id,
-                            "->",
-                            primary_track_id,
+                            f"Face missing for ID "
+                            f"{track_id}; replacement "
+                            "candidate rejected."
                         )
+                    face_was_visible_by_id[
+                        track_id
+                    ] = False
+                else:
+                    selected_faces_by_id[
+                        track_id
+                    ] = selected_face
+                    face_visible_frames += 1
 
-                    previous_selected_id = (
-                        primary_track_id
-                    )
+                    if not was_visible:
+                        if face_ever_acquired_by_id[
+                            track_id
+                        ]:
+                            face_recovery_events += 1
+                            print(
+                                "Face lock recovered for ID:",
+                                track_id,
+                            )
+                        else:
+                            face_acquisition_events += 1
+                            face_ever_acquired_by_id[
+                                track_id
+                            ] = True
+                            print(
+                                "Face lock acquired for ID:",
+                                track_id,
+                            )
 
-                    print(
-                        "Primary target selected:",
-                        primary_track_id,
-                    )
+                    face_was_visible_by_id[
+                        track_id
+                    ] = True
 
-            elif primary_track_id in candidate_by_id:
-                primary_candidate = (
-                    candidate_by_id[
-                        primary_track_id
-                    ]
-                )
-                missing_primary_frames = 0
-
-            else:
-                missing_primary_frames += 1
-
-                if (
-                    missing_primary_frames
-                    > PRIMARY_RELEASE_FRAMES
+            missing_visible_ids = (
+                set(face_locks) - visible_track_ids
+            )
+            for track_id in missing_visible_ids:
+                if face_was_visible_by_id.get(
+                    track_id,
+                    False,
                 ):
+                    face_loss_events += 1
+                    face_was_visible_by_id[
+                        track_id
+                    ] = False
                     print(
-                        "Primary target released:",
-                        primary_track_id,
+                        "Tracked person temporarily "
+                        f"missing: {track_id}",
                     )
 
-                    primary_release_events += 1
-                    primary_track_id = None
-                    primary_candidate = None
-                    missing_primary_frames = 0
-
-            if primary_candidate is not None:
-                primary_visible_frames += 1
-
-            secondary_candidates = [
-                candidate
-                for candidate in candidates
-                if candidate["track_id"]
-                != primary_track_id
+            stale_track_ids = [
+                track_id
+                for track_id, last_seen_frame in (
+                    last_seen_frame_by_id.items()
+                )
+                if (
+                    processed_frames - last_seen_frame
+                    > TRACK_STATE_RELEASE_FRAMES
+                )
             ]
-
-            if secondary_candidates:
-                secondary_track_frames += 1
+            for track_id in stale_track_ids:
+                face_locks.pop(track_id, None)
+                face_was_visible_by_id.pop(
+                    track_id,
+                    None,
+                )
+                face_ever_acquired_by_id.pop(
+                    track_id,
+                    None,
+                )
+                last_seen_frame_by_id.pop(
+                    track_id,
+                    None,
+                )
+                track_state_release_events += 1
+                print(
+                    "Person-face state released:",
+                    track_id,
+                )
 
             for candidate in candidates:
                 x1, y1, x2, y2 = candidate["box"]
@@ -466,20 +543,14 @@ def main():
                     "confidence"
                 ]
 
-                is_primary = (
-                    track_id == primary_track_id
+                has_locked_face = (
+                    track_id
+                    in selected_faces_by_id
                 )
-
                 colour = (
                     (0, 255, 0)
-                    if is_primary
-                    else (0, 165, 255)
-                )
-
-                label_type = (
-                    "PRIMARY"
-                    if is_primary
-                    else "SECONDARY"
+                    if has_locked_face
+                    else (0, 255, 255)
                 )
 
                 cv2.rectangle(
@@ -487,14 +558,16 @@ def main():
                     (x1, y1),
                     (x2, y2),
                     colour,
-                    3 if is_primary else 2,
+                    2,
                 )
 
                 cv2.putText(
                     frame,
                     (
-                        f"{label_type} ID {track_id} "
-                        f"{confidence * 100:.1f}%"
+                        f"PERSON ID {track_id} "
+                        f"{confidence * 100:.1f}% | "
+                        f"FACE "
+                        f"{'LOCKED' if has_locked_face else 'MISSING'}"
                     ),
                     (
                         x1,
@@ -503,6 +576,36 @@ def main():
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.58,
                     colour,
+                    2,
+                    cv2.LINE_AA,
+                )
+
+                selected_face = (
+                    selected_faces_by_id.get(
+                        track_id
+                    )
+                )
+                if selected_face is None:
+                    continue
+
+                face_x1, face_y1, face_x2, face_y2 = selected_face.box
+                cv2.rectangle(
+                    frame,
+                    (face_x1, face_y1),
+                    (face_x2, face_y2),
+                    (255, 0, 255),
+                    2,
+                )
+                cv2.putText(
+                    frame,
+                    (
+                        f"ID {track_id} FACE "
+                        f"{selected_face.confidence * 100:.1f}%"
+                    ),
+                    (face_x1, max(face_y1 - 8, 20)),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.50,
+                    (255, 0, 255),
                     2,
                     cv2.LINE_AA,
                 )
@@ -521,47 +624,45 @@ def main():
                     time.perf_counter()
                 )
 
-            if primary_track_id is None:
-                primary_status = (
-                    "Primary: none"
-                )
-                status_colour = (0, 0, 255)
-            elif primary_candidate is not None:
-                primary_status = (
-                    f"Primary: ID "
-                    f"{primary_track_id} visible"
-                )
-                status_colour = (0, 255, 0)
-            else:
-                primary_status = (
-                    f"Primary: ID "
-                    f"{primary_track_id} missing "
-                    f"{missing_primary_frames}/"
-                    f"{PRIMARY_RELEASE_FRAMES}"
-                )
-                status_colour = (0, 255, 255)
-
             draw_text(
                 frame,
-                primary_status,
+                (
+                    f"Tracked people: "
+                    f"{len(candidates)}"
+                ),
                 0,
-                status_colour,
             )
             draw_text(
                 frame,
                 (
-                    f"Raw tracks: "
-                    f"{len(candidates)}"
+                    f"Visible face locks: "
+                    f"{len(selected_faces_by_id)}"
                 ),
                 1,
             )
             draw_text(
                 frame,
                 (
-                    f"Tracking: "
-                    f"{tracking_ms:.1f} ms"
+                    f"Retained ID states: "
+                    f"{len(face_locks)}"
                 ),
                 2,
+            )
+            draw_text(
+                frame,
+                (
+                    f"Person tracking: "
+                    f"{tracking_ms:.1f} ms"
+                ),
+                3,
+            )
+            draw_text(
+                frame,
+                (
+                    f"All face detection: "
+                    f"{sum(face_detection_ms_by_id.values()):.1f} ms"
+                ),
+                4,
             )
             draw_text(
                 frame,
@@ -569,16 +670,16 @@ def main():
                     f"Loop FPS: "
                     f"{displayed_fps:.1f}"
                 ),
-                3,
+                5,
             )
             draw_text(
                 frame,
                 f"Device: {device}",
-                4,
+                6,
             )
 
             cv2.imshow(
-                "Gaze Pipeline - Primary Person Tracking",
+                "Gaze Pipeline - Multi-Person Face Tracking",
                 frame,
             )
 
@@ -596,37 +697,52 @@ def main():
         if processed_frames
         else 0.0
     )
+    average_face_detection_ms = (
+        total_face_detection_ms
+        / processed_person_instances
+        if processed_person_instances
+        else 0.0
+    )
 
     print()
-    print("Live person-tracking test finished.")
+    print("Live multi-person face-tracking test finished.")
     print("Processed frames:", processed_frames)
     print(
         "Failed camera frames:",
         failed_camera_frames,
     )
     print(
-        "Primary visible frames:",
-        primary_visible_frames,
+        "Processed person instances:",
+        processed_person_instances,
     )
     print(
-        "Frames with secondary tracks:",
-        secondary_track_frames,
+        "Track-state creation events:",
+        track_state_creation_events,
     )
     print(
         "Maximum raw tracks:",
         maximum_raw_tracks,
     )
     print(
-        "Primary selection events:",
-        primary_selection_events,
+        "Track-state release events:",
+        track_state_release_events,
     )
     print(
-        "Primary release events:",
-        primary_release_events,
+        "Retained track states at stop:",
+        len(face_locks),
     )
     print(
         "Average tracking time:",
         f"{average_tracking_ms:.2f} ms",
+    )
+    print("Face visible frames:", face_visible_frames)
+    print("Face missing frames:", face_missing_frames)
+    print("Face acquisition events:", face_acquisition_events)
+    print("Face loss events:", face_loss_events)
+    print("Face recovery events:", face_recovery_events)
+    print(
+        "Average face-detection time:",
+        f"{average_face_detection_ms:.2f} ms",
     )
 
 

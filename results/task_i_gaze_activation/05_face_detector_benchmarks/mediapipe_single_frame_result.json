@@ -1,0 +1,66 @@
+{
+  "detector": "MediaPipe BlazeFace Short Range",
+  "mediapipe_version": "1.2.3",
+  "device": "cpu",
+  "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/blaze_face_short_range.tflite",
+  "model_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+  "source_frame": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/04_sam2_experiments/sam2_benchmark_frames/000427.jpg",
+  "primary_person_box_xyxy": [
+    152,
+    150,
+    555,
+    479
+  ],
+  "raw_confidence_min": 0.6,
+  "acceptance_confidence_min": 0.9,
+  "minimum_face_size_px": 60,
+  "minimum_aspect_ratio": 0.6,
+  "suppression_threshold": 0.3,
+  "model_load_ms": 1322.295870999369,
+  "inference_ms": 7.6340710002114065,
+  "raw_face_count": 1,
+  "accepted_face_count": 1,
+  "detections": [
+    {
+      "detection_number": 1,
+      "confidence": 0.9700148701667786,
+      "box_xyxy": [
+        292,
+        242,
+        447,
+        397
+      ],
+      "width": 155,
+      "height": 155,
+      "aspect_ratio": 1.0,
+      "accepted": true,
+      "keypoints": [
+        [
+          348.20340582728386,
+          281.28177204728127
+        ],
+        [
+          409.27792167663574,
+          287.3329448401928
+        ],
+        [
+          380.80309665203094,
+          322.23972487449646
+        ],
+        [
+          374.8470029234886,
+          354.1253699660301
+        ],
+        [
+          303.68944975733757,
+          293.11977580189705
+        ],
+        [
+          432.43334490060806,
+          305.8052422106266
+        ]
+      ]
+    }
+  ],
+  "preview_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/05_face_detector_benchmarks/mediapipe_single_frame_preview.jpg"
+}

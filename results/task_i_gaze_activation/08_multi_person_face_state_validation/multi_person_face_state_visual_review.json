@@ -1,0 +1,51 @@
+{
+  "purpose": "Visual validation of independent face state for every ByteTrack ID",
+  "reviewed_artifact": "multi_person_face_state_preview.jpg",
+  "reviewed_key_frames": [
+    450,
+    660,
+    750,
+    840,
+    960,
+    1050,
+    1140,
+    1260,
+    1350,
+    1440,
+    1560,
+    1650,
+    1740,
+    1950,
+    2130
+  ],
+  "reference_real_person_track_id": 2,
+  "findings": {
+    "independent_state_per_track_id": "pass",
+    "reference_face_remained_associated_with_track_2": "pass",
+    "phone_face_overwrote_reference_track_face": false,
+    "phone_or_fragment_tracks_remained_separate": "pass",
+    "reference_face_missing_when_fully_covered": "pass",
+    "reference_face_recovered_after_phone_removal": "pass",
+    "empty_final_view_had_no_selected_reference_face": "pass"
+  },
+  "live_evidence": {
+    "artifact": "multi_person_face_state_live_console.txt",
+    "processed_frames": 1501,
+    "failed_camera_frames": 0,
+    "track_state_creation_events": 7,
+    "track_state_release_events": 6,
+    "face_acquisition_events": 4,
+    "face_loss_events": 8,
+    "face_recovery_events": 5,
+    "old_track_released": 1,
+    "return_track_acquired": 18,
+    "annotated_live_video_saved": false
+  },
+  "excluded_artifact": {
+    "artifact": "multi_person_face_state_live_invalid_attempt1_console.txt",
+    "reason": "The user reported that the required action sequence was performed incorrectly."
+  },
+  "decision": "pass",
+  "scope": "The result validates per-ID face-state separation and runtime transitions. It does not validate liveness, gaze, or interaction intent.",
+  "limitation": "Phone imagery may receive a separate person-like track and face state. Basic RGB liveness is required before interaction-target selection."
+}

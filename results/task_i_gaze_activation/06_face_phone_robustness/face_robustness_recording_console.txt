@@ -1,0 +1,60 @@
+Dynamic frame-rate reduction disabled.
+Camera: 640x480
+Camera-reported FPS: 30.00
+Output video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_input.avi
+Timeline CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_timeline.csv
+
+Recording plan:
+  0-10 s: empty camera view
+  10-20 s: show only your real face
+  20-30 s: hold phone face near your chest
+  30-40 s: hold phone face beside your face
+  40-50 s: move the phone face around
+  50-60 s: cover real face; keep phone visible
+  60-70 s: remove phone; move left and right
+  70-80 s: completely leave view
+
+Recording begins in 15...
+Recording begins in 14...
+Recording begins in 13...
+Recording begins in 12...
+Recording begins in 11...
+Recording begins in 10...
+Recording begins in 9...
+Recording begins in 8...
+Recording begins in 7...
+Recording begins in 6...
+Recording begins in 5...
+Recording begins in 4...
+Recording begins in 3...
+Recording begins in 2...
+Recording begins in 1...
+Recording started.
+  0.0 s: Empty camera view
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+ 10.0 s: Real face only
+ 20.0 s: Phone face near chest
+ 30.0 s: Phone face beside real face
+ 40.0 s: Move phone face around
+ 50.0 s: Cover real face; phone face visible
+ 60.0 s: Remove phone; move left and right
+ 70.0 s: Completely leave camera view
+
+Recording finished safely.
+Stopped early: False
+Recorded frames: 2370
+Failed camera frames: 0
+Elapsed recording time: 80.17 seconds
+Measured capture FPS: 29.56
+Saved video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_input.avi
+Saved timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_timeline.csv

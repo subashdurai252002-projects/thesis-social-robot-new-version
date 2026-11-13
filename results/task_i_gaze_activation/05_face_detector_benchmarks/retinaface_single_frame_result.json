@@ -1,0 +1,35 @@
+{
+  "detector": "RetinaFace MobileNet 0.25",
+  "device": "cpu",
+  "source_frame": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/04_sam2_experiments/sam2_benchmark_frames/000427.jpg",
+  "primary_person_box_xyxy": [
+    152,
+    150,
+    555,
+    479
+  ],
+  "confidence_min": 0.9,
+  "minimum_face_size_px": 60,
+  "minimum_aspect_ratio": 0.6,
+  "model_load_ms": 312.7140450014849,
+  "inference_ms": 1585.911276000843,
+  "raw_face_count": 1,
+  "accepted_face_count": 1,
+  "detections": [
+    {
+      "detection_number": 1,
+      "confidence": 0.9997522234916687,
+      "box_xyxy": [
+        306,
+        218,
+        438,
+        397
+      ],
+      "width": 132,
+      "height": 179,
+      "aspect_ratio": 0.7374301675977654,
+      "accepted": true
+    }
+  ],
+  "preview_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/05_face_detector_benchmarks/retinaface_single_frame_preview.jpg"
+}

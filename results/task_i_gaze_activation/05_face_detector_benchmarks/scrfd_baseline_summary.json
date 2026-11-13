@@ -1,0 +1,111 @@
+{
+  "purpose": "InsightFace SCRFD-500M CPU baseline using controlled primary-person crops",
+  "detector": "InsightFace SCRFD-500M",
+  "device": "cpu",
+  "model_filename": "scrfd_500m.onnx",
+  "model_sha256": "5e4447f50245bbd7966bd6c0fa52938c61474a04ec7def48753668a9d8b4ea3a",
+  "primary_track_id": 1,
+  "sample_interval": 6,
+  "available_video_frames": 2370,
+  "sampled_frames": 395,
+  "processed_primary_frames": 291,
+  "raw_confidence_min": 0.6,
+  "acceptance_confidence_min": 0.9,
+  "minimum_face_size_px": 60,
+  "minimum_aspect_ratio": 0.6,
+  "detection_input_size": [
+    640,
+    640
+  ],
+  "model_load_ms": 42.74340600022697,
+  "two_warmup_detections_ms": 78.11369100090815,
+  "benchmark_seconds": 5.3949152099994535,
+  "mean_inference_ms": 17.04049399648165,
+  "median_inference_ms": 17.023211003106553,
+  "p95_inference_ms": 17.33478900132468,
+  "effective_face_inference_fps": 58.68374474392996,
+  "initial_rss_mib": 123.8125,
+  "peak_rss_mib": 181.58203125,
+  "action_summaries": {
+    "Empty camera view": {
+      "sampled_frames": 47,
+      "primary_frames": 0,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": null,
+      "mean_inference_ms": null
+    },
+    "Sit normally": {
+      "sampled_frames": 50,
+      "primary_frames": 44,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 44,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 17.048339522427174
+    },
+    "Move left and right repeatedly": {
+      "sampled_frames": 49,
+      "primary_frames": 49,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 49,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 17.12403787752585
+    },
+    "Move hand quickly several times": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 50,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 17.015551840377157
+    },
+    "Cover and uncover face repeatedly": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 50,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 16.99871615979646
+    },
+    "Move closer and farther repeatedly": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 50,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 17.05624435970094
+    },
+    "Partially leave and return": {
+      "sampled_frames": 50,
+      "primary_frames": 30,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 30,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 17.052177966737265
+    },
+    "Completely leave camera view": {
+      "sampled_frames": 49,
+      "primary_frames": 18,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 18,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.0,
+      "mean_inference_ms": 16.916000055263996
+    }
+  }
+}

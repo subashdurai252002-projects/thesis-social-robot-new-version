@@ -1,0 +1,12 @@
+Loading RetinaFace on CPU...
+Model loaded in: 582.01 ms
+Running face detection...
+
+Single-frame RetinaFace test completed.
+Primary-person box: [152, 150, 555, 479]
+Raw faces: 1
+Accepted faces: 1
+Inference time: 830.55 ms
+Detection 1: confidence=1.000, box=[306, 218, 438, 397], size=132x179, accepted=True
+Saved preview: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_single_frame_preview.jpg
+Saved result: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_single_frame_result.json

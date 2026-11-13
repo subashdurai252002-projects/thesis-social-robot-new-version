@@ -1,0 +1,396 @@
+frame_index,elapsed_seconds,planned_action,primary_present,primary_box,raw_face_count,accepted_face_count,inference_ms,detections,rss_mib
+0,0.000305,Empty camera view,False,[],0,0,,[],162.90234375
+6,0.914128,Empty camera view,False,[],0,0,,[],162.90234375
+12,1.114378,Empty camera view,False,[],0,0,,[],162.90234375
+18,1.314036,Empty camera view,False,[],0,0,,[],162.90234375
+24,1.515013,Empty camera view,False,[],0,0,,[],162.90234375
+30,1.714888,Empty camera view,False,[],0,0,,[],162.90234375
+36,1.918838,Empty camera view,False,[],0,0,,[],162.90625
+42,2.118717,Empty camera view,False,[],0,0,,[],162.91015625
+48,2.318751,Empty camera view,False,[],0,0,,[],162.91015625
+54,2.518616,Empty camera view,False,[],0,0,,[],162.91015625
+60,2.719196,Empty camera view,False,[],0,0,,[],162.91015625
+66,2.918862,Empty camera view,False,[],0,0,,[],162.91015625
+72,3.122959,Empty camera view,False,[],0,0,,[],162.91015625
+78,3.322876,Empty camera view,False,[],0,0,,[],162.91015625
+84,3.522257,Empty camera view,False,[],0,0,,[],162.91015625
+90,3.722595,Empty camera view,False,[],0,0,,[],162.91015625
+96,3.923067,Empty camera view,False,[],0,0,,[],162.91015625
+102,4.126906,Empty camera view,False,[],0,0,,[],162.91015625
+108,4.326698,Empty camera view,False,[],0,0,,[],162.91015625
+114,4.526439,Empty camera view,False,[],0,0,,[],162.91015625
+120,4.725925,Empty camera view,False,[],0,0,,[],162.91015625
+126,4.926286,Empty camera view,False,[],0,0,,[],162.91015625
+132,5.130600,Empty camera view,False,[],0,0,,[],162.91015625
+138,5.330655,Empty camera view,False,[],0,0,,[],162.91015625
+144,5.529753,Empty camera view,False,[],0,0,,[],162.91015625
+150,5.729926,Empty camera view,False,[],0,0,,[],162.9140625
+156,5.930524,Empty camera view,False,[],0,0,,[],162.9140625
+162,6.134400,Empty camera view,False,[],0,0,,[],162.9140625
+168,6.334832,Empty camera view,False,[],0,0,,[],162.9140625
+174,6.534141,Empty camera view,False,[],0,0,,[],162.9140625
+180,6.734676,Empty camera view,False,[],0,0,,[],162.91796875
+186,6.934338,Empty camera view,False,[],0,0,,[],162.91796875
+192,7.138370,Empty camera view,False,[],0,0,,[],162.91796875
+198,7.338654,Empty camera view,False,[],0,0,,[],162.91796875
+204,7.538703,Empty camera view,False,[],0,0,,[],162.91796875
+210,7.738706,Empty camera view,False,[],0,0,,[],162.91796875
+216,7.938642,Empty camera view,False,[],0,0,,[],162.91796875
+222,8.138811,Empty camera view,False,[],0,0,,[],162.91796875
+228,8.342673,Empty camera view,False,[],0,0,,[],162.91796875
+234,8.542236,Empty camera view,False,[],0,0,,[],162.91796875
+240,8.742578,Empty camera view,False,[],0,0,,[],162.91796875
+246,8.942112,Empty camera view,False,[],0,0,,[],162.91796875
+252,9.142143,Empty camera view,False,[],0,0,,[],162.91796875
+258,9.346584,Empty camera view,False,[],0,0,,[],162.91796875
+264,9.546809,Empty camera view,False,[],0,0,,[],162.91796875
+270,9.746162,Empty camera view,False,[],0,0,,[],162.921875
+276,9.946777,Empty camera view,False,[],0,0,,[],162.921875
+282,10.145948,Sit normally,False,[],0,0,,[],162.921875
+288,10.350625,Sit normally,False,[],0,0,,[],162.921875
+294,10.550161,Sit normally,False,[],0,0,,[],162.921875
+300,10.750510,Sit normally,False,[],0,0,,[],162.92578125
+306,10.950637,Sit normally,False,[],0,0,,[],162.92578125
+312,11.150434,Sit normally,False,[],0,0,,[],162.92578125
+318,11.354666,Sit normally,True,"[0, 3, 483, 480]",1,1,3.8855300008435734,"[{""confidence"": 0.906399130821228, ""box_xyxy_local"": [92, 125, 290, 323], ""width"": 198, ""height"": 198, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.18359375
+324,11.555030,Sit normally,True,"[58, 0, 566, 479]",1,1,3.742368000530405,"[{""confidence"": 0.9173596501350403, ""box_xyxy_local"": [150, 127, 348, 325], ""width"": 198, ""height"": 198, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.0078125
+330,11.754717,Sit normally,True,"[121, 49, 606, 480]",1,1,3.397096999833593,"[{""confidence"": 0.9470768570899963, ""box_xyxy_local"": [163, 115, 347, 299], ""width"": 184, ""height"": 184, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.70703125
+336,11.954406,Sit normally,True,"[142, 112, 575, 479]",1,1,3.1248049999703653,"[{""confidence"": 0.9661775827407837, ""box_xyxy_local"": [156, 102, 320, 266], ""width"": 164, ""height"": 164, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.70703125
+342,12.154767,Sit normally,True,"[157, 153, 552, 479]",1,1,5.193940000026487,"[{""confidence"": 0.9568129777908325, ""box_xyxy_local"": [141, 86, 293, 238], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.796875
+348,12.354409,Sit normally,True,"[164, 164, 555, 479]",1,1,4.61724500200944,"[{""confidence"": 0.9555681347846985, ""box_xyxy_local"": [134, 85, 282, 233], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",163.6875
+354,12.558434,Sit normally,True,"[163, 157, 562, 479]",1,1,4.252847000316251,"[{""confidence"": 0.9684591293334961, ""box_xyxy_local"": [137, 88, 290, 241], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.32421875
+360,12.758673,Sit normally,True,"[157, 148, 565, 479]",1,1,2.981384997838177,"[{""confidence"": 0.9304171800613403, ""box_xyxy_local"": [149, 93, 307, 251], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.32421875
+366,12.959123,Sit normally,True,"[158, 143, 568, 479]",1,1,2.6958689995808527,"[{""confidence"": 0.94901442527771, ""box_xyxy_local"": [150, 97, 307, 254], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.48046875
+372,13.159022,Sit normally,True,"[155, 145, 561, 479]",1,1,3.2680269978300203,"[{""confidence"": 0.9590858817100525, ""box_xyxy_local"": [159, 96, 310, 247], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.66796875
+378,13.359120,Sit normally,True,"[160, 148, 562, 479]",1,1,4.440685999725247,"[{""confidence"": 0.9696884751319885, ""box_xyxy_local"": [147, 95, 301, 249], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+384,13.563409,Sit normally,True,"[159, 150, 559, 479]",1,1,4.149112999584759,"[{""confidence"": 0.9618853330612183, ""box_xyxy_local"": [145, 93, 300, 248], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+390,13.762702,Sit normally,True,"[155, 153, 552, 479]",1,1,4.861697998421732,"[{""confidence"": 0.9553700089454651, ""box_xyxy_local"": [158, 94, 307, 243], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+396,13.962843,Sit normally,True,"[155, 153, 552, 479]",1,1,4.537294000328984,"[{""confidence"": 0.9661148190498352, ""box_xyxy_local"": [154, 94, 307, 247], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+402,14.163544,Sit normally,True,"[154, 151, 554, 479]",1,1,4.3242939973424654,"[{""confidence"": 0.9616662263870239, ""box_xyxy_local"": [144, 94, 298, 248], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+408,14.362828,Sit normally,True,"[152, 150, 553, 479]",1,1,3.655884000181686,"[{""confidence"": 0.9698540568351746, ""box_xyxy_local"": [141, 92, 296, 247], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+414,14.567180,Sit normally,True,"[153, 149, 555, 479]",1,1,3.8544070011994336,"[{""confidence"": 0.9780398607254028, ""box_xyxy_local"": [138, 94, 294, 250], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.7890625
+420,14.767137,Sit normally,True,"[152, 150, 554, 479]",1,1,3.6789410005440004,"[{""confidence"": 0.9656734466552734, ""box_xyxy_local"": [140, 91, 296, 247], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",163.8515625
+426,14.966777,Sit normally,True,"[153, 150, 555, 479]",1,1,3.088741999818012,"[{""confidence"": 0.9702932238578796, ""box_xyxy_local"": [140, 93, 295, 248], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.49609375
+432,15.166632,Sit normally,True,"[153, 150, 555, 479]",1,1,2.6461070010554977,"[{""confidence"": 0.9711511135101318, ""box_xyxy_local"": [139, 94, 293, 248], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.37890625
+438,15.366879,Sit normally,True,"[152, 150, 555, 479]",1,1,3.5962649999419227,"[{""confidence"": 0.9701007008552551, ""box_xyxy_local"": [141, 93, 295, 247], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.625
+444,15.571144,Sit normally,True,"[153, 150, 556, 479]",1,1,4.067955000209622,"[{""confidence"": 0.9725985527038574, ""box_xyxy_local"": [138, 94, 293, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.37890625
+450,15.770934,Sit normally,True,"[152, 150, 554, 479]",1,1,3.5487179993651807,"[{""confidence"": 0.9740039706230164, ""box_xyxy_local"": [139, 91, 296, 248], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.3828125
+456,15.970944,Sit normally,True,"[154, 150, 555, 479]",1,1,3.3516360017529223,"[{""confidence"": 0.9701080918312073, ""box_xyxy_local"": [138, 94, 292, 248], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.50390625
+462,16.171021,Sit normally,True,"[154, 150, 554, 479]",1,1,3.0989100014267024,"[{""confidence"": 0.9742804169654846, ""box_xyxy_local"": [137, 92, 293, 248], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3828125
+468,16.371221,Sit normally,True,"[154, 151, 555, 479]",1,1,4.8346149997087196,"[{""confidence"": 0.9726178050041199, ""box_xyxy_local"": [138, 91, 295, 248], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.625
+474,16.570635,Sit normally,True,"[155, 151, 554, 479]",1,1,4.454406000149902,"[{""confidence"": 0.9683548212051392, ""box_xyxy_local"": [137, 90, 294, 247], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.2578125
+480,16.775199,Sit normally,True,"[154, 151, 554, 479]",1,1,4.274324997822987,"[{""confidence"": 0.9674505591392517, ""box_xyxy_local"": [137, 90, 295, 248], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.24609375
+486,16.974859,Sit normally,True,"[153, 151, 553, 479]",1,1,4.133352002099855,"[{""confidence"": 0.9751405715942383, ""box_xyxy_local"": [139, 90, 295, 246], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.87890625
+492,17.174700,Sit normally,True,"[156, 151, 555, 479]",1,1,4.356264998932602,"[{""confidence"": 0.9754928946495056, ""box_xyxy_local"": [138, 93, 291, 246], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.25
+498,17.375104,Sit normally,True,"[155, 151, 554, 479]",1,1,3.222571001970209,"[{""confidence"": 0.9736260175704956, ""box_xyxy_local"": [136, 89, 294, 247], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8828125
+504,17.574707,Sit normally,True,"[153, 152, 553, 479]",1,1,3.870412998367101,"[{""confidence"": 0.9646130800247192, ""box_xyxy_local"": [140, 92, 295, 247], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.25390625
+510,17.779167,Sit normally,True,"[154, 151, 554, 479]",1,1,4.349306000221986,"[{""confidence"": 0.957767128944397, ""box_xyxy_local"": [141, 91, 295, 245], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.88671875
+516,17.978792,Sit normally,True,"[154, 150, 555, 479]",1,1,4.238170997268753,"[{""confidence"": 0.9718068838119507, ""box_xyxy_local"": [139, 94, 294, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.88671875
+522,18.178810,Sit normally,True,"[152, 150, 554, 479]",1,1,3.7672879989258945,"[{""confidence"": 0.9635418653488159, ""box_xyxy_local"": [142, 93, 297, 248], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.88671875
+528,18.378874,Sit normally,True,"[156, 151, 556, 479]",1,1,3.647812998679001,"[{""confidence"": 0.9706536531448364, ""box_xyxy_local"": [138, 92, 293, 247], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.88671875
+534,18.579085,Sit normally,True,"[155, 151, 555, 479]",1,1,3.0022870014363434,"[{""confidence"": 0.9764843583106995, ""box_xyxy_local"": [139, 94, 292, 247], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.26953125
+540,18.782644,Sit normally,True,"[154, 150, 555, 479]",1,1,1.9958570010203402,"[{""confidence"": 0.9771718382835388, ""box_xyxy_local"": [140, 94, 294, 248], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.62890625
+546,18.983091,Sit normally,True,"[155, 150, 555, 479]",1,1,4.492940002819523,"[{""confidence"": 0.9745603203773499, ""box_xyxy_local"": [140, 95, 293, 248], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.3828125
+552,19.182449,Sit normally,True,"[156, 152, 554, 479]",1,1,4.3409149984654505,"[{""confidence"": 0.9705913066864014, ""box_xyxy_local"": [138, 92, 293, 247], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.3828125
+558,19.382397,Sit normally,True,"[154, 151, 553, 479]",1,1,3.794939002546016,"[{""confidence"": 0.9624765515327454, ""box_xyxy_local"": [140, 94, 295, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.51171875
+564,19.582458,Sit normally,True,"[155, 151, 554, 479]",1,1,2.584674999525305,"[{""confidence"": 0.9713348746299744, ""box_xyxy_local"": [138, 92, 295, 249], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.51171875
+570,19.786863,Sit normally,True,"[155, 151, 555, 479]",1,1,1.8154949975723866,"[{""confidence"": 0.9664887189865112, ""box_xyxy_local"": [139, 92, 295, 248], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.26171875
+576,19.986952,Sit normally,True,"[154, 151, 553, 479]",1,1,1.6859999996086117,"[{""confidence"": 0.9613528251647949, ""box_xyxy_local"": [141, 94, 296, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.50390625
+582,20.187190,Move left and right repeatedly,True,"[154, 151, 553, 479]",1,1,1.757860998623073,"[{""confidence"": 0.956657886505127, ""box_xyxy_local"": [142, 95, 296, 249], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.26171875
+588,20.386656,Move left and right repeatedly,True,"[156, 151, 555, 479]",1,1,1.7480059977970086,"[{""confidence"": 0.9649783372879028, ""box_xyxy_local"": [139, 92, 295, 248], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.140625
+594,20.586976,Move left and right repeatedly,True,"[154, 150, 555, 479]",1,1,1.6939479974098504,"[{""confidence"": 0.951170027256012, ""box_xyxy_local"": [143, 94, 300, 251], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.26171875
+600,20.787309,Move left and right repeatedly,True,"[160, 151, 560, 479]",1,1,3.013396999449469,"[{""confidence"": 0.9444166421890259, ""box_xyxy_local"": [147, 93, 306, 252], ""width"": 159, ""height"": 159, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+606,20.991425,Move left and right repeatedly,True,"[167, 150, 568, 479]",1,1,2.8587940032593906,"[{""confidence"": 0.9642420411109924, ""box_xyxy_local"": [152, 94, 315, 257], ""width"": 163, ""height"": 163, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+612,21.191217,Move left and right repeatedly,True,"[179, 149, 581, 479]",1,1,2.491743998689344,"[{""confidence"": 0.9423428773880005, ""box_xyxy_local"": [165, 99, 326, 260], ""width"": 161, ""height"": 161, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.90234375
+618,21.390482,Move left and right repeatedly,True,"[193, 155, 591, 479]",1,1,4.630643998098094,"[{""confidence"": 0.9327506422996521, ""box_xyxy_local"": [194, 99, 352, 256], ""width"": 158, ""height"": 157, ""aspect_ratio"": 1.0063694267515924, ""accepted"": true}]",163.89453125
+624,21.590140,Move left and right repeatedly,True,"[225, 167, 618, 479]",1,1,2.792444000078831,"[{""confidence"": 0.9445134997367859, ""box_xyxy_local"": [206, 97, 364, 254], ""width"": 158, ""height"": 157, ""aspect_ratio"": 1.0063694267515924, ""accepted"": true}]",165.53125
+630,21.790672,Move left and right repeatedly,True,"[242, 177, 632, 479]",1,1,1.9929640002374072,"[{""confidence"": 0.9739296436309814, ""box_xyxy_local"": [214, 98, 368, 252], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.53125
+636,21.994493,Move left and right repeatedly,True,"[243, 185, 633, 479]",1,1,1.9959709970862605,"[{""confidence"": 0.9879576563835144, ""box_xyxy_local"": [222, 94, 374, 246], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.53515625
+642,22.194734,Move left and right repeatedly,True,"[236, 180, 637, 479]",1,1,1.846364997618366,"[{""confidence"": 0.9600143432617188, ""box_xyxy_local"": [215, 93, 369, 247], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.53515625
+648,22.394799,Move left and right repeatedly,True,"[214, 173, 620, 479]",1,1,1.8923579991678707,"[{""confidence"": 0.9570684432983398, ""box_xyxy_local"": [202, 92, 351, 241], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1953125
+654,22.594176,Move left and right repeatedly,True,"[186, 160, 597, 479]",1,1,1.9819629997073207,"[{""confidence"": 0.9194485545158386, ""box_xyxy_local"": [173, 93, 320, 240], ""width"": 147, ""height"": 147, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.26171875
+660,22.794797,Move left and right repeatedly,True,"[156, 150, 570, 479]",1,1,3.031709999049781,"[{""confidence"": 0.9304055571556091, ""box_xyxy_local"": [137, 93, 292, 248], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.89453125
+666,22.998778,Move left and right repeatedly,True,"[131, 147, 544, 479]",1,1,3.4565630012366455,"[{""confidence"": 0.9605062007904053, ""box_xyxy_local"": [106, 97, 259, 250], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.89453125
+672,23.199080,Move left and right repeatedly,True,"[113, 151, 522, 479]",1,1,3.4201050002593547,"[{""confidence"": 0.9117474555969238, ""box_xyxy_local"": [71, 99, 221, 249], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1796875
+678,23.398621,Move left and right repeatedly,True,"[100, 164, 500, 479]",1,1,3.316992999316426,"[{""confidence"": 0.9581297636032104, ""box_xyxy_local"": [39, 97, 183, 241], ""width"": 144, ""height"": 144, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1796875
+684,23.598629,Move left and right repeatedly,True,"[61, 178, 476, 480]",1,1,3.0695519999426324,"[{""confidence"": 0.9349626898765564, ""box_xyxy_local"": [43, 98, 182, 237], ""width"": 139, ""height"": 139, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1796875
+690,23.798545,Move left and right repeatedly,True,"[29, 187, 464, 480]",1,1,2.574570000433596,"[{""confidence"": 0.9326813817024231, ""box_xyxy_local"": [49, 99, 189, 239], ""width"": 140, ""height"": 140, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.625
+696,24.003185,Move left and right repeatedly,True,"[14, 188, 468, 480]",1,1,2.5710759982757736,"[{""confidence"": 0.9195697903633118, ""box_xyxy_local"": [57, 99, 194, 236], ""width"": 137, ""height"": 137, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.2578125
+702,24.202756,Move left and right repeatedly,True,"[17, 182, 488, 480]",1,1,2.2112529986770824,"[{""confidence"": 0.9524641633033752, ""box_xyxy_local"": [77, 98, 219, 240], ""width"": 142, ""height"": 142, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.49609375
+708,24.403091,Move left and right repeatedly,True,"[58, 170, 529, 479]",1,1,2.2331339969241526,"[{""confidence"": 0.9632710218429565, ""box_xyxy_local"": [78, 91, 226, 239], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.12890625
+714,24.603237,Move left and right repeatedly,True,"[101, 158, 557, 480]",1,1,2.0479280028666835,"[{""confidence"": 0.9471486806869507, ""box_xyxy_local"": [97, 94, 248, 245], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.12890625
+720,24.802193,Move left and right repeatedly,True,"[135, 151, 572, 479]",1,1,1.9261160014139023,"[{""confidence"": 0.9630459547042847, ""box_xyxy_local"": [126, 98, 279, 251], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3046875
+726,25.004939,Move left and right repeatedly,True,"[166, 153, 583, 479]",1,1,1.8357509979978204,"[{""confidence"": 0.9465888738632202, ""box_xyxy_local"": [159, 99, 311, 251], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3046875
+732,25.206548,Move left and right repeatedly,True,"[192, 167, 587, 479]",1,1,2.028164999501314,"[{""confidence"": 0.9573979377746582, ""box_xyxy_local"": [187, 93, 330, 236], ""width"": 143, ""height"": 143, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.30859375
+738,25.406652,Move left and right repeatedly,True,"[218, 179, 601, 480]",1,1,2.159403000405291,"[{""confidence"": 0.9255877137184143, ""box_xyxy_local"": [204, 90, 345, 231], ""width"": 141, ""height"": 141, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.26953125
+744,25.606529,Move left and right repeatedly,True,"[243, 187, 628, 480]",1,1,3.929538001102628,"[{""confidence"": 0.9311808347702026, ""box_xyxy_local"": [206, 90, 347, 231], ""width"": 141, ""height"": 141, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.90234375
+750,25.806361,Move left and right repeatedly,True,"[243, 195, 631, 480]",1,1,3.529000998241827,"[{""confidence"": 0.9446852803230286, ""box_xyxy_local"": [219, 92, 356, 229], ""width"": 137, ""height"": 137, ""aspect_ratio"": 1.0, ""accepted"": true}]",163.91796875
+756,26.006450,Move left and right repeatedly,True,"[237, 196, 634, 480]",1,1,3.36030399921583,"[{""confidence"": 0.9494345188140869, ""box_xyxy_local"": [219, 87, 360, 228], ""width"": 141, ""height"": 141, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.55078125
+762,26.210653,Move left and right repeatedly,True,"[217, 187, 624, 479]",1,1,3.4199860019725747,"[{""confidence"": 0.9304744005203247, ""box_xyxy_local"": [211, 85, 357, 231], ""width"": 146, ""height"": 146, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.4296875
+768,26.412761,Move left and right repeatedly,True,"[189, 175, 596, 480]",1,1,3.2398020011896733,"[{""confidence"": 0.9746062755584717, ""box_xyxy_local"": [193, 87, 339, 233], ""width"": 146, ""height"": 146, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.265625
+774,26.610745,Move left and right repeatedly,True,"[171, 164, 581, 479]",1,1,3.048671998840291,"[{""confidence"": 0.9642652273178101, ""box_xyxy_local"": [159, 92, 309, 242], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+780,26.810645,Move left and right repeatedly,True,"[152, 156, 560, 479]",1,0,2.9878659988753498,"[{""confidence"": 0.8625303506851196, ""box_xyxy_local"": [125, 93, 276, 244], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.8984375
+786,27.010649,Move left and right repeatedly,True,"[132, 154, 538, 479]",1,1,2.672673999768449,"[{""confidence"": 0.9668520092964172, ""box_xyxy_local"": [89, 94, 243, 248], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+792,27.214491,Move left and right repeatedly,True,"[118, 161, 516, 480]",1,1,4.966385997249745,"[{""confidence"": 0.9601316452026367, ""box_xyxy_local"": [59, 97, 208, 246], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+798,27.414516,Move left and right repeatedly,True,"[85, 172, 484, 480]",1,1,4.738815998280188,"[{""confidence"": 0.9872114062309265, ""box_xyxy_local"": [48, 101, 190, 243], ""width"": 142, ""height"": 142, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+804,27.608811,Move left and right repeatedly,True,"[43, 184, 457, 480]",1,1,4.628459999366896,"[{""confidence"": 0.9694031476974487, ""box_xyxy_local"": [49, 100, 192, 243], ""width"": 143, ""height"": 143, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+810,27.809961,Move left and right repeatedly,True,"[23, 193, 452, 480]",1,1,3.9164810004876927,"[{""confidence"": 0.9638455510139465, ""box_xyxy_local"": [45, 95, 193, 243], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8984375
+816,28.014681,Move left and right repeatedly,True,"[16, 197, 459, 480]",1,1,3.588243998819962,"[{""confidence"": 0.9422917366027832, ""box_xyxy_local"": [59, 92, 201, 234], ""width"": 142, ""height"": 142, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.90234375
+822,28.218718,Move left and right repeatedly,True,"[30, 187, 487, 480]",1,1,4.365179996966617,"[{""confidence"": 0.9598389863967896, ""box_xyxy_local"": [69, 94, 214, 239], ""width"": 145, ""height"": 145, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.265625
+828,28.418740,Move left and right repeatedly,True,"[67, 172, 525, 480]",1,1,4.3693589977920055,"[{""confidence"": 0.9604015350341797, ""box_xyxy_local"": [74, 97, 221, 244], ""width"": 147, ""height"": 147, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.5
+834,28.618545,Move left and right repeatedly,True,"[100, 157, 546, 480]",1,1,4.608949999237666,"[{""confidence"": 0.9254652857780457, ""box_xyxy_local"": [95, 97, 246, 248], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.140625
+840,28.817908,Move left and right repeatedly,True,"[133, 149, 564, 479]",1,1,4.575906998070423,"[{""confidence"": 0.9550859928131104, ""box_xyxy_local"": [118, 96, 278, 256], ""width"": 160, ""height"": 160, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.140625
+846,29.017702,Move left and right repeatedly,True,"[167, 150, 581, 479]",1,1,4.474999001104152,"[{""confidence"": 0.9877481460571289, ""box_xyxy_local"": [143, 96, 305, 258], ""width"": 162, ""height"": 162, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3203125
+852,29.222237,Move left and right repeatedly,True,"[189, 156, 592, 479]",1,1,4.408773002069211,"[{""confidence"": 0.9699925184249878, ""box_xyxy_local"": [174, 100, 334, 260], ""width"": 160, ""height"": 160, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3203125
+858,29.421684,Move left and right repeatedly,True,"[214, 168, 602, 480]",1,1,4.767440001160139,"[{""confidence"": 0.9331284165382385, ""box_xyxy_local"": [195, 94, 350, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3203125
+864,29.622558,Move left and right repeatedly,True,"[236, 177, 623, 479]",1,1,4.3827740009874105,"[{""confidence"": 0.9378238916397095, ""box_xyxy_local"": [197, 94, 349, 246], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.66015625
+870,29.816990,Move left and right repeatedly,True,"[234, 180, 630, 479]",1,1,4.243952000251738,"[{""confidence"": 0.9461919665336609, ""box_xyxy_local"": [214, 95, 361, 242], ""width"": 147, ""height"": 147, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.4140625
+876,30.019781,Move hand quickly several times,True,"[220, 177, 629, 479]",1,1,5.011303001083434,"[{""confidence"": 0.950790524482727, ""box_xyxy_local"": [216, 98, 361, 243], ""width"": 145, ""height"": 145, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.41796875
+882,30.221650,Move hand quickly several times,True,"[193, 170, 602, 479]",1,1,4.624622000847012,"[{""confidence"": 0.963782548904419, ""box_xyxy_local"": [200, 93, 349, 242], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.25390625
+888,30.426211,Move hand quickly several times,True,"[172, 160, 583, 479]",1,1,4.2543550007394515,"[{""confidence"": 0.9489902853965759, ""box_xyxy_local"": [165, 94, 318, 247], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.3046875
+894,30.626583,Move hand quickly several times,True,"[154, 153, 563, 479]",1,0,3.296627000963781,"[{""confidence"": 0.8892437219619751, ""box_xyxy_local"": [127, 95, 283, 251], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.94140625
+900,30.826488,Move hand quickly several times,True,"[132, 152, 537, 479]",1,1,3.5021829971810803,"[{""confidence"": 0.9520901441574097, ""box_xyxy_local"": [101, 97, 258, 254], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.94140625
+906,31.026591,Move hand quickly several times,True,"[117, 153, 517, 480]",1,1,3.0570050003007054,"[{""confidence"": 0.938805341720581, ""box_xyxy_local"": [69, 96, 233, 260], ""width"": 164, ""height"": 164, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.20703125
+912,31.226457,Move hand quickly several times,True,"[111, 158, 505, 479]",1,1,2.638049001689069,"[{""confidence"": 0.9618635177612305, ""box_xyxy_local"": [58, 98, 211, 251], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.3203125
+918,31.430417,Move hand quickly several times,True,"[109, 157, 508, 479]",1,1,4.633339998690644,"[{""confidence"": 0.9342670440673828, ""box_xyxy_local"": [66, 100, 218, 252], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.953125
+924,31.630778,Move hand quickly several times,True,"[130, 163, 531, 480]",1,1,3.8095710006018635,"[{""confidence"": 0.9387867450714111, ""box_xyxy_local"": [64, 94, 210, 240], ""width"": 146, ""height"": 146, ""aspect_ratio"": 1.0, ""accepted"": true}]",163.9609375
+930,31.830497,Move hand quickly several times,True,"[160, 167, 576, 480]",1,1,2.4644229997647926,"[{""confidence"": 0.9656429886817932, ""box_xyxy_local"": [53, 93, 196, 236], ""width"": 143, ""height"": 143, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.59375
+936,32.030144,Move hand quickly several times,True,"[162, 165, 607, 480]",1,1,2.717512001254363,"[{""confidence"": 0.9445866942405701, ""box_xyxy_local"": [70, 96, 215, 241], ""width"": 145, ""height"": 145, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.47265625
+942,32.230555,Move hand quickly several times,True,"[85, 9, 640, 479]",1,0,2.0549100008793175,"[{""confidence"": 0.7832529544830322, ""box_xyxy_local"": [148, 239, 307, 398], ""width"": 159, ""height"": 159, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.203125
+948,32.434961,Move hand quickly several times,True,"[126, 62, 640, 479]",1,1,1.9312990007165354,"[{""confidence"": 0.9129680395126343, ""box_xyxy_local"": [115, 196, 264, 345], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.0859375
+954,32.634800,Move hand quickly several times,True,"[165, 133, 604, 480]",1,1,2.0197999983793125,"[{""confidence"": 0.9315299391746521, ""box_xyxy_local"": [83, 131, 224, 272], ""width"": 141, ""height"": 141, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.08984375
+960,32.834533,Move hand quickly several times,True,"[140, 81, 640, 479]",1,0,2.1409990004030988,"[{""confidence"": 0.892535924911499, ""box_xyxy_local"": [110, 182, 253, 325], ""width"": 143, ""height"": 143, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.08984375
+966,33.034895,Move hand quickly several times,True,"[134, 74, 640, 478]",1,1,2.16627299960237,"[{""confidence"": 0.9324989914894104, ""box_xyxy_local"": [113, 190, 256, 333], ""width"": 143, ""height"": 143, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.08984375
+972,33.234850,Move hand quickly several times,True,"[140, 96, 618, 479]",1,1,2.3504519995185547,"[{""confidence"": 0.9690383076667786, ""box_xyxy_local"": [105, 160, 258, 313], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.48046875
+978,33.438964,Move hand quickly several times,True,"[176, 152, 604, 480]",1,1,2.0486629982769955,"[{""confidence"": 0.9558509588241577, ""box_xyxy_local"": [73, 111, 218, 256], ""width"": 145, ""height"": 145, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.234375
+984,33.639149,Move hand quickly several times,True,"[157, 166, 587, 480]",1,0,1.922925999679137,"[{""confidence"": 0.8752337694168091, ""box_xyxy_local"": [88, 94, 236, 242], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.11328125
+990,33.838947,Move hand quickly several times,True,"[134, 164, 571, 480]",1,1,1.931419003085466,"[{""confidence"": 0.9560535550117493, ""box_xyxy_local"": [111, 94, 261, 244], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.11328125
+996,34.038446,Move hand quickly several times,True,"[137, 165, 562, 480]",1,1,1.9673399983730633,"[{""confidence"": 0.9545714855194092, ""box_xyxy_local"": [111, 93, 263, 245], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.11328125
+1002,34.238800,Move hand quickly several times,True,"[149, 164, 579, 480]",1,1,2.0441920023586135,"[{""confidence"": 0.9573555588722229, ""box_xyxy_local"": [97, 93, 249, 245], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1171875
+1008,34.438389,Move hand quickly several times,True,"[106, 66, 640, 479]",1,0,2.1432949979498517,"[{""confidence"": 0.8995660543441772, ""box_xyxy_local"": [146, 199, 296, 349], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.1171875
+1014,34.642674,Move hand quickly several times,True,"[133, 116, 583, 480]",0,0,2.0276809991628397,[],164.59765625
+1020,34.842395,Move hand quickly several times,True,"[150, 164, 542, 480]",0,0,1.8682629997783806,[],165.4765625
+1026,35.042584,Move hand quickly several times,True,"[145, 145, 563, 480]",0,0,1.747450001857942,[],165.4765625
+1032,35.242144,Move hand quickly several times,True,"[139, 165, 535, 480]",1,1,1.9062179999309592,"[{""confidence"": 0.9334018230438232, ""box_xyxy_local"": [115, 94, 270, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.953125
+1038,35.442743,Move hand quickly several times,True,"[146, 164, 548, 480]",1,1,2.813224000419723,"[{""confidence"": 0.9630821347236633, ""box_xyxy_local"": [116, 98, 270, 252], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.328125
+1044,35.646666,Move hand quickly several times,True,"[129, 111, 576, 480]",0,0,2.4776559985184576,[],165.9609375
+1050,35.846135,Move hand quickly several times,True,"[139, 154, 523, 480]",1,0,2.018318002228625,"[{""confidence"": 0.7805322408676147, ""box_xyxy_local"": [158, 105, 290, 237], ""width"": 132, ""height"": 132, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.96484375
+1056,36.046468,Move hand quickly several times,True,"[121, 161, 500, 480]",1,0,1.9155269983457401,"[{""confidence"": 0.8598842620849609, ""box_xyxy_local"": [156, 95, 304, 243], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.96484375
+1062,36.246333,Move hand quickly several times,True,"[163, 165, 547, 480]",1,1,2.0549510009004734,"[{""confidence"": 0.9141990542411804, ""box_xyxy_local"": [108, 96, 256, 244], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.96875
+1068,36.446138,Move hand quickly several times,True,"[142, 157, 529, 480]",1,0,1.8454290002409834,"[{""confidence"": 0.606636643409729, ""box_xyxy_local"": [87, 18, 231, 162], ""width"": 144, ""height"": 144, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.96875
+1074,36.650614,Move hand quickly several times,True,"[130, 162, 505, 479]",1,1,1.9225760006520431,"[{""confidence"": 0.9644489288330078, ""box_xyxy_local"": [128, 100, 278, 250], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.31640625
+1080,36.850244,Move hand quickly several times,True,"[171, 165, 550, 479]",1,1,1.8670690005819779,"[{""confidence"": 0.9396668672561646, ""box_xyxy_local"": [83, 93, 241, 251], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",163.9765625
+1086,37.050036,Move hand quickly several times,True,"[164, 163, 566, 480]",1,1,1.886510999611346,"[{""confidence"": 0.950577437877655, ""box_xyxy_local"": [97, 100, 249, 252], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.609375
+1092,37.250428,Move hand quickly several times,True,"[173, 163, 603, 480]",1,1,1.9649130008474458,"[{""confidence"": 0.9682158827781677, ""box_xyxy_local"": [95, 100, 250, 255], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.48828125
+1098,37.450203,Move hand quickly several times,True,"[100, 45, 640, 479]",1,0,2.02583500140463,"[{""confidence"": 0.6586122512817383, ""box_xyxy_local"": [173, 205, 344, 376], ""width"": 171, ""height"": 171, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.09375
+1104,37.654407,Move hand quickly several times,True,"[76, 86, 545, 479]",1,0,1.8898359994636849,"[{""confidence"": 0.772193431854248, ""box_xyxy_local"": [204, 171, 353, 320], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.97265625
+1110,37.854218,Move hand quickly several times,True,"[84, 166, 491, 480]",1,1,2.2446949988079723,"[{""confidence"": 0.9270306825637817, ""box_xyxy_local"": [196, 94, 336, 234], ""width"": 140, ""height"": 140, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.97265625
+1116,38.054403,Move hand quickly several times,True,"[120, 167, 537, 480]",1,1,2.7683900007104967,"[{""confidence"": 0.9326066970825195, ""box_xyxy_local"": [155, 97, 302, 244], ""width"": 147, ""height"": 147, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.97265625
+1122,38.254278,Move hand quickly several times,True,"[150, 168, 562, 479]",0,0,2.875031997973565,[],165.97265625
+1128,38.454032,Move hand quickly several times,True,"[153, 168, 559, 480]",1,1,4.167248000157997,"[{""confidence"": 0.935263454914093, ""box_xyxy_local"": [120, 96, 275, 251], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.97265625
+1134,38.653806,Move hand quickly several times,True,"[161, 168, 569, 480]",1,1,4.5062380013405345,"[{""confidence"": 0.9581201076507568, ""box_xyxy_local"": [115, 94, 267, 246], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.97265625
+1140,38.858341,Move hand quickly several times,True,"[180, 169, 615, 480]",1,1,4.532272996584652,"[{""confidence"": 0.9460957646369934, ""box_xyxy_local"": [98, 94, 249, 245], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.33984375
+1146,39.058124,Move hand quickly several times,True,"[113, 85, 640, 479]",1,1,5.585582002822775,"[{""confidence"": 0.9095485210418701, ""box_xyxy_local"": [175, 184, 323, 332], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.0546875
+1152,39.258651,Move hand quickly several times,True,"[104, 77, 592, 480]",0,0,5.142265999893425,[],165.93359375
+1158,39.458533,Move hand quickly several times,True,"[112, 117, 534, 480]",1,0,4.460684001969639,"[{""confidence"": 0.7115437984466553, ""box_xyxy_local"": [198, 139, 323, 264], ""width"": 125, ""height"": 125, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.93359375
+1164,39.658845,Move hand quickly several times,True,"[147, 141, 532, 479]",0,0,4.303292997065,[],165.93359375
+1170,39.862140,Move hand quickly several times,True,"[172, 131, 559, 479]",1,1,4.536006999842357,"[{""confidence"": 0.9650476574897766, ""box_xyxy_local"": [95, 133, 245, 283], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.35546875
+1176,40.063943,Cover and uncover face repeatedly,True,"[187, 171, 574, 480]",1,1,4.150863001996186,"[{""confidence"": 0.9532199501991272, ""box_xyxy_local"": [86, 87, 240, 241], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.9921875
+1182,40.262291,Cover and uncover face repeatedly,True,"[176, 172, 591, 480]",1,1,3.6787919998459984,"[{""confidence"": 0.9548226594924927, ""box_xyxy_local"": [105, 91, 253, 239], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.328125
+1188,40.462655,Cover and uncover face repeatedly,True,"[166, 170, 603, 480]",1,1,3.4774989981087856,"[{""confidence"": 0.944858729839325, ""box_xyxy_local"": [108, 93, 259, 244], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.96875
+1194,40.662585,Cover and uncover face repeatedly,True,"[151, 169, 595, 480]",1,1,3.33155699991039,"[{""confidence"": 0.9676291942596436, ""box_xyxy_local"": [117, 90, 273, 246], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.97265625
+1200,40.866199,Cover and uncover face repeatedly,True,"[151, 168, 602, 480]",1,1,3.124284001387423,"[{""confidence"": 0.9688921570777893, ""box_xyxy_local"": [118, 92, 272, 246], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.234375
+1206,41.066290,Cover and uncover face repeatedly,True,"[148, 168, 598, 480]",1,1,2.1836720006831456,"[{""confidence"": 0.9740313291549683, ""box_xyxy_local"": [120, 92, 277, 249], ""width"": 157, ""height"": 157, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.72265625
+1212,41.266134,Cover and uncover face repeatedly,True,"[147, 168, 595, 480]",1,1,2.019618998019723,"[{""confidence"": 0.970241367816925, ""box_xyxy_local"": [119, 92, 273, 246], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.359375
+1218,41.465962,Cover and uncover face repeatedly,True,"[147, 168, 591, 480]",1,1,1.7958680000447202,"[{""confidence"": 0.9713872671127319, ""box_xyxy_local"": [120, 92, 274, 246], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.359375
+1224,41.666368,Cover and uncover face repeatedly,True,"[138, 166, 577, 480]",1,1,1.8391750018054154,"[{""confidence"": 0.9555466175079346, ""box_xyxy_local"": [128, 94, 283, 249], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.359375
+1230,41.870362,Cover and uncover face repeatedly,True,"[106, 166, 520, 480]",1,1,2.702671001316048,"[{""confidence"": 0.9345026612281799, ""box_xyxy_local"": [164, 96, 312, 244], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.359375
+1236,42.070233,Cover and uncover face repeatedly,True,"[138, 163, 549, 480]",1,1,2.8388299979269505,"[{""confidence"": 0.9618934392929077, ""box_xyxy_local"": [128, 94, 288, 254], ""width"": 160, ""height"": 160, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.36328125
+1242,42.270611,Cover and uncover face repeatedly,True,"[143, 161, 548, 480]",1,1,2.4024930025916547,"[{""confidence"": 0.9699099659919739, ""box_xyxy_local"": [124, 95, 291, 262], ""width"": 167, ""height"": 167, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.7578125
+1248,42.470215,Cover and uncover face repeatedly,True,"[149, 158, 553, 479]",1,1,2.6882900019700173,"[{""confidence"": 0.9633985757827759, ""box_xyxy_local"": [124, 100, 291, 267], ""width"": 167, ""height"": 167, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.51171875
+1254,42.670485,Cover and uncover face repeatedly,True,"[166, 168, 549, 480]",0,0,2.3972720009624027,[],165.51171875
+1260,42.870261,Cover and uncover face repeatedly,True,"[160, 167, 541, 480]",0,0,2.4045140016824007,[],165.51171875
+1266,43.074018,Cover and uncover face repeatedly,True,"[165, 167, 543, 480]",0,0,2.139246997103328,[],165.51171875
+1272,43.274202,Cover and uncover face repeatedly,True,"[170, 167, 539, 480]",0,0,2.664397001353791,[],165.51171875
+1278,43.474261,Cover and uncover face repeatedly,True,"[166, 167, 537, 480]",0,0,2.4392339983023703,[],165.51171875
+1284,43.674046,Cover and uncover face repeatedly,True,"[162, 166, 530, 480]",0,0,2.3990320005395915,[],166.3046875
+1290,43.873760,Cover and uncover face repeatedly,True,"[183, 166, 546, 480]",0,0,2.0191829971736297,[],164.3359375
+1296,44.077719,Cover and uncover face repeatedly,True,"[164, 167, 531, 480]",0,0,1.8975220009451732,[],165.9765625
+1302,44.277839,Cover and uncover face repeatedly,True,"[166, 164, 545, 479]",1,1,1.9850310018227901,"[{""confidence"": 0.9459661245346069, ""box_xyxy_local"": [99, 97, 255, 253], ""width"": 156, ""height"": 156, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.01171875
+1308,44.477993,Cover and uncover face repeatedly,True,"[165, 164, 554, 480]",1,1,1.9810789999610279,"[{""confidence"": 0.951641321182251, ""box_xyxy_local"": [103, 99, 258, 254], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.64453125
+1314,44.678381,Cover and uncover face repeatedly,True,"[144, 165, 556, 479]",1,1,2.210383998317411,"[{""confidence"": 0.9430875182151794, ""box_xyxy_local"": [126, 98, 287, 258], ""width"": 161, ""height"": 160, ""aspect_ratio"": 1.00625, ""accepted"": true}]",166.5234375
+1320,44.878104,Cover and uncover face repeatedly,True,"[138, 165, 557, 480]",1,1,1.9829500015475787,"[{""confidence"": 0.9497576355934143, ""box_xyxy_local"": [131, 96, 294, 259], ""width"": 163, ""height"": 163, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.38671875
+1326,45.082216,Cover and uncover face repeatedly,True,"[140, 167, 556, 480]",1,1,2.006840000831289,"[{""confidence"": 0.9496849775314331, ""box_xyxy_local"": [130, 96, 291, 257], ""width"": 161, ""height"": 161, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.01953125
+1332,45.282134,Cover and uncover face repeatedly,True,"[136, 167, 552, 480]",1,1,1.9942399994761217,"[{""confidence"": 0.9704772233963013, ""box_xyxy_local"": [135, 93, 295, 253], ""width"": 160, ""height"": 160, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.38671875
+1338,45.482442,Cover and uncover face repeatedly,True,"[147, 170, 556, 480]",1,1,3.2768250021035783,"[{""confidence"": 0.9279942512512207, ""box_xyxy_local"": [124, 92, 275, 243], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.01953125
+1344,45.682345,Cover and uncover face repeatedly,True,"[159, 171, 546, 480]",0,0,2.8241549989616033,[],164.03515625
+1350,45.882070,Cover and uncover face repeatedly,True,"[183, 170, 541, 480]",0,0,2.742939999734517,[],165.66796875
+1356,46.086639,Cover and uncover face repeatedly,True,"[203, 169, 541, 480]",0,0,2.790187998471083,[],164.01953125
+1362,46.286378,Cover and uncover face repeatedly,True,"[212, 170, 531, 480]",0,0,2.8713819992844947,[],165.65234375
+1368,46.486235,Cover and uncover face repeatedly,True,"[221, 170, 529, 480]",0,0,2.193380998505745,[],164.01953125
+1374,46.686455,Cover and uncover face repeatedly,True,"[187, 171, 502, 480]",0,0,2.3490099993068725,[],165.65234375
+1380,46.885816,Cover and uncover face repeatedly,True,"[191, 169, 530, 480]",1,0,2.153342000383418,"[{""confidence"": 0.8842357993125916, ""box_xyxy_local"": [71, 97, 220, 246], ""width"": 149, ""height"": 149, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.65234375
+1386,47.086516,Cover and uncover face repeatedly,True,"[149, 167, 531, 480]",1,1,2.1445080019475427,"[{""confidence"": 0.9479151964187622, ""box_xyxy_local"": [113, 96, 272, 255], ""width"": 159, ""height"": 159, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65234375
+1392,47.290142,Cover and uncover face repeatedly,True,"[141, 169, 543, 479]",1,1,1.953544000571128,"[{""confidence"": 0.9430347084999084, ""box_xyxy_local"": [120, 93, 284, 257], ""width"": 164, ""height"": 164, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65234375
+1398,47.489838,Cover and uncover face repeatedly,True,"[139, 171, 548, 480]",1,1,2.066369001113344,"[{""confidence"": 0.9533166885375977, ""box_xyxy_local"": [131, 95, 283, 247], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3046875
+1404,47.690339,Cover and uncover face repeatedly,True,"[135, 169, 548, 480]",1,1,1.8978619991685264,"[{""confidence"": 0.9640800356864929, ""box_xyxy_local"": [134, 95, 292, 253], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.38671875
+1410,47.890203,Cover and uncover face repeatedly,True,"[140, 170, 547, 480]",1,1,2.060724997136276,"[{""confidence"": 0.9544790387153625, ""box_xyxy_local"": [126, 94, 284, 252], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.0234375
+1416,48.090557,Cover and uncover face repeatedly,True,"[151, 175, 552, 480]",1,1,2.0328040009189863,"[{""confidence"": 0.9453016519546509, ""box_xyxy_local"": [121, 90, 267, 236], ""width"": 146, ""height"": 146, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.04296875
+1422,48.294242,Cover and uncover face repeatedly,True,"[166, 174, 548, 480]",0,0,2.083268998831045,[],165.67578125
+1428,48.494222,Cover and uncover face repeatedly,True,"[185, 171, 543, 480]",0,0,2.03949500064482,[],164.02734375
+1434,48.694192,Cover and uncover face repeatedly,True,"[173, 170, 527, 480]",0,0,1.8018470000242814,[],165.66015625
+1440,48.894131,Cover and uncover face repeatedly,True,"[192, 171, 537, 480]",0,0,1.6895480002858676,[],164.02734375
+1446,49.094631,Cover and uncover face repeatedly,True,"[181, 171, 525, 480]",0,0,1.739751998684369,[],165.66015625
+1452,49.297827,Cover and uncover face repeatedly,True,"[200, 170, 535, 480]",0,0,1.8400539993308485,[],165.66015625
+1458,49.497941,Cover and uncover face repeatedly,True,"[182, 170, 518, 480]",0,0,2.0366190001368523,[],165.96484375
+1464,49.700760,Cover and uncover face repeatedly,True,"[169, 169, 517, 479]",1,0,1.9868199997290503,"[{""confidence"": 0.8854601979255676, ""box_xyxy_local"": [93, 91, 245, 243], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.33203125
+1470,49.898478,Cover and uncover face repeatedly,True,"[164, 166, 531, 480]",1,1,1.984273003472481,"[{""confidence"": 0.9368722438812256, ""box_xyxy_local"": [102, 98, 254, 250], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.96484375
+1476,50.098156,Move closer and farther repeatedly,True,"[153, 166, 538, 479]",1,1,1.8692420017032418,"[{""confidence"": 0.9508897066116333, ""box_xyxy_local"": [113, 95, 275, 257], ""width"": 162, ""height"": 162, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.84375
+1482,50.302292,Move closer and farther repeatedly,True,"[148, 168, 535, 479]",1,1,1.7936920012289193,"[{""confidence"": 0.9737300872802734, ""box_xyxy_local"": [120, 91, 284, 255], ""width"": 164, ""height"": 164, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.6796875
+1488,50.502161,Move closer and farther repeatedly,True,"[149, 170, 538, 480]",1,1,1.956524996785447,"[{""confidence"": 0.9630681872367859, ""box_xyxy_local"": [121, 96, 273, 248], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.3125
+1494,50.701845,Move closer and farther repeatedly,True,"[145, 170, 537, 480]",1,1,1.8797350021486636,"[{""confidence"": 0.968959391117096, ""box_xyxy_local"": [125, 93, 278, 246], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.33203125
+1500,50.902216,Move closer and farther repeatedly,True,"[152, 171, 543, 480]",1,1,2.066409000690328,"[{""confidence"": 0.9162992835044861, ""box_xyxy_local"": [119, 89, 273, 243], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.96484375
+1506,51.101899,Move closer and farther repeatedly,True,"[146, 160, 549, 479]",1,1,1.751954998326255,"[{""confidence"": 0.9637027978897095, ""box_xyxy_local"": [127, 94, 286, 253], ""width"": 159, ""height"": 159, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.02734375
+1512,51.306252,Move closer and farther repeatedly,True,"[131, 125, 570, 479]",1,1,1.8411140008538496,"[{""confidence"": 0.9616040587425232, ""box_xyxy_local"": [139, 103, 317, 281], ""width"": 178, ""height"": 178, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.6640625
+1518,51.506642,Move closer and farther repeatedly,True,"[108, 82, 587, 479]",1,1,2.0883940014755353,"[{""confidence"": 0.9679977893829346, ""box_xyxy_local"": [152, 122, 358, 328], ""width"": 206, ""height"": 206, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.8671875
+1524,51.706466,Move closer and farther repeatedly,True,"[104, 53, 610, 479]",1,1,1.947979999386007,"[{""confidence"": 0.9376760125160217, ""box_xyxy_local"": [147, 133, 384, 370], ""width"": 237, ""height"": 237, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.74609375
+1530,51.905965,Move closer and farther repeatedly,True,"[80, 9, 633, 479]",1,1,1.9689670007210225,"[{""confidence"": 0.9284359216690063, ""box_xyxy_local"": [153, 162, 419, 428], ""width"": 266, ""height"": 266, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.625
+1536,52.106369,Move closer and farther repeatedly,True,"[67, 0, 634, 480]",1,1,2.240820998849813,"[{""confidence"": 0.928906261920929, ""box_xyxy_local"": [150, 158, 442, 450], ""width"": 292, ""height"": 292, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65625
+1542,52.306098,Move closer and farther repeatedly,True,"[50, 0, 628, 480]",1,1,1.9426940016273875,"[{""confidence"": 0.9230439066886902, ""box_xyxy_local"": [154, 148, 475, 469], ""width"": 321, ""height"": 321, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65625
+1548,52.510454,Move closer and farther repeatedly,True,"[42, 0, 632, 480]",1,1,2.1903480010223575,"[{""confidence"": 0.9414604306221008, ""box_xyxy_local"": [150, 136, 495, 480], ""width"": 345, ""height"": 344, ""aspect_ratio"": 1.002906976744186, ""accepted"": true}]",166.54296875
+1554,52.710273,Move closer and farther repeatedly,True,"[32, 0, 631, 479]",1,1,2.313954999408452,"[{""confidence"": 0.9182999730110168, ""box_xyxy_local"": [154, 142, 517, 479], ""width"": 363, ""height"": 337, ""aspect_ratio"": 1.0771513353115727, ""accepted"": true}]",166.54296875
+1560,52.909943,Move closer and farther repeatedly,True,"[67, 1, 640, 479]",1,0,2.5185630001942627,"[{""confidence"": 0.8787423372268677, ""box_xyxy_local"": [129, 145, 484, 478], ""width"": 355, ""height"": 333, ""aspect_ratio"": 1.0660660660660661, ""accepted"": false}]",164.91015625
+1566,53.110248,Move closer and farther repeatedly,True,"[58, 1, 640, 478]",1,1,2.383960996667156,"[{""confidence"": 0.9010888338088989, ""box_xyxy_local"": [133, 146, 489, 477], ""width"": 356, ""height"": 331, ""aspect_ratio"": 1.0755287009063443, ""accepted"": true}]",166.54296875
+1572,53.309736,Move closer and farther repeatedly,True,"[38, 0, 638, 480]",1,1,2.2840089986857492,"[{""confidence"": 0.9228764176368713, ""box_xyxy_local"": [168, 149, 478, 459], ""width"": 310, ""height"": 310, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.54296875
+1578,53.514061,Move closer and farther repeatedly,True,"[58, 2, 640, 479]",1,1,2.3854160026530735,"[{""confidence"": 0.9499166011810303, ""box_xyxy_local"": [175, 152, 427, 403], ""width"": 252, ""height"": 251, ""aspect_ratio"": 1.00398406374502, ""accepted"": true}]",164.91015625
+1584,53.714036,Move closer and farther repeatedly,True,"[101, 74, 581, 480]",1,1,2.223732000857126,"[{""confidence"": 0.9555019736289978, ""box_xyxy_local"": [155, 113, 352, 310], ""width"": 197, ""height"": 197, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.54296875
+1590,53.914186,Move closer and farther repeatedly,True,"[145, 132, 558, 479]",1,0,2.131719000317389,"[{""confidence"": 0.8527230024337769, ""box_xyxy_local"": [131, 98, 282, 249], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.71484375
+1596,54.114038,Move closer and farther repeatedly,True,"[164, 182, 528, 480]",1,0,2.0359680020192172,"[{""confidence"": 0.8153293132781982, ""box_xyxy_local"": [119, 82, 254, 217], ""width"": 135, ""height"": 135, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.59765625
+1602,54.313721,Move closer and farther repeatedly,True,"[178, 219, 507, 480]",1,0,2.0016189992020372,"[{""confidence"": 0.8995458483695984, ""box_xyxy_local"": [113, 73, 229, 189], ""width"": 116, ""height"": 116, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.59765625
+1608,54.518603,Move closer and farther repeatedly,True,"[178, 235, 498, 480]",1,1,2.168591003282927,"[{""confidence"": 0.9533131718635559, ""box_xyxy_local"": [119, 68, 225, 174], ""width"": 106, ""height"": 106, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.98046875
+1614,54.717145,Move closer and farther repeatedly,True,"[176, 240, 501, 480]",1,1,2.065302000119118,"[{""confidence"": 0.9448930025100708, ""box_xyxy_local"": [120, 65, 227, 172], ""width"": 107, ""height"": 107, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.03515625
+1620,54.918453,Move closer and farther repeatedly,True,"[172, 238, 504, 480]",1,1,1.9862079971062485,"[{""confidence"": 0.9649498462677002, ""box_xyxy_local"": [125, 68, 233, 176], ""width"": 108, ""height"": 108, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.66796875
+1626,55.117492,Move closer and farther repeatedly,True,"[170, 239, 504, 480]",1,1,1.9672420021379367,"[{""confidence"": 0.9373594522476196, ""box_xyxy_local"": [125, 69, 234, 178], ""width"": 109, ""height"": 109, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.66796875
+1632,55.318089,Move closer and farther repeatedly,True,"[170, 239, 506, 480]",1,1,5.004580998502206,"[{""confidence"": 0.9508963823318481, ""box_xyxy_local"": [125, 71, 235, 181], ""width"": 110, ""height"": 110, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.66796875
+1638,55.522082,Move closer and farther repeatedly,True,"[169, 236, 508, 480]",1,1,4.410601002746262,"[{""confidence"": 0.9471406936645508, ""box_xyxy_local"": [127, 73, 238, 184], ""width"": 111, ""height"": 111, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.66796875
+1644,55.722217,Move closer and farther repeatedly,True,"[161, 222, 520, 480]",1,1,4.026886999781709,"[{""confidence"": 0.9406332969665527, ""box_xyxy_local"": [131, 75, 252, 196], ""width"": 121, ""height"": 121, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1328125
+1650,55.922063,Move closer and farther repeatedly,True,"[141, 188, 540, 480]",1,1,4.031080999993719,"[{""confidence"": 0.9434645175933838, ""box_xyxy_local"": [148, 83, 280, 215], ""width"": 132, ""height"": 132, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.30078125
+1656,56.122045,Move closer and farther repeatedly,True,"[122, 142, 571, 479]",1,1,2.774712000245927,"[{""confidence"": 0.9184383153915405, ""box_xyxy_local"": [154, 96, 305, 247], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.9375
+1662,56.322067,Move closer and farther repeatedly,True,"[89, 88, 597, 479]",1,1,2.076901000691578,"[{""confidence"": 0.917820155620575, ""box_xyxy_local"": [160, 113, 352, 305], ""width"": 192, ""height"": 192, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.9375
+1668,56.522260,Move closer and farther repeatedly,True,"[74, 38, 631, 479]",1,1,1.9743429984373506,"[{""confidence"": 0.9364394545555115, ""box_xyxy_local"": [159, 134, 390, 365], ""width"": 231, ""height"": 231, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.95703125
+1674,56.726027,Move closer and farther repeatedly,True,"[50, 0, 640, 479]",1,1,4.453830999409547,"[{""confidence"": 0.9427250623703003, ""box_xyxy_local"": [153, 142, 442, 431], ""width"": 289, ""height"": 289, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.8359375
+1680,56.926241,Move closer and farther repeatedly,True,"[27, 0, 630, 479]",1,1,3.8134630012791604,"[{""confidence"": 0.9246999621391296, ""box_xyxy_local"": [147, 138, 485, 476], ""width"": 338, ""height"": 338, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.01953125
+1686,57.130213,Move closer and farther repeatedly,True,"[35, 1, 640, 479]",1,0,3.0700520001119003,"[{""confidence"": 0.861096203327179, ""box_xyxy_local"": [114, 131, 498, 478], ""width"": 384, ""height"": 347, ""aspect_ratio"": 1.106628242074928, ""accepted"": false}]",166.01953125
+1692,57.325949,Move closer and farther repeatedly,True,"[19, 1, 629, 478]",1,1,3.0309209978440776,"[{""confidence"": 0.91712886095047, ""box_xyxy_local"": [144, 138, 485, 477], ""width"": 341, ""height"": 339, ""aspect_ratio"": 1.0058997050147493, ""accepted"": true}]",166.55078125
+1698,57.526068,Move closer and farther repeatedly,True,"[36, 1, 640, 479]",1,1,2.2965059979469515,"[{""confidence"": 0.9587210416793823, ""box_xyxy_local"": [178, 146, 433, 401], ""width"": 255, ""height"": 255, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.5546875
+1704,57.730014,Move closer and farther repeatedly,True,"[112, 106, 570, 479]",1,0,2.258769000036409,"[{""confidence"": 0.8838205933570862, ""box_xyxy_local"": [154, 111, 316, 273], ""width"": 162, ""height"": 162, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.921875
+1710,57.929947,Move closer and farther repeatedly,True,"[160, 185, 530, 480]",1,1,1.8775489988911431,"[{""confidence"": 0.9262569546699524, ""box_xyxy_local"": [125, 79, 250, 204], ""width"": 125, ""height"": 125, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.67578125
+1716,58.129405,Move closer and farther repeatedly,True,"[178, 223, 508, 480]",1,0,1.9306819995108526,"[{""confidence"": 0.8703144788742065, ""box_xyxy_local"": [112, 71, 229, 188], ""width"": 117, ""height"": 117, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.67578125
+1722,58.329567,Move closer and farther repeatedly,True,"[173, 227, 506, 480]",1,1,2.3977050004759803,"[{""confidence"": 0.9484273791313171, ""box_xyxy_local"": [121, 70, 235, 184], ""width"": 114, ""height"": 114, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.67578125
+1728,58.529196,Move closer and farther repeatedly,True,"[162, 220, 508, 480]",1,1,2.3357390018645674,"[{""confidence"": 0.9682751297950745, ""box_xyxy_local"": [127, 75, 248, 196], ""width"": 121, ""height"": 121, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.67578125
+1734,58.733305,Move closer and farther repeatedly,True,"[159, 207, 521, 479]",1,1,2.308801998879062,"[{""confidence"": 0.9504324197769165, ""box_xyxy_local"": [120, 75, 256, 211], ""width"": 136, ""height"": 136, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.16015625
+1740,58.933648,Move closer and farther repeatedly,True,"[134, 164, 552, 480]",1,1,1.9523769988154527,"[{""confidence"": 0.9385015964508057, ""box_xyxy_local"": [138, 86, 297, 245], ""width"": 159, ""height"": 159, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.32421875
+1746,59.133467,Move closer and farther repeatedly,True,"[91, 97, 589, 479]",1,1,2.0115519982937258,"[{""confidence"": 0.9720630645751953, ""box_xyxy_local"": [160, 113, 364, 316], ""width"": 204, ""height"": 203, ""aspect_ratio"": 1.0049261083743843, ""accepted"": true}]",165.95703125
+1752,59.334491,Move closer and farther repeatedly,True,"[60, 29, 636, 479]",1,1,1.981459998205537,"[{""confidence"": 0.9064068794250488, ""box_xyxy_local"": [161, 158, 415, 412], ""width"": 254, ""height"": 254, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.95703125
+1758,59.534007,Move closer and farther repeatedly,True,"[31, 0, 639, 479]",1,1,2.095889998599887,"[{""confidence"": 0.9376059174537659, ""box_xyxy_local"": [170, 175, 468, 473], ""width"": 298, ""height"": 298, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.25
+1764,59.737677,Move closer and farther repeatedly,True,"[42, 0, 635, 480]",1,1,3.163372999551939,"[{""confidence"": 0.9476873278617859, ""box_xyxy_local"": [166, 177, 447, 458], ""width"": 281, ""height"": 281, ""aspect_ratio"": 1.0, ""accepted"": true}]",167.12890625
+1770,59.938238,Move closer and farther repeatedly,True,"[84, 48, 611, 479]",1,1,2.88257799911662,"[{""confidence"": 0.91432785987854, ""box_xyxy_local"": [148, 141, 382, 375], ""width"": 234, ""height"": 234, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.30078125
+1776,60.137731,Partially leave and return,True,"[109, 99, 574, 479]",1,1,2.776580000499962,"[{""confidence"": 0.9686354994773865, ""box_xyxy_local"": [142, 118, 336, 312], ""width"": 194, ""height"": 194, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1796875
+1782,60.337809,Partially leave and return,True,"[132, 137, 556, 479]",1,1,2.6222460001008585,"[{""confidence"": 0.9550364017486572, ""box_xyxy_local"": [135, 99, 301, 265], ""width"": 166, ""height"": 166, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.1796875
+1788,60.537901,Partially leave and return,True,"[144, 160, 545, 479]",1,1,2.134197002305882,"[{""confidence"": 0.9523267149925232, ""box_xyxy_local"": [129, 88, 287, 246], ""width"": 158, ""height"": 158, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.18359375
+1794,60.737635,Partially leave and return,True,"[151, 173, 541, 480]",1,1,1.8326529971091077,"[{""confidence"": 0.9494555592536926, ""box_xyxy_local"": [131, 86, 275, 230], ""width"": 144, ""height"": 144, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.421875
+1800,60.942271,Partially leave and return,True,"[151, 173, 543, 479]",1,1,2.23571399692446,"[{""confidence"": 0.9475045204162598, ""box_xyxy_local"": [131, 86, 277, 232], ""width"": 146, ""height"": 146, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.0546875
+1806,61.141875,Partially leave and return,True,"[149, 172, 544, 479]",1,1,1.9300870008009952,"[{""confidence"": 0.9440187215805054, ""box_xyxy_local"": [132, 85, 280, 233], ""width"": 148, ""height"": 148, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.05078125
+1812,61.342029,Partially leave and return,True,"[136, 154, 553, 479]",1,1,2.1337389989639632,"[{""confidence"": 0.9235768914222717, ""box_xyxy_local"": [146, 89, 293, 236], ""width"": 147, ""height"": 147, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.68359375
+1818,61.541625,Partially leave and return,True,"[100, 99, 582, 479]",1,1,1.890321000246331,"[{""confidence"": 0.9155468344688416, ""box_xyxy_local"": [164, 99, 331, 266], ""width"": 167, ""height"": 167, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.68359375
+1824,61.741618,Partially leave and return,True,"[16, 16, 605, 479]",1,1,2.103552997141378,"[{""confidence"": 0.9249461889266968, ""box_xyxy_local"": [210, 94, 446, 330], ""width"": 236, ""height"": 236, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.28125
+1830,61.945174,Partially leave and return,True,"[2, 0, 622, 479]",1,0,4.831949001527391,"[{""confidence"": 0.6188212633132935, ""box_xyxy_local"": [246, 42, 444, 240], ""width"": 198, ""height"": 198, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.28125
+1836,62.145054,Partially leave and return,False,[],0,0,,[],166.28125
+1842,62.345301,Partially leave and return,False,[],0,0,,[],166.28125
+1848,62.546010,Partially leave and return,False,[],0,0,,[],166.28125
+1854,62.745673,Partially leave and return,False,[],0,0,,[],166.28125
+1860,62.950155,Partially leave and return,False,[],0,0,,[],166.28125
+1866,63.149133,Partially leave and return,False,[],0,0,,[],166.28125
+1872,63.350025,Partially leave and return,False,[],0,0,,[],166.28125
+1878,63.550589,Partially leave and return,False,[],0,0,,[],166.28125
+1884,63.749709,Partially leave and return,False,[],0,0,,[],166.28125
+1890,63.954169,Partially leave and return,False,[],0,0,,[],166.28125
+1896,64.152936,Partially leave and return,False,[],0,0,,[],166.28125
+1902,64.353655,Partially leave and return,False,[],0,0,,[],166.28125
+1908,64.553730,Partially leave and return,False,[],0,0,,[],166.28515625
+1914,64.753320,Partially leave and return,True,"[94, 11, 640, 479]",1,0,5.439454002043931,"[{""confidence"": 0.8944635391235352, ""box_xyxy_local"": [180, 136, 371, 327], ""width"": 191, ""height"": 191, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.51953125
+1920,64.954143,Partially leave and return,True,"[171, 87, 636, 479]",1,1,3.6481409988482483,"[{""confidence"": 0.9624603390693665, ""box_xyxy_local"": [150, 102, 303, 255], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.51953125
+1926,65.158159,Partially leave and return,True,"[187, 121, 624, 479]",1,1,2.5178500000038184,"[{""confidence"": 0.9448941946029663, ""box_xyxy_local"": [142, 90, 293, 241], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.51953125
+1932,65.358640,Partially leave and return,True,"[173, 142, 595, 479]",1,1,2.4359799972444307,"[{""confidence"": 0.9186145663261414, ""box_xyxy_local"": [146, 88, 298, 240], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.4609375
+1938,65.558039,Partially leave and return,True,"[151, 124, 592, 479]",1,0,2.1256100008031353,"[{""confidence"": 0.8848032355308533, ""box_xyxy_local"": [150, 99, 303, 252], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.6875
+1944,65.758509,Partially leave and return,True,"[104, 64, 625, 479]",1,0,2.828743999998551,"[{""confidence"": 0.8428170084953308, ""box_xyxy_local"": [154, 104, 359, 309], ""width"": 205, ""height"": 205, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.5703125
+1950,65.958095,Partially leave and return,True,"[18, 0, 620, 478]",1,0,2.0536830015771557,"[{""confidence"": 0.831993579864502, ""box_xyxy_local"": [217, 0, 467, 250], ""width"": 250, ""height"": 250, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.5703125
+1956,66.161480,Partially leave and return,False,[],0,0,,[],166.5703125
+1962,66.362147,Partially leave and return,False,[],0,0,,[],166.5703125
+1968,66.562137,Partially leave and return,False,[],0,0,,[],166.5703125
+1974,66.762273,Partially leave and return,False,[],0,0,,[],166.57421875
+1980,66.962430,Partially leave and return,False,[],0,0,,[],166.57421875
+1986,67.165413,Partially leave and return,False,[],0,0,,[],166.57421875
+1992,67.365421,Partially leave and return,False,[],0,0,,[],166.57421875
+1998,67.565033,Partially leave and return,True,"[8, 0, 627, 479]",1,0,3.1375380021927413,"[{""confidence"": 0.8291724324226379, ""box_xyxy_local"": [213, 0, 581, 368], ""width"": 368, ""height"": 368, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.921875
+2004,67.765615,Partially leave and return,True,"[49, 0, 640, 479]",1,1,2.555189999839058,"[{""confidence"": 0.9287969470024109, ""box_xyxy_local"": [214, 123, 456, 365], ""width"": 242, ""height"": 242, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.6796875
+2010,67.965482,Partially leave and return,True,"[111, 50, 633, 479]",1,1,2.039996998064453,"[{""confidence"": 0.9168713092803955, ""box_xyxy_local"": [178, 118, 359, 299], ""width"": 181, ""height"": 181, ""aspect_ratio"": 1.0, ""accepted"": true}]",166.55859375
+2016,68.169010,Partially leave and return,True,"[129, 101, 582, 479]",1,1,1.9713709989446215,"[{""confidence"": 0.9438784122467041, ""box_xyxy_local"": [161, 101, 321, 261], ""width"": 160, ""height"": 160, ""aspect_ratio"": 1.0, ""accepted"": true}]",164.94140625
+2022,68.370103,Partially leave and return,True,"[141, 119, 572, 479]",1,1,1.9481939998513553,"[{""confidence"": 0.9153244495391846, ""box_xyxy_local"": [147, 98, 297, 248], ""width"": 150, ""height"": 150, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8203125
+2028,68.570030,Partially leave and return,True,"[145, 124, 569, 479]",1,1,1.9185639976058155,"[{""confidence"": 0.9048869609832764, ""box_xyxy_local"": [142, 97, 293, 248], ""width"": 151, ""height"": 151, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.8203125
+2034,68.769878,Partially leave and return,True,"[149, 134, 563, 479]",1,0,2.1085259977553505,"[{""confidence"": 0.8934181928634644, ""box_xyxy_local"": [137, 91, 289, 243], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.82421875
+2040,68.970361,Partially leave and return,True,"[147, 135, 561, 479]",1,1,2.25789599790005,"[{""confidence"": 0.9105603098869324, ""box_xyxy_local"": [137, 91, 292, 246], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.82421875
+2046,69.170578,Partially leave and return,True,"[150, 136, 562, 479]",1,0,3.1405760018969886,"[{""confidence"": 0.8575106263160706, ""box_xyxy_local"": [135, 93, 289, 247], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.52734375
+2052,69.374034,Partially leave and return,True,"[151, 137, 562, 479]",1,0,3.6774619984498713,"[{""confidence"": 0.8635579347610474, ""box_xyxy_local"": [133, 95, 287, 249], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.890625
+2058,69.574446,Partially leave and return,True,"[150, 138, 561, 479]",1,0,3.536587999406038,"[{""confidence"": 0.8222757577896118, ""box_xyxy_local"": [133, 93, 288, 248], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.5234375
+2064,69.773655,Partially leave and return,True,"[148, 138, 560, 479]",1,0,2.739519000897417,"[{""confidence"": 0.8344067931175232, ""box_xyxy_local"": [133, 95, 287, 249], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.87890625
+2070,69.973955,Partially leave and return,True,"[147, 137, 561, 479]",1,0,2.5257060005969834,"[{""confidence"": 0.857517659664154, ""box_xyxy_local"": [134, 96, 288, 250], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.63671875
+2076,70.173459,Completely leave camera view,True,"[147, 138, 560, 479]",1,0,2.6529470014793333,"[{""confidence"": 0.8591920137405396, ""box_xyxy_local"": [134, 96, 287, 249], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.078125
+2082,70.378035,Completely leave camera view,True,"[146, 138, 559, 479]",1,0,2.2046490012144204,"[{""confidence"": 0.8448972702026367, ""box_xyxy_local"": [134, 96, 287, 249], ""width"": 153, ""height"": 153, ""aspect_ratio"": 1.0, ""accepted"": false}]",165.71484375
+2088,70.577707,Completely leave camera view,True,"[147, 138, 560, 479]",1,0,2.0302730008552317,"[{""confidence"": 0.8202254176139832, ""box_xyxy_local"": [132, 95, 287, 250], ""width"": 155, ""height"": 155, ""aspect_ratio"": 1.0, ""accepted"": false}]",166.59375
+2094,70.778172,Completely leave camera view,True,"[147, 136, 563, 479]",1,0,1.9470830011414364,"[{""confidence"": 0.8800868988037109, ""box_xyxy_local"": [138, 92, 292, 246], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": false}]",164.8984375
+2100,70.977423,Completely leave camera view,True,"[143, 129, 564, 479]",1,1,2.150763997633476,"[{""confidence"": 0.9462903141975403, ""box_xyxy_local"": [162, 92, 316, 246], ""width"": 154, ""height"": 154, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65234375
+2106,71.176946,Completely leave camera view,True,"[146, 115, 580, 479]",1,1,1.9763260024774354,"[{""confidence"": 0.9000342488288879, ""box_xyxy_local"": [230, 114, 382, 266], ""width"": 152, ""height"": 152, ""aspect_ratio"": 1.0, ""accepted"": true}]",165.65234375
+2112,71.381687,Completely leave camera view,True,"[214, 129, 634, 479]",1,0,2.08474600003683,"[{""confidence"": 0.8298615217208862, ""box_xyxy_local"": [275, 131, 420, 294], ""width"": 145, ""height"": 163, ""aspect_ratio"": 0.8895705521472392, ""accepted"": false}]",166.0078125
+2118,71.581525,Completely leave camera view,True,"[250, 139, 640, 479]",0,0,2.303774999745656,[],166.0078125
+2124,71.781654,Completely leave camera view,True,"[298, 156, 640, 479]",0,0,2.358148998609977,[],166.56640625
+2130,71.981218,Completely leave camera view,False,[],0,0,,[],166.56640625
+2136,72.180435,Completely leave camera view,False,[],0,0,,[],166.56640625
+2142,72.385116,Completely leave camera view,True,"[389, 128, 640, 480]",0,0,1.9684679973579478,[],164.41015625
+2148,72.585055,Completely leave camera view,True,"[378, 116, 640, 479]",0,0,2.021681000769604,[],166.04296875
+2154,72.785658,Completely leave camera view,True,"[392, 112, 640, 479]",0,0,1.9679600009112619,[],164.08984375
+2160,72.984785,Completely leave camera view,True,"[402, 91, 640, 479]",0,0,2.0400499997776933,[],165.72265625
+2166,73.185476,Completely leave camera view,True,"[411, 85, 640, 479]",0,0,2.0247479988029227,[],165.72265625
+2172,73.384844,Completely leave camera view,True,"[435, 107, 640, 479]",0,0,1.9427049992373213,[],165.7265625
+2178,73.589483,Completely leave camera view,True,"[435, 149, 627, 479]",0,0,1.9645329994091298,[],165.7265625
+2184,73.788796,Completely leave camera view,True,"[495, 162, 640, 479]",1,0,2.1310569973138627,"[{""confidence"": 0.6715484261512756, ""box_xyxy_local"": [91, 40, 145, 99], ""width"": 54, ""height"": 59, ""aspect_ratio"": 0.9152542372881356, ""accepted"": false}]",165.7265625
+2190,73.989166,Completely leave camera view,True,"[538, 178, 640, 479]",0,0,1.8599249997350853,[],165.7265625
+2196,74.188579,Completely leave camera view,False,[],0,0,,[],165.7265625
+2202,74.389035,Completely leave camera view,False,[],0,0,,[],165.73046875
+2208,74.592590,Completely leave camera view,False,[],0,0,,[],165.73046875
+2214,74.793430,Completely leave camera view,False,[],0,0,,[],165.73046875
+2220,74.993336,Completely leave camera view,False,[],0,0,,[],165.73046875
+2226,75.192792,Completely leave camera view,False,[],0,0,,[],165.73046875
+2232,75.392730,Completely leave camera view,False,[],0,0,,[],165.73046875
+2238,75.596951,Completely leave camera view,False,[],0,0,,[],165.73046875
+2244,75.797271,Completely leave camera view,False,[],0,0,,[],165.73046875
+2250,75.997233,Completely leave camera view,False,[],0,0,,[],165.73046875
+2256,76.196387,Completely leave camera view,False,[],0,0,,[],165.73046875
+2262,76.396390,Completely leave camera view,False,[],0,0,,[],165.73046875
+2268,76.600951,Completely leave camera view,False,[],0,0,,[],165.73046875
+2274,76.801110,Completely leave camera view,False,[],0,0,,[],165.73046875
+2280,77.001122,Completely leave camera view,False,[],0,0,,[],165.73046875
+2286,77.200417,Completely leave camera view,False,[],0,0,,[],165.73046875
+2292,77.401124,Completely leave camera view,False,[],0,0,,[],165.73046875
+2298,77.600258,Completely leave camera view,False,[],0,0,,[],165.73046875
+2304,77.805117,Completely leave camera view,False,[],0,0,,[],165.73046875
+2310,78.004773,Completely leave camera view,False,[],0,0,,[],165.73046875
+2316,78.205211,Completely leave camera view,False,[],0,0,,[],165.73046875
+2322,78.405215,Completely leave camera view,False,[],0,0,,[],165.734375
+2328,78.604546,Completely leave camera view,False,[],0,0,,[],165.734375
+2334,78.808721,Completely leave camera view,False,[],0,0,,[],165.734375
+2340,79.009186,Completely leave camera view,False,[],0,0,,[],165.734375
+2346,79.207764,Completely leave camera view,False,[],0,0,,[],165.734375
+2352,79.408424,Completely leave camera view,False,[],0,0,,[],165.734375
+2358,79.608972,Completely leave camera view,False,[],0,0,,[],165.734375
+2364,79.812862,Completely leave camera view,False,[],0,0,,[],165.734375

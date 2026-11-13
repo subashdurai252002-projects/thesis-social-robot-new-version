@@ -11,5 +11,11 @@ This directory contains reproducible tests, benchmarks, and diagnostic utilities
 - `prepare_sam2_prompt.py`: shared SAM2 prompt generator.
 - `validate_sam2_models.py`: SAM2 checkpoint-load validation.
 - `benchmark_sam2_tracking.py`: SAM2 tracking benchmark retained for Jetson evaluation.
+- `benchmark_retinaface.py`, `benchmark_yunet.py`, `benchmark_mediapipe.py`, and `benchmark_scrfd.py`: controlled face-detector benchmarks.
+- `record_face_robustness.py`: phone/photo robustness-video recorder.
+- `benchmark_face_robustness.py`: shared phone/photo benchmark launcher.
+- `validate_yunet_face_lock.py`: saved-video validation of the selected YuNet continuity logic.
+- `validate_multi_person_face_states.py`: saved-video validation of independent YuNet face state for every ByteTrack ID.
+- `result_paths.py`: canonical result-subfolder definitions used by the experiments.
 
-Experiment outputs are stored under `results/task_i_gaze_activation/`.
+Experiment outputs are organised by stage under `results/task_i_gaze_activation/`. See that folder's `README.md` for the eight-folder index.

@@ -15,3 +15,11 @@ person_detection:
   confidence_threshold: 0.50
   image_size: 640
   class_id: 0
+
+face_detection:
+  detector: yunet
+  model_path: models/face_detection_yunet_2026may.onnx
+  confidence_threshold: 0.89
+  minimum_size_pixels: 60
+  minimum_aspect_ratio: 0.60
+  continuity_lock: true

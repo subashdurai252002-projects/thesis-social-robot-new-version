@@ -1,0 +1,75 @@
+Loading YOLOv8n...
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Tracker: /home/subash/thesis social robot new version/gaze_pipeline/config/bytetrack_tuned_v1.yaml
+Device: cpu
+Detection confidence: 0.1
+YOLO NMS IoU: 0.45
+Per-person state release frames: 120
+Model loaded in: 0.027 seconds
+Loading YuNet face detector...
+[ WARN:0@0.937] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+Face confidence threshold: 0.89
+Face continuity lock: enabled
+Warming up YOLO...
+Warm-up completed in: 0.975 seconds
+Dynamic frame-rate reduction disabled.
+Camera: 640x480
+Live person tracking started.
+Press q or Esc to stop.
+Person-face state created: 1
+Face lock acquired for ID: 1
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Person-face state created: 3
+Face lock acquired for ID: 3
+Face missing for ID 3; replacement candidate rejected.
+Person-face state created: 7
+Person-face state created: 9
+Person-face state released: 3
+Face lock acquired for ID: 9
+Face missing for ID 9; replacement candidate rejected.
+Face lock recovered for ID: 9
+Tracked person temporarily missing: 9
+Face lock recovered for ID: 9
+Face missing for ID 9; replacement candidate rejected.
+Person-face state released: 7
+Face missing for ID 1; replacement candidate rejected.
+Face lock recovered for ID: 1
+Face missing for ID 1; replacement candidate rejected.
+Face lock recovered for ID: 1
+Person-face state created: 10
+Person-face state created: 13
+Person-face state released: 9
+Person-face state released: 10
+Face missing for ID 1; replacement candidate rejected.
+Person-face state released: 13
+Face lock recovered for ID: 1
+Face missing for ID 1; replacement candidate rejected.
+Person-face state released: 1
+Person-face state created: 18
+Face lock acquired for ID: 18
+
+Live multi-person face-tracking test finished.
+Processed frames: 1501
+Failed camera frames: 0
+Processed person instances: 1579
+Track-state creation events: 7
+Maximum raw tracks: 2
+Track-state release events: 6
+Retained track states at stop: 1
+Average tracking time: 38.67 ms
+Face visible frames: 1072
+Face missing frames: 507
+Face acquisition events: 4
+Face loss events: 8
+Face recovery events: 5
+Average face-detection time: 10.79 ms

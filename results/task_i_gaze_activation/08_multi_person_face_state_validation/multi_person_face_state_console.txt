@@ -1,0 +1,83 @@
+Multi-person YuNet face-state validation
+Tracking CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_tracking_frames.csv
+Frames: /home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_frames
+Face confidence threshold: 0.89
+Sample interval: 6
+Track-state release frames: 120
+
+[ WARN:0@0.015] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+
+Multi-person face-state validation completed.
+Sampled video frames: 395
+Processed person instances: 501
+Unique ByteTrack IDs: [1, 2, 3, 6, 7, 10, 13, 14, 16, 22, 27, 33]
+Maximum visible tracks: 4
+Maximum retained face states: 5
+State creation events: 12
+State release events: 12
+Mean face processing time: 4.59 ms
+
+ID 1
+  Visible samples: 13
+  Face selected: 12
+  State created: 1
+  State released: 1
+ID 2
+  Visible samples: 290
+  Face selected: 238
+  State created: 1
+  State released: 1
+ID 3
+  Visible samples: 95
+  Face selected: 93
+  State created: 1
+  State released: 1
+ID 6
+  Visible samples: 4
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 7
+  Visible samples: 9
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 10
+  Visible samples: 5
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 13
+  Visible samples: 1
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 14
+  Visible samples: 2
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 16
+  Visible samples: 3
+  Face selected: 1
+  State created: 1
+  State released: 1
+ID 22
+  Visible samples: 43
+  Face selected: 13
+  State created: 1
+  State released: 1
+ID 27
+  Visible samples: 25
+  Face selected: 0
+  State created: 1
+  State released: 1
+ID 33
+  Visible samples: 11
+  Face selected: 11
+  State created: 1
+  State released: 1
+
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_multi_person_face_state_validation/multi_person_face_state_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_multi_person_face_state_validation/multi_person_face_state_summary.json
+Preview: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_multi_person_face_state_validation/multi_person_face_state_preview.jpg

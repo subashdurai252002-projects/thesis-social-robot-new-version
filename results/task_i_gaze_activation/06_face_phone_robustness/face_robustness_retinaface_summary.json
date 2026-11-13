@@ -1,0 +1,110 @@
+{
+  "purpose": "Athul RetinaFace CPU baseline using controlled primary-person crops",
+  "detector": "RetinaFace MobileNet 0.25",
+  "face_detection_package_version": "1.0.5",
+  "face_detection_source_commit": "786fbab7095623c348e251f1f0a8b323721c6a84",
+  "device": "cpu",
+  "primary_track_id": 2,
+  "sample_interval": 6,
+  "available_video_frames": 2370,
+  "sampled_frames": 395,
+  "processed_primary_frames": 290,
+  "confidence_min": 0.9,
+  "minimum_face_size_px": 60,
+  "minimum_aspect_ratio": 0.6,
+  "model_load_ms": 83.17613899998832,
+  "two_warmup_detections_ms": 106.95568699998148,
+  "benchmark_seconds": 8.25197984700003,
+  "mean_inference_ms": 26.979991789651116,
+  "median_inference_ms": 27.296591999970587,
+  "p95_inference_ms": 36.559113999828696,
+  "effective_face_inference_fps": 37.064503495645106,
+  "initial_rss_mib": 338.75390625,
+  "peak_rss_mib": 501.546875,
+  "action_summaries": {
+    "Empty camera view": {
+      "sampled_frames": 47,
+      "primary_frames": 0,
+      "accepted_face_frames": 0,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 0,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": null,
+      "mean_inference_ms": null
+    },
+    "Real face only": {
+      "sampled_frames": 50,
+      "primary_frames": 33,
+      "accepted_face_frames": 32,
+      "no_accepted_face_frames": 1,
+      "multiple_raw_face_frames": 2,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 0.9696969696969697,
+      "mean_inference_ms": 19.191237666677118
+    },
+    "Phone face near chest": {
+      "sampled_frames": 49,
+      "primary_frames": 49,
+      "accepted_face_frames": 49,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 37,
+      "multiple_accepted_face_frames": 31,
+      "face_detection_rate": 1.0,
+      "mean_inference_ms": 24.30628034691687
+    },
+    "Phone face beside real face": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 50,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 39,
+      "multiple_accepted_face_frames": 23,
+      "face_detection_rate": 1.0,
+      "mean_inference_ms": 26.778994740011512
+    },
+    "Move phone face around": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 50,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 38,
+      "multiple_accepted_face_frames": 15,
+      "face_detection_rate": 1.0,
+      "mean_inference_ms": 29.284906940006294
+    },
+    "Cover real face; phone face visible": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 48,
+      "no_accepted_face_frames": 2,
+      "multiple_raw_face_frames": 31,
+      "multiple_accepted_face_frames": 8,
+      "face_detection_rate": 0.96,
+      "mean_inference_ms": 31.09217693998744
+    },
+    "Remove phone; move left and right": {
+      "sampled_frames": 50,
+      "primary_frames": 50,
+      "accepted_face_frames": 50,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 16,
+      "multiple_accepted_face_frames": 1,
+      "face_detection_rate": 1.0,
+      "mean_inference_ms": 28.58441671998662
+    },
+    "Completely leave camera view": {
+      "sampled_frames": 49,
+      "primary_frames": 8,
+      "accepted_face_frames": 8,
+      "no_accepted_face_frames": 0,
+      "multiple_raw_face_frames": 1,
+      "multiple_accepted_face_frames": 0,
+      "face_detection_rate": 1.0,
+      "mean_inference_ms": 26.606783999994832
+    }
+  },
+  "evaluation": "phone_photo_robustness",
+  "source_video": "face_robustness_input.avi",
+  "locked_real_person_track_id": 2,
+  "approved_threshold": 0.9
+}

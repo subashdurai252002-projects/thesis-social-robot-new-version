@@ -1,0 +1,57 @@
+{
+  "purpose": "Visual validation of detections newly accepted below the common 0.90 baseline",
+  "reviewed_pages": 17,
+  "classification_rule": {
+    "valid": "The green box contains a visible face with sufficient structure for gaze processing.",
+    "unsafe": "The green box contains the real face, but it is severely blurred, departing, or substantially occluded.",
+    "false": "The green box contains no real face."
+  },
+  "detectors": {
+    "retinaface": {
+      "reviewed_new_detections": 1,
+      "valid": 0,
+      "unsafe": 1,
+      "false": 0,
+      "unsafe_frame_indices": [1422],
+      "reviewed_candidate_threshold": 0.60,
+      "decision": "reject_lower_threshold",
+      "selected_threshold_for_robustness_testing": 0.90,
+      "reason": "Lowering from 0.90 adds only one heavily hand-occluded face and no useful face."
+    },
+    "yunet": {
+      "reviewed_new_detections": 7,
+      "valid": 2,
+      "unsafe": 5,
+      "false": 0,
+      "valid_frame_indices": [690, 696],
+      "unsafe_frame_indices": [1098, 1104, 1122, 1158, 2112],
+      "reviewed_candidate_threshold": 0.80,
+      "decision": "raise_reviewed_candidate",
+      "selected_threshold_for_robustness_testing": 0.89,
+      "reason": "A 0.89 threshold recovers the two useful tilted faces while excluding the five lower-scored occluded or blurred additions."
+    },
+    "mediapipe": {
+      "reviewed_new_detections": 31,
+      "valid": 29,
+      "unsafe": 2,
+      "false": 0,
+      "unsafe_frame_indices": [1950, 2112],
+      "reviewed_candidate_threshold": 0.80,
+      "decision": "raise_reviewed_candidate",
+      "selected_threshold_for_robustness_testing": 0.85,
+      "reason": "The 0.85 threshold recovers useful lower-scored faces while excluding the two severely blurred additions below 0.85."
+    },
+    "scrfd": {
+      "reviewed_new_detections": 247,
+      "valid": 239,
+      "unsafe": 8,
+      "false": 0,
+      "unsafe_frame_indices": [318, 324, 1146, 1158, 1830, 1950, 2106, 2112],
+      "reviewed_candidate_threshold": 0.60,
+      "decision": "approve_for_robustness_testing",
+      "selected_threshold_for_robustness_testing": 0.60,
+      "reason": "All 247 boxes contain the real face. The eight unsafe crops are blur or occlusion cases rather than false face detections and require a downstream gaze-usability guard."
+    }
+  },
+  "overall_finding": "Detector confidence values are not calibrated across model families. Separate thresholds are required. No reviewed candidate produced a non-face false positive in the controlled recording."
+}

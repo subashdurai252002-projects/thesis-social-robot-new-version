@@ -1,0 +1,24 @@
+Creating RetinaFace review sheets...
+
+fast_hand_no_face: 8 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/fast_hand_no_face.jpg
+face_cover_accepted: 12 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/face_cover_accepted.jpg
+face_cover_not_accepted: 12 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/face_cover_not_accepted.jpg
+partial_exit_no_face: 3 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/partial_exit_no_face.jpg
+complete_exit_accepted: 7 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/complete_exit_accepted.jpg
+complete_exit_not_accepted: 11 images
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/complete_exit_not_accepted.jpg
+
+Review sheets completed.
+Output directory: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review
+Manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_review/review_manifest.json
+
+Colour guide:
+  Cyan box: primary-person region
+  Green box: accepted face
+  Orange box: rejected raw face
+  Red label: no accepted face

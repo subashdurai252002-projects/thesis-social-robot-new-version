@@ -1,0 +1,69 @@
+[ WARN:0@0.275] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+YuNet all-track face-lock validation completed.
+Sampled video frames: 395
+Person instances processed: 501
+Mean face time per person: 4.69 ms
+Reference human ID (evaluation label only): 2
+Track ID 1 (other track)
+  Person instances: 13
+  Candidate faces: 12
+  Locked faces: 12
+  Multiple candidates: 0
+Track ID 2 (reference human)
+  Person instances: 290
+  Candidate faces: 284
+  Locked faces: 238
+  Multiple candidates: 74
+Track ID 3 (other track)
+  Person instances: 95
+  Candidate faces: 93
+  Locked faces: 93
+  Multiple candidates: 0
+Track ID 6 (other track)
+  Person instances: 4
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 7 (other track)
+  Person instances: 9
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 10 (other track)
+  Person instances: 5
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 13 (other track)
+  Person instances: 1
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 14 (other track)
+  Person instances: 2
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 16 (other track)
+  Person instances: 3
+  Candidate faces: 2
+  Locked faces: 1
+  Multiple candidates: 1
+Track ID 22 (other track)
+  Person instances: 43
+  Candidate faces: 41
+  Locked faces: 13
+  Multiple candidates: 0
+Track ID 27 (other track)
+  Person instances: 25
+  Candidate faces: 0
+  Locked faces: 0
+  Multiple candidates: 0
+Track ID 33 (other track)
+  Person instances: 11
+  Candidate faces: 11
+  Locked faces: 11
+  Multiple candidates: 0
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_face_runtime_validation/yunet_face_lock_validation_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_face_runtime_validation/yunet_face_lock_validation_summary.json
+Visual preview: /home/subash/thesis social robot new version/results/task_i_gaze_activation/07_face_runtime_validation/yunet_face_lock_validation_preview.jpg

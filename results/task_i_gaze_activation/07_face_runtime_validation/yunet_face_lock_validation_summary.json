@@ -1,0 +1,135 @@
+{
+  "detector": "YuNet",
+  "threshold": 0.89,
+  "architecture": "independent face-continuity lock per ByteTrack ID",
+  "reference_real_person_track_id_for_evaluation_only": 2,
+  "sample_interval": 6,
+  "sampled_video_frames": 395,
+  "person_instances_processed": 501,
+  "mean_inference_ms_per_person": 4.689214980004805,
+  "track_summaries": {
+    "1": {
+      "person_instances": 13,
+      "candidate_face_instances": 12,
+      "locked_face_instances": 12,
+      "multiple_candidate_instances": 0
+    },
+    "2": {
+      "person_instances": 290,
+      "candidate_face_instances": 284,
+      "locked_face_instances": 238,
+      "multiple_candidate_instances": 74
+    },
+    "3": {
+      "person_instances": 95,
+      "candidate_face_instances": 93,
+      "locked_face_instances": 93,
+      "multiple_candidate_instances": 0
+    },
+    "6": {
+      "person_instances": 4,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "7": {
+      "person_instances": 9,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "10": {
+      "person_instances": 5,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "13": {
+      "person_instances": 1,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "14": {
+      "person_instances": 2,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "16": {
+      "person_instances": 3,
+      "candidate_face_instances": 2,
+      "locked_face_instances": 1,
+      "multiple_candidate_instances": 1
+    },
+    "22": {
+      "person_instances": 43,
+      "candidate_face_instances": 41,
+      "locked_face_instances": 13,
+      "multiple_candidate_instances": 0
+    },
+    "27": {
+      "person_instances": 25,
+      "candidate_face_instances": 0,
+      "locked_face_instances": 0,
+      "multiple_candidate_instances": 0
+    },
+    "33": {
+      "person_instances": 11,
+      "candidate_face_instances": 11,
+      "locked_face_instances": 11,
+      "multiple_candidate_instances": 0
+    }
+  },
+  "action_summaries": {
+    "Empty camera view": {
+      "person_instances": 13,
+      "candidate_face_instances": 12,
+      "locked_face_instances": 12,
+      "multiple_candidate_instances": 0
+    },
+    "Real face only": {
+      "person_instances": 33,
+      "candidate_face_instances": 32,
+      "locked_face_instances": 32,
+      "multiple_candidate_instances": 0
+    },
+    "Phone face near chest": {
+      "person_instances": 101,
+      "candidate_face_instances": 81,
+      "locked_face_instances": 81,
+      "multiple_candidate_instances": 30
+    },
+    "Phone face beside real face": {
+      "person_instances": 105,
+      "candidate_face_instances": 101,
+      "locked_face_instances": 101,
+      "multiple_candidate_instances": 24
+    },
+    "Move phone face around": {
+      "person_instances": 106,
+      "candidate_face_instances": 92,
+      "locked_face_instances": 66,
+      "multiple_candidate_instances": 13
+    },
+    "Cover real face; phone face visible": {
+      "person_instances": 83,
+      "candidate_face_instances": 66,
+      "locked_face_instances": 26,
+      "multiple_candidate_instances": 8
+    },
+    "Remove phone; move left and right": {
+      "person_instances": 52,
+      "candidate_face_instances": 52,
+      "locked_face_instances": 43,
+      "multiple_candidate_instances": 0
+    },
+    "Completely leave camera view": {
+      "person_instances": 8,
+      "candidate_face_instances": 7,
+      "locked_face_instances": 7,
+      "multiple_candidate_instances": 0
+    }
+  },
+  "interpretation": "Every ByteTrack ID is processed independently. A locked face is emitted only when YuNet and that ID's continuity gates accept it. No interaction target is selected at this stage."
+}

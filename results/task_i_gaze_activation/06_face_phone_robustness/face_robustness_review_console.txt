@@ -1,0 +1,5 @@
+retinaface saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_review/retinaface_phone_photo_review.jpg
+yunet saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_review/yunet_phone_photo_review.jpg
+mediapipe saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_review/mediapipe_phone_photo_review.jpg
+scrfd saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_review/scrfd_phone_photo_review.jpg
+Manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_review/manifest.json

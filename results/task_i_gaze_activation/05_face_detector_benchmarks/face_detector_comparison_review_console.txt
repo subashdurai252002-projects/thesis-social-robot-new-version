@@ -1,0 +1,17 @@
+Creating detector disagreement sheets...
+
+retinaface_yes_yunet_no: 7 total, 7 shown
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_detector_comparison_review/retinaface_yes_yunet_no.jpg
+yunet_yes_retinaface_no: no disagreement frames
+
+Comparison review completed.
+Output directory: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_detector_comparison_review
+Manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_detector_comparison_review/comparison_manifest.json
+
+Colour guide:
+  Cyan: primary-person box
+  Green: accepted RetinaFace box
+  Magenta: accepted YuNet box
+  Orange: raw but rejected box
+  R: RetinaFace result
+  Y: YuNet result

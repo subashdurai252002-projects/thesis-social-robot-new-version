@@ -1,0 +1,23 @@
+Input video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_input.avi
+Output directory: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_frames
+Resolution: 640x480
+Encoded FPS: 30.00
+Video frame count: 2370
+Timeline frame count: 2370
+JPEG quality: 95
+Extracted frames: 300
+Extracted frames: 600
+Extracted frames: 900
+Extracted frames: 1200
+Extracted frames: 1500
+Extracted frames: 1800
+Extracted frames: 2100
+
+Frame extraction completed successfully.
+Extracted frames: 2370
+Failed writes: 0
+Extraction time: 4.17 seconds
+First frame: 000000.jpg
+Last frame: 002369.jpg
+First-frame resolution: 640x480
+Last-frame resolution: 640x480

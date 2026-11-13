@@ -1,0 +1,2371 @@
+frame_number,elapsed_seconds,planned_action
+1,0.000244,Empty camera view
+2,0.818510,Empty camera view
+3,0.828176,Empty camera view
+4,0.834746,Empty camera view
+5,0.841778,Empty camera view
+6,0.847701,Empty camera view
+7,0.880507,Empty camera view
+8,0.911168,Empty camera view
+9,0.944226,Empty camera view
+10,0.975761,Empty camera view
+11,1.016768,Empty camera view
+12,1.048427,Empty camera view
+13,1.080548,Empty camera view
+14,1.116359,Empty camera view
+15,1.149621,Empty camera view
+16,1.180675,Empty camera view
+17,1.217963,Empty camera view
+18,1.250074,Empty camera view
+19,1.281409,Empty camera view
+20,1.317496,Empty camera view
+21,1.349653,Empty camera view
+22,1.385732,Empty camera view
+23,1.416970,Empty camera view
+24,1.449251,Empty camera view
+25,1.485199,Empty camera view
+26,1.516334,Empty camera view
+27,1.548999,Empty camera view
+28,1.585384,Empty camera view
+29,1.617683,Empty camera view
+30,1.649313,Empty camera view
+31,1.685507,Empty camera view
+32,1.717178,Empty camera view
+33,1.753634,Empty camera view
+34,1.785747,Empty camera view
+35,1.817516,Empty camera view
+36,1.853702,Empty camera view
+37,1.885332,Empty camera view
+38,1.917128,Empty camera view
+39,1.953739,Empty camera view
+40,1.985371,Empty camera view
+41,2.015945,Empty camera view
+42,2.053658,Empty camera view
+43,2.085520,Empty camera view
+44,2.121667,Empty camera view
+45,2.153230,Empty camera view
+46,2.185303,Empty camera view
+47,2.221485,Empty camera view
+48,2.253746,Empty camera view
+49,2.285440,Empty camera view
+50,2.321805,Empty camera view
+51,2.353757,Empty camera view
+52,2.385401,Empty camera view
+53,2.421566,Empty camera view
+54,2.454065,Empty camera view
+55,2.489965,Empty camera view
+56,2.521897,Empty camera view
+57,2.553530,Empty camera view
+58,2.589921,Empty camera view
+59,2.621414,Empty camera view
+60,2.653710,Empty camera view
+61,2.689699,Empty camera view
+62,2.721747,Empty camera view
+63,2.753807,Empty camera view
+64,2.789493,Empty camera view
+65,2.821447,Empty camera view
+66,2.857427,Empty camera view
+67,2.889479,Empty camera view
+68,2.921698,Empty camera view
+69,2.957508,Empty camera view
+70,2.989204,Empty camera view
+71,3.021125,Empty camera view
+72,3.057382,Empty camera view
+73,3.089136,Empty camera view
+74,3.125330,Empty camera view
+75,3.157420,Empty camera view
+76,3.189266,Empty camera view
+77,3.225419,Empty camera view
+78,3.257595,Empty camera view
+79,3.289228,Empty camera view
+80,3.325614,Empty camera view
+81,3.357109,Empty camera view
+82,3.389310,Empty camera view
+83,3.425288,Empty camera view
+84,3.457267,Empty camera view
+85,3.493525,Empty camera view
+86,3.525712,Empty camera view
+87,3.557571,Empty camera view
+88,3.593511,Empty camera view
+89,3.625836,Empty camera view
+90,3.657569,Empty camera view
+91,3.693384,Empty camera view
+92,3.725605,Empty camera view
+93,3.757766,Empty camera view
+94,3.793886,Empty camera view
+95,3.825664,Empty camera view
+96,3.861508,Empty camera view
+97,3.893277,Empty camera view
+98,3.925626,Empty camera view
+99,3.961847,Empty camera view
+100,3.993837,Empty camera view
+101,4.025883,Empty camera view
+102,4.061856,Empty camera view
+103,4.093867,Empty camera view
+104,4.125877,Empty camera view
+105,4.161749,Empty camera view
+106,4.193678,Empty camera view
+107,4.229976,Empty camera view
+108,4.261514,Empty camera view
+109,4.293747,Empty camera view
+110,4.329810,Empty camera view
+111,4.361545,Empty camera view
+112,4.393960,Empty camera view
+113,4.429455,Empty camera view
+114,4.461323,Empty camera view
+115,4.493843,Empty camera view
+116,4.529969,Empty camera view
+117,4.561747,Empty camera view
+118,4.598040,Empty camera view
+119,4.630014,Empty camera view
+120,4.662048,Empty camera view
+121,4.697858,Empty camera view
+122,4.729689,Empty camera view
+123,4.761904,Empty camera view
+124,4.798331,Empty camera view
+125,4.829541,Empty camera view
+126,4.861968,Empty camera view
+127,4.895869,Empty camera view
+128,4.930156,Empty camera view
+129,4.965972,Empty camera view
+130,4.997899,Empty camera view
+131,5.030138,Empty camera view
+132,5.065963,Empty camera view
+133,5.098156,Empty camera view
+134,5.129759,Empty camera view
+135,5.166150,Empty camera view
+136,5.197963,Empty camera view
+137,5.233613,Empty camera view
+138,5.265840,Empty camera view
+139,5.298135,Empty camera view
+140,5.334121,Empty camera view
+141,5.365475,Empty camera view
+142,5.398121,Empty camera view
+143,5.434147,Empty camera view
+144,5.466037,Empty camera view
+145,5.498128,Empty camera view
+146,5.534165,Empty camera view
+147,5.566082,Empty camera view
+148,5.602155,Empty camera view
+149,5.634123,Empty camera view
+150,5.666126,Empty camera view
+151,5.702142,Empty camera view
+152,5.734029,Empty camera view
+153,5.766105,Empty camera view
+154,5.802208,Empty camera view
+155,5.833898,Empty camera view
+156,5.866262,Empty camera view
+157,5.902163,Empty camera view
+158,5.934131,Empty camera view
+159,5.970294,Empty camera view
+160,6.002113,Empty camera view
+161,6.034331,Empty camera view
+162,6.070193,Empty camera view
+163,6.101815,Empty camera view
+164,6.134315,Empty camera view
+165,6.169895,Empty camera view
+166,6.202393,Empty camera view
+167,6.234283,Empty camera view
+168,6.270129,Empty camera view
+169,6.302505,Empty camera view
+170,6.338760,Empty camera view
+171,6.370358,Empty camera view
+172,6.403108,Empty camera view
+173,6.439063,Empty camera view
+174,6.470862,Empty camera view
+175,6.502533,Empty camera view
+176,6.539006,Empty camera view
+177,6.570757,Empty camera view
+178,6.602967,Empty camera view
+179,6.638539,Empty camera view
+180,6.670571,Empty camera view
+181,6.706973,Empty camera view
+182,6.738355,Empty camera view
+183,6.770430,Empty camera view
+184,6.807162,Empty camera view
+185,6.836416,Empty camera view
+186,6.871140,Empty camera view
+187,6.906933,Empty camera view
+188,6.938847,Empty camera view
+189,6.974901,Empty camera view
+190,7.006574,Empty camera view
+191,7.038744,Empty camera view
+192,7.074768,Empty camera view
+193,7.106728,Empty camera view
+194,7.138762,Empty camera view
+195,7.174540,Empty camera view
+196,7.206408,Empty camera view
+197,7.238651,Empty camera view
+198,7.274728,Empty camera view
+199,7.306835,Empty camera view
+200,7.343038,Empty camera view
+201,7.374735,Empty camera view
+202,7.406495,Empty camera view
+203,7.442850,Empty camera view
+204,7.474741,Empty camera view
+205,7.506307,Empty camera view
+206,7.542491,Empty camera view
+207,7.574995,Empty camera view
+208,7.606845,Empty camera view
+209,7.642906,Empty camera view
+210,7.674768,Empty camera view
+211,7.710465,Empty camera view
+212,7.742787,Empty camera view
+213,7.774988,Empty camera view
+214,7.810890,Empty camera view
+215,7.842367,Empty camera view
+216,7.874768,Empty camera view
+217,7.910828,Empty camera view
+218,7.942901,Empty camera view
+219,7.974925,Empty camera view
+220,8.010848,Empty camera view
+221,8.042853,Empty camera view
+222,8.076920,Empty camera view
+223,8.110678,Empty camera view
+224,8.142391,Empty camera view
+225,8.179126,Empty camera view
+226,8.210994,Empty camera view
+227,8.242518,Empty camera view
+228,8.278503,Empty camera view
+229,8.310760,Empty camera view
+230,8.342403,Empty camera view
+231,8.378487,Empty camera view
+232,8.410464,Empty camera view
+233,8.446808,Empty camera view
+234,8.478622,Empty camera view
+235,8.510878,Empty camera view
+236,8.546413,Empty camera view
+237,8.578636,Empty camera view
+238,8.610736,Empty camera view
+239,8.646682,Empty camera view
+240,8.679050,Empty camera view
+241,8.710842,Empty camera view
+242,8.746887,Empty camera view
+243,8.779076,Empty camera view
+244,8.815296,Empty camera view
+245,8.847396,Empty camera view
+246,8.879059,Empty camera view
+247,8.915346,Empty camera view
+248,8.947282,Empty camera view
+249,8.979332,Empty camera view
+250,9.015315,Empty camera view
+251,9.047499,Empty camera view
+252,9.083504,Empty camera view
+253,9.115284,Empty camera view
+254,9.147414,Empty camera view
+255,9.183440,Empty camera view
+256,9.215399,Empty camera view
+257,9.247505,Empty camera view
+258,9.283354,Empty camera view
+259,9.315620,Empty camera view
+260,9.347389,Empty camera view
+261,9.383440,Empty camera view
+262,9.415616,Empty camera view
+263,9.451219,Empty camera view
+264,9.483323,Empty camera view
+265,9.515741,Empty camera view
+266,9.551657,Empty camera view
+267,9.583418,Empty camera view
+268,9.615542,Empty camera view
+269,9.651671,Empty camera view
+270,9.683559,Empty camera view
+271,9.715759,Empty camera view
+272,9.751686,Empty camera view
+273,9.781329,Empty camera view
+274,9.819660,Empty camera view
+275,9.851621,Empty camera view
+276,9.883508,Empty camera view
+277,9.919595,Empty camera view
+278,9.951698,Empty camera view
+279,9.983444,Empty camera view
+280,10.019536,Real face only
+281,10.052487,Real face only
+282,10.083593,Real face only
+283,10.119557,Real face only
+284,10.151483,Real face only
+285,10.187236,Real face only
+286,10.219283,Real face only
+287,10.251434,Real face only
+288,10.287599,Real face only
+289,10.319016,Real face only
+290,10.351086,Real face only
+291,10.387442,Real face only
+292,10.419231,Real face only
+293,10.451187,Real face only
+294,10.487395,Real face only
+295,10.519399,Real face only
+296,10.555528,Real face only
+297,10.587493,Real face only
+298,10.619512,Real face only
+299,10.655711,Real face only
+300,10.687213,Real face only
+301,10.719346,Real face only
+302,10.755828,Real face only
+303,10.787421,Real face only
+304,10.819689,Real face only
+305,10.855867,Real face only
+306,10.885710,Real face only
+307,10.923937,Real face only
+308,10.955465,Real face only
+309,10.987218,Real face only
+310,11.023476,Real face only
+311,11.055704,Real face only
+312,11.087122,Real face only
+313,11.123712,Real face only
+314,11.155645,Real face only
+315,11.191340,Real face only
+316,11.223499,Real face only
+317,11.255805,Real face only
+318,11.291959,Real face only
+319,11.323529,Real face only
+320,11.355473,Real face only
+321,11.392000,Real face only
+322,11.423995,Real face only
+323,11.455264,Real face only
+324,11.492073,Real face only
+325,11.524108,Real face only
+326,11.560024,Real face only
+327,11.592001,Real face only
+328,11.624038,Real face only
+329,11.660064,Real face only
+330,11.691995,Real face only
+331,11.723896,Real face only
+332,11.759912,Real face only
+333,11.792258,Real face only
+334,11.823784,Real face only
+335,11.860083,Real face only
+336,11.892258,Real face only
+337,11.927832,Real face only
+338,11.960274,Real face only
+339,11.991993,Real face only
+340,12.027860,Real face only
+341,12.060153,Real face only
+342,12.092311,Real face only
+343,12.128216,Real face only
+344,12.160211,Real face only
+345,12.192128,Real face only
+346,12.228226,Real face only
+347,12.259961,Real face only
+348,12.296441,Real face only
+349,12.328469,Real face only
+350,12.360485,Real face only
+351,12.396252,Real face only
+352,12.428468,Real face only
+353,12.460500,Real face only
+354,12.496523,Real face only
+355,12.528614,Real face only
+356,12.560494,Real face only
+357,12.595989,Real face only
+358,12.628923,Real face only
+359,12.664745,Real face only
+360,12.696593,Real face only
+361,12.728383,Real face only
+362,12.764386,Real face only
+363,12.796424,Real face only
+364,12.827875,Real face only
+365,12.864398,Real face only
+366,12.896205,Real face only
+367,12.928252,Real face only
+368,12.964181,Real face only
+369,12.995905,Real face only
+370,13.032394,Real face only
+371,13.064661,Real face only
+372,13.096530,Real face only
+373,13.132429,Real face only
+374,13.164381,Real face only
+375,13.196281,Real face only
+376,13.232525,Real face only
+377,13.264471,Real face only
+378,13.300442,Real face only
+379,13.331699,Real face only
+380,13.363775,Real face only
+381,13.399604,Real face only
+382,13.432194,Real face only
+383,13.464251,Real face only
+384,13.500212,Real face only
+385,13.532682,Real face only
+386,13.564251,Real face only
+387,13.600122,Real face only
+388,13.632315,Real face only
+389,13.668509,Real face only
+390,13.699926,Real face only
+391,13.732448,Real face only
+392,13.768244,Real face only
+393,13.800404,Real face only
+394,13.832369,Real face only
+395,13.868631,Real face only
+396,13.900880,Real face only
+397,13.932902,Real face only
+398,13.968862,Real face only
+399,14.000948,Real face only
+400,14.036881,Real face only
+401,14.068557,Real face only
+402,14.100839,Real face only
+403,14.136739,Real face only
+404,14.168593,Real face only
+405,14.200744,Real face only
+406,14.236748,Real face only
+407,14.268710,Real face only
+408,14.301420,Real face only
+409,14.337186,Real face only
+410,14.369227,Real face only
+411,14.405586,Real face only
+412,14.437267,Real face only
+413,14.468928,Real face only
+414,14.505334,Real face only
+415,14.537284,Real face only
+416,14.569111,Real face only
+417,14.605413,Real face only
+418,14.637362,Real face only
+419,14.669190,Real face only
+420,14.705474,Real face only
+421,14.737437,Real face only
+422,14.773573,Real face only
+423,14.805920,Real face only
+424,14.835141,Real face only
+425,14.873723,Real face only
+426,14.905708,Real face only
+427,14.937238,Real face only
+428,14.973667,Real face only
+429,15.005958,Real face only
+430,15.037449,Real face only
+431,15.073941,Real face only
+432,15.105928,Real face only
+433,15.141585,Real face only
+434,15.173839,Real face only
+435,15.205327,Real face only
+436,15.241262,Real face only
+437,15.273615,Real face only
+438,15.306036,Real face only
+439,15.341736,Real face only
+440,15.373853,Real face only
+441,15.410085,Real face only
+442,15.441591,Real face only
+443,15.473937,Real face only
+444,15.510017,Real face only
+445,15.541436,Real face only
+446,15.573725,Real face only
+447,15.609880,Real face only
+448,15.642187,Real face only
+449,15.673765,Real face only
+450,15.709583,Real face only
+451,15.741823,Real face only
+452,15.777887,Real face only
+453,15.809555,Real face only
+454,15.841425,Real face only
+455,15.877546,Real face only
+456,15.909837,Real face only
+457,15.938830,Real face only
+458,15.975584,Real face only
+459,16.010135,Real face only
+460,16.041999,Real face only
+461,16.077982,Real face only
+462,16.109738,Real face only
+463,16.145488,Real face only
+464,16.177991,Real face only
+465,16.209931,Real face only
+466,16.246047,Real face only
+467,16.278079,Real face only
+468,16.310124,Real face only
+469,16.345905,Real face only
+470,16.377975,Real face only
+471,16.409907,Real face only
+472,16.446179,Real face only
+473,16.478101,Real face only
+474,16.514098,Real face only
+475,16.546129,Real face only
+476,16.578127,Real face only
+477,16.614038,Real face only
+478,16.646242,Real face only
+479,16.678147,Real face only
+480,16.714146,Real face only
+481,16.746115,Real face only
+482,16.778350,Real face only
+483,16.814149,Real face only
+484,16.845414,Real face only
+485,16.882144,Real face only
+486,16.914091,Real face only
+487,16.945761,Real face only
+488,16.982706,Real face only
+489,17.014291,Real face only
+490,17.046151,Real face only
+491,17.082231,Real face only
+492,17.113972,Real face only
+493,17.146136,Real face only
+494,17.182209,Real face only
+495,17.214045,Real face only
+496,17.250605,Real face only
+497,17.282481,Real face only
+498,17.314579,Real face only
+499,17.350338,Real face only
+500,17.381852,Real face only
+501,17.414005,Real face only
+502,17.450453,Real face only
+503,17.482298,Real face only
+504,17.518129,Real face only
+505,17.550186,Real face only
+506,17.582201,Real face only
+507,17.618169,Real face only
+508,17.650521,Real face only
+509,17.682613,Real face only
+510,17.718439,Real face only
+511,17.750393,Real face only
+512,17.782457,Real face only
+513,17.818530,Real face only
+514,17.850586,Real face only
+515,17.886252,Real face only
+516,17.918284,Real face only
+517,17.950181,Real face only
+518,17.986839,Real face only
+519,18.018615,Real face only
+520,18.050593,Real face only
+521,18.086597,Real face only
+522,18.118836,Real face only
+523,18.150311,Real face only
+524,18.186606,Real face only
+525,18.218999,Real face only
+526,18.254535,Real face only
+527,18.286983,Real face only
+528,18.319020,Real face only
+529,18.354662,Real face only
+530,18.386655,Real face only
+531,18.418655,Real face only
+532,18.455012,Real face only
+533,18.486758,Real face only
+534,18.519125,Real face only
+535,18.554733,Real face only
+536,18.587118,Real face only
+537,18.622739,Real face only
+538,18.655283,Real face only
+539,18.686932,Real face only
+540,18.722758,Real face only
+541,18.754972,Real face only
+542,18.786890,Real face only
+543,18.822875,Real face only
+544,18.854845,Real face only
+545,18.887035,Real face only
+546,18.922863,Real face only
+547,18.954829,Real face only
+548,18.991178,Real face only
+549,19.022558,Real face only
+550,19.055111,Real face only
+551,19.090985,Real face only
+552,19.123337,Real face only
+553,19.155122,Real face only
+554,19.191557,Real face only
+555,19.223142,Real face only
+556,19.255170,Real face only
+557,19.291157,Real face only
+558,19.323217,Real face only
+559,19.358837,Real face only
+560,19.391108,Real face only
+561,19.423416,Real face only
+562,19.459075,Real face only
+563,19.490954,Real face only
+564,19.523278,Real face only
+565,19.559164,Real face only
+566,19.590972,Real face only
+567,19.627227,Real face only
+568,19.659133,Real face only
+569,19.690757,Real face only
+570,19.727153,Real face only
+571,19.758952,Real face only
+572,19.790972,Real face only
+573,19.827207,Real face only
+574,19.859281,Real face only
+575,19.891311,Real face only
+576,19.929617,Real face only
+577,19.958835,Real face only
+578,19.995475,Real face only
+579,20.027123,Phone face near chest
+580,20.057422,Phone face near chest
+581,20.095256,Phone face near chest
+582,20.127096,Phone face near chest
+583,20.159248,Phone face near chest
+584,20.195274,Phone face near chest
+585,20.227232,Phone face near chest
+586,20.259339,Phone face near chest
+587,20.295415,Phone face near chest
+588,20.327307,Phone face near chest
+589,20.363463,Phone face near chest
+590,20.395333,Phone face near chest
+591,20.427347,Phone face near chest
+592,20.463415,Phone face near chest
+593,20.495730,Phone face near chest
+594,20.527461,Phone face near chest
+595,20.563520,Phone face near chest
+596,20.595482,Phone face near chest
+597,20.627450,Phone face near chest
+598,20.663924,Phone face near chest
+599,20.695498,Phone face near chest
+600,20.731272,Phone face near chest
+601,20.763500,Phone face near chest
+602,20.795643,Phone face near chest
+603,20.831219,Phone face near chest
+604,20.863447,Phone face near chest
+605,20.895399,Phone face near chest
+606,20.931173,Phone face near chest
+607,20.963871,Phone face near chest
+608,20.995189,Phone face near chest
+609,21.030780,Phone face near chest
+610,21.063582,Phone face near chest
+611,21.099319,Phone face near chest
+612,21.130982,Phone face near chest
+613,21.163526,Phone face near chest
+614,21.199513,Phone face near chest
+615,21.231118,Phone face near chest
+616,21.263734,Phone face near chest
+617,21.299657,Phone face near chest
+618,21.331515,Phone face near chest
+619,21.363342,Phone face near chest
+620,21.399827,Phone face near chest
+621,21.431694,Phone face near chest
+622,21.467826,Phone face near chest
+623,21.499810,Phone face near chest
+624,21.531777,Phone face near chest
+625,21.567706,Phone face near chest
+626,21.599754,Phone face near chest
+627,21.631487,Phone face near chest
+628,21.667883,Phone face near chest
+629,21.699761,Phone face near chest
+630,21.735777,Phone face near chest
+631,21.767139,Phone face near chest
+632,21.799245,Phone face near chest
+633,21.835936,Phone face near chest
+634,21.867748,Phone face near chest
+635,21.899829,Phone face near chest
+636,21.936085,Phone face near chest
+637,21.967740,Phone face near chest
+638,21.999573,Phone face near chest
+639,22.036141,Phone face near chest
+640,22.067954,Phone face near chest
+641,22.103998,Phone face near chest
+642,22.135831,Phone face near chest
+643,22.167828,Phone face near chest
+644,22.204091,Phone face near chest
+645,22.235822,Phone face near chest
+646,22.268006,Phone face near chest
+647,22.304300,Phone face near chest
+648,22.336175,Phone face near chest
+649,22.368189,Phone face near chest
+650,22.403984,Phone face near chest
+651,22.435338,Phone face near chest
+652,22.472102,Phone face near chest
+653,22.503608,Phone face near chest
+654,22.535987,Phone face near chest
+655,22.572271,Phone face near chest
+656,22.604175,Phone face near chest
+657,22.636089,Phone face near chest
+658,22.672000,Phone face near chest
+659,22.704237,Phone face near chest
+660,22.736071,Phone face near chest
+661,22.772265,Phone face near chest
+662,22.804232,Phone face near chest
+663,22.839883,Phone face near chest
+664,22.871993,Phone face near chest
+665,22.904149,Phone face near chest
+666,22.940218,Phone face near chest
+667,22.972324,Phone face near chest
+668,23.004046,Phone face near chest
+669,23.040116,Phone face near chest
+670,23.072078,Phone face near chest
+671,23.103856,Phone face near chest
+672,23.140524,Phone face near chest
+673,23.172373,Phone face near chest
+674,23.208336,Phone face near chest
+675,23.240635,Phone face near chest
+676,23.272424,Phone face near chest
+677,23.308675,Phone face near chest
+678,23.340691,Phone face near chest
+679,23.372570,Phone face near chest
+680,23.408521,Phone face near chest
+681,23.440319,Phone face near chest
+682,23.472577,Phone face near chest
+683,23.508478,Phone face near chest
+684,23.540572,Phone face near chest
+685,23.576066,Phone face near chest
+686,23.608126,Phone face near chest
+687,23.640521,Phone face near chest
+688,23.676724,Phone face near chest
+689,23.708747,Phone face near chest
+690,23.740453,Phone face near chest
+691,23.776855,Phone face near chest
+692,23.808633,Phone face near chest
+693,23.844157,Phone face near chest
+694,23.876887,Phone face near chest
+695,23.908482,Phone face near chest
+696,23.944634,Phone face near chest
+697,23.976240,Phone face near chest
+698,24.008897,Phone face near chest
+699,24.044578,Phone face near chest
+700,24.076500,Phone face near chest
+701,24.109054,Phone face near chest
+702,24.145190,Phone face near chest
+703,24.177114,Phone face near chest
+704,24.212435,Phone face near chest
+705,24.244741,Phone face near chest
+706,24.276881,Phone face near chest
+707,24.312575,Phone face near chest
+708,24.344850,Phone face near chest
+709,24.377031,Phone face near chest
+710,24.413056,Phone face near chest
+711,24.445297,Phone face near chest
+712,24.477250,Phone face near chest
+713,24.513166,Phone face near chest
+714,24.545060,Phone face near chest
+715,24.581443,Phone face near chest
+716,24.613418,Phone face near chest
+717,24.644861,Phone face near chest
+718,24.681441,Phone face near chest
+719,24.713334,Phone face near chest
+720,24.745334,Phone face near chest
+721,24.781053,Phone face near chest
+722,24.813272,Phone face near chest
+723,24.845019,Phone face near chest
+724,24.881435,Phone face near chest
+725,24.913375,Phone face near chest
+726,24.949639,Phone face near chest
+727,24.981428,Phone face near chest
+728,25.013125,Phone face near chest
+729,25.049126,Phone face near chest
+730,25.081461,Phone face near chest
+731,25.113401,Phone face near chest
+732,25.149661,Phone face near chest
+733,25.181282,Phone face near chest
+734,25.213427,Phone face near chest
+735,25.249256,Phone face near chest
+736,25.281315,Phone face near chest
+737,25.317165,Phone face near chest
+738,25.349509,Phone face near chest
+739,25.381107,Phone face near chest
+740,25.417625,Phone face near chest
+741,25.449251,Phone face near chest
+742,25.481324,Phone face near chest
+743,25.517658,Phone face near chest
+744,25.549739,Phone face near chest
+745,25.581471,Phone face near chest
+746,25.617869,Phone face near chest
+747,25.649437,Phone face near chest
+748,25.685421,Phone face near chest
+749,25.717012,Phone face near chest
+750,25.749278,Phone face near chest
+751,25.785499,Phone face near chest
+752,25.817341,Phone face near chest
+753,25.849677,Phone face near chest
+754,25.885507,Phone face near chest
+755,25.917148,Phone face near chest
+756,25.953740,Phone face near chest
+757,25.985397,Phone face near chest
+758,26.017328,Phone face near chest
+759,26.053703,Phone face near chest
+760,26.085549,Phone face near chest
+761,26.117237,Phone face near chest
+762,26.153179,Phone face near chest
+763,26.185381,Phone face near chest
+764,26.217641,Phone face near chest
+765,26.253913,Phone face near chest
+766,26.285966,Phone face near chest
+767,26.321759,Phone face near chest
+768,26.353834,Phone face near chest
+769,26.385337,Phone face near chest
+770,26.421388,Phone face near chest
+771,26.453257,Phone face near chest
+772,26.485800,Phone face near chest
+773,26.521938,Phone face near chest
+774,26.554191,Phone face near chest
+775,26.585502,Phone face near chest
+776,26.621932,Phone face near chest
+777,26.653285,Phone face near chest
+778,26.689921,Phone face near chest
+779,26.722196,Phone face near chest
+780,26.753915,Phone face near chest
+781,26.790084,Phone face near chest
+782,26.822026,Phone face near chest
+783,26.854076,Phone face near chest
+784,26.889947,Phone face near chest
+785,26.922190,Phone face near chest
+786,26.953904,Phone face near chest
+787,26.990053,Phone face near chest
+788,27.021944,Phone face near chest
+789,27.057503,Phone face near chest
+790,27.089852,Phone face near chest
+791,27.122059,Phone face near chest
+792,27.157376,Phone face near chest
+793,27.189971,Phone face near chest
+794,27.221749,Phone face near chest
+795,27.257494,Phone face near chest
+796,27.289844,Phone face near chest
+797,27.322060,Phone face near chest
+798,27.358179,Phone face near chest
+799,27.390221,Phone face near chest
+800,27.425757,Phone face near chest
+801,27.457953,Phone face near chest
+802,27.489944,Phone face near chest
+803,27.526364,Phone face near chest
+804,27.557933,Phone face near chest
+805,27.589426,Phone face near chest
+806,27.626289,Phone face near chest
+807,27.657842,Phone face near chest
+808,27.693779,Phone face near chest
+809,27.726256,Phone face near chest
+810,27.758004,Phone face near chest
+811,27.794330,Phone face near chest
+812,27.826164,Phone face near chest
+813,27.858162,Phone face near chest
+814,27.894215,Phone face near chest
+815,27.926654,Phone face near chest
+816,27.958361,Phone face near chest
+817,27.994229,Phone face near chest
+818,28.026452,Phone face near chest
+819,28.062113,Phone face near chest
+820,28.094537,Phone face near chest
+821,28.126628,Phone face near chest
+822,28.162393,Phone face near chest
+823,28.194712,Phone face near chest
+824,28.226533,Phone face near chest
+825,28.262483,Phone face near chest
+826,28.294472,Phone face near chest
+827,28.326759,Phone face near chest
+828,28.362383,Phone face near chest
+829,28.394484,Phone face near chest
+830,28.430770,Phone face near chest
+831,28.462778,Phone face near chest
+832,28.494524,Phone face near chest
+833,28.530491,Phone face near chest
+834,28.562447,Phone face near chest
+835,28.594700,Phone face near chest
+836,28.630853,Phone face near chest
+837,28.662737,Phone face near chest
+838,28.694928,Phone face near chest
+839,28.729947,Phone face near chest
+840,28.762179,Phone face near chest
+841,28.798503,Phone face near chest
+842,28.830508,Phone face near chest
+843,28.862317,Phone face near chest
+844,28.898701,Phone face near chest
+845,28.930591,Phone face near chest
+846,28.962642,Phone face near chest
+847,28.998827,Phone face near chest
+848,29.030648,Phone face near chest
+849,29.062302,Phone face near chest
+850,29.098419,Phone face near chest
+851,29.130825,Phone face near chest
+852,29.166729,Phone face near chest
+853,29.199057,Phone face near chest
+854,29.230383,Phone face near chest
+855,29.266393,Phone face near chest
+856,29.298298,Phone face near chest
+857,29.330586,Phone face near chest
+858,29.366258,Phone face near chest
+859,29.398312,Phone face near chest
+860,29.430123,Phone face near chest
+861,29.466709,Phone face near chest
+862,29.498271,Phone face near chest
+863,29.534402,Phone face near chest
+864,29.567007,Phone face near chest
+865,29.598549,Phone face near chest
+866,29.635155,Phone face near chest
+867,29.666628,Phone face near chest
+868,29.698472,Phone face near chest
+869,29.734896,Phone face near chest
+870,29.766890,Phone face near chest
+871,29.802974,Phone face near chest
+872,29.834911,Phone face near chest
+873,29.866998,Phone face near chest
+874,29.903233,Phone face near chest
+875,29.934740,Phone face near chest
+876,29.967099,Phone face near chest
+877,30.003028,Phone face beside real face
+878,30.035743,Phone face beside real face
+879,30.067083,Phone face beside real face
+880,30.102618,Phone face beside real face
+881,30.134581,Phone face beside real face
+882,30.171329,Phone face beside real face
+883,30.203171,Phone face beside real face
+884,30.235009,Phone face beside real face
+885,30.271041,Phone face beside real face
+886,30.302543,Phone face beside real face
+887,30.334965,Phone face beside real face
+888,30.370468,Phone face beside real face
+889,30.402968,Phone face beside real face
+890,30.434825,Phone face beside real face
+891,30.471323,Phone face beside real face
+892,30.503417,Phone face beside real face
+893,30.539306,Phone face beside real face
+894,30.571327,Phone face beside real face
+895,30.603265,Phone face beside real face
+896,30.639431,Phone face beside real face
+897,30.671392,Phone face beside real face
+898,30.702864,Phone face beside real face
+899,30.739422,Phone face beside real face
+900,30.771434,Phone face beside real face
+901,30.803534,Phone face beside real face
+902,30.839361,Phone face beside real face
+903,30.870967,Phone face beside real face
+904,30.907321,Phone face beside real face
+905,30.939501,Phone face beside real face
+906,30.971324,Phone face beside real face
+907,31.007291,Phone face beside real face
+908,31.039328,Phone face beside real face
+909,31.071142,Phone face beside real face
+910,31.107298,Phone face beside real face
+911,31.139328,Phone face beside real face
+912,31.171544,Phone face beside real face
+913,31.206977,Phone face beside real face
+914,31.239383,Phone face beside real face
+915,31.274961,Phone face beside real face
+916,31.306932,Phone face beside real face
+917,31.339472,Phone face beside real face
+918,31.374918,Phone face beside real face
+919,31.407205,Phone face beside real face
+920,31.439393,Phone face beside real face
+921,31.475492,Phone face beside real face
+922,31.507626,Phone face beside real face
+923,31.539427,Phone face beside real face
+924,31.575744,Phone face beside real face
+925,31.607672,Phone face beside real face
+926,31.643418,Phone face beside real face
+927,31.675776,Phone face beside real face
+928,31.707812,Phone face beside real face
+929,31.743496,Phone face beside real face
+930,31.775155,Phone face beside real face
+931,31.807889,Phone face beside real face
+932,31.843615,Phone face beside real face
+933,31.875488,Phone face beside real face
+934,31.907619,Phone face beside real face
+935,31.943530,Phone face beside real face
+936,31.975726,Phone face beside real face
+937,32.011938,Phone face beside real face
+938,32.044025,Phone face beside real face
+939,32.075630,Phone face beside real face
+940,32.112137,Phone face beside real face
+941,32.143924,Phone face beside real face
+942,32.175631,Phone face beside real face
+943,32.211926,Phone face beside real face
+944,32.243394,Phone face beside real face
+945,32.279431,Phone face beside real face
+946,32.312081,Phone face beside real face
+947,32.344060,Phone face beside real face
+948,32.379530,Phone face beside real face
+949,32.412023,Phone face beside real face
+950,32.444356,Phone face beside real face
+951,32.480114,Phone face beside real face
+952,32.511738,Phone face beside real face
+953,32.544012,Phone face beside real face
+954,32.580050,Phone face beside real face
+955,32.611565,Phone face beside real face
+956,32.647950,Phone face beside real face
+957,32.680042,Phone face beside real face
+958,32.711876,Phone face beside real face
+959,32.748123,Phone face beside real face
+960,32.779975,Phone face beside real face
+961,32.811817,Phone face beside real face
+962,32.848468,Phone face beside real face
+963,32.880176,Phone face beside real face
+964,32.912082,Phone face beside real face
+965,32.948197,Phone face beside real face
+966,32.979743,Phone face beside real face
+967,33.015840,Phone face beside real face
+968,33.048085,Phone face beside real face
+969,33.080174,Phone face beside real face
+970,33.115820,Phone face beside real face
+971,33.148516,Phone face beside real face
+972,33.180247,Phone face beside real face
+973,33.215626,Phone face beside real face
+974,33.248344,Phone face beside real face
+975,33.280207,Phone face beside real face
+976,33.316262,Phone face beside real face
+977,33.348124,Phone face beside real face
+978,33.384111,Phone face beside real face
+979,33.416062,Phone face beside real face
+980,33.448445,Phone face beside real face
+981,33.483904,Phone face beside real face
+982,33.515836,Phone face beside real face
+983,33.547931,Phone face beside real face
+984,33.583662,Phone face beside real face
+985,33.615934,Phone face beside real face
+986,33.647838,Phone face beside real face
+987,33.684405,Phone face beside real face
+988,33.716357,Phone face beside real face
+989,33.751766,Phone face beside real face
+990,33.783832,Phone face beside real face
+991,33.815926,Phone face beside real face
+992,33.851858,Phone face beside real face
+993,33.884259,Phone face beside real face
+994,33.916439,Phone face beside real face
+995,33.952279,Phone face beside real face
+996,33.983967,Phone face beside real face
+997,34.020577,Phone face beside real face
+998,34.051858,Phone face beside real face
+999,34.083921,Phone face beside real face
+1000,34.120365,Phone face beside real face
+1001,34.151899,Phone face beside real face
+1002,34.184266,Phone face beside real face
+1003,34.220561,Phone face beside real face
+1004,34.252510,Phone face beside real face
+1005,34.284333,Phone face beside real face
+1006,34.320597,Phone face beside real face
+1007,34.352323,Phone face beside real face
+1008,34.388325,Phone face beside real face
+1009,34.420171,Phone face beside real face
+1010,34.452483,Phone face beside real face
+1011,34.488591,Phone face beside real face
+1012,34.520404,Phone face beside real face
+1013,34.552491,Phone face beside real face
+1014,34.588200,Phone face beside real face
+1015,34.620230,Phone face beside real face
+1016,34.652281,Phone face beside real face
+1017,34.688015,Phone face beside real face
+1018,34.720545,Phone face beside real face
+1019,34.756738,Phone face beside real face
+1020,34.788687,Phone face beside real face
+1021,34.820606,Phone face beside real face
+1022,34.856514,Phone face beside real face
+1023,34.888537,Phone face beside real face
+1024,34.920509,Phone face beside real face
+1025,34.956685,Phone face beside real face
+1026,34.988570,Phone face beside real face
+1027,35.020355,Phone face beside real face
+1028,35.056735,Phone face beside real face
+1029,35.088670,Phone face beside real face
+1030,35.124711,Phone face beside real face
+1031,35.156672,Phone face beside real face
+1032,35.188737,Phone face beside real face
+1033,35.224873,Phone face beside real face
+1034,35.256992,Phone face beside real face
+1035,35.288902,Phone face beside real face
+1036,35.324998,Phone face beside real face
+1037,35.356888,Phone face beside real face
+1038,35.388991,Phone face beside real face
+1039,35.424850,Phone face beside real face
+1040,35.456727,Phone face beside real face
+1041,35.493010,Phone face beside real face
+1042,35.524836,Phone face beside real face
+1043,35.556557,Phone face beside real face
+1044,35.592951,Phone face beside real face
+1045,35.624761,Phone face beside real face
+1046,35.657015,Phone face beside real face
+1047,35.692950,Phone face beside real face
+1048,35.725036,Phone face beside real face
+1049,35.756873,Phone face beside real face
+1050,35.793072,Phone face beside real face
+1051,35.825094,Phone face beside real face
+1052,35.861122,Phone face beside real face
+1053,35.892861,Phone face beside real face
+1054,35.924879,Phone face beside real face
+1055,35.961252,Phone face beside real face
+1056,35.992449,Phone face beside real face
+1057,36.024997,Phone face beside real face
+1058,36.061043,Phone face beside real face
+1059,36.092312,Phone face beside real face
+1060,36.128186,Phone face beside real face
+1061,36.161511,Phone face beside real face
+1062,36.192431,Phone face beside real face
+1063,36.229122,Phone face beside real face
+1064,36.261090,Phone face beside real face
+1065,36.292130,Phone face beside real face
+1066,36.329179,Phone face beside real face
+1067,36.361214,Phone face beside real face
+1068,36.392802,Phone face beside real face
+1069,36.428708,Phone face beside real face
+1070,36.460847,Phone face beside real face
+1071,36.497340,Phone face beside real face
+1072,36.529318,Phone face beside real face
+1073,36.560843,Phone face beside real face
+1074,36.597176,Phone face beside real face
+1075,36.629276,Phone face beside real face
+1076,36.661421,Phone face beside real face
+1077,36.697564,Phone face beside real face
+1078,36.729174,Phone face beside real face
+1079,36.761181,Phone face beside real face
+1080,36.797372,Phone face beside real face
+1081,36.829292,Phone face beside real face
+1082,36.864741,Phone face beside real face
+1083,36.897424,Phone face beside real face
+1084,36.929231,Phone face beside real face
+1085,36.965355,Phone face beside real face
+1086,36.997349,Phone face beside real face
+1087,37.029151,Phone face beside real face
+1088,37.065386,Phone face beside real face
+1089,37.097614,Phone face beside real face
+1090,37.129474,Phone face beside real face
+1091,37.165127,Phone face beside real face
+1092,37.197475,Phone face beside real face
+1093,37.233390,Phone face beside real face
+1094,37.265059,Phone face beside real face
+1095,37.297497,Phone face beside real face
+1096,37.333523,Phone face beside real face
+1097,37.365344,Phone face beside real face
+1098,37.397816,Phone face beside real face
+1099,37.433101,Phone face beside real face
+1100,37.465229,Phone face beside real face
+1101,37.497753,Phone face beside real face
+1102,37.533102,Phone face beside real face
+1103,37.565495,Phone face beside real face
+1104,37.601591,Phone face beside real face
+1105,37.633806,Phone face beside real face
+1106,37.665159,Phone face beside real face
+1107,37.701932,Phone face beside real face
+1108,37.733736,Phone face beside real face
+1109,37.765489,Phone face beside real face
+1110,37.801836,Phone face beside real face
+1111,37.833650,Phone face beside real face
+1112,37.866190,Phone face beside real face
+1113,37.901864,Phone face beside real face
+1114,37.933566,Phone face beside real face
+1115,37.969828,Phone face beside real face
+1116,38.001577,Phone face beside real face
+1117,38.033855,Phone face beside real face
+1118,38.069781,Phone face beside real face
+1119,38.101923,Phone face beside real face
+1120,38.133481,Phone face beside real face
+1121,38.169952,Phone face beside real face
+1122,38.201379,Phone face beside real face
+1123,38.237734,Phone face beside real face
+1124,38.269439,Phone face beside real face
+1125,38.301356,Phone face beside real face
+1126,38.338061,Phone face beside real face
+1127,38.369758,Phone face beside real face
+1128,38.402204,Phone face beside real face
+1129,38.438185,Phone face beside real face
+1130,38.470220,Phone face beside real face
+1131,38.502382,Phone face beside real face
+1132,38.538689,Phone face beside real face
+1133,38.570309,Phone face beside real face
+1134,38.606054,Phone face beside real face
+1135,38.637951,Phone face beside real face
+1136,38.669570,Phone face beside real face
+1137,38.706185,Phone face beside real face
+1138,38.737680,Phone face beside real face
+1139,38.769958,Phone face beside real face
+1140,38.806473,Phone face beside real face
+1141,38.838381,Phone face beside real face
+1142,38.870070,Phone face beside real face
+1143,38.905795,Phone face beside real face
+1144,38.938131,Phone face beside real face
+1145,38.974127,Phone face beside real face
+1146,39.006210,Phone face beside real face
+1147,39.037744,Phone face beside real face
+1148,39.073994,Phone face beside real face
+1149,39.106046,Phone face beside real face
+1150,39.138143,Phone face beside real face
+1151,39.174114,Phone face beside real face
+1152,39.206220,Phone face beside real face
+1153,39.238219,Phone face beside real face
+1154,39.274521,Phone face beside real face
+1155,39.306257,Phone face beside real face
+1156,39.342496,Phone face beside real face
+1157,39.374100,Phone face beside real face
+1158,39.406331,Phone face beside real face
+1159,39.442344,Phone face beside real face
+1160,39.474352,Phone face beside real face
+1161,39.506253,Phone face beside real face
+1162,39.542382,Phone face beside real face
+1163,39.574404,Phone face beside real face
+1164,39.606272,Phone face beside real face
+1165,39.642402,Phone face beside real face
+1166,39.674338,Phone face beside real face
+1167,39.710420,Phone face beside real face
+1168,39.742537,Phone face beside real face
+1169,39.774330,Phone face beside real face
+1170,39.810547,Phone face beside real face
+1171,39.842321,Phone face beside real face
+1172,39.874477,Phone face beside real face
+1173,39.910539,Phone face beside real face
+1174,39.942409,Phone face beside real face
+1175,39.974749,Phone face beside real face
+1176,40.010436,Move phone face around
+1177,40.042597,Move phone face around
+1178,40.074837,Move phone face around
+1179,40.110455,Move phone face around
+1180,40.142434,Move phone face around
+1181,40.178667,Move phone face around
+1182,40.210404,Move phone face around
+1183,40.242601,Move phone face around
+1184,40.278409,Move phone face around
+1185,40.310365,Move phone face around
+1186,40.346165,Move phone face around
+1187,40.378286,Move phone face around
+1188,40.410397,Move phone face around
+1189,40.446403,Move phone face around
+1190,40.478449,Move phone face around
+1191,40.509864,Move phone face around
+1192,40.546369,Move phone face around
+1193,40.578432,Move phone face around
+1194,40.610301,Move phone face around
+1195,40.646471,Move phone face around
+1196,40.678551,Move phone face around
+1197,40.713981,Move phone face around
+1198,40.746166,Move phone face around
+1199,40.778013,Move phone face around
+1200,40.814153,Move phone face around
+1201,40.845987,Move phone face around
+1202,40.877977,Move phone face around
+1203,40.914699,Move phone face around
+1204,40.946424,Move phone face around
+1205,40.978378,Move phone face around
+1206,41.014763,Move phone face around
+1207,41.046744,Move phone face around
+1208,41.082598,Move phone face around
+1209,41.114375,Move phone face around
+1210,41.146676,Move phone face around
+1211,41.181950,Move phone face around
+1212,41.214759,Move phone face around
+1213,41.246424,Move phone face around
+1214,41.282396,Move phone face around
+1215,41.314416,Move phone face around
+1216,41.346371,Move phone face around
+1217,41.382835,Move phone face around
+1218,41.414401,Move phone face around
+1219,41.451064,Move phone face around
+1220,41.482277,Move phone face around
+1221,41.514449,Move phone face around
+1222,41.550644,Move phone face around
+1223,41.582989,Move phone face around
+1224,41.614832,Move phone face around
+1225,41.650820,Move phone face around
+1226,41.683021,Move phone face around
+1227,41.715035,Move phone face around
+1228,41.750966,Move phone face around
+1229,41.782666,Move phone face around
+1230,41.819144,Move phone face around
+1231,41.850543,Move phone face around
+1232,41.882450,Move phone face around
+1233,41.918807,Move phone face around
+1234,41.950562,Move phone face around
+1235,41.982651,Move phone face around
+1236,42.018874,Move phone face around
+1237,42.050793,Move phone face around
+1238,42.082724,Move phone face around
+1239,42.118779,Move phone face around
+1240,42.150397,Move phone face around
+1241,42.186417,Move phone face around
+1242,42.218434,Move phone face around
+1243,42.250461,Move phone face around
+1244,42.286483,Move phone face around
+1245,42.318750,Move phone face around
+1246,42.350286,Move phone face around
+1247,42.386670,Move phone face around
+1248,42.418494,Move phone face around
+1249,42.454422,Move phone face around
+1250,42.486402,Move phone face around
+1251,42.518657,Move phone face around
+1252,42.554528,Move phone face around
+1253,42.586512,Move phone face around
+1254,42.618842,Move phone face around
+1255,42.654861,Move phone face around
+1256,42.682350,Move phone face around
+1257,42.718086,Move phone face around
+1258,42.754910,Move phone face around
+1259,42.786845,Move phone face around
+1260,42.822817,Move phone face around
+1261,42.854745,Move phone face around
+1262,42.887042,Move phone face around
+1263,42.923132,Move phone face around
+1264,42.955199,Move phone face around
+1265,42.987180,Move phone face around
+1266,43.022935,Move phone face around
+1267,43.054540,Move phone face around
+1268,43.087112,Move phone face around
+1269,43.123114,Move phone face around
+1270,43.155302,Move phone face around
+1271,43.191287,Move phone face around
+1272,43.222733,Move phone face around
+1273,43.254637,Move phone face around
+1274,43.290296,Move phone face around
+1275,43.323143,Move phone face around
+1276,43.354437,Move phone face around
+1277,43.390638,Move phone face around
+1278,43.423090,Move phone face around
+1279,43.455110,Move phone face around
+1280,43.491041,Move phone face around
+1281,43.522835,Move phone face around
+1282,43.559276,Move phone face around
+1283,43.590554,Move phone face around
+1284,43.622744,Move phone face around
+1285,43.658279,Move phone face around
+1286,43.690269,Move phone face around
+1287,43.722650,Move phone face around
+1288,43.758267,Move phone face around
+1289,43.790215,Move phone face around
+1290,43.822595,Move phone face around
+1291,43.858914,Move phone face around
+1292,43.890982,Move phone face around
+1293,43.926389,Move phone face around
+1294,43.958741,Move phone face around
+1295,43.990889,Move phone face around
+1296,44.026438,Move phone face around
+1297,44.058520,Move phone face around
+1298,44.089965,Move phone face around
+1299,44.126745,Move phone face around
+1300,44.158805,Move phone face around
+1301,44.191145,Move phone face around
+1302,44.226592,Move phone face around
+1303,44.258746,Move phone face around
+1304,44.294854,Move phone face around
+1305,44.326847,Move phone face around
+1306,44.358435,Move phone face around
+1307,44.394988,Move phone face around
+1308,44.427046,Move phone face around
+1309,44.458636,Move phone face around
+1310,44.495216,Move phone face around
+1311,44.527101,Move phone face around
+1312,44.562959,Move phone face around
+1313,44.595059,Move phone face around
+1314,44.627182,Move phone face around
+1315,44.663521,Move phone face around
+1316,44.694682,Move phone face around
+1317,44.727072,Move phone face around
+1318,44.763406,Move phone face around
+1319,44.795502,Move phone face around
+1320,44.826953,Move phone face around
+1321,44.863432,Move phone face around
+1322,44.895435,Move phone face around
+1323,44.931217,Move phone face around
+1324,44.962742,Move phone face around
+1325,44.995026,Move phone face around
+1326,45.031464,Move phone face around
+1327,45.063651,Move phone face around
+1328,45.095386,Move phone face around
+1329,45.128912,Move phone face around
+1330,45.163614,Move phone face around
+1331,45.195725,Move phone face around
+1332,45.231551,Move phone face around
+1333,45.263693,Move phone face around
+1334,45.299083,Move phone face around
+1335,45.331535,Move phone face around
+1336,45.363336,Move phone face around
+1337,45.399830,Move phone face around
+1338,45.431841,Move phone face around
+1339,45.463633,Move phone face around
+1340,45.499862,Move phone face around
+1341,45.531683,Move phone face around
+1342,45.563878,Move phone face around
+1343,45.599954,Move phone face around
+1344,45.631752,Move phone face around
+1345,45.667752,Move phone face around
+1346,45.699724,Move phone face around
+1347,45.731505,Move phone face around
+1348,45.767810,Move phone face around
+1349,45.799265,Move phone face around
+1350,45.831416,Move phone face around
+1351,45.867551,Move phone face around
+1352,45.899081,Move phone face around
+1353,45.931478,Move phone face around
+1354,45.967978,Move phone face around
+1355,45.999098,Move phone face around
+1356,46.035261,Move phone face around
+1357,46.067511,Move phone face around
+1358,46.099570,Move phone face around
+1359,46.135920,Move phone face around
+1360,46.168203,Move phone face around
+1361,46.199947,Move phone face around
+1362,46.236327,Move phone face around
+1363,46.268846,Move phone face around
+1364,46.300544,Move phone face around
+1365,46.336304,Move phone face around
+1366,46.367966,Move phone face around
+1367,46.404283,Move phone face around
+1368,46.436337,Move phone face around
+1369,46.468296,Move phone face around
+1370,46.504495,Move phone face around
+1371,46.536309,Move phone face around
+1372,46.568439,Move phone face around
+1373,46.603477,Move phone face around
+1374,46.635850,Move phone face around
+1375,46.671285,Move phone face around
+1376,46.703616,Move phone face around
+1377,46.735942,Move phone face around
+1378,46.771904,Move phone face around
+1379,46.803847,Move phone face around
+1380,46.836260,Move phone face around
+1381,46.872214,Move phone face around
+1382,46.903946,Move phone face around
+1383,46.935758,Move phone face around
+1384,46.971517,Move phone face around
+1385,47.003980,Move phone face around
+1386,47.040482,Move phone face around
+1387,47.071984,Move phone face around
+1388,47.104324,Move phone face around
+1389,47.140619,Move phone face around
+1390,47.172846,Move phone face around
+1391,47.204770,Move phone face around
+1392,47.240153,Move phone face around
+1393,47.272433,Move phone face around
+1394,47.304638,Move phone face around
+1395,47.340640,Move phone face around
+1396,47.372484,Move phone face around
+1397,47.409139,Move phone face around
+1398,47.440941,Move phone face around
+1399,47.472853,Move phone face around
+1400,47.509078,Move phone face around
+1401,47.540859,Move phone face around
+1402,47.572985,Move phone face around
+1403,47.608857,Move phone face around
+1404,47.641120,Move phone face around
+1405,47.672941,Move phone face around
+1406,47.709225,Move phone face around
+1407,47.741153,Move phone face around
+1408,47.776751,Move phone face around
+1409,47.808897,Move phone face around
+1410,47.840673,Move phone face around
+1411,47.873840,Move phone face around
+1412,47.908999,Move phone face around
+1413,47.941008,Move phone face around
+1414,47.977015,Move phone face around
+1415,48.009130,Move phone face around
+1416,48.041273,Move phone face around
+1417,48.077124,Move phone face around
+1418,48.109202,Move phone face around
+1419,48.145221,Move phone face around
+1420,48.177406,Move phone face around
+1421,48.208601,Move phone face around
+1422,48.243855,Move phone face around
+1423,48.276141,Move phone face around
+1424,48.308426,Move phone face around
+1425,48.344657,Move phone face around
+1426,48.376543,Move phone face around
+1427,48.408523,Move phone face around
+1428,48.444686,Move phone face around
+1429,48.476357,Move phone face around
+1430,48.512311,Move phone face around
+1431,48.544319,Move phone face around
+1432,48.576965,Move phone face around
+1433,48.612520,Move phone face around
+1434,48.644943,Move phone face around
+1435,48.676890,Move phone face around
+1436,48.712797,Move phone face around
+1437,48.744313,Move phone face around
+1438,48.780442,Move phone face around
+1439,48.813037,Move phone face around
+1440,48.844916,Move phone face around
+1441,48.880973,Move phone face around
+1442,48.912912,Move phone face around
+1443,48.944616,Move phone face around
+1444,48.981044,Move phone face around
+1445,49.013237,Move phone face around
+1446,49.044635,Move phone face around
+1447,49.080778,Move phone face around
+1448,49.112902,Move phone face around
+1449,49.148936,Move phone face around
+1450,49.180863,Move phone face around
+1451,49.212501,Move phone face around
+1452,49.249146,Move phone face around
+1453,49.280993,Move phone face around
+1454,49.313411,Move phone face around
+1455,49.344758,Move phone face around
+1456,49.380437,Move phone face around
+1457,49.412699,Move phone face around
+1458,49.448956,Move phone face around
+1459,49.480768,Move phone face around
+1460,49.516807,Move phone face around
+1461,49.548353,Move phone face around
+1462,49.580663,Move phone face around
+1463,49.617224,Move phone face around
+1464,49.648635,Move phone face around
+1465,49.680463,Move phone face around
+1466,49.716736,Move phone face around
+1467,49.749562,Move phone face around
+1468,49.781078,Move phone face around
+1469,49.817030,Move phone face around
+1470,49.849288,Move phone face around
+1471,49.884818,Move phone face around
+1472,49.916727,Move phone face around
+1473,49.948839,Move phone face around
+1474,49.985235,Move phone face around
+1475,50.017136,Cover real face; phone face visible
+1476,50.049164,Cover real face; phone face visible
+1477,50.085493,Cover real face; phone face visible
+1478,50.116846,Cover real face; phone face visible
+1479,50.148633,Cover real face; phone face visible
+1480,50.184664,Cover real face; phone face visible
+1481,50.217003,Cover real face; phone face visible
+1482,50.252460,Cover real face; phone face visible
+1483,50.284590,Cover real face; phone face visible
+1484,50.317083,Cover real face; phone face visible
+1485,50.353006,Cover real face; phone face visible
+1486,50.384687,Cover real face; phone face visible
+1487,50.416739,Cover real face; phone face visible
+1488,50.453224,Cover real face; phone face visible
+1489,50.485124,Cover real face; phone face visible
+1490,50.517230,Cover real face; phone face visible
+1491,50.553107,Cover real face; phone face visible
+1492,50.585117,Cover real face; phone face visible
+1493,50.621387,Cover real face; phone face visible
+1494,50.652918,Cover real face; phone face visible
+1495,50.684924,Cover real face; phone face visible
+1496,50.721147,Cover real face; phone face visible
+1497,50.753172,Cover real face; phone face visible
+1498,50.785270,Cover real face; phone face visible
+1499,50.821272,Cover real face; phone face visible
+1500,50.853368,Cover real face; phone face visible
+1501,50.889359,Cover real face; phone face visible
+1502,50.921741,Cover real face; phone face visible
+1503,50.953662,Cover real face; phone face visible
+1504,50.989839,Cover real face; phone face visible
+1505,51.021270,Cover real face; phone face visible
+1506,51.052985,Cover real face; phone face visible
+1507,51.089676,Cover real face; phone face visible
+1508,51.121461,Cover real face; phone face visible
+1509,51.153203,Cover real face; phone face visible
+1510,51.189699,Cover real face; phone face visible
+1511,51.221759,Cover real face; phone face visible
+1512,51.257816,Cover real face; phone face visible
+1513,51.289567,Cover real face; phone face visible
+1514,51.321671,Cover real face; phone face visible
+1515,51.357487,Cover real face; phone face visible
+1516,51.389688,Cover real face; phone face visible
+1517,51.421839,Cover real face; phone face visible
+1518,51.457836,Cover real face; phone face visible
+1519,51.489509,Cover real face; phone face visible
+1520,51.522119,Cover real face; phone face visible
+1521,51.557934,Cover real face; phone face visible
+1522,51.590019,Cover real face; phone face visible
+1523,51.626108,Cover real face; phone face visible
+1524,51.657921,Cover real face; phone face visible
+1525,51.690327,Cover real face; phone face visible
+1526,51.726182,Cover real face; phone face visible
+1527,51.757994,Cover real face; phone face visible
+1528,51.789956,Cover real face; phone face visible
+1529,51.825908,Cover real face; phone face visible
+1530,51.857817,Cover real face; phone face visible
+1531,51.890228,Cover real face; phone face visible
+1532,51.926281,Cover real face; phone face visible
+1533,51.958167,Cover real face; phone face visible
+1534,51.993928,Cover real face; phone face visible
+1535,52.026196,Cover real face; phone face visible
+1536,52.058246,Cover real face; phone face visible
+1537,52.094341,Cover real face; phone face visible
+1538,52.125938,Cover real face; phone face visible
+1539,52.158252,Cover real face; phone face visible
+1540,52.193908,Cover real face; phone face visible
+1541,52.225815,Cover real face; phone face visible
+1542,52.257840,Cover real face; phone face visible
+1543,52.293706,Cover real face; phone face visible
+1544,52.325927,Cover real face; phone face visible
+1545,52.362251,Cover real face; phone face visible
+1546,52.394337,Cover real face; phone face visible
+1547,52.426478,Cover real face; phone face visible
+1548,52.462363,Cover real face; phone face visible
+1549,52.494263,Cover real face; phone face visible
+1550,52.526141,Cover real face; phone face visible
+1551,52.562458,Cover real face; phone face visible
+1552,52.594178,Cover real face; phone face visible
+1553,52.626441,Cover real face; phone face visible
+1554,52.662359,Cover real face; phone face visible
+1555,52.696293,Cover real face; phone face visible
+1556,52.729975,Cover real face; phone face visible
+1557,52.761983,Cover real face; phone face visible
+1558,52.794450,Cover real face; phone face visible
+1559,52.829873,Cover real face; phone face visible
+1560,52.862905,Cover real face; phone face visible
+1561,52.894597,Cover real face; phone face visible
+1562,52.930136,Cover real face; phone face visible
+1563,52.962148,Cover real face; phone face visible
+1564,52.998454,Cover real face; phone face visible
+1565,53.030321,Cover real face; phone face visible
+1566,53.062485,Cover real face; phone face visible
+1567,53.098694,Cover real face; phone face visible
+1568,53.130006,Cover real face; phone face visible
+1569,53.162557,Cover real face; phone face visible
+1570,53.197906,Cover real face; phone face visible
+1571,53.230033,Cover real face; phone face visible
+1572,53.261916,Cover real face; phone face visible
+1573,53.297743,Cover real face; phone face visible
+1574,53.329971,Cover real face; phone face visible
+1575,53.365564,Cover real face; phone face visible
+1576,53.397607,Cover real face; phone face visible
+1577,53.429953,Cover real face; phone face visible
+1578,53.466072,Cover real face; phone face visible
+1579,53.497660,Cover real face; phone face visible
+1580,53.530094,Cover real face; phone face visible
+1581,53.566004,Cover real face; phone face visible
+1582,53.597663,Cover real face; phone face visible
+1583,53.629931,Cover real face; phone face visible
+1584,53.665969,Cover real face; phone face visible
+1585,53.697553,Cover real face; phone face visible
+1586,53.733980,Cover real face; phone face visible
+1587,53.765938,Cover real face; phone face visible
+1588,53.797657,Cover real face; phone face visible
+1589,53.833981,Cover real face; phone face visible
+1590,53.865852,Cover real face; phone face visible
+1591,53.898127,Cover real face; phone face visible
+1592,53.934180,Cover real face; phone face visible
+1593,53.966014,Cover real face; phone face visible
+1594,53.998072,Cover real face; phone face visible
+1595,54.034096,Cover real face; phone face visible
+1596,54.066023,Cover real face; phone face visible
+1597,54.102296,Cover real face; phone face visible
+1598,54.134324,Cover real face; phone face visible
+1599,54.166001,Cover real face; phone face visible
+1600,54.202318,Cover real face; phone face visible
+1601,54.234079,Cover real face; phone face visible
+1602,54.266002,Cover real face; phone face visible
+1603,54.302440,Cover real face; phone face visible
+1604,54.334678,Cover real face; phone face visible
+1605,54.366288,Cover real face; phone face visible
+1606,54.402297,Cover real face; phone face visible
+1607,54.433951,Cover real face; phone face visible
+1608,54.470142,Cover real face; phone face visible
+1609,54.502418,Cover real face; phone face visible
+1610,54.534146,Cover real face; phone face visible
+1611,54.570227,Cover real face; phone face visible
+1612,54.602235,Cover real face; phone face visible
+1613,54.634222,Cover real face; phone face visible
+1614,54.670312,Cover real face; phone face visible
+1615,54.702148,Cover real face; phone face visible
+1616,54.734166,Cover real face; phone face visible
+1617,54.770123,Cover real face; phone face visible
+1618,54.802214,Cover real face; phone face visible
+1619,54.838290,Cover real face; phone face visible
+1620,54.870139,Cover real face; phone face visible
+1621,54.902343,Cover real face; phone face visible
+1622,54.938237,Cover real face; phone face visible
+1623,54.970114,Cover real face; phone face visible
+1624,55.002164,Cover real face; phone face visible
+1625,55.038292,Cover real face; phone face visible
+1626,55.070281,Cover real face; phone face visible
+1627,55.106422,Cover real face; phone face visible
+1628,55.138149,Cover real face; phone face visible
+1629,55.170482,Cover real face; phone face visible
+1630,55.206512,Cover real face; phone face visible
+1631,55.238288,Cover real face; phone face visible
+1632,55.270434,Cover real face; phone face visible
+1633,55.306674,Cover real face; phone face visible
+1634,55.338119,Cover real face; phone face visible
+1635,55.370581,Cover real face; phone face visible
+1636,55.405866,Cover real face; phone face visible
+1637,55.438203,Cover real face; phone face visible
+1638,55.473996,Cover real face; phone face visible
+1639,55.506249,Cover real face; phone face visible
+1640,55.537990,Cover real face; phone face visible
+1641,55.574263,Cover real face; phone face visible
+1642,55.606273,Cover real face; phone face visible
+1643,55.638939,Cover real face; phone face visible
+1644,55.674551,Cover real face; phone face visible
+1645,55.706462,Cover real face; phone face visible
+1646,55.738901,Cover real face; phone face visible
+1647,55.775098,Cover real face; phone face visible
+1648,55.806513,Cover real face; phone face visible
+1649,55.843142,Cover real face; phone face visible
+1650,55.875255,Cover real face; phone face visible
+1651,55.906701,Cover real face; phone face visible
+1652,55.943195,Cover real face; phone face visible
+1653,55.974913,Cover real face; phone face visible
+1654,56.007046,Cover real face; phone face visible
+1655,56.043326,Cover real face; phone face visible
+1656,56.074670,Cover real face; phone face visible
+1657,56.107106,Cover real face; phone face visible
+1658,56.138592,Cover real face; phone face visible
+1659,56.174725,Cover real face; phone face visible
+1660,56.211027,Cover real face; phone face visible
+1661,56.243166,Cover real face; phone face visible
+1662,56.275013,Cover real face; phone face visible
+1663,56.311254,Cover real face; phone face visible
+1664,56.343263,Cover real face; phone face visible
+1665,56.374959,Cover real face; phone face visible
+1666,56.410945,Cover real face; phone face visible
+1667,56.442971,Cover real face; phone face visible
+1668,56.474987,Cover real face; phone face visible
+1669,56.511092,Cover real face; phone face visible
+1670,56.542934,Cover real face; phone face visible
+1671,56.578956,Cover real face; phone face visible
+1672,56.610837,Cover real face; phone face visible
+1673,56.642920,Cover real face; phone face visible
+1674,56.679425,Cover real face; phone face visible
+1675,56.710964,Cover real face; phone face visible
+1676,56.742858,Cover real face; phone face visible
+1677,56.779397,Cover real face; phone face visible
+1678,56.811429,Cover real face; phone face visible
+1679,56.843074,Cover real face; phone face visible
+1680,56.879434,Cover real face; phone face visible
+1681,56.911554,Cover real face; phone face visible
+1682,56.947420,Cover real face; phone face visible
+1683,56.979250,Cover real face; phone face visible
+1684,57.011491,Cover real face; phone face visible
+1685,57.047526,Cover real face; phone face visible
+1686,57.079736,Cover real face; phone face visible
+1687,57.111385,Cover real face; phone face visible
+1688,57.147566,Cover real face; phone face visible
+1689,57.179696,Cover real face; phone face visible
+1690,57.215453,Cover real face; phone face visible
+1691,57.247825,Cover real face; phone face visible
+1692,57.279529,Cover real face; phone face visible
+1693,57.315531,Cover real face; phone face visible
+1694,57.347733,Cover real face; phone face visible
+1695,57.379762,Cover real face; phone face visible
+1696,57.415520,Cover real face; phone face visible
+1697,57.447991,Cover real face; phone face visible
+1698,57.479749,Cover real face; phone face visible
+1699,57.516006,Cover real face; phone face visible
+1700,57.547528,Cover real face; phone face visible
+1701,57.583592,Cover real face; phone face visible
+1702,57.615330,Cover real face; phone face visible
+1703,57.647775,Cover real face; phone face visible
+1704,57.683171,Cover real face; phone face visible
+1705,57.715437,Cover real face; phone face visible
+1706,57.747258,Cover real face; phone face visible
+1707,57.783842,Cover real face; phone face visible
+1708,57.815478,Cover real face; phone face visible
+1709,57.847841,Cover real face; phone face visible
+1710,57.883180,Cover real face; phone face visible
+1711,57.915529,Cover real face; phone face visible
+1712,57.951432,Cover real face; phone face visible
+1713,57.983733,Cover real face; phone face visible
+1714,58.009480,Cover real face; phone face visible
+1715,58.051490,Cover real face; phone face visible
+1716,58.083231,Cover real face; phone face visible
+1717,58.115183,Cover real face; phone face visible
+1718,58.151110,Cover real face; phone face visible
+1719,58.183505,Cover real face; phone face visible
+1720,58.215826,Cover real face; phone face visible
+1721,58.251255,Cover real face; phone face visible
+1722,58.283754,Cover real face; phone face visible
+1723,58.319951,Cover real face; phone face visible
+1724,58.351563,Cover real face; phone face visible
+1725,58.383558,Cover real face; phone face visible
+1726,58.419341,Cover real face; phone face visible
+1727,58.451391,Cover real face; phone face visible
+1728,58.483470,Cover real face; phone face visible
+1729,58.519652,Cover real face; phone face visible
+1730,58.551411,Cover real face; phone face visible
+1731,58.583580,Cover real face; phone face visible
+1732,58.619950,Cover real face; phone face visible
+1733,58.651930,Cover real face; phone face visible
+1734,58.687920,Cover real face; phone face visible
+1735,58.719676,Cover real face; phone face visible
+1736,58.751782,Cover real face; phone face visible
+1737,58.787450,Cover real face; phone face visible
+1738,58.819998,Cover real face; phone face visible
+1739,58.851531,Cover real face; phone face visible
+1740,58.888122,Cover real face; phone face visible
+1741,58.920173,Cover real face; phone face visible
+1742,58.951952,Cover real face; phone face visible
+1743,58.988167,Cover real face; phone face visible
+1744,59.019739,Cover real face; phone face visible
+1745,59.055825,Cover real face; phone face visible
+1746,59.087609,Cover real face; phone face visible
+1747,59.119792,Cover real face; phone face visible
+1748,59.155982,Cover real face; phone face visible
+1749,59.188304,Cover real face; phone face visible
+1750,59.219945,Cover real face; phone face visible
+1751,59.252584,Cover real face; phone face visible
+1752,59.288262,Cover real face; phone face visible
+1753,59.324356,Cover real face; phone face visible
+1754,59.355946,Cover real face; phone face visible
+1755,59.388112,Cover real face; phone face visible
+1756,59.424001,Cover real face; phone face visible
+1757,59.455659,Cover real face; phone face visible
+1758,59.487872,Cover real face; phone face visible
+1759,59.523942,Cover real face; phone face visible
+1760,59.553407,Cover real face; phone face visible
+1761,59.587664,Cover real face; phone face visible
+1762,59.623927,Cover real face; phone face visible
+1763,59.655687,Cover real face; phone face visible
+1764,59.692125,Cover real face; phone face visible
+1765,59.723896,Cover real face; phone face visible
+1766,59.755813,Cover real face; phone face visible
+1767,59.793014,Cover real face; phone face visible
+1768,59.824218,Cover real face; phone face visible
+1769,59.856184,Cover real face; phone face visible
+1770,59.891303,Cover real face; phone face visible
+1771,59.923340,Cover real face; phone face visible
+1772,59.956030,Cover real face; phone face visible
+1773,59.992197,Cover real face; phone face visible
+1774,60.023587,Remove phone; move left and right
+1775,60.060850,Remove phone; move left and right
+1776,60.091442,Remove phone; move left and right
+1777,60.124507,Remove phone; move left and right
+1778,60.160240,Remove phone; move left and right
+1779,60.192544,Remove phone; move left and right
+1780,60.224185,Remove phone; move left and right
+1781,60.260090,Remove phone; move left and right
+1782,60.292621,Remove phone; move left and right
+1783,60.324058,Remove phone; move left and right
+1784,60.360120,Remove phone; move left and right
+1785,60.391989,Remove phone; move left and right
+1786,60.428193,Remove phone; move left and right
+1787,60.460073,Remove phone; move left and right
+1788,60.492030,Remove phone; move left and right
+1789,60.528371,Remove phone; move left and right
+1790,60.559784,Remove phone; move left and right
+1791,60.592425,Remove phone; move left and right
+1792,60.628539,Remove phone; move left and right
+1793,60.660768,Remove phone; move left and right
+1794,60.692733,Remove phone; move left and right
+1795,60.728753,Remove phone; move left and right
+1796,60.760749,Remove phone; move left and right
+1797,60.796711,Remove phone; move left and right
+1798,60.828813,Remove phone; move left and right
+1799,60.859832,Remove phone; move left and right
+1800,60.896846,Remove phone; move left and right
+1801,60.928377,Remove phone; move left and right
+1802,60.960368,Remove phone; move left and right
+1803,60.996305,Remove phone; move left and right
+1804,61.028843,Remove phone; move left and right
+1805,61.060547,Remove phone; move left and right
+1806,61.096490,Remove phone; move left and right
+1807,61.128861,Remove phone; move left and right
+1808,61.164321,Remove phone; move left and right
+1809,61.196847,Remove phone; move left and right
+1810,61.228761,Remove phone; move left and right
+1811,61.264802,Remove phone; move left and right
+1812,61.296898,Remove phone; move left and right
+1813,61.328458,Remove phone; move left and right
+1814,61.364382,Remove phone; move left and right
+1815,61.396932,Remove phone; move left and right
+1816,61.432661,Remove phone; move left and right
+1817,61.464373,Remove phone; move left and right
+1818,61.496749,Remove phone; move left and right
+1819,61.532523,Remove phone; move left and right
+1820,61.564835,Remove phone; move left and right
+1821,61.596933,Remove phone; move left and right
+1822,61.633203,Remove phone; move left and right
+1823,61.664823,Remove phone; move left and right
+1824,61.696530,Remove phone; move left and right
+1825,61.733127,Remove phone; move left and right
+1826,61.764838,Remove phone; move left and right
+1827,61.800590,Remove phone; move left and right
+1828,61.832947,Remove phone; move left and right
+1829,61.864434,Remove phone; move left and right
+1830,61.900673,Remove phone; move left and right
+1831,61.932166,Remove phone; move left and right
+1832,61.964867,Remove phone; move left and right
+1833,62.000677,Remove phone; move left and right
+1834,62.032802,Remove phone; move left and right
+1835,62.064139,Remove phone; move left and right
+1836,62.100349,Remove phone; move left and right
+1837,62.132853,Remove phone; move left and right
+1838,62.168473,Remove phone; move left and right
+1839,62.200816,Remove phone; move left and right
+1840,62.232244,Remove phone; move left and right
+1841,62.268933,Remove phone; move left and right
+1842,62.300979,Remove phone; move left and right
+1843,62.332485,Remove phone; move left and right
+1844,62.368835,Remove phone; move left and right
+1845,62.401024,Remove phone; move left and right
+1846,62.432918,Remove phone; move left and right
+1847,62.469109,Remove phone; move left and right
+1848,62.500896,Remove phone; move left and right
+1849,62.536729,Remove phone; move left and right
+1850,62.568704,Remove phone; move left and right
+1851,62.600828,Remove phone; move left and right
+1852,62.636560,Remove phone; move left and right
+1853,62.668636,Remove phone; move left and right
+1854,62.700931,Remove phone; move left and right
+1855,62.736515,Remove phone; move left and right
+1856,62.768453,Remove phone; move left and right
+1857,62.800710,Remove phone; move left and right
+1858,62.836570,Remove phone; move left and right
+1859,62.868007,Remove phone; move left and right
+1860,62.904398,Remove phone; move left and right
+1861,62.936009,Remove phone; move left and right
+1862,62.968043,Remove phone; move left and right
+1863,63.004428,Remove phone; move left and right
+1864,63.036549,Remove phone; move left and right
+1865,63.068772,Remove phone; move left and right
+1866,63.104600,Remove phone; move left and right
+1867,63.136512,Remove phone; move left and right
+1868,63.168760,Remove phone; move left and right
+1869,63.204722,Remove phone; move left and right
+1870,63.236665,Remove phone; move left and right
+1871,63.272910,Remove phone; move left and right
+1872,63.304762,Remove phone; move left and right
+1873,63.336487,Remove phone; move left and right
+1874,63.372897,Remove phone; move left and right
+1875,63.404217,Remove phone; move left and right
+1876,63.436754,Remove phone; move left and right
+1877,63.472592,Remove phone; move left and right
+1878,63.504499,Remove phone; move left and right
+1879,63.540562,Remove phone; move left and right
+1880,63.572900,Remove phone; move left and right
+1881,63.604758,Remove phone; move left and right
+1882,63.640752,Remove phone; move left and right
+1883,63.672900,Remove phone; move left and right
+1884,63.704957,Remove phone; move left and right
+1885,63.741187,Remove phone; move left and right
+1886,63.772755,Remove phone; move left and right
+1887,63.804748,Remove phone; move left and right
+1888,63.840690,Remove phone; move left and right
+1889,63.872509,Remove phone; move left and right
+1890,63.908794,Remove phone; move left and right
+1891,63.940784,Remove phone; move left and right
+1892,63.972552,Remove phone; move left and right
+1893,64.009209,Remove phone; move left and right
+1894,64.040925,Remove phone; move left and right
+1895,64.072867,Remove phone; move left and right
+1896,64.107657,Remove phone; move left and right
+1897,64.143917,Remove phone; move left and right
+1898,64.172030,Remove phone; move left and right
+1899,64.208469,Remove phone; move left and right
+1900,64.240972,Remove phone; move left and right
+1901,64.276978,Remove phone; move left and right
+1902,64.308985,Remove phone; move left and right
+1903,64.340990,Remove phone; move left and right
+1904,64.377044,Remove phone; move left and right
+1905,64.408873,Remove phone; move left and right
+1906,64.440976,Remove phone; move left and right
+1907,64.476988,Remove phone; move left and right
+1908,64.509015,Remove phone; move left and right
+1909,64.541089,Remove phone; move left and right
+1910,64.577158,Remove phone; move left and right
+1911,64.608690,Remove phone; move left and right
+1912,64.645048,Remove phone; move left and right
+1913,64.676969,Remove phone; move left and right
+1914,64.710962,Remove phone; move left and right
+1915,64.743952,Remove phone; move left and right
+1916,64.776967,Remove phone; move left and right
+1917,64.808753,Remove phone; move left and right
+1918,64.844902,Remove phone; move left and right
+1919,64.877261,Remove phone; move left and right
+1920,64.909016,Remove phone; move left and right
+1921,64.945037,Remove phone; move left and right
+1922,64.977211,Remove phone; move left and right
+1923,65.013313,Remove phone; move left and right
+1924,65.045451,Remove phone; move left and right
+1925,65.077794,Remove phone; move left and right
+1926,65.113330,Remove phone; move left and right
+1927,65.144727,Remove phone; move left and right
+1928,65.176952,Remove phone; move left and right
+1929,65.212822,Remove phone; move left and right
+1930,65.244877,Remove phone; move left and right
+1931,65.276904,Remove phone; move left and right
+1932,65.313190,Remove phone; move left and right
+1933,65.344885,Remove phone; move left and right
+1934,65.380907,Remove phone; move left and right
+1935,65.413024,Remove phone; move left and right
+1936,65.444880,Remove phone; move left and right
+1937,65.481074,Remove phone; move left and right
+1938,65.513369,Remove phone; move left and right
+1939,65.544781,Remove phone; move left and right
+1940,65.581400,Remove phone; move left and right
+1941,65.613552,Remove phone; move left and right
+1942,65.649451,Remove phone; move left and right
+1943,65.681311,Remove phone; move left and right
+1944,65.713428,Remove phone; move left and right
+1945,65.749137,Remove phone; move left and right
+1946,65.780990,Remove phone; move left and right
+1947,65.813277,Remove phone; move left and right
+1948,65.849527,Remove phone; move left and right
+1949,65.881776,Remove phone; move left and right
+1950,65.913270,Remove phone; move left and right
+1951,65.949184,Remove phone; move left and right
+1952,65.981358,Remove phone; move left and right
+1953,66.017050,Remove phone; move left and right
+1954,66.049425,Remove phone; move left and right
+1955,66.081515,Remove phone; move left and right
+1956,66.117624,Remove phone; move left and right
+1957,66.148424,Remove phone; move left and right
+1958,66.181181,Remove phone; move left and right
+1959,66.217287,Remove phone; move left and right
+1960,66.249266,Remove phone; move left and right
+1961,66.281483,Remove phone; move left and right
+1962,66.317766,Remove phone; move left and right
+1963,66.349148,Remove phone; move left and right
+1964,66.385350,Remove phone; move left and right
+1965,66.417396,Remove phone; move left and right
+1966,66.449815,Remove phone; move left and right
+1967,66.485364,Remove phone; move left and right
+1968,66.517866,Remove phone; move left and right
+1969,66.549410,Remove phone; move left and right
+1970,66.586029,Remove phone; move left and right
+1971,66.617873,Remove phone; move left and right
+1972,66.649486,Remove phone; move left and right
+1973,66.685664,Remove phone; move left and right
+1974,66.717842,Remove phone; move left and right
+1975,66.753941,Remove phone; move left and right
+1976,66.785943,Remove phone; move left and right
+1977,66.817538,Remove phone; move left and right
+1978,66.853972,Remove phone; move left and right
+1979,66.886153,Remove phone; move left and right
+1980,66.917748,Remove phone; move left and right
+1981,66.954488,Remove phone; move left and right
+1982,66.986388,Remove phone; move left and right
+1983,67.018288,Remove phone; move left and right
+1984,67.054301,Remove phone; move left and right
+1985,67.086297,Remove phone; move left and right
+1986,67.119579,Remove phone; move left and right
+1987,67.154257,Remove phone; move left and right
+1988,67.185838,Remove phone; move left and right
+1989,67.222088,Remove phone; move left and right
+1990,67.254259,Remove phone; move left and right
+1991,67.286170,Remove phone; move left and right
+1992,67.322282,Remove phone; move left and right
+1993,67.354169,Remove phone; move left and right
+1994,67.386217,Remove phone; move left and right
+1995,67.422293,Remove phone; move left and right
+1996,67.454280,Remove phone; move left and right
+1997,67.490231,Remove phone; move left and right
+1998,67.522122,Remove phone; move left and right
+1999,67.554333,Remove phone; move left and right
+2000,67.590197,Remove phone; move left and right
+2001,67.622484,Remove phone; move left and right
+2002,67.654300,Remove phone; move left and right
+2003,67.690420,Remove phone; move left and right
+2004,67.722498,Remove phone; move left and right
+2005,67.758478,Remove phone; move left and right
+2006,67.790167,Remove phone; move left and right
+2007,67.822540,Remove phone; move left and right
+2008,67.858420,Remove phone; move left and right
+2009,67.890608,Remove phone; move left and right
+2010,67.922739,Remove phone; move left and right
+2011,67.958587,Remove phone; move left and right
+2012,67.990834,Remove phone; move left and right
+2013,68.022069,Remove phone; move left and right
+2014,68.058172,Remove phone; move left and right
+2015,68.089975,Remove phone; move left and right
+2016,68.126490,Remove phone; move left and right
+2017,68.158436,Remove phone; move left and right
+2018,68.190565,Remove phone; move left and right
+2019,68.226664,Remove phone; move left and right
+2020,68.258653,Remove phone; move left and right
+2021,68.290705,Remove phone; move left and right
+2022,68.327103,Remove phone; move left and right
+2023,68.358257,Remove phone; move left and right
+2024,68.390405,Remove phone; move left and right
+2025,68.426618,Remove phone; move left and right
+2026,68.458411,Remove phone; move left and right
+2027,68.494528,Remove phone; move left and right
+2028,68.526927,Remove phone; move left and right
+2029,68.558543,Remove phone; move left and right
+2030,68.594842,Remove phone; move left and right
+2031,68.626963,Remove phone; move left and right
+2032,68.658471,Remove phone; move left and right
+2033,68.694283,Remove phone; move left and right
+2034,68.726713,Remove phone; move left and right
+2035,68.758605,Remove phone; move left and right
+2036,68.794751,Remove phone; move left and right
+2037,68.826747,Remove phone; move left and right
+2038,68.862725,Remove phone; move left and right
+2039,68.894286,Remove phone; move left and right
+2040,68.925882,Remove phone; move left and right
+2041,68.960129,Remove phone; move left and right
+2042,68.994472,Remove phone; move left and right
+2043,69.026568,Remove phone; move left and right
+2044,69.062138,Remove phone; move left and right
+2045,69.094081,Remove phone; move left and right
+2046,69.126390,Remove phone; move left and right
+2047,69.162489,Remove phone; move left and right
+2048,69.193647,Remove phone; move left and right
+2049,69.230387,Remove phone; move left and right
+2050,69.262541,Remove phone; move left and right
+2051,69.294649,Remove phone; move left and right
+2052,69.330204,Remove phone; move left and right
+2053,69.362137,Remove phone; move left and right
+2054,69.394661,Remove phone; move left and right
+2055,69.430196,Remove phone; move left and right
+2056,69.462153,Remove phone; move left and right
+2057,69.494239,Remove phone; move left and right
+2058,69.530308,Remove phone; move left and right
+2059,69.562592,Remove phone; move left and right
+2060,69.598431,Remove phone; move left and right
+2061,69.631025,Remove phone; move left and right
+2062,69.662315,Remove phone; move left and right
+2063,69.698482,Remove phone; move left and right
+2064,69.730923,Remove phone; move left and right
+2065,69.762521,Remove phone; move left and right
+2066,69.799020,Remove phone; move left and right
+2067,69.830761,Remove phone; move left and right
+2068,69.866866,Remove phone; move left and right
+2069,69.898374,Remove phone; move left and right
+2070,69.930990,Remove phone; move left and right
+2071,69.966985,Remove phone; move left and right
+2072,69.998837,Remove phone; move left and right
+2073,70.030759,Completely leave camera view
+2074,70.067429,Completely leave camera view
+2075,70.098883,Completely leave camera view
+2076,70.130536,Completely leave camera view
+2077,70.166704,Completely leave camera view
+2078,70.198343,Completely leave camera view
+2079,70.234941,Completely leave camera view
+2080,70.266913,Completely leave camera view
+2081,70.298645,Completely leave camera view
+2082,70.335154,Completely leave camera view
+2083,70.366686,Completely leave camera view
+2084,70.399069,Completely leave camera view
+2085,70.435063,Completely leave camera view
+2086,70.467110,Completely leave camera view
+2087,70.498710,Completely leave camera view
+2088,70.535126,Completely leave camera view
+2089,70.566968,Completely leave camera view
+2090,70.603208,Completely leave camera view
+2091,70.635400,Completely leave camera view
+2092,70.666978,Completely leave camera view
+2093,70.703209,Completely leave camera view
+2094,70.735114,Completely leave camera view
+2095,70.767468,Completely leave camera view
+2096,70.803400,Completely leave camera view
+2097,70.835306,Completely leave camera view
+2098,70.867490,Completely leave camera view
+2099,70.903411,Completely leave camera view
+2100,70.935687,Completely leave camera view
+2101,70.971357,Completely leave camera view
+2102,71.003540,Completely leave camera view
+2103,71.035463,Completely leave camera view
+2104,71.071055,Completely leave camera view
+2105,71.103079,Completely leave camera view
+2106,71.134989,Completely leave camera view
+2107,71.171154,Completely leave camera view
+2108,71.203453,Completely leave camera view
+2109,71.235370,Completely leave camera view
+2110,71.271492,Completely leave camera view
+2111,71.303309,Completely leave camera view
+2112,71.339382,Completely leave camera view
+2113,71.370927,Completely leave camera view
+2114,71.400388,Completely leave camera view
+2115,71.439327,Completely leave camera view
+2116,71.471604,Completely leave camera view
+2117,71.503278,Completely leave camera view
+2118,71.539268,Completely leave camera view
+2119,71.570968,Completely leave camera view
+2120,71.603024,Completely leave camera view
+2121,71.639041,Completely leave camera view
+2122,71.671055,Completely leave camera view
+2123,71.707260,Completely leave camera view
+2124,71.738921,Completely leave camera view
+2125,71.771011,Completely leave camera view
+2126,71.806853,Completely leave camera view
+2127,71.839027,Completely leave camera view
+2128,71.870770,Completely leave camera view
+2129,71.907386,Completely leave camera view
+2130,71.939050,Completely leave camera view
+2131,71.974851,Completely leave camera view
+2132,72.007233,Completely leave camera view
+2133,72.038866,Completely leave camera view
+2134,72.075064,Completely leave camera view
+2135,72.106953,Completely leave camera view
+2136,72.139374,Completely leave camera view
+2137,72.174970,Completely leave camera view
+2138,72.206705,Completely leave camera view
+2139,72.239031,Completely leave camera view
+2140,72.275342,Completely leave camera view
+2141,72.306915,Completely leave camera view
+2142,72.342687,Completely leave camera view
+2143,72.375150,Completely leave camera view
+2144,72.407156,Completely leave camera view
+2145,72.443279,Completely leave camera view
+2146,72.475021,Completely leave camera view
+2147,72.506562,Completely leave camera view
+2148,72.540550,Completely leave camera view
+2149,72.574918,Completely leave camera view
+2150,72.606860,Completely leave camera view
+2151,72.642875,Completely leave camera view
+2152,72.674935,Completely leave camera view
+2153,72.711384,Completely leave camera view
+2154,72.742945,Completely leave camera view
+2155,72.774908,Completely leave camera view
+2156,72.811066,Completely leave camera view
+2157,72.842925,Completely leave camera view
+2158,72.875159,Completely leave camera view
+2159,72.911276,Completely leave camera view
+2160,72.942994,Completely leave camera view
+2161,72.974906,Completely leave camera view
+2162,73.011058,Completely leave camera view
+2163,73.043151,Completely leave camera view
+2164,73.079113,Completely leave camera view
+2165,73.111137,Completely leave camera view
+2166,73.143176,Completely leave camera view
+2167,73.179571,Completely leave camera view
+2168,73.208459,Completely leave camera view
+2169,73.243183,Completely leave camera view
+2170,73.279180,Completely leave camera view
+2171,73.310885,Completely leave camera view
+2172,73.343086,Completely leave camera view
+2173,73.379129,Completely leave camera view
+2174,73.410995,Completely leave camera view
+2175,73.447322,Completely leave camera view
+2176,73.479118,Completely leave camera view
+2177,73.511319,Completely leave camera view
+2178,73.547484,Completely leave camera view
+2179,73.579316,Completely leave camera view
+2180,73.610965,Completely leave camera view
+2181,73.647142,Completely leave camera view
+2182,73.678880,Completely leave camera view
+2183,73.710992,Completely leave camera view
+2184,73.747241,Completely leave camera view
+2185,73.779382,Completely leave camera view
+2186,73.815325,Completely leave camera view
+2187,73.847374,Completely leave camera view
+2188,73.879278,Completely leave camera view
+2189,73.915559,Completely leave camera view
+2190,73.947829,Completely leave camera view
+2191,73.979981,Completely leave camera view
+2192,74.015912,Completely leave camera view
+2193,74.047783,Completely leave camera view
+2194,74.083529,Completely leave camera view
+2195,74.115363,Completely leave camera view
+2196,74.147377,Completely leave camera view
+2197,74.183706,Completely leave camera view
+2198,74.215564,Completely leave camera view
+2199,74.247770,Completely leave camera view
+2200,74.283840,Completely leave camera view
+2201,74.315847,Completely leave camera view
+2202,74.347339,Completely leave camera view
+2203,74.383914,Completely leave camera view
+2204,74.415999,Completely leave camera view
+2205,74.452006,Completely leave camera view
+2206,74.483544,Completely leave camera view
+2207,74.516028,Completely leave camera view
+2208,74.549746,Completely leave camera view
+2209,74.583706,Completely leave camera view
+2210,74.615921,Completely leave camera view
+2211,74.651931,Completely leave camera view
+2212,74.684116,Completely leave camera view
+2213,74.715846,Completely leave camera view
+2214,74.752067,Completely leave camera view
+2215,74.783978,Completely leave camera view
+2216,74.820124,Completely leave camera view
+2217,74.851774,Completely leave camera view
+2218,74.884154,Completely leave camera view
+2219,74.919984,Completely leave camera view
+2220,74.951403,Completely leave camera view
+2221,74.983942,Completely leave camera view
+2222,75.020010,Completely leave camera view
+2223,75.051537,Completely leave camera view
+2224,75.084127,Completely leave camera view
+2225,75.119955,Completely leave camera view
+2226,75.151857,Completely leave camera view
+2227,75.188873,Completely leave camera view
+2228,75.219825,Completely leave camera view
+2229,75.251784,Completely leave camera view
+2230,75.288314,Completely leave camera view
+2231,75.319838,Completely leave camera view
+2232,75.352185,Completely leave camera view
+2233,75.388232,Completely leave camera view
+2234,75.420134,Completely leave camera view
+2235,75.452105,Completely leave camera view
+2236,75.487968,Completely leave camera view
+2237,75.519513,Completely leave camera view
+2238,75.556204,Completely leave camera view
+2239,75.587846,Completely leave camera view
+2240,75.619643,Completely leave camera view
+2241,75.655984,Completely leave camera view
+2242,75.687935,Completely leave camera view
+2243,75.719836,Completely leave camera view
+2244,75.756329,Completely leave camera view
+2245,75.787970,Completely leave camera view
+2246,75.823477,Completely leave camera view
+2247,75.856106,Completely leave camera view
+2248,75.888462,Completely leave camera view
+2249,75.924324,Completely leave camera view
+2250,75.956210,Completely leave camera view
+2251,75.988157,Completely leave camera view
+2252,76.024387,Completely leave camera view
+2253,76.056262,Completely leave camera view
+2254,76.088067,Completely leave camera view
+2255,76.124017,Completely leave camera view
+2256,76.156176,Completely leave camera view
+2257,76.192119,Completely leave camera view
+2258,76.224251,Completely leave camera view
+2259,76.256435,Completely leave camera view
+2260,76.292329,Completely leave camera view
+2261,76.324348,Completely leave camera view
+2262,76.356325,Completely leave camera view
+2263,76.392549,Completely leave camera view
+2264,76.424524,Completely leave camera view
+2265,76.456527,Completely leave camera view
+2266,76.492527,Completely leave camera view
+2267,76.524386,Completely leave camera view
+2268,76.560821,Completely leave camera view
+2269,76.592308,Completely leave camera view
+2270,76.624397,Completely leave camera view
+2271,76.660342,Completely leave camera view
+2272,76.692054,Completely leave camera view
+2273,76.724218,Completely leave camera view
+2274,76.761217,Completely leave camera view
+2275,76.792365,Completely leave camera view
+2276,76.824463,Completely leave camera view
+2277,76.860399,Completely leave camera view
+2278,76.892931,Completely leave camera view
+2279,76.928860,Completely leave camera view
+2280,76.960478,Completely leave camera view
+2281,76.992788,Completely leave camera view
+2282,77.028557,Completely leave camera view
+2283,77.060840,Completely leave camera view
+2284,77.092812,Completely leave camera view
+2285,77.129036,Completely leave camera view
+2286,77.160963,Completely leave camera view
+2287,77.192557,Completely leave camera view
+2288,77.228518,Completely leave camera view
+2289,77.260913,Completely leave camera view
+2290,77.296800,Completely leave camera view
+2291,77.328847,Completely leave camera view
+2292,77.360840,Completely leave camera view
+2293,77.396846,Completely leave camera view
+2294,77.428435,Completely leave camera view
+2295,77.460949,Completely leave camera view
+2296,77.496367,Completely leave camera view
+2297,77.528855,Completely leave camera view
+2298,77.561028,Completely leave camera view
+2299,77.596786,Completely leave camera view
+2300,77.628669,Completely leave camera view
+2301,77.664767,Completely leave camera view
+2302,77.696861,Completely leave camera view
+2303,77.728928,Completely leave camera view
+2304,77.764802,Completely leave camera view
+2305,77.796549,Completely leave camera view
+2306,77.828855,Completely leave camera view
+2307,77.864918,Completely leave camera view
+2308,77.896541,Completely leave camera view
+2309,77.932339,Completely leave camera view
+2310,77.965073,Completely leave camera view
+2311,77.994010,Completely leave camera view
+2312,78.032940,Completely leave camera view
+2313,78.064975,Completely leave camera view
+2314,78.096300,Completely leave camera view
+2315,78.132454,Completely leave camera view
+2316,78.164493,Completely leave camera view
+2317,78.196421,Completely leave camera view
+2318,78.232789,Completely leave camera view
+2319,78.265013,Completely leave camera view
+2320,78.300869,Completely leave camera view
+2321,78.332858,Completely leave camera view
+2322,78.364827,Completely leave camera view
+2323,78.401080,Completely leave camera view
+2324,78.432994,Completely leave camera view
+2325,78.464854,Completely leave camera view
+2326,78.501127,Completely leave camera view
+2327,78.533119,Completely leave camera view
+2328,78.564930,Completely leave camera view
+2329,78.601102,Completely leave camera view
+2330,78.632438,Completely leave camera view
+2331,78.669118,Completely leave camera view
+2332,78.700927,Completely leave camera view
+2333,78.732852,Completely leave camera view
+2334,78.769266,Completely leave camera view
+2335,78.800531,Completely leave camera view
+2336,78.833248,Completely leave camera view
+2337,78.869025,Completely leave camera view
+2338,78.901021,Completely leave camera view
+2339,78.933043,Completely leave camera view
+2340,78.968435,Completely leave camera view
+2341,79.000635,Completely leave camera view
+2342,79.037117,Completely leave camera view
+2343,79.068875,Completely leave camera view
+2344,79.100637,Completely leave camera view
+2345,79.137061,Completely leave camera view
+2346,79.169302,Completely leave camera view
+2347,79.200691,Completely leave camera view
+2348,79.236687,Completely leave camera view
+2349,79.268573,Completely leave camera view
+2350,79.300808,Completely leave camera view
+2351,79.337019,Completely leave camera view
+2352,79.368902,Completely leave camera view
+2353,79.404846,Completely leave camera view
+2354,79.437128,Completely leave camera view
+2355,79.468876,Completely leave camera view
+2356,79.505030,Completely leave camera view
+2357,79.537037,Completely leave camera view
+2358,79.569000,Completely leave camera view
+2359,79.604971,Completely leave camera view
+2360,79.637045,Completely leave camera view
+2361,79.668846,Completely leave camera view
+2362,79.705026,Completely leave camera view
+2363,79.736913,Completely leave camera view
+2364,79.773152,Completely leave camera view
+2365,79.805418,Completely leave camera view
+2366,79.836976,Completely leave camera view
+2367,79.872842,Completely leave camera view
+2368,79.904840,Completely leave camera view
+2369,79.937015,Completely leave camera view
+2370,79.973347,Completely leave camera view

@@ -1,0 +1,12 @@
+{
+  "retinaface_accepted_yunet_rejected": [
+    690,
+    696,
+    1098,
+    1104,
+    1158,
+    1344,
+    2112
+  ],
+  "yunet_accepted_retinaface_rejected": []
+}

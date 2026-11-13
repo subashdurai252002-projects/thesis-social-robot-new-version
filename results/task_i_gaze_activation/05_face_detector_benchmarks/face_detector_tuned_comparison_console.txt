@@ -1,0 +1,4 @@
+RetinaFace at 90%: 249/291 (85.6%), multiple=0
+YuNet at 89%: 244/291 (83.8%), multiple=0
+MediaPipe at 85%: 236/291 (81.1%), multiple=0
+SCRFD at 60%: 247/291 (84.9%), multiple=0

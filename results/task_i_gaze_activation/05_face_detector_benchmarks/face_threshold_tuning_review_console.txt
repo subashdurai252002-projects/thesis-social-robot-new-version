@@ -1,0 +1,34 @@
+Creating complete threshold-tuning review sheets...
+
+RetinaFace: 1 newly accepted frames, 1 review pages
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/retinaface_newly_accepted_page_01.jpg
+YuNet: 7 newly accepted frames, 1 review pages
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/yunet_newly_accepted_page_01.jpg
+MediaPipe: 31 newly accepted frames, 2 review pages
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/mediapipe_newly_accepted_page_01.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/mediapipe_newly_accepted_page_02.jpg
+SCRFD-500M: 247 newly accepted frames, 13 review pages
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_01.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_02.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_03.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_04.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_05.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_06.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_07.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_08.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_09.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_10.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_11.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_12.jpg
+  Saved: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/scrfd_newly_accepted_page_13.jpg
+
+Threshold review sheets completed.
+Output directory: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review
+Manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_threshold_tuning_review/threshold_review_manifest.json
+
+Colour guide:
+  Cyan: primary-person region
+  Green: newly accepted detection
+  Orange: other raw detection
+
+Every listed page must be inspected before a candidate threshold is approved.

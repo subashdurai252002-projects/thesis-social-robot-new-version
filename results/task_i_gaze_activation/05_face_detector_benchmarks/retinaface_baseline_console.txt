@@ -1,0 +1,31 @@
+RetinaFace CPU baseline benchmark
+Reference: Athul scene-trigger pipeline
+Primary track ID: 1
+Sample interval: 6
+Available video frames: 2370
+Sampled frames: 395
+Confidence minimum: 0.9
+Minimum face size: 60
+Minimum aspect ratio: 0.6
+
+Model loaded in: 34.51 ms
+Warming up RetinaFace...
+Two warm-up detections: 60.48 ms
+Starting controlled benchmark...
+Sampled frames: 50 / 395 | face inferences: 0
+Sampled frames: 100 / 395 | face inferences: 47
+Sampled frames: 150 / 395 | face inferences: 97
+Sampled frames: 200 / 395 | face inferences: 147
+Sampled frames: 250 / 395 | face inferences: 197
+Sampled frames: 300 / 395 | face inferences: 247
+Sampled frames: 350 / 395 | face inferences: 277
+
+RetinaFace baseline completed.
+Primary-person frames processed: 291
+Mean inference time: 21.21 ms
+Median inference time: 18.91 ms
+95th-percentile inference time: 34.77 ms
+Effective face inference FPS: 47.15
+Peak RSS: 505.7 MiB
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_baseline_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/retinaface_baseline_summary.json

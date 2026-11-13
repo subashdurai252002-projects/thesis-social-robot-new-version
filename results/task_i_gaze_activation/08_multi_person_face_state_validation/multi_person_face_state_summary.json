@@ -1,0 +1,128 @@
+{
+  "architecture": "one independent face state per ByteTrack person ID",
+  "detector": "YuNet",
+  "confidence_threshold": 0.89,
+  "sample_interval": 6,
+  "track_state_release_frames": 120,
+  "sampled_frames": 395,
+  "processed_person_instances": 501,
+  "unique_track_ids": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    10,
+    13,
+    14,
+    16,
+    22,
+    27,
+    33
+  ],
+  "maximum_visible_tracks": 4,
+  "maximum_retained_states": 5,
+  "state_creation_events": 12,
+  "state_release_events": 12,
+  "mean_face_time_ms": 4.5890756069228615,
+  "reference_real_person_id": 2,
+  "per_id": {
+    "1": {
+      "sampled_visible_frames": 13,
+      "candidate_face_frames": 12,
+      "selected_face_frames": 12,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "2": {
+      "sampled_visible_frames": 290,
+      "candidate_face_frames": 284,
+      "selected_face_frames": 238,
+      "multiple_candidate_frames": 74,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "3": {
+      "sampled_visible_frames": 95,
+      "candidate_face_frames": 93,
+      "selected_face_frames": 93,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "6": {
+      "sampled_visible_frames": 4,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "7": {
+      "sampled_visible_frames": 9,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "10": {
+      "sampled_visible_frames": 5,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "13": {
+      "sampled_visible_frames": 1,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "14": {
+      "sampled_visible_frames": 2,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "16": {
+      "sampled_visible_frames": 3,
+      "candidate_face_frames": 2,
+      "selected_face_frames": 1,
+      "multiple_candidate_frames": 1,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "22": {
+      "sampled_visible_frames": 43,
+      "candidate_face_frames": 41,
+      "selected_face_frames": 13,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "27": {
+      "sampled_visible_frames": 25,
+      "candidate_face_frames": 0,
+      "selected_face_frames": 0,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    },
+    "33": {
+      "sampled_visible_frames": 11,
+      "candidate_face_frames": 11,
+      "selected_face_frames": 11,
+      "multiple_candidate_frames": 0,
+      "state_creation_events": 1,
+      "state_release_events": 1
+    }
+  },
+  "important_note": "The reference real-person ID is used only for reviewing this saved recording. The runtime does not select a primary interaction target before gaze and liveness evaluation."
+}

@@ -13,6 +13,8 @@ import torch
 import ultralytics
 from ultralytics import YOLO
 
+from result_paths import PERSON_TRACKING_RESULTS, SAM2_RESULTS
+
 
 PIPELINE_DIRECTORY = Path(__file__).resolve().parents[1]
 PROJECT_DIRECTORY = PIPELINE_DIRECTORY.parent
@@ -29,19 +31,15 @@ TRACKER_CONFIG_PATH = (
     / "bytetrack.yaml"
 )
 
-RESULTS_DIRECTORY = (
-    PROJECT_DIRECTORY
-    / "results"
-    / "task_i_gaze_activation"
-)
+RESULTS_DIRECTORY = PERSON_TRACKING_RESULTS
 
 VIDEO_PATH = (
-    RESULTS_DIRECTORY
+    SAM2_RESULTS
     / "sam2_benchmark_input.avi"
 )
 
 TIMELINE_PATH = (
-    RESULTS_DIRECTORY
+    SAM2_RESULTS
     / "sam2_benchmark_timeline.csv"
 )
 

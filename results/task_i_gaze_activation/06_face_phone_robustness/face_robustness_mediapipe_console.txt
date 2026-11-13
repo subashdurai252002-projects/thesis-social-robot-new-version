@@ -1,0 +1,46 @@
+Phone/photo robustness benchmark
+Detector key: mediapipe
+Approved threshold: 0.85
+Locked real-person ID: 2
+Required environment: .venv-face-mediapipe
+
+MediaPipe CPU baseline benchmark
+Model: BlazeFace Short Range
+Primary track ID: 2
+Sample interval: 6
+Available video frames: 2370
+Sampled frames: 395
+Raw confidence minimum: 0.6
+Acceptance confidence minimum: 0.85
+Minimum face size: 60
+Minimum aspect ratio: 0.6
+
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a3b98002c70, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:1022] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Model loaded in: 1640.28 ms
+Warming up MediaPipe...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794561823.639114    6808 inference_runner_litert.cc:1433] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+Two warm-up detections: 62.61 ms
+Starting controlled benchmark...
+Sampled frames: 50 / 395 | face inferences: 0
+Sampled frames: 100 / 395 | face inferences: 36
+Sampled frames: 150 / 395 | face inferences: 86
+Sampled frames: 200 / 395 | face inferences: 136
+Sampled frames: 250 / 395 | face inferences: 186
+Sampled frames: 300 / 395 | face inferences: 236
+Sampled frames: 350 / 395 | face inferences: 286
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a3b98002c70, name=CpuAccelerator
+
+MediaPipe baseline completed.
+Primary-person frames processed: 290
+Mean inference time: 3.67 ms
+Median inference time: 3.59 ms
+95th-percentile inference time: 5.73 ms
+Effective face inference FPS: 272.55
+Peak RSS: 166.3 MiB
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_mediapipe_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_mediapipe_summary.json

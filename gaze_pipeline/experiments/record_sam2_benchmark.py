@@ -8,6 +8,8 @@ from pathlib import Path
 import cv2
 import yaml
 
+from result_paths import SAM2_RESULTS
+
 
 PIPELINE_DIRECTORY = Path(__file__).resolve().parents[1]
 PROJECT_DIRECTORY = PIPELINE_DIRECTORY.parent
@@ -18,11 +20,7 @@ CONFIG_PATH = (
     / "gaze_config.yaml"
 )
 
-RESULTS_DIRECTORY = (
-    PROJECT_DIRECTORY
-    / "results"
-    / "task_i_gaze_activation"
-)
+RESULTS_DIRECTORY = SAM2_RESULTS
 
 VIDEO_PATH = (
     RESULTS_DIRECTORY

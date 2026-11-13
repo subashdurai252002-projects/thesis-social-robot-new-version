@@ -18,6 +18,8 @@ Camera
 
 The laptop uses YOLOv8n with ByteTrack because controlled SAM2 CPU propagation made the laptop unresponsive. The five-model SAM2 comparison is retained as a Jetson GPU laboratory task.
 
+The laptop face detector is YuNet. Every ByteTrack person ID receives an independent face-continuity state; no interaction target is selected before later liveness and gaze checks. The benchmark and validation evidence is documented in `docs/face_detection_results.md`.
+
 ## Directory structure
 
 - `runtime/`: components intended for the final live robot pipeline.
@@ -31,7 +33,7 @@ The laptop uses YOLOv8n with ByteTrack because controlled SAM2 CPU propagation m
 1. Test webcam capture.
 2. Add person detection.
 3. Add and validate person tracking.
-4. Add face detection.
+4. Add face detection. *(implemented and validated)*
 5. Add gaze estimation.
 6. Calibrate the gaze target.
 7. Add sustained-gaze triggering.

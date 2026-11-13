@@ -1,0 +1,32 @@
+YOLOv8n + ByteTrack benchmark: face_robustness_tracking
+Ultralytics: 8.4.208
+Model: /home/subash/thesis social robot new version/gaze_pipeline/models/yolov8n.pt
+Tracker: /home/subash/thesis social robot new version/gaze_pipeline/config/bytetrack_tuned_v1.yaml
+Device: cpu
+Detection confidence: 0.1
+YOLO NMS IoU: 0.45
+Image size: 640
+Video: 640x480 at 30.00 FPS
+Frames: 2370
+
+YOLO model loaded in: 0.434 seconds
+Warming up YOLO...
+Warm-up completed in: 7.438 seconds
+Starting ByteTrack benchmark...
+Processed frames: 300 / 2370 | tracks: 0 | RSS: 462.9 MiB
+Processed frames: 600 / 2370 | tracks: 1 | RSS: 463.0 MiB
+Processed frames: 900 / 2370 | tracks: 2 | RSS: 462.9 MiB
+Processed frames: 1200 / 2370 | tracks: 2 | RSS: 463.7 MiB
+Processed frames: 1500 / 2370 | tracks: 2 | RSS: 463.8 MiB
+Processed frames: 1800 / 2370 | tracks: 1 | RSS: 464.2 MiB
+Processed frames: 2100 / 2370 | tracks: 1 | RSS: 464.0 MiB
+
+ByteTrack benchmark completed.
+Frames processed: 2370
+Benchmark time: 93.87 seconds
+Effective FPS: 25.25
+Maximum simultaneous tracks: 4
+Track-ID switches: 125
+Peak RSS: 467.3 MiB
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_tracking_frames.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/face_robustness_tracking_summary.json

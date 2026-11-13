@@ -1,0 +1,64 @@
+{
+  "detector": "SCRFD-500M",
+  "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/scrfd_500m.onnx",
+  "device": "cpu",
+  "frame_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/04_sam2_experiments/sam2_benchmark_frames/000427.jpg",
+  "frame_index": 427,
+  "primary_person_box": [
+    152,
+    150,
+    555,
+    479
+  ],
+  "raw_confidence_minimum": 0.6,
+  "acceptance_confidence_minimum": 0.9,
+  "minimum_face_size": 60,
+  "minimum_aspect_ratio": 0.6,
+  "input_size": [
+    640,
+    640
+  ],
+  "model_load_ms": 72.83379000000423,
+  "inference_ms": 102.85182499865186,
+  "raw_face_count": 1,
+  "accepted_face_count": 0,
+  "detections": [
+    {
+      "detection_number": 1,
+      "confidence": 0.8439626097679138,
+      "box_xyxy": [
+        306,
+        223,
+        438,
+        399
+      ],
+      "width": 132,
+      "height": 176,
+      "aspect_ratio": 0.75,
+      "accepted": false,
+      "landmarks": [
+        [
+          349,
+          280
+        ],
+        [
+          411,
+          288
+        ],
+        [
+          380,
+          319
+        ],
+        [
+          347,
+          347
+        ],
+        [
+          397,
+          355
+        ]
+      ]
+    }
+  ],
+  "preview_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/05_face_detector_benchmarks/scrfd_single_frame_preview.jpg"
+}

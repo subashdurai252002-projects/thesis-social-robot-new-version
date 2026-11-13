@@ -1,0 +1,12 @@
+Loading SCRFD-500M on CPU...
+Model loaded in: 40.09 ms
+Running face detection...
+
+Single-frame SCRFD test completed.
+Primary-person box: [152, 150, 555, 479]
+Raw faces: 1
+Accepted faces: 0
+Inference time: 29.70 ms
+Detection 1: confidence=0.844, box=[306, 223, 438, 399], size=132x176, accepted=False
+Saved preview: /home/subash/thesis social robot new version/results/task_i_gaze_activation/scrfd_single_frame_preview.jpg
+Saved result: /home/subash/thesis social robot new version/results/task_i_gaze_activation/scrfd_single_frame_result.json

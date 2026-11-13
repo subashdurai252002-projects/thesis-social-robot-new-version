@@ -3,7 +3,7 @@
 
 ## Objective
 
-The purpose of this stage was to detect a person, maintain a stable identity while the person moves, release the identity after the person leaves, and select a new identity when a person returns.
+The purpose of this stage was to detect people, maintain track identities while they move, retain identities through brief loss, and release identities after departure.
 
 ## Pipeline decision
 
@@ -11,11 +11,11 @@ Athul’s reference pipeline used:
 
 Camera → YOLO → SAM2
 
-The laptop pipeline now uses:
+The final laptop tracking foundation uses:
 
-Camera → YOLOv8n → ByteTrack → Primary-person lock
+Camera → YOLOv8n → ByteTrack person IDs
 
-YOLOv8n detects people and produces bounding boxes. ByteTrack associates those detections across frames and assigns track IDs. The primary-person lock prevents temporary secondary boxes from replacing the selected user.
+YOLOv8n detects people and produces bounding boxes. ByteTrack associates those detections across frames and assigns track IDs. Every visible ID remains eligible for later face, liveness and gaze processing. The person demonstrating validated interaction intent will be selected only after those later checks.
 
 ## Why YOLOv8n was used
 
@@ -82,14 +82,14 @@ The baseline produced temporary additional IDs during fast hand movement and fac
 |---|---:|---:|
 | Effective processing rate | 23.22 FPS | 25.01 FPS |
 | Maximum simultaneous tracks | 3 | 2 |
-| Primary-ID switches | 6 | 0 |
+| Reference-track ID switches | 6 | 0 |
 | Peak memory use | 470.0 MiB | 466.4 MiB |
 
-The tuned configuration removed primary-ID switching in the controlled video. Some duplicate secondary tracks remained during fast hand movement and face covering.
+The tuned configuration removed reference-track ID switching in the controlled video. Some duplicate tracks remained during fast hand movement and face covering.
 
-## Primary-person locking
+## Historical single-primary baseline
 
-Removing every secondary box would be unsafe because a future scene may contain multiple real people. Instead, the runtime:
+An initial single-user experiment added a global primary-person lock. It:
 
 1. Selects one primary track.
 2. Keeps the same primary ID during normal movement and brief detection loss.
@@ -97,9 +97,11 @@ Removing every secondary box would be unsafe because a future scene may contain 
 4. Releases the primary after 120 missing processed frames.
 5. Selects a new primary when a person subsequently appears.
 
-Only the primary track will continue to the face and gaze stages.
+This was useful for measuring continuity, release and reselection, but it is not the final multi-person interaction architecture. Locking the first arrival before gaze evaluation could block a later person who intentionally looks at the robot.
 
-## Final live stress test
+The final runtime therefore retains all ByteTrack IDs and creates independent face state for each ID. No interaction target is chosen at the person-tracking stage.
+
+## Historical single-primary live stress test
 
 | Metric | Result |
 |---|---:|
@@ -123,9 +125,9 @@ ID 13 does not mean that 13 people were present. ByteTrack uses increasing inter
 
 ## Conclusion
 
-The laptop person-tracking stage passed the controlled benchmark and live release/reselection test.
+The laptop person-tracking stage passed the controlled benchmark and historical single-target release/reselection test.
 
-YOLOv8n with tuned ByteTrack provides CPU-compatible real-time tracking. Primary locking prevents duplicate detections from changing the active user. Temporary secondary detections remain measurable and must be considered during later multi-person testing, but they do not control the gaze activation pipeline.
+YOLOv8n with tuned ByteTrack provides CPU-compatible tracking. The final runtime does not ignore secondary IDs: each ID receives independent downstream face state. Temporary duplicate detections remain measurable and must be filtered by face quality, liveness and later interaction-intent logic.
 
 ## Remaining Jetson laboratory work
 
@@ -138,4 +140,4 @@ YOLOv8n with tuned ByteTrack provides CPU-compatible real-time tracking. Primary
 
 ## Next pipeline stage
 
-Camera → YOLOv8n → ByteTrack → Primary-person lock → Face detection
+Camera → YOLOv8n → ByteTrack IDs → per-ID face detection

@@ -15,17 +15,15 @@ from sam2.build_sam import (
     build_sam2_video_predictor,
 )
 
+from result_paths import SAM2_RESULTS
+
 
 PIPELINE_DIRECTORY = Path(__file__).resolve().parents[1]
 PROJECT_DIRECTORY = PIPELINE_DIRECTORY.parent
 
 MODELS_DIRECTORY = PIPELINE_DIRECTORY / "models"
 
-RESULTS_DIRECTORY = (
-    PROJECT_DIRECTORY
-    / "results"
-    / "task_i_gaze_activation"
-)
+RESULTS_DIRECTORY = SAM2_RESULTS
 
 FRAMES_DIRECTORY = (
     RESULTS_DIRECTORY

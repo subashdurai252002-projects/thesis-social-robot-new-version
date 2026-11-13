@@ -1,0 +1,149 @@
+{
+  "purpose": "YOLOv8n plus ByteTrack laptop face_robustness_tracking evaluation",
+  "run_name": "face_robustness_tracking",
+  "nms_iou": 0.45,
+  "ultralytics_version": "8.4.208",
+  "model": "yolov8n.pt",
+  "tracker_configuration": "bytetrack_tuned_v1.yaml",
+  "device": "cpu",
+  "video_frames": 2370,
+  "video_fps": 30.0,
+  "detection_confidence": 0.1,
+  "image_size": 640,
+  "model_load_seconds": 0.43428101400013475,
+  "warmup_seconds": 7.437823888999901,
+  "benchmark_seconds": 93.86935024600007,
+  "effective_fps": 25.24785772767176,
+  "mean_processing_seconds": 0.03932283713966085,
+  "mean_preprocess_ms": 0.7392305535888863,
+  "mean_inference_ms": 35.74565604430627,
+  "mean_postprocess_ms": 0.7717333046436391,
+  "initial_rss_mib": 266.54296875,
+  "peak_rss_mib": 467.2578125,
+  "process_cpu_seconds": 654.26,
+  "average_process_cpu_percent": 696.9900167471108,
+  "maximum_simultaneous_tracks": 4,
+  "track_id_switches": 125,
+  "action_summaries": {
+    "Empty camera view": {
+      "frames": 279,
+      "tracked_frames": 75,
+      "no_track_frames": 204,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.26881720430107525,
+      "unique_track_ids": [
+        1
+      ],
+      "dominant_track_id": 1,
+      "mean_processing_seconds": 0.0345915897921029,
+      "mean_inference_ms": 31.041316268814672
+    },
+    "Real face only": {
+      "frames": 299,
+      "tracked_frames": 197,
+      "no_track_frames": 102,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.6588628762541806,
+      "unique_track_ids": [
+        2
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.034999091551837384,
+      "mean_inference_ms": 32.09673068562913
+    },
+    "Phone face near chest": {
+      "frames": 298,
+      "tracked_frames": 298,
+      "no_track_frames": 0,
+      "multiple_track_frames": 208,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        2,
+        3,
+        6,
+        7,
+        10
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.03766844403691764,
+      "mean_inference_ms": 34.15585683892947
+    },
+    "Phone face beside real face": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 299,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        2,
+        3,
+        13,
+        14,
+        16
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.042062329618726184,
+      "mean_inference_ms": 38.06404362208287
+    },
+    "Move phone face around": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 258,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        2,
+        3,
+        16,
+        22,
+        27
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.04147354571571829,
+      "mean_inference_ms": 37.568016521742074
+    },
+    "Cover real face; phone face visible": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 148,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        2,
+        22,
+        27,
+        33
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.04103905590969485,
+      "mean_inference_ms": 37.20376669565344
+    },
+    "Remove phone; move left and right": {
+      "frames": 299,
+      "tracked_frames": 299,
+      "no_track_frames": 0,
+      "multiple_track_frames": 15,
+      "tracking_rate": 1.0,
+      "unique_track_ids": [
+        2,
+        33
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.040858364551839284,
+      "mean_inference_ms": 37.24470119732359
+    },
+    "Completely leave camera view": {
+      "frames": 298,
+      "tracked_frames": 51,
+      "no_track_frames": 247,
+      "multiple_track_frames": 0,
+      "tracking_rate": 0.17114093959731544,
+      "unique_track_ids": [
+        2
+      ],
+      "dominant_track_id": 2,
+      "mean_processing_seconds": 0.04157580647315794,
+      "mean_inference_ms": 38.27930164429089
+    }
+  }
+}

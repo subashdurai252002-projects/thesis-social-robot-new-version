@@ -1,0 +1,90 @@
+{
+  "purpose": "Matched visual review of real-face and phone-photo detections",
+  "models": {
+    "retinaface": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_review/retinaface_phone_photo_review.jpg",
+      "frame_indices": [
+        450,
+        660,
+        750,
+        840,
+        960,
+        1050,
+        1140,
+        1260,
+        1350,
+        1440,
+        1560,
+        1650,
+        1740,
+        1950,
+        2130
+      ]
+    },
+    "yunet": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_review/yunet_phone_photo_review.jpg",
+      "frame_indices": [
+        450,
+        660,
+        750,
+        840,
+        960,
+        1050,
+        1140,
+        1260,
+        1350,
+        1440,
+        1560,
+        1650,
+        1740,
+        1950,
+        2130
+      ]
+    },
+    "mediapipe": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_review/mediapipe_phone_photo_review.jpg",
+      "frame_indices": [
+        450,
+        660,
+        750,
+        840,
+        960,
+        1050,
+        1140,
+        1260,
+        1350,
+        1440,
+        1560,
+        1650,
+        1740,
+        1950,
+        2130
+      ]
+    },
+    "scrfd": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_review/scrfd_phone_photo_review.jpg",
+      "frame_indices": [
+        450,
+        660,
+        750,
+        840,
+        960,
+        1050,
+        1140,
+        1260,
+        1350,
+        1440,
+        1560,
+        1650,
+        1740,
+        1950,
+        2130
+      ]
+    }
+  },
+  "colour_guide": {
+    "cyan": "locked real-person body box",
+    "green": "accepted face detection",
+    "orange": "raw rejected face detection"
+  }
+}
