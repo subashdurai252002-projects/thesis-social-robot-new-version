@@ -1,0 +1,176 @@
+{
+  "purpose": "Controlled live multi-track raw-gaze validation with one real participant and a displayed phone face.",
+  "status": "PASSED",
+  "run_timestamp_utc": "20261115T150547Z",
+  "recording_seconds": 70.18624245299998,
+  "stopped_early": false,
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "reported_fps": 30.0
+  },
+  "tracking_device": "cpu",
+  "processed_frames": 909,
+  "failed_camera_frames": 0,
+  "measured_loop_fps": 12.951256089948245,
+  "person_instances": 565,
+  "selected_faces": 467,
+  "gaze_predictions": 467,
+  "gaze_failures": 0,
+  "state_creation_events": 5,
+  "state_release_events": 3,
+  "maximum_visible_tracks": 2,
+  "maximum_retained_states": 3,
+  "track_state_release_processed_frames": 120,
+  "approximate_release_seconds_at_measured_fps": 9.265510554851481,
+  "mean_tracking_ms": 39.657448684285036,
+  "mean_face_processing_ms": 16.117681230086653,
+  "mean_gaze_preprocessing_ms": 3.6072947879950097,
+  "mean_gaze_inference_ms": 33.65179440900762,
+  "mean_gaze_total_ms": 37.41664658033027,
+  "mean_complete_loop_ms": 77.04347984157096,
+  "checks": {
+    "recording_not_stopped_early": true,
+    "camera_frames_available": true,
+    "at_least_one_person_instance": true,
+    "at_least_one_gaze_prediction": true,
+    "no_gaze_inference_failures": true,
+    "independent_face_lock_objects": true,
+    "recorded_rows_available": true,
+    "unique_track_id_per_frame": true,
+    "every_gaze_has_selected_face": true,
+    "missing_faces_have_empty_angles": true,
+    "every_gaze_has_track_id": true,
+    "recorded_angles_are_finite": true
+  },
+  "csv_audit": {
+    "row_count": 565,
+    "gaze_row_count": 467,
+    "duplicate_track_rows": 0,
+    "gaze_without_face_rows": 0,
+    "missing_face_with_angle_rows": 0,
+    "gaze_without_track_id_rows": 0,
+    "non_finite_angle_rows": 0,
+    "checks": {
+      "recorded_rows_available": true,
+      "unique_track_id_per_frame": true,
+      "every_gaze_has_selected_face": true,
+      "missing_faces_have_empty_angles": true,
+      "every_gaze_has_track_id": true,
+      "recorded_angles_are_finite": true
+    }
+  },
+  "per_id": {
+    "1": {
+      "person_instances": 7,
+      "selected_faces": 7,
+      "face_missing": 0,
+      "gaze_predictions": 7,
+      "gaze_failures": 0
+    },
+    "2": {
+      "person_instances": 481,
+      "selected_faces": 389,
+      "face_missing": 92,
+      "gaze_predictions": 389,
+      "gaze_failures": 0
+    },
+    "8": {
+      "person_instances": 29,
+      "selected_faces": 23,
+      "face_missing": 6,
+      "gaze_predictions": 23,
+      "gaze_failures": 0
+    },
+    "9": {
+      "person_instances": 6,
+      "selected_faces": 6,
+      "face_missing": 0,
+      "gaze_predictions": 6,
+      "gaze_failures": 0
+    },
+    "10": {
+      "person_instances": 42,
+      "selected_faces": 42,
+      "face_missing": 0,
+      "gaze_predictions": 42,
+      "gaze_failures": 0
+    }
+  },
+  "per_action": {
+    "Empty camera view": {
+      "person_instances": 7,
+      "selected_faces": 7,
+      "face_missing": 0,
+      "gaze_predictions": 7,
+      "gaze_failures": 0
+    },
+    "Real face toward camera": {
+      "person_instances": 83,
+      "selected_faces": 83,
+      "face_missing": 0,
+      "gaze_predictions": 83,
+      "gaze_failures": 0
+    },
+    "Change gaze direction": {
+      "person_instances": 98,
+      "selected_faces": 98,
+      "face_missing": 0,
+      "gaze_predictions": 98,
+      "gaze_failures": 0
+    },
+    "Phone face beside real face": {
+      "person_instances": 100,
+      "selected_faces": 98,
+      "face_missing": 2,
+      "gaze_predictions": 98,
+      "gaze_failures": 0
+    },
+    "Cover real face; phone visible": {
+      "person_instances": 106,
+      "selected_faces": 39,
+      "face_missing": 67,
+      "gaze_predictions": 39,
+      "gaze_failures": 0
+    },
+    "Remove phone; real face visible": {
+      "person_instances": 106,
+      "selected_faces": 78,
+      "face_missing": 28,
+      "gaze_predictions": 78,
+      "gaze_failures": 0
+    },
+    "Leave and return": {
+      "person_instances": 65,
+      "selected_faces": 64,
+      "face_missing": 1,
+      "gaze_predictions": 64,
+      "gaze_failures": 0
+    }
+  },
+  "model_metadata": {
+    "model_name": "MobileOne-S0",
+    "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt",
+    "checkpoint_sha256": "f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95",
+    "source_commit": "4bf557d8a819da2b208214a9ef9268fd84cb52f1",
+    "device": "cpu",
+    "gaze_bins": 90,
+    "bin_width_degrees": 4.0,
+    "angle_offset_degrees": 180.0,
+    "preprocessing": "BGR to RGB; shorter side 448; aspect ratio preserved; ImageNet normalization"
+  },
+  "evidence": {
+    "frame_csv": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/12_live_multi_person_gaze/run_20261115T150547Z/live_multi_track_gaze_frames.csv",
+    "annotated_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/12_live_multi_person_gaze/run_20261115T150547Z/live_multi_track_gaze_annotated.avi",
+    "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/12_live_multi_person_gaze/run_20261115T150547Z/live_multi_track_gaze_review.jpg"
+  },
+  "limitations": [
+    "Yaw and pitch are raw and uncalibrated.",
+    "A phone face may receive gaze because liveness is absent.",
+    "This is not a two-real-person validation.",
+    "State release uses processed frames, so elapsed release time depends on measured live loop FPS.",
+    "Annotated video uses fixed 15 FPS for review; CSV timestamps are authoritative.",
+    "No greeting, conversation or ReSpeaker activation is tested."
+  ]
+}

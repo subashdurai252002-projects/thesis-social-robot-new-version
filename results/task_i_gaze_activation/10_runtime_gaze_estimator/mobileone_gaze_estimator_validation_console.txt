@@ -1,0 +1,31 @@
+Portable MobileOne gaze-estimator validation
+Face crop: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crops/frame_000337_centre.jpg
+Crop shape: (211, 163, 3)
+Planned action: Look at camera centre
+
+Loading estimator...
+Parameters: 1,238,004
+Checkpoint SHA-256: f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95
+Warming up with 2 runs...
+
+Yaw: -21.38 degrees
+Pitch: 4.89 degrees
+Preprocessing: 2.65 ms
+Model inference: 26.68 ms
+Total estimator processing: 29.45 ms
+
+parameter_count: PASSED
+checkpoint_hash_verification: PASSED
+strict_checkpoint_loading: PASSED
+real_face_crop_inference: PASSED
+finite_yaw: PASSED
+finite_pitch: PASSED
+external_runtime_dependency_absent: PASSED
+invalid_inputs: PASSED
+invalid_non_array: PASSED
+invalid_two_dimensional: PASSED
+invalid_wrong_channels: PASSED
+invalid_wrong_dtype: PASSED
+
+Saved result: /home/subash/thesis social robot new version/results/task_i_gaze_activation/10_runtime_gaze_estimator/mobileone_gaze_estimator_validation_20261114T202713Z.json
+Standalone estimator validation: PASSED

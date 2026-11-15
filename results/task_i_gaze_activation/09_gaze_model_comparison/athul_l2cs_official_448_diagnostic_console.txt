@@ -1,0 +1,33 @@
+Athul/official L2CS 448 diagnostic
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/athul_l2cs_resnet50_gaze360.pkl
+Valid face crops: 339
+Preprocessing: YuNet crop → square 224x224 → Resize(448) → 448x448
+Warming up with 5 runs...
+Starting diagnostic...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+Athul L2CS preprocessing diagnostic completed.
+
+Athul custom 224x224
+  Left/right separation: 16.82°
+  Above/below separation: 2.00°
+  Vertical opposite sides: False
+
+Official packaged 224-to-448
+  Mean inference: 214.88 ms
+  Model-only FPS: 4.65
+  Observed RSS increase: 249.8 MiB
+  Left/right separation: 21.45°
+  Horizontal opposite sides: True
+  Above/below separation: 14.63°
+  Vertical opposite sides: True
+
+Diagnostic frames: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/athul_l2cs_official_448_diagnostic_frames.csv
+Diagnostic summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/athul_l2cs_official_448_diagnostic_summary.json
+Comparison CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/athul_l2cs_224_vs_official_448_comparison.csv
+Comparison JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/athul_l2cs_224_vs_official_448_comparison.json

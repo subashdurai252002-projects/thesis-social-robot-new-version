@@ -1,0 +1,92 @@
+{
+  "name": "ResNet18",
+  "slug": "resnet18",
+  "architecture": "resnet18",
+  "checkpoint": "resnet18.pt",
+  "source": "community",
+  "input_size": 448,
+  "checkpoint_path": "gaze_pipeline/models/gaze_comparison/resnet18.pt",
+  "status": "PASSED",
+  "valid_face_crops": 339,
+  "parameter_count": 11268852,
+  "model_load_seconds": 0.911029265000252,
+  "initial_rss_mib": 338.515625,
+  "peak_rss_mib": 478.53125,
+  "rss_increase_mib": 140.015625,
+  "mean_preprocessing_ms": 3.58910576105056,
+  "mean_inference_ms": 85.14014459882496,
+  "median_inference_ms": 85.00386200103094,
+  "p95_inference_ms": 95.5061148997629,
+  "mean_total_processing_ms": 88.72925035987552,
+  "effective_model_fps": 11.745340634690457,
+  "effective_preprocess_and_model_fps": 11.270240602102646,
+  "left_right_yaw_separation_degrees": 11.24868936344069,
+  "above_below_pitch_separation_degrees": 13.754373168945312,
+  "centre_yaw_standard_deviation_degrees": 5.756676435960844,
+  "centre_pitch_standard_deviation_degrees": 3.234576151146287,
+  "action_summaries": {
+    "Look at camera centre": {
+      "frames": 45,
+      "mean_yaw_degrees": -5.230936686197917,
+      "median_yaw_degrees": -2.850067138671875,
+      "yaw_standard_deviation_degrees": 5.756676435960844,
+      "mean_pitch_degrees": 10.529356214735243,
+      "median_pitch_degrees": 10.851409912109375,
+      "pitch_standard_deviation_degrees": 3.234576151146287
+    },
+    "Look left of camera": {
+      "frames": 49,
+      "mean_yaw_degrees": -10.621815584143814,
+      "median_yaw_degrees": -10.405517578125,
+      "yaw_standard_deviation_degrees": 4.253495560934193,
+      "mean_pitch_degrees": 11.1563997852559,
+      "median_pitch_degrees": 11.2161865234375,
+      "pitch_standard_deviation_degrees": 2.879698213993334
+    },
+    "Look right of camera": {
+      "frames": 50,
+      "mean_yaw_degrees": 0.626873779296875,
+      "median_yaw_degrees": 2.8209609985351562,
+      "yaw_standard_deviation_degrees": 6.046834021473034,
+      "mean_pitch_degrees": 9.390692138671875,
+      "median_pitch_degrees": 9.481033325195312,
+      "pitch_standard_deviation_degrees": 2.9770202205973257
+    },
+    "Look above camera": {
+      "frames": 50,
+      "mean_yaw_degrees": -7.927711791992188,
+      "median_yaw_degrees": -8.607025146484375,
+      "yaw_standard_deviation_degrees": 3.5316244582994556,
+      "mean_pitch_degrees": 20.03396942138672,
+      "median_pitch_degrees": 20.125160217285156,
+      "pitch_standard_deviation_degrees": 6.761487503215282
+    },
+    "Look below camera": {
+      "frames": 50,
+      "mean_yaw_degrees": -3.9077658081054687,
+      "median_yaw_degrees": -2.9749526977539062,
+      "yaw_standard_deviation_degrees": 4.82470849138356,
+      "mean_pitch_degrees": 6.279596252441406,
+      "median_pitch_degrees": 5.367218017578125,
+      "pitch_standard_deviation_degrees": 5.579430120457299
+    },
+    "Centre gaze while moving left and right": {
+      "frames": 50,
+      "mean_yaw_degrees": -8.799714660644531,
+      "median_yaw_degrees": -9.811256408691406,
+      "yaw_standard_deviation_degrees": 7.165682187838302,
+      "mean_pitch_degrees": 9.998349304199218,
+      "median_pitch_degrees": 10.202751159667969,
+      "pitch_standard_deviation_degrees": 3.9925614274638086
+    },
+    "Centre gaze while moving closer and farther": {
+      "frames": 45,
+      "mean_yaw_degrees": -4.807008531358507,
+      "median_yaw_degrees": -3.9395599365234375,
+      "yaw_standard_deviation_degrees": 4.471010219412206,
+      "mean_pitch_degrees": 8.48000759548611,
+      "median_pitch_degrees": 9.7301025390625,
+      "pitch_standard_deviation_degrees": 4.688368421507877
+    }
+  }
+}

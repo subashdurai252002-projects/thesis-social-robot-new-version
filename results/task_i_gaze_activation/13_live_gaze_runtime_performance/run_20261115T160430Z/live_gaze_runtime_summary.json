@@ -1,0 +1,114 @@
+{
+  "purpose": "Lightweight live laptop runtime performance without video, per-frame CSV, review images or heavy overlays.",
+  "status": "PASSED",
+  "run_timestamp_utc": "20261115T160430Z",
+  "benchmark_seconds_requested": 60,
+  "benchmark_seconds_measured": 60.22595575699961,
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "reported_fps": 30.0
+  },
+  "device": "cpu",
+  "processed_frames": 564,
+  "failed_camera_frames": 0,
+  "complete_pipeline_fps": 9.364733077473005,
+  "person_instances": 718,
+  "selected_faces": 682,
+  "face_missing_instances": 36,
+  "face_acceptance_rate": 0.9498607242339833,
+  "gaze_predictions": 682,
+  "gaze_failures": 0,
+  "gaze_success_rate_for_selected_faces": 1.0,
+  "unique_track_ids": [
+    1,
+    3
+  ],
+  "maximum_visible_tracks": 2,
+  "maximum_retained_states": 2,
+  "state_creation_events": 2,
+  "state_release_events": 1,
+  "per_id_instances": {
+    "1": 564,
+    "3": 154
+  },
+  "per_id_gaze_predictions": {
+    "1": 564,
+    "3": 118
+  },
+  "latency": {
+    "camera_capture": {
+      "count": 564,
+      "mean_ms": 1.5755626152488904,
+      "median_ms": 1.5329959996961406,
+      "p95_ms": 1.816883900664834,
+      "maximum_ms": 25.023262000104296
+    },
+    "yolo_bytetrack": {
+      "count": 564,
+      "mean_ms": 38.00137381381803,
+      "median_ms": 38.40915299997505,
+      "p95_ms": 42.45976025008531,
+      "maximum_ms": 93.70899100031238
+    },
+    "yunet_face_processing_per_person": {
+      "count": 718,
+      "mean_ms": 15.741435259047766,
+      "median_ms": 18.10009099972376,
+      "p95_ms": 23.48017510007594,
+      "maximum_ms": 27.296921000015573
+    },
+    "gaze_preprocessing_per_face": {
+      "count": 682,
+      "mean_ms": 3.8134337419437796,
+      "median_ms": 3.716458999861061,
+      "p95_ms": 4.293949600742053,
+      "maximum_ms": 33.40433200082771
+    },
+    "mobileone_inference_per_face": {
+      "count": 682,
+      "mean_ms": 34.66923137974928,
+      "median_ms": 34.19784700008677,
+      "p95_ms": 41.42246475021238,
+      "maximum_ms": 50.45436500040523
+    },
+    "complete_gaze_estimator_per_face": {
+      "count": 682,
+      "mean_ms": 38.636496202340886,
+      "median_ms": 38.01755799986495,
+      "p95_ms": 46.08397624992904,
+      "maximum_ms": 74.44299500002671
+    },
+    "complete_loop_per_processed_frame": {
+      "count": 564,
+      "mean_ms": 106.50421293973736,
+      "median_ms": 105.3074720002769,
+      "p95_ms": 141.8276793493078,
+      "maximum_ms": 186.83935799981555
+    }
+  },
+  "checks": {
+    "camera_frames_available": true,
+    "no_camera_failures": true,
+    "person_instances_available": true,
+    "selected_faces_available": true,
+    "gaze_predictions_available": true,
+    "no_gaze_failures": true,
+    "one_gaze_per_selected_face": true
+  },
+  "measurement_conditions": {
+    "annotated_video_writing": false,
+    "per_frame_csv_writing": false,
+    "review_image_creation": false,
+    "measured_window_display": false,
+    "heavy_overlays": false,
+    "console_progress_inside_measured_loop": false
+  },
+  "scope_limitations": [
+    "Raw yaw and pitch only; no gaze calibration.",
+    "A displayed phone face is not a second real participant.",
+    "No liveness or interaction activation was evaluated.",
+    "Performance depends on the number of visible accepted faces."
+  ]
+}

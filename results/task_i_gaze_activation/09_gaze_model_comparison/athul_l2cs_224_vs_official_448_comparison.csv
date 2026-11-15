@@ -1,0 +1,3 @@
+configuration,mean_inference_ms,model_only_fps,observed_rss_increase_mib,left_right_separation_degrees,horizontal_opposite_sides,above_below_separation_degrees,vertical_opposite_sides
+Athul custom 224x224,51.07222086136065,19.580115826851834,228.4609375,16.817389424641927,True,2.003656005859375,False
+Official pipeline 224-to-448,214.8756995132137,4.653853377861862,249.7578125,21.44501241048177,True,14.627054850260416,True

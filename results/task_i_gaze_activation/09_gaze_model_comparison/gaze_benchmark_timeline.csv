@@ -1,0 +1,2395 @@
+frame_number,elapsed_seconds,planned_action,instruction
+1,0.000213,Empty camera view,Remain outside the camera view
+2,0.014499,Empty camera view,Remain outside the camera view
+3,0.024913,Empty camera view,Remain outside the camera view
+4,0.031730,Empty camera view,Remain outside the camera view
+5,0.037705,Empty camera view,Remain outside the camera view
+6,0.053190,Empty camera view,Remain outside the camera view
+7,0.093380,Empty camera view,Remain outside the camera view
+8,0.125333,Empty camera view,Remain outside the camera view
+9,0.157512,Empty camera view,Remain outside the camera view
+10,0.193831,Empty camera view,Remain outside the camera view
+11,0.225672,Empty camera view,Remain outside the camera view
+12,0.261276,Empty camera view,Remain outside the camera view
+13,0.293365,Empty camera view,Remain outside the camera view
+14,0.325209,Empty camera view,Remain outside the camera view
+15,0.360951,Empty camera view,Remain outside the camera view
+16,0.393419,Empty camera view,Remain outside the camera view
+17,0.425272,Empty camera view,Remain outside the camera view
+18,0.461403,Empty camera view,Remain outside the camera view
+19,0.492921,Empty camera view,Remain outside the camera view
+20,0.524720,Empty camera view,Remain outside the camera view
+21,0.561401,Empty camera view,Remain outside the camera view
+22,0.592989,Empty camera view,Remain outside the camera view
+23,0.629256,Empty camera view,Remain outside the camera view
+24,0.661534,Empty camera view,Remain outside the camera view
+25,0.693708,Empty camera view,Remain outside the camera view
+26,0.729193,Empty camera view,Remain outside the camera view
+27,0.761570,Empty camera view,Remain outside the camera view
+28,0.793374,Empty camera view,Remain outside the camera view
+29,0.829284,Empty camera view,Remain outside the camera view
+30,0.861286,Empty camera view,Remain outside the camera view
+31,0.897379,Empty camera view,Remain outside the camera view
+32,0.929138,Empty camera view,Remain outside the camera view
+33,0.958157,Empty camera view,Remain outside the camera view
+34,0.997127,Empty camera view,Remain outside the camera view
+35,1.029110,Empty camera view,Remain outside the camera view
+36,1.061001,Empty camera view,Remain outside the camera view
+37,1.097358,Empty camera view,Remain outside the camera view
+38,1.128701,Empty camera view,Remain outside the camera view
+39,1.161114,Empty camera view,Remain outside the camera view
+40,1.197231,Empty camera view,Remain outside the camera view
+41,1.229473,Empty camera view,Remain outside the camera view
+42,1.265162,Empty camera view,Remain outside the camera view
+43,1.297132,Empty camera view,Remain outside the camera view
+44,1.329706,Empty camera view,Remain outside the camera view
+45,1.364688,Empty camera view,Remain outside the camera view
+46,1.396854,Empty camera view,Remain outside the camera view
+47,1.428599,Empty camera view,Remain outside the camera view
+48,1.465252,Empty camera view,Remain outside the camera view
+49,1.497231,Empty camera view,Remain outside the camera view
+50,1.529342,Empty camera view,Remain outside the camera view
+51,1.565274,Empty camera view,Remain outside the camera view
+52,1.597288,Empty camera view,Remain outside the camera view
+53,1.633586,Empty camera view,Remain outside the camera view
+54,1.665509,Empty camera view,Remain outside the camera view
+55,1.697114,Empty camera view,Remain outside the camera view
+56,1.733329,Empty camera view,Remain outside the camera view
+57,1.765500,Empty camera view,Remain outside the camera view
+58,1.797410,Empty camera view,Remain outside the camera view
+59,1.833175,Empty camera view,Remain outside the camera view
+60,1.865016,Empty camera view,Remain outside the camera view
+61,1.897036,Empty camera view,Remain outside the camera view
+62,1.933219,Empty camera view,Remain outside the camera view
+63,1.965002,Empty camera view,Remain outside the camera view
+64,2.001023,Empty camera view,Remain outside the camera view
+65,2.032824,Empty camera view,Remain outside the camera view
+66,2.065057,Empty camera view,Remain outside the camera view
+67,2.101400,Empty camera view,Remain outside the camera view
+68,2.133811,Empty camera view,Remain outside the camera view
+69,2.165432,Empty camera view,Remain outside the camera view
+70,2.201574,Empty camera view,Remain outside the camera view
+71,2.233198,Empty camera view,Remain outside the camera view
+72,2.265214,Empty camera view,Remain outside the camera view
+73,2.301334,Empty camera view,Remain outside the camera view
+74,2.333263,Empty camera view,Remain outside the camera view
+75,2.369514,Empty camera view,Remain outside the camera view
+76,2.401156,Empty camera view,Remain outside the camera view
+77,2.433550,Empty camera view,Remain outside the camera view
+78,2.469353,Empty camera view,Remain outside the camera view
+79,2.501056,Empty camera view,Remain outside the camera view
+80,2.533029,Empty camera view,Remain outside the camera view
+81,2.569019,Empty camera view,Remain outside the camera view
+82,2.600435,Empty camera view,Remain outside the camera view
+83,2.632664,Empty camera view,Remain outside the camera view
+84,2.669215,Empty camera view,Remain outside the camera view
+85,2.701261,Empty camera view,Remain outside the camera view
+86,2.737186,Empty camera view,Remain outside the camera view
+87,2.769343,Empty camera view,Remain outside the camera view
+88,2.800908,Empty camera view,Remain outside the camera view
+89,2.836812,Empty camera view,Remain outside the camera view
+90,2.869139,Empty camera view,Remain outside the camera view
+91,2.902462,Empty camera view,Remain outside the camera view
+92,2.937359,Empty camera view,Remain outside the camera view
+93,2.968672,Empty camera view,Remain outside the camera view
+94,3.004466,Empty camera view,Remain outside the camera view
+95,3.037077,Empty camera view,Remain outside the camera view
+96,3.069200,Empty camera view,Remain outside the camera view
+97,3.104496,Empty camera view,Remain outside the camera view
+98,3.137383,Empty camera view,Remain outside the camera view
+99,3.168952,Empty camera view,Remain outside the camera view
+100,3.205624,Empty camera view,Remain outside the camera view
+101,3.237601,Empty camera view,Remain outside the camera view
+102,3.269477,Empty camera view,Remain outside the camera view
+103,3.304861,Empty camera view,Remain outside the camera view
+104,3.337262,Empty camera view,Remain outside the camera view
+105,3.373406,Empty camera view,Remain outside the camera view
+106,3.405114,Empty camera view,Remain outside the camera view
+107,3.437324,Empty camera view,Remain outside the camera view
+108,3.473040,Empty camera view,Remain outside the camera view
+109,3.505180,Empty camera view,Remain outside the camera view
+110,3.537224,Empty camera view,Remain outside the camera view
+111,3.573379,Empty camera view,Remain outside the camera view
+112,3.605514,Empty camera view,Remain outside the camera view
+113,3.637245,Empty camera view,Remain outside the camera view
+114,3.673497,Empty camera view,Remain outside the camera view
+115,3.705235,Empty camera view,Remain outside the camera view
+116,3.741603,Empty camera view,Remain outside the camera view
+117,3.773317,Empty camera view,Remain outside the camera view
+118,3.805326,Empty camera view,Remain outside the camera view
+119,3.841145,Empty camera view,Remain outside the camera view
+120,3.872944,Empty camera view,Remain outside the camera view
+121,3.904628,Empty camera view,Remain outside the camera view
+122,3.940999,Empty camera view,Remain outside the camera view
+123,3.972624,Empty camera view,Remain outside the camera view
+124,4.005090,Empty camera view,Remain outside the camera view
+125,4.041234,Empty camera view,Remain outside the camera view
+126,4.073602,Empty camera view,Remain outside the camera view
+127,4.109262,Empty camera view,Remain outside the camera view
+128,4.141510,Empty camera view,Remain outside the camera view
+129,4.173294,Empty camera view,Remain outside the camera view
+130,4.209225,Empty camera view,Remain outside the camera view
+131,4.241257,Empty camera view,Remain outside the camera view
+132,4.273829,Empty camera view,Remain outside the camera view
+133,4.309463,Empty camera view,Remain outside the camera view
+134,4.341487,Empty camera view,Remain outside the camera view
+135,4.373782,Empty camera view,Remain outside the camera view
+136,4.409391,Empty camera view,Remain outside the camera view
+137,4.441649,Empty camera view,Remain outside the camera view
+138,4.477716,Empty camera view,Remain outside the camera view
+139,4.509190,Empty camera view,Remain outside the camera view
+140,4.541013,Empty camera view,Remain outside the camera view
+141,4.577033,Empty camera view,Remain outside the camera view
+142,4.608816,Empty camera view,Remain outside the camera view
+143,4.641127,Empty camera view,Remain outside the camera view
+144,4.677260,Empty camera view,Remain outside the camera view
+145,4.708975,Empty camera view,Remain outside the camera view
+146,4.745375,Empty camera view,Remain outside the camera view
+147,4.776715,Empty camera view,Remain outside the camera view
+148,4.809411,Empty camera view,Remain outside the camera view
+149,4.845698,Empty camera view,Remain outside the camera view
+150,4.877618,Empty camera view,Remain outside the camera view
+151,4.909386,Empty camera view,Remain outside the camera view
+152,4.944842,Empty camera view,Remain outside the camera view
+153,4.976265,Empty camera view,Remain outside the camera view
+154,5.009148,Empty camera view,Remain outside the camera view
+155,5.045546,Empty camera view,Remain outside the camera view
+156,5.076927,Empty camera view,Remain outside the camera view
+157,5.113086,Empty camera view,Remain outside the camera view
+158,5.145620,Empty camera view,Remain outside the camera view
+159,5.177607,Empty camera view,Remain outside the camera view
+160,5.213742,Empty camera view,Remain outside the camera view
+161,5.245615,Empty camera view,Remain outside the camera view
+162,5.277043,Empty camera view,Remain outside the camera view
+163,5.313361,Empty camera view,Remain outside the camera view
+164,5.345193,Empty camera view,Remain outside the camera view
+165,5.376955,Empty camera view,Remain outside the camera view
+166,5.413094,Empty camera view,Remain outside the camera view
+167,5.445408,Empty camera view,Remain outside the camera view
+168,5.481310,Empty camera view,Remain outside the camera view
+169,5.512715,Empty camera view,Remain outside the camera view
+170,5.545330,Empty camera view,Remain outside the camera view
+171,5.581123,Empty camera view,Remain outside the camera view
+172,5.613213,Empty camera view,Remain outside the camera view
+173,5.645309,Empty camera view,Remain outside the camera view
+174,5.680969,Empty camera view,Remain outside the camera view
+175,5.713243,Empty camera view,Remain outside the camera view
+176,5.745584,Empty camera view,Remain outside the camera view
+177,5.781756,Empty camera view,Remain outside the camera view
+178,5.813689,Empty camera view,Remain outside the camera view
+179,5.849372,Empty camera view,Remain outside the camera view
+180,5.881789,Empty camera view,Remain outside the camera view
+181,5.913544,Empty camera view,Remain outside the camera view
+182,5.949697,Empty camera view,Remain outside the camera view
+183,5.981241,Empty camera view,Remain outside the camera view
+184,6.013575,Empty camera view,Remain outside the camera view
+185,6.049669,Empty camera view,Remain outside the camera view
+186,6.081668,Empty camera view,Remain outside the camera view
+187,6.113379,Empty camera view,Remain outside the camera view
+188,6.149476,Empty camera view,Remain outside the camera view
+189,6.181396,Empty camera view,Remain outside the camera view
+190,6.216691,Empty camera view,Remain outside the camera view
+191,6.249130,Empty camera view,Remain outside the camera view
+192,6.281384,Empty camera view,Remain outside the camera view
+193,6.317454,Empty camera view,Remain outside the camera view
+194,6.349385,Empty camera view,Remain outside the camera view
+195,6.381593,Empty camera view,Remain outside the camera view
+196,6.417233,Empty camera view,Remain outside the camera view
+197,6.449178,Empty camera view,Remain outside the camera view
+198,6.480721,Empty camera view,Remain outside the camera view
+199,6.517530,Empty camera view,Remain outside the camera view
+200,6.549476,Empty camera view,Remain outside the camera view
+201,6.585693,Empty camera view,Remain outside the camera view
+202,6.617242,Empty camera view,Remain outside the camera view
+203,6.649752,Empty camera view,Remain outside the camera view
+204,6.685509,Empty camera view,Remain outside the camera view
+205,6.717278,Empty camera view,Remain outside the camera view
+206,6.749552,Empty camera view,Remain outside the camera view
+207,6.785354,Empty camera view,Remain outside the camera view
+208,6.817376,Empty camera view,Remain outside the camera view
+209,6.853304,Empty camera view,Remain outside the camera view
+210,6.885123,Empty camera view,Remain outside the camera view
+211,6.917357,Empty camera view,Remain outside the camera view
+212,6.953482,Empty camera view,Remain outside the camera view
+213,6.985254,Empty camera view,Remain outside the camera view
+214,7.016695,Empty camera view,Remain outside the camera view
+215,7.053500,Empty camera view,Remain outside the camera view
+216,7.085514,Empty camera view,Remain outside the camera view
+217,7.117626,Empty camera view,Remain outside the camera view
+218,7.153509,Empty camera view,Remain outside the camera view
+219,7.185526,Empty camera view,Remain outside the camera view
+220,7.221750,Empty camera view,Remain outside the camera view
+221,7.253700,Empty camera view,Remain outside the camera view
+222,7.285920,Empty camera view,Remain outside the camera view
+223,7.321433,Empty camera view,Remain outside the camera view
+224,7.353029,Empty camera view,Remain outside the camera view
+225,7.384833,Empty camera view,Remain outside the camera view
+226,7.421278,Empty camera view,Remain outside the camera view
+227,7.453184,Empty camera view,Remain outside the camera view
+228,7.484802,Empty camera view,Remain outside the camera view
+229,7.521431,Empty camera view,Remain outside the camera view
+230,7.553603,Empty camera view,Remain outside the camera view
+231,7.589043,Empty camera view,Remain outside the camera view
+232,7.621042,Empty camera view,Remain outside the camera view
+233,7.652694,Empty camera view,Remain outside the camera view
+234,7.688915,Empty camera view,Remain outside the camera view
+235,7.720870,Empty camera view,Remain outside the camera view
+236,7.753010,Empty camera view,Remain outside the camera view
+237,7.788519,Empty camera view,Remain outside the camera view
+238,7.820785,Empty camera view,Remain outside the camera view
+239,7.853149,Empty camera view,Remain outside the camera view
+240,7.889006,Empty camera view,Remain outside the camera view
+241,7.920874,Empty camera view,Remain outside the camera view
+242,7.956726,Empty camera view,Remain outside the camera view
+243,7.988414,Empty camera view,Remain outside the camera view
+244,8.020937,Empty camera view,Remain outside the camera view
+245,8.057077,Empty camera view,Remain outside the camera view
+246,8.089000,Empty camera view,Remain outside the camera view
+247,8.120909,Empty camera view,Remain outside the camera view
+248,8.157217,Empty camera view,Remain outside the camera view
+249,8.188827,Empty camera view,Remain outside the camera view
+250,8.220700,Empty camera view,Remain outside the camera view
+251,8.257097,Empty camera view,Remain outside the camera view
+252,8.288925,Empty camera view,Remain outside the camera view
+253,8.324252,Empty camera view,Remain outside the camera view
+254,8.357314,Empty camera view,Remain outside the camera view
+255,8.389155,Empty camera view,Remain outside the camera view
+256,8.424813,Empty camera view,Remain outside the camera view
+257,8.457211,Empty camera view,Remain outside the camera view
+258,8.489013,Empty camera view,Remain outside the camera view
+259,8.524831,Empty camera view,Remain outside the camera view
+260,8.556928,Empty camera view,Remain outside the camera view
+261,8.589012,Empty camera view,Remain outside the camera view
+262,8.625587,Empty camera view,Remain outside the camera view
+263,8.657350,Empty camera view,Remain outside the camera view
+264,8.693756,Empty camera view,Remain outside the camera view
+265,8.725854,Empty camera view,Remain outside the camera view
+266,8.757594,Empty camera view,Remain outside the camera view
+267,8.793574,Empty camera view,Remain outside the camera view
+268,8.825944,Empty camera view,Remain outside the camera view
+269,8.857751,Empty camera view,Remain outside the camera view
+270,8.893344,Empty camera view,Remain outside the camera view
+271,8.924864,Empty camera view,Remain outside the camera view
+272,8.961670,Empty camera view,Remain outside the camera view
+273,8.993307,Empty camera view,Remain outside the camera view
+274,9.025741,Empty camera view,Remain outside the camera view
+275,9.061269,Empty camera view,Remain outside the camera view
+276,9.093579,Empty camera view,Remain outside the camera view
+277,9.125250,Empty camera view,Remain outside the camera view
+278,9.161275,Empty camera view,Remain outside the camera view
+279,9.193298,Empty camera view,Remain outside the camera view
+280,9.225084,Empty camera view,Remain outside the camera view
+281,9.261162,Empty camera view,Remain outside the camera view
+282,9.293448,Empty camera view,Remain outside the camera view
+283,9.328797,Empty camera view,Remain outside the camera view
+284,9.360700,Empty camera view,Remain outside the camera view
+285,9.392875,Empty camera view,Remain outside the camera view
+286,9.429051,Empty camera view,Remain outside the camera view
+287,9.461375,Empty camera view,Remain outside the camera view
+288,9.493357,Empty camera view,Remain outside the camera view
+289,9.529156,Empty camera view,Remain outside the camera view
+290,9.561258,Empty camera view,Remain outside the camera view
+291,9.593237,Empty camera view,Remain outside the camera view
+292,9.629879,Empty camera view,Remain outside the camera view
+293,9.661558,Empty camera view,Remain outside the camera view
+294,9.697552,Empty camera view,Remain outside the camera view
+295,9.728996,Empty camera view,Remain outside the camera view
+296,9.761331,Empty camera view,Remain outside the camera view
+297,9.797351,Empty camera view,Remain outside the camera view
+298,9.829640,Empty camera view,Remain outside the camera view
+299,9.861628,Empty camera view,Remain outside the camera view
+300,9.897600,Empty camera view,Remain outside the camera view
+301,9.929060,Empty camera view,Remain outside the camera view
+302,9.961670,Empty camera view,Remain outside the camera view
+303,9.997688,Empty camera view,Remain outside the camera view
+304,10.029671,Look at camera centre,Sit normally and look directly at the lens
+305,10.066946,Look at camera centre,Sit normally and look directly at the lens
+306,10.097329,Look at camera centre,Sit normally and look directly at the lens
+307,10.129459,Look at camera centre,Sit normally and look directly at the lens
+308,10.165191,Look at camera centre,Sit normally and look directly at the lens
+309,10.197134,Look at camera centre,Sit normally and look directly at the lens
+310,10.229242,Look at camera centre,Sit normally and look directly at the lens
+311,10.265608,Look at camera centre,Sit normally and look directly at the lens
+312,10.297508,Look at camera centre,Sit normally and look directly at the lens
+313,10.329879,Look at camera centre,Sit normally and look directly at the lens
+314,10.365430,Look at camera centre,Sit normally and look directly at the lens
+315,10.396796,Look at camera centre,Sit normally and look directly at the lens
+316,10.433292,Look at camera centre,Sit normally and look directly at the lens
+317,10.464929,Look at camera centre,Sit normally and look directly at the lens
+318,10.497204,Look at camera centre,Sit normally and look directly at the lens
+319,10.533060,Look at camera centre,Sit normally and look directly at the lens
+320,10.565620,Look at camera centre,Sit normally and look directly at the lens
+321,10.596696,Look at camera centre,Sit normally and look directly at the lens
+322,10.633339,Look at camera centre,Sit normally and look directly at the lens
+323,10.664707,Look at camera centre,Sit normally and look directly at the lens
+324,10.701840,Look at camera centre,Sit normally and look directly at the lens
+325,10.732942,Look at camera centre,Sit normally and look directly at the lens
+326,10.765683,Look at camera centre,Sit normally and look directly at the lens
+327,10.800920,Look at camera centre,Sit normally and look directly at the lens
+328,10.832706,Look at camera centre,Sit normally and look directly at the lens
+329,10.865167,Look at camera centre,Sit normally and look directly at the lens
+330,10.901773,Look at camera centre,Sit normally and look directly at the lens
+331,10.933093,Look at camera centre,Sit normally and look directly at the lens
+332,10.964883,Look at camera centre,Sit normally and look directly at the lens
+333,11.001433,Look at camera centre,Sit normally and look directly at the lens
+334,11.033180,Look at camera centre,Sit normally and look directly at the lens
+335,11.069954,Look at camera centre,Sit normally and look directly at the lens
+336,11.101506,Look at camera centre,Sit normally and look directly at the lens
+337,11.133450,Look at camera centre,Sit normally and look directly at the lens
+338,11.169692,Look at camera centre,Sit normally and look directly at the lens
+339,11.201688,Look at camera centre,Sit normally and look directly at the lens
+340,11.233302,Look at camera centre,Sit normally and look directly at the lens
+341,11.269977,Look at camera centre,Sit normally and look directly at the lens
+342,11.301847,Look at camera centre,Sit normally and look directly at the lens
+343,11.333736,Look at camera centre,Sit normally and look directly at the lens
+344,11.369641,Look at camera centre,Sit normally and look directly at the lens
+345,11.401842,Look at camera centre,Sit normally and look directly at the lens
+346,11.438033,Look at camera centre,Sit normally and look directly at the lens
+347,11.468674,Look at camera centre,Sit normally and look directly at the lens
+348,11.501440,Look at camera centre,Sit normally and look directly at the lens
+349,11.537549,Look at camera centre,Sit normally and look directly at the lens
+350,11.569511,Look at camera centre,Sit normally and look directly at the lens
+351,11.601549,Look at camera centre,Sit normally and look directly at the lens
+352,11.637905,Look at camera centre,Sit normally and look directly at the lens
+353,11.669537,Look at camera centre,Sit normally and look directly at the lens
+354,11.701637,Look at camera centre,Sit normally and look directly at the lens
+355,11.738038,Look at camera centre,Sit normally and look directly at the lens
+356,11.769762,Look at camera centre,Sit normally and look directly at the lens
+357,11.805611,Look at camera centre,Sit normally and look directly at the lens
+358,11.837726,Look at camera centre,Sit normally and look directly at the lens
+359,11.869318,Look at camera centre,Sit normally and look directly at the lens
+360,11.906046,Look at camera centre,Sit normally and look directly at the lens
+361,11.937719,Look at camera centre,Sit normally and look directly at the lens
+362,11.970355,Look at camera centre,Sit normally and look directly at the lens
+363,12.005988,Look at camera centre,Sit normally and look directly at the lens
+364,12.038055,Look at camera centre,Sit normally and look directly at the lens
+365,12.069832,Look at camera centre,Sit normally and look directly at the lens
+366,12.106035,Look at camera centre,Sit normally and look directly at the lens
+367,12.137360,Look at camera centre,Sit normally and look directly at the lens
+368,12.173815,Look at camera centre,Sit normally and look directly at the lens
+369,12.205728,Look at camera centre,Sit normally and look directly at the lens
+370,12.237354,Look at camera centre,Sit normally and look directly at the lens
+371,12.273651,Look at camera centre,Sit normally and look directly at the lens
+372,12.305391,Look at camera centre,Sit normally and look directly at the lens
+373,12.337297,Look at camera centre,Sit normally and look directly at the lens
+374,12.373621,Look at camera centre,Sit normally and look directly at the lens
+375,12.405750,Look at camera centre,Sit normally and look directly at the lens
+376,12.437450,Look at camera centre,Sit normally and look directly at the lens
+377,12.473753,Look at camera centre,Sit normally and look directly at the lens
+378,12.505219,Look at camera centre,Sit normally and look directly at the lens
+379,12.542603,Look at camera centre,Sit normally and look directly at the lens
+380,12.573443,Look at camera centre,Sit normally and look directly at the lens
+381,12.605480,Look at camera centre,Sit normally and look directly at the lens
+382,12.641802,Look at camera centre,Sit normally and look directly at the lens
+383,12.673684,Look at camera centre,Sit normally and look directly at the lens
+384,12.706060,Look at camera centre,Sit normally and look directly at the lens
+385,12.741651,Look at camera centre,Sit normally and look directly at the lens
+386,12.773876,Look at camera centre,Sit normally and look directly at the lens
+387,12.809890,Look at camera centre,Sit normally and look directly at the lens
+388,12.841892,Look at camera centre,Sit normally and look directly at the lens
+389,12.873747,Look at camera centre,Sit normally and look directly at the lens
+390,12.909840,Look at camera centre,Sit normally and look directly at the lens
+391,12.942619,Look at camera centre,Sit normally and look directly at the lens
+392,12.974752,Look at camera centre,Sit normally and look directly at the lens
+393,13.010389,Look at camera centre,Sit normally and look directly at the lens
+394,13.042317,Look at camera centre,Sit normally and look directly at the lens
+395,13.073925,Look at camera centre,Sit normally and look directly at the lens
+396,13.109824,Look at camera centre,Sit normally and look directly at the lens
+397,13.141621,Look at camera centre,Sit normally and look directly at the lens
+398,13.178129,Look at camera centre,Sit normally and look directly at the lens
+399,13.209905,Look at camera centre,Sit normally and look directly at the lens
+400,13.242191,Look at camera centre,Sit normally and look directly at the lens
+401,13.278221,Look at camera centre,Sit normally and look directly at the lens
+402,13.309296,Look at camera centre,Sit normally and look directly at the lens
+403,13.341390,Look at camera centre,Sit normally and look directly at the lens
+404,13.377789,Look at camera centre,Sit normally and look directly at the lens
+405,13.409451,Look at camera centre,Sit normally and look directly at the lens
+406,13.441175,Look at camera centre,Sit normally and look directly at the lens
+407,13.477377,Look at camera centre,Sit normally and look directly at the lens
+408,13.509773,Look at camera centre,Sit normally and look directly at the lens
+409,13.544882,Look at camera centre,Sit normally and look directly at the lens
+410,13.572105,Look at camera centre,Sit normally and look directly at the lens
+411,13.609058,Look at camera centre,Sit normally and look directly at the lens
+412,13.646248,Look at camera centre,Sit normally and look directly at the lens
+413,13.678050,Look at camera centre,Sit normally and look directly at the lens
+414,13.709575,Look at camera centre,Sit normally and look directly at the lens
+415,13.745541,Look at camera centre,Sit normally and look directly at the lens
+416,13.778169,Look at camera centre,Sit normally and look directly at the lens
+417,13.809718,Look at camera centre,Sit normally and look directly at the lens
+418,13.845750,Look at camera centre,Sit normally and look directly at the lens
+419,13.877602,Look at camera centre,Sit normally and look directly at the lens
+420,13.914158,Look at camera centre,Sit normally and look directly at the lens
+421,13.945409,Look at camera centre,Sit normally and look directly at the lens
+422,13.978106,Look at camera centre,Sit normally and look directly at the lens
+423,14.013425,Look at camera centre,Sit normally and look directly at the lens
+424,14.045600,Look at camera centre,Sit normally and look directly at the lens
+425,14.077702,Look at camera centre,Sit normally and look directly at the lens
+426,14.113680,Look at camera centre,Sit normally and look directly at the lens
+427,14.146212,Look at camera centre,Sit normally and look directly at the lens
+428,14.178018,Look at camera centre,Sit normally and look directly at the lens
+429,14.213911,Look at camera centre,Sit normally and look directly at the lens
+430,14.245737,Look at camera centre,Sit normally and look directly at the lens
+431,14.281764,Look at camera centre,Sit normally and look directly at the lens
+432,14.313690,Look at camera centre,Sit normally and look directly at the lens
+433,14.345912,Look at camera centre,Sit normally and look directly at the lens
+434,14.381548,Look at camera centre,Sit normally and look directly at the lens
+435,14.413106,Look at camera centre,Sit normally and look directly at the lens
+436,14.445719,Look at camera centre,Sit normally and look directly at the lens
+437,14.481685,Look at camera centre,Sit normally and look directly at the lens
+438,14.513780,Look at camera centre,Sit normally and look directly at the lens
+439,14.545043,Look at camera centre,Sit normally and look directly at the lens
+440,14.582071,Look at camera centre,Sit normally and look directly at the lens
+441,14.613813,Look at camera centre,Sit normally and look directly at the lens
+442,14.649994,Look at camera centre,Sit normally and look directly at the lens
+443,14.681557,Look at camera centre,Sit normally and look directly at the lens
+444,14.713798,Look at camera centre,Sit normally and look directly at the lens
+445,14.749924,Look at camera centre,Sit normally and look directly at the lens
+446,14.781771,Look at camera centre,Sit normally and look directly at the lens
+447,14.813659,Look at camera centre,Sit normally and look directly at the lens
+448,14.849911,Look at camera centre,Sit normally and look directly at the lens
+449,14.881783,Look at camera centre,Sit normally and look directly at the lens
+450,14.917971,Look at camera centre,Sit normally and look directly at the lens
+451,14.950003,Look at camera centre,Sit normally and look directly at the lens
+452,14.980230,Look at camera centre,Sit normally and look directly at the lens
+453,15.017283,Look at camera centre,Sit normally and look directly at the lens
+454,15.044882,Look at camera centre,Sit normally and look directly at the lens
+455,15.076282,Look at camera centre,Sit normally and look directly at the lens
+456,15.112201,Look at camera centre,Sit normally and look directly at the lens
+457,15.144169,Look at camera centre,Sit normally and look directly at the lens
+458,15.181453,Look at camera centre,Sit normally and look directly at the lens
+459,15.217735,Look at camera centre,Sit normally and look directly at the lens
+460,15.249661,Look at camera centre,Sit normally and look directly at the lens
+461,15.285952,Look at camera centre,Sit normally and look directly at the lens
+462,15.317823,Look at camera centre,Sit normally and look directly at the lens
+463,15.349990,Look at camera centre,Sit normally and look directly at the lens
+464,15.386255,Look at camera centre,Sit normally and look directly at the lens
+465,15.418139,Look at camera centre,Sit normally and look directly at the lens
+466,15.449987,Look at camera centre,Sit normally and look directly at the lens
+467,15.485721,Look at camera centre,Sit normally and look directly at the lens
+468,15.517849,Look at camera centre,Sit normally and look directly at the lens
+469,15.549805,Look at camera centre,Sit normally and look directly at the lens
+470,15.585796,Look at camera centre,Sit normally and look directly at the lens
+471,15.617880,Look at camera centre,Sit normally and look directly at the lens
+472,15.654226,Look at camera centre,Sit normally and look directly at the lens
+473,15.686188,Look at camera centre,Sit normally and look directly at the lens
+474,15.718075,Look at camera centre,Sit normally and look directly at the lens
+475,15.754263,Look at camera centre,Sit normally and look directly at the lens
+476,15.786191,Look at camera centre,Sit normally and look directly at the lens
+477,15.818033,Look at camera centre,Sit normally and look directly at the lens
+478,15.854284,Look at camera centre,Sit normally and look directly at the lens
+479,15.886358,Look at camera centre,Sit normally and look directly at the lens
+480,15.918030,Look at camera centre,Sit normally and look directly at the lens
+481,15.953903,Look at camera centre,Sit normally and look directly at the lens
+482,15.985620,Look at camera centre,Sit normally and look directly at the lens
+483,16.021674,Look at camera centre,Sit normally and look directly at the lens
+484,16.053604,Look at camera centre,Sit normally and look directly at the lens
+485,16.085611,Look at camera centre,Sit normally and look directly at the lens
+486,16.121730,Look at camera centre,Sit normally and look directly at the lens
+487,16.154081,Look at camera centre,Sit normally and look directly at the lens
+488,16.185944,Look at camera centre,Sit normally and look directly at the lens
+489,16.220919,Look at camera centre,Sit normally and look directly at the lens
+490,16.253244,Look at camera centre,Sit normally and look directly at the lens
+491,16.285467,Look at camera centre,Sit normally and look directly at the lens
+492,16.321798,Look at camera centre,Sit normally and look directly at the lens
+493,16.353854,Look at camera centre,Sit normally and look directly at the lens
+494,16.389904,Look at camera centre,Sit normally and look directly at the lens
+495,16.421693,Look at camera centre,Sit normally and look directly at the lens
+496,16.453739,Look at camera centre,Sit normally and look directly at the lens
+497,16.489980,Look at camera centre,Sit normally and look directly at the lens
+498,16.522160,Look at camera centre,Sit normally and look directly at the lens
+499,16.553701,Look at camera centre,Sit normally and look directly at the lens
+500,16.589703,Look at camera centre,Sit normally and look directly at the lens
+501,16.622094,Look at camera centre,Sit normally and look directly at the lens
+502,16.653681,Look at camera centre,Sit normally and look directly at the lens
+503,16.689971,Look at camera centre,Sit normally and look directly at the lens
+504,16.721547,Look at camera centre,Sit normally and look directly at the lens
+505,16.757694,Look at camera centre,Sit normally and look directly at the lens
+506,16.788995,Look at camera centre,Sit normally and look directly at the lens
+507,16.821705,Look at camera centre,Sit normally and look directly at the lens
+508,16.858181,Look at camera centre,Sit normally and look directly at the lens
+509,16.889772,Look at camera centre,Sit normally and look directly at the lens
+510,16.921975,Look at camera centre,Sit normally and look directly at the lens
+511,16.958170,Look at camera centre,Sit normally and look directly at the lens
+512,16.989921,Look at camera centre,Sit normally and look directly at the lens
+513,17.025937,Look at camera centre,Sit normally and look directly at the lens
+514,17.057903,Look at camera centre,Sit normally and look directly at the lens
+515,17.089999,Look at camera centre,Sit normally and look directly at the lens
+516,17.125771,Look at camera centre,Sit normally and look directly at the lens
+517,17.158294,Look at camera centre,Sit normally and look directly at the lens
+518,17.190233,Look at camera centre,Sit normally and look directly at the lens
+519,17.226258,Look at camera centre,Sit normally and look directly at the lens
+520,17.257701,Look at camera centre,Sit normally and look directly at the lens
+521,17.289496,Look at camera centre,Sit normally and look directly at the lens
+522,17.326362,Look at camera centre,Sit normally and look directly at the lens
+523,17.358187,Look at camera centre,Sit normally and look directly at the lens
+524,17.393893,Look at camera centre,Sit normally and look directly at the lens
+525,17.425691,Look at camera centre,Sit normally and look directly at the lens
+526,17.457800,Look at camera centre,Sit normally and look directly at the lens
+527,17.493667,Look at camera centre,Sit normally and look directly at the lens
+528,17.525915,Look at camera centre,Sit normally and look directly at the lens
+529,17.557712,Look at camera centre,Sit normally and look directly at the lens
+530,17.593789,Look at camera centre,Sit normally and look directly at the lens
+531,17.625961,Look at camera centre,Sit normally and look directly at the lens
+532,17.658150,Look at camera centre,Sit normally and look directly at the lens
+533,17.694153,Look at camera centre,Sit normally and look directly at the lens
+534,17.725819,Look at camera centre,Sit normally and look directly at the lens
+535,17.761732,Look at camera centre,Sit normally and look directly at the lens
+536,17.793978,Look at camera centre,Sit normally and look directly at the lens
+537,17.825597,Look at camera centre,Sit normally and look directly at the lens
+538,17.862353,Look at camera centre,Sit normally and look directly at the lens
+539,17.893919,Look at camera centre,Sit normally and look directly at the lens
+540,17.925701,Look at camera centre,Sit normally and look directly at the lens
+541,17.962915,Look at camera centre,Sit normally and look directly at the lens
+542,17.993602,Look at camera centre,Sit normally and look directly at the lens
+543,18.025846,Look at camera centre,Sit normally and look directly at the lens
+544,18.061912,Look at camera centre,Sit normally and look directly at the lens
+545,18.094431,Look at camera centre,Sit normally and look directly at the lens
+546,18.130304,Look at camera centre,Sit normally and look directly at the lens
+547,18.162696,Look at camera centre,Sit normally and look directly at the lens
+548,18.193549,Look at camera centre,Sit normally and look directly at the lens
+549,18.230010,Look at camera centre,Sit normally and look directly at the lens
+550,18.261805,Look at camera centre,Sit normally and look directly at the lens
+551,18.294045,Look at camera centre,Sit normally and look directly at the lens
+552,18.330313,Look at camera centre,Sit normally and look directly at the lens
+553,18.362018,Look at camera centre,Sit normally and look directly at the lens
+554,18.394286,Look at camera centre,Sit normally and look directly at the lens
+555,18.430127,Look at camera centre,Sit normally and look directly at the lens
+556,18.461871,Look at camera centre,Sit normally and look directly at the lens
+557,18.498354,Look at camera centre,Sit normally and look directly at the lens
+558,18.530137,Look at camera centre,Sit normally and look directly at the lens
+559,18.561908,Look at camera centre,Sit normally and look directly at the lens
+560,18.597889,Look at camera centre,Sit normally and look directly at the lens
+561,18.630603,Look at camera centre,Sit normally and look directly at the lens
+562,18.662137,Look at camera centre,Sit normally and look directly at the lens
+563,18.698709,Look at camera centre,Sit normally and look directly at the lens
+564,18.730724,Look at camera centre,Sit normally and look directly at the lens
+565,18.766321,Look at camera centre,Sit normally and look directly at the lens
+566,18.798022,Look at camera centre,Sit normally and look directly at the lens
+567,18.830379,Look at camera centre,Sit normally and look directly at the lens
+568,18.866107,Look at camera centre,Sit normally and look directly at the lens
+569,18.898362,Look at camera centre,Sit normally and look directly at the lens
+570,18.930393,Look at camera centre,Sit normally and look directly at the lens
+571,18.965519,Look at camera centre,Sit normally and look directly at the lens
+572,18.997712,Look at camera centre,Sit normally and look directly at the lens
+573,19.029650,Look at camera centre,Sit normally and look directly at the lens
+574,19.066698,Look at camera centre,Sit normally and look directly at the lens
+575,19.098595,Look at camera centre,Sit normally and look directly at the lens
+576,19.133820,Look at camera centre,Sit normally and look directly at the lens
+577,19.166426,Look at camera centre,Sit normally and look directly at the lens
+578,19.198386,Look at camera centre,Sit normally and look directly at the lens
+579,19.234334,Look at camera centre,Sit normally and look directly at the lens
+580,19.266153,Look at camera centre,Sit normally and look directly at the lens
+581,19.298010,Look at camera centre,Sit normally and look directly at the lens
+582,19.333873,Look at camera centre,Sit normally and look directly at the lens
+583,19.366484,Look at camera centre,Sit normally and look directly at the lens
+584,19.397919,Look at camera centre,Sit normally and look directly at the lens
+585,19.434214,Look at camera centre,Sit normally and look directly at the lens
+586,19.465958,Look at camera centre,Sit normally and look directly at the lens
+587,19.502476,Look at camera centre,Sit normally and look directly at the lens
+588,19.534450,Look at camera centre,Sit normally and look directly at the lens
+589,19.566511,Look at camera centre,Sit normally and look directly at the lens
+590,19.602201,Look at camera centre,Sit normally and look directly at the lens
+591,19.634330,Look at camera centre,Sit normally and look directly at the lens
+592,19.666297,Look at camera centre,Sit normally and look directly at the lens
+593,19.702557,Look at camera centre,Sit normally and look directly at the lens
+594,19.734403,Look at camera centre,Sit normally and look directly at the lens
+595,19.766451,Look at camera centre,Sit normally and look directly at the lens
+596,19.803056,Look at camera centre,Sit normally and look directly at the lens
+597,19.834218,Look at camera centre,Sit normally and look directly at the lens
+598,19.870289,Look at camera centre,Sit normally and look directly at the lens
+599,19.901966,Look at camera centre,Sit normally and look directly at the lens
+600,19.934362,Look at camera centre,Sit normally and look directly at the lens
+601,19.970604,Look at camera centre,Sit normally and look directly at the lens
+602,20.002254,Look left of camera,Look at the LEFT marker beside the camera
+603,20.034428,Look left of camera,Look at the LEFT marker beside the camera
+604,20.070200,Look left of camera,Look at the LEFT marker beside the camera
+605,20.102034,Look left of camera,Look at the LEFT marker beside the camera
+606,20.133957,Look left of camera,Look at the LEFT marker beside the camera
+607,20.170310,Look left of camera,Look at the LEFT marker beside the camera
+608,20.202199,Look left of camera,Look at the LEFT marker beside the camera
+609,20.238634,Look left of camera,Look at the LEFT marker beside the camera
+610,20.270209,Look left of camera,Look at the LEFT marker beside the camera
+611,20.302233,Look left of camera,Look at the LEFT marker beside the camera
+612,20.338345,Look left of camera,Look at the LEFT marker beside the camera
+613,20.370280,Look left of camera,Look at the LEFT marker beside the camera
+614,20.401798,Look left of camera,Look at the LEFT marker beside the camera
+615,20.438331,Look left of camera,Look at the LEFT marker beside the camera
+616,20.470397,Look left of camera,Look at the LEFT marker beside the camera
+617,20.502443,Look left of camera,Look at the LEFT marker beside the camera
+618,20.538548,Look left of camera,Look at the LEFT marker beside the camera
+619,20.570530,Look left of camera,Look at the LEFT marker beside the camera
+620,20.606430,Look left of camera,Look at the LEFT marker beside the camera
+621,20.638471,Look left of camera,Look at the LEFT marker beside the camera
+622,20.669776,Look left of camera,Look at the LEFT marker beside the camera
+623,20.706315,Look left of camera,Look at the LEFT marker beside the camera
+624,20.738435,Look left of camera,Look at the LEFT marker beside the camera
+625,20.770579,Look left of camera,Look at the LEFT marker beside the camera
+626,20.806500,Look left of camera,Look at the LEFT marker beside the camera
+627,20.838698,Look left of camera,Look at the LEFT marker beside the camera
+628,20.874424,Look left of camera,Look at the LEFT marker beside the camera
+629,20.906572,Look left of camera,Look at the LEFT marker beside the camera
+630,20.938451,Look left of camera,Look at the LEFT marker beside the camera
+631,20.974779,Look left of camera,Look at the LEFT marker beside the camera
+632,21.006667,Look left of camera,Look at the LEFT marker beside the camera
+633,21.038993,Look left of camera,Look at the LEFT marker beside the camera
+634,21.074555,Look left of camera,Look at the LEFT marker beside the camera
+635,21.106260,Look left of camera,Look at the LEFT marker beside the camera
+636,21.137845,Look left of camera,Look at the LEFT marker beside the camera
+637,21.174553,Look left of camera,Look at the LEFT marker beside the camera
+638,21.206357,Look left of camera,Look at the LEFT marker beside the camera
+639,21.242515,Look left of camera,Look at the LEFT marker beside the camera
+640,21.275079,Look left of camera,Look at the LEFT marker beside the camera
+641,21.306737,Look left of camera,Look at the LEFT marker beside the camera
+642,21.342033,Look left of camera,Look at the LEFT marker beside the camera
+643,21.374100,Look left of camera,Look at the LEFT marker beside the camera
+644,21.406262,Look left of camera,Look at the LEFT marker beside the camera
+645,21.442361,Look left of camera,Look at the LEFT marker beside the camera
+646,21.474807,Look left of camera,Look at the LEFT marker beside the camera
+647,21.506837,Look left of camera,Look at the LEFT marker beside the camera
+648,21.542448,Look left of camera,Look at the LEFT marker beside the camera
+649,21.574326,Look left of camera,Look at the LEFT marker beside the camera
+650,21.610457,Look left of camera,Look at the LEFT marker beside the camera
+651,21.642270,Look left of camera,Look at the LEFT marker beside the camera
+652,21.674030,Look left of camera,Look at the LEFT marker beside the camera
+653,21.710327,Look left of camera,Look at the LEFT marker beside the camera
+654,21.742072,Look left of camera,Look at the LEFT marker beside the camera
+655,21.774059,Look left of camera,Look at the LEFT marker beside the camera
+656,21.810409,Look left of camera,Look at the LEFT marker beside the camera
+657,21.842156,Look left of camera,Look at the LEFT marker beside the camera
+658,21.874314,Look left of camera,Look at the LEFT marker beside the camera
+659,21.910369,Look left of camera,Look at the LEFT marker beside the camera
+660,21.942378,Look left of camera,Look at the LEFT marker beside the camera
+661,21.978845,Look left of camera,Look at the LEFT marker beside the camera
+662,22.010846,Look left of camera,Look at the LEFT marker beside the camera
+663,22.042013,Look left of camera,Look at the LEFT marker beside the camera
+664,22.078693,Look left of camera,Look at the LEFT marker beside the camera
+665,22.110245,Look left of camera,Look at the LEFT marker beside the camera
+666,22.142322,Look left of camera,Look at the LEFT marker beside the camera
+667,22.178656,Look left of camera,Look at the LEFT marker beside the camera
+668,22.210340,Look left of camera,Look at the LEFT marker beside the camera
+669,22.242671,Look left of camera,Look at the LEFT marker beside the camera
+670,22.279010,Look left of camera,Look at the LEFT marker beside the camera
+671,22.310461,Look left of camera,Look at the LEFT marker beside the camera
+672,22.346081,Look left of camera,Look at the LEFT marker beside the camera
+673,22.378848,Look left of camera,Look at the LEFT marker beside the camera
+674,22.410278,Look left of camera,Look at the LEFT marker beside the camera
+675,22.446668,Look left of camera,Look at the LEFT marker beside the camera
+676,22.478766,Look left of camera,Look at the LEFT marker beside the camera
+677,22.510932,Look left of camera,Look at the LEFT marker beside the camera
+678,22.546709,Look left of camera,Look at the LEFT marker beside the camera
+679,22.578468,Look left of camera,Look at the LEFT marker beside the camera
+680,22.610125,Look left of camera,Look at the LEFT marker beside the camera
+681,22.646417,Look left of camera,Look at the LEFT marker beside the camera
+682,22.678953,Look left of camera,Look at the LEFT marker beside the camera
+683,22.714677,Look left of camera,Look at the LEFT marker beside the camera
+684,22.747144,Look left of camera,Look at the LEFT marker beside the camera
+685,22.778594,Look left of camera,Look at the LEFT marker beside the camera
+686,22.814824,Look left of camera,Look at the LEFT marker beside the camera
+687,22.846473,Look left of camera,Look at the LEFT marker beside the camera
+688,22.878688,Look left of camera,Look at the LEFT marker beside the camera
+689,22.914269,Look left of camera,Look at the LEFT marker beside the camera
+690,22.946555,Look left of camera,Look at the LEFT marker beside the camera
+691,22.983064,Look left of camera,Look at the LEFT marker beside the camera
+692,23.014165,Look left of camera,Look at the LEFT marker beside the camera
+693,23.047008,Look left of camera,Look at the LEFT marker beside the camera
+694,23.082073,Look left of camera,Look at the LEFT marker beside the camera
+695,23.114751,Look left of camera,Look at the LEFT marker beside the camera
+696,23.146586,Look left of camera,Look at the LEFT marker beside the camera
+697,23.182465,Look left of camera,Look at the LEFT marker beside the camera
+698,23.214325,Look left of camera,Look at the LEFT marker beside the camera
+699,23.246834,Look left of camera,Look at the LEFT marker beside the camera
+700,23.283155,Look left of camera,Look at the LEFT marker beside the camera
+701,23.314314,Look left of camera,Look at the LEFT marker beside the camera
+702,23.347549,Look left of camera,Look at the LEFT marker beside the camera
+703,23.382481,Look left of camera,Look at the LEFT marker beside the camera
+704,23.414206,Look left of camera,Look at the LEFT marker beside the camera
+705,23.450598,Look left of camera,Look at the LEFT marker beside the camera
+706,23.483244,Look left of camera,Look at the LEFT marker beside the camera
+707,23.514941,Look left of camera,Look at the LEFT marker beside the camera
+708,23.550301,Look left of camera,Look at the LEFT marker beside the camera
+709,23.583026,Look left of camera,Look at the LEFT marker beside the camera
+710,23.614697,Look left of camera,Look at the LEFT marker beside the camera
+711,23.650858,Look left of camera,Look at the LEFT marker beside the camera
+712,23.682835,Look left of camera,Look at the LEFT marker beside the camera
+713,23.718891,Look left of camera,Look at the LEFT marker beside the camera
+714,23.750167,Look left of camera,Look at the LEFT marker beside the camera
+715,23.782882,Look left of camera,Look at the LEFT marker beside the camera
+716,23.818693,Look left of camera,Look at the LEFT marker beside the camera
+717,23.851105,Look left of camera,Look at the LEFT marker beside the camera
+718,23.882393,Look left of camera,Look at the LEFT marker beside the camera
+719,23.918197,Look left of camera,Look at the LEFT marker beside the camera
+720,23.950577,Look left of camera,Look at the LEFT marker beside the camera
+721,23.983005,Look left of camera,Look at the LEFT marker beside the camera
+722,24.018428,Look left of camera,Look at the LEFT marker beside the camera
+723,24.050650,Look left of camera,Look at the LEFT marker beside the camera
+724,24.086481,Look left of camera,Look at the LEFT marker beside the camera
+725,24.119144,Look left of camera,Look at the LEFT marker beside the camera
+726,24.151228,Look left of camera,Look at the LEFT marker beside the camera
+727,24.187051,Look left of camera,Look at the LEFT marker beside the camera
+728,24.218949,Look left of camera,Look at the LEFT marker beside the camera
+729,24.250746,Look left of camera,Look at the LEFT marker beside the camera
+730,24.286427,Look left of camera,Look at the LEFT marker beside the camera
+731,24.318721,Look left of camera,Look at the LEFT marker beside the camera
+732,24.350354,Look left of camera,Look at the LEFT marker beside the camera
+733,24.386601,Look left of camera,Look at the LEFT marker beside the camera
+734,24.419053,Look left of camera,Look at the LEFT marker beside the camera
+735,24.454619,Look left of camera,Look at the LEFT marker beside the camera
+736,24.487050,Look left of camera,Look at the LEFT marker beside the camera
+737,24.519060,Look left of camera,Look at the LEFT marker beside the camera
+738,24.554924,Look left of camera,Look at the LEFT marker beside the camera
+739,24.587083,Look left of camera,Look at the LEFT marker beside the camera
+740,24.618737,Look left of camera,Look at the LEFT marker beside the camera
+741,24.655035,Look left of camera,Look at the LEFT marker beside the camera
+742,24.686777,Look left of camera,Look at the LEFT marker beside the camera
+743,24.718803,Look left of camera,Look at the LEFT marker beside the camera
+744,24.754582,Look left of camera,Look at the LEFT marker beside the camera
+745,24.786392,Look left of camera,Look at the LEFT marker beside the camera
+746,24.823008,Look left of camera,Look at the LEFT marker beside the camera
+747,24.854983,Look left of camera,Look at the LEFT marker beside the camera
+748,24.886901,Look left of camera,Look at the LEFT marker beside the camera
+749,24.923055,Look left of camera,Look at the LEFT marker beside the camera
+750,24.954776,Look left of camera,Look at the LEFT marker beside the camera
+751,24.986997,Look left of camera,Look at the LEFT marker beside the camera
+752,25.022653,Look left of camera,Look at the LEFT marker beside the camera
+753,25.054721,Look left of camera,Look at the LEFT marker beside the camera
+754,25.091039,Look left of camera,Look at the LEFT marker beside the camera
+755,25.122772,Look left of camera,Look at the LEFT marker beside the camera
+756,25.154557,Look left of camera,Look at the LEFT marker beside the camera
+757,25.191280,Look left of camera,Look at the LEFT marker beside the camera
+758,25.222600,Look left of camera,Look at the LEFT marker beside the camera
+759,25.254780,Look left of camera,Look at the LEFT marker beside the camera
+760,25.291034,Look left of camera,Look at the LEFT marker beside the camera
+761,25.322821,Look left of camera,Look at the LEFT marker beside the camera
+762,25.354266,Look left of camera,Look at the LEFT marker beside the camera
+763,25.390450,Look left of camera,Look at the LEFT marker beside the camera
+764,25.422689,Look left of camera,Look at the LEFT marker beside the camera
+765,25.459210,Look left of camera,Look at the LEFT marker beside the camera
+766,25.490586,Look left of camera,Look at the LEFT marker beside the camera
+767,25.522952,Look left of camera,Look at the LEFT marker beside the camera
+768,25.558790,Look left of camera,Look at the LEFT marker beside the camera
+769,25.590922,Look left of camera,Look at the LEFT marker beside the camera
+770,25.622476,Look left of camera,Look at the LEFT marker beside the camera
+771,25.659033,Look left of camera,Look at the LEFT marker beside the camera
+772,25.690926,Look left of camera,Look at the LEFT marker beside the camera
+773,25.722930,Look left of camera,Look at the LEFT marker beside the camera
+774,25.758716,Look left of camera,Look at the LEFT marker beside the camera
+775,25.790678,Look left of camera,Look at the LEFT marker beside the camera
+776,25.826783,Look left of camera,Look at the LEFT marker beside the camera
+777,25.858776,Look left of camera,Look at the LEFT marker beside the camera
+778,25.890775,Look left of camera,Look at the LEFT marker beside the camera
+779,25.926858,Look left of camera,Look at the LEFT marker beside the camera
+780,25.958794,Look left of camera,Look at the LEFT marker beside the camera
+781,25.990829,Look left of camera,Look at the LEFT marker beside the camera
+782,26.026825,Look left of camera,Look at the LEFT marker beside the camera
+783,26.058351,Look left of camera,Look at the LEFT marker beside the camera
+784,26.090318,Look left of camera,Look at the LEFT marker beside the camera
+785,26.127024,Look left of camera,Look at the LEFT marker beside the camera
+786,26.158801,Look left of camera,Look at the LEFT marker beside the camera
+787,26.194720,Look left of camera,Look at the LEFT marker beside the camera
+788,26.226687,Look left of camera,Look at the LEFT marker beside the camera
+789,26.258002,Look left of camera,Look at the LEFT marker beside the camera
+790,26.294491,Look left of camera,Look at the LEFT marker beside the camera
+791,26.326824,Look left of camera,Look at the LEFT marker beside the camera
+792,26.358249,Look left of camera,Look at the LEFT marker beside the camera
+793,26.394866,Look left of camera,Look at the LEFT marker beside the camera
+794,26.426586,Look left of camera,Look at the LEFT marker beside the camera
+795,26.458895,Look left of camera,Look at the LEFT marker beside the camera
+796,26.494963,Look left of camera,Look at the LEFT marker beside the camera
+797,26.526529,Look left of camera,Look at the LEFT marker beside the camera
+798,26.562769,Look left of camera,Look at the LEFT marker beside the camera
+799,26.594907,Look left of camera,Look at the LEFT marker beside the camera
+800,26.626631,Look left of camera,Look at the LEFT marker beside the camera
+801,26.662892,Look left of camera,Look at the LEFT marker beside the camera
+802,26.694931,Look left of camera,Look at the LEFT marker beside the camera
+803,26.726791,Look left of camera,Look at the LEFT marker beside the camera
+804,26.763288,Look left of camera,Look at the LEFT marker beside the camera
+805,26.794466,Look left of camera,Look at the LEFT marker beside the camera
+806,26.830761,Look left of camera,Look at the LEFT marker beside the camera
+807,26.863265,Look left of camera,Look at the LEFT marker beside the camera
+808,26.894864,Look left of camera,Look at the LEFT marker beside the camera
+809,26.930018,Look left of camera,Look at the LEFT marker beside the camera
+810,26.961949,Look left of camera,Look at the LEFT marker beside the camera
+811,26.994619,Look left of camera,Look at the LEFT marker beside the camera
+812,27.030291,Look left of camera,Look at the LEFT marker beside the camera
+813,27.062435,Look left of camera,Look at the LEFT marker beside the camera
+814,27.094554,Look left of camera,Look at the LEFT marker beside the camera
+815,27.131162,Look left of camera,Look at the LEFT marker beside the camera
+816,27.163061,Look left of camera,Look at the LEFT marker beside the camera
+817,27.198329,Look left of camera,Look at the LEFT marker beside the camera
+818,27.230443,Look left of camera,Look at the LEFT marker beside the camera
+819,27.262877,Look left of camera,Look at the LEFT marker beside the camera
+820,27.298734,Look left of camera,Look at the LEFT marker beside the camera
+821,27.330736,Look left of camera,Look at the LEFT marker beside the camera
+822,27.362459,Look left of camera,Look at the LEFT marker beside the camera
+823,27.398847,Look left of camera,Look at the LEFT marker beside the camera
+824,27.430768,Look left of camera,Look at the LEFT marker beside the camera
+825,27.462819,Look left of camera,Look at the LEFT marker beside the camera
+826,27.498685,Look left of camera,Look at the LEFT marker beside the camera
+827,27.530158,Look left of camera,Look at the LEFT marker beside the camera
+828,27.566443,Look left of camera,Look at the LEFT marker beside the camera
+829,27.598658,Look left of camera,Look at the LEFT marker beside the camera
+830,27.630394,Look left of camera,Look at the LEFT marker beside the camera
+831,27.666759,Look left of camera,Look at the LEFT marker beside the camera
+832,27.698507,Look left of camera,Look at the LEFT marker beside the camera
+833,27.730712,Look left of camera,Look at the LEFT marker beside the camera
+834,27.766854,Look left of camera,Look at the LEFT marker beside the camera
+835,27.799026,Look left of camera,Look at the LEFT marker beside the camera
+836,27.830963,Look left of camera,Look at the LEFT marker beside the camera
+837,27.867157,Look left of camera,Look at the LEFT marker beside the camera
+838,27.898836,Look left of camera,Look at the LEFT marker beside the camera
+839,27.934741,Look left of camera,Look at the LEFT marker beside the camera
+840,27.967013,Look left of camera,Look at the LEFT marker beside the camera
+841,27.999698,Look left of camera,Look at the LEFT marker beside the camera
+842,28.034791,Look left of camera,Look at the LEFT marker beside the camera
+843,28.066864,Look left of camera,Look at the LEFT marker beside the camera
+844,28.098709,Look left of camera,Look at the LEFT marker beside the camera
+845,28.134748,Look left of camera,Look at the LEFT marker beside the camera
+846,28.166950,Look left of camera,Look at the LEFT marker beside the camera
+847,28.198746,Look left of camera,Look at the LEFT marker beside the camera
+848,28.234732,Look left of camera,Look at the LEFT marker beside the camera
+849,28.266719,Look left of camera,Look at the LEFT marker beside the camera
+850,28.303286,Look left of camera,Look at the LEFT marker beside the camera
+851,28.334830,Look left of camera,Look at the LEFT marker beside the camera
+852,28.364902,Look left of camera,Look at the LEFT marker beside the camera
+853,28.402305,Look left of camera,Look at the LEFT marker beside the camera
+854,28.434291,Look left of camera,Look at the LEFT marker beside the camera
+855,28.466863,Look left of camera,Look at the LEFT marker beside the camera
+856,28.502576,Look left of camera,Look at the LEFT marker beside the camera
+857,28.534354,Look left of camera,Look at the LEFT marker beside the camera
+858,28.566786,Look left of camera,Look at the LEFT marker beside the camera
+859,28.605038,Look left of camera,Look at the LEFT marker beside the camera
+860,28.633969,Look left of camera,Look at the LEFT marker beside the camera
+861,28.671065,Look left of camera,Look at the LEFT marker beside the camera
+862,28.702711,Look left of camera,Look at the LEFT marker beside the camera
+863,28.734889,Look left of camera,Look at the LEFT marker beside the camera
+864,28.771008,Look left of camera,Look at the LEFT marker beside the camera
+865,28.802782,Look left of camera,Look at the LEFT marker beside the camera
+866,28.834953,Look left of camera,Look at the LEFT marker beside the camera
+867,28.870850,Look left of camera,Look at the LEFT marker beside the camera
+868,28.902863,Look left of camera,Look at the LEFT marker beside the camera
+869,28.938262,Look left of camera,Look at the LEFT marker beside the camera
+870,28.970470,Look left of camera,Look at the LEFT marker beside the camera
+871,29.002830,Look left of camera,Look at the LEFT marker beside the camera
+872,29.037910,Look left of camera,Look at the LEFT marker beside the camera
+873,29.070599,Look left of camera,Look at the LEFT marker beside the camera
+874,29.102418,Look left of camera,Look at the LEFT marker beside the camera
+875,29.138706,Look left of camera,Look at the LEFT marker beside the camera
+876,29.170847,Look left of camera,Look at the LEFT marker beside the camera
+877,29.202603,Look left of camera,Look at the LEFT marker beside the camera
+878,29.238541,Look left of camera,Look at the LEFT marker beside the camera
+879,29.270708,Look left of camera,Look at the LEFT marker beside the camera
+880,29.307033,Look left of camera,Look at the LEFT marker beside the camera
+881,29.338926,Look left of camera,Look at the LEFT marker beside the camera
+882,29.370804,Look left of camera,Look at the LEFT marker beside the camera
+883,29.406681,Look left of camera,Look at the LEFT marker beside the camera
+884,29.438379,Look left of camera,Look at the LEFT marker beside the camera
+885,29.470851,Look left of camera,Look at the LEFT marker beside the camera
+886,29.506812,Look left of camera,Look at the LEFT marker beside the camera
+887,29.538911,Look left of camera,Look at the LEFT marker beside the camera
+888,29.570889,Look left of camera,Look at the LEFT marker beside the camera
+889,29.606853,Look left of camera,Look at the LEFT marker beside the camera
+890,29.638787,Look left of camera,Look at the LEFT marker beside the camera
+891,29.674804,Look left of camera,Look at the LEFT marker beside the camera
+892,29.706850,Look left of camera,Look at the LEFT marker beside the camera
+893,29.738850,Look left of camera,Look at the LEFT marker beside the camera
+894,29.775090,Look left of camera,Look at the LEFT marker beside the camera
+895,29.806853,Look left of camera,Look at the LEFT marker beside the camera
+896,29.838859,Look left of camera,Look at the LEFT marker beside the camera
+897,29.875008,Look left of camera,Look at the LEFT marker beside the camera
+898,29.906679,Look left of camera,Look at the LEFT marker beside the camera
+899,29.938711,Look left of camera,Look at the LEFT marker beside the camera
+900,29.974700,Look left of camera,Look at the LEFT marker beside the camera
+901,30.007214,Look right of camera,Look at the RIGHT marker beside the camera
+902,30.044585,Look right of camera,Look at the RIGHT marker beside the camera
+903,30.074938,Look right of camera,Look at the RIGHT marker beside the camera
+904,30.106845,Look right of camera,Look at the RIGHT marker beside the camera
+905,30.142806,Look right of camera,Look at the RIGHT marker beside the camera
+906,30.174868,Look right of camera,Look at the RIGHT marker beside the camera
+907,30.206897,Look right of camera,Look at the RIGHT marker beside the camera
+908,30.242813,Look right of camera,Look at the RIGHT marker beside the camera
+909,30.274437,Look right of camera,Look at the RIGHT marker beside the camera
+910,30.306765,Look right of camera,Look at the RIGHT marker beside the camera
+911,30.343000,Look right of camera,Look at the RIGHT marker beside the camera
+912,30.374847,Look right of camera,Look at the RIGHT marker beside the camera
+913,30.411122,Look right of camera,Look at the RIGHT marker beside the camera
+914,30.442734,Look right of camera,Look at the RIGHT marker beside the camera
+915,30.475049,Look right of camera,Look at the RIGHT marker beside the camera
+916,30.511107,Look right of camera,Look at the RIGHT marker beside the camera
+917,30.542548,Look right of camera,Look at the RIGHT marker beside the camera
+918,30.574691,Look right of camera,Look at the RIGHT marker beside the camera
+919,30.610857,Look right of camera,Look at the RIGHT marker beside the camera
+920,30.642545,Look right of camera,Look at the RIGHT marker beside the camera
+921,30.674405,Look right of camera,Look at the RIGHT marker beside the camera
+922,30.711190,Look right of camera,Look at the RIGHT marker beside the camera
+923,30.742231,Look right of camera,Look at the RIGHT marker beside the camera
+924,30.778588,Look right of camera,Look at the RIGHT marker beside the camera
+925,30.811178,Look right of camera,Look at the RIGHT marker beside the camera
+926,30.843120,Look right of camera,Look at the RIGHT marker beside the camera
+927,30.879254,Look right of camera,Look at the RIGHT marker beside the camera
+928,30.911200,Look right of camera,Look at the RIGHT marker beside the camera
+929,30.942849,Look right of camera,Look at the RIGHT marker beside the camera
+930,30.978771,Look right of camera,Look at the RIGHT marker beside the camera
+931,31.011513,Look right of camera,Look at the RIGHT marker beside the camera
+932,31.046971,Look right of camera,Look at the RIGHT marker beside the camera
+933,31.078991,Look right of camera,Look at the RIGHT marker beside the camera
+934,31.110848,Look right of camera,Look at the RIGHT marker beside the camera
+935,31.147324,Look right of camera,Look at the RIGHT marker beside the camera
+936,31.179003,Look right of camera,Look at the RIGHT marker beside the camera
+937,31.210676,Look right of camera,Look at the RIGHT marker beside the camera
+938,31.247157,Look right of camera,Look at the RIGHT marker beside the camera
+939,31.279332,Look right of camera,Look at the RIGHT marker beside the camera
+940,31.311427,Look right of camera,Look at the RIGHT marker beside the camera
+941,31.346831,Look right of camera,Look at the RIGHT marker beside the camera
+942,31.378866,Look right of camera,Look at the RIGHT marker beside the camera
+943,31.414667,Look right of camera,Look at the RIGHT marker beside the camera
+944,31.446601,Look right of camera,Look at the RIGHT marker beside the camera
+945,31.479029,Look right of camera,Look at the RIGHT marker beside the camera
+946,31.515152,Look right of camera,Look at the RIGHT marker beside the camera
+947,31.546699,Look right of camera,Look at the RIGHT marker beside the camera
+948,31.578724,Look right of camera,Look at the RIGHT marker beside the camera
+949,31.614686,Look right of camera,Look at the RIGHT marker beside the camera
+950,31.646809,Look right of camera,Look at the RIGHT marker beside the camera
+951,31.678109,Look right of camera,Look at the RIGHT marker beside the camera
+952,31.714889,Look right of camera,Look at the RIGHT marker beside the camera
+953,31.746496,Look right of camera,Look at the RIGHT marker beside the camera
+954,31.782896,Look right of camera,Look at the RIGHT marker beside the camera
+955,31.814940,Look right of camera,Look at the RIGHT marker beside the camera
+956,31.846805,Look right of camera,Look at the RIGHT marker beside the camera
+957,31.883309,Look right of camera,Look at the RIGHT marker beside the camera
+958,31.914948,Look right of camera,Look at the RIGHT marker beside the camera
+959,31.946997,Look right of camera,Look at the RIGHT marker beside the camera
+960,31.982746,Look right of camera,Look at the RIGHT marker beside the camera
+961,32.014798,Look right of camera,Look at the RIGHT marker beside the camera
+962,32.046420,Look right of camera,Look at the RIGHT marker beside the camera
+963,32.082410,Look right of camera,Look at the RIGHT marker beside the camera
+964,32.114699,Look right of camera,Look at the RIGHT marker beside the camera
+965,32.150707,Look right of camera,Look at the RIGHT marker beside the camera
+966,32.183046,Look right of camera,Look at the RIGHT marker beside the camera
+967,32.214541,Look right of camera,Look at the RIGHT marker beside the camera
+968,32.251063,Look right of camera,Look at the RIGHT marker beside the camera
+969,32.282943,Look right of camera,Look at the RIGHT marker beside the camera
+970,32.314846,Look right of camera,Look at the RIGHT marker beside the camera
+971,32.351079,Look right of camera,Look at the RIGHT marker beside the camera
+972,32.382983,Look right of camera,Look at the RIGHT marker beside the camera
+973,32.414862,Look right of camera,Look at the RIGHT marker beside the camera
+974,32.450706,Look right of camera,Look at the RIGHT marker beside the camera
+975,32.482304,Look right of camera,Look at the RIGHT marker beside the camera
+976,32.518698,Look right of camera,Look at the RIGHT marker beside the camera
+977,32.550422,Look right of camera,Look at the RIGHT marker beside the camera
+978,32.582583,Look right of camera,Look at the RIGHT marker beside the camera
+979,32.619044,Look right of camera,Look at the RIGHT marker beside the camera
+980,32.650546,Look right of camera,Look at the RIGHT marker beside the camera
+981,32.682099,Look right of camera,Look at the RIGHT marker beside the camera
+982,32.718381,Look right of camera,Look at the RIGHT marker beside the camera
+983,32.750332,Look right of camera,Look at the RIGHT marker beside the camera
+984,32.786243,Look right of camera,Look at the RIGHT marker beside the camera
+985,32.818397,Look right of camera,Look at the RIGHT marker beside the camera
+986,32.850813,Look right of camera,Look at the RIGHT marker beside the camera
+987,32.886508,Look right of camera,Look at the RIGHT marker beside the camera
+988,32.918814,Look right of camera,Look at the RIGHT marker beside the camera
+989,32.950826,Look right of camera,Look at the RIGHT marker beside the camera
+990,32.987763,Look right of camera,Look at the RIGHT marker beside the camera
+991,33.019007,Look right of camera,Look at the RIGHT marker beside the camera
+992,33.050766,Look right of camera,Look at the RIGHT marker beside the camera
+993,33.086988,Look right of camera,Look at the RIGHT marker beside the camera
+994,33.119114,Look right of camera,Look at the RIGHT marker beside the camera
+995,33.154801,Look right of camera,Look at the RIGHT marker beside the camera
+996,33.186786,Look right of camera,Look at the RIGHT marker beside the camera
+997,33.218943,Look right of camera,Look at the RIGHT marker beside the camera
+998,33.255087,Look right of camera,Look at the RIGHT marker beside the camera
+999,33.286877,Look right of camera,Look at the RIGHT marker beside the camera
+1000,33.319017,Look right of camera,Look at the RIGHT marker beside the camera
+1001,33.355064,Look right of camera,Look at the RIGHT marker beside the camera
+1002,33.382817,Look right of camera,Look at the RIGHT marker beside the camera
+1003,33.418109,Look right of camera,Look at the RIGHT marker beside the camera
+1004,33.454518,Look right of camera,Look at the RIGHT marker beside the camera
+1005,33.486687,Look right of camera,Look at the RIGHT marker beside the camera
+1006,33.522627,Look right of camera,Look at the RIGHT marker beside the camera
+1007,33.554861,Look right of camera,Look at the RIGHT marker beside the camera
+1008,33.586708,Look right of camera,Look at the RIGHT marker beside the camera
+1009,33.622420,Look right of camera,Look at the RIGHT marker beside the camera
+1010,33.654324,Look right of camera,Look at the RIGHT marker beside the camera
+1011,33.686407,Look right of camera,Look at the RIGHT marker beside the camera
+1012,33.722112,Look right of camera,Look at the RIGHT marker beside the camera
+1013,33.754115,Look right of camera,Look at the RIGHT marker beside the camera
+1014,33.786533,Look right of camera,Look at the RIGHT marker beside the camera
+1015,33.822687,Look right of camera,Look at the RIGHT marker beside the camera
+1016,33.854818,Look right of camera,Look at the RIGHT marker beside the camera
+1017,33.891157,Look right of camera,Look at the RIGHT marker beside the camera
+1018,33.923283,Look right of camera,Look at the RIGHT marker beside the camera
+1019,33.954706,Look right of camera,Look at the RIGHT marker beside the camera
+1020,33.991151,Look right of camera,Look at the RIGHT marker beside the camera
+1021,34.022802,Look right of camera,Look at the RIGHT marker beside the camera
+1022,34.053611,Look right of camera,Look at the RIGHT marker beside the camera
+1023,34.090788,Look right of camera,Look at the RIGHT marker beside the camera
+1024,34.122620,Look right of camera,Look at the RIGHT marker beside the camera
+1025,34.155128,Look right of camera,Look at the RIGHT marker beside the camera
+1026,34.190821,Look right of camera,Look at the RIGHT marker beside the camera
+1027,34.222223,Look right of camera,Look at the RIGHT marker beside the camera
+1028,34.258572,Look right of camera,Look at the RIGHT marker beside the camera
+1029,34.290022,Look right of camera,Look at the RIGHT marker beside the camera
+1030,34.322305,Look right of camera,Look at the RIGHT marker beside the camera
+1031,34.358525,Look right of camera,Look at the RIGHT marker beside the camera
+1032,34.391329,Look right of camera,Look at the RIGHT marker beside the camera
+1033,34.422799,Look right of camera,Look at the RIGHT marker beside the camera
+1034,34.458754,Look right of camera,Look at the RIGHT marker beside the camera
+1035,34.491091,Look right of camera,Look at the RIGHT marker beside the camera
+1036,34.522865,Look right of camera,Look at the RIGHT marker beside the camera
+1037,34.558312,Look right of camera,Look at the RIGHT marker beside the camera
+1038,34.590455,Look right of camera,Look at the RIGHT marker beside the camera
+1039,34.626779,Look right of camera,Look at the RIGHT marker beside the camera
+1040,34.658760,Look right of camera,Look at the RIGHT marker beside the camera
+1041,34.691130,Look right of camera,Look at the RIGHT marker beside the camera
+1042,34.727291,Look right of camera,Look at the RIGHT marker beside the camera
+1043,34.758937,Look right of camera,Look at the RIGHT marker beside the camera
+1044,34.791241,Look right of camera,Look at the RIGHT marker beside the camera
+1045,34.827255,Look right of camera,Look at the RIGHT marker beside the camera
+1046,34.858931,Look right of camera,Look at the RIGHT marker beside the camera
+1047,34.895401,Look right of camera,Look at the RIGHT marker beside the camera
+1048,34.926994,Look right of camera,Look at the RIGHT marker beside the camera
+1049,34.959165,Look right of camera,Look at the RIGHT marker beside the camera
+1050,34.995145,Look right of camera,Look at the RIGHT marker beside the camera
+1051,35.026952,Look right of camera,Look at the RIGHT marker beside the camera
+1052,35.058609,Look right of camera,Look at the RIGHT marker beside the camera
+1053,35.094729,Look right of camera,Look at the RIGHT marker beside the camera
+1054,35.126752,Look right of camera,Look at the RIGHT marker beside the camera
+1055,35.158703,Look right of camera,Look at the RIGHT marker beside the camera
+1056,35.195189,Look right of camera,Look at the RIGHT marker beside the camera
+1057,35.227055,Look right of camera,Look at the RIGHT marker beside the camera
+1058,35.263118,Look right of camera,Look at the RIGHT marker beside the camera
+1059,35.294903,Look right of camera,Look at the RIGHT marker beside the camera
+1060,35.326707,Look right of camera,Look at the RIGHT marker beside the camera
+1061,35.362734,Look right of camera,Look at the RIGHT marker beside the camera
+1062,35.394982,Look right of camera,Look at the RIGHT marker beside the camera
+1063,35.426619,Look right of camera,Look at the RIGHT marker beside the camera
+1064,35.463004,Look right of camera,Look at the RIGHT marker beside the camera
+1065,35.494948,Look right of camera,Look at the RIGHT marker beside the camera
+1066,35.526363,Look right of camera,Look at the RIGHT marker beside the camera
+1067,35.562491,Look right of camera,Look at the RIGHT marker beside the camera
+1068,35.594903,Look right of camera,Look at the RIGHT marker beside the camera
+1069,35.631072,Look right of camera,Look at the RIGHT marker beside the camera
+1070,35.662610,Look right of camera,Look at the RIGHT marker beside the camera
+1071,35.694626,Look right of camera,Look at the RIGHT marker beside the camera
+1072,35.730681,Look right of camera,Look at the RIGHT marker beside the camera
+1073,35.762588,Look right of camera,Look at the RIGHT marker beside the camera
+1074,35.794156,Look right of camera,Look at the RIGHT marker beside the camera
+1075,35.830074,Look right of camera,Look at the RIGHT marker beside the camera
+1076,35.862570,Look right of camera,Look at the RIGHT marker beside the camera
+1077,35.894616,Look right of camera,Look at the RIGHT marker beside the camera
+1078,35.931117,Look right of camera,Look at the RIGHT marker beside the camera
+1079,35.962963,Look right of camera,Look at the RIGHT marker beside the camera
+1080,35.999436,Look right of camera,Look at the RIGHT marker beside the camera
+1081,36.030879,Look right of camera,Look at the RIGHT marker beside the camera
+1082,36.062792,Look right of camera,Look at the RIGHT marker beside the camera
+1083,36.099284,Look right of camera,Look at the RIGHT marker beside the camera
+1084,36.131531,Look right of camera,Look at the RIGHT marker beside the camera
+1085,36.162988,Look right of camera,Look at the RIGHT marker beside the camera
+1086,36.199451,Look right of camera,Look at the RIGHT marker beside the camera
+1087,36.231397,Look right of camera,Look at the RIGHT marker beside the camera
+1088,36.263308,Look right of camera,Look at the RIGHT marker beside the camera
+1089,36.299684,Look right of camera,Look at the RIGHT marker beside the camera
+1090,36.331080,Look right of camera,Look at the RIGHT marker beside the camera
+1091,36.367118,Look right of camera,Look at the RIGHT marker beside the camera
+1092,36.399262,Look right of camera,Look at the RIGHT marker beside the camera
+1093,36.430894,Look right of camera,Look at the RIGHT marker beside the camera
+1094,36.466856,Look right of camera,Look at the RIGHT marker beside the camera
+1095,36.499071,Look right of camera,Look at the RIGHT marker beside the camera
+1096,36.531268,Look right of camera,Look at the RIGHT marker beside the camera
+1097,36.567203,Look right of camera,Look at the RIGHT marker beside the camera
+1098,36.598540,Look right of camera,Look at the RIGHT marker beside the camera
+1099,36.631072,Look right of camera,Look at the RIGHT marker beside the camera
+1100,36.667342,Look right of camera,Look at the RIGHT marker beside the camera
+1101,36.699543,Look right of camera,Look at the RIGHT marker beside the camera
+1102,36.735229,Look right of camera,Look at the RIGHT marker beside the camera
+1103,36.767036,Look right of camera,Look at the RIGHT marker beside the camera
+1104,36.798957,Look right of camera,Look at the RIGHT marker beside the camera
+1105,36.834859,Look right of camera,Look at the RIGHT marker beside the camera
+1106,36.866744,Look right of camera,Look at the RIGHT marker beside the camera
+1107,36.899113,Look right of camera,Look at the RIGHT marker beside the camera
+1108,36.934695,Look right of camera,Look at the RIGHT marker beside the camera
+1109,36.966804,Look right of camera,Look at the RIGHT marker beside the camera
+1110,37.002877,Look right of camera,Look at the RIGHT marker beside the camera
+1111,37.034711,Look right of camera,Look at the RIGHT marker beside the camera
+1112,37.066928,Look right of camera,Look at the RIGHT marker beside the camera
+1113,37.103247,Look right of camera,Look at the RIGHT marker beside the camera
+1114,37.135320,Look right of camera,Look at the RIGHT marker beside the camera
+1115,37.167143,Look right of camera,Look at the RIGHT marker beside the camera
+1116,37.202945,Look right of camera,Look at the RIGHT marker beside the camera
+1117,37.235097,Look right of camera,Look at the RIGHT marker beside the camera
+1118,37.267134,Look right of camera,Look at the RIGHT marker beside the camera
+1119,37.303349,Look right of camera,Look at the RIGHT marker beside the camera
+1120,37.334697,Look right of camera,Look at the RIGHT marker beside the camera
+1121,37.371302,Look right of camera,Look at the RIGHT marker beside the camera
+1122,37.403289,Look right of camera,Look at the RIGHT marker beside the camera
+1123,37.435145,Look right of camera,Look at the RIGHT marker beside the camera
+1124,37.471137,Look right of camera,Look at the RIGHT marker beside the camera
+1125,37.503432,Look right of camera,Look at the RIGHT marker beside the camera
+1126,37.535198,Look right of camera,Look at the RIGHT marker beside the camera
+1127,37.571241,Look right of camera,Look at the RIGHT marker beside the camera
+1128,37.603262,Look right of camera,Look at the RIGHT marker beside the camera
+1129,37.635518,Look right of camera,Look at the RIGHT marker beside the camera
+1130,37.670504,Look right of camera,Look at the RIGHT marker beside the camera
+1131,37.702879,Look right of camera,Look at the RIGHT marker beside the camera
+1132,37.739186,Look right of camera,Look at the RIGHT marker beside the camera
+1133,37.770880,Look right of camera,Look at the RIGHT marker beside the camera
+1134,37.802836,Look right of camera,Look at the RIGHT marker beside the camera
+1135,37.839129,Look right of camera,Look at the RIGHT marker beside the camera
+1136,37.871073,Look right of camera,Look at the RIGHT marker beside the camera
+1137,37.903281,Look right of camera,Look at the RIGHT marker beside the camera
+1138,37.939211,Look right of camera,Look at the RIGHT marker beside the camera
+1139,37.970893,Look right of camera,Look at the RIGHT marker beside the camera
+1140,38.003705,Look right of camera,Look at the RIGHT marker beside the camera
+1141,38.038817,Look right of camera,Look at the RIGHT marker beside the camera
+1142,38.070780,Look right of camera,Look at the RIGHT marker beside the camera
+1143,38.107413,Look right of camera,Look at the RIGHT marker beside the camera
+1144,38.138902,Look right of camera,Look at the RIGHT marker beside the camera
+1145,38.170939,Look right of camera,Look at the RIGHT marker beside the camera
+1146,38.206943,Look right of camera,Look at the RIGHT marker beside the camera
+1147,38.238420,Look right of camera,Look at the RIGHT marker beside the camera
+1148,38.271099,Look right of camera,Look at the RIGHT marker beside the camera
+1149,38.307190,Look right of camera,Look at the RIGHT marker beside the camera
+1150,38.339417,Look right of camera,Look at the RIGHT marker beside the camera
+1151,38.371217,Look right of camera,Look at the RIGHT marker beside the camera
+1152,38.406685,Look right of camera,Look at the RIGHT marker beside the camera
+1153,38.438894,Look right of camera,Look at the RIGHT marker beside the camera
+1154,38.474903,Look right of camera,Look at the RIGHT marker beside the camera
+1155,38.506745,Look right of camera,Look at the RIGHT marker beside the camera
+1156,38.539094,Look right of camera,Look at the RIGHT marker beside the camera
+1157,38.575123,Look right of camera,Look at the RIGHT marker beside the camera
+1158,38.607536,Look right of camera,Look at the RIGHT marker beside the camera
+1159,38.638941,Look right of camera,Look at the RIGHT marker beside the camera
+1160,38.674609,Look right of camera,Look at the RIGHT marker beside the camera
+1161,38.706826,Look right of camera,Look at the RIGHT marker beside the camera
+1162,38.738577,Look right of camera,Look at the RIGHT marker beside the camera
+1163,38.775087,Look right of camera,Look at the RIGHT marker beside the camera
+1164,38.806965,Look right of camera,Look at the RIGHT marker beside the camera
+1165,38.843017,Look right of camera,Look at the RIGHT marker beside the camera
+1166,38.875286,Look right of camera,Look at the RIGHT marker beside the camera
+1167,38.907341,Look right of camera,Look at the RIGHT marker beside the camera
+1168,38.943080,Look right of camera,Look at the RIGHT marker beside the camera
+1169,38.974890,Look right of camera,Look at the RIGHT marker beside the camera
+1170,39.006821,Look right of camera,Look at the RIGHT marker beside the camera
+1171,39.043114,Look right of camera,Look at the RIGHT marker beside the camera
+1172,39.075276,Look right of camera,Look at the RIGHT marker beside the camera
+1173,39.111177,Look right of camera,Look at the RIGHT marker beside the camera
+1174,39.142921,Look right of camera,Look at the RIGHT marker beside the camera
+1175,39.174759,Look right of camera,Look at the RIGHT marker beside the camera
+1176,39.210884,Look right of camera,Look at the RIGHT marker beside the camera
+1177,39.242835,Look right of camera,Look at the RIGHT marker beside the camera
+1178,39.274602,Look right of camera,Look at the RIGHT marker beside the camera
+1179,39.311228,Look right of camera,Look at the RIGHT marker beside the camera
+1180,39.342936,Look right of camera,Look at the RIGHT marker beside the camera
+1181,39.374810,Look right of camera,Look at the RIGHT marker beside the camera
+1182,39.410776,Look right of camera,Look at the RIGHT marker beside the camera
+1183,39.442892,Look right of camera,Look at the RIGHT marker beside the camera
+1184,39.478673,Look right of camera,Look at the RIGHT marker beside the camera
+1185,39.510914,Look right of camera,Look at the RIGHT marker beside the camera
+1186,39.543838,Look right of camera,Look at the RIGHT marker beside the camera
+1187,39.579666,Look right of camera,Look at the RIGHT marker beside the camera
+1188,39.611262,Look right of camera,Look at the RIGHT marker beside the camera
+1189,39.643747,Look right of camera,Look at the RIGHT marker beside the camera
+1190,39.678966,Look right of camera,Look at the RIGHT marker beside the camera
+1191,39.711208,Look right of camera,Look at the RIGHT marker beside the camera
+1192,39.743248,Look right of camera,Look at the RIGHT marker beside the camera
+1193,39.779114,Look right of camera,Look at the RIGHT marker beside the camera
+1194,39.811179,Look right of camera,Look at the RIGHT marker beside the camera
+1195,39.847659,Look right of camera,Look at the RIGHT marker beside the camera
+1196,39.879205,Look right of camera,Look at the RIGHT marker beside the camera
+1197,39.911056,Look right of camera,Look at the RIGHT marker beside the camera
+1198,39.947877,Look right of camera,Look at the RIGHT marker beside the camera
+1199,39.979078,Look right of camera,Look at the RIGHT marker beside the camera
+1200,40.011058,Look above camera,Look at the marker ABOVE the camera
+1201,40.048348,Look above camera,Look at the marker ABOVE the camera
+1202,40.078535,Look above camera,Look at the marker ABOVE the camera
+1203,40.111413,Look above camera,Look at the marker ABOVE the camera
+1204,40.147220,Look above camera,Look at the marker ABOVE the camera
+1205,40.179094,Look above camera,Look at the marker ABOVE the camera
+1206,40.215333,Look above camera,Look at the marker ABOVE the camera
+1207,40.247756,Look above camera,Look at the marker ABOVE the camera
+1208,40.279628,Look above camera,Look at the marker ABOVE the camera
+1209,40.315287,Look above camera,Look at the marker ABOVE the camera
+1210,40.347367,Look above camera,Look at the marker ABOVE the camera
+1211,40.379247,Look above camera,Look at the marker ABOVE the camera
+1212,40.415361,Look above camera,Look at the marker ABOVE the camera
+1213,40.446710,Look above camera,Look at the marker ABOVE the camera
+1214,40.479215,Look above camera,Look at the marker ABOVE the camera
+1215,40.515053,Look above camera,Look at the marker ABOVE the camera
+1216,40.547114,Look above camera,Look at the marker ABOVE the camera
+1217,40.583017,Look above camera,Look at the marker ABOVE the camera
+1218,40.615247,Look above camera,Look at the marker ABOVE the camera
+1219,40.647380,Look above camera,Look at the marker ABOVE the camera
+1220,40.683322,Look above camera,Look at the marker ABOVE the camera
+1221,40.714707,Look above camera,Look at the marker ABOVE the camera
+1222,40.746131,Look above camera,Look at the marker ABOVE the camera
+1223,40.783237,Look above camera,Look at the marker ABOVE the camera
+1224,40.815135,Look above camera,Look at the marker ABOVE the camera
+1225,40.847331,Look above camera,Look at the marker ABOVE the camera
+1226,40.883266,Look above camera,Look at the marker ABOVE the camera
+1227,40.915309,Look above camera,Look at the marker ABOVE the camera
+1228,40.951004,Look above camera,Look at the marker ABOVE the camera
+1229,40.982979,Look above camera,Look at the marker ABOVE the camera
+1230,41.015050,Look above camera,Look at the marker ABOVE the camera
+1231,41.050706,Look above camera,Look at the marker ABOVE the camera
+1232,41.082913,Look above camera,Look at the marker ABOVE the camera
+1233,41.115243,Look above camera,Look at the marker ABOVE the camera
+1234,41.150947,Look above camera,Look at the marker ABOVE the camera
+1235,41.183382,Look above camera,Look at the marker ABOVE the camera
+1236,41.219612,Look above camera,Look at the marker ABOVE the camera
+1237,41.250740,Look above camera,Look at the marker ABOVE the camera
+1238,41.282982,Look above camera,Look at the marker ABOVE the camera
+1239,41.319332,Look above camera,Look at the marker ABOVE the camera
+1240,41.350757,Look above camera,Look at the marker ABOVE the camera
+1241,41.383006,Look above camera,Look at the marker ABOVE the camera
+1242,41.419306,Look above camera,Look at the marker ABOVE the camera
+1243,41.450613,Look above camera,Look at the marker ABOVE the camera
+1244,41.483444,Look above camera,Look at the marker ABOVE the camera
+1245,41.519848,Look above camera,Look at the marker ABOVE the camera
+1246,41.551680,Look above camera,Look at the marker ABOVE the camera
+1247,41.587254,Look above camera,Look at the marker ABOVE the camera
+1248,41.618675,Look above camera,Look at the marker ABOVE the camera
+1249,41.650465,Look above camera,Look at the marker ABOVE the camera
+1250,41.687006,Look above camera,Look at the marker ABOVE the camera
+1251,41.718891,Look above camera,Look at the marker ABOVE the camera
+1252,41.750852,Look above camera,Look at the marker ABOVE the camera
+1253,41.787318,Look above camera,Look at the marker ABOVE the camera
+1254,41.819215,Look above camera,Look at the marker ABOVE the camera
+1255,41.851266,Look above camera,Look at the marker ABOVE the camera
+1256,41.887062,Look above camera,Look at the marker ABOVE the camera
+1257,41.919579,Look above camera,Look at the marker ABOVE the camera
+1258,41.955349,Look above camera,Look at the marker ABOVE the camera
+1259,41.987222,Look above camera,Look at the marker ABOVE the camera
+1260,42.019336,Look above camera,Look at the marker ABOVE the camera
+1261,42.054858,Look above camera,Look at the marker ABOVE the camera
+1262,42.087461,Look above camera,Look at the marker ABOVE the camera
+1263,42.119349,Look above camera,Look at the marker ABOVE the camera
+1264,42.155392,Look above camera,Look at the marker ABOVE the camera
+1265,42.187163,Look above camera,Look at the marker ABOVE the camera
+1266,42.219222,Look above camera,Look at the marker ABOVE the camera
+1267,42.255410,Look above camera,Look at the marker ABOVE the camera
+1268,42.287139,Look above camera,Look at the marker ABOVE the camera
+1269,42.322893,Look above camera,Look at the marker ABOVE the camera
+1270,42.354796,Look above camera,Look at the marker ABOVE the camera
+1271,42.387058,Look above camera,Look at the marker ABOVE the camera
+1272,42.423192,Look above camera,Look at the marker ABOVE the camera
+1273,42.455222,Look above camera,Look at the marker ABOVE the camera
+1274,42.486971,Look above camera,Look at the marker ABOVE the camera
+1275,42.523026,Look above camera,Look at the marker ABOVE the camera
+1276,42.554741,Look above camera,Look at the marker ABOVE the camera
+1277,42.586739,Look above camera,Look at the marker ABOVE the camera
+1278,42.623346,Look above camera,Look at the marker ABOVE the camera
+1279,42.654872,Look above camera,Look at the marker ABOVE the camera
+1280,42.691579,Look above camera,Look at the marker ABOVE the camera
+1281,42.723266,Look above camera,Look at the marker ABOVE the camera
+1282,42.755131,Look above camera,Look at the marker ABOVE the camera
+1283,42.791396,Look above camera,Look at the marker ABOVE the camera
+1284,42.823469,Look above camera,Look at the marker ABOVE the camera
+1285,42.855218,Look above camera,Look at the marker ABOVE the camera
+1286,42.890864,Look above camera,Look at the marker ABOVE the camera
+1287,42.922739,Look above camera,Look at the marker ABOVE the camera
+1288,42.959370,Look above camera,Look at the marker ABOVE the camera
+1289,42.991571,Look above camera,Look at the marker ABOVE the camera
+1290,43.023821,Look above camera,Look at the marker ABOVE the camera
+1291,43.058861,Look above camera,Look at the marker ABOVE the camera
+1292,43.091165,Look above camera,Look at the marker ABOVE the camera
+1293,43.123076,Look above camera,Look at the marker ABOVE the camera
+1294,43.159503,Look above camera,Look at the marker ABOVE the camera
+1295,43.191406,Look above camera,Look at the marker ABOVE the camera
+1296,43.223607,Look above camera,Look at the marker ABOVE the camera
+1297,43.259064,Look above camera,Look at the marker ABOVE the camera
+1298,43.291607,Look above camera,Look at the marker ABOVE the camera
+1299,43.327467,Look above camera,Look at the marker ABOVE the camera
+1300,43.359378,Look above camera,Look at the marker ABOVE the camera
+1301,43.391608,Look above camera,Look at the marker ABOVE the camera
+1302,43.427676,Look above camera,Look at the marker ABOVE the camera
+1303,43.459791,Look above camera,Look at the marker ABOVE the camera
+1304,43.491645,Look above camera,Look at the marker ABOVE the camera
+1305,43.527685,Look above camera,Look at the marker ABOVE the camera
+1306,43.559677,Look above camera,Look at the marker ABOVE the camera
+1307,43.591902,Look above camera,Look at the marker ABOVE the camera
+1308,43.627660,Look above camera,Look at the marker ABOVE the camera
+1309,43.659072,Look above camera,Look at the marker ABOVE the camera
+1310,43.695294,Look above camera,Look at the marker ABOVE the camera
+1311,43.727699,Look above camera,Look at the marker ABOVE the camera
+1312,43.759529,Look above camera,Look at the marker ABOVE the camera
+1313,43.795348,Look above camera,Look at the marker ABOVE the camera
+1314,43.827502,Look above camera,Look at the marker ABOVE the camera
+1315,43.859379,Look above camera,Look at the marker ABOVE the camera
+1316,43.895308,Look above camera,Look at the marker ABOVE the camera
+1317,43.927747,Look above camera,Look at the marker ABOVE the camera
+1318,43.959585,Look above camera,Look at the marker ABOVE the camera
+1319,43.995972,Look above camera,Look at the marker ABOVE the camera
+1320,44.027907,Look above camera,Look at the marker ABOVE the camera
+1321,44.063118,Look above camera,Look at the marker ABOVE the camera
+1322,44.095024,Look above camera,Look at the marker ABOVE the camera
+1323,44.127572,Look above camera,Look at the marker ABOVE the camera
+1324,44.163229,Look above camera,Look at the marker ABOVE the camera
+1325,44.195314,Look above camera,Look at the marker ABOVE the camera
+1326,44.227604,Look above camera,Look at the marker ABOVE the camera
+1327,44.263352,Look above camera,Look at the marker ABOVE the camera
+1328,44.295679,Look above camera,Look at the marker ABOVE the camera
+1329,44.327911,Look above camera,Look at the marker ABOVE the camera
+1330,44.363708,Look above camera,Look at the marker ABOVE the camera
+1331,44.395466,Look above camera,Look at the marker ABOVE the camera
+1332,44.431729,Look above camera,Look at the marker ABOVE the camera
+1333,44.463817,Look above camera,Look at the marker ABOVE the camera
+1334,44.495512,Look above camera,Look at the marker ABOVE the camera
+1335,44.531627,Look above camera,Look at the marker ABOVE the camera
+1336,44.563365,Look above camera,Look at the marker ABOVE the camera
+1337,44.595360,Look above camera,Look at the marker ABOVE the camera
+1338,44.631752,Look above camera,Look at the marker ABOVE the camera
+1339,44.663731,Look above camera,Look at the marker ABOVE the camera
+1340,44.695861,Look above camera,Look at the marker ABOVE the camera
+1341,44.731747,Look above camera,Look at the marker ABOVE the camera
+1342,44.763497,Look above camera,Look at the marker ABOVE the camera
+1343,44.799508,Look above camera,Look at the marker ABOVE the camera
+1344,44.831609,Look above camera,Look at the marker ABOVE the camera
+1345,44.863795,Look above camera,Look at the marker ABOVE the camera
+1346,44.899846,Look above camera,Look at the marker ABOVE the camera
+1347,44.931310,Look above camera,Look at the marker ABOVE the camera
+1348,44.963718,Look above camera,Look at the marker ABOVE the camera
+1349,44.999541,Look above camera,Look at the marker ABOVE the camera
+1350,45.031043,Look above camera,Look at the marker ABOVE the camera
+1351,45.067551,Look above camera,Look at the marker ABOVE the camera
+1352,45.099133,Look above camera,Look at the marker ABOVE the camera
+1353,45.131179,Look above camera,Look at the marker ABOVE the camera
+1354,45.167866,Look above camera,Look at the marker ABOVE the camera
+1355,45.199583,Look above camera,Look at the marker ABOVE the camera
+1356,45.231298,Look above camera,Look at the marker ABOVE the camera
+1357,45.267899,Look above camera,Look at the marker ABOVE the camera
+1358,45.299628,Look above camera,Look at the marker ABOVE the camera
+1359,45.331092,Look above camera,Look at the marker ABOVE the camera
+1360,45.368032,Look above camera,Look at the marker ABOVE the camera
+1361,45.399927,Look above camera,Look at the marker ABOVE the camera
+1362,45.435784,Look above camera,Look at the marker ABOVE the camera
+1363,45.467981,Look above camera,Look at the marker ABOVE the camera
+1364,45.499769,Look above camera,Look at the marker ABOVE the camera
+1365,45.535538,Look above camera,Look at the marker ABOVE the camera
+1366,45.567586,Look above camera,Look at the marker ABOVE the camera
+1367,45.599423,Look above camera,Look at the marker ABOVE the camera
+1368,45.635764,Look above camera,Look at the marker ABOVE the camera
+1369,45.667424,Look above camera,Look at the marker ABOVE the camera
+1370,45.699632,Look above camera,Look at the marker ABOVE the camera
+1371,45.735850,Look above camera,Look at the marker ABOVE the camera
+1372,45.767521,Look above camera,Look at the marker ABOVE the camera
+1373,45.803638,Look above camera,Look at the marker ABOVE the camera
+1374,45.835450,Look above camera,Look at the marker ABOVE the camera
+1375,45.867641,Look above camera,Look at the marker ABOVE the camera
+1376,45.903244,Look above camera,Look at the marker ABOVE the camera
+1377,45.935387,Look above camera,Look at the marker ABOVE the camera
+1378,45.967722,Look above camera,Look at the marker ABOVE the camera
+1379,46.003998,Look above camera,Look at the marker ABOVE the camera
+1380,46.035804,Look above camera,Look at the marker ABOVE the camera
+1381,46.067460,Look above camera,Look at the marker ABOVE the camera
+1382,46.103817,Look above camera,Look at the marker ABOVE the camera
+1383,46.135528,Look above camera,Look at the marker ABOVE the camera
+1384,46.171904,Look above camera,Look at the marker ABOVE the camera
+1385,46.203831,Look above camera,Look at the marker ABOVE the camera
+1386,46.235709,Look above camera,Look at the marker ABOVE the camera
+1387,46.271689,Look above camera,Look at the marker ABOVE the camera
+1388,46.303807,Look above camera,Look at the marker ABOVE the camera
+1389,46.335731,Look above camera,Look at the marker ABOVE the camera
+1390,46.371547,Look above camera,Look at the marker ABOVE the camera
+1391,46.403764,Look above camera,Look at the marker ABOVE the camera
+1392,46.436139,Look above camera,Look at the marker ABOVE the camera
+1393,46.471548,Look above camera,Look at the marker ABOVE the camera
+1394,46.503648,Look above camera,Look at the marker ABOVE the camera
+1395,46.539171,Look above camera,Look at the marker ABOVE the camera
+1396,46.570906,Look above camera,Look at the marker ABOVE the camera
+1397,46.603052,Look above camera,Look at the marker ABOVE the camera
+1398,46.639672,Look above camera,Look at the marker ABOVE the camera
+1399,46.671802,Look above camera,Look at the marker ABOVE the camera
+1400,46.707017,Look above camera,Look at the marker ABOVE the camera
+1401,46.739433,Look above camera,Look at the marker ABOVE the camera
+1402,46.771057,Look above camera,Look at the marker ABOVE the camera
+1403,46.803379,Look above camera,Look at the marker ABOVE the camera
+1404,46.839651,Look above camera,Look at the marker ABOVE the camera
+1405,46.871627,Look above camera,Look at the marker ABOVE the camera
+1406,46.908168,Look above camera,Look at the marker ABOVE the camera
+1407,46.939671,Look above camera,Look at the marker ABOVE the camera
+1408,46.971588,Look above camera,Look at the marker ABOVE the camera
+1409,47.007463,Look above camera,Look at the marker ABOVE the camera
+1410,47.039672,Look above camera,Look at the marker ABOVE the camera
+1411,47.071532,Look above camera,Look at the marker ABOVE the camera
+1412,47.107781,Look above camera,Look at the marker ABOVE the camera
+1413,47.139266,Look above camera,Look at the marker ABOVE the camera
+1414,47.175733,Look above camera,Look at the marker ABOVE the camera
+1415,47.208024,Look above camera,Look at the marker ABOVE the camera
+1416,47.239814,Look above camera,Look at the marker ABOVE the camera
+1417,47.275437,Look above camera,Look at the marker ABOVE the camera
+1418,47.307686,Look above camera,Look at the marker ABOVE the camera
+1419,47.339481,Look above camera,Look at the marker ABOVE the camera
+1420,47.375538,Look above camera,Look at the marker ABOVE the camera
+1421,47.407998,Look above camera,Look at the marker ABOVE the camera
+1422,47.439855,Look above camera,Look at the marker ABOVE the camera
+1423,47.475602,Look above camera,Look at the marker ABOVE the camera
+1424,47.507572,Look above camera,Look at the marker ABOVE the camera
+1425,47.543722,Look above camera,Look at the marker ABOVE the camera
+1426,47.575756,Look above camera,Look at the marker ABOVE the camera
+1427,47.608294,Look above camera,Look at the marker ABOVE the camera
+1428,47.644117,Look above camera,Look at the marker ABOVE the camera
+1429,47.676119,Look above camera,Look at the marker ABOVE the camera
+1430,47.707797,Look above camera,Look at the marker ABOVE the camera
+1431,47.744053,Look above camera,Look at the marker ABOVE the camera
+1432,47.775791,Look above camera,Look at the marker ABOVE the camera
+1433,47.807753,Look above camera,Look at the marker ABOVE the camera
+1434,47.843823,Look above camera,Look at the marker ABOVE the camera
+1435,47.875789,Look above camera,Look at the marker ABOVE the camera
+1436,47.912332,Look above camera,Look at the marker ABOVE the camera
+1437,47.944062,Look above camera,Look at the marker ABOVE the camera
+1438,47.975854,Look above camera,Look at the marker ABOVE the camera
+1439,48.012146,Look above camera,Look at the marker ABOVE the camera
+1440,48.043681,Look above camera,Look at the marker ABOVE the camera
+1441,48.075665,Look above camera,Look at the marker ABOVE the camera
+1442,48.112122,Look above camera,Look at the marker ABOVE the camera
+1443,48.143961,Look above camera,Look at the marker ABOVE the camera
+1444,48.176062,Look above camera,Look at the marker ABOVE the camera
+1445,48.212033,Look above camera,Look at the marker ABOVE the camera
+1446,48.243602,Look above camera,Look at the marker ABOVE the camera
+1447,48.280159,Look above camera,Look at the marker ABOVE the camera
+1448,48.311567,Look above camera,Look at the marker ABOVE the camera
+1449,48.343579,Look above camera,Look at the marker ABOVE the camera
+1450,48.379763,Look above camera,Look at the marker ABOVE the camera
+1451,48.410934,Look above camera,Look at the marker ABOVE the camera
+1452,48.443997,Look above camera,Look at the marker ABOVE the camera
+1453,48.480003,Look above camera,Look at the marker ABOVE the camera
+1454,48.512023,Look above camera,Look at the marker ABOVE the camera
+1455,48.544094,Look above camera,Look at the marker ABOVE the camera
+1456,48.580088,Look above camera,Look at the marker ABOVE the camera
+1457,48.612594,Look above camera,Look at the marker ABOVE the camera
+1458,48.648239,Look above camera,Look at the marker ABOVE the camera
+1459,48.679869,Look above camera,Look at the marker ABOVE the camera
+1460,48.712100,Look above camera,Look at the marker ABOVE the camera
+1461,48.748500,Look above camera,Look at the marker ABOVE the camera
+1462,48.780223,Look above camera,Look at the marker ABOVE the camera
+1463,48.811864,Look above camera,Look at the marker ABOVE the camera
+1464,48.848333,Look above camera,Look at the marker ABOVE the camera
+1465,48.879858,Look above camera,Look at the marker ABOVE the camera
+1466,48.911929,Look above camera,Look at the marker ABOVE the camera
+1467,48.947685,Look above camera,Look at the marker ABOVE the camera
+1468,48.979173,Look above camera,Look at the marker ABOVE the camera
+1469,49.015742,Look above camera,Look at the marker ABOVE the camera
+1470,49.047501,Look above camera,Look at the marker ABOVE the camera
+1471,49.079370,Look above camera,Look at the marker ABOVE the camera
+1472,49.116151,Look above camera,Look at the marker ABOVE the camera
+1473,49.148007,Look above camera,Look at the marker ABOVE the camera
+1474,49.179604,Look above camera,Look at the marker ABOVE the camera
+1475,49.215829,Look above camera,Look at the marker ABOVE the camera
+1476,49.247689,Look above camera,Look at the marker ABOVE the camera
+1477,49.284066,Look above camera,Look at the marker ABOVE the camera
+1478,49.315755,Look above camera,Look at the marker ABOVE the camera
+1479,49.347446,Look above camera,Look at the marker ABOVE the camera
+1480,49.383834,Look above camera,Look at the marker ABOVE the camera
+1481,49.415931,Look above camera,Look at the marker ABOVE the camera
+1482,49.447900,Look above camera,Look at the marker ABOVE the camera
+1483,49.483828,Look above camera,Look at the marker ABOVE the camera
+1484,49.515804,Look above camera,Look at the marker ABOVE the camera
+1485,49.547924,Look above camera,Look at the marker ABOVE the camera
+1486,49.583818,Look above camera,Look at the marker ABOVE the camera
+1487,49.616091,Look above camera,Look at the marker ABOVE the camera
+1488,49.651834,Look above camera,Look at the marker ABOVE the camera
+1489,49.683931,Look above camera,Look at the marker ABOVE the camera
+1490,49.716036,Look above camera,Look at the marker ABOVE the camera
+1491,49.752299,Look above camera,Look at the marker ABOVE the camera
+1492,49.784219,Look above camera,Look at the marker ABOVE the camera
+1493,49.816385,Look above camera,Look at the marker ABOVE the camera
+1494,49.851967,Look above camera,Look at the marker ABOVE the camera
+1495,49.883876,Look above camera,Look at the marker ABOVE the camera
+1496,49.915986,Look above camera,Look at the marker ABOVE the camera
+1497,49.951756,Look above camera,Look at the marker ABOVE the camera
+1498,49.983777,Look above camera,Look at the marker ABOVE the camera
+1499,50.019988,Look below camera,Look at the marker BELOW the camera
+1500,50.052558,Look below camera,Look at the marker BELOW the camera
+1501,50.083253,Look below camera,Look at the marker BELOW the camera
+1502,50.119499,Look below camera,Look at the marker BELOW the camera
+1503,50.151959,Look below camera,Look at the marker BELOW the camera
+1504,50.183601,Look below camera,Look at the marker BELOW the camera
+1505,50.219352,Look below camera,Look at the marker BELOW the camera
+1506,50.251427,Look below camera,Look at the marker BELOW the camera
+1507,50.284962,Look below camera,Look at the marker BELOW the camera
+1508,50.313980,Look below camera,Look at the marker BELOW the camera
+1509,50.351859,Look below camera,Look at the marker BELOW the camera
+1510,50.387677,Look below camera,Look at the marker BELOW the camera
+1511,50.419687,Look below camera,Look at the marker BELOW the camera
+1512,50.451631,Look below camera,Look at the marker BELOW the camera
+1513,50.487905,Look below camera,Look at the marker BELOW the camera
+1514,50.519951,Look below camera,Look at the marker BELOW the camera
+1515,50.551726,Look below camera,Look at the marker BELOW the camera
+1516,50.587933,Look below camera,Look at the marker BELOW the camera
+1517,50.619602,Look below camera,Look at the marker BELOW the camera
+1518,50.651791,Look below camera,Look at the marker BELOW the camera
+1519,50.687458,Look below camera,Look at the marker BELOW the camera
+1520,50.719641,Look below camera,Look at the marker BELOW the camera
+1521,50.755858,Look below camera,Look at the marker BELOW the camera
+1522,50.787810,Look below camera,Look at the marker BELOW the camera
+1523,50.819704,Look below camera,Look at the marker BELOW the camera
+1524,50.855283,Look below camera,Look at the marker BELOW the camera
+1525,50.887613,Look below camera,Look at the marker BELOW the camera
+1526,50.919526,Look below camera,Look at the marker BELOW the camera
+1527,50.955508,Look below camera,Look at the marker BELOW the camera
+1528,50.987605,Look below camera,Look at the marker BELOW the camera
+1529,51.019551,Look below camera,Look at the marker BELOW the camera
+1530,51.055705,Look below camera,Look at the marker BELOW the camera
+1531,51.087849,Look below camera,Look at the marker BELOW the camera
+1532,51.124138,Look below camera,Look at the marker BELOW the camera
+1533,51.155625,Look below camera,Look at the marker BELOW the camera
+1534,51.187882,Look below camera,Look at the marker BELOW the camera
+1535,51.223949,Look below camera,Look at the marker BELOW the camera
+1536,51.255791,Look below camera,Look at the marker BELOW the camera
+1537,51.287671,Look below camera,Look at the marker BELOW the camera
+1538,51.323940,Look below camera,Look at the marker BELOW the camera
+1539,51.355780,Look below camera,Look at the marker BELOW the camera
+1540,51.392134,Look below camera,Look at the marker BELOW the camera
+1541,51.424069,Look below camera,Look at the marker BELOW the camera
+1542,51.455550,Look below camera,Look at the marker BELOW the camera
+1543,51.491704,Look below camera,Look at the marker BELOW the camera
+1544,51.523638,Look below camera,Look at the marker BELOW the camera
+1545,51.555204,Look below camera,Look at the marker BELOW the camera
+1546,51.591842,Look below camera,Look at the marker BELOW the camera
+1547,51.623874,Look below camera,Look at the marker BELOW the camera
+1548,51.655702,Look below camera,Look at the marker BELOW the camera
+1549,51.691276,Look below camera,Look at the marker BELOW the camera
+1550,51.723685,Look below camera,Look at the marker BELOW the camera
+1551,51.759608,Look below camera,Look at the marker BELOW the camera
+1552,51.791588,Look below camera,Look at the marker BELOW the camera
+1553,51.823943,Look below camera,Look at the marker BELOW the camera
+1554,51.859694,Look below camera,Look at the marker BELOW the camera
+1555,51.891577,Look below camera,Look at the marker BELOW the camera
+1556,51.923347,Look below camera,Look at the marker BELOW the camera
+1557,51.959593,Look below camera,Look at the marker BELOW the camera
+1558,51.991292,Look below camera,Look at the marker BELOW the camera
+1559,52.023257,Look below camera,Look at the marker BELOW the camera
+1560,52.059608,Look below camera,Look at the marker BELOW the camera
+1561,52.091527,Look below camera,Look at the marker BELOW the camera
+1562,52.127515,Look below camera,Look at the marker BELOW the camera
+1563,52.159468,Look below camera,Look at the marker BELOW the camera
+1564,52.191671,Look below camera,Look at the marker BELOW the camera
+1565,52.227942,Look below camera,Look at the marker BELOW the camera
+1566,52.259873,Look below camera,Look at the marker BELOW the camera
+1567,52.291439,Look below camera,Look at the marker BELOW the camera
+1568,52.327134,Look below camera,Look at the marker BELOW the camera
+1569,52.359433,Look below camera,Look at the marker BELOW the camera
+1570,52.391729,Look below camera,Look at the marker BELOW the camera
+1571,52.427878,Look below camera,Look at the marker BELOW the camera
+1572,52.459444,Look below camera,Look at the marker BELOW the camera
+1573,52.495618,Look below camera,Look at the marker BELOW the camera
+1574,52.527520,Look below camera,Look at the marker BELOW the camera
+1575,52.559363,Look below camera,Look at the marker BELOW the camera
+1576,52.595702,Look below camera,Look at the marker BELOW the camera
+1577,52.627956,Look below camera,Look at the marker BELOW the camera
+1578,52.659713,Look below camera,Look at the marker BELOW the camera
+1579,52.695975,Look below camera,Look at the marker BELOW the camera
+1580,52.728048,Look below camera,Look at the marker BELOW the camera
+1581,52.759699,Look below camera,Look at the marker BELOW the camera
+1582,52.796049,Look below camera,Look at the marker BELOW the camera
+1583,52.827949,Look below camera,Look at the marker BELOW the camera
+1584,52.864118,Look below camera,Look at the marker BELOW the camera
+1585,52.895851,Look below camera,Look at the marker BELOW the camera
+1586,52.927651,Look below camera,Look at the marker BELOW the camera
+1587,52.964361,Look below camera,Look at the marker BELOW the camera
+1588,52.995783,Look below camera,Look at the marker BELOW the camera
+1589,53.028147,Look below camera,Look at the marker BELOW the camera
+1590,53.064272,Look below camera,Look at the marker BELOW the camera
+1591,53.095932,Look below camera,Look at the marker BELOW the camera
+1592,53.132242,Look below camera,Look at the marker BELOW the camera
+1593,53.164314,Look below camera,Look at the marker BELOW the camera
+1594,53.196374,Look below camera,Look at the marker BELOW the camera
+1595,53.232003,Look below camera,Look at the marker BELOW the camera
+1596,53.264265,Look below camera,Look at the marker BELOW the camera
+1597,53.295948,Look below camera,Look at the marker BELOW the camera
+1598,53.331620,Look below camera,Look at the marker BELOW the camera
+1599,53.363459,Look below camera,Look at the marker BELOW the camera
+1600,53.395975,Look below camera,Look at the marker BELOW the camera
+1601,53.431372,Look below camera,Look at the marker BELOW the camera
+1602,53.463801,Look below camera,Look at the marker BELOW the camera
+1603,53.500146,Look below camera,Look at the marker BELOW the camera
+1604,53.531443,Look below camera,Look at the marker BELOW the camera
+1605,53.563300,Look below camera,Look at the marker BELOW the camera
+1606,53.599661,Look below camera,Look at the marker BELOW the camera
+1607,53.631878,Look below camera,Look at the marker BELOW the camera
+1608,53.663597,Look below camera,Look at the marker BELOW the camera
+1609,53.699916,Look below camera,Look at the marker BELOW the camera
+1610,53.731602,Look below camera,Look at the marker BELOW the camera
+1611,53.763497,Look below camera,Look at the marker BELOW the camera
+1612,53.799939,Look below camera,Look at the marker BELOW the camera
+1613,53.831534,Look below camera,Look at the marker BELOW the camera
+1614,53.867737,Look below camera,Look at the marker BELOW the camera
+1615,53.899480,Look below camera,Look at the marker BELOW the camera
+1616,53.931603,Look below camera,Look at the marker BELOW the camera
+1617,53.967903,Look below camera,Look at the marker BELOW the camera
+1618,53.999457,Look below camera,Look at the marker BELOW the camera
+1619,54.031556,Look below camera,Look at the marker BELOW the camera
+1620,54.066533,Look below camera,Look at the marker BELOW the camera
+1621,54.099444,Look below camera,Look at the marker BELOW the camera
+1622,54.131890,Look below camera,Look at the marker BELOW the camera
+1623,54.167693,Look below camera,Look at the marker BELOW the camera
+1624,54.200207,Look below camera,Look at the marker BELOW the camera
+1625,54.236137,Look below camera,Look at the marker BELOW the camera
+1626,54.267707,Look below camera,Look at the marker BELOW the camera
+1627,54.299732,Look below camera,Look at the marker BELOW the camera
+1628,54.335415,Look below camera,Look at the marker BELOW the camera
+1629,54.367893,Look below camera,Look at the marker BELOW the camera
+1630,54.400027,Look below camera,Look at the marker BELOW the camera
+1631,54.435925,Look below camera,Look at the marker BELOW the camera
+1632,54.468147,Look below camera,Look at the marker BELOW the camera
+1633,54.499956,Look below camera,Look at the marker BELOW the camera
+1634,54.534284,Look below camera,Look at the marker BELOW the camera
+1635,54.566783,Look below camera,Look at the marker BELOW the camera
+1636,54.603944,Look below camera,Look at the marker BELOW the camera
+1637,54.635819,Look below camera,Look at the marker BELOW the camera
+1638,54.667849,Look below camera,Look at the marker BELOW the camera
+1639,54.703965,Look below camera,Look at the marker BELOW the camera
+1640,54.736238,Look below camera,Look at the marker BELOW the camera
+1641,54.768003,Look below camera,Look at the marker BELOW the camera
+1642,54.803961,Look below camera,Look at the marker BELOW the camera
+1643,54.835929,Look below camera,Look at the marker BELOW the camera
+1644,54.867715,Look below camera,Look at the marker BELOW the camera
+1645,54.904275,Look below camera,Look at the marker BELOW the camera
+1646,54.936308,Look below camera,Look at the marker BELOW the camera
+1647,54.972034,Look below camera,Look at the marker BELOW the camera
+1648,55.003059,Look below camera,Look at the marker BELOW the camera
+1649,55.035843,Look below camera,Look at the marker BELOW the camera
+1650,55.071747,Look below camera,Look at the marker BELOW the camera
+1651,55.103661,Look below camera,Look at the marker BELOW the camera
+1652,55.135343,Look below camera,Look at the marker BELOW the camera
+1653,55.171631,Look below camera,Look at the marker BELOW the camera
+1654,55.203956,Look below camera,Look at the marker BELOW the camera
+1655,55.239796,Look below camera,Look at the marker BELOW the camera
+1656,55.270865,Look below camera,Look at the marker BELOW the camera
+1657,55.303782,Look below camera,Look at the marker BELOW the camera
+1658,55.339891,Look below camera,Look at the marker BELOW the camera
+1659,55.371691,Look below camera,Look at the marker BELOW the camera
+1660,55.403884,Look below camera,Look at the marker BELOW the camera
+1661,55.440291,Look below camera,Look at the marker BELOW the camera
+1662,55.471132,Look below camera,Look at the marker BELOW the camera
+1663,55.504155,Look below camera,Look at the marker BELOW the camera
+1664,55.539823,Look below camera,Look at the marker BELOW the camera
+1665,55.571671,Look below camera,Look at the marker BELOW the camera
+1666,55.608360,Look below camera,Look at the marker BELOW the camera
+1667,55.639764,Look below camera,Look at the marker BELOW the camera
+1668,55.672008,Look below camera,Look at the marker BELOW the camera
+1669,55.708483,Look below camera,Look at the marker BELOW the camera
+1670,55.739978,Look below camera,Look at the marker BELOW the camera
+1671,55.772163,Look below camera,Look at the marker BELOW the camera
+1672,55.808258,Look below camera,Look at the marker BELOW the camera
+1673,55.839721,Look below camera,Look at the marker BELOW the camera
+1674,55.871653,Look below camera,Look at the marker BELOW the camera
+1675,55.907856,Look below camera,Look at the marker BELOW the camera
+1676,55.939680,Look below camera,Look at the marker BELOW the camera
+1677,55.975725,Look below camera,Look at the marker BELOW the camera
+1678,56.008314,Look below camera,Look at the marker BELOW the camera
+1679,56.039859,Look below camera,Look at the marker BELOW the camera
+1680,56.075691,Look below camera,Look at the marker BELOW the camera
+1681,56.108337,Look below camera,Look at the marker BELOW the camera
+1682,56.139385,Look below camera,Look at the marker BELOW the camera
+1683,56.175947,Look below camera,Look at the marker BELOW the camera
+1684,56.208257,Look below camera,Look at the marker BELOW the camera
+1685,56.239644,Look below camera,Look at the marker BELOW the camera
+1686,56.275756,Look below camera,Look at the marker BELOW the camera
+1687,56.308243,Look below camera,Look at the marker BELOW the camera
+1688,56.343763,Look below camera,Look at the marker BELOW the camera
+1689,56.375552,Look below camera,Look at the marker BELOW the camera
+1690,56.408050,Look below camera,Look at the marker BELOW the camera
+1691,56.444723,Look below camera,Look at the marker BELOW the camera
+1692,56.475914,Look below camera,Look at the marker BELOW the camera
+1693,56.508018,Look below camera,Look at the marker BELOW the camera
+1694,56.544314,Look below camera,Look at the marker BELOW the camera
+1695,56.576296,Look below camera,Look at the marker BELOW the camera
+1696,56.607827,Look below camera,Look at the marker BELOW the camera
+1697,56.643832,Look below camera,Look at the marker BELOW the camera
+1698,56.675311,Look below camera,Look at the marker BELOW the camera
+1699,56.712061,Look below camera,Look at the marker BELOW the camera
+1700,56.744103,Look below camera,Look at the marker BELOW the camera
+1701,56.775588,Look below camera,Look at the marker BELOW the camera
+1702,56.812087,Look below camera,Look at the marker BELOW the camera
+1703,56.843960,Look below camera,Look at the marker BELOW the camera
+1704,56.875871,Look below camera,Look at the marker BELOW the camera
+1705,56.912432,Look below camera,Look at the marker BELOW the camera
+1706,56.943939,Look below camera,Look at the marker BELOW the camera
+1707,56.976321,Look below camera,Look at the marker BELOW the camera
+1708,57.011556,Look below camera,Look at the marker BELOW the camera
+1709,57.043582,Look below camera,Look at the marker BELOW the camera
+1710,57.079970,Look below camera,Look at the marker BELOW the camera
+1711,57.112352,Look below camera,Look at the marker BELOW the camera
+1712,57.144293,Look below camera,Look at the marker BELOW the camera
+1713,57.180165,Look below camera,Look at the marker BELOW the camera
+1714,57.212207,Look below camera,Look at the marker BELOW the camera
+1715,57.243883,Look below camera,Look at the marker BELOW the camera
+1716,57.280345,Look below camera,Look at the marker BELOW the camera
+1717,57.311729,Look below camera,Look at the marker BELOW the camera
+1718,57.348119,Look below camera,Look at the marker BELOW the camera
+1719,57.379690,Look below camera,Look at the marker BELOW the camera
+1720,57.411506,Look below camera,Look at the marker BELOW the camera
+1721,57.447303,Look below camera,Look at the marker BELOW the camera
+1722,57.479390,Look below camera,Look at the marker BELOW the camera
+1723,57.511333,Look below camera,Look at the marker BELOW the camera
+1724,57.547862,Look below camera,Look at the marker BELOW the camera
+1725,57.579675,Look below camera,Look at the marker BELOW the camera
+1726,57.611568,Look below camera,Look at the marker BELOW the camera
+1727,57.647845,Look below camera,Look at the marker BELOW the camera
+1728,57.679721,Look below camera,Look at the marker BELOW the camera
+1729,57.715970,Look below camera,Look at the marker BELOW the camera
+1730,57.747883,Look below camera,Look at the marker BELOW the camera
+1731,57.779593,Look below camera,Look at the marker BELOW the camera
+1732,57.816160,Look below camera,Look at the marker BELOW the camera
+1733,57.848057,Look below camera,Look at the marker BELOW the camera
+1734,57.879990,Look below camera,Look at the marker BELOW the camera
+1735,57.916546,Look below camera,Look at the marker BELOW the camera
+1736,57.948308,Look below camera,Look at the marker BELOW the camera
+1737,57.980368,Look below camera,Look at the marker BELOW the camera
+1738,58.017826,Look below camera,Look at the marker BELOW the camera
+1739,58.047877,Look below camera,Look at the marker BELOW the camera
+1740,58.084700,Look below camera,Look at the marker BELOW the camera
+1741,58.116362,Look below camera,Look at the marker BELOW the camera
+1742,58.148188,Look below camera,Look at the marker BELOW the camera
+1743,58.183932,Look below camera,Look at the marker BELOW the camera
+1744,58.216237,Look below camera,Look at the marker BELOW the camera
+1745,58.248384,Look below camera,Look at the marker BELOW the camera
+1746,58.284369,Look below camera,Look at the marker BELOW the camera
+1747,58.315966,Look below camera,Look at the marker BELOW the camera
+1748,58.347671,Look below camera,Look at the marker BELOW the camera
+1749,58.384045,Look below camera,Look at the marker BELOW the camera
+1750,58.416707,Look below camera,Look at the marker BELOW the camera
+1751,58.449753,Look below camera,Look at the marker BELOW the camera
+1752,58.484014,Look below camera,Look at the marker BELOW the camera
+1753,58.515957,Look below camera,Look at the marker BELOW the camera
+1754,58.552458,Look below camera,Look at the marker BELOW the camera
+1755,58.583797,Look below camera,Look at the marker BELOW the camera
+1756,58.617002,Look below camera,Look at the marker BELOW the camera
+1757,58.651923,Look below camera,Look at the marker BELOW the camera
+1758,58.683533,Look below camera,Look at the marker BELOW the camera
+1759,58.715585,Look below camera,Look at the marker BELOW the camera
+1760,58.751483,Look below camera,Look at the marker BELOW the camera
+1761,58.783704,Look below camera,Look at the marker BELOW the camera
+1762,58.819996,Look below camera,Look at the marker BELOW the camera
+1763,58.851758,Look below camera,Look at the marker BELOW the camera
+1764,58.883830,Look below camera,Look at the marker BELOW the camera
+1765,58.920118,Look below camera,Look at the marker BELOW the camera
+1766,58.952172,Look below camera,Look at the marker BELOW the camera
+1767,58.984164,Look below camera,Look at the marker BELOW the camera
+1768,59.019804,Look below camera,Look at the marker BELOW the camera
+1769,59.052013,Look below camera,Look at the marker BELOW the camera
+1770,59.087697,Look below camera,Look at the marker BELOW the camera
+1771,59.120386,Look below camera,Look at the marker BELOW the camera
+1772,59.151996,Look below camera,Look at the marker BELOW the camera
+1773,59.188000,Look below camera,Look at the marker BELOW the camera
+1774,59.220428,Look below camera,Look at the marker BELOW the camera
+1775,59.251712,Look below camera,Look at the marker BELOW the camera
+1776,59.288092,Look below camera,Look at the marker BELOW the camera
+1777,59.320202,Look below camera,Look at the marker BELOW the camera
+1778,59.351937,Look below camera,Look at the marker BELOW the camera
+1779,59.388161,Look below camera,Look at the marker BELOW the camera
+1780,59.420691,Look below camera,Look at the marker BELOW the camera
+1781,59.455993,Look below camera,Look at the marker BELOW the camera
+1782,59.488235,Look below camera,Look at the marker BELOW the camera
+1783,59.520015,Look below camera,Look at the marker BELOW the camera
+1784,59.555995,Look below camera,Look at the marker BELOW the camera
+1785,59.588010,Look below camera,Look at the marker BELOW the camera
+1786,59.620519,Look below camera,Look at the marker BELOW the camera
+1787,59.656458,Look below camera,Look at the marker BELOW the camera
+1788,59.687921,Look below camera,Look at the marker BELOW the camera
+1789,59.720373,Look below camera,Look at the marker BELOW the camera
+1790,59.756256,Look below camera,Look at the marker BELOW the camera
+1791,59.787731,Look below camera,Look at the marker BELOW the camera
+1792,59.824246,Look below camera,Look at the marker BELOW the camera
+1793,59.856342,Look below camera,Look at the marker BELOW the camera
+1794,59.888117,Look below camera,Look at the marker BELOW the camera
+1795,59.923998,Look below camera,Look at the marker BELOW the camera
+1796,59.956355,Look below camera,Look at the marker BELOW the camera
+1797,59.988047,Look below camera,Look at the marker BELOW the camera
+1798,60.024719,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1799,60.057724,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1800,60.088222,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1801,60.124473,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1802,60.156232,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1803,60.191615,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1804,60.224134,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1805,60.256362,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1806,60.292312,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1807,60.323967,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1808,60.356287,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1809,60.392206,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1810,60.424255,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1811,60.456353,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1812,60.491726,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1813,60.523883,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1814,60.560183,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1815,60.592098,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1816,60.623933,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1817,60.659984,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1818,60.691895,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1819,60.723695,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1820,60.760456,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1821,60.792002,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1822,60.824383,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1823,60.860255,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1824,60.891984,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1825,60.927995,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1826,60.959990,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1827,60.991937,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1828,61.028266,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1829,61.060693,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1830,61.092253,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1831,61.128625,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1832,61.160336,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1833,61.196511,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1834,61.228192,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1835,61.260418,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1836,61.296100,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1837,61.328349,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1838,61.359622,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1839,61.395233,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1840,61.427363,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1841,61.459552,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1842,61.496417,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1843,61.528820,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1844,61.563857,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1845,61.596291,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1846,61.628657,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1847,61.664467,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1848,61.696123,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1849,61.728530,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1850,61.764450,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1851,61.796130,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1852,61.827744,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1853,61.864587,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1854,61.896227,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1855,61.932457,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1856,61.963990,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1857,61.996098,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1858,62.032236,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1859,62.064104,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1860,62.096123,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1861,62.132103,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1862,62.164101,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1863,62.196161,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1864,62.232050,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1865,62.264009,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1866,62.300386,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1867,62.332279,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1868,62.364324,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1869,62.399831,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1870,62.432362,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1871,62.464173,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1872,62.500827,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1873,62.532269,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1874,62.563908,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1875,62.599826,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1876,62.632378,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1877,62.668164,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1878,62.699442,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1879,62.732177,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1880,62.768191,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1881,62.800230,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1882,62.832323,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1883,62.867823,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1884,62.899918,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1885,62.931823,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1886,62.968474,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1887,62.999914,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1888,63.036580,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1889,63.068017,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1890,63.100187,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1891,63.135893,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1892,63.167864,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1893,63.200250,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1894,63.236386,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1895,63.268395,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1896,63.304876,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1897,63.336737,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1898,63.368697,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1899,63.404519,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1900,63.435767,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1901,63.468426,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1902,63.504415,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1903,63.536249,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1904,63.568324,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1905,63.604194,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1906,63.636419,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1907,63.672602,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1908,63.704554,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1909,63.736548,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1910,63.772845,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1911,63.804514,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1912,63.836116,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1913,63.872453,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1914,63.904431,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1915,63.936078,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1916,63.971598,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1917,64.004302,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1918,64.041030,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1919,64.072774,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1920,64.104067,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1921,64.140393,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1922,64.172381,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1923,64.204670,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1924,64.240838,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1925,64.272504,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1926,64.304642,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1927,64.340499,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1928,64.372466,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1929,64.408402,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1930,64.440947,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1931,64.472938,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1932,64.508973,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1933,64.540959,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1934,64.572609,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1935,64.608465,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1936,64.640222,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1937,64.672235,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1938,64.708778,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1939,64.740111,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1940,64.776467,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1941,64.808394,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1942,64.840403,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1943,64.876683,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1944,64.908201,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1945,64.940639,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1946,64.975943,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1947,65.007747,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1948,65.044133,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1949,65.076139,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1950,65.107994,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1951,65.144149,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1952,65.175838,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1953,65.208234,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1954,65.245106,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1955,65.276404,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1956,65.308598,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1957,65.344228,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1958,65.376457,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1959,65.412166,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1960,65.444088,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1961,65.476832,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1962,65.513438,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1963,65.544700,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1964,65.576796,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1965,65.612700,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1966,65.644952,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1967,65.676648,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1968,65.712803,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1969,65.744469,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1970,65.780366,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1971,65.812580,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1972,65.844531,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1973,65.880594,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1974,65.912413,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1975,65.944593,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1976,65.980805,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1977,66.012809,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1978,66.044564,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1979,66.080341,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1980,66.112580,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1981,66.148550,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1982,66.180368,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1983,66.212331,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1984,66.248546,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1985,66.280760,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1986,66.312062,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1987,66.348465,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1988,66.380334,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1989,66.412697,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1990,66.448434,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1991,66.479836,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1992,66.516814,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1993,66.548630,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1994,66.579959,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1995,66.616310,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1996,66.648825,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1997,66.680808,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1998,66.716515,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+1999,66.748721,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2000,66.780372,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2001,66.816547,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2002,66.848949,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2003,66.885073,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2004,66.916301,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2005,66.948377,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2006,66.984845,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2007,67.016835,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2008,67.048985,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2009,67.084787,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2010,67.116496,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2011,67.153171,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2012,67.185035,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2013,67.216965,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2014,67.252815,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2015,67.284183,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2016,67.316328,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2017,67.352747,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2018,67.384389,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2019,67.416847,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2020,67.452390,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2021,67.484491,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2022,67.520949,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2023,67.552953,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2024,67.584590,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2025,67.620195,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2026,67.652456,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2027,67.684700,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2028,67.721098,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2029,67.752698,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2030,67.784793,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2031,67.820848,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2032,67.852951,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2033,67.888671,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2034,67.920971,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2035,67.952783,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2036,67.988596,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2037,68.020137,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2038,68.052838,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2039,68.088529,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2040,68.121341,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2041,68.152784,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2042,68.188793,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2043,68.220949,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2044,68.257297,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2045,68.288616,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2046,68.320737,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2047,68.357220,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2048,68.389042,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2049,68.421242,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2050,68.457127,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2051,68.488897,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2052,68.521290,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2053,68.556482,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2054,68.588713,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2055,68.624747,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2056,68.656253,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2057,68.688585,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2058,68.724271,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2059,68.756540,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2060,68.788721,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2061,68.824887,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2062,68.856322,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2063,68.888451,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2064,68.924581,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2065,68.956390,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2066,68.992690,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2067,69.024638,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2068,69.056501,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2069,69.092817,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2070,69.124838,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2071,69.156816,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2072,69.192963,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2073,69.224716,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2074,69.260831,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2075,69.292687,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2076,69.325180,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2077,69.361124,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2078,69.392960,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2079,69.424989,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2080,69.461077,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2081,69.492705,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2082,69.525094,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2083,69.560452,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2084,69.592394,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2085,69.628942,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2086,69.660821,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2087,69.692620,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2088,69.728652,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2089,69.761195,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2090,69.792516,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2091,69.829162,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2092,69.860974,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2093,69.892670,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2094,69.929250,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2095,69.961355,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2096,69.997043,Centre gaze while moving left and right,Keep looking at lens; move body slowly left/right
+2097,70.028220,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2098,70.062265,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2099,70.096531,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2100,70.128709,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2101,70.161036,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2102,70.196585,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2103,70.229129,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2104,70.260732,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2105,70.296486,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2106,70.328846,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2107,70.365185,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2108,70.396932,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2109,70.428790,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2110,70.464954,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2111,70.496727,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2112,70.528784,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2113,70.564602,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2114,70.596225,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2115,70.628605,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2116,70.665403,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2117,70.696614,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2118,70.732822,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2119,70.764442,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2120,70.795953,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2121,70.832998,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2122,70.864743,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2123,70.896388,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2124,70.932514,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2125,70.964271,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2126,70.996384,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2127,71.032576,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2128,71.064545,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2129,71.100536,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2130,71.132734,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2131,71.164743,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2132,71.200491,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2133,71.232684,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2134,71.264662,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2135,71.301021,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2136,71.332802,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2137,71.367804,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2138,71.400028,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2139,71.432954,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2140,71.468447,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2141,71.500576,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2142,71.532638,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2143,71.568980,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2144,71.600783,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2145,71.632852,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2146,71.668728,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2147,71.700253,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2148,71.736627,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2149,71.768857,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2150,71.800767,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2151,71.836826,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2152,71.868958,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2153,71.900890,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2154,71.936855,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2155,71.969123,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2156,72.000844,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2157,72.036443,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2158,72.068591,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2159,72.104857,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2160,72.136705,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2161,72.168547,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2162,72.205346,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2163,72.237206,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2164,72.268583,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2165,72.305372,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2166,72.337046,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2167,72.369102,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2168,72.404973,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2169,72.436740,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2170,72.473093,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2171,72.504951,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2172,72.536686,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2173,72.573099,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2174,72.605345,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2175,72.637404,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2176,72.672901,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2177,72.704690,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2178,72.736923,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2179,72.772851,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2180,72.804932,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2181,72.841142,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2182,72.872840,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2183,72.904603,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2184,72.940984,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2185,72.972403,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2186,73.004126,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2187,73.040505,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2188,73.072948,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2189,73.105071,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2190,73.140740,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2191,73.173180,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2192,73.208810,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2193,73.241116,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2194,73.272780,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2195,73.308899,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2196,73.341011,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2197,73.372000,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2198,73.409098,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2199,73.440866,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2200,73.476381,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2201,73.508422,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2202,73.540397,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2203,73.577123,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2204,73.608703,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2205,73.640616,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2206,73.676060,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2207,73.708695,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2208,73.740722,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2209,73.776601,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2210,73.808672,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2211,73.844575,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2212,73.876256,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2213,73.908199,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2214,73.944758,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2215,73.976287,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2216,74.007970,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2217,74.044301,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2218,74.076491,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2219,74.108082,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2220,74.144786,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2221,74.176774,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2222,74.212658,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2223,74.244719,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2224,74.276751,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2225,74.312521,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2226,74.344476,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2227,74.376062,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2228,74.412411,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2229,74.443887,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2230,74.475864,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2231,74.512684,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2232,74.544189,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2233,74.580256,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2234,74.612029,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2235,74.644321,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2236,74.680780,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2237,74.712274,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2238,74.744749,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2239,74.780694,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2240,74.812783,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2241,74.844823,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2242,74.880701,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2243,74.912489,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2244,74.948607,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2245,74.980703,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2246,75.006509,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2247,75.048643,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2248,75.083989,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2249,75.112323,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2250,75.148915,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2251,75.180837,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2252,75.212585,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2253,75.248993,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2254,75.281204,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2255,75.316925,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2256,75.348694,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2257,75.380405,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2258,75.416662,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2259,75.448906,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2260,75.480692,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2261,75.516717,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2262,75.548680,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2263,75.584215,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2264,75.616598,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2265,75.648525,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2266,75.684826,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2267,75.717180,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2268,75.748696,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2269,75.784486,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2270,75.816137,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2271,75.848196,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2272,75.884851,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2273,75.916166,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2274,75.952342,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2275,75.984795,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2276,76.016750,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2277,76.052869,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2278,76.084607,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2279,76.116145,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2280,76.152373,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2281,76.184198,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2282,76.216122,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2283,76.252982,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2284,76.285277,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2285,76.320497,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2286,76.352932,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2287,76.384608,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2288,76.420780,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2289,76.453000,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2290,76.485113,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2291,76.520987,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2292,76.553253,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2293,76.584341,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2294,76.620468,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2295,76.652687,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2296,76.689137,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2297,76.720746,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2298,76.752825,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2299,76.788763,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2300,76.820736,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2301,76.852727,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2302,76.888602,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2303,76.920601,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2304,76.952442,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2305,76.988718,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2306,77.020903,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2307,77.056905,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2308,77.089723,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2309,77.120728,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2310,77.157362,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2311,77.189112,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2312,77.220861,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2313,77.257655,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2314,77.289608,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2315,77.325219,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2316,77.357387,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2317,77.389197,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2318,77.425003,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2319,77.457525,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2320,77.489309,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2321,77.525491,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2322,77.557436,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2323,77.589180,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2324,77.624966,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2325,77.656865,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2326,77.693441,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2327,77.725325,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2328,77.757049,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2329,77.793288,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2330,77.825257,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2331,77.856677,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2332,77.893253,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2333,77.924673,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2334,77.957019,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2335,77.992840,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2336,78.023494,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2337,78.061180,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2338,78.092833,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2339,78.124542,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2340,78.160543,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2341,78.192200,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2342,78.224253,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2343,78.260065,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2344,78.289431,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2345,78.319159,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2346,78.356250,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2347,78.388264,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2348,78.424278,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2349,78.455012,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2350,78.488444,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2351,78.523069,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2352,78.556357,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2353,78.587733,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2354,78.625213,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2355,78.655217,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2356,78.692289,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2357,78.729104,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2358,78.760665,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2359,78.796708,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2360,78.828940,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2361,78.854965,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2362,78.895680,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2363,78.928907,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2364,78.960899,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2365,78.996689,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2366,79.028440,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2367,79.060712,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2368,79.096728,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2369,79.128958,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2370,79.165095,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2371,79.197161,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2372,79.228963,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2373,79.265068,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2374,79.297152,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2375,79.329085,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2376,79.365271,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2377,79.397325,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2378,79.433243,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2379,79.465191,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2380,79.497043,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2381,79.532977,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2382,79.564707,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2383,79.596702,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2384,79.633098,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2385,79.665056,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2386,79.696935,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2387,79.733709,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2388,79.764933,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2389,79.800716,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2390,79.832815,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2391,79.865108,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2392,79.900968,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2393,79.932861,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther
+2394,79.964888,Centre gaze while moving closer and farther,Keep looking at lens; move slowly closer/farther

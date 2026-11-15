@@ -1,0 +1,57 @@
+{
+  "purpose": "Validate the portable MobileOne-S0 runtime gaze estimator.",
+  "timestamp_utc": "20261114T202713Z",
+  "status": "PASSED",
+  "input": {
+    "crop_path": "results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crops/frame_000337_centre.jpg",
+    "crop_shape": [
+      211,
+      163,
+      3
+    ],
+    "planned_action": "Look at camera centre",
+    "frame_index": "336"
+  },
+  "model": {
+    "model_name": "MobileOne-S0",
+    "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt",
+    "checkpoint_sha256": "f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95",
+    "source_commit": "4bf557d8a819da2b208214a9ef9268fd84cb52f1",
+    "device": "cpu",
+    "gaze_bins": 90,
+    "bin_width_degrees": 4.0,
+    "angle_offset_degrees": 180.0,
+    "preprocessing": "BGR to RGB; shorter side 448; aspect ratio preserved; ImageNet normalization",
+    "parameter_count": 1238004,
+    "expected_parameter_count": 1238004
+  },
+  "prediction": {
+    "yaw_degrees": -21.376922607421875,
+    "pitch_degrees": 4.892303466796875,
+    "preprocessing_ms": 2.651401999173686,
+    "inference_ms": 26.68481500222697,
+    "total_processing_ms": 29.451176997099537
+  },
+  "checks": {
+    "parameter_count": true,
+    "checkpoint_hash_verification": true,
+    "strict_checkpoint_loading": true,
+    "real_face_crop_inference": true,
+    "finite_yaw": true,
+    "finite_pitch": true,
+    "external_runtime_dependency_absent": true,
+    "invalid_inputs": true
+  },
+  "invalid_input_tests": {
+    "non_array": true,
+    "two_dimensional": true,
+    "wrong_channels": true,
+    "wrong_dtype": true
+  },
+  "limitations": [
+    "One crop does not measure gaze accuracy.",
+    "Yaw and pitch are not calibrated for the camera position.",
+    "This test does not include YOLO, ByteTrack, YuNet or webcam input.",
+    "Timing is from one measured crop after two warm-up runs."
+  ]
+}

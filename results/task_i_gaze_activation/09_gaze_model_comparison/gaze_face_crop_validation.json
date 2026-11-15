@@ -1,0 +1,79 @@
+{
+  "purpose": "Validate YuNet and prepare identical face crops for six gaze models.",
+  "video_path": "results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi",
+  "timeline_path": "results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_timeline.csv",
+  "sample_interval": 6,
+  "video_frames": 2394,
+  "video_fps": 30.0,
+  "sampled_frames": 399,
+  "accepted_face_frames": 342,
+  "overall_detection_rate": 0.8571428571428571,
+  "mean_detection_ms": 8.883014228070175,
+  "action_summaries": {
+    "Empty camera view": {
+      "sampled_frames": 51,
+      "accepted_face_frames": 3,
+      "face_detection_rate": 0.058823529411764705,
+      "mean_confidence": 0.937181274096171,
+      "minimum_confidence": 0.931835412979126,
+      "mean_detection_ms": 9.257312450980393
+    },
+    "Look at camera centre": {
+      "sampled_frames": 50,
+      "accepted_face_frames": 45,
+      "face_detection_rate": 0.9,
+      "mean_confidence": 0.9422500822279188,
+      "minimum_confidence": 0.9222895503044128,
+      "mean_detection_ms": 8.70465044
+    },
+    "Look left of camera": {
+      "sampled_frames": 49,
+      "accepted_face_frames": 49,
+      "face_detection_rate": 1.0,
+      "mean_confidence": 0.9450489209622753,
+      "minimum_confidence": 0.9415323734283447,
+      "mean_detection_ms": 8.614623102040817
+    },
+    "Look right of camera": {
+      "sampled_frames": 50,
+      "accepted_face_frames": 50,
+      "face_detection_rate": 1.0,
+      "mean_confidence": 0.9408921813964843,
+      "minimum_confidence": 0.9368689060211182,
+      "mean_detection_ms": 8.71843892
+    },
+    "Look above camera": {
+      "sampled_frames": 50,
+      "accepted_face_frames": 50,
+      "face_detection_rate": 1.0,
+      "mean_confidence": 0.9412392616271973,
+      "minimum_confidence": 0.9386273622512817,
+      "mean_detection_ms": 9.41431618
+    },
+    "Look below camera": {
+      "sampled_frames": 50,
+      "accepted_face_frames": 50,
+      "face_detection_rate": 1.0,
+      "mean_confidence": 0.9422200763225556,
+      "minimum_confidence": 0.93845534324646,
+      "mean_detection_ms": 8.699879600000001
+    },
+    "Centre gaze while moving left and right": {
+      "sampled_frames": 50,
+      "accepted_face_frames": 50,
+      "face_detection_rate": 1.0,
+      "mean_confidence": 0.9405670142173768,
+      "minimum_confidence": 0.9338474869728088,
+      "mean_detection_ms": 8.85504952
+    },
+    "Centre gaze while moving closer and farther": {
+      "sampled_frames": 49,
+      "accepted_face_frames": 45,
+      "face_detection_rate": 0.9183673469387755,
+      "mean_confidence": 0.9374459809727139,
+      "minimum_confidence": 0.9023452997207642,
+      "mean_detection_ms": 8.785030142857142
+    }
+  },
+  "important_note": "YuNet was applied to the full frame because this controlled recording contains one real participant. The runtime pipeline continues to apply YuNet inside each ByteTrack person region."
+}

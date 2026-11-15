@@ -1,0 +1,57 @@
+{
+  "source_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi",
+  "source_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_timeline.csv",
+  "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_recording_review.jpg",
+  "review_frames": [
+    {
+      "target_seconds": 5.0,
+      "actual_seconds": 5.009148,
+      "frame_number": 154,
+      "planned_action": "Empty camera view"
+    },
+    {
+      "target_seconds": 15.0,
+      "actual_seconds": 15.017283,
+      "frame_number": 453,
+      "planned_action": "Look at camera centre"
+    },
+    {
+      "target_seconds": 25.0,
+      "actual_seconds": 24.986997,
+      "frame_number": 751,
+      "planned_action": "Look left of camera"
+    },
+    {
+      "target_seconds": 35.0,
+      "actual_seconds": 34.995145,
+      "frame_number": 1050,
+      "planned_action": "Look right of camera"
+    },
+    {
+      "target_seconds": 45.0,
+      "actual_seconds": 44.999541,
+      "frame_number": 1349,
+      "planned_action": "Look above camera"
+    },
+    {
+      "target_seconds": 55.0,
+      "actual_seconds": 55.003059,
+      "frame_number": 1648,
+      "planned_action": "Look below camera"
+    },
+    {
+      "target_seconds": 65.0,
+      "actual_seconds": 65.007747,
+      "frame_number": 1947,
+      "planned_action": "Centre gaze while moving left and right"
+    },
+    {
+      "target_seconds": 75.0,
+      "actual_seconds": 75.006509,
+      "frame_number": 2246,
+      "planned_action": "Centre gaze while moving closer and farther"
+    }
+  ],
+  "purpose": "Verify recording actions and face visibility before gaze-model benchmarking.",
+  "limitation": "This sheet validates recording content only. It does not measure gaze-model accuracy."
+}

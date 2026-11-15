@@ -1,0 +1,59 @@
+[ WARN:0@0.315] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+YuNet gaze face-crop preparation
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi
+Timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_timeline.csv
+Video frames: 2394
+Video FPS: 30.00
+Sample interval: 6
+Crop directory: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crops
+
+Preparing identical face crops...
+Sampled frames: 50 | accepted crops: 3
+Sampled frames: 100 | accepted crops: 47
+Sampled frames: 150 | accepted crops: 97
+Sampled frames: 200 | accepted crops: 147
+Sampled frames: 250 | accepted crops: 197
+Sampled frames: 300 | accepted crops: 247
+Sampled frames: 350 | accepted crops: 297
+
+YuNet face-crop preparation completed.
+Sampled frames: 399
+Accepted face crops: 342
+Overall accepted rate: 85.7%
+
+Empty camera view
+  Accepted: 3/51
+  Detection rate: 5.9%
+
+Look at camera centre
+  Accepted: 45/50
+  Detection rate: 90.0%
+
+Look left of camera
+  Accepted: 49/49
+  Detection rate: 100.0%
+
+Look right of camera
+  Accepted: 50/50
+  Detection rate: 100.0%
+
+Look above camera
+  Accepted: 50/50
+  Detection rate: 100.0%
+
+Look below camera
+  Accepted: 50/50
+  Detection rate: 100.0%
+
+Centre gaze while moving left and right
+  Accepted: 50/50
+  Detection rate: 100.0%
+
+Centre gaze while moving closer and farther
+  Accepted: 45/49
+  Detection rate: 91.8%
+
+Frame results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crop_validation.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crop_validation.json
+Detection review: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_detection_review.jpg
+Crop review: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crop_review.jpg

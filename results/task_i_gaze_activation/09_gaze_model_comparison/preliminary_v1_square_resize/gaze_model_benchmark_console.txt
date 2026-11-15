@@ -1,0 +1,146 @@
+Six-model CPU gaze benchmark
+Device: cpu
+Valid shared face crops: 339
+Models: 6
+Every model runs in an independent process for isolated RAM measurement.
+INFO: Creating model without pre-trained weights.
+
+[1/6] MobileOne-S0
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt
+Input size: 448x448
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+MobileOne-S0 completed.
+Mean inference: 22.32 ms
+95th percentile: 29.53 ms
+Model FPS: 44.80
+RAM increase: 50.8 MiB
+Left/right separation: 13.48°
+Above/below separation: 13.49°
+
+[2/6] MobileNetV2
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobilenetv2.pt
+Input size: 448x448
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+MobileNetV2 completed.
+Mean inference: 68.12 ms
+95th percentile: 79.51 ms
+Model FPS: 14.68
+RAM increase: 86.8 MiB
+Left/right separation: 16.42°
+Above/below separation: 14.38°
+
+[3/6] ResNet18
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet18.pt
+Input size: 448x448
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+ResNet18 completed.
+Mean inference: 85.14 ms
+95th percentile: 95.51 ms
+Model FPS: 11.75
+RAM increase: 140.0 MiB
+Left/right separation: 11.25°
+Above/below separation: 13.75°
+
+[4/6] ResNet34
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet34.pt
+Input size: 448x448
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+ResNet34 completed.
+Mean inference: 128.56 ms
+95th percentile: 136.51 ms
+Model FPS: 7.78
+RAM increase: 221.3 MiB
+Left/right separation: 15.87°
+Above/below separation: 14.16°
+
+[5/6] Community ResNet50
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet50.pt
+Input size: 448x448
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+Community ResNet50 completed.
+Mean inference: 223.25 ms
+95th percentile: 236.51 ms
+Model FPS: 4.48
+RAM increase: 245.9 MiB
+Left/right separation: 16.39°
+Above/below separation: 9.50°
+
+[6/6] Athul Official L2CS ResNet50
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/athul_l2cs_resnet50_gaze360.pkl
+Input size: 224x224
+Valid face crops: 339
+Warming up with 5 runs...
+Starting controlled gaze benchmark...
+Processed crops: 50/339
+Processed crops: 100/339
+Processed crops: 150/339
+Processed crops: 200/339
+Processed crops: 250/339
+Processed crops: 300/339
+
+Athul Official L2CS ResNet50 completed.
+Mean inference: 52.26 ms
+95th percentile: 56.28 ms
+Model FPS: 19.14
+RAM increase: 228.4 MiB
+Left/right separation: 12.50°
+Above/below separation: 0.97°
+
+Six-model gaze benchmark completed.
+
+Model                                Mean ms    P95 ms      FPS   RAM MiB   L/R deg   U/D deg
+MobileOne-S0                           22.32     29.53    44.80      50.8     13.48     13.49
+MobileNetV2                            68.12     79.51    14.68      86.8     16.42     14.38
+ResNet18                               85.14     95.51    11.75     140.0     11.25     13.75
+ResNet34                              128.56    136.51     7.78     221.3     15.87     14.16
+Community ResNet50                    223.25    236.51     4.48     245.9     16.39      9.50
+Athul Official L2CS ResNet50           52.26     56.28    19.14     228.4     12.50      0.97
+
+Combined frames: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_frames.csv
+Summary CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_summary.csv
+Summary JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_summary.json

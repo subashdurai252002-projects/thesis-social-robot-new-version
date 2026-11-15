@@ -1,0 +1,12 @@
+5.01 s: Empty camera view (frame 154)
+15.02 s: Look at camera centre (frame 453)
+24.99 s: Look left of camera (frame 751)
+35.00 s: Look right of camera (frame 1050)
+45.00 s: Look above camera (frame 1349)
+55.00 s: Look below camera (frame 1648)
+65.01 s: Centre gaze while moving left and right (frame 1947)
+75.01 s: Centre gaze while moving closer and farther (frame 2246)
+
+Gaze recording review sheet completed.
+Saved image: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_recording_review.jpg
+Saved manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_recording_review.json

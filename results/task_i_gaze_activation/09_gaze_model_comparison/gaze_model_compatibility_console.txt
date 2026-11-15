@@ -1,0 +1,75 @@
+Six-model gaze compatibility validation
+Device: cpu
+PyTorch: 2.15.0+cpu
+Torchvision: 0.29.2+cpu
+Community source: /home/subash/thesis social robot new version/gaze_pipeline/external/gaze-estimation
+Official source: /home/subash/thesis social robot new version/gaze_pipeline/external/L2CS-Net
+Checkpoint directory: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison
+
+[1/6] MobileOne-S0
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt
+Input size: 448x448
+INFO: Creating model without pre-trained weights.
+Status: PASSED
+Load time: 0.208 seconds
+Parameters: 1,238,004
+RSS increase: 10.5 MiB
+First inference: 613.73 ms
+Output shapes: (1, 90) (1, 90)
+
+[2/6] MobileNetV2
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobilenetv2.pt
+Input size: 448x448
+Status: PASSED
+Load time: 0.056 seconds
+Parameters: 2,454,452
+RSS increase: 1.0 MiB
+First inference: 70.05 ms
+Output shapes: (1, 90) (1, 90)
+
+[3/6] ResNet18
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet18.pt
+Input size: 448x448
+Status: PASSED
+Load time: 0.116 seconds
+Parameters: 11,268,852
+RSS increase: 43.3 MiB
+First inference: 237.65 ms
+Output shapes: (1, 90) (1, 90)
+
+[4/6] ResNet34
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet34.pt
+Input size: 448x448
+Status: PASSED
+Load time: 0.224 seconds
+Parameters: 21,377,012
+RSS increase: 107.9 MiB
+First inference: 144.78 ms
+Output shapes: (1, 90) (1, 90)
+
+[5/6] Community ResNet50
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet50.pt
+Input size: 448x448
+Status: PASSED
+Load time: 0.249 seconds
+Parameters: 23,876,852
+RSS increase: 161.8 MiB
+First inference: 190.10 ms
+Output shapes: (1, 90) (1, 90)
+
+[6/6] Athul Official L2CS ResNet50
+Checkpoint: /home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/athul_l2cs_resnet50_gaze360.pkl
+Input size: 224x224
+Status: PASSED
+Load time: 0.223 seconds
+Parameters: 23,883,008
+RSS increase: 0.0 MiB
+First inference: 79.19 ms
+Output shapes: (1, 90) (1, 90)
+
+Compatibility validation completed.
+Models tested: 6
+Passed: 6
+Failed: 0
+Saved JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_compatibility_validation.json
+Saved CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_compatibility_validation.csv

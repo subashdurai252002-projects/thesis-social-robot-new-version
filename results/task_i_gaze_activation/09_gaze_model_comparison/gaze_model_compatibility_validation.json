@@ -1,0 +1,178 @@
+{
+  "device": "cpu",
+  "pytorch_version": "2.15.0+cpu",
+  "torchvision_version": "0.29.2+cpu",
+  "models_tested": 6,
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "MobileOne-S0",
+      "architecture": "mobileone_s0",
+      "checkpoint": "mobileone_s0.pt",
+      "source": "community",
+      "input_size": 448,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 4980469,
+      "checkpoint_sha256": "f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95",
+      "rss_before_mib": 338.5078125,
+      "load_seconds": 0.20770954999989044,
+      "parameter_count": 1238004,
+      "rss_after_load_mib": 349.0234375,
+      "rss_increase_mib": 10.515625,
+      "first_inference_ms": 613.7335180001173,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 386.91796875
+    },
+    {
+      "name": "MobileNetV2",
+      "architecture": "mobilenetv2",
+      "checkpoint": "mobilenetv2.pt",
+      "source": "community",
+      "input_size": 448,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobilenetv2.pt",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 10051023,
+      "checkpoint_sha256": "54a5e2d4ca1472f568dd62d7f038a1a6ce57ce1045d314a146934a5eaccf9198",
+      "rss_before_mib": 384.6171875,
+      "load_seconds": 0.05639068900018174,
+      "parameter_count": 2454452,
+      "rss_after_load_mib": 385.65625,
+      "rss_increase_mib": 1.0390625,
+      "first_inference_ms": 70.04626000070857,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 411.5546875
+    },
+    {
+      "name": "ResNet18",
+      "architecture": "resnet18",
+      "checkpoint": "resnet18.pt",
+      "source": "community",
+      "input_size": 448,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet18.pt",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 45151049,
+      "checkpoint_sha256": "a7038e0a2927c59a16bbe9031cadf6f19dabfa4c7bbd82e88262515ece75ede2",
+      "rss_before_mib": 411.5546875,
+      "load_seconds": 0.11611681900012627,
+      "parameter_count": 11268852,
+      "rss_after_load_mib": 454.86328125,
+      "rss_increase_mib": 43.30859375,
+      "first_inference_ms": 237.65413999990415,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 467.1484375
+    },
+    {
+      "name": "ResNet34",
+      "architecture": "resnet34",
+      "checkpoint": "resnet34.pt",
+      "source": "community",
+      "input_size": 448,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet34.pt",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 85641961,
+      "checkpoint_sha256": "c917b6b801e375b4b612b8fb6ea63a65a481b0a697d49c5028fa5e34da509ba0",
+      "rss_before_mib": 419.9765625,
+      "load_seconds": 0.22400536700024531,
+      "parameter_count": 21377012,
+      "rss_after_load_mib": 527.85546875,
+      "rss_increase_mib": 107.87890625,
+      "first_inference_ms": 144.78312699975504,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 530.27734375
+    },
+    {
+      "name": "Community ResNet50",
+      "architecture": "resnet50",
+      "checkpoint": "resnet50.pt",
+      "source": "community",
+      "input_size": 448,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/resnet50.pt",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 95816195,
+      "checkpoint_sha256": "75efe4d8145542b8f070449facd48d8c16aeed58b79ee80f3dbb95207bdae346",
+      "rss_before_mib": 383.9765625,
+      "load_seconds": 0.24930762599979062,
+      "parameter_count": 23876852,
+      "rss_after_load_mib": 545.76953125,
+      "rss_increase_mib": 161.79296875,
+      "first_inference_ms": 190.10245199933706,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 570.27734375
+    },
+    {
+      "name": "Athul Official L2CS ResNet50",
+      "architecture": "ResNet50",
+      "checkpoint": "athul_l2cs_resnet50_gaze360.pkl",
+      "source": "official",
+      "input_size": 224,
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/athul_l2cs_resnet50_gaze360.pkl",
+      "checkpoint_exists": true,
+      "status": "PASSED",
+      "error": null,
+      "checkpoint_bytes": 95849977,
+      "checkpoint_sha256": "8a7f3480d868dd48261e1d59f915b0ef0bb33ea12ea00938fb2168f212080665",
+      "rss_before_mib": 570.27734375,
+      "load_seconds": 0.22251731200049107,
+      "parameter_count": 23883008,
+      "rss_after_load_mib": 570.27734375,
+      "rss_increase_mib": 0.0,
+      "first_inference_ms": 79.19272900016949,
+      "first_output_shape": [
+        1,
+        90
+      ],
+      "second_output_shape": [
+        1,
+        90
+      ],
+      "rss_after_release_mib": 570.65625
+    }
+  ]
+}

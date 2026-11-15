@@ -1,0 +1,138 @@
+{
+  "purpose": "Compare Athul custom 224 input against official packaged 224-to-448 preprocessing.",
+  "limitations": [
+    "This is a categorical directional comparison, not an angular-accuracy measurement.",
+    "Both configurations use YuNet crops rather than Athul's original RetinaFace crops."
+  ],
+  "configurations": [
+    {
+      "configuration": "Athul custom 224x224",
+      "mean_inference_ms": 51.07222086136065,
+      "model_only_fps": 19.580115826851834,
+      "observed_rss_increase_mib": 228.4609375,
+      "left_right_separation_degrees": 16.817389424641927,
+      "horizontal_opposite_sides": true,
+      "above_below_separation_degrees": 2.003656005859375,
+      "vertical_opposite_sides": false
+    },
+    {
+      "configuration": "Official pipeline 224-to-448",
+      "mean_inference_ms": 214.8756995132137,
+      "model_only_fps": 4.653853377861862,
+      "observed_rss_increase_mib": 249.7578125,
+      "left_right_separation_degrees": 21.44501241048177,
+      "horizontal_opposite_sides": true,
+      "above_below_separation_degrees": 14.627054850260416,
+      "vertical_opposite_sides": true
+    }
+  ],
+  "athul_224_performance_source": "results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_summary.json",
+  "athul_224_steady_summary": {
+    "action_summaries": {
+      "Look at camera centre": {
+        "frames": 30,
+        "mean_yaw_degrees": -8.951180013020833,
+        "yaw_standard_deviation_degrees": 3.4521289390153895,
+        "mean_pitch_degrees": 4.825244649251302,
+        "pitch_standard_deviation_degrees": 3.6044807686825164
+      },
+      "Look left of camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -18.760195922851562,
+        "yaw_standard_deviation_degrees": 4.097924108326577,
+        "mean_pitch_degrees": 2.722826131184896,
+        "pitch_standard_deviation_degrees": 2.1968663891833264
+      },
+      "Look right of camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -1.9428064982096354,
+        "yaw_standard_deviation_degrees": 4.833486833375787,
+        "mean_pitch_degrees": 6.3454747517903645,
+        "pitch_standard_deviation_degrees": 4.61987619640731
+      },
+      "Look above camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -12.41286112467448,
+        "yaw_standard_deviation_degrees": 5.151849154542588,
+        "mean_pitch_degrees": -1.6754491170247396,
+        "pitch_standard_deviation_degrees": 8.638331866651415
+      },
+      "Look below camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -7.35915273030599,
+        "yaw_standard_deviation_degrees": 4.475459512551606,
+        "mean_pitch_degrees": 0.3282068888346354,
+        "pitch_standard_deviation_degrees": 3.21980639282345
+      }
+    },
+    "left_yaw_delta_from_centre": -9.809015909830729,
+    "right_yaw_delta_from_centre": 7.008373514811198,
+    "left_right_separation_degrees": 16.817389424641927,
+    "horizontal_opposite_sides": true,
+    "above_pitch_delta_from_centre": -6.500693766276042,
+    "below_pitch_delta_from_centre": -4.497037760416667,
+    "above_below_separation_degrees": 2.003656005859375,
+    "vertical_opposite_sides": false
+  },
+  "official_448_steady_summary": {
+    "model_name": "Official-pipeline L2CS ResNet50 448 diagnostic",
+    "purpose": "Test the official packaged 224-to-448 preprocessing using the Athul/official checkpoint.",
+    "checkpoint": "gaze_pipeline/models/gaze_comparison/athul_l2cs_resnet50_gaze360.pkl",
+    "input_preprocessing": "YuNet crop \u2192 forced square 224x224 \u2192 aspect-preserving Resize(448), producing 448x448",
+    "valid_face_crops": 339,
+    "model_load_seconds": 0.963701314998616,
+    "mean_preprocessing_ms": 2.8932673864364165,
+    "mean_inference_ms": 214.8756995132137,
+    "median_inference_ms": 216.31177000017487,
+    "p95_inference_ms": 235.14270439882236,
+    "model_only_fps": 4.653853377861862,
+    "initial_rss_mib": 338.16015625,
+    "observed_peak_rss_mib": 587.91796875,
+    "observed_rss_increase_mib": 249.7578125,
+    "action_summaries": {
+      "Look at camera centre": {
+        "frames": 30,
+        "mean_yaw_degrees": -4.596042887369792,
+        "yaw_standard_deviation_degrees": 2.679951044668835,
+        "mean_pitch_degrees": 7.359678649902344,
+        "pitch_standard_deviation_degrees": 2.990620573170941
+      },
+      "Look left of camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -18.257681783040365,
+        "yaw_standard_deviation_degrees": 6.160803985410076,
+        "mean_pitch_degrees": 7.003288269042969,
+        "pitch_standard_deviation_degrees": 1.6140625073479218
+      },
+      "Look right of camera": {
+        "frames": 30,
+        "mean_yaw_degrees": 3.187330627441406,
+        "yaw_standard_deviation_degrees": 3.192147084390631,
+        "mean_pitch_degrees": 8.664606730143229,
+        "pitch_standard_deviation_degrees": 1.4846517426731565
+      },
+      "Look above camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -8.79448750813802,
+        "yaw_standard_deviation_degrees": 3.2365400487289353,
+        "mean_pitch_degrees": 15.555701192220052,
+        "pitch_standard_deviation_degrees": 1.9125449877333554
+      },
+      "Look below camera": {
+        "frames": 30,
+        "mean_yaw_degrees": -2.263934326171875,
+        "yaw_standard_deviation_degrees": 4.554340795575923,
+        "mean_pitch_degrees": 0.9286463419596355,
+        "pitch_standard_deviation_degrees": 1.3687774537209219
+      }
+    },
+    "left_yaw_delta_from_centre": -13.661638895670574,
+    "right_yaw_delta_from_centre": 7.783373514811197,
+    "left_right_separation_degrees": 21.44501241048177,
+    "horizontal_opposite_sides": true,
+    "above_pitch_delta_from_centre": 8.196022542317708,
+    "below_pitch_delta_from_centre": -6.431032307942709,
+    "above_below_separation_degrees": 14.627054850260416,
+    "vertical_opposite_sides": true
+  }
+}

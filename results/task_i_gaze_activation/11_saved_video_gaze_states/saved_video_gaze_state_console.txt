@@ -1,0 +1,68 @@
+Saved-video per-person gaze-state validation
+Tracking CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_tracking_frames.csv
+Frames: /home/subash/thesis social robot new version/results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_frames
+Face confidence threshold: 0.89
+Sample interval: 6
+Track-state release frames: 120
+
+Loading YuNet...
+[ WARN:0@35.756] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+Loading portable MobileOne...
+Warming up gaze model with 2 runs...
+Sampled frames: 50 | person instances: 13
+Sampled frames: 100 | person instances: 49
+Sampled frames: 150 | person instances: 155
+Sampled frames: 200 | person instances: 261
+Sampled frames: 250 | person instances: 368
+Sampled frames: 300 | person instances: 447
+Sampled frames: 350 | person instances: 497
+
+Saved-video per-person gaze validation completed.
+Overall status: PASSED
+Sampled frames: 395
+Person instances: 501
+Unique IDs: [1, 2, 3, 6, 7, 10, 13, 14, 16, 22, 27, 33]
+Selected faces: 368
+Gaze predictions: 368
+Gaze inference failures: 0
+Gaze without face: 0
+Non-finite predictions: 0
+
+Per-person summary
+ID | Instances | Face | Gaze | Fail | Missing | Mean gaze ms
+ 1 |        13 |   12 |   12 |    0 |       1 |        40.33
+ 2 |       290 |  238 |  238 |    0 |      52 |        32.81
+ 3 |        95 |   93 |   93 |    0 |       2 |        31.24
+ 6 |         4 |    0 |    0 |    0 |       4 |          N/A
+ 7 |         9 |    0 |    0 |    0 |       9 |          N/A
+10 |         5 |    0 |    0 |    0 |       5 |          N/A
+13 |         1 |    0 |    0 |    0 |       1 |          N/A
+14 |         2 |    0 |    0 |    0 |       2 |          N/A
+16 |         3 |    1 |    1 |    0 |       2 |        26.04
+22 |        43 |   13 |   13 |    0 |      30 |        35.57
+27 |        25 |    0 |    0 |    0 |      25 |          N/A
+33 |        11 |   11 |   11 |    0 |       0 |        30.03
+
+Per-action summary
+Action | Instances | Face | Gaze | Fail | Missing
+Empty camera view | 13 | 12 | 12 | 0 | 1
+Real face only | 33 | 32 | 32 | 0 | 1
+Phone face near chest | 101 | 81 | 81 | 0 | 20
+Phone face beside real face | 105 | 101 | 101 | 0 | 4
+Move phone face around | 106 | 66 | 66 | 0 | 40
+Cover real face; phone face visible | 83 | 26 | 26 | 0 | 57
+Remove phone; move left and right | 52 | 43 | 43 | 0 | 9
+Completely leave camera view | 8 | 7 | 7 | 0 | 1
+
+Validation checks
+  at_least_one_gaze_prediction: PASSED
+  one_gaze_per_selected_face: PASSED
+  no_gaze_inference_failures: PASSED
+  no_gaze_without_selected_face: PASSED
+  all_predictions_finite: PASSED
+  multiple_track_ids_processed: PASSED
+  independent_face_lock_objects: PASSED
+
+Frame CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/11_saved_video_gaze_states/saved_video_gaze_state_frames.csv
+Summary JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/11_saved_video_gaze_states/saved_video_gaze_state_summary.json
+Preview image: /home/subash/thesis social robot new version/results/task_i_gaze_activation/11_saved_video_gaze_states/saved_video_gaze_state_preview.jpg

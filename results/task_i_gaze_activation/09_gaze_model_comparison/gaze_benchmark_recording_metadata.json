@@ -1,0 +1,68 @@
+{
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_timeline.csv",
+  "sha256": "a471a3d381a5e7ba546faa3024c3fc3b3c26b312aa6d0e1b7fba64d5bab7d2c1",
+  "requested_width": 640,
+  "requested_height": 480,
+  "actual_width": 640,
+  "actual_height": 480,
+  "requested_fps": 30,
+  "camera_reported_fps": 30.0,
+  "measured_capture_fps": 29.863976710028975,
+  "recording_duration_seconds": 80.16346996399989,
+  "planned_duration_seconds": 80.0,
+  "recorded_frames": 2394,
+  "failed_camera_frames": 0,
+  "stopped_early": false,
+  "action_plan": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "name": "Empty camera view",
+      "instruction": "Remain outside the camera view"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "name": "Look at camera centre",
+      "instruction": "Sit normally and look directly at the lens"
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "name": "Look left of camera",
+      "instruction": "Look at the LEFT marker beside the camera"
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "name": "Look right of camera",
+      "instruction": "Look at the RIGHT marker beside the camera"
+    },
+    {
+      "start": 40.0,
+      "end": 50.0,
+      "name": "Look above camera",
+      "instruction": "Look at the marker ABOVE the camera"
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "name": "Look below camera",
+      "instruction": "Look at the marker BELOW the camera"
+    },
+    {
+      "start": 60.0,
+      "end": 70.0,
+      "name": "Centre gaze while moving left and right",
+      "instruction": "Keep looking at lens; move body slowly left/right"
+    },
+    {
+      "start": 70.0,
+      "end": 80.0,
+      "name": "Centre gaze while moving closer and farther",
+      "instruction": "Keep looking at lens; move slowly closer/farther"
+    }
+  ],
+  "note": "Directional sections provide categorical ground truth, not calibrated angular ground truth."
+}

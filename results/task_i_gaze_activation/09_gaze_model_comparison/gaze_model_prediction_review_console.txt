@@ -1,0 +1,48 @@
+Gaze-model prediction review
+Input: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_frames.csv
+Steady stationary interval: relative seconds 2.0 to less than 8.0
+
+Steady-direction results:
+
+MobileOne-S0
+  Left/right separation: 21.43°
+  Horizontal opposite sides: True
+  Above/below separation: 17.46°
+  Vertical opposite sides: True
+
+MobileNetV2
+  Left/right separation: 21.41°
+  Horizontal opposite sides: True
+  Above/below separation: 16.09°
+  Vertical opposite sides: True
+
+ResNet18
+  Left/right separation: 17.02°
+  Horizontal opposite sides: True
+  Above/below separation: 14.47°
+  Vertical opposite sides: True
+
+ResNet34
+  Left/right separation: 19.75°
+  Horizontal opposite sides: True
+  Above/below separation: 16.68°
+  Vertical opposite sides: True
+
+Community ResNet50
+  Left/right separation: 22.11°
+  Horizontal opposite sides: True
+  Above/below separation: 11.60°
+  Vertical opposite sides: True
+
+Athul-reference L2CS ResNet50
+  Left/right separation: 16.82°
+  Horizontal opposite sides: True
+  Above/below separation: 2.00°
+  Vertical opposite sides: False
+
+Summary CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_steady_direction_analysis.csv
+Summary JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_steady_direction_analysis.json
+Annotated frames: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_frames_annotated.csv
+Visual review: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_prediction_review.jpg
+Comparison plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_steady_direction_comparison.png
+Time-series plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_prediction_time_series.png

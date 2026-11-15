@@ -57,3 +57,14 @@ results/task_i_gaze_activation/04_sam2_experiments/sam2_tracking_benchmarks/
 # Large/private face-robustness recording and extracted frames
 results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_input.avi
 results/task_i_gaze_activation/06_face_phone_robustness/face_robustness_frames/
+
+# Gaze-model comparison checkpoints stored locally
+gaze_pipeline/models/**/*.pt
+gaze_pipeline/models/**/*.pkl
+gaze_pipeline/models/**/*.onnx
+gaze_pipeline/models/**/*.tflite
+
+# Large/private gaze-estimation recordings and extracted crops
+results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi
+results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crops/
+results/task_i_gaze_activation/12_live_multi_person_gaze/*/live_multi_track_gaze_annotated.avi
