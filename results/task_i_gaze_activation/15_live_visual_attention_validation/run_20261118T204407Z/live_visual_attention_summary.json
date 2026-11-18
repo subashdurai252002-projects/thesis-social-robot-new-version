@@ -1,0 +1,144 @@
+{
+  "status": "PASSED",
+  "mode": "full",
+  "run_directory": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/15_live_visual_attention_validation/run_20261118T204407Z",
+  "device": "cpu",
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "reported_fps": 30.0
+  },
+  "schedule_duration_seconds": 90.0,
+  "actual_elapsed_seconds": 90.0,
+  "processed_frames": 1080,
+  "complete_pipeline_fps": 12.0,
+  "failed_camera_frames": 0,
+  "vision_errors": 0,
+  "candidate_events": 5,
+  "stopped_early": false,
+  "face_confidence_threshold": 0.89,
+  "annotated_video_fps": 10.0,
+  "checks": {
+    "completed_duration": true,
+    "zero_failed_camera_frames": true,
+    "zero_vision_errors": true,
+    "all_attention_actions_triggered": true,
+    "all_negative_actions_rejected": true,
+    "all_review_frames_captured": true
+  },
+  "audit": {
+    "csv_rows": 1080,
+    "action_results": [
+      {
+        "action_index": 0,
+        "planned_action": "Empty camera",
+        "expected": "no_person",
+        "core_rows": 143,
+        "core_track_rows": 0,
+        "core_face_rows": 0,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 1,
+        "planned_action": "Look at webcam",
+        "expected": "attention",
+        "core_rows": 57,
+        "core_track_rows": 57,
+        "core_face_rows": 57,
+        "candidate_detected": true,
+        "candidate_events": 1
+      },
+      {
+        "action_index": 2,
+        "planned_action": "Look at screen centre",
+        "expected": "attention",
+        "core_rows": 56,
+        "core_track_rows": 56,
+        "core_face_rows": 56,
+        "candidate_detected": true,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 3,
+        "planned_action": "Look left away",
+        "expected": "away",
+        "core_rows": 56,
+        "core_track_rows": 56,
+        "core_face_rows": 56,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 4,
+        "planned_action": "Look right away",
+        "expected": "away",
+        "core_rows": 58,
+        "core_track_rows": 58,
+        "core_face_rows": 58,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 5,
+        "planned_action": "Look above",
+        "expected": "away",
+        "core_rows": 59,
+        "core_track_rows": 59,
+        "core_face_rows": 59,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 6,
+        "planned_action": "Look down",
+        "expected": "away",
+        "core_rows": 57,
+        "core_track_rows": 57,
+        "core_face_rows": 57,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 7,
+        "planned_action": "Cover or remove face",
+        "expected": "face_missing",
+        "core_rows": 104,
+        "core_track_rows": 104,
+        "core_face_rows": 0,
+        "candidate_detected": false,
+        "candidate_events": 0
+      },
+      {
+        "action_index": 8,
+        "planned_action": "Return to screen attention",
+        "expected": "attention",
+        "core_rows": 56,
+        "core_track_rows": 56,
+        "core_face_rows": 56,
+        "candidate_detected": true,
+        "candidate_events": 0
+      }
+    ],
+    "attention_actions_passed": 3,
+    "attention_actions_total": 3,
+    "negative_actions_passed": 6,
+    "negative_actions_total": 6,
+    "all_attention_actions_triggered": true,
+    "all_negative_actions_rejected": true
+  },
+  "files": {
+    "annotated_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/15_live_visual_attention_validation/run_20261118T204407Z/live_visual_attention_annotated.avi",
+    "frame_csv": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/15_live_visual_attention_validation/run_20261118T204407Z/live_visual_attention_frames.csv",
+    "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/15_live_visual_attention_validation/run_20261118T204407Z/live_visual_attention_review.jpg"
+  },
+  "hashes": {
+    "annotated_video_sha256": "d67e048ab40e41e489fdd58854f11a63a8b09d46cafc5c77fb78e8884a8ca5a7",
+    "frame_csv_sha256": "911fc9a278c80fc4013efd150cb058efa4cfedabc35f201f772bee95769822fc"
+  },
+  "limitations": [
+    "Supporting visual evidence is not liveness.",
+    "This single-person laptop validation is not multi-user proof.",
+    "The annotated video uses a fixed review playback FPS."
+  ]
+}

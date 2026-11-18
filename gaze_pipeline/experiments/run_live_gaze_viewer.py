@@ -50,6 +50,7 @@ from gaze_pipeline.runtime.sustained_attention import (  # noqa: E402
 )
 from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     VisualAttentionEvidenceEstimator,
+    head_pitch_supports_screen_attention,
     screen_region_supports_attention,
 )
 from person_tracker import (  # noqa: E402
@@ -476,9 +477,17 @@ def main(
                             landmark_prediction.raw_head_yaw_degrees,
                         )
                     )
+                    head_pitch_positive = (
+                        head_pitch_supports_screen_attention(
+                            landmark_prediction.raw_head_pitch_degrees
+                        )
+                    )
                     combined_visual_positive = bool(
-                        visual_evidence.evidence_positive
-                        or screen_band_positive
+                        (
+                            visual_evidence.evidence_positive
+                            or screen_band_positive
+                        )
+                        and head_pitch_positive
                     )
 
                     if (

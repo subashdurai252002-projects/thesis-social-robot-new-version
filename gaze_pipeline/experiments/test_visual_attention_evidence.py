@@ -27,8 +27,10 @@ from gaze_pipeline.runtime.sustained_attention import (  # noqa: E402
 from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     FEATURE_MEAN,
     PROFILE_STATUS,
+    SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES,
     SUPPORTING_DISTANCE_THRESHOLD,
     VisualAttentionEvidenceEstimator,
+    head_pitch_supports_screen_attention,
     screen_region_supports_attention,
 )
 
@@ -237,6 +239,29 @@ def test_screen_band_requires_forward_head_and_screen_height() -> None:
     require(
         not screen_region_supports_attention(-0.50, -0.10, 12.0),
         "Turned head passed the screen band.",
+    )
+
+
+def test_head_pitch_rejects_clearly_above_target() -> None:
+    """The measured vertical boundary keeps webcam and rejects above."""
+
+    require(
+        head_pitch_supports_screen_attention(8.848),
+        "Measured near-screen head pitch was rejected.",
+    )
+    require(
+        not head_pitch_supports_screen_attention(0.636),
+        "Measured clearly-above head pitch was accepted.",
+    )
+    require(
+        head_pitch_supports_screen_attention(
+            SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES
+        ),
+        "The inclusive head-pitch boundary was rejected.",
+    )
+    require_raises(
+        ValueError,
+        lambda: head_pitch_supports_screen_attention(float("nan")),
     )
     require(
         not screen_region_supports_attention(-0.10, +0.35, 0.0),
@@ -535,6 +560,10 @@ def main() -> None:
         (
             "screen_band_requires_forward_head_and_screen_height",
             test_screen_band_requires_forward_head_and_screen_height,
+        ),
+        (
+            "head_pitch_rejects_clearly_above_target",
+            test_head_pitch_rejects_clearly_above_target,
         ),
         (
             "unavailable_is_safe_negative",

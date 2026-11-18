@@ -29,6 +29,7 @@ from typing import Mapping
 __all__ = [
     "PROFILE_STATUS",
     "REQUIRED_BLENDSHAPES",
+    "SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES",
     "SCREEN_BAND_HORIZONTAL_MAX",
     "SCREEN_BAND_HORIZONTAL_MIN",
     "SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES",
@@ -36,6 +37,7 @@ __all__ = [
     "SCREEN_BAND_VERTICAL_MIN",
     "VisualAttentionEvidence",
     "VisualAttentionEvidenceEstimator",
+    "head_pitch_supports_screen_attention",
     "screen_region_supports_attention",
 ]
 
@@ -80,6 +82,12 @@ SCREEN_BAND_HORIZONTAL_MAX = 0.65
 SCREEN_BAND_VERTICAL_MIN = -0.23
 SCREEN_BAND_VERTICAL_MAX = 0.02
 SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES = 8.0
+
+# The focused webcam/vertical-boundary validation recorded valid webcam and
+# near-screen head pitch at +8.85 degrees or higher, while a clearly-above
+# target remained at +0.64 degrees or lower. The midpoint gate is specific to
+# the fixed laptop-camera setup and must not be treated as universal.
+SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES = 5.0
 
 # Leave-one-session-out evidence for the selected eye-blendshape family.
 CROSS_VALIDATED_FRAME_BALANCED_ACCURACY = 0.847
@@ -133,6 +141,21 @@ def screen_region_supports_attention(
         <= SCREEN_BAND_VERTICAL_MAX
         and abs(head_yaw)
         <= SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES
+    )
+
+
+def head_pitch_supports_screen_attention(
+    raw_head_pitch_degrees: object,
+) -> bool:
+    """Reject a head pose clearly above the measured laptop screen area."""
+
+    head_pitch = float(raw_head_pitch_degrees)
+
+    if not math.isfinite(head_pitch):
+        raise ValueError("Head pitch must be finite.")
+
+    return bool(
+        head_pitch >= SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES
     )
 
 

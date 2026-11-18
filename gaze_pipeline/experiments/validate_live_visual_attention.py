@@ -10,6 +10,7 @@ start conversation or control a robot.
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -53,6 +54,8 @@ from gaze_pipeline.runtime.sustained_attention import (  # noqa: E402
 )
 from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     VisualAttentionEvidenceEstimator,
+    head_pitch_supports_screen_attention,
+    screen_region_supports_attention,
 )
 from person_tracker import (  # noqa: E402
     DETECTION_CONFIDENCE,
@@ -77,8 +80,8 @@ OUTPUT_ROOT = (
     / "task_i_gaze_activation"
     / "15_live_visual_attention_validation"
 )
-PREVIEW_SECONDS = 5.0
 ACTION_SECONDS = 10.0
+COUNTDOWN_SECONDS = 3.0
 CORE_START_SECONDS = 2.0
 CORE_END_SECONDS = 8.0
 ANNOTATED_VIDEO_FPS = 10.0
@@ -141,6 +144,24 @@ ACTIONS = (
     ),
 )
 
+VERTICAL_BOUNDARY_ACTIONS = (
+    ValidationAction(
+        "Look at webcam",
+        "Look directly at the webcam lens",
+        "attention",
+    ),
+    ValidationAction(
+        "Look slightly above webcam",
+        "Look at a fixed point about 5 cm above the webcam",
+        "diagnostic",
+    ),
+    ValidationAction(
+        "Look clearly above laptop",
+        "Look at the ceiling or a fixed point at least 30 cm above the laptop",
+        "away",
+    ),
+)
+
 TOTAL_DURATION_SECONDS = len(ACTIONS) * ACTION_SECONDS
 
 CSV_FIELDS = (
@@ -165,6 +186,9 @@ CSV_FIELDS = (
     "eye_vertical_down_minus_up",
     "evidence_available",
     "evidence_positive",
+    "screen_band_positive",
+    "head_pitch_positive",
+    "combined_visual_positive",
     "squared_distance",
     "distance_threshold",
     "threshold_margin",
@@ -189,6 +213,18 @@ def action_for_elapsed(
     )
     relative = elapsed_seconds - index * ACTION_SECONDS
     return index, ACTIONS[index], relative
+
+
+def parse_arguments() -> argparse.Namespace:
+    """Parse optional focused validation mode."""
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--vertical-boundary",
+        action="store_true",
+        help="Run only webcam, slightly-above and clearly-above conditions.",
+    )
+    return parser.parse_args()
 
 
 def sha256_file(path: Path) -> str:
@@ -243,22 +279,94 @@ def create_review_sheet(
 
 
 def print_plan() -> None:
-    """Print the fixed recording schedule."""
+    """Print the operator-controlled recording schedule."""
 
     print("\nControlled live visual-attention validation plan:")
 
     for index, action in enumerate(ACTIONS):
-        start = int(index * ACTION_SECONDS)
-        end = int((index + 1) * ACTION_SECONDS)
-        print(f"  {start:2d}-{end:3d} s: {action.name}")
+        print(f"  {index + 1}/{len(ACTIONS)}: {action.name}")
         print(f"              {action.instruction}")
         print(f"              Expected: {action.expected}")
 
     print("\nImportant:")
-    print("  1. Change target during the first two seconds.")
-    print("  2. Hold the named target during seconds 2 through 8.")
-    print("  3. Keep camera position and lighting unchanged.")
+    print("  1. Every section waits for Space.")
+    print("  2. Arrange the condition, then press Space.")
+    print("  3. Hold it while RECORDING is displayed.")
     print("  4. Press q or Esc only if the recording is wrong.")
+
+
+def wait_for_section_start(
+    camera: cv2.VideoCapture,
+    action_index: int,
+    action: ValidationAction,
+) -> bool:
+    """Show an unambiguous pause and countdown before one section."""
+
+    print()
+    print(f"NEXT SECTION {action_index + 1}/{len(ACTIONS)}: {action.name}")
+    print("DO THIS:", action.instruction)
+    print("Press Space in the camera window when ready.")
+
+    while True:
+        success, frame = camera.read()
+
+        if not success:
+            continue
+
+        cv2.rectangle(frame, (0, 0), (frame.shape[1], 120), (0, 0, 0), -1)
+        draw_label(
+            frame,
+            f"NEXT {action_index + 1}/{len(ACTIONS)}: {action.name}",
+            (10, 30),
+            (0, 255, 255),
+            0.60,
+        )
+        draw_label(frame, action.instruction, (10, 65), (255, 255, 255), 0.48)
+        draw_label(
+            frame,
+            "PAUSED - PRESS SPACE WHEN READY",
+            (10, 103),
+            (0, 255, 255),
+            0.55,
+        )
+        cv2.imshow(WINDOW_NAME, frame)
+        key = cv2.waitKey(1) & 0xFF
+
+        if key == ord(" "):
+            break
+
+        if key in (ord("q"), 27):
+            return False
+
+    countdown_started = time.perf_counter()
+
+    while True:
+        elapsed = time.perf_counter() - countdown_started
+
+        if elapsed >= COUNTDOWN_SECONDS:
+            break
+
+        success, frame = camera.read()
+
+        if not success:
+            continue
+
+        cv2.rectangle(frame, (0, 0), (frame.shape[1], 90), (0, 0, 0), -1)
+        draw_label(frame, action.name, (10, 30), (0, 255, 255), 0.60)
+        draw_label(
+            frame,
+            f"STARTING IN {COUNTDOWN_SECONDS - elapsed:.1f}",
+            (10, 70),
+            (0, 255, 0),
+            0.72,
+        )
+        cv2.imshow(WINDOW_NAME, frame)
+
+        if cv2.waitKey(1) & 0xFF in (ord("q"), 27):
+            return False
+
+    print(f"RECORDING {action_index + 1}/{len(ACTIONS)}: {action.name}")
+    return True
 
 
 def empty_row(
@@ -297,6 +405,9 @@ def empty_row(
         "eye_vertical_down_minus_up": "",
         "evidence_available": False,
         "evidence_positive": False,
+        "screen_band_positive": False,
+        "head_pitch_positive": False,
+        "combined_visual_positive": False,
         "squared_distance": "",
         "distance_threshold": "",
         "threshold_margin": "",
@@ -368,7 +479,7 @@ def audit_csv(path: Path) -> dict[str, object]:
     negative = [
         result
         for result in action_results
-        if result["expected"] != "attention"
+        if result["expected"] in {"away", "no_person", "face_missing"}
     ]
     attention_passed = sum(
         bool(result["candidate_detected"])
@@ -398,6 +509,14 @@ def audit_csv(path: Path) -> dict[str, object]:
 def main() -> None:
     """Run and save the controlled validation."""
 
+    global ACTIONS, TOTAL_DURATION_SECONDS
+
+    arguments = parse_arguments()
+
+    if arguments.vertical_boundary:
+        ACTIONS = VERTICAL_BOUNDARY_ACTIONS
+        TOTAL_DURATION_SECONDS = len(ACTIONS) * ACTION_SECONDS
+
     run_stamp = datetime.now(timezone.utc).strftime(
         "run_%Y%m%dT%H%M%SZ"
     )
@@ -421,6 +540,10 @@ def main() -> None:
             raise FileNotFoundError(required_path)
 
     print("Saved live visual-attention validation")
+    print(
+        "Mode:",
+        "vertical boundary" if arguments.vertical_boundary else "full",
+    )
     print("Run directory:", run_directory)
     print("Supporting evidence only; no interaction will start.")
     print("Device:", device)
@@ -491,45 +614,14 @@ def main() -> None:
     stopped_early = False
     vision_errors = 0
     candidate_events = 0
+    current_action_index = 0
 
-    print(f"\nOpening {PREVIEW_SECONDS:.0f}-second preparation preview...")
-    preview_started = time.perf_counter()
-
-    while time.perf_counter() - preview_started < PREVIEW_SECONDS:
-        success, preview = camera.read()
-
-        if not success:
-            continue
-
-        remaining = max(
-            0.0,
-            PREVIEW_SECONDS - (time.perf_counter() - preview_started),
-        )
-        draw_label(
-            preview,
-            f"PREVIEW - recording starts in {remaining:.1f} s",
-            (10, 28),
-            (0, 255, 255),
-            0.60,
-        )
-        draw_label(
-            preview,
-            "Move outside view when recording begins",
-            (10, 55),
-            (255, 255, 255),
-            0.52,
-        )
-        cv2.imshow(WINDOW_NAME, preview)
-        key = cv2.waitKey(1) & 0xFF
-
-        if key in (ord("q"), 27):
-            stopped_early = True
-            break
+    if not wait_for_section_start(camera, 0, ACTIONS[0]):
+        stopped_early = True
 
     recording_started = time.perf_counter()
     previous_loop_time = recording_started
     smoothed_fps = 0.0
-    print("Recording started.")
 
     try:
         while not stopped_early:
@@ -547,6 +639,28 @@ def main() -> None:
 
             observation_time = time.monotonic()
             action_index, action, relative = action_for_elapsed(elapsed)
+
+            if action_index > current_action_index:
+                print(
+                    f"COMPLETED {current_action_index + 1}/{len(ACTIONS)}: "
+                    f"{ACTIONS[current_action_index].name}"
+                )
+                attention_tracker.clear()
+                face_locks.clear()
+                last_seen_frame_by_id.clear()
+
+                if not wait_for_section_start(camera, action_index, action):
+                    stopped_early = True
+                    break
+
+                current_action_index = action_index
+                recording_started = (
+                    time.perf_counter() - action_index * ACTION_SECONDS
+                )
+                previous_loop_time = time.perf_counter()
+                elapsed = time.perf_counter() - recording_started
+                action_index, action, relative = action_for_elapsed(elapsed)
+
             result = yolo_model.track(
                 source=frame,
                 persist=True,
@@ -670,6 +784,25 @@ def main() -> None:
                     evidence = visual_estimator.estimate(
                         landmarks.blendshape_scores
                     )
+                    screen_band_positive = (
+                        screen_region_supports_attention(
+                            evidence.horizontal_right_minus_left,
+                            evidence.vertical_down_minus_up,
+                            landmarks.raw_head_yaw_degrees,
+                        )
+                    )
+                    head_pitch_positive = (
+                        head_pitch_supports_screen_attention(
+                            landmarks.raw_head_pitch_degrees
+                        )
+                    )
+                    combined_visual_positive = bool(
+                        (
+                            evidence.evidence_positive
+                            or screen_band_positive
+                        )
+                        and head_pitch_positive
+                    )
                 except Exception as error:
                     vision_errors += 1
                     update = attention_tracker.observe(
@@ -693,7 +826,7 @@ def main() -> None:
                     track_id,
                     observation_time,
                     evidence.available,
-                    evidence.evidence_positive,
+                    combined_visual_positive,
                 )
                 row.update(
                     {
@@ -713,6 +846,11 @@ def main() -> None:
                         ),
                         "evidence_available": evidence.available,
                         "evidence_positive": evidence.evidence_positive,
+                        "screen_band_positive": screen_band_positive,
+                        "head_pitch_positive": head_pitch_positive,
+                        "combined_visual_positive": (
+                            combined_visual_positive
+                        ),
                         "squared_distance": evidence.squared_distance,
                         "distance_threshold": evidence.distance_threshold,
                         "threshold_margin": evidence.threshold_margin,
@@ -740,7 +878,7 @@ def main() -> None:
                     text = f"ID {track_id}: ATTENTION CANDIDATE"
                     colour = (0, 255, 0)
                     frame_candidate_count += 1
-                elif evidence.evidence_positive:
+                elif combined_visual_positive:
                     text = (
                         f"ID {track_id}: ATTENTION "
                         f"{update.consecutive_positive_checks}/"
@@ -834,6 +972,12 @@ def main() -> None:
             if processed_frames % 50 == 0:
                 csv_file.flush()
 
+        if not stopped_early:
+            print(
+                f"COMPLETED {len(ACTIONS)}/{len(ACTIONS)}: "
+                f"{ACTIONS[-1].name}"
+            )
+
     finally:
         csv_file.flush()
         csv_file.close()
@@ -842,7 +986,10 @@ def main() -> None:
         landmark_estimator.close()
         cv2.destroyAllWindows()
 
-    elapsed_total = time.perf_counter() - recording_started
+    elapsed_total = min(
+        TOTAL_DURATION_SECONDS,
+        time.perf_counter() - recording_started,
+    )
     ordered_review_images = [
         review_images[index]
         for index in range(len(ACTIONS))
@@ -874,6 +1021,9 @@ def main() -> None:
     passed = all(bool(value) for value in checks.values())
     summary = {
         "status": "PASSED" if passed else "REVIEW_REQUIRED",
+        "mode": (
+            "vertical_boundary" if arguments.vertical_boundary else "full"
+        ),
         "run_directory": str(run_directory),
         "device": device,
         "camera": {
