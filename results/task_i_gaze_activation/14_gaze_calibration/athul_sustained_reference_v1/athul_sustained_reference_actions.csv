@@ -1,0 +1,37 @@
+dataset,method,planned_action,condition,expected_state,scheduled_checks,available_checks,availability_rate,positive_checks,positive_rate_among_available,three_check_windows,positive_three_check_windows,action_would_trigger,first_trigger_relative_seconds
+independent_directional,fixed_camera_reference,Centre gaze while moving closer and farther,directional,attention_movement,12,4,0.3333333333333333,4,1.0,10,0,False,
+independent_directional,fixed_camera_reference,Centre gaze while moving left and right,directional,attention_movement,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,fixed_camera_reference,Empty camera view,directional,no_person,12,0,0.0,0,,10,0,False,
+independent_directional,fixed_camera_reference,Look above camera,directional,away,12,12,1.0,11,0.9166666666666666,10,8,True,4.0
+independent_directional,fixed_camera_reference,Look at camera centre,directional,attention,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,fixed_camera_reference,Look below camera,directional,away,12,12,1.0,8,0.6666666666666666,10,4,True,6.0
+independent_directional,fixed_camera_reference,Look left of camera,directional,away,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,fixed_camera_reference,Look right of camera,directional,away,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,position_aware_diagnostic,Centre gaze while moving closer and farther,directional,attention_movement,12,4,0.3333333333333333,4,1.0,10,0,False,
+independent_directional,position_aware_diagnostic,Centre gaze while moving left and right,directional,attention_movement,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,position_aware_diagnostic,Empty camera view,directional,no_person,12,0,0.0,0,,10,0,False,
+independent_directional,position_aware_diagnostic,Look above camera,directional,away,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,position_aware_diagnostic,Look at camera centre,directional,attention,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,position_aware_diagnostic,Look below camera,directional,away,12,12,1.0,10,0.8333333333333334,10,8,True,4.0
+independent_directional,position_aware_diagnostic,Look left of camera,directional,away,12,12,1.0,12,1.0,10,10,True,3.0
+independent_directional,position_aware_diagnostic,Look right of camera,directional,away,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Baseline centre,baseline,attention,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Body left,horizontal_left,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Body right,horizontal_right,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Brighter face lighting,lighting_brighter,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Darker face lighting,lighting_darker,attention_robustness,12,10,0.8333333333333334,10,1.0,10,8,True,4.0
+robustness_descriptive,fixed_camera_reference,Empty camera view,empty,no_person,12,0,0.0,0,,10,0,False,
+robustness_descriptive,fixed_camera_reference,Face higher,height_high,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Face lower,height_low,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,fixed_camera_reference,Far from camera,distance_far,attention_robustness,12,2,0.16666666666666666,2,1.0,10,0,False,
+robustness_descriptive,fixed_camera_reference,Near camera,distance_near,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Baseline centre,baseline,attention,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Body left,horizontal_left,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Body right,horizontal_right,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Brighter face lighting,lighting_brighter,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Darker face lighting,lighting_darker,attention_robustness,12,10,0.8333333333333334,10,1.0,10,8,True,4.0
+robustness_descriptive,position_aware_diagnostic,Empty camera view,empty,no_person,12,0,0.0,0,,10,0,False,
+robustness_descriptive,position_aware_diagnostic,Face higher,height_high,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Face lower,height_low,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0
+robustness_descriptive,position_aware_diagnostic,Far from camera,distance_far,attention_robustness,12,2,0.16666666666666666,2,1.0,10,0,False,
+robustness_descriptive,position_aware_diagnostic,Near camera,distance_near,attention_robustness,12,12,1.0,12,1.0,10,10,True,3.0

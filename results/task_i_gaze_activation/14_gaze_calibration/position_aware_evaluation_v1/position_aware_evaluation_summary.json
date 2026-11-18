@@ -1,0 +1,239 @@
+{
+  "status": "OFFLINE_DIAGNOSTIC_NO_RUNTIME_PROFILE_CREATED",
+  "input_samples_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_samples.csv",
+  "input_summary_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_summary.json",
+  "minimum_core_availability": 0.7,
+  "ridge_alpha": 1.0,
+  "features": [
+    "face_centre_x_normalized",
+    "face_centre_y_normalized",
+    "face_area_fraction",
+    "face_brightness_mean",
+    "face_contrast_standard_deviation",
+    "face_sharpness_laplacian_variance"
+  ],
+  "feature_transforms": {
+    "face_area_fraction": "natural logarithm",
+    "face_sharpness_laplacian_variance": "natural logarithm",
+    "standardization": "training-fold mean and standard deviation only"
+  },
+  "eligible_conditions": [
+    "Baseline centre",
+    "Body left",
+    "Body right",
+    "Face higher",
+    "Face lower",
+    "Near camera",
+    "Darker face lighting",
+    "Brighter face lighting"
+  ],
+  "excluded_conditions": {
+    "Empty camera view": "No person should be present.",
+    "Far from camera": "Core gaze availability below 70%: 0.06666666666666667"
+  },
+  "eligible_sample_count": 234,
+  "cross_validation": "leave-one-condition-out",
+  "cross_validated_constant": {
+    "count": 234,
+    "yaw_mae_degrees": 5.381250234750601,
+    "pitch_mae_degrees": 5.470533387273805,
+    "plane_error_mean_degrees": 8.464769755445763,
+    "plane_error_median_degrees": 7.983493419868697,
+    "plane_error_p95_degrees": 18.302333360803495
+  },
+  "cross_validated_position_quality_aware": {
+    "count": 234,
+    "yaw_mae_degrees": 6.1159247758142286,
+    "pitch_mae_degrees": 4.08384094884753,
+    "plane_error_mean_degrees": 7.976621461359992,
+    "plane_error_median_degrees": 7.626441788186206,
+    "plane_error_p95_degrees": 16.31394347236343
+  },
+  "adaptive_minus_constant_mean_plane_error_degrees": -0.48814829408577154,
+  "adaptive_relative_mean_plane_error_change": -0.0576682305826126,
+  "per_condition_folds": {
+    "Baseline centre": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.449212646484375,
+        "pitch_mae_degrees": 4.001278686523437,
+        "plane_error_mean_degrees": 6.6334826204251005,
+        "plane_error_median_degrees": 5.549714581428189,
+        "plane_error_p95_degrees": 11.852221463394217
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 4.917274749584993,
+        "pitch_mae_degrees": 4.125768072994922,
+        "plane_error_mean_degrees": 7.1146762012592095,
+        "plane_error_median_degrees": 6.845967300201187,
+        "plane_error_p95_degrees": 12.336251948794345
+      },
+      "mean_plane_error_change_degrees": 0.481193580834109
+    },
+    "Body left": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 2.9707687377929686,
+        "pitch_mae_degrees": 6.004453531901041,
+        "plane_error_mean_degrees": 7.004000322743865,
+        "plane_error_median_degrees": 7.492669885545675,
+        "plane_error_p95_degrees": 12.738668656770766
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 5.8701004520492805,
+        "pitch_mae_degrees": 4.072679582689627,
+        "plane_error_mean_degrees": 7.787357028489852,
+        "plane_error_median_degrees": 7.829154598912817,
+        "plane_error_p95_degrees": 13.39352701969324
+      },
+      "mean_plane_error_change_degrees": 0.7833567057459874
+    },
+    "Body right": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.357352193196615,
+        "pitch_mae_degrees": 8.666907246907552,
+        "plane_error_mean_degrees": 10.21535195551643,
+        "plane_error_median_degrees": 10.141623941107579,
+        "plane_error_p95_degrees": 17.0774547382505
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 8.127979422550062,
+        "pitch_mae_degrees": 3.6126820968241318,
+        "plane_error_mean_degrees": 9.45260549352215,
+        "plane_error_median_degrees": 8.380095528388182,
+        "plane_error_p95_degrees": 17.799345053867505
+      },
+      "mean_plane_error_change_degrees": -0.762746461994281
+    },
+    "Face higher": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.518586222330729,
+        "pitch_mae_degrees": 3.595672098795573,
+        "plane_error_mean_degrees": 6.542986197480506,
+        "plane_error_median_degrees": 6.058886416618574,
+        "plane_error_p95_degrees": 13.783154214514035
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 7.895168341936611,
+        "pitch_mae_degrees": 4.558298131645392,
+        "plane_error_mean_degrees": 9.607767123315423,
+        "plane_error_median_degrees": 9.49596548071569,
+        "plane_error_p95_degrees": 15.319535675537825
+      },
+      "mean_plane_error_change_degrees": 3.064780925834917
+    },
+    "Face lower": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 5.456363932291667,
+        "pitch_mae_degrees": 5.390384928385417,
+        "plane_error_mean_degrees": 8.387219617768144,
+        "plane_error_median_degrees": 8.205291688109545,
+        "plane_error_p95_degrees": 13.290733553260765
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 5.135599907988374,
+        "pitch_mae_degrees": 4.784647863625727,
+        "plane_error_mean_degrees": 7.781583872890118,
+        "plane_error_median_degrees": 7.724049670594204,
+        "plane_error_p95_degrees": 12.877146868574485
+      },
+      "mean_plane_error_change_degrees": -0.6056357448780263
+    },
+    "Near camera": {
+      "constant": {
+        "count": 29,
+        "yaw_mae_degrees": 8.349842466157058,
+        "pitch_mae_degrees": 3.6197472934065194,
+        "plane_error_mean_degrees": 9.724799136267807,
+        "plane_error_median_degrees": 9.583525041052624,
+        "plane_error_p95_degrees": 19.141907786509275
+      },
+      "position_quality_aware": {
+        "count": 29,
+        "yaw_mae_degrees": 8.514248683332935,
+        "pitch_mae_degrees": 4.410700510180312,
+        "plane_error_mean_degrees": 10.010473210336055,
+        "plane_error_median_degrees": 10.700569241525397,
+        "plane_error_p95_degrees": 17.582215399944634
+      },
+      "mean_plane_error_change_degrees": 0.28567407406824863
+    },
+    "Darker face lighting": {
+      "constant": {
+        "count": 25,
+        "yaw_mae_degrees": 7.91408935546875,
+        "pitch_mae_degrees": 9.740657958984375,
+        "plane_error_mean_degrees": 12.961014941831651,
+        "plane_error_median_degrees": 10.604304281267654,
+        "plane_error_p95_degrees": 26.11466750212135
+      },
+      "position_quality_aware": {
+        "count": 25,
+        "yaw_mae_degrees": 4.575617220296516,
+        "pitch_mae_degrees": 4.192952753426645,
+        "plane_error_mean_degrees": 6.8060127719360715,
+        "plane_error_median_degrees": 5.929992196410078,
+        "plane_error_p95_degrees": 19.159408830170626
+      },
+      "mean_plane_error_change_degrees": -6.15500216989558
+    },
+    "Brighter face lighting": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 5.554879252115885,
+        "pitch_mae_degrees": 3.395159912109375,
+        "plane_error_mean_degrees": 7.040678428624316,
+        "plane_error_median_degrees": 6.536774727502999,
+        "plane_error_p95_degrees": 12.446192472638584
+      },
+      "position_quality_aware": {
+        "count": 30,
+        "yaw_mae_degrees": 3.7146356331060675,
+        "pitch_mae_degrees": 2.9420791988677624,
+        "plane_error_mean_degrees": 5.125189599192937,
+        "plane_error_median_degrees": 5.105618983772722,
+        "plane_error_p95_degrees": 8.92046468126411
+      },
+      "mean_plane_error_change_degrees": -1.9154888294313794
+    }
+  },
+  "recorded_baseline_reference": {
+    "baseline_yaw_degrees": -9.730628967285156,
+    "baseline_pitch_degrees": 9.00604248046875,
+    "evaluated_conditions": [
+      "Body left",
+      "Body right",
+      "Brighter face lighting",
+      "Darker face lighting",
+      "Face higher",
+      "Face lower",
+      "Near camera"
+    ],
+    "metrics": {
+      "count": 204,
+      "yaw_mae_degrees": 5.712871327119715,
+      "pitch_mae_degrees": 5.6453745972876455,
+      "plane_error_mean_degrees": 8.773960255908447,
+      "plane_error_median_degrees": 7.459262399038121,
+      "plane_error_p95_degrees": 20.06506855771731
+    },
+    "note": "This descriptive comparator uses the recorded baseline condition and is separate from leakage-free grouped cross-validation."
+  },
+  "interpretation_limits": [
+    "All targets represent intended lens gaze without measured angular ground truth.",
+    "One participant and one recording cannot establish multi-user generalisation.",
+    "Conditions are categorical and some changed multiple visible properties.",
+    "Far distance is treated as gaze unavailable for the laptop scope.",
+    "The prototype predicts an expected centre response; it does not test off-camera rejection.",
+    "No calibration profile or runtime threshold was created or modified."
+  ],
+  "next_decision_rule": "Only continue this approach if grouped held-out error improves; off-camera discrimination and independent-session validation remain mandatory before runtime use."
+}

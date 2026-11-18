@@ -1,0 +1,23 @@
+Offline gaze/head-pose candidate-v2 evaluation
+Development: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_preparation_v1/candidate_v2_multi_session_features.csv
+Known diagnostic: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/head_pose_analysis_v1/natural_attention_head_pose_samples.csv
+Final independent validation: not performed
+Runtime modification: none
+
+Model comparison
+Model | Development BA | Diagnostic BA | Attention triggers | Away false triggers | Action BA
+candidate_v1_frozen | N/A | 0.749 | 5/6 | 1/4 | 0.792
+raw_gaze | 0.626 | 0.333 | 0/6 | 2/4 | 0.250
+gaze_position_size | 0.879 | 0.513 | 0/6 | 0/4 | 0.500
+gaze_head_pose | 0.749 | 0.734 | 5/6 | 1/4 | 0.792
+gaze_head_position_size | 0.871 | 0.604 | 3/6 | 1/4 | 0.625
+
+Diagnostic best model family: gaze_head_pose
+Candidate frozen: False
+Candidate approved: False
+Runtime modified: False
+
+Comparison: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_evaluation_v1/candidate_v2_model_comparison.csv
+Actions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_evaluation_v1/candidate_v2_action_results.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_evaluation_v1/candidate_v2_evaluation_summary.json
+Decision: diagnostic comparison only; new independent validation remains required.

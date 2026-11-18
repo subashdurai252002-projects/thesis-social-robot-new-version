@@ -1,0 +1,1482 @@
+{
+  "status": "NATURAL_ATTENTION_ZONE_DIAGNOSTIC_ONLY",
+  "input_samples": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_analysis_v1/natural_attention_samples.csv",
+  "position_model": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_summary.json",
+  "normalization": {
+    "position_correction": true,
+    "webcam_residual_yaw_reference": 14.71366794004211,
+    "webcam_residual_pitch_reference": -0.8037809702920855
+  },
+  "timing_rule": {
+    "check_interval_seconds": 0.5,
+    "required_consecutive_checks": 3,
+    "first_to_third_check_span_seconds": 1.0
+  },
+  "attention_actions": [
+    "Look at webcam lens",
+    "Look at upper screen",
+    "Look at screen centre"
+  ],
+  "away_actions": [
+    "Look left away from laptop",
+    "Look right away from laptop",
+    "Look above laptop",
+    "Look down at keyboard"
+  ],
+  "zones_evaluated": 1872,
+  "diagnostic_candidate_count": 413,
+  "top_diagnostic_candidates": [
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 28,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9333333333333333,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 336.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 28,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9333333333333333,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 352.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 28,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9333333333333333,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 352.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 28,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9333333333333333,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 368.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -12.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 27,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 304.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -13.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 27,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 320.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -12.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 27,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 320.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 8.0,
+      "pitch_lower_bound_degrees": -13.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 27,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.9,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 336.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 9.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 6.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 5,
+      "away_available_checks": 48,
+      "attention_positive_windows": 26,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8666666666666667,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 360.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 5,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 9.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 6.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 34,
+      "attention_available_checks": 36,
+      "away_positive_checks": 5,
+      "away_available_checks": 48,
+      "attention_positive_windows": 26,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8666666666666667,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 378.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 9,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 5,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 252.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 264.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 264.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 8.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 276.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 9.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 276.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 9.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 4,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 288.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 4,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 10.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 5,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 288.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 5,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 7.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 7.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 6,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 294.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 6,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -15.0,
+      "pitch_upper_bound_degrees": 10.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 5,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 300.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 5,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    },
+    {
+      "yaw_half_width_degrees": 6.0,
+      "pitch_lower_bound_degrees": -14.0,
+      "pitch_upper_bound_degrees": 11.0,
+      "attention_actions_triggered": 3,
+      "attention_action_count": 3,
+      "away_actions_triggered": 0,
+      "away_action_count": 4,
+      "attention_positive_checks": 33,
+      "attention_available_checks": 36,
+      "away_positive_checks": 5,
+      "away_available_checks": 48,
+      "attention_positive_windows": 25,
+      "attention_total_windows": 30,
+      "away_positive_windows": 0,
+      "away_total_windows": 40,
+      "attention_window_rate": 0.8333333333333334,
+      "away_window_rate": 0.0,
+      "zone_area_degree_squared": 300.0,
+      "diagnostic_candidate": true,
+      "per_action_results": {
+        "Look at webcam lens": {
+          "available_checks": 12,
+          "positive_checks": 10,
+          "total_windows": 10,
+          "positive_windows": 8,
+          "action_triggered": true
+        },
+        "Look at upper screen": {
+          "available_checks": 12,
+          "positive_checks": 12,
+          "total_windows": 10,
+          "positive_windows": 10,
+          "action_triggered": true
+        },
+        "Look at screen centre": {
+          "available_checks": 12,
+          "positive_checks": 11,
+          "total_windows": 10,
+          "positive_windows": 7,
+          "action_triggered": true
+        },
+        "Look left away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look right away from laptop": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look above laptop": {
+          "available_checks": 12,
+          "positive_checks": 5,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        },
+        "Look down at keyboard": {
+          "available_checks": 12,
+          "positive_checks": 0,
+          "total_windows": 10,
+          "positive_windows": 0,
+          "action_triggered": false
+        }
+      }
+    }
+  ],
+  "runtime_modified": false,
+  "runtime_zone_created": false,
+  "runtime_zone_approved": false,
+  "interpretation_limits": [
+    "Candidate zones were derived and evaluated using the same recording.",
+    "A new independent recording is required before runtime use.",
+    "The current targets represent laptop attention, not final Unitree geometry.",
+    "The chest tablet requires separate physical calibration in the lab.",
+    "One participant does not establish multi-user generalisation.",
+    "Liveness and ReSpeaker speech-direction activation are not tested here.",
+    "The position-aware correction remains diagnostic rather than approved runtime."
+  ]
+}

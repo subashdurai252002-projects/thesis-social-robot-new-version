@@ -1,0 +1,6 @@
+model_name,feature_names,development_balanced_accuracy,diagnostic_balanced_accuracy,attention_actions_total,attention_actions_measurable,attention_actions_triggered,away_actions_total,away_actions_measurable,away_actions_incorrectly_triggered,no_person_actions_triggered,action_attention_rate,action_away_rejection_rate,action_balanced_accuracy
+candidate_v1_frozen,existing frozen zone,,0.7490819209039548,7,6,5,4,4,1,0,0.8333333333333334,0.75,0.7916666666666667
+raw_gaze,"raw_yaw_degrees, raw_pitch_degrees",0.6257668711656441,0.33269774011299436,7,6,0,4,4,2,0,0.0,0.5,0.25
+gaze_position_size,"raw_yaw_degrees, raw_pitch_degrees, face_centre_x_normalized, face_centre_y_normalized, log_face_area_fraction",0.8786042944785276,0.5127824858757062,7,6,0,4,4,0,0,0.0,1.0,0.5
+gaze_head_pose,"raw_yaw_degrees, raw_pitch_degrees, raw_head_yaw_degrees, raw_head_pitch_degrees, raw_head_roll_degrees",0.7494120654396728,0.7338983050847457,7,6,5,4,4,1,0,0.8333333333333334,0.75,0.7916666666666667
+gaze_head_position_size,"raw_yaw_degrees, raw_pitch_degrees, raw_head_yaw_degrees, raw_head_pitch_degrees, raw_head_roll_degrees, face_centre_x_normalized, face_centre_y_normalized, log_face_area_fraction",0.8711145194274028,0.603813559322034,7,6,3,4,4,1,0,0.5,0.75,0.625

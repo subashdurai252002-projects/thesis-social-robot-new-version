@@ -1,0 +1,449 @@
+{
+  "status": "FEATURE_ABLATION_DIAGNOSTIC_ONLY",
+  "cross_validation": "leave-one-condition-out",
+  "ridge_alpha": 1.0,
+  "source_feature_order": [
+    "face_centre_x_normalized",
+    "face_centre_y_normalized",
+    "face_area_fraction",
+    "face_brightness_mean",
+    "face_contrast_standard_deviation",
+    "face_sharpness_laplacian_variance"
+  ],
+  "feature_sets": {
+    "constant": [],
+    "position_only": [
+      "face_centre_x_normalized",
+      "face_centre_y_normalized"
+    ],
+    "position_and_size": [
+      "face_centre_x_normalized",
+      "face_centre_y_normalized",
+      "face_area_fraction"
+    ],
+    "quality_only": [
+      "face_brightness_mean",
+      "face_contrast_standard_deviation",
+      "face_sharpness_laplacian_variance"
+    ],
+    "all_features": [
+      "face_centre_x_normalized",
+      "face_centre_y_normalized",
+      "face_area_fraction",
+      "face_brightness_mean",
+      "face_contrast_standard_deviation",
+      "face_sharpness_laplacian_variance"
+    ]
+  },
+  "feature_transforms_inherited_from_source_evaluation": {
+    "face_area_fraction": "natural logarithm",
+    "face_sharpness_laplacian_variance": "natural logarithm",
+    "standardization": "training-fold statistics only"
+  },
+  "eligible_conditions": [
+    "Baseline centre",
+    "Body left",
+    "Body right",
+    "Face higher",
+    "Face lower",
+    "Near camera",
+    "Darker face lighting",
+    "Brighter face lighting"
+  ],
+  "excluded_conditions": {
+    "Empty camera view": "No person should be present.",
+    "Far from camera": "Core gaze availability below 70%: 0.06666666666666667"
+  },
+  "sample_count": 234,
+  "overall_metrics": {
+    "constant": {
+      "count": 234,
+      "yaw_mae_degrees": 5.381250234750601,
+      "pitch_mae_degrees": 5.470533387273805,
+      "plane_error_mean_degrees": 8.464769755445763,
+      "plane_error_median_degrees": 7.983493419868697,
+      "plane_error_p95_degrees": 18.302333360803495
+    },
+    "position_only": {
+      "count": 234,
+      "yaw_mae_degrees": 5.369380942138701,
+      "pitch_mae_degrees": 4.708676912973376,
+      "plane_error_mean_degrees": 7.784586394245979,
+      "plane_error_median_degrees": 7.1007080972989325,
+      "plane_error_p95_degrees": 15.73440024113618
+    },
+    "position_and_size": {
+      "count": 234,
+      "yaw_mae_degrees": 5.908570936525098,
+      "pitch_mae_degrees": 4.814332003263896,
+      "plane_error_mean_degrees": 8.34880516774202,
+      "plane_error_median_degrees": 7.636562352929773,
+      "plane_error_p95_degrees": 16.837422072070435
+    },
+    "quality_only": {
+      "count": 234,
+      "yaw_mae_degrees": 5.091528723307495,
+      "pitch_mae_degrees": 5.780718593452058,
+      "plane_error_mean_degrees": 8.521670981627663,
+      "plane_error_median_degrees": 7.812197486918576,
+      "plane_error_p95_degrees": 16.610697946323306
+    },
+    "all_features": {
+      "count": 234,
+      "yaw_mae_degrees": 6.115924775814253,
+      "pitch_mae_degrees": 4.083840948847536,
+      "plane_error_mean_degrees": 7.976621461360014,
+      "plane_error_median_degrees": 7.626441788186314,
+      "plane_error_p95_degrees": 16.313943472363565
+    }
+  },
+  "per_condition_metrics": {
+    "Baseline centre": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.449212646484375,
+        "pitch_mae_degrees": 4.001278686523437,
+        "plane_error_mean_degrees": 6.6334826204251005,
+        "plane_error_median_degrees": 5.549714581428189,
+        "plane_error_p95_degrees": 11.852221463394217
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 4.212939187105997,
+        "pitch_mae_degrees": 4.235316924620461,
+        "plane_error_mean_degrees": 6.579865419392356,
+        "plane_error_median_degrees": 5.619818785718936,
+        "plane_error_p95_degrees": 12.301187938732633
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 4.181702054742411,
+        "pitch_mae_degrees": 4.446586892316424,
+        "plane_error_mean_degrees": 6.735158522410315,
+        "plane_error_median_degrees": 6.031290766052745,
+        "plane_error_p95_degrees": 12.727164965876227
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 3.653650387708359,
+        "pitch_mae_degrees": 4.2850478101499085,
+        "plane_error_mean_degrees": 6.191983159596806,
+        "plane_error_median_degrees": 5.752491381568519,
+        "plane_error_p95_degrees": 11.2610467655252
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 4.917274749585008,
+        "pitch_mae_degrees": 4.125768072994931,
+        "plane_error_mean_degrees": 7.114676201259224,
+        "plane_error_median_degrees": 6.845967300201174,
+        "plane_error_p95_degrees": 12.336251948794379
+      }
+    },
+    "Body left": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 2.9707687377929686,
+        "pitch_mae_degrees": 6.004453531901041,
+        "plane_error_mean_degrees": 7.004000322743865,
+        "plane_error_median_degrees": 7.492669885545675,
+        "plane_error_p95_degrees": 12.738668656770766
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 3.4679982441564947,
+        "pitch_mae_degrees": 3.866055921594251,
+        "plane_error_mean_degrees": 5.724653743276729,
+        "plane_error_median_degrees": 5.857680930760282,
+        "plane_error_p95_degrees": 8.791147002888913
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 3.4624050702407705,
+        "pitch_mae_degrees": 3.8595946485627555,
+        "plane_error_mean_degrees": 5.710101795437832,
+        "plane_error_median_degrees": 5.861550734865476,
+        "plane_error_p95_degrees": 8.670163797996922
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 4.356627032403543,
+        "pitch_mae_degrees": 5.823664680760498,
+        "plane_error_mean_degrees": 7.816954303348044,
+        "plane_error_median_degrees": 7.568218691810573,
+        "plane_error_p95_degrees": 15.09112680548907
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 5.870100452049252,
+        "pitch_mae_degrees": 4.0726795826896085,
+        "plane_error_mean_degrees": 7.78735702848982,
+        "plane_error_median_degrees": 7.829154598912831,
+        "plane_error_p95_degrees": 13.39352701969325
+      }
+    },
+    "Body right": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.357352193196615,
+        "pitch_mae_degrees": 8.666907246907552,
+        "plane_error_mean_degrees": 10.21535195551643,
+        "plane_error_median_degrees": 10.141623941107579,
+        "plane_error_p95_degrees": 17.0774547382505
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 5.361500702684733,
+        "pitch_mae_degrees": 4.393893692121147,
+        "plane_error_mean_degrees": 7.550031853155314,
+        "plane_error_median_degrees": 7.15457083849202,
+        "plane_error_p95_degrees": 15.611923593419966
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 5.426083593983274,
+        "pitch_mae_degrees": 4.487469775437987,
+        "plane_error_mean_degrees": 7.661688827275991,
+        "plane_error_median_degrees": 7.186776284857592,
+        "plane_error_p95_degrees": 15.77691795581162
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 4.9955094015719785,
+        "pitch_mae_degrees": 5.0699747474806935,
+        "plane_error_mean_degrees": 7.669103612638563,
+        "plane_error_median_degrees": 7.046916727477249,
+        "plane_error_p95_degrees": 15.323834348916774
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 8.12797942255006,
+        "pitch_mae_degrees": 3.612682096824133,
+        "plane_error_mean_degrees": 9.452605493522148,
+        "plane_error_median_degrees": 8.380095528388178,
+        "plane_error_p95_degrees": 17.7993450538675
+      }
+    },
+    "Face higher": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 4.518586222330729,
+        "pitch_mae_degrees": 3.595672098795573,
+        "plane_error_mean_degrees": 6.542986197480506,
+        "plane_error_median_degrees": 6.058886416618574,
+        "plane_error_p95_degrees": 13.783154214514035
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 5.7489399875127445,
+        "pitch_mae_degrees": 3.1841668299724377,
+        "plane_error_mean_degrees": 7.0831060713595795,
+        "plane_error_median_degrees": 6.730241405333079,
+        "plane_error_p95_degrees": 11.96737035124433
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 9.78351222132125,
+        "pitch_mae_degrees": 3.0812026530547443,
+        "plane_error_mean_degrees": 10.69649546518247,
+        "plane_error_median_degrees": 11.478378189904653,
+        "plane_error_p95_degrees": 16.9441104901156
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 5.3397967392480625,
+        "pitch_mae_degrees": 11.068489104247822,
+        "plane_error_mean_degrees": 12.89010959405802,
+        "plane_error_median_degrees": 13.957217620967187,
+        "plane_error_p95_degrees": 19.69138694444435
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 7.895168341936761,
+        "pitch_mae_degrees": 4.558298131645418,
+        "plane_error_mean_degrees": 9.607767123315565,
+        "plane_error_median_degrees": 9.495965480715894,
+        "plane_error_p95_degrees": 15.319535675538049
+      }
+    },
+    "Face lower": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 5.456363932291667,
+        "pitch_mae_degrees": 5.390384928385417,
+        "plane_error_mean_degrees": 8.387219617768144,
+        "plane_error_median_degrees": 8.205291688109545,
+        "plane_error_p95_degrees": 13.290733553260765
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 5.3730727712257895,
+        "pitch_mae_degrees": 5.217182261377929,
+        "plane_error_mean_degrees": 8.267780176964092,
+        "plane_error_median_degrees": 7.834711917039495,
+        "plane_error_p95_degrees": 13.483059699620847
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 5.541133329822782,
+        "pitch_mae_degrees": 5.154074832409132,
+        "plane_error_mean_degrees": 8.372191459438655,
+        "plane_error_median_degrees": 8.07176605657148,
+        "plane_error_p95_degrees": 13.635803461968862
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 5.799466771934177,
+        "pitch_mae_degrees": 4.829350553827923,
+        "plane_error_mean_degrees": 8.411386569738129,
+        "plane_error_median_degrees": 8.11789915054742,
+        "plane_error_p95_degrees": 15.881887478422513
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 5.135599907988379,
+        "pitch_mae_degrees": 4.784647863625727,
+        "plane_error_mean_degrees": 7.781583872890123,
+        "plane_error_median_degrees": 7.724049670594212,
+        "plane_error_p95_degrees": 12.877146868574501
+      }
+    },
+    "Near camera": {
+      "constant": {
+        "count": 29,
+        "yaw_mae_degrees": 8.349842466157058,
+        "pitch_mae_degrees": 3.6197472934065194,
+        "plane_error_mean_degrees": 9.724799136267807,
+        "plane_error_median_degrees": 9.583525041052624,
+        "plane_error_p95_degrees": 19.141907786509275
+      },
+      "position_only": {
+        "count": 29,
+        "yaw_mae_degrees": 6.589650672722339,
+        "pitch_mae_degrees": 4.224404516352511,
+        "plane_error_mean_degrees": 8.439054978595099,
+        "plane_error_median_degrees": 7.23830341048405,
+        "plane_error_p95_degrees": 15.44242652666232
+      },
+      "position_and_size": {
+        "count": 29,
+        "yaw_mae_degrees": 6.530576232771768,
+        "pitch_mae_degrees": 4.9270402469473735,
+        "plane_error_mean_degrees": 8.83237895834117,
+        "plane_error_median_degrees": 7.150313499098026,
+        "plane_error_p95_degrees": 16.010799305352624
+      },
+      "quality_only": {
+        "count": 29,
+        "yaw_mae_degrees": 7.684612731773843,
+        "pitch_mae_degrees": 3.633191874022173,
+        "plane_error_mean_degrees": 8.933514894766013,
+        "plane_error_median_degrees": 9.261271435202211,
+        "plane_error_p95_degrees": 17.13187952210087
+      },
+      "all_features": {
+        "count": 29,
+        "yaw_mae_degrees": 8.514248683332971,
+        "pitch_mae_degrees": 4.410700510180336,
+        "plane_error_mean_degrees": 10.010473210336091,
+        "plane_error_median_degrees": 10.700569241525379,
+        "plane_error_p95_degrees": 17.58221539994468
+      }
+    },
+    "Darker face lighting": {
+      "constant": {
+        "count": 25,
+        "yaw_mae_degrees": 7.91408935546875,
+        "pitch_mae_degrees": 9.740657958984375,
+        "plane_error_mean_degrees": 12.961014941831651,
+        "plane_error_median_degrees": 10.604304281267654,
+        "plane_error_p95_degrees": 26.11466750212135
+      },
+      "position_only": {
+        "count": 25,
+        "yaw_mae_degrees": 7.874730877787396,
+        "pitch_mae_degrees": 9.546662103754445,
+        "plane_error_mean_degrees": 12.785102572658987,
+        "plane_error_median_degrees": 10.446134694828068,
+        "plane_error_p95_degrees": 25.91353490877131
+      },
+      "position_and_size": {
+        "count": 25,
+        "yaw_mae_degrees": 7.843038703071979,
+        "pitch_mae_degrees": 9.61313901516466,
+        "plane_error_mean_degrees": 12.821419075420962,
+        "plane_error_median_degrees": 10.495126250157714,
+        "plane_error_p95_degrees": 25.918377492496386
+      },
+      "quality_only": {
+        "count": 25,
+        "yaw_mae_degrees": 4.28375486427918,
+        "pitch_mae_degrees": 8.879132991617071,
+        "plane_error_mean_degrees": 10.548231835307273,
+        "plane_error_median_degrees": 10.510501780610984,
+        "plane_error_p95_degrees": 14.295723393793404
+      },
+      "all_features": {
+        "count": 25,
+        "yaw_mae_degrees": 4.575617220296525,
+        "pitch_mae_degrees": 4.192952753426651,
+        "plane_error_mean_degrees": 6.806012771936083,
+        "plane_error_median_degrees": 5.929992196410105,
+        "plane_error_p95_degrees": 19.159408830170623
+      }
+    },
+    "Brighter face lighting": {
+      "constant": {
+        "count": 30,
+        "yaw_mae_degrees": 5.554879252115885,
+        "pitch_mae_degrees": 3.395159912109375,
+        "plane_error_mean_degrees": 7.040678428624316,
+        "plane_error_median_degrees": 6.536774727502999,
+        "plane_error_p95_degrees": 12.446192472638584
+      },
+      "position_only": {
+        "count": 30,
+        "yaw_mae_degrees": 4.784449074208349,
+        "pitch_mae_degrees": 3.7919215059033085,
+        "plane_error_mean_degrees": 6.702331321112827,
+        "plane_error_median_degrees": 6.232599948656794,
+        "plane_error_p95_degrees": 12.147138751762768
+      },
+      "position_and_size": {
+        "count": 30,
+        "yaw_mae_degrees": 4.843261090545917,
+        "pitch_mae_degrees": 3.7491060723243423,
+        "plane_error_mean_degrees": 6.72256201606189,
+        "plane_error_median_degrees": 6.207948748584874,
+        "plane_error_p95_degrees": 12.150352915042173
+      },
+      "quality_only": {
+        "count": 30,
+        "yaw_mae_degrees": 4.570619014651641,
+        "pitch_mae_degrees": 3.1017151612235443,
+        "plane_error_mean_degrees": 6.063572156286331,
+        "plane_error_median_degrees": 6.150678717055571,
+        "plane_error_p95_degrees": 10.575643616088088
+      },
+      "all_features": {
+        "count": 30,
+        "yaw_mae_degrees": 3.714635633106073,
+        "pitch_mae_degrees": 2.942079198867764,
+        "plane_error_mean_degrees": 5.125189599192944,
+        "plane_error_median_degrees": 5.105618983772734,
+        "plane_error_p95_degrees": 8.920464681264125
+      }
+    }
+  },
+  "lowest_observed_error_models": [
+    "position_only"
+  ],
+  "automatic_model_approval": false,
+  "interpretation_limits": [
+    "Lowest observed error is not automatic approval for deployment.",
+    "One participant and one recording cannot establish generalisation.",
+    "The test predicts expected centre response only and does not evaluate off-camera rejection.",
+    "Far distance remains gaze unavailable for the laptop operating range.",
+    "No runtime calibration profile or threshold was created or modified."
+  ]
+}

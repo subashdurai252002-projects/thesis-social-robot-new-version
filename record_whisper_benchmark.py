@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import csv
 import re
 import subprocess
@@ -27,6 +28,38 @@ MAX_WAIT_SECONDS = 15
 MAX_SPEECH_SECONDS = 30
 
 
+def parse_arguments():
+    """Return optional non-interactive lab-recording settings."""
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Record the controlled multi-channel Whisper benchmark prompts."
+        )
+    )
+    parser.add_argument(
+        "--speaker-id",
+        help="Anonymous speaker ID such as S02.",
+    )
+    parser.add_argument(
+        "--output-directory",
+        type=Path,
+        help=(
+            "Exact private output directory. When omitted, recordings use "
+            "benchmark_data/whisper/audio/<speaker-id>."
+        ),
+    )
+    parser.add_argument(
+        "--prompt-file",
+        type=Path,
+        default=PROMPT_FILE,
+        help=(
+            "CSV prompt list. Defaults to "
+            "benchmark_data/whisper/prompts.csv."
+        ),
+    )
+    return parser.parse_args()
+
+
 def calculate_rms(raw_audio):
     samples = np.frombuffer(
         raw_audio, dtype=np.int16
@@ -37,8 +70,8 @@ def calculate_rms(raw_audio):
     return float(np.sqrt(np.mean(mono * mono)))
 
 
-def load_prompts():
-    with PROMPT_FILE.open(
+def load_prompts(prompt_file):
+    with prompt_file.open(
         newline="", encoding="utf-8"
     ) as file:
         return list(csv.DictReader(file))
@@ -154,31 +187,77 @@ def record_prompt(output_file):
     print("Recorded duration:", round(duration, 2), "seconds")
 
 
-def main():
-    prompts = load_prompts()
+def record_fixed_duration_prompt(output_file, duration_seconds):
+    """Record one raw fixed-duration sample without a speech gate."""
 
-    speaker_id = input(
-        "Speaker ID [S01]: "
-    ).strip().upper() or "S01"
+    duration = int(duration_seconds)
+
+    if duration <= 0:
+        raise ValueError("fixed_seconds must be a positive integer.")
+
+    print(
+        f"RECORDING FOR {duration} SECONDS - "
+        "begin speaking after approximately one second"
+    )
+    subprocess.run(
+        [
+            "arecord",
+            "-D", CAPTURE_DEVICE,
+            "-f", "S16_LE",
+            "-r", str(SAMPLE_RATE),
+            "-c", str(CHANNELS),
+            "-t", "wav",
+            "-d", str(duration),
+            str(output_file),
+        ],
+        check=True,
+    )
+    print("Saved:", output_file)
+    print("Recorded duration:", duration, "seconds")
+
+
+def main():
+    arguments = parse_arguments()
+    prompts = load_prompts(arguments.prompt_file)
+
+    if arguments.speaker_id is None:
+        speaker_id = input(
+            "Speaker ID [S01]: "
+        ).strip().upper() or "S01"
+    else:
+        speaker_id = arguments.speaker_id.strip().upper()
 
     if not re.fullmatch(r"S[0-9]{2}", speaker_id):
         raise ValueError("Speaker ID must look like S01.")
 
-    output_directory = AUDIO_ROOT / speaker_id
+    output_directory = (
+        arguments.output_directory
+        if arguments.output_directory is not None
+        else AUDIO_ROOT / speaker_id
+    )
     output_directory.mkdir(parents=True, exist_ok=True)
 
     print()
     print("Recording", len(prompts), "prompts for", speaker_id)
+    print("Prompt file:", arguments.prompt_file.resolve())
+    print("Output directory:", output_directory.resolve())
 
     for index, prompt in enumerate(prompts, start=1):
         prompt_id = prompt["prompt_id"]
         reference = prompt["reference_text"]
+        instruction = prompt.get("instruction", "").strip()
+        fixed_seconds = prompt.get("fixed_seconds", "").strip()
 
         output_file = output_directory / f"{prompt_id}.wav"
 
         print()
         print("=" * 60)
         print(f"Prompt {index}/{len(prompts)}: {prompt_id}")
+
+        if instruction:
+            print("Condition:")
+            print(instruction)
+
         print("Say exactly:")
         print(reference)
 
@@ -193,7 +272,14 @@ def main():
                 continue
 
         input("Press Enter when ready...")
-        record_prompt(output_file)
+
+        if fixed_seconds:
+            record_fixed_duration_prompt(
+                output_file,
+                fixed_seconds,
+            )
+        else:
+            record_prompt(output_file)
 
     print()
     print("Benchmark recording complete.")

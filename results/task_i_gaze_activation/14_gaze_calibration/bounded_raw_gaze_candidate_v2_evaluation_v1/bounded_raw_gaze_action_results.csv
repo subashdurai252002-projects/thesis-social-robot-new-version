@@ -1,0 +1,25 @@
+model_name,session_name,planned_action,expected_attention,scheduled_checks,available_checks,positive_checks,positive_three_check_windows,action_would_trigger
+candidate_v1_frozen,known_diagnostic,Empty camera view,no_person,12,0,0,0,False
+candidate_v1_frozen,known_diagnostic,Look at webcam lens,attention,12,12,12,10,True
+candidate_v1_frozen,known_diagnostic,Look at upper screen,attention,12,12,12,10,True
+candidate_v1_frozen,known_diagnostic,Look at screen centre,attention,12,12,11,9,True
+candidate_v1_frozen,known_diagnostic,Look left away from laptop,away,12,12,0,0,False
+candidate_v1_frozen,known_diagnostic,Look right away from laptop,away,12,12,0,0,False
+candidate_v1_frozen,known_diagnostic,Look above laptop,away,12,12,10,4,True
+candidate_v1_frozen,known_diagnostic,Look down at keyboard,away,12,12,0,0,False
+candidate_v1_frozen,known_diagnostic,Screen attention from body left,attention,12,12,11,7,True
+candidate_v1_frozen,known_diagnostic,Screen attention from body right,attention,12,12,0,0,False
+candidate_v1_frozen,known_diagnostic,Screen attention near camera,attention,12,12,4,2,True
+candidate_v1_frozen,known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False
+best_bounded_raw_gaze,known_diagnostic,Empty camera view,no_person,12,0,0,0,False
+best_bounded_raw_gaze,known_diagnostic,Look at webcam lens,attention,12,12,10,5,True
+best_bounded_raw_gaze,known_diagnostic,Look at upper screen,attention,12,12,12,10,True
+best_bounded_raw_gaze,known_diagnostic,Look at screen centre,attention,12,12,12,10,True
+best_bounded_raw_gaze,known_diagnostic,Look left away from laptop,away,12,12,9,3,True
+best_bounded_raw_gaze,known_diagnostic,Look right away from laptop,away,12,12,0,0,False
+best_bounded_raw_gaze,known_diagnostic,Look above laptop,away,12,12,4,0,False
+best_bounded_raw_gaze,known_diagnostic,Look down at keyboard,away,12,12,0,0,False
+best_bounded_raw_gaze,known_diagnostic,Screen attention from body left,attention,12,12,11,7,True
+best_bounded_raw_gaze,known_diagnostic,Screen attention from body right,attention,12,12,12,10,True
+best_bounded_raw_gaze,known_diagnostic,Screen attention near camera,attention,12,12,11,8,True
+best_bounded_raw_gaze,known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False

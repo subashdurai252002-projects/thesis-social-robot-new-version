@@ -1,0 +1,25 @@
+Multi-session eye/gaze fusion evaluation
+Sessions: natural_attention_derivation, robustness_attention, candidate_v1_known_diagnostic, candidate_v2_final_diagnostic
+Cross-validation: leave one complete session out
+Sustained checks: 3 at 0.5 seconds
+Candidate creation: none
+Runtime modification: none
+
+Cross-validated model comparison
+Model | Frame BA | Attention | Away false | Action BA
+eye_blendshapes | 0.847 | 22/24 | 2/12 | 0.875
+iris_and_blendshapes | 0.825 | 21/24 | 2/12 | 0.854
+eyes_and_head | 0.823 | 19/24 | 1/12 | 0.854
+mobileone_and_eyes | 0.818 | 18/24 | 1/12 | 0.833
+all_signals | 0.784 | 17/24 | 1/12 | 0.812
+iris_only | 0.660 | 18/24 | 5/12 | 0.667
+mobileone_gaze | 0.643 | 15/24 | 5/12 | 0.604
+
+Diagnostic best model family: eye_blendshapes
+Fold results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/multisession_eye_gaze_fusion_v1/fusion_fold_results.csv
+Action results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/multisession_eye_gaze_fusion_v1/fusion_action_results.csv
+Model comparison: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/multisession_eye_gaze_fusion_v1/fusion_model_comparison.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/multisession_eye_gaze_fusion_v1/fusion_evaluation_summary.json
+Candidate created: False
+Runtime modified: False
+Decision: comparison only; no runtime profile approved.

@@ -1,0 +1,74 @@
+Final independent frozen candidate-v2 validation
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_recording_v1/natural_attention_candidate_v2_validation_input.avi
+Profile: /home/subash/thesis social robot new version/gaze_pipeline/config/natural_attention_candidate_v2.json
+Profile unchanged: True
+Video hash verified: True
+Gaze model hash verified: True
+Landmark model hash verified: True
+Validation-session recalibration: none
+Runtime modification: none
+Device: cpu
+
+Loading YOLOv8n...
+Loading YuNet...
+[ WARN:0@2.207] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+Loading portable MobileOne...
+Loading portable Face Landmarker...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794856833.000569   28025 face_landmarker_graph.cc:181] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794856833.019316   28029 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794856833.031913   28029 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Warming up YOLO and MobileOne...
+Sampled frames: 100 | combined measurements: 43
+Sampled frames: 150 | combined measurements: 93
+Sampled frames: 200 | combined measurements: 143
+Sampled frames: 250 | combined measurements: 193
+Sampled frames: 300 | combined measurements: 243
+Sampled frames: 350 | combined measurements: 293
+Sampled frames: 400 | combined measurements: 343
+Sampled frames: 450 | combined measurements: 393
+Sampled frames: 500 | combined measurements: 443
+Sampled frames: 550 | combined measurements: 493
+
+Final independent candidate-v2 validation completed.
+Status: INDEPENDENT_VALIDATION_FAILED
+Combined measurements: 525
+Gaze failures: 0
+Landmark failures: 0
+
+Per-action results
+  Empty camera view | available 0/12 | positive 0 | windows 0 | trigger False
+  Look at webcam lens | available 12/12 | positive 7 | windows 0 | trigger False
+  Look at upper screen | available 12/12 | positive 10 | windows 7 | trigger True
+  Look at screen centre | available 12/12 | positive 12 | windows 10 | trigger True
+  Look left away from laptop | available 12/12 | positive 0 | windows 0 | trigger False
+  Look right away from laptop | available 12/12 | positive 12 | windows 10 | trigger True
+  Look above laptop | available 12/12 | positive 1 | windows 0 | trigger False
+  Look down at keyboard | available 12/12 | positive 11 | windows 7 | trigger True
+  Screen attention from body left | available 12/12 | positive 10 | windows 7 | trigger True
+  Screen attention from body right | available 12/12 | positive 11 | windows 9 | trigger True
+  Screen attention near camera | available 12/12 | positive 8 | windows 4 | trigger True
+  Screen attention in darker light | available 8/12 | positive 6 | windows 1 | trigger True
+
+Validation checks
+  profile_hash_matches_recording: PASSED
+  video_hash_matches_metadata: PASSED
+  gaze_model_hash_matches_profile: PASSED
+  landmark_model_hash_matches_profile: PASSED
+  no_gaze_inference_failures: PASSED
+  no_landmark_inference_failures: PASSED
+  required_attention_actions_present: PASSED
+  all_required_attention_actions_triggered: FAILED
+  required_away_actions_present: PASSED
+  all_away_actions_rejected: FAILED
+  no_person_action_present: PASSED
+  no_person_action_rejected: PASSED
+
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_v1/candidate_v2_validation_samples.csv
+Checks: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_v1/candidate_v2_validation_checks.csv
+Actions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_v1/candidate_v2_validation_actions.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_v1/candidate_v2_validation_summary.json
+Candidate approved: False
+Runtime modified: False
+Decision: evidence measured; approval requires review.

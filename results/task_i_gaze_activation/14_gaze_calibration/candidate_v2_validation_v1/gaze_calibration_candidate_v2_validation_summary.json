@@ -1,0 +1,96 @@
+{
+  "status": "MEASURED_REQUIRES_DECISION",
+  "purpose": "Independent validation of frozen gaze-calibration candidate v2.",
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv",
+  "profile_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/optimization_v2/gaze_calibration_candidate_v2.json",
+  "profile_sha256_before": "d29ee07a2cf9e287a4afeca6fc57a72dde4d0c9375cc3e777534a6ae54f91e63",
+  "profile_sha256_after": "d29ee07a2cf9e287a4afeca6fc57a72dde4d0c9375cc3e777534a6ae54f91e63",
+  "profile_unchanged": true,
+  "sample_interval": 6,
+  "core_interval_rule": "Relative seconds 2.0 through less than 8.0.",
+  "video_frames": 2391,
+  "processed_video_frames": 2391,
+  "sampled_frames": 399,
+  "person_instances": 342,
+  "selected_faces": 311,
+  "gaze_predictions": 311,
+  "gaze_failures": 0,
+  "non_finite_predictions": 0,
+  "state_creation_events": 1,
+  "state_release_events": 0,
+  "stationary_confusion": {
+    "true_positive": 1,
+    "false_negative": 29,
+    "true_negative": 109,
+    "false_positive": 10,
+    "positive_frame_count": 30,
+    "negative_frame_count": 119,
+    "centre_acceptance_rate": 0.03333333333333333,
+    "off_camera_rejection_rate": 0.9159663865546218,
+    "false_positive_rate": 0.08403361344537816,
+    "false_negative_rate": 0.9666666666666667,
+    "balanced_accuracy": 0.47464985994397757
+  },
+  "per_action": {
+    "Look at camera centre": {
+      "frame_count": 30,
+      "face_available_frame_count": 30,
+      "gaze_available_frame_count": 30,
+      "candidate_looking_frame_count": 1,
+      "candidate_looking_rate": 0.03333333333333333
+    },
+    "Look left of camera": {
+      "frame_count": 30,
+      "face_available_frame_count": 30,
+      "gaze_available_frame_count": 30,
+      "candidate_looking_frame_count": 0,
+      "candidate_looking_rate": 0.0
+    },
+    "Look right of camera": {
+      "frame_count": 30,
+      "face_available_frame_count": 30,
+      "gaze_available_frame_count": 30,
+      "candidate_looking_frame_count": 10,
+      "candidate_looking_rate": 0.3333333333333333
+    },
+    "Look above camera": {
+      "frame_count": 30,
+      "face_available_frame_count": 30,
+      "gaze_available_frame_count": 30,
+      "candidate_looking_frame_count": 0,
+      "candidate_looking_rate": 0.0
+    },
+    "Look below camera": {
+      "frame_count": 29,
+      "face_available_frame_count": 29,
+      "gaze_available_frame_count": 29,
+      "candidate_looking_frame_count": 0,
+      "candidate_looking_rate": 0.0
+    },
+    "Centre gaze while moving left and right": {
+      "frame_count": 30,
+      "face_available_frame_count": 30,
+      "gaze_available_frame_count": 30,
+      "candidate_looking_frame_count": 2,
+      "candidate_looking_rate": 0.06666666666666667
+    },
+    "Centre gaze while moving closer and farther": {
+      "frame_count": 30,
+      "face_available_frame_count": 5,
+      "gaze_available_frame_count": 5,
+      "candidate_looking_frame_count": 0,
+      "candidate_looking_rate": 0.0
+    }
+  },
+  "empty_view": {
+    "sampled_frame_count": 50,
+    "false_activation_count": 0
+  },
+  "limitations": [
+    "One participant and one independent recording.",
+    "Physical target angles were not measured.",
+    "Classification metrics do not establish angular gaze accuracy.",
+    "Candidate approval requires explicit review."
+  ]
+}

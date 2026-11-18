@@ -1,0 +1,8 @@
+Natural-attention candidate v1 frozen.
+Status: candidate_v1_requires_independent_validation
+Zone: yaw -8.0° to +8.0° | pitch -14.0° to +7.0°
+Timing: 3 checks at 0.5 seconds
+Runtime modified: False
+Profile: /home/subash/thesis social robot new version/gaze_pipeline/config/natural_attention_candidate_v1.json
+Profile SHA-256: ae53aaea3606f6d84153f5de3ad90879006c854c74f6c3629194b0387a147318
+Decision: candidate frozen; independent validation required.

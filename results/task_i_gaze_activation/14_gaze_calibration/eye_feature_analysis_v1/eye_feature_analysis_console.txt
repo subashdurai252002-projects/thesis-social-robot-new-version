@@ -1,0 +1,48 @@
+Final-validation MediaPipe eye-feature diagnostic
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_recording_v1/natural_attention_candidate_v2_validation_input.avi
+Source samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_v2_validation_v1/candidate_v2_validation_samples.csv
+Video hash verified: True
+Source observations: 525
+Threshold selection: none
+Candidate creation: none
+Runtime modification: none
+
+Loading portable Face Landmarker...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794857731.217712   28802 face_landmarker_graph.cc:181] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794857731.247840   28806 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794857731.265843   28806 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Extracted: 50/525
+Extracted: 100/525
+Extracted: 150/525
+Extracted: 200/525
+Extracted: 250/525
+Extracted: 300/525
+Extracted: 350/525
+Extracted: 400/525
+Extracted: 450/525
+Extracted: 500/525
+
+Eye-feature diagnostic completed.
+Extracted observations: 525/525
+Extraction failures: 0
+
+Stable-core per-action medians
+Action | N | Iris H | Iris V | Blend H | Blend V
+Look at webcam lens | 30 | +0.514 | +0.402 | -0.144 | -0.215
+Look at upper screen | 30 | +0.508 | +0.398 | -0.106 | -0.215
+Look at screen centre | 30 | +0.498 | +0.401 | -0.057 | -0.154
+Look left away from laptop | 30 | +0.647 | +0.436 | -0.782 | -0.232
+Look right away from laptop | 30 | +0.347 | +0.413 | +0.705 | -0.173
+Look above laptop | 30 | +0.518 | +0.376 | -0.132 | -0.431
+Look down at keyboard | 30 | +0.510 | +0.413 | -0.093 | +0.355
+Screen attention from body left | 30 | +0.495 | +0.454 | -0.151 | +0.061
+Screen attention from body right | 30 | +0.493 | +0.401 | -0.110 | -0.080
+Screen attention near camera | 30 | +0.505 | +0.396 | -0.144 | -0.135
+Screen attention in darker light | 14 | +0.499 | +0.444 | -0.148 | +0.006
+
+Features: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/eye_feature_analysis_v1/natural_attention_eye_features.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/eye_feature_analysis_v1/natural_attention_eye_feature_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/eye_feature_analysis_v1/natural_attention_eye_feature_comparison.png
+Decision: diagnostic only; no candidate or runtime change.

@@ -1,0 +1,107 @@
+{
+  "status": "CANDIDATE_V2_REQUIRES_VALIDATION",
+  "input_csv": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_frames_annotated.csv",
+  "stationary_sample_counts": {
+    "Look at camera centre": 30,
+    "Look left of camera": 30,
+    "Look right of camera": 30,
+    "Look above camera": 30,
+    "Look below camera": 30
+  },
+  "profile": {
+    "profile_status": "candidate_v2_requires_independent_validation",
+    "model_name": "MobileOne-S0",
+    "camera_context": "Laptop webcam, 640x480",
+    "centre_offset": {
+      "yaw_degrees": -3.6719512939453125,
+      "pitch_degrees": 10.840911865234375
+    },
+    "looking_region_calibrated_degrees": {
+      "yaw_min": -8.25,
+      "yaw_max": 8.25,
+      "pitch_min": -3.75,
+      "pitch_max": 3.75
+    },
+    "derivation_performance": {
+      "yaw_half_width_degrees": 8.25,
+      "pitch_half_width_degrees": 3.75,
+      "rectangle_area": 123.75,
+      "true_positive": 23,
+      "false_negative": 7,
+      "true_negative": 106,
+      "false_positive": 14,
+      "centre_acceptance_rate": 0.7666666666666667,
+      "off_camera_rejection_rate": 0.8833333333333333,
+      "false_positive_rate": 0.11666666666666667,
+      "false_negative_rate": 0.23333333333333334,
+      "balanced_accuracy": 0.825
+    },
+    "selection_rule": {
+      "objective": "maximum balanced accuracy",
+      "minimum_centre_acceptance_rate": 0.7,
+      "tie_break_order": [
+        "lower false-positive rate",
+        "lower false-negative rate",
+        "smaller rectangle area"
+      ]
+    },
+    "limitations": [
+      "Optimized and measured on the same derivation recording.",
+      "Independent validation is required before runtime use.",
+      "One participant and unmeasured physical target angles.",
+      "This is classification calibration, not angular accuracy."
+    ]
+  },
+  "per_action": {
+    "Look at camera centre": {
+      "sample_count": 30,
+      "candidate_looking_count": 23,
+      "candidate_looking_rate": 0.7666666666666667,
+      "mean_calibrated_yaw_degrees": -1.4880716959635416,
+      "mean_calibrated_pitch_degrees": -0.6247533162434896
+    },
+    "Look left of camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 6,
+      "candidate_looking_rate": 0.2,
+      "mean_calibrated_yaw_degrees": -12.147080993652343,
+      "mean_calibrated_pitch_degrees": -1.5904327392578126
+    },
+    "Look right of camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 5,
+      "candidate_looking_rate": 0.16666666666666666,
+      "mean_calibrated_yaw_degrees": 9.285047912597657,
+      "mean_calibrated_pitch_degrees": -3.284636942545573
+    },
+    "Look above camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 2,
+      "candidate_looking_rate": 0.06666666666666667,
+      "mean_calibrated_yaw_degrees": -5.919856770833333,
+      "mean_calibrated_pitch_degrees": 8.309684244791667
+    },
+    "Look below camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 1,
+      "candidate_looking_rate": 0.03333333333333333,
+      "mean_calibrated_yaw_degrees": 2.546467590332031,
+      "mean_calibrated_pitch_degrees": -9.153975931803386
+    },
+    "Centre gaze while moving left and right": {
+      "sample_count": 30,
+      "candidate_looking_count": 12,
+      "candidate_looking_rate": 0.4,
+      "mean_calibrated_yaw_degrees": -3.682444763183594,
+      "mean_calibrated_pitch_degrees": -1.106219482421875
+    },
+    "Centre gaze while moving closer and farther": {
+      "sample_count": 26,
+      "candidate_looking_count": 14,
+      "candidate_looking_rate": 0.5384615384615384,
+      "mean_calibrated_yaw_degrees": -1.481387211726262,
+      "mean_calibrated_pitch_degrees": -2.3541429959810696
+    }
+  },
+  "next_required_step": "Evaluate this frozen profile on a new controlled recording."
+}

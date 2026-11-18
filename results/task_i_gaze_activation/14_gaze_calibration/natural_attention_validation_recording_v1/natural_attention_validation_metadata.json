@@ -1,0 +1,134 @@
+{
+  "purpose": "Independent validation recording for frozen natural-attention candidate v1",
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_validation_recording_v1/natural_attention_validation_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_validation_recording_v1/natural_attention_validation_timeline.csv",
+  "video_sha256": "5c5ceb037b579761e7f7182656cbf8ddb9c338650064d2a25eba1dca89fa72f5",
+  "frozen_profile_path": "/home/subash/thesis social robot new version/gaze_pipeline/config/natural_attention_candidate_v1.json",
+  "frozen_profile_sha256": "ae53aaea3606f6d84153f5de3ad90879006c854c74f6c3629194b0387a147318",
+  "candidate_applied_during_recording": false,
+  "gaze_inference_used": false,
+  "runtime_modified": false,
+  "requested_width": 640,
+  "requested_height": 480,
+  "actual_width": 640,
+  "actual_height": 480,
+  "requested_fps": 30.0,
+  "camera_reported_fps": 30.0,
+  "measured_capture_fps": 29.844648531429762,
+  "recording_duration_seconds": 120.18905152200023,
+  "planned_duration_seconds": 120.0,
+  "recorded_frames": 3587,
+  "failed_camera_frames": 0,
+  "stopped_early": false,
+  "action_plan": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "name": "Empty camera view",
+      "target_type": "no_person",
+      "condition": "empty",
+      "expected_attention": "no_person",
+      "instruction": "Remain completely outside the camera view"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "name": "Look at webcam lens",
+      "target_type": "camera_lens",
+      "condition": "normal",
+      "expected_attention": "attention",
+      "instruction": "Sit normally and look at the webcam lens"
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "name": "Look at upper screen",
+      "target_type": "upper_screen",
+      "condition": "normal",
+      "expected_attention": "attention",
+      "instruction": "Look at the fixed marker directly below the webcam"
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "name": "Look at screen centre",
+      "target_type": "screen_centre",
+      "condition": "normal",
+      "expected_attention": "attention",
+      "instruction": "Look at the fixed screen-centre marker"
+    },
+    {
+      "start": 40.0,
+      "end": 50.0,
+      "name": "Look left away from laptop",
+      "target_type": "away_left",
+      "condition": "normal",
+      "expected_attention": "away",
+      "instruction": "Look at the fixed LEFT away marker"
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "name": "Look right away from laptop",
+      "target_type": "away_right",
+      "condition": "normal",
+      "expected_attention": "away",
+      "instruction": "Look at the fixed RIGHT away marker"
+    },
+    {
+      "start": 60.0,
+      "end": 70.0,
+      "name": "Look above laptop",
+      "target_type": "away_above",
+      "condition": "normal",
+      "expected_attention": "away",
+      "instruction": "Look at the fixed marker above the laptop"
+    },
+    {
+      "start": 70.0,
+      "end": 80.0,
+      "name": "Look down at keyboard",
+      "target_type": "away_down",
+      "condition": "normal",
+      "expected_attention": "away",
+      "instruction": "Look at the keyboard or unrelated lower object"
+    },
+    {
+      "start": 80.0,
+      "end": 90.0,
+      "name": "Screen attention from body left",
+      "target_type": "screen_centre",
+      "condition": "body_left",
+      "expected_attention": "attention",
+      "instruction": "Move body left and keep looking at the screen-centre marker"
+    },
+    {
+      "start": 90.0,
+      "end": 100.0,
+      "name": "Screen attention from body right",
+      "target_type": "screen_centre",
+      "condition": "body_right",
+      "expected_attention": "attention",
+      "instruction": "Move body right and keep looking at the screen-centre marker"
+    },
+    {
+      "start": 100.0,
+      "end": 110.0,
+      "name": "Screen attention near camera",
+      "target_type": "screen_centre",
+      "condition": "distance_near",
+      "expected_attention": "attention",
+      "instruction": "Move closer and keep looking at the screen-centre marker"
+    },
+    {
+      "start": 110.0,
+      "end": 120.0,
+      "name": "Screen attention in darker light",
+      "target_type": "screen_centre",
+      "condition": "lighting_darker",
+      "expected_attention": "attention",
+      "instruction": "Return to normal position, reduce light and look at the screen-centre marker"
+    }
+  ],
+  "note": "The frozen candidate was hashed before recording but was not used to change the recording or labels."
+}

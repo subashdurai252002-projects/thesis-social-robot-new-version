@@ -1,0 +1,44 @@
+{
+  "profile_status": "candidate_v2_requires_independent_validation",
+  "model_name": "MobileOne-S0",
+  "camera_context": "Laptop webcam, 640x480",
+  "centre_offset": {
+    "yaw_degrees": -3.6719512939453125,
+    "pitch_degrees": 10.840911865234375
+  },
+  "looking_region_calibrated_degrees": {
+    "yaw_min": -8.25,
+    "yaw_max": 8.25,
+    "pitch_min": -3.75,
+    "pitch_max": 3.75
+  },
+  "derivation_performance": {
+    "yaw_half_width_degrees": 8.25,
+    "pitch_half_width_degrees": 3.75,
+    "rectangle_area": 123.75,
+    "true_positive": 23,
+    "false_negative": 7,
+    "true_negative": 106,
+    "false_positive": 14,
+    "centre_acceptance_rate": 0.7666666666666667,
+    "off_camera_rejection_rate": 0.8833333333333333,
+    "false_positive_rate": 0.11666666666666667,
+    "false_negative_rate": 0.23333333333333334,
+    "balanced_accuracy": 0.825
+  },
+  "selection_rule": {
+    "objective": "maximum balanced accuracy",
+    "minimum_centre_acceptance_rate": 0.7,
+    "tie_break_order": [
+      "lower false-positive rate",
+      "lower false-negative rate",
+      "smaller rectangle area"
+    ]
+  },
+  "limitations": [
+    "Optimized and measured on the same derivation recording.",
+    "Independent validation is required before runtime use.",
+    "One participant and unmeasured physical target angles.",
+    "This is classification calibration, not angular accuracy."
+  ]
+}

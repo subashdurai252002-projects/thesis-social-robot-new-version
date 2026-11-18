@@ -1,0 +1,27 @@
+Gaze calibration session-shift diagnostic
+Runtime modification: none
+New calibration candidate: none
+Loading old-session evidence...
+Old diagnostic samples: 206
+Measuring new-session face appearance...
+[ WARN:0@0.974] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+New diagnostic samples: 184
+
+Centre median comparison
+  Old yaw/pitch: -3.67° / +10.84°
+  New yaw/pitch: -14.46° / +3.45°
+  Yaw shift: -10.79°
+  Pitch shift: -7.39°
+
+Centre face-feature median shifts (new minus old)
+  face_brightness_mean: -20.2530
+  face_contrast_standard_deviation: -4.3378
+  face_sharpness_laplacian_variance: -16.9698
+  face_area_fraction: -0.0328
+  face_centre_x_normalized: -0.0301
+  face_centre_y_normalized: -0.0542
+
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/session_shift_diagnostic/gaze_session_shift_diagnostic_samples.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/session_shift_diagnostic/gaze_session_shift_diagnostic_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/session_shift_diagnostic/gaze_session_shift_diagnostic.png
+Decision: diagnostic only; no new calibration created.

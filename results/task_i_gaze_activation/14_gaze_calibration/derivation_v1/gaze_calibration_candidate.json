@@ -1,0 +1,46 @@
+{
+  "profile_status": "candidate_requires_independent_validation",
+  "model_name": "MobileOne-S0",
+  "camera_context": "Laptop webcam, 640x480",
+  "centre_offset": {
+    "yaw_degrees": -3.6719512939453125,
+    "pitch_degrees": 10.840911865234375
+  },
+  "looking_region_calibrated_degrees": {
+    "yaw_min": -10.227827041625975,
+    "yaw_max": 10.227827041625975,
+    "pitch_min": -6.520082794189452,
+    "pitch_max": 6.520082794189452
+  },
+  "derivation": {
+    "centre_action": "Look at camera centre",
+    "centre_sample_count": 30,
+    "robust_sigma_multiplier": 2.0,
+    "minimum_half_width_degrees": 5.0,
+    "centre_raw_yaw": {
+      "mean": -5.160022989908854,
+      "median": -3.6719512939453125,
+      "standard_deviation": 5.713290281193513,
+      "p05": -14.777279663085936,
+      "p95": 2.654300689697258
+    },
+    "centre_raw_pitch": {
+      "mean": 10.216158548990885,
+      "median": 10.840911865234375,
+      "standard_deviation": 3.5865958426264757,
+      "p05": 3.359965515136719,
+      "p95": 13.913236999511717
+    },
+    "centre_robust_sigma": {
+      "yaw_degrees": 5.113913520812988,
+      "pitch_degrees": 3.260041397094726
+    }
+  },
+  "limitations": [
+    "Derived from one participant and one recording.",
+    "Target angles were not physically measured.",
+    "Candidate boundaries are not angular-accuracy evidence.",
+    "Independent validation is required before runtime use.",
+    "Robot-camera placement requires separate lab validation."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "profile_name": "natural_attention_candidate_v1",
+  "profile_version": 1,
+  "profile_status": "candidate_v1_requires_independent_validation",
+  "created_utc": "2026-11-16T12:32:14+00:00",
+  "model": {
+    "name": "MobileOne-S0",
+    "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt",
+    "checkpoint_sha256": "f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95",
+    "input_preprocessing": "BGR to RGB; shorter side 448; aspect ratio preserved; ImageNet normalization"
+  },
+  "accepted_attention_targets": [
+    "Look at webcam lens",
+    "Look at upper screen",
+    "Look at screen centre"
+  ],
+  "away_reference_targets": [
+    "Look left away from laptop",
+    "Look right away from laptop",
+    "Look above laptop",
+    "Look down at keyboard"
+  ],
+  "normalization": {
+    "method": "position_only_expected_camera_gaze_then_fixed_webcam_residual",
+    "position_features": [
+      "face_centre_x_normalized",
+      "face_centre_y_normalized"
+    ],
+    "feature_mean": [
+      0.5277677617521365,
+      0.5694043803418807
+    ],
+    "feature_standard_deviation": [
+      0.12172985318856643,
+      0.027279914535144688
+    ],
+    "yaw_coefficients": [
+      -12.926310482188143,
+      0.7530227766608432,
+      2.4405620196195508
+    ],
+    "pitch_coefficients": [
+      6.9875925830286905,
+      -3.2827916521204226,
+      0.27989360440818
+    ],
+    "ridge_alpha": 1.0,
+    "fixed_webcam_residual_yaw_reference": 14.71366794004211,
+    "fixed_webcam_residual_pitch_reference": -0.8037809702920855,
+    "recalibrate_on_validation_recording": false
+  },
+  "attention_zone": {
+    "shape": "rectangular_yaw_pitch_corridor",
+    "yaw_lower_degrees": -8.0,
+    "yaw_upper_degrees": 8.0,
+    "pitch_lower_degrees": -14.0,
+    "pitch_upper_degrees": 7.0,
+    "boundary_inclusive": true
+  },
+  "temporal_rule": {
+    "check_interval_seconds": 0.5,
+    "required_consecutive_checks": 3,
+    "first_to_third_check_span_seconds": 1.0,
+    "unavailable_gaze_breaks_sequence": true
+  },
+  "derivation_results": {
+    "attention_positive_windows": 28,
+    "attention_total_windows": 30,
+    "away_positive_windows": 0,
+    "away_total_windows": 40,
+    "per_action_results": {
+      "Look at webcam lens": {
+        "available_checks": 12,
+        "positive_checks": 10,
+        "total_windows": 10,
+        "positive_windows": 8,
+        "action_triggered": true
+      },
+      "Look at upper screen": {
+        "available_checks": 12,
+        "positive_checks": 12,
+        "total_windows": 10,
+        "positive_windows": 10,
+        "action_triggered": true
+      },
+      "Look at screen centre": {
+        "available_checks": 12,
+        "positive_checks": 12,
+        "total_windows": 10,
+        "positive_windows": 10,
+        "action_triggered": true
+      },
+      "Look left away from laptop": {
+        "available_checks": 12,
+        "positive_checks": 0,
+        "total_windows": 10,
+        "positive_windows": 0,
+        "action_triggered": false
+      },
+      "Look right away from laptop": {
+        "available_checks": 12,
+        "positive_checks": 0,
+        "total_windows": 10,
+        "positive_windows": 0,
+        "action_triggered": false
+      },
+      "Look above laptop": {
+        "available_checks": 12,
+        "positive_checks": 6,
+        "total_windows": 10,
+        "positive_windows": 0,
+        "action_triggered": false
+      },
+      "Look down at keyboard": {
+        "available_checks": 12,
+        "positive_checks": 0,
+        "total_windows": 10,
+        "positive_windows": 0,
+        "action_triggered": false
+      }
+    },
+    "diagnostic_candidate_count": 413
+  },
+  "source_provenance": {
+    "natural_attention_video_sha256": "b86d980c1731230913b20ef4dba2206b17cde80329826b673f6ee9c96c7aaa49",
+    "zone_summary": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_zone_summary.json",
+      "sha256": "870e17421e36584ffe709e3a1e15e077c00abd55198af09a8c13b9a8338c49fc"
+    },
+    "zone_candidates": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_zone_candidates.csv",
+      "sha256": "6876635ad7ede9596b99a561df0c8e693a2ba3fb04e2ed4711b55b9eec2f30ca"
+    },
+    "normalized_samples": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_normalized_samples.csv",
+      "sha256": "bf06ee44f0afa3398323ededa23e412bf4fb56cda72b459261f99d1b8402c74e"
+    },
+    "position_model_summary": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_summary.json",
+      "sha256": "3af1ae3d2d7e0ae9e86641b9ce1bbf7b076955b10de142d6fa451833a0fbe698"
+    }
+  },
+  "runtime_state": {
+    "runtime_modified": false,
+    "runtime_profile_installed": false,
+    "activation_enabled": false,
+    "approved_for_deployment": false
+  },
+  "validation_requirements": [
+    "Apply this exact frozen profile to a new independent recording.",
+    "Do not recalculate the webcam reference from validation data.",
+    "Test webcam, upper-screen and screen-centre attention.",
+    "Test left, right, above and keyboard/down away targets.",
+    "Test position and supported laptop distance changes.",
+    "Treat missing or unsuitable faces as gaze unavailable."
+  ],
+  "limitations": [
+    "Derived using one participant and one laptop-camera arrangement.",
+    "The profile represents laptop attention, not final Unitree geometry.",
+    "The Unitree head camera and chest tablet require later lab calibration.",
+    "Exact physical target angles were not measured.",
+    "Liveness, ReSpeaker direction, interaction ownership and cooldown are not included."
+  ]
+}

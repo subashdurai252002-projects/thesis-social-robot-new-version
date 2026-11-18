@@ -1,0 +1,267 @@
+model_name,held_out_session,threshold,session_name,planned_action,expected_attention,scheduled_checks,available_checks,positive_checks,positive_three_check_windows,action_would_trigger,first_trigger_relative_seconds
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look at webcam lens,attention,12,12,9,5,True,4.0
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look at upper screen,attention,12,12,10,6,True,3.0
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True,3.0
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look left away from laptop,away,12,12,7,3,True,6.0
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look above laptop,away,12,12,7,2,True,6.5
+mobileone_gaze,natural_attention_derivation,2.318541657107224,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Baseline centre,attention,12,12,7,1,True,7.5
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Body left,attention,12,12,10,5,True,3.0
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Body right,attention,12,12,2,0,False,
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Face higher,attention,12,12,8,1,True,3.5
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Face lower,attention,12,12,7,2,True,3.5
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Near camera,attention,12,12,4,0,False,
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Far from camera,attention,12,2,2,0,False,
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Darker face lighting,attention,12,10,4,0,False,
+mobileone_gaze,robustness_attention,2.2337937960647554,robustness_attention,Brighter face lighting,attention,12,12,10,5,True,3.0
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,6,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,7,4,True,5.0
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,2,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,12,10,True,3.0
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look above laptop,away,12,12,6,1,True,5.5
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,1,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,6,2,True,3.0
+mobileone_gaze,candidate_v1_known_diagnostic,2.8199105132358433,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,10,4,True,3.0
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,11,9,True,3.5
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,10,7,True,4.5
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look above laptop,away,12,12,3,0,False,
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,3,0,False,
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,11,9,True,3.5
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,8,5,True,5.5
+mobileone_gaze,candidate_v2_final_diagnostic,1.644816568419583,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,3,0,False,
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look at webcam lens,attention,12,12,11,9,True,3.5
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look at upper screen,attention,12,12,9,3,True,3.0
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True,3.0
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look above laptop,away,12,12,4,0,False,
+iris_only,natural_attention_derivation,2.886242364238223,natural_attention_derivation,Look down at keyboard,away,12,12,11,7,True,3.0
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Baseline centre,attention,12,12,9,5,True,4.0
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Body left,attention,12,12,2,0,False,
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Body right,attention,12,12,9,7,True,3.5
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Face higher,attention,12,12,5,1,True,6.0
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Face lower,attention,12,12,4,0,False,
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Near camera,attention,12,12,0,0,False,
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Far from camera,attention,12,2,1,0,False,
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Darker face lighting,attention,12,10,1,0,False,
+iris_only,robustness_attention,0.8881122762610028,robustness_attention,Brighter face lighting,attention,12,12,12,10,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look above laptop,away,12,12,5,1,True,4.5
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,9,5,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,11,9,True,3.5
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,12,10,True,3.0
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,11,9,True,3.5
+iris_only,candidate_v1_known_diagnostic,2.9225797318971254,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,10,6,True,3.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look above laptop,away,12,12,12,10,True,3.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,10,7,True,3.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,1,0,False,
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,9,3,True,4.0
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,7,3,True,4.5
+iris_only,candidate_v2_final_diagnostic,1.3938228018656058,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,2,0,False,
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look at webcam lens,attention,12,12,12,10,True,3.0
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look at upper screen,attention,12,12,12,10,True,3.0
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True,3.0
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look above laptop,away,12,12,1,0,False,
+eye_blendshapes,natural_attention_derivation,2.8578890842819415,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Baseline centre,attention,12,12,12,10,True,3.0
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Body left,attention,12,12,11,8,True,3.0
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Body right,attention,12,12,11,8,True,3.0
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Face higher,attention,12,12,10,6,True,3.5
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Face lower,attention,12,12,9,6,True,4.5
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Near camera,attention,12,12,0,0,False,
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Far from camera,attention,12,2,1,0,False,
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Darker face lighting,attention,12,10,9,5,True,4.0
+eye_blendshapes,robustness_attention,2.888324556483453,robustness_attention,Brighter face lighting,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,2,0,False,
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look above laptop,away,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,11,9,True,3.5
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,5,2,True,4.0
+eye_blendshapes,candidate_v1_known_diagnostic,3.0159772393294846,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look above laptop,away,12,12,4,1,True,6.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,10,6,True,5.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,12,10,True,3.0
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,9,7,True,4.5
+eye_blendshapes,candidate_v2_final_diagnostic,2.935432873492333,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,7,4,True,6.0
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look at webcam lens,attention,12,12,11,9,True,3.5
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look at upper screen,attention,12,12,9,3,True,3.0
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look at screen centre,attention,12,12,11,8,True,3.0
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look above laptop,away,12,12,0,0,False,
+iris_and_blendshapes,natural_attention_derivation,3.4336120500723495,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Baseline centre,attention,12,12,11,8,True,4.0
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Body left,attention,12,12,6,0,False,
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Body right,attention,12,12,10,8,True,3.0
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Face higher,attention,12,12,10,6,True,3.5
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Face lower,attention,12,12,9,6,True,4.5
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Near camera,attention,12,12,0,0,False,
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Far from camera,attention,12,2,1,0,False,
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Darker face lighting,attention,12,10,7,3,True,6.0
+iris_and_blendshapes,robustness_attention,3.5023317867338406,robustness_attention,Brighter face lighting,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look above laptop,away,12,12,5,1,True,4.5
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,8,2,True,3.5
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,6,2,True,4.0
+iris_and_blendshapes,candidate_v1_known_diagnostic,3.864135262981399,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look above laptop,away,12,12,10,4,True,6.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,6,1,True,5.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,12,10,True,3.0
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,9,7,True,4.5
+iris_and_blendshapes,candidate_v2_final_diagnostic,5.017186719425566,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,4,1,True,7.5
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look at webcam lens,attention,12,12,11,9,True,3.5
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look at upper screen,attention,12,12,10,5,True,3.0
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look at screen centre,attention,12,12,11,8,True,3.0
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look above laptop,away,12,12,1,0,False,
+mobileone_and_eyes,natural_attention_derivation,4.255963570158104,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Baseline centre,attention,12,12,11,9,True,3.5
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Body left,attention,12,12,11,8,True,3.0
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Body right,attention,12,12,7,1,True,6.0
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Face higher,attention,12,12,11,9,True,3.5
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Face lower,attention,12,12,11,9,True,3.5
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Near camera,attention,12,12,1,0,False,
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Far from camera,attention,12,2,2,0,False,
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Darker face lighting,attention,12,10,8,4,True,6.0
+mobileone_and_eyes,robustness_attention,7.490095673725627,robustness_attention,Brighter face lighting,attention,12,12,11,7,True,3.0
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,10,4,True,3.0
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,11,7,True,3.0
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,8,2,True,3.5
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look above laptop,away,12,12,7,3,True,4.5
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,1,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,1,0,False,
+mobileone_and_eyes,candidate_v1_known_diagnostic,5.371012003550905,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look above laptop,away,12,12,4,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,2,0,False,
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,11,9,True,3.5
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,9,7,True,4.5
+mobileone_and_eyes,candidate_v2_final_diagnostic,5.033517973845641,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,3,0,False,
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look at webcam lens,attention,12,12,11,9,True,3.5
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look at upper screen,attention,12,12,11,7,True,3.0
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True,3.0
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look above laptop,away,12,12,0,0,False,
+eyes_and_head,natural_attention_derivation,5.146803861602593,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Baseline centre,attention,12,12,12,10,True,3.0
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Body left,attention,12,12,9,4,True,3.0
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Body right,attention,12,12,3,1,True,5.0
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Face higher,attention,12,12,8,5,True,5.5
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Face lower,attention,12,12,11,9,True,3.5
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Near camera,attention,12,12,0,0,False,
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Far from camera,attention,12,2,2,0,False,
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Darker face lighting,attention,12,10,7,3,True,6.0
+eyes_and_head,robustness_attention,5.881677332055291,robustness_attention,Brighter face lighting,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,11,8,True,4.0
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look above laptop,away,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,1,0,False,
+eyes_and_head,candidate_v1_known_diagnostic,5.251261156578803,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look above laptop,away,12,12,11,7,True,4.5
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,4,0,False,
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,12,10,True,3.0
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,8,4,True,4.5
+eyes_and_head,candidate_v2_final_diagnostic,6.596288561862905,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,4,1,True,7.5
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look at webcam lens,attention,12,12,11,9,True,3.5
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look at upper screen,attention,12,12,12,10,True,3.0
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True,3.0
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look left away from laptop,away,12,12,0,0,False,
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False,
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look above laptop,away,12,12,5,0,False,
+all_signals,natural_attention_derivation,9.102681915569766,natural_attention_derivation,Look down at keyboard,away,12,12,0,0,False,
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Baseline centre,attention,12,12,11,9,True,3.5
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Body left,attention,12,12,9,4,True,3.0
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Body right,attention,12,12,2,0,False,
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Face higher,attention,12,12,9,7,True,4.5
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Face lower,attention,12,12,11,9,True,3.5
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Near camera,attention,12,12,1,0,False,
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Far from camera,attention,12,2,2,0,False,
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Darker face lighting,attention,12,10,8,4,True,6.0
+all_signals,robustness_attention,8.292819564534398,robustness_attention,Brighter face lighting,attention,12,12,12,10,True,3.0
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look at webcam lens,attention,12,12,9,3,True,5.0
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look at upper screen,attention,12,12,11,7,True,3.0
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look at screen centre,attention,12,12,6,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look above laptop,away,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Screen attention from body left,attention,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Screen attention from body right,attention,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Screen attention near camera,attention,12,12,0,0,False,
+all_signals,candidate_v1_known_diagnostic,5.691222455633677,candidate_v1_known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False,
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look at webcam lens,attention,12,12,12,10,True,3.0
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look at upper screen,attention,12,12,12,10,True,3.0
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look at screen centre,attention,12,12,11,7,True,3.0
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look left away from laptop,away,12,12,0,0,False,
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look right away from laptop,away,12,12,0,0,False,
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look above laptop,away,12,12,8,1,True,7.5
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Look down at keyboard,away,12,12,0,0,False,
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Screen attention from body left,attention,12,12,1,0,False,
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Screen attention from body right,attention,12,12,11,9,True,3.5
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Screen attention near camera,attention,12,12,6,1,True,4.5
+all_signals,candidate_v2_final_diagnostic,6.840901504501907,candidate_v2_final_diagnostic,Screen attention in darker light,attention,12,8,4,1,True,7.5

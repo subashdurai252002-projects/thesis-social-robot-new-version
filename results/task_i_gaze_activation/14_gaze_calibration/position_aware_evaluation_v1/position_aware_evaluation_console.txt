@@ -1,0 +1,28 @@
+Offline position-aware gaze-calibration evaluation
+Input samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_samples.csv
+Eligible conditions: Baseline centre, Body left, Body right, Face higher, Face lower, Near camera, Darker face lighting, Brighter face lighting
+Excluded conditions:
+  Empty camera view: No person should be present.
+  Far from camera: Core gaze availability below 70%: 0.06666666666666667
+Cross-validation: leave one complete condition out
+Runtime modification: none
+
+Cross-validated overall results
+  Constant mean plane error: 8.46°
+  Position/quality-aware mean plane error: 7.98°
+  Adaptive minus constant: -0.49°
+
+Per held-out condition
+  Baseline centre: constant 6.63° | adaptive 7.11°
+  Body left: constant 7.00° | adaptive 7.79°
+  Body right: constant 10.22° | adaptive 9.45°
+  Face higher: constant 6.54° | adaptive 9.61°
+  Face lower: constant 8.39° | adaptive 7.78°
+  Near camera: constant 9.72° | adaptive 10.01°
+  Darker face lighting: constant 12.96° | adaptive 6.81°
+  Brighter face lighting: constant 7.04° | adaptive 5.13°
+
+Predictions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_evaluation_v1/position_aware_cross_validation.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_evaluation_v1/position_aware_evaluation_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_evaluation_v1/position_aware_evaluation.png
+Decision: diagnostic only; no runtime calibration created.

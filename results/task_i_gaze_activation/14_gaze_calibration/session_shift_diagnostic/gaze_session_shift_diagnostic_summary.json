@@ -1,0 +1,1374 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NO_NEW_CALIBRATION",
+  "old_sample_count": 206,
+  "new_sample_count": 184,
+  "new_session_availability": {
+    "evaluation_core_frames": 209,
+    "frames_with_gaze": 184,
+    "frames_with_measured_face": 184
+  },
+  "centre_session_shift_degrees": {
+    "yaw_median_shift": -10.790634206054687,
+    "pitch_median_shift": -7.3904268652343745
+  },
+  "old_centre": {
+    "raw_yaw_degrees": {
+      "count": 30,
+      "mean": -5.160022989908854,
+      "median": -3.6719512939453125,
+      "standard_deviation": 5.713290281193513,
+      "p25": -9.442901611328125,
+      "p75": -1.077880859375
+    },
+    "raw_pitch_degrees": {
+      "count": 30,
+      "mean": 10.216158548990885,
+      "median": 10.840911865234375,
+      "standard_deviation": 3.5865958426264757,
+      "p25": 8.528278350830078,
+      "p75": 12.903388977050781
+    },
+    "face_brightness_mean": {
+      "count": 30,
+      "mean": 58.17241994106669,
+      "median": 58.50587120329302,
+      "standard_deviation": 1.234765379680598,
+      "p25": 57.91402629322184,
+      "p75": 58.95426414226959
+    },
+    "face_contrast_standard_deviation": {
+      "count": 30,
+      "mean": 28.18221271269448,
+      "median": 28.250041828535878,
+      "standard_deviation": 0.7575758380727168,
+      "p25": 27.84673929032369,
+      "p75": 28.60799420913068
+    },
+    "face_sharpness_laplacian_variance": {
+      "count": 30,
+      "mean": 86.72200505758408,
+      "median": 88.34450233282837,
+      "standard_deviation": 7.43277278217557,
+      "p25": 84.0575290119798,
+      "p75": 91.43122858937072
+    },
+    "face_width_pixels": {
+      "count": 30,
+      "mean": 161.96666666666667,
+      "median": 162.0,
+      "standard_deviation": 2.639233895575675,
+      "p25": 161.0,
+      "p75": 163.0
+    },
+    "face_height_pixels": {
+      "count": 30,
+      "mean": 229.5,
+      "median": 230.5,
+      "standard_deviation": 5.3213406831988,
+      "p25": 226.0,
+      "p75": 232.75
+    },
+    "face_area_fraction": {
+      "count": 30,
+      "mean": 0.1210222439236111,
+      "median": 0.12117675781250001,
+      "standard_deviation": 0.004101291782027476,
+      "p25": 0.11810302734375,
+      "p75": 0.12408365885416667
+    },
+    "face_centre_x_normalized": {
+      "count": 30,
+      "mean": 0.5340364583333332,
+      "median": 0.5296875,
+      "standard_deviation": 0.013349523251799937,
+      "p25": 0.52890625,
+      "p75": 0.5330078125
+    },
+    "face_centre_y_normalized": {
+      "count": 30,
+      "mean": 0.5529513888888888,
+      "median": 0.5567708333333333,
+      "standard_deviation": 0.014032461058159588,
+      "p25": 0.5552083333333333,
+      "p75": 0.56015625
+    }
+  },
+  "new_centre": {
+    "raw_yaw_degrees": {
+      "count": 30,
+      "mean": -13.812038166666667,
+      "median": -14.4625855,
+      "standard_deviation": 4.375742599266864,
+      "p25": -16.2637135,
+      "p75": -11.78438925
+    },
+    "raw_pitch_degrees": {
+      "count": 30,
+      "mean": 3.2151545333333336,
+      "median": 3.450485,
+      "standard_deviation": 3.016557822355305,
+      "p25": 1.4934767500000001,
+      "p75": 4.918594
+    },
+    "face_brightness_mean": {
+      "count": 30,
+      "mean": 38.22773433119873,
+      "median": 38.2528278755373,
+      "standard_deviation": 0.594303177630971,
+      "p25": 37.827809132129964,
+      "p75": 38.74101043643264
+    },
+    "face_contrast_standard_deviation": {
+      "count": 30,
+      "mean": 24.117900547644442,
+      "median": 23.91222454704902,
+      "standard_deviation": 0.6853687451818236,
+      "p25": 23.764287354152327,
+      "p75": 24.340045898905096
+    },
+    "face_sharpness_laplacian_variance": {
+      "count": 30,
+      "mean": 71.4962242834193,
+      "median": 71.37473513902782,
+      "standard_deviation": 5.409239996012025,
+      "p25": 67.81693573147238,
+      "p75": 75.50408692171673
+    },
+    "face_width_pixels": {
+      "count": 30,
+      "mean": 143.1,
+      "median": 144.0,
+      "standard_deviation": 2.118962010041709,
+      "p25": 142.0,
+      "p75": 144.0
+    },
+    "face_height_pixels": {
+      "count": 30,
+      "mean": 189.83333333333334,
+      "median": 189.5,
+      "standard_deviation": 3.569158008394821,
+      "p25": 186.0,
+      "p75": 192.75
+    },
+    "face_area_fraction": {
+      "count": 30,
+      "mean": 0.08843804253472223,
+      "median": 0.08836588541666666,
+      "standard_deviation": 0.002490042187364889,
+      "p25": 0.086484375,
+      "p75": 0.09046875
+    },
+    "face_centre_x_normalized": {
+      "count": 30,
+      "mean": 0.5064322916666667,
+      "median": 0.499609375,
+      "standard_deviation": 0.016499836416750135,
+      "p25": 0.4984375,
+      "p75": 0.5046875
+    },
+    "face_centre_y_normalized": {
+      "count": 30,
+      "mean": 0.5020486111111111,
+      "median": 0.5026041666666667,
+      "standard_deviation": 0.006153675160292014,
+      "p25": 0.49895833333333334,
+      "p75": 0.5052083333333334
+    }
+  },
+  "centre_feature_median_shifts": {
+    "face_brightness_mean": -20.25304332775572,
+    "face_contrast_standard_deviation": -4.337817281486856,
+    "face_sharpness_laplacian_variance": -16.96976719380055,
+    "face_area_fraction": -0.03281087239583334,
+    "face_centre_x_normalized": -0.030078124999999956,
+    "face_centre_y_normalized": -0.054166666666666585
+  },
+  "per_session_action": {
+    "old_derivation": {
+      "Look at camera centre": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -5.160022989908854,
+          "median": -3.6719512939453125,
+          "standard_deviation": 5.713290281193513,
+          "p25": -9.442901611328125,
+          "p75": -1.077880859375
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 10.216158548990885,
+          "median": 10.840911865234375,
+          "standard_deviation": 3.5865958426264757,
+          "p25": 8.528278350830078,
+          "p75": 12.903388977050781
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 58.17241994106669,
+          "median": 58.50587120329302,
+          "standard_deviation": 1.234765379680598,
+          "p25": 57.91402629322184,
+          "p75": 58.95426414226959
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 28.18221271269448,
+          "median": 28.250041828535878,
+          "standard_deviation": 0.7575758380727168,
+          "p25": 27.84673929032369,
+          "p75": 28.60799420913068
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 86.72200505758408,
+          "median": 88.34450233282837,
+          "standard_deviation": 7.43277278217557,
+          "p25": 84.0575290119798,
+          "p75": 91.43122858937072
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 161.96666666666667,
+          "median": 162.0,
+          "standard_deviation": 2.639233895575675,
+          "p25": 161.0,
+          "p75": 163.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 229.5,
+          "median": 230.5,
+          "standard_deviation": 5.3213406831988,
+          "p25": 226.0,
+          "p75": 232.75
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.1210222439236111,
+          "median": 0.12117675781250001,
+          "standard_deviation": 0.004101291782027476,
+          "p25": 0.11810302734375,
+          "p75": 0.12408365885416667
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5340364583333332,
+          "median": 0.5296875,
+          "standard_deviation": 0.013349523251799937,
+          "p25": 0.52890625,
+          "p75": 0.5330078125
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5529513888888888,
+          "median": 0.5567708333333333,
+          "standard_deviation": 0.014032461058159588,
+          "p25": 0.5552083333333333,
+          "p75": 0.56015625
+        }
+      },
+      "Look left of camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -15.819032287597656,
+          "median": -15.662300109863281,
+          "standard_deviation": 6.270015487859906,
+          "p25": -20.146183013916016,
+          "p75": -11.142681121826172
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 9.250479125976563,
+          "median": 8.741401672363281,
+          "standard_deviation": 3.5835231243646923,
+          "p25": 6.569370269775391,
+          "p75": 12.112552642822266
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 59.05925179245159,
+          "median": 59.087718357040515,
+          "standard_deviation": 0.4014027589280972,
+          "p25": 58.8756379497578,
+          "p75": 59.364425776436654
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 27.938734408048386,
+          "median": 27.92432858412086,
+          "standard_deviation": 0.21107297951498757,
+          "p25": 27.84125130017496,
+          "p75": 27.997775566127512
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 87.49258873442409,
+          "median": 87.82578200370132,
+          "standard_deviation": 4.281085509721916,
+          "p25": 83.81160877900574,
+          "p75": 90.23499298531057
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 159.93333333333334,
+          "median": 160.0,
+          "standard_deviation": 0.9637888196533975,
+          "p25": 159.25,
+          "p75": 160.75
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 228.33333333333334,
+          "median": 228.5,
+          "standard_deviation": 1.9550504398153572,
+          "p25": 227.0,
+          "p75": 229.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.11887608506944441,
+          "median": 0.11885904947916667,
+          "standard_deviation": 0.0014259159937334226,
+          "p25": 0.1178369140625,
+          "p75": 0.11996012369791667
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5296354166666667,
+          "median": 0.5296875,
+          "standard_deviation": 0.0009006050242599338,
+          "p25": 0.52890625,
+          "p75": 0.5302734375
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5579166666666666,
+          "median": 0.5578125,
+          "standard_deviation": 0.00225988056878791,
+          "p25": 0.55625,
+          "p75": 0.5591145833333333
+        }
+      },
+      "Look right of camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": 5.613096618652344,
+          "median": 6.1278228759765625,
+          "standard_deviation": 4.911821555602184,
+          "p25": 2.3423538208007812,
+          "p75": 8.81707763671875
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 7.556274922688802,
+          "median": 7.45697021484375,
+          "standard_deviation": 2.499125646943784,
+          "p25": 5.449069976806641,
+          "p75": 9.449447631835938
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 58.9227717443131,
+          "median": 58.90031999251754,
+          "standard_deviation": 0.5636412947036418,
+          "p25": 58.50443866187506,
+          "p75": 59.287679221176056
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 28.223449993271426,
+          "median": 28.233079139810048,
+          "standard_deviation": 0.27109820851185745,
+          "p25": 28.068070137983494,
+          "p75": 28.40711826985732
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 91.81284830122294,
+          "median": 92.26751670041446,
+          "standard_deviation": 3.696420774228765,
+          "p25": 89.230978285699,
+          "p75": 93.93796264131844
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 160.5,
+          "median": 160.0,
+          "standard_deviation": 1.5652475842498528,
+          "p25": 160.0,
+          "p75": 161.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 231.53333333333333,
+          "median": 232.0,
+          "standard_deviation": 3.4032664048267245,
+          "p25": 228.25,
+          "p75": 234.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.12097309027777776,
+          "median": 0.12111328125,
+          "standard_deviation": 0.002449591881247197,
+          "p25": 0.11888020833333333,
+          "p75": 0.12257649739583333
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5302864583333334,
+          "median": 0.53125,
+          "standard_deviation": 0.00286470170209987,
+          "p25": 0.53046875,
+          "p75": 0.5318359374999999
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5619444444444445,
+          "median": 0.5614583333333333,
+          "standard_deviation": 0.0027524890531397924,
+          "p25": 0.5604166666666667,
+          "p75": 0.5635416666666667
+        }
+      },
+      "Look above camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -9.591808064778645,
+          "median": -10.234939575195312,
+          "standard_deviation": 4.498743662585362,
+          "p25": -12.397018432617188,
+          "p75": -5.939411163330078
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 19.15059611002604,
+          "median": 19.094009399414062,
+          "standard_deviation": 4.540841984751019,
+          "p25": 16.32231903076172,
+          "p75": 23.148651123046875
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 58.6084846816753,
+          "median": 58.4263957315069,
+          "standard_deviation": 0.5036273406617657,
+          "p25": 58.231358024320926,
+          "p75": 58.941516379503014
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 28.425187897013878,
+          "median": 28.495444731532004,
+          "standard_deviation": 0.3160845118760525,
+          "p25": 28.19974844730121,
+          "p75": 28.66204899374801
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 92.086563017413,
+          "median": 91.31016305421792,
+          "standard_deviation": 4.111364839749389,
+          "p25": 89.15458664187344,
+          "p75": 94.34709734192054
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 162.4,
+          "median": 162.5,
+          "standard_deviation": 1.2,
+          "p25": 162.0,
+          "p75": 163.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 228.83333333333334,
+          "median": 229.0,
+          "standard_deviation": 2.684316590038432,
+          "p25": 227.0,
+          "p75": 230.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.12097417534722221,
+          "median": 0.120869140625,
+          "standard_deviation": 0.0018389606872863398,
+          "p25": 0.11970703125,
+          "p75": 0.1219580078125
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5319791666666667,
+          "median": 0.53203125,
+          "standard_deviation": 0.0014110642900150103,
+          "p25": 0.53125,
+          "p75": 0.5328125
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5562847222222221,
+          "median": 0.55625,
+          "standard_deviation": 0.0029027860845176256,
+          "p25": 0.5544270833333333,
+          "p75": 0.5572916666666666
+        }
+      },
+      "Look below camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -1.1254837036132812,
+          "median": -1.2108001708984375,
+          "standard_deviation": 4.392501161054194,
+          "p25": -3.2913894653320312,
+          "p75": 1.1812477111816406
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 1.6869359334309897,
+          "median": 1.6600189208984375,
+          "standard_deviation": 3.2182339414138617,
+          "p25": -0.4342994689941406,
+          "p75": 3.6155929565429688
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 58.041633093555156,
+          "median": 58.02351653798906,
+          "standard_deviation": 0.46556994057977863,
+          "p25": 57.79458354594107,
+          "p75": 58.43230535887506
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 28.218288741451325,
+          "median": 28.24766109866468,
+          "standard_deviation": 0.28183922112200815,
+          "p25": 28.024020681745668,
+          "p75": 28.457328972638386
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 88.49119759052388,
+          "median": 87.71581712823891,
+          "standard_deviation": 3.4701454315470492,
+          "p25": 85.8474894185309,
+          "p75": 90.93135717756135
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 164.03333333333333,
+          "median": 164.0,
+          "standard_deviation": 1.5807874268505835,
+          "p25": 163.0,
+          "p75": 165.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 232.6,
+          "median": 232.5,
+          "standard_deviation": 2.0912516188477497,
+          "p25": 231.0,
+          "p75": 234.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.124203125,
+          "median": 0.12475748697916667,
+          "standard_deviation": 0.0018709321152422472,
+          "p25": 0.12309895833333333,
+          "p75": 0.12562662760416665
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5231510416666667,
+          "median": 0.52265625,
+          "standard_deviation": 0.0022049465479947266,
+          "p25": 0.521875,
+          "p75": 0.5234375
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5670833333333334,
+          "median": 0.5671875,
+          "standard_deviation": 0.0021279935341728417,
+          "p25": 0.565625,
+          "p75": 0.56875
+        }
+      },
+      "Centre gaze while moving left and right": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -7.354396057128906,
+          "median": -8.426445007324219,
+          "standard_deviation": 8.297097118061997,
+          "p25": -14.238666534423828,
+          "p75": 0.07720565795898438
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 9.7346923828125,
+          "median": 9.562065124511719,
+          "standard_deviation": 3.8841701347302307,
+          "p25": 6.991069793701172,
+          "p75": 12.438121795654297
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 58.5811548144854,
+          "median": 58.02929612903864,
+          "standard_deviation": 1.3635423570348735,
+          "p25": 57.6595048058165,
+          "p75": 58.862684074996466
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 28.343930611000197,
+          "median": 28.563109298302678,
+          "standard_deviation": 1.0736143809526693,
+          "p25": 27.95048770644104,
+          "p75": 28.932141874373563
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 78.19002141737018,
+          "median": 82.03571366536443,
+          "standard_deviation": 13.307656744874297,
+          "p25": 64.64395271594384,
+          "p75": 90.0813504229615
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 167.96666666666667,
+          "median": 167.0,
+          "standard_deviation": 3.351450763806955,
+          "p25": 166.0,
+          "p75": 169.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 232.33333333333334,
+          "median": 234.0,
+          "standard_deviation": 8.7343510857355,
+          "p25": 230.5,
+          "p75": 237.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.1270236545138889,
+          "median": 0.12736653645833335,
+          "standard_deviation": 0.0052863126309086695,
+          "p25": 0.1238720703125,
+          "p75": 0.1291455078125
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5200260416666667,
+          "median": 0.526953125,
+          "standard_deviation": 0.084292611041886,
+          "p25": 0.5144531250000001,
+          "p75": 0.54765625
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5720138888888889,
+          "median": 0.5697916666666667,
+          "standard_deviation": 0.008266806207752976,
+          "p25": 0.5666666666666667,
+          "p75": 0.5739583333333333
+        }
+      },
+      "Centre gaze while moving closer and farther": {
+        "raw_yaw_degrees": {
+          "count": 26,
+          "mean": -5.153338505671575,
+          "median": -4.661705017089844,
+          "standard_deviation": 4.644501297235224,
+          "p25": -9.094429016113281,
+          "p75": -2.5614700317382812
+        },
+        "raw_pitch_degrees": {
+          "count": 26,
+          "mean": 8.486768869253305,
+          "median": 9.437896728515625,
+          "standard_deviation": 5.399479094847189,
+          "p25": 6.295337677001953,
+          "p75": 12.532913208007812
+        },
+        "face_brightness_mean": {
+          "count": 26,
+          "mean": 54.424949551763135,
+          "median": 56.205889797234605,
+          "standard_deviation": 4.887466220536009,
+          "p25": 52.8463313404458,
+          "p75": 57.94021813047804
+        },
+        "face_contrast_standard_deviation": {
+          "count": 26,
+          "mean": 29.311036705042373,
+          "median": 29.17794540557106,
+          "standard_deviation": 1.827281004951724,
+          "p25": 27.748076297577818,
+          "p75": 30.755889707359987
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 26,
+          "mean": 77.42182764582742,
+          "median": 82.56822454305401,
+          "standard_deviation": 31.4132440129977,
+          "p25": 46.30618364621189,
+          "p75": 101.59504824597626
+        },
+        "face_width_pixels": {
+          "count": 26,
+          "mean": 189.96153846153845,
+          "median": 172.5,
+          "standard_deviation": 61.54765556319301,
+          "p25": 138.25,
+          "p75": 228.5
+        },
+        "face_height_pixels": {
+          "count": 26,
+          "mean": 262.53846153846155,
+          "median": 247.0,
+          "standard_deviation": 87.47669173918923,
+          "p25": 178.0,
+          "p75": 328.25
+        },
+        "face_area_fraction": {
+          "count": 26,
+          "mean": 0.1796678435496795,
+          "median": 0.13786783854166668,
+          "standard_deviation": 0.11643869151176468,
+          "p25": 0.08011067708333333,
+          "p75": 0.24414225260416667
+        },
+        "face_centre_x_normalized": {
+          "count": 26,
+          "mean": 0.5201021634615384,
+          "median": 0.5203125,
+          "standard_deviation": 0.008813721263969804,
+          "p25": 0.5134765625,
+          "p75": 0.52421875
+        },
+        "face_centre_y_normalized": {
+          "count": 26,
+          "mean": 0.5880608974358974,
+          "median": 0.5833333333333334,
+          "standard_deviation": 0.032826463208841826,
+          "p25": 0.5674479166666666,
+          "p75": 0.6098958333333333
+        }
+      }
+    },
+    "new_validation": {
+      "Look at camera centre": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -13.812038166666667,
+          "median": -14.4625855,
+          "standard_deviation": 4.375742599266864,
+          "p25": -16.2637135,
+          "p75": -11.78438925
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 3.2151545333333336,
+          "median": 3.450485,
+          "standard_deviation": 3.016557822355305,
+          "p25": 1.4934767500000001,
+          "p75": 4.918594
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 38.22773433119873,
+          "median": 38.2528278755373,
+          "standard_deviation": 0.594303177630971,
+          "p25": 37.827809132129964,
+          "p75": 38.74101043643264
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 24.117900547644442,
+          "median": 23.91222454704902,
+          "standard_deviation": 0.6853687451818236,
+          "p25": 23.764287354152327,
+          "p75": 24.340045898905096
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 71.4962242834193,
+          "median": 71.37473513902782,
+          "standard_deviation": 5.409239996012025,
+          "p25": 67.81693573147238,
+          "p75": 75.50408692171673
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 143.1,
+          "median": 144.0,
+          "standard_deviation": 2.118962010041709,
+          "p25": 142.0,
+          "p75": 144.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 189.83333333333334,
+          "median": 189.5,
+          "standard_deviation": 3.569158008394821,
+          "p25": 186.0,
+          "p75": 192.75
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.08843804253472223,
+          "median": 0.08836588541666666,
+          "standard_deviation": 0.002490042187364889,
+          "p25": 0.086484375,
+          "p75": 0.09046875
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5064322916666667,
+          "median": 0.499609375,
+          "standard_deviation": 0.016499836416750135,
+          "p25": 0.4984375,
+          "p75": 0.5046875
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5020486111111111,
+          "median": 0.5026041666666667,
+          "standard_deviation": 0.006153675160292014,
+          "p25": 0.49895833333333334,
+          "p75": 0.5052083333333334
+        }
+      },
+      "Look left of camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -29.508237166666664,
+          "median": -29.1673355,
+          "standard_deviation": 4.508024488515046,
+          "p25": -31.451755499999997,
+          "p75": -27.08814975
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 10.4277451,
+          "median": 10.5333555,
+          "standard_deviation": 4.617687665974161,
+          "p25": 7.6006435,
+          "p75": 11.959614
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 36.17030955458659,
+          "median": 35.77638557601652,
+          "standard_deviation": 1.0127305765647039,
+          "p25": 35.25016204453563,
+          "p75": 37.065176283570835
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 21.502951314033737,
+          "median": 20.67950257683325,
+          "standard_deviation": 1.8439272124309727,
+          "p25": 19.820317236950736,
+          "p75": 23.419805293436784
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 42.64493741992103,
+          "median": 42.411763390509904,
+          "standard_deviation": 4.316759319531993,
+          "p25": 39.13319680795612,
+          "p75": 45.78888607723131
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 168.76666666666668,
+          "median": 169.0,
+          "standard_deviation": 2.170765354021992,
+          "p25": 167.25,
+          "p75": 170.75
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 241.83333333333334,
+          "median": 241.0,
+          "standard_deviation": 3.0559595692497123,
+          "p25": 240.0,
+          "p75": 243.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.13285915798611111,
+          "median": 0.13258138020833332,
+          "standard_deviation": 0.002567969921521149,
+          "p25": 0.13135172526041666,
+          "p75": 0.13378173828125
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5202864583333333,
+          "median": 0.5203125,
+          "standard_deviation": 0.0058514993367381595,
+          "p25": 0.515625,
+          "p75": 0.5234375
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.49899305555555556,
+          "median": 0.5005208333333333,
+          "standard_deviation": 0.004889426461922017,
+          "p25": 0.496875,
+          "p75": 0.5018229166666667
+        }
+      },
+      "Look right of camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -9.200808066666667,
+          "median": -9.0818865,
+          "standard_deviation": 4.464497286870202,
+          "p25": -12.61786625,
+          "p75": -6.4440005
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 5.9782470666666665,
+          "median": 6.6241605,
+          "standard_deviation": 4.423263223730093,
+          "p25": 4.34900675,
+          "p75": 8.9318505
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 36.83098580107493,
+          "median": 36.77645108591197,
+          "standard_deviation": 0.3401751324004894,
+          "p25": 36.59529992443168,
+          "p75": 37.05603543269687
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 22.31266487565203,
+          "median": 22.350518305862856,
+          "standard_deviation": 0.46849912323066223,
+          "p25": 22.065240790583537,
+          "p75": 22.524680585919942
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 45.99236166446251,
+          "median": 45.06307822819778,
+          "standard_deviation": 3.6546760246369177,
+          "p25": 43.29823642909605,
+          "p75": 48.458969341731304
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 173.93333333333334,
+          "median": 174.0,
+          "standard_deviation": 1.1813363431112902,
+          "p25": 174.0,
+          "p75": 175.0
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 244.13333333333333,
+          "median": 244.0,
+          "standard_deviation": 2.7047283700134392,
+          "p25": 242.0,
+          "p75": 246.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.1382261284722222,
+          "median": 0.13808756510416667,
+          "standard_deviation": 0.0018356484973521055,
+          "p25": 0.1367724609375,
+          "p75": 0.1393359375
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5158854166666667,
+          "median": 0.515625,
+          "standard_deviation": 0.0013878033952577288,
+          "p25": 0.51484375,
+          "p75": 0.5171875
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5022222222222222,
+          "median": 0.5020833333333333,
+          "standard_deviation": 0.0022135246459040647,
+          "p25": 0.5002604166666667,
+          "p75": 0.503125
+        }
+      },
+      "Look above camera": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -20.156696633333333,
+          "median": -20.484291,
+          "standard_deviation": 3.899676926363785,
+          "p25": -23.0161705,
+          "p75": -17.99822275
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 20.863303066666667,
+          "median": 20.067131,
+          "standard_deviation": 5.695476985072189,
+          "p25": 16.93846525,
+          "p75": 25.4119645
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 36.37668332215029,
+          "median": 36.33637205692215,
+          "standard_deviation": 0.3028084392318701,
+          "p25": 36.16703192178779,
+          "p75": 36.607500900569036
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 22.105507330050507,
+          "median": 22.120690472476852,
+          "standard_deviation": 0.43749578646706044,
+          "p25": 21.88285737839174,
+          "p75": 22.39710028199558
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 45.402597705400595,
+          "median": 45.44835887628901,
+          "standard_deviation": 3.2263307099262906,
+          "p25": 42.68718913810972,
+          "p75": 47.174848579290014
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 175.5,
+          "median": 175.5,
+          "standard_deviation": 1.284523257866513,
+          "p25": 175.0,
+          "p75": 176.75
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 246.23333333333332,
+          "median": 247.0,
+          "standard_deviation": 2.716411030917245,
+          "p25": 245.0,
+          "p75": 248.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.14067241753472223,
+          "median": 0.14070638020833334,
+          "standard_deviation": 0.0020044344878108037,
+          "p25": 0.13956705729166666,
+          "p75": 0.14225667317708332
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.5131510416666667,
+          "median": 0.51328125,
+          "standard_deviation": 0.0017126232341101498,
+          "p25": 0.5119140625,
+          "p75": 0.51484375
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.4984375,
+          "median": 0.49895833333333334,
+          "standard_deviation": 0.0026862076996307625,
+          "p25": 0.49713541666666666,
+          "p75": 0.49973958333333335
+        }
+      },
+      "Look below camera": {
+        "raw_yaw_degrees": {
+          "count": 29,
+          "mean": -24.415562103448273,
+          "median": -24.373016,
+          "standard_deviation": 6.017230201306167,
+          "p25": -28.013443,
+          "p75": -20.266449
+        },
+        "raw_pitch_degrees": {
+          "count": 29,
+          "mean": -13.026774896551727,
+          "median": -13.131836,
+          "standard_deviation": 5.032432272716399,
+          "p25": -17.631714,
+          "p75": -8.560333
+        },
+        "face_brightness_mean": {
+          "count": 29,
+          "mean": 36.42269050357688,
+          "median": 36.37575019177835,
+          "standard_deviation": 0.36248861649065367,
+          "p25": 36.22036969916636,
+          "p75": 36.644044642030195
+        },
+        "face_contrast_standard_deviation": {
+          "count": 29,
+          "mean": 22.753041737930907,
+          "median": 22.771142675813646,
+          "standard_deviation": 0.614232106519433,
+          "p25": 22.34092992376933,
+          "p75": 22.882486654354242
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 29,
+          "mean": 42.43886403587551,
+          "median": 42.77012199003777,
+          "standard_deviation": 4.206156528696246,
+          "p25": 40.67190487089636,
+          "p75": 44.81174061898679
+        },
+        "face_width_pixels": {
+          "count": 29,
+          "mean": 177.82758620689654,
+          "median": 178.0,
+          "standard_deviation": 1.288382185673752,
+          "p25": 177.0,
+          "p75": 179.0
+        },
+        "face_height_pixels": {
+          "count": 29,
+          "mean": 246.41379310344828,
+          "median": 247.0,
+          "standard_deviation": 2.399960364317974,
+          "p25": 244.0,
+          "p75": 248.0
+        },
+        "face_area_fraction": {
+          "count": 29,
+          "mean": 0.14264120869252875,
+          "median": 0.1425390625,
+          "standard_deviation": 0.001786287034343526,
+          "p25": 0.141796875,
+          "p75": 0.14369791666666668
+        },
+        "face_centre_x_normalized": {
+          "count": 29,
+          "mean": 0.5138200431034483,
+          "median": 0.5140625,
+          "standard_deviation": 0.0014950901859387595,
+          "p25": 0.51328125,
+          "p75": 0.51484375
+        },
+        "face_centre_y_normalized": {
+          "count": 29,
+          "mean": 0.5043821839080461,
+          "median": 0.5041666666666667,
+          "standard_deviation": 0.003111552848808573,
+          "p25": 0.503125,
+          "p75": 0.5052083333333334
+        }
+      },
+      "Centre gaze while moving left and right": {
+        "raw_yaw_degrees": {
+          "count": 30,
+          "mean": -20.954543566666665,
+          "median": -19.178772000000002,
+          "standard_deviation": 8.810521617067886,
+          "p25": -26.910515,
+          "p75": -16.1525875
+        },
+        "raw_pitch_degrees": {
+          "count": 30,
+          "mean": 8.446343966666667,
+          "median": 8.180565000000001,
+          "standard_deviation": 9.924988735420703,
+          "p25": 3.2441407499999997,
+          "p75": 13.6715965
+        },
+        "face_brightness_mean": {
+          "count": 30,
+          "mean": 37.94856431234443,
+          "median": 38.53628703199799,
+          "standard_deviation": 5.207758646658049,
+          "p25": 32.67914554246076,
+          "p75": 42.88580275564675
+        },
+        "face_contrast_standard_deviation": {
+          "count": 30,
+          "mean": 20.17993262808442,
+          "median": 21.06849816238971,
+          "standard_deviation": 2.791025763051827,
+          "p25": 17.457428103702956,
+          "p75": 22.1666421492843
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 30,
+          "mean": 21.99677147628766,
+          "median": 18.233971404155575,
+          "standard_deviation": 8.623484567720897,
+          "p25": 16.61568766225835,
+          "p75": 28.2979166498138
+        },
+        "face_width_pixels": {
+          "count": 30,
+          "mean": 190.96666666666667,
+          "median": 186.5,
+          "standard_deviation": 12.172327450227238,
+          "p25": 181.25,
+          "p75": 195.75
+        },
+        "face_height_pixels": {
+          "count": 30,
+          "mean": 254.53333333333333,
+          "median": 255.5,
+          "standard_deviation": 11.615315559878498,
+          "p25": 247.0,
+          "p75": 262.0
+        },
+        "face_area_fraction": {
+          "count": 30,
+          "mean": 0.1581095920138889,
+          "median": 0.155732421875,
+          "standard_deviation": 0.010876437678280641,
+          "p25": 0.15102539062499998,
+          "p75": 0.16388671875
+        },
+        "face_centre_x_normalized": {
+          "count": 30,
+          "mean": 0.4879947916666667,
+          "median": 0.5249999999999999,
+          "standard_deviation": 0.2014413883692566,
+          "p25": 0.29921875,
+          "p75": 0.6728515625
+        },
+        "face_centre_y_normalized": {
+          "count": 30,
+          "mean": 0.5315972222222222,
+          "median": 0.5234375,
+          "standard_deviation": 0.025124593080667706,
+          "p25": 0.5143229166666667,
+          "p75": 0.54453125
+        }
+      },
+      "Centre gaze while moving closer and farther": {
+        "raw_yaw_degrees": {
+          "count": 5,
+          "mean": -21.635394400000003,
+          "median": -16.014282,
+          "standard_deviation": 9.541201230432856,
+          "p25": -26.886307,
+          "p75": -15.526993
+        },
+        "raw_pitch_degrees": {
+          "count": 5,
+          "mean": 12.4786468,
+          "median": 12.336441,
+          "standard_deviation": 3.4524973244063433,
+          "p25": 10.434265,
+          "p75": 15.418091
+        },
+        "face_brightness_mean": {
+          "count": 5,
+          "mean": 39.81929574157461,
+          "median": 40.41371285356248,
+          "standard_deviation": 1.555091398303263,
+          "p25": 38.090818001834954,
+          "p75": 40.47689122471731
+        },
+        "face_contrast_standard_deviation": {
+          "count": 5,
+          "mean": 23.58506808083417,
+          "median": 23.280098578214172,
+          "standard_deviation": 0.6139289643605462,
+          "p25": 23.056767425525646,
+          "p75": 23.973033953505794
+        },
+        "face_sharpness_laplacian_variance": {
+          "count": 5,
+          "mean": 22.418035747762605,
+          "median": 22.079396241357834,
+          "standard_deviation": 5.534041303339137,
+          "p25": 21.435102079623363,
+          "p75": 22.7752186646503
+        },
+        "face_width_pixels": {
+          "count": 5,
+          "mean": 223.8,
+          "median": 218.0,
+          "standard_deviation": 14.232357499725756,
+          "p25": 210.0,
+          "p75": 236.0
+        },
+        "face_height_pixels": {
+          "count": 5,
+          "mean": 316.4,
+          "median": 313.0,
+          "standard_deviation": 27.27343029396926,
+          "p25": 299.0,
+          "p75": 342.0
+        },
+        "face_area_fraction": {
+          "count": 5,
+          "mean": 0.2316536458333333,
+          "median": 0.22211588541666666,
+          "standard_deviation": 0.03392933711794934,
+          "p25": 0.20439453125,
+          "p75": 0.2696484375
+        },
+        "face_centre_x_normalized": {
+          "count": 5,
+          "mean": 0.46484375,
+          "median": 0.46171875,
+          "standard_deviation": 0.030014644862966493,
+          "p25": 0.44375,
+          "p75": 0.46875
+        },
+        "face_centre_y_normalized": {
+          "count": 5,
+          "mean": 0.4995833333333334,
+          "median": 0.4947916666666667,
+          "standard_deviation": 0.011887785514739253,
+          "p25": 0.49166666666666664,
+          "p75": 0.5010416666666667
+        }
+      }
+    }
+  },
+  "diagnostic_correlations_all_samples": {
+    "face_brightness_mean": {
+      "correlation_with_raw_yaw": 0.622842218612808,
+      "correlation_with_raw_pitch": 0.21422307359167378
+    },
+    "face_contrast_standard_deviation": {
+      "correlation_with_raw_yaw": 0.6167503546894717,
+      "correlation_with_raw_pitch": 0.1392995234999642
+    },
+    "face_sharpness_laplacian_variance": {
+      "correlation_with_raw_yaw": 0.6026231430470997,
+      "correlation_with_raw_pitch": 0.1565814239502776
+    },
+    "face_area_fraction": {
+      "correlation_with_raw_yaw": -0.08153993332013014,
+      "correlation_with_raw_pitch": -0.06967717855078363
+    },
+    "face_centre_x_normalized": {
+      "correlation_with_raw_yaw": 0.05775231898771198,
+      "correlation_with_raw_pitch": -0.16129512237338162
+    },
+    "face_centre_y_normalized": {
+      "correlation_with_raw_yaw": 0.5760735718250485,
+      "correlation_with_raw_pitch": 0.1426767247863606
+    }
+  },
+  "interpretation_limits": [
+    "Correlation does not establish causation.",
+    "Old crops came from the original accepted-crop dataset.",
+    "New face appearance was remeasured with full-frame YuNet.",
+    "One participant and two sessions are insufficient for generalisation.",
+    "No calibration candidate was created or modified."
+  ],
+  "next_decision_question": "Determine whether lighting and face geometry shifts justify a position/quality-aware calibration dataset and architecture."
+}

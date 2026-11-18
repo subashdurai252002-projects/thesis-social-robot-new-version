@@ -32,6 +32,7 @@ BLOCK_BYTES = (
 )
 
 PARTIAL_INTERVAL_SECONDS = 2.0
+SPEECH_BLOCKS_TO_START = 2
 SILENCE_BLOCKS_TO_STOP = 8
 MAX_WAIT_SECONDS = 15
 MAX_SPEECH_SECONDS = 20
@@ -50,6 +51,21 @@ def calculate_rms(raw_audio):
     return float(
         np.sqrt(np.mean(mono * mono))
     )
+
+
+def update_consecutive_loud_blocks(current_count, is_loud):
+    """Advance or reset the speech-start confirmation counter."""
+
+    if (
+        not isinstance(current_count, int)
+        or isinstance(current_count, bool)
+        or current_count < 0
+    ):
+        raise ValueError(
+            "current_count must be a non-negative integer."
+        )
+
+    return current_count + 1 if bool(is_loud) else 0
 
 
 def raw_to_mono(raw_audio):
@@ -164,6 +180,7 @@ def capture_audio(
 
         pre_roll = deque(maxlen=5)
         speech_started = False
+        consecutive_loud_blocks = 0
         silent_blocks = 0
 
         waiting_started = time.perf_counter()
@@ -183,11 +200,26 @@ def capture_audio(
 
             if not speech_started:
                 pre_roll.append(block)
+                consecutive_loud_blocks = (
+                    update_consecutive_loud_blocks(
+                        consecutive_loud_blocks,
+                        level >= threshold,
+                    )
+                )
 
-                if level >= threshold:
+                if (
+                    consecutive_loud_blocks
+                    >= SPEECH_BLOCKS_TO_START
+                ):
                     speech_started = True
 
-                    state["speech_started_at"] = now
+                    state["speech_started_at"] = (
+                        now
+                        - (
+                            SPEECH_BLOCKS_TO_START - 1
+                        )
+                        * BLOCK_SECONDS
+                    )
                     state["last_speech_at"] = now
 
                     with lock:

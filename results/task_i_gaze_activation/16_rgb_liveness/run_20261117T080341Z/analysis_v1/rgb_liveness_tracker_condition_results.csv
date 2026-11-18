@@ -1,0 +1,9 @@
+condition,expected,core_samples,face_samples,blink_events,head_turn_events,left_head_turn_events,right_head_turn_events,passive_evidence_completed,passive_live_candidate_events
+empty,no_person,89,0,0,0,0,0,False,0
+live_blink,live,89,89,3,0,0,0,False,0
+live_head_turn,live,90,90,2,1,0,1,True,0
+live_normal,live,90,90,0,0,0,0,False,0
+live_return_blink,live,89,89,13,0,0,0,False,0
+live_still,live,90,90,0,0,0,0,False,0
+phone_recorded_video,spoof_replay,164,0,0,0,0,0,False,0
+phone_static_photo,spoof_static,165,0,0,0,0,0,False,0

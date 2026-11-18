@@ -50,3 +50,32 @@ The top-level working notes contained many explanations but only these recoverab
 The subsequent MobileOne integration audit additionally verified the official Apple repository at `https://github.com/apple-aiml-research/ml-mobileone`, its Apple licence, and the MobileOne paper. See `10_mobileone_source_license_review.md`.
 
 Capitalization differences in GitHub URLs do not change repository identity. The canonical audited clone URL is used elsewhere in this folder.
+
+## Detailed landmarks and RGB-liveness source review
+
+Reviewed on 16 November 2026 before adding another runtime dependency.
+
+| Candidate | Primary source and licence | Verified capability | Project decision |
+|---|---|---|---|
+| MediaPipe Face Landmarker | `https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker?tab=Python`; repository `https://github.com/google-ai-edge/mediapipe`; Apache-2.0 | 478 3D face landmarks, 52 optional expression/blink blendshapes and an optional 4x4 face transformation matrix; image, video and live-stream modes | Selected for a standalone laptop compatibility and latency test. It is a landmark/head-pose foundation, not proof of liveness by itself. It was not installed during this source review. |
+| OpenCV `solvePnP` | `https://docs.opencv.org/5.0/main_modules/d_projection.html`; Apache-2.0 | Estimates rotation and translation from matched 3D and 2D points | Available in the existing OpenCV 5 environment and suitable for independently checking head pose from selected landmarks. It does not detect landmarks or liveness. |
+| OpenCV Facemark | `https://docs.opencv.org/5.0/extra_modules/classcv_1_1face_1_1Facemark.html`; Apache-2.0 | Landmark API that requires a separately supplied landmark model | Not selected: the current `cv2` build has no `cv2.face` module, and MediaPipe provides denser maintained outputs for the planned experiment. |
+| Silent-Face-Anti-Spoofing / MiniFASNet | `https://github.com/minivision-ai/Silent-Face-Anti-Spoofing`; Apache-2.0 | Passive RGB real/fake classifier using small pruned models and multi-scale face crops | Reviewed, not adopted yet. Its own documentation warns that results depend on camera and scene and assumes a complete, near-frontal face. It requires an independent laptop benchmark against real faces, printed photos and phone replay before any use. |
+
+Environment audit at review time: Python 3.12.3, OpenCV 5.0.0,
+`cv2.solvePnP` available, `cv2.face` absent, and MediaPipe, ONNX Runtime,
+dlib and `face_alignment` not installed in `.venv-gaze`.
+
+The planned layered RGB evidence remains:
+
+```text
+accepted YuNet face associated with a ByteTrack ID
+→ detailed landmarks and head pose
+→ blink/eyelid and intentional head-motion evidence over time
+→ separately validated passive anti-spoof evidence, if suitable
+→ per-person temporal fusion
+```
+
+No individual layer is to be documented as proof against every photograph,
+screen replay or synthetic video. The final claims must match the attacks that
+were actually tested.

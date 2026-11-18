@@ -1,0 +1,16 @@
+4.99 s: Empty camera view [no_person] (frame 150)
+14.99 s: Look at webcam lens [camera_lens] (frame 449)
+25.00 s: Look at upper screen [upper_screen] (frame 748)
+35.01 s: Look at screen centre [screen_centre] (frame 1047)
+45.00 s: Look left away from laptop [away_left] (frame 1346)
+55.02 s: Look right away from laptop [away_right] (frame 1645)
+64.99 s: Look above laptop [away_above] (frame 1943)
+74.99 s: Look down at keyboard [away_down] (frame 2242)
+
+Natural-attention review completed.
+Timeline alignment passed: True
+Video/timeline frame count matches: True
+Video frames: 2391
+Timeline rows: 2391
+Saved image: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_review.jpg
+Saved manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_review.json

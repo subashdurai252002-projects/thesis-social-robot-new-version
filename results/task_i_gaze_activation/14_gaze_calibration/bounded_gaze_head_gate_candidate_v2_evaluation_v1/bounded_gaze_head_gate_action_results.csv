@@ -1,0 +1,29 @@
+model_name,session_name,planned_action,expected_attention,scheduled_checks,available_checks,positive_checks,positive_three_check_windows,action_would_trigger
+best_bounded_gaze_head_gate,natural_attention_derivation,Look above laptop,away,12,12,4,0,False
+best_bounded_gaze_head_gate,natural_attention_derivation,Look at screen centre,attention,12,12,12,10,True
+best_bounded_gaze_head_gate,natural_attention_derivation,Look at upper screen,attention,12,12,9,5,True
+best_bounded_gaze_head_gate,natural_attention_derivation,Look at webcam lens,attention,12,12,11,7,True
+best_bounded_gaze_head_gate,natural_attention_derivation,Look down at keyboard,away,12,12,5,0,False
+best_bounded_gaze_head_gate,natural_attention_derivation,Look left away from laptop,away,12,12,3,0,False
+best_bounded_gaze_head_gate,natural_attention_derivation,Look right away from laptop,away,12,12,0,0,False
+best_bounded_gaze_head_gate,robustness_attention,Baseline centre,attention,12,12,8,2,True
+best_bounded_gaze_head_gate,robustness_attention,Body left,attention,12,12,12,10,True
+best_bounded_gaze_head_gate,robustness_attention,Body right,attention,12,12,1,0,False
+best_bounded_gaze_head_gate,robustness_attention,Brighter face lighting,attention,12,12,8,4,True
+best_bounded_gaze_head_gate,robustness_attention,Darker face lighting,attention,12,10,7,2,True
+best_bounded_gaze_head_gate,robustness_attention,Face higher,attention,12,12,9,7,True
+best_bounded_gaze_head_gate,robustness_attention,Face lower,attention,12,12,6,1,True
+best_bounded_gaze_head_gate,robustness_attention,Far from camera,attention,12,2,2,0,False
+best_bounded_gaze_head_gate,robustness_attention,Near camera,attention,12,12,7,1,True
+best_bounded_gaze_head_gate,known_diagnostic,Empty camera view,no_person,12,0,0,0,False
+best_bounded_gaze_head_gate,known_diagnostic,Look at webcam lens,attention,12,12,10,5,True
+best_bounded_gaze_head_gate,known_diagnostic,Look at upper screen,attention,12,12,12,10,True
+best_bounded_gaze_head_gate,known_diagnostic,Look at screen centre,attention,12,12,12,10,True
+best_bounded_gaze_head_gate,known_diagnostic,Look left away from laptop,away,12,12,0,0,False
+best_bounded_gaze_head_gate,known_diagnostic,Look right away from laptop,away,12,12,0,0,False
+best_bounded_gaze_head_gate,known_diagnostic,Look above laptop,away,12,12,4,0,False
+best_bounded_gaze_head_gate,known_diagnostic,Look down at keyboard,away,12,12,4,0,False
+best_bounded_gaze_head_gate,known_diagnostic,Screen attention from body left,attention,12,12,11,7,True
+best_bounded_gaze_head_gate,known_diagnostic,Screen attention from body right,attention,12,12,12,10,True
+best_bounded_gaze_head_gate,known_diagnostic,Screen attention near camera,attention,12,12,11,8,True
+best_bounded_gaze_head_gate,known_diagnostic,Screen attention in darker light,attention,12,0,0,0,False

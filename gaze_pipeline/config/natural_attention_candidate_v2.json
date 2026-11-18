@@ -1,0 +1,111 @@
+{
+  "profile_name": "natural_attention_candidate_v2",
+  "profile_version": 2,
+  "profile_status": "candidate_v2_requires_independent_validation",
+  "created_utc": "2026-11-16T18:33:30+00:00",
+  "decision_rule": {
+    "required_conditions": [
+      "accepted YuNet face is available for the tracked person",
+      "MobileOne raw gaze lies inside the bounded raw-gaze zone",
+      "MediaPipe raw head yaw lies inside the head-yaw gate",
+      "all conditions pass for three consecutive scheduled checks"
+    ],
+    "missing_face_or_landmarks_breaks_sequence": true
+  },
+  "raw_gaze_zone": {
+    "yaw_lower_degrees": -22.0,
+    "yaw_upper_degrees": 14.0,
+    "pitch_lower_degrees": -30.0,
+    "pitch_upper_degrees": 10.0,
+    "boundary_inclusive": true,
+    "position_correction_enabled": false
+  },
+  "head_yaw_gate": {
+    "lower_degrees": -6.0,
+    "upper_degrees": 6.0,
+    "boundary_inclusive": true
+  },
+  "temporal_rule": {
+    "check_interval_seconds": 0.5,
+    "required_consecutive_checks": 3,
+    "first_to_third_check_span_seconds": 1.0
+  },
+  "models": {
+    "gaze": {
+      "name": "MobileOne-S0",
+      "checkpoint_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/gaze_comparison/mobileone_s0.pt",
+      "checkpoint_sha256": "f50c99087f85f9a4fc8d75bd394262b6fcbc4ae21112928f67fabbf840664c95"
+    },
+    "landmarks": {
+      "name": "MediaPipe Face Landmarker",
+      "mediapipe_version": "1.2.3",
+      "model_path": "/home/subash/thesis social robot new version/gaze_pipeline/models/face_landmarks/face_landmarker.task",
+      "model_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+    }
+  },
+  "screening_results": {
+    "source_raw_candidate_rank": 91,
+    "yaw_lower": -22.0,
+    "yaw_upper": 14.0,
+    "pitch_lower": -30.0,
+    "pitch_upper": 10.0,
+    "raw_zone_area": 1440.0,
+    "head_yaw_lower": -6.0,
+    "head_yaw_upper": 6.0,
+    "head_yaw_width": 12.0,
+    "development_frame_balanced_accuracy": 0.716359918200409,
+    "development_attention_recall": 0.6993865030674846,
+    "development_away_rejection": 0.7333333333333333,
+    "development_action_balanced_accuracy": 0.9545454545454546,
+    "development_attention_actions_measurable": 11,
+    "development_attention_actions_triggered": 10,
+    "development_away_actions_measurable": 4,
+    "development_away_false_triggers": 0,
+    "development_no_person_triggers": 0,
+    "diagnostic_frame_balanced_accuracy": 0.8759180790960452,
+    "diagnostic_attention_recall": 0.943502824858757,
+    "diagnostic_away_rejection": 0.8083333333333333,
+    "diagnostic_action_balanced_accuracy": 1.0,
+    "diagnostic_attention_actions_measurable": 6,
+    "diagnostic_attention_actions_triggered": 6,
+    "diagnostic_away_actions_measurable": 4,
+    "diagnostic_away_false_triggers": 0,
+    "diagnostic_no_person_triggers": 0,
+    "screening_passed": true
+  },
+  "known_development_limitation": "Body-right attention failed in the earlier robustness session but passed in the known diagnostic session.",
+  "source_provenance": {
+    "evaluation_summary": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_gaze_head_gate_candidate_v2_evaluation_v1/bounded_gaze_head_gate_evaluation_summary.json",
+      "sha256": "2c813ddeaa212c0c8886c1126badf0b27adf1333cd24e58481e0ce52752abef8"
+    },
+    "candidate_table": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_gaze_head_gate_candidate_v2_evaluation_v1/bounded_gaze_head_gate_candidates.csv",
+      "sha256": "f1c298b6cdb2055fd79690dbae65d0782b9c4df6c4173004e9b085469c350e82"
+    },
+    "action_table": {
+      "path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_gaze_head_gate_candidate_v2_evaluation_v1/bounded_gaze_head_gate_action_results.csv",
+      "sha256": "c1bebe57d8a61325933c82078245294ed5d0cb581c1d622bde20f21ba968a220"
+    }
+  },
+  "runtime_state": {
+    "runtime_modified": false,
+    "runtime_profile_installed": false,
+    "activation_enabled": false,
+    "approved_for_deployment": false
+  },
+  "validation_requirements": [
+    "Apply this exact profile to a new independent recording.",
+    "Test webcam, upper-screen and screen-centre attention.",
+    "Test body-left, body-right and near-camera attention.",
+    "Test left, right, above and keyboard/down away actions.",
+    "Reject the candidate if away attention causes activation.",
+    "Reject or revise the candidate if body-right failure repeats."
+  ],
+  "limitations": [
+    "The candidate is based on one participant and laptop geometry.",
+    "It is not final Unitree camera or tablet calibration.",
+    "Dark-light face availability remains unresolved.",
+    "Liveness and directed-speech activation are not included."
+  ]
+}

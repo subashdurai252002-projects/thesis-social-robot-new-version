@@ -1,0 +1,25 @@
+Offline sustained natural-attention-zone evaluation
+Attention targets: Look at webcam lens, Look at upper screen, Look at screen centre
+Away targets: Look left away from laptop, Look right away from laptop, Look above laptop, Look down at keyboard
+Check interval: 0.5 seconds
+Required consecutive checks: 3
+Candidate zones evaluated: 1872
+Runtime modification: none
+
+Top diagnostic candidates:
+  yaw ±8.0° | pitch -14.0° to +7.0° | attention windows 28/30 | away windows 0/40
+  yaw ±8.0° | pitch -15.0° to +7.0° | attention windows 28/30 | away windows 0/40
+  yaw ±8.0° | pitch -14.0° to +8.0° | attention windows 28/30 | away windows 0/40
+  yaw ±8.0° | pitch -15.0° to +8.0° | attention windows 28/30 | away windows 0/40
+  yaw ±8.0° | pitch -12.0° to +7.0° | attention windows 27/30 | away windows 0/40
+  yaw ±8.0° | pitch -13.0° to +7.0° | attention windows 27/30 | away windows 0/40
+  yaw ±8.0° | pitch -12.0° to +8.0° | attention windows 27/30 | away windows 0/40
+  yaw ±8.0° | pitch -13.0° to +8.0° | attention windows 27/30 | away windows 0/40
+  yaw ±9.0° | pitch -14.0° to +6.0° | attention windows 26/30 | away windows 0/40
+  yaw ±9.0° | pitch -15.0° to +6.0° | attention windows 26/30 | away windows 0/40
+
+Normalized samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_normalized_samples.csv
+Scheduled checks: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_scheduled_checks.csv
+Zone candidates: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_zone_candidates.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_natural_attention_zone_v1/natural_attention_zone_summary.json
+Decision: diagnostic candidates only; no runtime zone approved.

@@ -1,0 +1,110 @@
+{
+  "status": "REVIEW_PASSED",
+  "source_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_input.avi",
+  "source_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_timeline.csv",
+  "video_frame_count": 2391,
+  "timeline_row_count": 2391,
+  "frame_count_matches": true,
+  "timeline_alignment_passed": true,
+  "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_review.jpg",
+  "review_frames": [
+    {
+      "target_seconds": 5.0,
+      "actual_seconds": 4.988094,
+      "frame_number": 150,
+      "expected_action": "Empty camera view",
+      "planned_action": "Empty camera view",
+      "expected_target_type": "no_person",
+      "target_type": "no_person",
+      "expected_attention": "no_person",
+      "saved_expected_attention": "no_person",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 15.0,
+      "actual_seconds": 14.994177,
+      "frame_number": 449,
+      "expected_action": "Look at webcam lens",
+      "planned_action": "Look at webcam lens",
+      "expected_target_type": "camera_lens",
+      "target_type": "camera_lens",
+      "expected_attention": "attention",
+      "saved_expected_attention": "attention",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 25.0,
+      "actual_seconds": 25.002636,
+      "frame_number": 748,
+      "expected_action": "Look at upper screen",
+      "planned_action": "Look at upper screen",
+      "expected_target_type": "upper_screen",
+      "target_type": "upper_screen",
+      "expected_attention": "attention",
+      "saved_expected_attention": "attention",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 35.0,
+      "actual_seconds": 35.00684,
+      "frame_number": 1047,
+      "expected_action": "Look at screen centre",
+      "planned_action": "Look at screen centre",
+      "expected_target_type": "screen_centre",
+      "target_type": "screen_centre",
+      "expected_attention": "attention",
+      "saved_expected_attention": "attention",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 45.0,
+      "actual_seconds": 45.004502,
+      "frame_number": 1346,
+      "expected_action": "Look left away from laptop",
+      "planned_action": "Look left away from laptop",
+      "expected_target_type": "away_left",
+      "target_type": "away_left",
+      "expected_attention": "away",
+      "saved_expected_attention": "away",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 55.0,
+      "actual_seconds": 55.015004,
+      "frame_number": 1645,
+      "expected_action": "Look right away from laptop",
+      "planned_action": "Look right away from laptop",
+      "expected_target_type": "away_right",
+      "target_type": "away_right",
+      "expected_attention": "away",
+      "saved_expected_attention": "away",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 65.0,
+      "actual_seconds": 64.987374,
+      "frame_number": 1943,
+      "expected_action": "Look above laptop",
+      "planned_action": "Look above laptop",
+      "expected_target_type": "away_above",
+      "target_type": "away_above",
+      "expected_attention": "away",
+      "saved_expected_attention": "away",
+      "timeline_row_passed": true
+    },
+    {
+      "target_seconds": 75.0,
+      "actual_seconds": 74.991298,
+      "frame_number": 2242,
+      "expected_action": "Look down at keyboard",
+      "planned_action": "Look down at keyboard",
+      "expected_target_type": "away_down",
+      "target_type": "away_down",
+      "expected_attention": "away",
+      "saved_expected_attention": "away",
+      "timeline_row_passed": true
+    }
+  ],
+  "purpose": "Visually verify natural-attention targets before MobileOne analysis.",
+  "limitation": "Representative images validate visible recording content only. They do not establish gaze accuracy or activation performance."
+}

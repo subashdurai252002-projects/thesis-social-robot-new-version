@@ -143,10 +143,37 @@ SAMPLE_WIDTH = 2
 EXIT_PHRASES = {
     "goodbye",
     "good bye",
+    "bye",
+    "but bye",
     "stop conversation",
     "exit",
     "quit",
 }
+
+GREETING_PHRASES = {
+    "hello",
+    "hello robot",
+    "hi",
+    "hi robot",
+    "hey",
+    "hey robot",
+}
+
+GREETING_RESPONSE = "Hello! How can I help you?"
+
+
+def is_exit_phrase(text):
+    """Return whether a short normalized transcript ends the conversation."""
+
+    normalized_text = " ".join(normalize_words(text))
+    return normalized_text in EXIT_PHRASES
+
+
+def is_greeting_phrase(text):
+    """Return whether a short transcript is only a social greeting."""
+
+    normalized_text = " ".join(normalize_words(text))
+    return normalized_text in GREETING_PHRASES
 
 
 def select_openai_model(text):
@@ -510,7 +537,9 @@ def record_streaming_turn(model):
     }
 
 
-def main():
+def prepare_conversation_runtime():
+    """Load reusable speech resources once for one or more sessions."""
+
     os.makedirs(
         "results/task_d_streaming_conversation",
         exist_ok=True,
@@ -542,7 +571,68 @@ def main():
         )
 
     openai_client = OpenAI()
+
+    return {
+        "model": model,
+        "barge_in": barge_in,
+        "acknowledgement_audio_files": acknowledgement_audio_files,
+        "acknowledgement_positions": acknowledgement_positions,
+        "openai_client": openai_client,
+    }
+
+
+def speak_fixed_text(runtime, text):
+    """Synthesize and play one fixed greeting or goodbye with Piper."""
+
+    spoken_text = str(text).strip()
+
+    if not spoken_text:
+        raise ValueError("text must contain something to speak.")
+
+    print("Generating fixed speech with Piper:", spoken_text)
+    subprocess.run(
+        [
+            PIPER_COMMAND,
+            "--model",
+            PIPER_MODEL,
+            "--output-file",
+            PIPER_AUDIO_FILE,
+        ],
+        input=spoken_text,
+        text=True,
+        check=True,
+    )
+
+    print("Playing fixed speech...")
+    return runtime["barge_in"].play_and_monitor(
+        PIPER_AUDIO_FILE
+    )
+
+
+def run_conversation_session(runtime, person_id=None):
+    """Run one conversation until an exit phrase or keyboard interrupt."""
+
+    if person_id is not None and (
+        not isinstance(person_id, int)
+        or isinstance(person_id, bool)
+        or person_id < 0
+    ):
+        raise ValueError(
+            "person_id must be a non-negative integer or None."
+        )
+
+    model = runtime["model"]
+    barge_in = runtime["barge_in"]
+    acknowledgement_audio_files = runtime[
+        "acknowledgement_audio_files"
+    ]
+    acknowledgement_positions = runtime[
+        "acknowledgement_positions"
+    ]
+    openai_client = runtime["openai_client"]
     previous_response_id = None
+    completed_turns = 0
+    stop_reason = "exit_phrase"
 
     print(
         "OpenAI API selected. "
@@ -552,6 +642,10 @@ def main():
     print(
         "Live-streaming conversation started."
     )
+
+    if person_id is not None:
+        print("Active interaction person ID:", person_id)
+
     print(
         "Say 'goodbye', 'stop conversation', "
         "'exit', or 'quit' to stop."
@@ -582,16 +676,23 @@ def main():
                 )
                 continue
 
-            normalized_text = (
-                text.lower()
-                .strip()
-                .rstrip(".!?")
-            )
-
-            if normalized_text in EXIT_PHRASES:
+            if is_exit_phrase(text):
                 print("Exit command detected.")
                 print("Conversation ended.")
                 break
+
+            if is_greeting_phrase(text):
+                print(
+                    "Greeting detected; replying directly without "
+                    "acknowledgement or OpenAI."
+                )
+                speak_fixed_text(
+                    runtime,
+                    GREETING_RESPONSE,
+                )
+                completed_turns += 1
+                print("Listening for the next turn...")
+                continue
 
             (
                 acknowledgement_category,
@@ -823,13 +924,29 @@ def main():
                     "Robot reply finished normally."
                 )
 
+            completed_turns += 1
             print("Listening for the next turn...")
 
     except KeyboardInterrupt:
+        stop_reason = "keyboard_interrupt"
         print()
         print(
             "Conversation stopped with Ctrl+C."
         )
+
+    return {
+        "person_id": person_id,
+        "completed_turns": completed_turns,
+        "stop_reason": stop_reason,
+        "previous_response_id": previous_response_id,
+    }
+
+
+def main():
+    """Preserve the existing manually started conversation program."""
+
+    runtime = prepare_conversation_runtime()
+    run_conversation_session(runtime)
 
 
 if __name__ == "__main__":

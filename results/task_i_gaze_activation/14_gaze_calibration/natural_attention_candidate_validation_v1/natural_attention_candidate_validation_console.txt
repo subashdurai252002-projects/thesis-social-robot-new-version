@@ -1,0 +1,56 @@
+Independent frozen natural-attention candidate validation
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_validation_recording_v1/natural_attention_validation_input.avi
+Profile: /home/subash/thesis social robot new version/gaze_pipeline/config/natural_attention_candidate_v1.json
+Frozen profile SHA-256: ae53aaea3606f6d84153f5de3ad90879006c854c74f6c3629194b0387a147318
+Profile unchanged: True
+Video hash verified: True
+Checkpoint hash verified: True
+Validation-session recalibration: none
+Runtime modification: none
+Device: cpu
+
+Loading YOLOv8n...
+Loading YuNet...
+[ WARN:0@15.409] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+Loading portable MobileOne...
+Warming up models...
+Sampled frames: 100 | gaze: 43
+Sampled frames: 150 | gaze: 93
+Sampled frames: 200 | gaze: 143
+Sampled frames: 250 | gaze: 193
+Sampled frames: 300 | gaze: 243
+Sampled frames: 350 | gaze: 293
+Sampled frames: 400 | gaze: 343
+Sampled frames: 450 | gaze: 393
+Sampled frames: 500 | gaze: 440
+Sampled frames: 550 | gaze: 490
+
+Independent frozen-candidate validation completed.
+Primary status: PRIMARY_VALIDATION_FAILED
+Normal attention triggered: 3/3
+Away actions triggered: 1/4
+No-person actions triggered: 0/1
+Robustness attention triggered: 2/4
+Gaze predictions: 496
+Gaze failures: 0
+
+Per-action results
+  Empty camera view | available 0/12 | positive 0 | windows 0 | trigger False
+  Look at webcam lens | available 12/12 | positive 12 | windows 10 | trigger True
+  Look at upper screen | available 12/12 | positive 12 | windows 10 | trigger True
+  Look at screen centre | available 12/12 | positive 11 | windows 9 | trigger True
+  Look left away from laptop | available 12/12 | positive 0 | windows 0 | trigger False
+  Look right away from laptop | available 12/12 | positive 0 | windows 0 | trigger False
+  Look above laptop | available 12/12 | positive 10 | windows 4 | trigger True
+  Look down at keyboard | available 12/12 | positive 0 | windows 0 | trigger False
+  Screen attention from body left | available 12/12 | positive 11 | windows 7 | trigger True
+  Screen attention from body right | available 12/12 | positive 0 | windows 0 | trigger False
+  Screen attention near camera | available 12/12 | positive 4 | windows 2 | trigger True
+  Screen attention in darker light | available 0/12 | positive 0 | windows 0 | trigger False
+
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_samples.csv
+Checks: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_checks.csv
+Actions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_actions.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_plot.png
+Decision: evidence measured; runtime remains unchanged.

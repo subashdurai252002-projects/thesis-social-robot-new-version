@@ -1,0 +1,18 @@
+prompt_id,category,instruction,reference_text,fixed_seconds
+C01,exit_command,"Normal position and normal voice.","Stop robot.",8
+C02,exit_command,"Normal position and normal voice.","Goodbye.",8
+C03,exit_command,"Normal position and normal voice.","Stop conversation.",8
+C04,negative_command,"Say only this single word; it must not count as the complete Stop robot command.","Stop.",8
+C05,negative_command,"Say only this single word; it must not count as the complete Stop robot command.","Robot.",8
+C06,negative_command,"Normal position; this similar-sounding phrase must be rejected.","Top robot.",8
+Q01,simple_question,"Normal position and normal voice.","What can you do?",8
+Q02,complex_question,"Normal position and normal voice.","Explain how a social robot can assist visitors in a busy public building.",12
+Q03,context_start,"Normal position and normal voice; this begins a short context sequence.","What is a social robot?",8
+Q04,follow_up,"Keep the same position; say this as a follow-up to Q03.","How can it help elderly people?",8
+Q05,follow_up,"Keep the same position; say this as a follow-up to Q04.","Tell me more about that.",8
+R01,near_speech,"Move approximately 0.5 metres from the ReSpeaker and use a normal voice.","Hello robot, I would like some information.",8
+R02,far_speech,"Move approximately 2 metres from the ReSpeaker and use a normal voice.","Hello robot, I would like some information.",8
+R03,soft_speech,"Return to the normal distance and use a deliberately soft but understandable voice.","Hello robot, I would like some information.",8
+R04,loud_speech,"Use a loud voice without shouting or clipping the microphone.","Hello robot, I would like some information.",8
+D01,left_direction,"Stand approximately 1 metre to the left of the ReSpeaker and use a normal voice.","Hello robot, can you hear me from this side?",8
+D02,right_direction,"Stand approximately 1 metre to the right of the ReSpeaker and use a normal voice.","Hello robot, can you hear me from this side?",8

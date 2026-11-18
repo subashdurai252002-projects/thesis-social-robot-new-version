@@ -1,0 +1,84 @@
+Dynamic frame-rate reduction disabled.
+Controlled gaze-calibration robustness recording
+Gaze inference: disabled
+Runtime/calibration modification: none
+Camera: 640x480
+Camera-reported FPS: 30.00
+Output video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_input.avi
+Timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv
+
+Controlled calibration-robustness recording plan:
+    0- 10 s: Empty camera view
+              Remain completely outside the camera view
+   10- 20 s: Baseline centre
+              Sit normally and keep looking directly at the lens
+   20- 30 s: Body left
+              Move your body left; keep looking at the lens
+   30- 40 s: Body right
+              Move your body right; keep looking at the lens
+   40- 50 s: Face higher
+              Raise your sitting position; keep looking at the lens
+   50- 60 s: Face lower
+              Lower your sitting position; keep looking at the lens
+   60- 70 s: Near camera
+              Move closer without covering the face; look at lens
+   70- 80 s: Far from camera
+              Move farther away; keep looking at the lens
+   80- 90 s: Darker face lighting
+              Reduce room light; normal position; look at lens
+   90-100 s: Brighter face lighting
+              Increase or restore light; normal position; look at lens
+
+Important:
+  1. For every person-present section, look at the webcam lens.
+  2. Change only the condition named in the current section.
+  3. Move your body or chair; avoid deliberately tilting your head.
+  4. Return to normal position before each lighting section.
+  5. Do not use a phone face, photograph, or second participant.
+  6. Press q or Esc only if the recording is wrong.
+
+Opening preparation preview...
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Recording started.
+  0.0 s: Empty camera view
+           Remain completely outside the camera view
+ 10.0 s: Baseline centre
+           Sit normally and keep looking directly at the lens
+ 20.0 s: Body left
+           Move your body left; keep looking at the lens
+ 30.0 s: Body right
+           Move your body right; keep looking at the lens
+ 40.0 s: Face higher
+           Raise your sitting position; keep looking at the lens
+ 50.0 s: Face lower
+           Lower your sitting position; keep looking at the lens
+ 60.0 s: Near camera
+           Move closer without covering the face; look at lens
+ 70.0 s: Far from camera
+           Move farther away; keep looking at the lens
+ 80.0 s: Darker face lighting
+           Reduce room light; normal position; look at lens
+ 90.0 s: Brighter face lighting
+           Increase or restore light; normal position; look at lens
+
+Robustness recording finished safely.
+Stopped early: False
+Recorded frames: 2989
+Failed camera frames: 0
+Elapsed time: 100.18 seconds
+Measured capture FPS: 29.84
+Video SHA-256: 451abed93b0aceb6a2684037346220725b542a0a01f17ba396ab210e3c875ffa
+Saved video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_input.avi
+Saved timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv
+Saved metadata: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_metadata.json
+Saved hash: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_sha256.txt

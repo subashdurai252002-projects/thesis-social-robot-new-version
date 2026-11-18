@@ -1,0 +1,268 @@
+{
+  "status": "INDEPENDENT_DISCRIMINATION_DIAGNOSTIC_ONLY",
+  "training_source": "robustness centre-gaze core samples",
+  "independent_test_source": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/session_shift_diagnostic/gaze_session_shift_diagnostic_samples.csv",
+  "test_session": "new_validation",
+  "training_sample_count": 234,
+  "test_sample_count": 184,
+  "eligible_training_conditions": [
+    "Baseline centre",
+    "Body left",
+    "Body right",
+    "Face higher",
+    "Face lower",
+    "Near camera",
+    "Darker face lighting",
+    "Brighter face lighting"
+  ],
+  "excluded_training_conditions": {
+    "Empty camera view": "No person should be present.",
+    "Far from camera": "Core gaze availability below 70%: 0.06666666666666667"
+  },
+  "position_features": [
+    "face_centre_x_normalized",
+    "face_centre_y_normalized"
+  ],
+  "fitted_diagnostic_model": {
+    "feature_mean": [
+      0.5277677617521365,
+      0.5694043803418807
+    ],
+    "feature_standard_deviation": [
+      0.12172985318856643,
+      0.027279914535144688
+    ],
+    "yaw_coefficients": [
+      -12.926310482188143,
+      0.7530227766608432,
+      2.4405620196195508
+    ],
+    "pitch_coefficients": [
+      6.9875925830286905,
+      -3.2827916521204226,
+      0.27989360440818
+    ],
+    "ridge_alpha": 1.0,
+    "runtime_profile_created": false
+  },
+  "fixed_baseline": {
+    "expected_yaw_degrees": -9.730628967285156,
+    "expected_pitch_degrees": 9.00604248046875,
+    "results": {
+      "stationary_centre": {
+        "count": 30,
+        "mean": 8.393483097537366,
+        "median": 8.424987680494915,
+        "standard_deviation": 2.826388181244843,
+        "p25": 6.936920664126685,
+        "p75": 10.262212088879064,
+        "p95": 13.189968327903674
+      },
+      "stationary_away_combined": {
+        "count": 119,
+        "mean": 17.305154883104276,
+        "median": 18.039158400303407,
+        "standard_deviation": 9.121334775336752,
+        "p25": 10.335180293009525,
+        "p75": 23.095418151248424,
+        "p95": 32.57970104175058
+      },
+      "centre_movement": {
+        "count": 35,
+        "mean": 14.966933022296491,
+        "median": 12.314336159672592,
+        "standard_deviation": 8.478496955297576,
+        "p25": 8.333522596534925,
+        "p75": 19.653242096428713,
+        "p95": 28.465761488855943
+      },
+      "per_action": {
+        "Look at camera centre": {
+          "count": 30,
+          "mean": 8.393483097537366,
+          "median": 8.424987680494915,
+          "standard_deviation": 2.826388181244843,
+          "p25": 6.936920664126685,
+          "p75": 10.262212088879064,
+          "p95": 13.189968327903674
+        },
+        "Look left of camera": {
+          "count": 30,
+          "mean": 20.366478881200056,
+          "median": 19.851857603075704,
+          "standard_deviation": 4.475140956193259,
+          "p25": 17.95658797471243,
+          "p75": 22.592944304449944,
+          "p95": 28.86052208046018
+        },
+        "Look right of camera": {
+          "count": 30,
+          "mean": 5.987055391704495,
+          "median": 5.216562089816076,
+          "standard_deviation": 3.619449759578074,
+          "p25": 3.79471651945974,
+          "p75": 7.1082839708107874,
+          "p95": 11.154925031983174
+        },
+        "Look above camera": {
+          "count": 30,
+          "mean": 16.467077772969063,
+          "median": 15.959016124817786,
+          "standard_deviation": 5.077283074884352,
+          "p25": 12.56328256108766,
+          "p75": 19.432789328140295,
+          "p95": 23.968105465028003
+        },
+        "Look below camera": {
+          "count": 29,
+          "mean": 26.713623093558635,
+          "median": 26.283858919834195,
+          "standard_deviation": 7.000505544101535,
+          "p25": 20.640274413346326,
+          "p75": 31.890271795898624,
+          "p95": 38.32597238156177
+        },
+        "Centre gaze while moving left and right": {
+          "count": 30,
+          "mean": 15.16270867814725,
+          "median": 13.05404948957433,
+          "standard_deviation": 8.515425970863003,
+          "p25": 8.863647961687539,
+          "p75": 20.2451911078441,
+          "p95": 28.020061550679205
+        },
+        "Centre gaze while moving closer and farther": {
+          "count": 5,
+          "mean": 13.792279087191925,
+          "median": 10.107359285174319,
+          "standard_deviation": 8.15534898355944,
+          "p25": 6.762821676197285,
+          "p75": 17.215025655730834,
+          "p95": 25.995946295521772
+        }
+      },
+      "ranking_auc_larger_residual_means_away": 0.7907563025210084,
+      "exploratory_overlap_only": {
+        "exploratory_centre_p95_degrees": 13.189968327903674,
+        "away_samples_at_or_below_centre_p95": 41,
+        "away_sample_count": 119,
+        "away_overlap_rate": 0.3445378151260504,
+        "approved_runtime_threshold": false
+      }
+    }
+  },
+  "position_aware": {
+    "results": {
+      "stationary_centre": {
+        "count": 30,
+        "mean": 7.409596979785163,
+        "median": 6.885710378517807,
+        "standard_deviation": 3.707006050856533,
+        "p25": 4.4697058057215315,
+        "p75": 9.840686298179381,
+        "p95": 13.967521150202021
+      },
+      "stationary_away_combined": {
+        "count": 119,
+        "mean": 14.555046764409118,
+        "median": 13.282319793229474,
+        "standard_deviation": 6.628453136958365,
+        "p25": 9.851646999542892,
+        "p75": 18.75404740656409,
+        "p95": 26.757953835257258
+      },
+      "centre_movement": {
+        "count": 35,
+        "mean": 10.052015850075488,
+        "median": 8.908327099115091,
+        "standard_deviation": 7.382249442396066,
+        "p25": 4.396731483922523,
+        "p75": 13.489240376513333,
+        "p95": 20.192140466526304
+      },
+      "per_action": {
+        "Look at camera centre": {
+          "count": 30,
+          "mean": 7.409596979785163,
+          "median": 6.885710378517807,
+          "standard_deviation": 3.707006050856533,
+          "p25": 4.4697058057215315,
+          "p75": 9.840686298179381,
+          "p95": 13.967521150202021
+        },
+        "Look left of camera": {
+          "count": 30,
+          "mean": 11.927839777605085,
+          "median": 11.988180418461663,
+          "standard_deviation": 4.5368883210935556,
+          "p25": 9.154975329090874,
+          "p75": 13.635656704748287,
+          "p95": 20.760740297040382
+        },
+        "Look right of camera": {
+          "count": 30,
+          "mean": 10.661648872964902,
+          "median": 10.500007402410887,
+          "standard_deviation": 4.760377137368607,
+          "p25": 6.91424492740896,
+          "p75": 13.067642623742556,
+          "p95": 18.560479121071076
+        },
+        "Look above camera": {
+          "count": 30,
+          "mean": 14.744945388220106,
+          "median": 14.680133673865116,
+          "standard_deviation": 5.691116958439318,
+          "p25": 11.107747289181122,
+          "p75": 18.871328621403833,
+          "p95": 22.263652728600647
+        },
+        "Look below camera": {
+          "count": 29,
+          "mean": 21.10405323451663,
+          "median": 21.30797300502361,
+          "standard_deviation": 6.025033795225808,
+          "p25": 15.407590818284431,
+          "p75": 25.827863220072494,
+          "p95": 31.170394433031365
+        },
+        "Centre gaze while moving left and right": {
+          "count": 30,
+          "mean": 9.877757585636138,
+          "median": 8.028673011249811,
+          "standard_deviation": 7.709413443701,
+          "p25": 3.754841446813493,
+          "p75": 13.504126267157003,
+          "p95": 20.100975630886577
+        },
+        "Centre gaze while moving closer and farther": {
+          "count": 5,
+          "mean": 11.097565436711596,
+          "median": 10.222573818341592,
+          "standard_deviation": 4.85773036904329,
+          "p25": 7.0395727688263605,
+          "p75": 11.232597325799125,
+          "p95": 18.387201836403637
+        }
+      },
+      "ranking_auc_larger_residual_means_away": 0.8238095238095238,
+      "exploratory_overlap_only": {
+        "exploratory_centre_p95_degrees": 13.967521150202021,
+        "away_samples_at_or_below_centre_p95": 64,
+        "away_sample_count": 119,
+        "away_overlap_rate": 0.5378151260504201,
+        "approved_runtime_threshold": false
+      }
+    }
+  },
+  "runtime_threshold_created": false,
+  "runtime_profile_created": false,
+  "interpretation_limits": [
+    "AUC measures ranking separation, not calibrated angular accuracy.",
+    "The exploratory centre-p95 overlap is not an approved threshold.",
+    "Training and testing contain one participant and do not establish multi-user generalisation.",
+    "The independent test was recorded before this diagnostic model was fitted.",
+    "Far-distance faces remain gaze unavailable for the laptop operating range.",
+    "Liveness and photo or phone rejection are outside this calibration test."
+  ]
+}

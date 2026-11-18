@@ -1,0 +1,1086 @@
+{
+  "status": "NATURAL_ATTENTION_DIAGNOSTIC_ONLY",
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_recording_v1/natural_attention_targets_timeline.csv",
+  "sample_interval": 6,
+  "core_window_relative_seconds": [
+    2.0,
+    8.0
+  ],
+  "processed_video_frames": 2391,
+  "sampled_frames": 399,
+  "gaze_predictions": 342,
+  "gaze_failures": 0,
+  "sampled_frames_by_action": {
+    "Empty camera view": 50,
+    "Look at webcam lens": 50,
+    "Look at upper screen": 50,
+    "Look at screen centre": 50,
+    "Look left away from laptop": 50,
+    "Look right away from laptop": 49,
+    "Look above laptop": 50,
+    "Look down at keyboard": 50
+  },
+  "selected_faces_by_action": {
+    "Look at webcam lens": 43,
+    "Look at upper screen": 50,
+    "Look at screen centre": 50,
+    "Look left away from laptop": 50,
+    "Look right away from laptop": 49,
+    "Look above laptop": 50,
+    "Look down at keyboard": 50
+  },
+  "gaze_predictions_by_action": {
+    "Look at webcam lens": 43,
+    "Look at upper screen": 50,
+    "Look at screen centre": 50,
+    "Look left away from laptop": 50,
+    "Look right away from laptop": 49,
+    "Look above laptop": 50,
+    "Look down at keyboard": 50
+  },
+  "action_core_summaries": {
+    "Empty camera view": {
+      "expected_attention": "no_person",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 0,
+      "core_prediction_availability_rate": 0.0,
+      "raw_yaw_degrees": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "raw_pitch_degrees": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_brightness_mean": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_contrast_standard_deviation": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_width_pixels": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_height_pixels": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_area_fraction": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_centre_x_normalized": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "face_centre_y_normalized": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "preprocessing_ms": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      },
+      "inference_ms": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "standard_deviation": null,
+        "p25": null,
+        "p75": null,
+        "p95": null
+      }
+    },
+    "Look at webcam lens": {
+      "expected_attention": "attention",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 4.729645284016927,
+        "median": 4.669807434082031,
+        "standard_deviation": 4.201643805119196,
+        "p25": 2.843700408935547,
+        "p75": 6.863712310791016,
+        "p95": 9.664578247070311
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": 4.902966817220052,
+        "median": 5.8332366943359375,
+        "standard_deviation": 6.768988473937527,
+        "p25": 2.9704360961914062,
+        "p75": 8.132713317871094,
+        "p95": 9.792144775390625
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 138.15852966356815,
+        "median": 138.68097142759598,
+        "standard_deviation": 2.7348685252471943,
+        "p25": 137.36283393830416,
+        "p75": 139.96407907487225,
+        "p95": 141.51096523616596
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 66.02050054084616,
+        "median": 66.28230646990586,
+        "standard_deviation": 1.0063800835780001,
+        "p25": 65.77589165055252,
+        "p75": 66.5114641288508,
+        "p95": 66.89009686743528
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 194.6787545315294,
+        "median": 200.9686364247811,
+        "standard_deviation": 19.639472602256177,
+        "p25": 191.7683072305319,
+        "p75": 205.34649758685825,
+        "p95": 210.3610293347513
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 170.6,
+        "median": 172.0,
+        "standard_deviation": 5.401234426807758,
+        "p25": 169.0,
+        "p75": 173.75,
+        "p95": 176.1
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 231.0,
+        "median": 232.5,
+        "standard_deviation": 6.668333125052067,
+        "p25": 229.25,
+        "p75": 234.0,
+        "p95": 237.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.12836490885416665,
+        "median": 0.12943684895833335,
+        "standard_deviation": 0.006881660556508716,
+        "p25": 0.12736165364583332,
+        "p75": 0.13135823567708332,
+        "p95": 0.13486572265625
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.55609375,
+        "median": 0.552734375,
+        "standard_deviation": 0.01250065102471333,
+        "p25": 0.547265625,
+        "p75": 0.5574218750000001,
+        "p95": 0.5853125
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.5971527777777778,
+        "median": 0.6041666666666666,
+        "standard_deviation": 0.01642607011189796,
+        "p25": 0.5973958333333333,
+        "p75": 0.60625,
+        "p95": 0.6100520833333333
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.1008613332839254,
+        "median": 3.0894759993316256,
+        "standard_deviation": 0.15477440116678548,
+        "p25": 2.9886662509852613,
+        "p75": 3.2575097493463545,
+        "p95": 3.3407585498025583
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 32.07667833345719,
+        "median": 31.621854001059546,
+        "standard_deviation": 2.2182160234751542,
+        "p25": 30.294910249722307,
+        "p75": 33.023823250914575,
+        "p95": 36.578059150724584
+      }
+    },
+    "Look at upper screen": {
+      "expected_attention": "attention",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 3.641274007161458,
+        "median": 3.9432907104492188,
+        "standard_deviation": 3.9052575320245086,
+        "p25": 2.0196266174316406,
+        "p75": 5.640296936035156,
+        "p95": 9.576591491699219
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": 4.613719685872396,
+        "median": 5.0711822509765625,
+        "standard_deviation": 5.738130310837382,
+        "p25": 3.4279022216796875,
+        "p75": 7.283939361572266,
+        "p95": 10.745147705078123
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 141.8000463834904,
+        "median": 142.156851995184,
+        "standard_deviation": 2.4235422574976497,
+        "p25": 140.66722595007855,
+        "p75": 143.25890383502582,
+        "p95": 144.83096847928306
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 66.50142415016126,
+        "median": 66.48104748310905,
+        "standard_deviation": 0.4658222857355882,
+        "p25": 66.22837312951263,
+        "p75": 66.85648149803527,
+        "p95": 67.18029029728332
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 205.53476210712455,
+        "median": 205.64243398354728,
+        "standard_deviation": 6.607898256274516,
+        "p25": 203.3864853597769,
+        "p75": 208.82953274947357,
+        "p95": 216.55083201476202
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 171.03333333333333,
+        "median": 170.5,
+        "standard_deviation": 3.400816895329055,
+        "p25": 169.0,
+        "p75": 173.75,
+        "p95": 177.0
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 232.83333333333334,
+        "median": 232.0,
+        "standard_deviation": 3.73348213989151,
+        "p25": 230.25,
+        "p75": 235.0,
+        "p95": 238.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.1296552734375,
+        "median": 0.1289892578125,
+        "standard_deviation": 0.004200509813607881,
+        "p25": 0.12712972005208334,
+        "p75": 0.1323046875,
+        "p95": 0.13701220703125
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.5407031250000001,
+        "median": 0.540625,
+        "standard_deviation": 0.002030749136966876,
+        "p25": 0.53984375,
+        "p75": 0.54140625,
+        "p95": 0.5443359375000001
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6105208333333334,
+        "median": 0.6104166666666667,
+        "standard_deviation": 0.003264812221643485,
+        "p25": 0.6085937499999999,
+        "p75": 0.6122395833333334,
+        "p95": 0.6161979166666667
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.9308213331726924,
+        "median": 3.932452499611827,
+        "standard_deviation": 0.0956841199318908,
+        "p25": 3.875172500102053,
+        "p75": 3.9749147495058423,
+        "p95": 4.064950899282849
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 36.48534230014775,
+        "median": 36.42776450033125,
+        "standard_deviation": 1.0822591414329414,
+        "p25": 35.557968750254076,
+        "p75": 37.20185725023839,
+        "p95": 38.284647449836484
+      }
+    },
+    "Look at screen centre": {
+      "expected_attention": "attention",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 4.04584706624349,
+        "median": 3.5887298583984375,
+        "standard_deviation": 3.194568537596585,
+        "p25": 1.6562843322753906,
+        "p75": 6.321674346923828,
+        "p95": 9.859438323974606
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": -2.2711664835611978,
+        "median": -1.6151885986328125,
+        "standard_deviation": 2.4792804047256594,
+        "p25": -4.2700958251953125,
+        "p75": -0.5408973693847656,
+        "p95": 0.8588790893554684
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 143.75759412968318,
+        "median": 143.36653938054087,
+        "standard_deviation": 1.7863015505739566,
+        "p25": 142.7150545489967,
+        "p75": 145.17396047032102,
+        "p95": 146.42923835322196
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 66.98841776207168,
+        "median": 66.92478218443301,
+        "standard_deviation": 0.4149047380053356,
+        "p25": 66.79401368234184,
+        "p75": 67.2535836912174,
+        "p95": 67.61180198197609
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 208.19575885625815,
+        "median": 207.2287344232516,
+        "standard_deviation": 4.947648182271419,
+        "p25": 204.59104607507288,
+        "p75": 211.1244124018424,
+        "p95": 217.32583052175394
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 175.03333333333333,
+        "median": 177.0,
+        "standard_deviation": 3.4783457115256518,
+        "p25": 172.0,
+        "p75": 177.0,
+        "p95": 179.55
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 230.86666666666667,
+        "median": 230.5,
+        "standard_deviation": 2.9747082023097478,
+        "p25": 229.0,
+        "p75": 232.0,
+        "p95": 235.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.13155913628472224,
+        "median": 0.1322314453125,
+        "standard_deviation": 0.003810007832226375,
+        "p25": 0.12802734375,
+        "p75": 0.133671875,
+        "p95": 0.13777180989583332
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.534765625,
+        "median": 0.534765625,
+        "standard_deviation": 0.001136622543895586,
+        "p25": 0.53359375,
+        "p75": 0.5357421874999999,
+        "p95": 0.53671875
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6170833333333333,
+        "median": 0.6177083333333333,
+        "standard_deviation": 0.0025173012444988513,
+        "p25": 0.615625,
+        "p75": 0.61875,
+        "p95": 0.6197916666666666
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.7929763331703725,
+        "median": 3.812337499766727,
+        "standard_deviation": 0.1200453385559446,
+        "p25": 3.718281749115704,
+        "p75": 3.880957249293715,
+        "p95": 3.966849699918384
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 35.93988156662817,
+        "median": 35.931926499870315,
+        "standard_deviation": 1.1400807506879063,
+        "p25": 35.47046049970959,
+        "p75": 36.74313274996166,
+        "p95": 37.10246315022232
+      }
+    },
+    "Look left away from laptop": {
+      "expected_attention": "away",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": -23.292233276367188,
+        "median": -23.675521850585938,
+        "standard_deviation": 3.5459821814986165,
+        "p25": -25.469581604003906,
+        "p75": -21.25963592529297,
+        "p95": -16.87267227172852
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": 4.952217610677083,
+        "median": 5.118705749511719,
+        "standard_deviation": 2.1828932315340186,
+        "p25": 3.505115509033203,
+        "p75": 6.687507629394531,
+        "p95": 8.031755065917968
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 144.74305117197883,
+        "median": 144.81623870634013,
+        "standard_deviation": 1.2321719530738364,
+        "p25": 143.8717419183173,
+        "p75": 145.90356277793458,
+        "p95": 146.2055549581581
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 67.67070671454782,
+        "median": 67.70056568260611,
+        "standard_deviation": 0.3223074145641627,
+        "p25": 67.43654151797458,
+        "p75": 67.95765390273458,
+        "p95": 68.11070110393804
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 197.67455423838948,
+        "median": 197.0633578783142,
+        "standard_deviation": 4.858099337953921,
+        "p25": 195.25861192102522,
+        "p75": 200.4765792038864,
+        "p95": 204.88595573662732
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 177.6,
+        "median": 178.0,
+        "standard_deviation": 1.3564659966250534,
+        "p25": 177.0,
+        "p75": 178.0,
+        "p95": 180.0
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 236.0,
+        "median": 235.5,
+        "standard_deviation": 2.265686062395524,
+        "p25": 234.0,
+        "p75": 238.0,
+        "p95": 239.0
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.13643847656250002,
+        "median": 0.13587565104166666,
+        "standard_deviation": 0.0017541283146966413,
+        "p25": 0.13525634765625,
+        "p75": 0.13818684895833333,
+        "p95": 0.13917171223958333
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.5530729166666667,
+        "median": 0.55390625,
+        "standard_deviation": 0.002644992484498873,
+        "p25": 0.5515625,
+        "p75": 0.5546875,
+        "p95": 0.55625
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6236805555555556,
+        "median": 0.6239583333333333,
+        "standard_deviation": 0.00406946814555101,
+        "p25": 0.62109375,
+        "p75": 0.6270833333333333,
+        "p95": 0.6302083333333334
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 4.02979380008522,
+        "median": 3.891372999532905,
+        "standard_deviation": 0.6772910011154758,
+        "p25": 3.8270662494142016,
+        "p75": 3.963791249134374,
+        "p95": 4.539860051499998
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 37.15342036630318,
+        "median": 36.86815499986551,
+        "standard_deviation": 1.4597181844497489,
+        "p25": 36.19263999962641,
+        "p75": 37.763583000469225,
+        "p95": 39.58046389971059
+      }
+    },
+    "Look right away from laptop": {
+      "expected_attention": "away",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 25.067150370279947,
+        "median": 25.26910400390625,
+        "standard_deviation": 3.534230938720344,
+        "p25": 23.093013763427734,
+        "p75": 26.868858337402344,
+        "p95": 31.088063812255857
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": 4.4313512166341145,
+        "median": 4.68353271484375,
+        "standard_deviation": 2.6837210201567987,
+        "p25": 2.8222122192382812,
+        "p75": 6.406032562255859,
+        "p95": 8.56647796630859
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 146.78185828351528,
+        "median": 146.7240133792264,
+        "standard_deviation": 1.899702872345984,
+        "p25": 146.30451741907032,
+        "p75": 147.79722970750666,
+        "p95": 149.8498296614693
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 67.77669234119516,
+        "median": 67.70831814308615,
+        "standard_deviation": 0.5353023785675584,
+        "p25": 67.45049443189548,
+        "p75": 68.17657509813812,
+        "p95": 68.65959834699238
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 192.66257942161076,
+        "median": 191.98879905546215,
+        "standard_deviation": 5.439151883866663,
+        "p25": 189.0582635375875,
+        "p75": 196.68395778031538,
+        "p95": 200.84190795793833
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 179.1,
+        "median": 179.0,
+        "standard_deviation": 2.118962010041709,
+        "p25": 178.0,
+        "p75": 180.75,
+        "p95": 182.0
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 230.73333333333332,
+        "median": 231.5,
+        "standard_deviation": 4.2812251621339525,
+        "p25": 227.25,
+        "p75": 233.0,
+        "p95": 238.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.1345396050347222,
+        "median": 0.13505371093750002,
+        "standard_deviation": 0.0037671845659883823,
+        "p25": 0.132294921875,
+        "p75": 0.1365234375,
+        "p95": 0.14091910807291666
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.5243489583333333,
+        "median": 0.524609375,
+        "standard_deviation": 0.0020873983778491264,
+        "p25": 0.52265625,
+        "p75": 0.5255859375,
+        "p95": 0.528125
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6206944444444444,
+        "median": 0.6203125,
+        "standard_deviation": 0.00332391609549286,
+        "p25": 0.61796875,
+        "p75": 0.6236979166666666,
+        "p95": 0.6266145833333333
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.725113600254796,
+        "median": 3.731478500412777,
+        "standard_deviation": 0.09719111575624802,
+        "p25": 3.6857075006082596,
+        "p75": 3.7729959994976525,
+        "p95": 3.865257299185032
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 35.5283598000824,
+        "median": 35.82197499963513,
+        "standard_deviation": 2.416679136371006,
+        "p25": 33.94143274999806,
+        "p75": 36.3361702502516,
+        "p95": 39.199984250535636
+      }
+    },
+    "Look above laptop": {
+      "expected_attention": "away",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 2.645513916015625,
+        "median": 2.7301406860351562,
+        "standard_deviation": 2.6058901944582638,
+        "p25": 0.9383926391601562,
+        "p75": 4.7351531982421875,
+        "p95": 6.4491424560546875
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": 11.775885009765625,
+        "median": 10.927169799804688,
+        "standard_deviation": 3.020016729241513,
+        "p25": 9.342933654785156,
+        "p75": 14.49118423461914,
+        "p95": 16.080648040771482
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 141.64163277720397,
+        "median": 141.96403516475658,
+        "standard_deviation": 1.9906032197600516,
+        "p25": 140.4892979849568,
+        "p75": 142.76017290421112,
+        "p95": 144.8026926804919
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 68.01972801665222,
+        "median": 67.98017612822775,
+        "standard_deviation": 0.415141512918008,
+        "p25": 67.69983667569826,
+        "p75": 68.28625672528462,
+        "p95": 68.65412169490001
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 212.06125475212767,
+        "median": 212.0787216931455,
+        "standard_deviation": 4.877314059140858,
+        "p25": 207.5596528780916,
+        "p75": 215.13672913040674,
+        "p95": 221.03428284869784
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 180.26666666666668,
+        "median": 181.0,
+        "standard_deviation": 2.885981442921782,
+        "p25": 179.0,
+        "p75": 182.0,
+        "p95": 183.0
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 238.16666666666666,
+        "median": 238.5,
+        "standard_deviation": 3.387066905483596,
+        "p25": 235.25,
+        "p75": 240.75,
+        "p95": 243.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.13975748697916668,
+        "median": 0.13981770833333335,
+        "standard_deviation": 0.0029955135931169306,
+        "p25": 0.13792154947916668,
+        "p75": 0.1421875,
+        "p95": 0.144072265625
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.5286458333333333,
+        "median": 0.52890625,
+        "standard_deviation": 0.0022582795196540387,
+        "p25": 0.5267578125000001,
+        "p75": 0.5302734375,
+        "p95": 0.5324609375
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6306597222222223,
+        "median": 0.6307291666666667,
+        "standard_deviation": 0.0026582350063087735,
+        "p25": 0.6283854166666667,
+        "p75": 0.6322916666666667,
+        "p95": 0.6349479166666666
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.8650773001791094,
+        "median": 3.8584710000577616,
+        "standard_deviation": 0.12061250828150616,
+        "p25": 3.7906957500126737,
+        "p75": 3.937678249712917,
+        "p95": 4.038073650553997
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 36.0870223999882,
+        "median": 36.00446699965687,
+        "standard_deviation": 1.013389345588884,
+        "p25": 35.615969500213396,
+        "p75": 36.7264142496424,
+        "p95": 37.549839549683384
+      }
+    },
+    "Look down at keyboard": {
+      "expected_attention": "away",
+      "sampled_core_frames": 30,
+      "core_gaze_predictions": 30,
+      "core_prediction_availability_rate": 1.0,
+      "raw_yaw_degrees": {
+        "count": 30,
+        "mean": 0.8124699910481771,
+        "median": 0.90802001953125,
+        "standard_deviation": 6.256233560282341,
+        "p25": -3.8910675048828125,
+        "p75": 3.361408233642578,
+        "p95": 11.40880432128906
+      },
+      "raw_pitch_degrees": {
+        "count": 30,
+        "mean": -31.021815490722656,
+        "median": -30.94145965576172,
+        "standard_deviation": 3.156844919289128,
+        "p25": -32.95693588256836,
+        "p75": -28.91614532470703,
+        "p95": -26.039217376708987
+      },
+      "face_brightness_mean": {
+        "count": 30,
+        "mean": 144.66348367643957,
+        "median": 144.7372777045622,
+        "standard_deviation": 1.7687394654551563,
+        "p25": 143.70304347118167,
+        "p75": 145.61924420326682,
+        "p95": 147.18558716707022
+      },
+      "face_contrast_standard_deviation": {
+        "count": 30,
+        "mean": 67.81121329213202,
+        "median": 67.71376710741399,
+        "standard_deviation": 0.4233624702062297,
+        "p25": 67.5734796740777,
+        "p75": 68.1504540811867,
+        "p95": 68.33982392156987
+      },
+      "face_sharpness_laplacian_variance": {
+        "count": 30,
+        "mean": 213.6097523550923,
+        "median": 214.36213685947956,
+        "standard_deviation": 4.999858735030329,
+        "p25": 211.90707438830205,
+        "p75": 216.63436364434224,
+        "p95": 220.897160114126
+      },
+      "face_width_pixels": {
+        "count": 30,
+        "mean": 176.23333333333332,
+        "median": 176.5,
+        "standard_deviation": 2.170765354021992,
+        "p25": 175.0,
+        "p75": 178.0,
+        "p95": 179.0
+      },
+      "face_height_pixels": {
+        "count": 30,
+        "mean": 239.7,
+        "median": 239.0,
+        "standard_deviation": 3.407345007480165,
+        "p25": 238.0,
+        "p75": 242.0,
+        "p95": 244.55
+      },
+      "face_area_fraction": {
+        "count": 30,
+        "mean": 0.13751171874999998,
+        "median": 0.1376025390625,
+        "standard_deviation": 0.002663990532300839,
+        "p25": 0.13575520833333335,
+        "p75": 0.13880452473958332,
+        "p95": 0.14170458984375
+      },
+      "face_centre_x_normalized": {
+        "count": 30,
+        "mean": 0.5316927083333335,
+        "median": 0.530859375,
+        "standard_deviation": 0.002996602713270569,
+        "p25": 0.53046875,
+        "p75": 0.53203125,
+        "p95": 0.5387109375
+      },
+      "face_centre_y_normalized": {
+        "count": 30,
+        "mean": 0.6282291666666667,
+        "median": 0.628125,
+        "standard_deviation": 0.0031058440658074146,
+        "p25": 0.6270833333333333,
+        "p75": 0.6299479166666667,
+        "p95": 0.63390625
+      },
+      "preprocessing_ms": {
+        "count": 30,
+        "mean": 3.902576433332191,
+        "median": 3.861158000290743,
+        "standard_deviation": 0.2801299645656768,
+        "p25": 3.7697167508667917,
+        "p75": 3.9180984999802604,
+        "p95": 4.134356300346553
+      },
+      "inference_ms": {
+        "count": 30,
+        "mean": 37.418019933465985,
+        "median": 37.52557800089562,
+        "standard_deviation": 1.3463524410988632,
+        "p25": 36.50959524975406,
+        "p75": 37.91852750009639,
+        "p95": 38.82720614983555
+      }
+    }
+  },
+  "grouped_core_summaries": {
+    "attention": {
+      "sample_count": 90,
+      "raw_yaw_degrees": {
+        "count": 90,
+        "mean": 4.138922119140625,
+        "median": 4.2904510498046875,
+        "standard_deviation": 3.817302086739725,
+        "p25": 2.280323028564453,
+        "p75": 6.0640716552734375,
+        "p95": 9.790838623046874
+      },
+      "raw_pitch_degrees": {
+        "count": 90,
+        "mean": 2.41517333984375,
+        "median": 2.9932861328125,
+        "standard_deviation": 6.268351168418734,
+        "p25": -0.7395782470703125,
+        "p75": 6.7666168212890625,
+        "p95": 9.792144775390625
+      },
+      "face_centre_x_normalized": {
+        "count": 90,
+        "mean": 0.5438541666666666,
+        "median": 0.540625,
+        "standard_deviation": 0.011604886647323284,
+        "p25": 0.5359375,
+        "p75": 0.546875,
+        "p95": 0.5647265625
+      },
+      "face_centre_y_normalized": {
+        "count": 90,
+        "mean": 0.6082523148148148,
+        "median": 0.6104166666666667,
+        "standard_deviation": 0.01282113321173251,
+        "p25": 0.60625,
+        "p75": 0.61640625,
+        "p95": 0.6193229166666666
+      }
+    },
+    "away": {
+      "sample_count": 120,
+      "raw_yaw_degrees": {
+        "count": 120,
+        "mean": 1.3082252502441407,
+        "median": 1.9547653198242188,
+        "standard_deviation": 17.62596874541726,
+        "p25": -15.072338104248047,
+        "p75": 12.96270751953125,
+        "p95": 27.255065155029296
+      },
+      "raw_pitch_degrees": {
+        "count": 120,
+        "mean": -2.465590413411458,
+        "median": 4.7607269287109375,
+        "standard_deviation": 16.96999443789796,
+        "p25": -7.626640319824219,
+        "p75": 8.41879653930664,
+        "p95": 14.86052017211914
+      },
+      "face_centre_x_normalized": {
+        "count": 120,
+        "mean": 0.5344401041666667,
+        "median": 0.53046875,
+        "standard_deviation": 0.011353054167114721,
+        "p25": 0.52578125,
+        "p75": 0.54140625,
+        "p95": 0.5547265625
+      },
+      "face_centre_y_normalized": {
+        "count": 120,
+        "mean": 0.6258159722222222,
+        "median": 0.6270833333333333,
+        "standard_deviation": 0.005108741100198566,
+        "p25": 0.621875,
+        "p75": 0.6291666666666667,
+        "p95": 0.6333854166666666
+      }
+    }
+  },
+  "median_deltas_from_webcam": {
+    "Look at webcam lens": {
+      "yaw_median_delta_degrees": 0.0,
+      "pitch_median_delta_degrees": 0.0,
+      "yaw_pitch_plane_median_separation_degrees": 0.0
+    },
+    "Look at upper screen": {
+      "yaw_median_delta_degrees": -0.7265167236328125,
+      "pitch_median_delta_degrees": -0.762054443359375,
+      "yaw_pitch_plane_median_separation_degrees": 1.0528786845415399
+    },
+    "Look at screen centre": {
+      "yaw_median_delta_degrees": -1.0810775756835938,
+      "pitch_median_delta_degrees": -7.44842529296875,
+      "yaw_pitch_plane_median_separation_degrees": 7.526471156497082
+    },
+    "Look left away from laptop": {
+      "yaw_median_delta_degrees": -28.34532928466797,
+      "pitch_median_delta_degrees": -0.7145309448242188,
+      "yaw_pitch_plane_median_separation_degrees": 28.354333826196076
+    },
+    "Look right away from laptop": {
+      "yaw_median_delta_degrees": 20.59929656982422,
+      "pitch_median_delta_degrees": -1.1497039794921875,
+      "yaw_pitch_plane_median_separation_degrees": 20.631355709502756
+    },
+    "Look above laptop": {
+      "yaw_median_delta_degrees": -1.939666748046875,
+      "pitch_median_delta_degrees": 5.09393310546875,
+      "yaw_pitch_plane_median_separation_degrees": 5.45073037091996
+    },
+    "Look down at keyboard": {
+      "yaw_median_delta_degrees": -3.7617874145507812,
+      "pitch_median_delta_degrees": -36.774696350097656,
+      "yaw_pitch_plane_median_separation_degrees": 36.96659757394719
+    }
+  },
+  "runtime_modified": false,
+  "threshold_selected": false,
+  "calibration_profile_created": false,
+  "interpretation_limits": [
+    "The three accepted targets represent laptop attention, not final Unitree geometry.",
+    "The chest-tablet target must be calibrated after physical installation.",
+    "Target positions are categorical and do not provide measured physical angles.",
+    "One participant and one recording do not establish population generalisation.",
+    "This analysis describes MobileOne outputs and does not establish exact angular accuracy.",
+    "Speech-direction activation through ReSpeaker is a separate planned route.",
+    "No activation threshold, liveness rule or interaction ownership policy is applied."
+  ],
+  "next_decision_question": "Determine whether the three intended attention target distributions can be separated from the four away target distributions using sustained evidence without requiring exact webcam fixation."
+}

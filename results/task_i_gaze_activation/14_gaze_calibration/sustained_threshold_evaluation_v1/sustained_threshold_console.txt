@@ -1,0 +1,14 @@
+Offline sustained-gaze threshold evaluation
+Threshold range: 5° to 30°
+Check interval: 0.5 seconds
+Required consecutive checks: 3
+Runtime modification: none
+
+Diagnostic candidates found:
+  position_aware_diagnostic 8.0° | movement: 1/2 | robustness non-far: 6/8
+  position_aware_diagnostic 9.0° | movement: 1/2 | robustness non-far: 7/8
+
+Per-action results: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_threshold_evaluation_v1/sustained_threshold_action_results.csv
+Threshold summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_threshold_evaluation_v1/sustained_threshold_summary.csv
+Summary JSON: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/sustained_threshold_evaluation_v1/sustained_threshold_summary.json
+Decision: diagnostic only; no runtime threshold approved.

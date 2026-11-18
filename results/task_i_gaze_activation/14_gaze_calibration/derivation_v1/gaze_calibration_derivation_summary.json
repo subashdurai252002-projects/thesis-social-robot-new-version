@@ -1,0 +1,140 @@
+{
+  "status": "CANDIDATE_REQUIRES_VALIDATION",
+  "input_csv": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/09_gaze_model_comparison/gaze_model_benchmark_frames_annotated.csv",
+  "model_name": "MobileOne-S0",
+  "source_prediction_rows": 339,
+  "analysis_rows": 206,
+  "stationary_sample_counts": {
+    "Look at camera centre": 30,
+    "Look left of camera": 30,
+    "Look right of camera": 30,
+    "Look above camera": 30,
+    "Look below camera": 30
+  },
+  "profile": {
+    "profile_status": "candidate_requires_independent_validation",
+    "model_name": "MobileOne-S0",
+    "camera_context": "Laptop webcam, 640x480",
+    "centre_offset": {
+      "yaw_degrees": -3.6719512939453125,
+      "pitch_degrees": 10.840911865234375
+    },
+    "looking_region_calibrated_degrees": {
+      "yaw_min": -10.227827041625975,
+      "yaw_max": 10.227827041625975,
+      "pitch_min": -6.520082794189452,
+      "pitch_max": 6.520082794189452
+    },
+    "derivation": {
+      "centre_action": "Look at camera centre",
+      "centre_sample_count": 30,
+      "robust_sigma_multiplier": 2.0,
+      "minimum_half_width_degrees": 5.0,
+      "centre_raw_yaw": {
+        "mean": -5.160022989908854,
+        "median": -3.6719512939453125,
+        "standard_deviation": 5.713290281193513,
+        "p05": -14.777279663085936,
+        "p95": 2.654300689697258
+      },
+      "centre_raw_pitch": {
+        "mean": 10.216158548990885,
+        "median": 10.840911865234375,
+        "standard_deviation": 3.5865958426264757,
+        "p05": 3.359965515136719,
+        "p95": 13.913236999511717
+      },
+      "centre_robust_sigma": {
+        "yaw_degrees": 5.113913520812988,
+        "pitch_degrees": 3.260041397094726
+      }
+    },
+    "limitations": [
+      "Derived from one participant and one recording.",
+      "Target angles were not physically measured.",
+      "Candidate boundaries are not angular-accuracy evidence.",
+      "Independent validation is required before runtime use.",
+      "Robot-camera placement requires separate lab validation."
+    ]
+  },
+  "per_action": {
+    "Look at camera centre": {
+      "sample_count": 30,
+      "candidate_looking_count": 25,
+      "candidate_looking_rate": 0.8333333333333334,
+      "mean_calibrated_yaw_degrees": -1.4880716959635416,
+      "median_calibrated_yaw_degrees": 0.0,
+      "yaw_standard_deviation_degrees": 5.713290281193513,
+      "mean_calibrated_pitch_degrees": -0.6247533162434896,
+      "median_calibrated_pitch_degrees": 0.0,
+      "pitch_standard_deviation_degrees": 3.5865958426264757
+    },
+    "Look left of camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 12,
+      "candidate_looking_rate": 0.4,
+      "mean_calibrated_yaw_degrees": -12.147080993652343,
+      "median_calibrated_yaw_degrees": -11.990348815917969,
+      "yaw_standard_deviation_degrees": 6.270015487859906,
+      "mean_calibrated_pitch_degrees": -1.5904327392578126,
+      "median_calibrated_pitch_degrees": -2.0995101928710938,
+      "pitch_standard_deviation_degrees": 3.5835231243646914
+    },
+    "Look right of camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 15,
+      "candidate_looking_rate": 0.5,
+      "mean_calibrated_yaw_degrees": 9.285047912597657,
+      "median_calibrated_yaw_degrees": 9.799774169921875,
+      "yaw_standard_deviation_degrees": 4.911821555602184,
+      "mean_calibrated_pitch_degrees": -3.284636942545573,
+      "median_calibrated_pitch_degrees": -3.383941650390625,
+      "pitch_standard_deviation_degrees": 2.499125646943784
+    },
+    "Look above camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 8,
+      "candidate_looking_rate": 0.26666666666666666,
+      "mean_calibrated_yaw_degrees": -5.919856770833333,
+      "median_calibrated_yaw_degrees": -6.56298828125,
+      "yaw_standard_deviation_degrees": 4.498743662585363,
+      "mean_calibrated_pitch_degrees": 8.309684244791667,
+      "median_calibrated_pitch_degrees": 8.253097534179688,
+      "pitch_standard_deviation_degrees": 4.540841984751018
+    },
+    "Look below camera": {
+      "sample_count": 30,
+      "candidate_looking_count": 6,
+      "candidate_looking_rate": 0.2,
+      "mean_calibrated_yaw_degrees": 2.546467590332031,
+      "median_calibrated_yaw_degrees": 2.461151123046875,
+      "yaw_standard_deviation_degrees": 4.392501161054194,
+      "mean_calibrated_pitch_degrees": -9.153975931803386,
+      "median_calibrated_pitch_degrees": -9.180892944335938,
+      "pitch_standard_deviation_degrees": 3.2182339414138617
+    },
+    "Centre gaze while moving left and right": {
+      "sample_count": 30,
+      "candidate_looking_count": 19,
+      "candidate_looking_rate": 0.6333333333333333,
+      "mean_calibrated_yaw_degrees": -3.682444763183594,
+      "median_calibrated_yaw_degrees": -4.754493713378906,
+      "yaw_standard_deviation_degrees": 8.297097118061997,
+      "mean_calibrated_pitch_degrees": -1.106219482421875,
+      "median_calibrated_pitch_degrees": -1.2788467407226562,
+      "pitch_standard_deviation_degrees": 3.8841701347302307
+    },
+    "Centre gaze while moving closer and farther": {
+      "sample_count": 26,
+      "candidate_looking_count": 21,
+      "candidate_looking_rate": 0.8076923076923077,
+      "mean_calibrated_yaw_degrees": -1.481387211726262,
+      "median_calibrated_yaw_degrees": -0.9897537231445312,
+      "yaw_standard_deviation_degrees": 4.644501297235224,
+      "mean_calibrated_pitch_degrees": -2.3541429959810696,
+      "median_calibrated_pitch_degrees": -1.40301513671875,
+      "pitch_standard_deviation_degrees": 5.399479094847189
+    }
+  },
+  "next_required_step": "Record an independent controlled validation video and evaluate this profile without changing it."
+}

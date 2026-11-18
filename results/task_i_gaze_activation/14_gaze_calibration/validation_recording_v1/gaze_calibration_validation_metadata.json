@@ -1,0 +1,70 @@
+{
+  "purpose": "Independent validation recording for frozen candidate v2",
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv",
+  "sha256": "9c75ccc5292c9ff77db17710e5ffecec89d91f4e410a51f175f91e21619d7140",
+  "requested_width": 640,
+  "requested_height": 480,
+  "actual_width": 640,
+  "actual_height": 480,
+  "requested_fps": 30.0,
+  "camera_reported_fps": 30.0,
+  "measured_capture_fps": 29.824778399314674,
+  "recording_duration_seconds": 80.168240246001,
+  "planned_duration_seconds": 80.0,
+  "recorded_frames": 2391,
+  "failed_camera_frames": 0,
+  "stopped_early": false,
+  "action_plan": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "name": "Empty camera view",
+      "instruction": "Remain completely outside the camera view"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "name": "Look at camera centre",
+      "instruction": "Sit normally and look directly at the lens"
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "name": "Look left of camera",
+      "instruction": "Look at the fixed LEFT marker"
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "name": "Look right of camera",
+      "instruction": "Look at the fixed RIGHT marker"
+    },
+    {
+      "start": 40.0,
+      "end": 50.0,
+      "name": "Look above camera",
+      "instruction": "Look at the fixed ABOVE marker"
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "name": "Look below camera",
+      "instruction": "Look at the fixed BELOW marker"
+    },
+    {
+      "start": 60.0,
+      "end": 70.0,
+      "name": "Centre gaze while moving left and right",
+      "instruction": "Keep looking at lens; move body slowly left/right"
+    },
+    {
+      "start": 70.0,
+      "end": 80.0,
+      "name": "Centre gaze while moving closer and farther",
+      "instruction": "Keep looking at lens; move slowly closer/farther"
+    }
+  ],
+  "candidate_profile_used_during_recording": false,
+  "note": "Categorical action labels are available; physical target angles were not measured."
+}

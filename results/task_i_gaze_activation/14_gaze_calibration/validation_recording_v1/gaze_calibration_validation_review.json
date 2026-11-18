@@ -1,0 +1,76 @@
+{
+  "status": "TIMELINE_ALIGNMENT_PASSED",
+  "source_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_input.avi",
+  "source_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv",
+  "video_frame_count": 2391,
+  "timeline_row_count": 2391,
+  "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_review.jpg",
+  "review_frames": [
+    {
+      "target_seconds": 5.0,
+      "actual_seconds": 4.98775,
+      "frame_number": 150,
+      "expected_action": "Empty camera view",
+      "planned_action": "Empty camera view",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 15.0,
+      "actual_seconds": 14.991705,
+      "frame_number": 449,
+      "expected_action": "Look at camera centre",
+      "planned_action": "Look at camera centre",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 25.0,
+      "actual_seconds": 24.999529,
+      "frame_number": 748,
+      "expected_action": "Look left of camera",
+      "planned_action": "Look left of camera",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 35.0,
+      "actual_seconds": 35.003155,
+      "frame_number": 1047,
+      "expected_action": "Look right of camera",
+      "planned_action": "Look right of camera",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 45.0,
+      "actual_seconds": 45.007084,
+      "frame_number": 1346,
+      "expected_action": "Look above camera",
+      "planned_action": "Look above camera",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 55.0,
+      "actual_seconds": 55.010701,
+      "frame_number": 1645,
+      "expected_action": "Look below camera",
+      "planned_action": "Look below camera",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 65.0,
+      "actual_seconds": 65.01413,
+      "frame_number": 1944,
+      "expected_action": "Centre gaze while moving left and right",
+      "planned_action": "Centre gaze while moving left and right",
+      "timeline_action_matches": true
+    },
+    {
+      "target_seconds": 75.0,
+      "actual_seconds": 74.985695,
+      "frame_number": 2242,
+      "expected_action": "Centre gaze while moving closer and farther",
+      "planned_action": "Centre gaze while moving closer and farther",
+      "timeline_action_matches": true
+    }
+  ],
+  "purpose": "Visually verify the independent validation recording before running MobileOne and frozen candidate v2.",
+  "limitation": "Representative images validate visible recording content only; they do not establish gaze-classification accuracy."
+}

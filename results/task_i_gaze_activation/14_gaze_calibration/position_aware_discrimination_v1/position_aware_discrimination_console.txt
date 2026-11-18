@@ -1,0 +1,20 @@
+Independent position-aware gaze-discrimination evaluation
+Training source: robustness centre-gaze conditions
+Test source: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/session_shift_diagnostic/gaze_session_shift_diagnostic_samples.csv
+Test session: new_validation
+Runtime modification: none
+Threshold selection: none
+
+Fixed baseline
+  Centre median residual: 8.42°
+  Away median residual: 18.04°
+  Ranking AUC: 0.791
+Position-aware
+  Centre median residual: 6.89°
+  Away median residual: 13.28°
+  Ranking AUC: 0.824
+
+Predictions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_samples.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination.png
+Decision: diagnostic only; no threshold or runtime profile created.

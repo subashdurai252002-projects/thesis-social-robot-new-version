@@ -1,0 +1,100 @@
+{
+  "status": "COMPLETED",
+  "run_directory": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z",
+  "recording_plan": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 10.0,
+      "name": "Empty camera",
+      "instruction": "Remain completely outside the camera view",
+      "condition": "empty",
+      "expected": "no_person"
+    },
+    {
+      "start_seconds": 10.0,
+      "end_seconds": 20.0,
+      "name": "Live face normally",
+      "instruction": "Sit normally and look toward the camera or screen",
+      "condition": "live_normal",
+      "expected": "live"
+    },
+    {
+      "start_seconds": 20.0,
+      "end_seconds": 30.0,
+      "name": "Live deliberate blinks",
+      "instruction": "Blink naturally several times with pauses between blinks",
+      "condition": "live_blink",
+      "expected": "live"
+    },
+    {
+      "start_seconds": 30.0,
+      "end_seconds": 40.0,
+      "name": "Live head turns",
+      "instruction": "Turn your head left, centre, right and centre",
+      "condition": "live_head_turn",
+      "expected": "live"
+    },
+    {
+      "start_seconds": 40.0,
+      "end_seconds": 50.0,
+      "name": "Live face remaining still",
+      "instruction": "Remain mostly still with eyes naturally open",
+      "condition": "live_still",
+      "expected": "live"
+    },
+    {
+      "start_seconds": 50.0,
+      "end_seconds": 65.0,
+      "name": "Static face photo on phone",
+      "instruction": "Cover your real face and show the prepared static face photo",
+      "condition": "phone_static_photo",
+      "expected": "spoof_static"
+    },
+    {
+      "start_seconds": 65.0,
+      "end_seconds": 80.0,
+      "name": "Recorded face video on phone",
+      "instruction": "Cover your real face and play the prepared face video",
+      "condition": "phone_recorded_video",
+      "expected": "spoof_replay"
+    },
+    {
+      "start_seconds": 80.0,
+      "end_seconds": 90.0,
+      "name": "Live face returns and blinks",
+      "instruction": "Remove the phone, return normally and blink several times",
+      "condition": "live_return_blink",
+      "expected": "live"
+    }
+  ],
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "reported_fps": 30.0,
+    "video_writer_fps": 30.0
+  },
+  "scheduled_duration_seconds": 90.0,
+  "actual_elapsed_seconds": 90.0,
+  "wall_elapsed_seconds_including_pauses": 275.578269914,
+  "interactive_step_by_step": true,
+  "countdown_seconds_per_action": 3.0,
+  "completed_actions": 8,
+  "total_actions": 8,
+  "recorded_frames": 2691,
+  "measured_capture_fps": 29.9,
+  "failed_camera_frames": 0,
+  "stopped_early": false,
+  "liveness_inference_enabled": false,
+  "runtime_modified": false,
+  "review_saved": true,
+  "files": {
+    "raw_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z/rgb_liveness_input.avi",
+    "timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z/rgb_liveness_timeline.csv",
+    "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z/rgb_liveness_review.jpg"
+  },
+  "hashes": {
+    "raw_video_sha256": "9a0f09ddc8db513eb1a9d78fd863c02bdd09cc5e12b4aa389acf4619f833f0a1",
+    "timeline_sha256": "c4dedd259520ea0749db2ccd0ea9cbfa4fcf341c44236b5b3506a997dcf31932"
+  }
+}

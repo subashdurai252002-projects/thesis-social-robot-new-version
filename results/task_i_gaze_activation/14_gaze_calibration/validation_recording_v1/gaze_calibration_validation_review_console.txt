@@ -1,0 +1,15 @@
+4.99 s: Empty camera view (frame 150)
+14.99 s: Look at camera centre (frame 449)
+25.00 s: Look left of camera (frame 748)
+35.00 s: Look right of camera (frame 1047)
+45.01 s: Look above camera (frame 1346)
+55.01 s: Look below camera (frame 1645)
+65.01 s: Centre gaze while moving left and right (frame 1944)
+74.99 s: Centre gaze while moving closer and farther (frame 2242)
+
+Calibration-validation review sheet completed.
+Timeline alignment passed: True
+Video frames: 2391
+Timeline rows: 2391
+Saved image: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_review.jpg
+Saved manifest: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_review.json

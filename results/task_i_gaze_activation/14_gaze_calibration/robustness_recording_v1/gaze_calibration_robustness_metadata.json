@@ -1,0 +1,95 @@
+{
+  "purpose": "Controlled evidence for position, simulated height, distance, and lighting effects while looking at the webcam lens",
+  "video_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_input.avi",
+  "timeline_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv",
+  "sha256": "451abed93b0aceb6a2684037346220725b542a0a01f17ba396ab210e3c875ffa",
+  "requested_width": 640,
+  "requested_height": 480,
+  "actual_width": 640,
+  "actual_height": 480,
+  "requested_fps": 30.0,
+  "camera_reported_fps": 30.0,
+  "measured_capture_fps": 29.83643935875314,
+  "recording_duration_seconds": 100.17951418600205,
+  "planned_duration_seconds": 100.0,
+  "recorded_frames": 2989,
+  "failed_camera_frames": 0,
+  "stopped_early": false,
+  "action_plan": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "name": "Empty camera view",
+      "condition": "empty",
+      "instruction": "Remain completely outside the camera view"
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "name": "Baseline centre",
+      "condition": "baseline",
+      "instruction": "Sit normally and keep looking directly at the lens"
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "name": "Body left",
+      "condition": "horizontal_left",
+      "instruction": "Move your body left; keep looking at the lens"
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "name": "Body right",
+      "condition": "horizontal_right",
+      "instruction": "Move your body right; keep looking at the lens"
+    },
+    {
+      "start": 40.0,
+      "end": 50.0,
+      "name": "Face higher",
+      "condition": "height_high",
+      "instruction": "Raise your sitting position; keep looking at the lens"
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "name": "Face lower",
+      "condition": "height_low",
+      "instruction": "Lower your sitting position; keep looking at the lens"
+    },
+    {
+      "start": 60.0,
+      "end": 70.0,
+      "name": "Near camera",
+      "condition": "distance_near",
+      "instruction": "Move closer without covering the face; look at lens"
+    },
+    {
+      "start": 70.0,
+      "end": 80.0,
+      "name": "Far from camera",
+      "condition": "distance_far",
+      "instruction": "Move farther away; keep looking at the lens"
+    },
+    {
+      "start": 80.0,
+      "end": 90.0,
+      "name": "Darker face lighting",
+      "condition": "lighting_darker",
+      "instruction": "Reduce room light; normal position; look at lens"
+    },
+    {
+      "start": 90.0,
+      "end": 100.0,
+      "name": "Brighter face lighting",
+      "condition": "lighting_brighter",
+      "instruction": "Increase or restore light; normal position; look at lens"
+    }
+  ],
+  "gaze_target_for_person_present_sections": "webcam lens",
+  "gaze_inference_during_recording": false,
+  "runtime_or_calibration_modified": false,
+  "physical_conditions_measured": false,
+  "note": "Height, distance, and lighting labels are controlled categories; they are not physical measurements."
+}

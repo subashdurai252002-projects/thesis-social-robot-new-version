@@ -1,0 +1,51 @@
+{
+  "purpose": "Evaluate bounded raw gaze combined with a MediaPipe raw head-yaw gate",
+  "combined_candidates_searched": 20000,
+  "best_known_candidate": {
+    "raw_gaze_zone": {
+      "yaw_lower": -22.0,
+      "yaw_upper": 14.0,
+      "pitch_lower": -30.0,
+      "pitch_upper": 10.0
+    },
+    "head_yaw_gate": {
+      "lower": -6.0,
+      "upper": 6.0
+    },
+    "screening_passed": true
+  },
+  "best_known_candidate_metrics": {
+    "source_raw_candidate_rank": 91,
+    "yaw_lower": -22.0,
+    "yaw_upper": 14.0,
+    "pitch_lower": -30.0,
+    "pitch_upper": 10.0,
+    "raw_zone_area": 1440.0,
+    "head_yaw_lower": -6.0,
+    "head_yaw_upper": 6.0,
+    "head_yaw_width": 12.0,
+    "development_frame_balanced_accuracy": 0.716359918200409,
+    "development_attention_recall": 0.6993865030674846,
+    "development_away_rejection": 0.7333333333333333,
+    "development_action_balanced_accuracy": 0.9545454545454546,
+    "development_attention_actions_measurable": 11,
+    "development_attention_actions_triggered": 10,
+    "development_away_actions_measurable": 4,
+    "development_away_false_triggers": 0,
+    "development_no_person_triggers": 0,
+    "diagnostic_frame_balanced_accuracy": 0.8759180790960452,
+    "diagnostic_attention_recall": 0.943502824858757,
+    "diagnostic_away_rejection": 0.8083333333333333,
+    "diagnostic_action_balanced_accuracy": 1.0,
+    "diagnostic_attention_actions_measurable": 6,
+    "diagnostic_attention_actions_triggered": 6,
+    "diagnostic_away_actions_measurable": 4,
+    "diagnostic_away_false_triggers": 0,
+    "diagnostic_no_person_triggers": 0,
+    "screening_passed": true
+  },
+  "candidate_frozen": false,
+  "candidate_approved": false,
+  "runtime_modified": false,
+  "limitation": "The known diagnostic session is not independent final validation evidence."
+}

@@ -69,3 +69,32 @@ The separate official packaged 224→448 diagnostic changed Athul's result to 21
 Conclusion: preprocessing caused much of the weak direct-224 vertical response. MobileOne-S0 remains the provisional laptop CPU selection because it combined clear directional response with 29.33 ms mean inference, 34.10 model-only FPS and an observed 86.8 MiB RSS increase in the corrected six-model run. The official L2CS model remains the supervisor reference and should be retested on Jetson GPU.
 
 This comparison measures directional response and stability, not exact angular error.
+
+## Calibration outcome and landmark/liveness direction
+
+The first frozen natural-attention candidate was independently rejected. It
+accepted normal webcam, upper-screen and screen-centre attention, but it also
+accepted the above-laptop away action, failed body-right screen attention and
+had no usable face evidence in the darker-light section. The runtime therefore
+remains unchanged; calibration is not complete.
+
+The failure is evidence that raw gaze plus face-box position is insufficiently
+robust across pose and lighting. The next foundation is detailed face geometry,
+not another blindly widened gaze threshold. MediaPipe Face Landmarker was
+selected for a standalone compatibility test because it exposes dense 3D face
+landmarks, eyelid-related blendshapes and a face transformation matrix. OpenCV
+`solvePnP`, already available in the gaze environment, can provide an
+independent head-pose calculation from selected landmarks.
+
+This addition has two intended uses:
+
+- combine head pose with MobileOne gaze when deriving a new attention-zone
+  candidate for body-left, body-right and distance changes;
+- provide temporal eyelid and head-motion signals for RGB liveness.
+
+Landmarks, blinking and head motion alone do not reject every screen replay.
+Passive RGB anti-spoofing is therefore a separate layer and must be benchmarked
+on this camera before adoption. The reviewed MiniFASNet source explicitly warns
+that RGB anti-spoof robustness depends on camera and scene. Liveness approval
+will require real-person, printed-photo, static-phone, moved-photo and replayed-
+video tests, with false-accept, false-reject and latency measurements.

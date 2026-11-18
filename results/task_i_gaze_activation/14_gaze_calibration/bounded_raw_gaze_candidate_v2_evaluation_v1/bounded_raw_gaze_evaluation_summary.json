@@ -1,0 +1,51 @@
+{
+  "purpose": "Evaluate asymmetric bounded raw-gaze zones without position correction",
+  "candidate_zones_searched": 19602,
+  "development_shortlist_size": 250,
+  "best_known_zone": {
+    "yaw_lower": -22.0,
+    "yaw_upper": 14.0,
+    "pitch_lower": -22.0,
+    "pitch_upper": 10.0,
+    "screening_passed": false
+  },
+  "best_known_zone_metrics": {
+    "yaw_lower": -22.0,
+    "yaw_upper": 14.0,
+    "pitch_lower": -22.0,
+    "pitch_upper": 10.0,
+    "zone_area": 1152.0,
+    "development_frame_balanced_accuracy": 0.7648261758691206,
+    "development_attention_recall": 0.696319018404908,
+    "development_away_rejection": 0.8333333333333334,
+    "development_action_balanced_accuracy": 0.9545454545454546,
+    "development_attention_actions_measurable": 11,
+    "development_attention_actions_triggered": 10,
+    "development_away_actions_measurable": 4,
+    "development_away_false_triggers": 0,
+    "diagnostic_frame_balanced_accuracy": 0.8509180790960451,
+    "diagnostic_attention_recall": 0.943502824858757,
+    "diagnostic_away_rejection": 0.7583333333333333,
+    "diagnostic_action_balanced_accuracy": 0.875,
+    "diagnostic_attention_actions_measurable": 6,
+    "diagnostic_attention_actions_triggered": 6,
+    "diagnostic_away_actions_measurable": 4,
+    "diagnostic_away_false_triggers": 1,
+    "screening_passed": false
+  },
+  "candidate_v1_diagnostic": {
+    "frame_balanced_accuracy": 0.7490819209039548,
+    "attention_actions_measurable": 6,
+    "attention_actions_triggered": 5,
+    "away_actions_measurable": 4,
+    "away_actions_incorrectly_triggered": 1,
+    "no_person_actions_triggered": 0,
+    "attention_action_rate": 0.8333333333333334,
+    "away_rejection_action_rate": 0.75,
+    "action_balanced_accuracy": 0.7916666666666667
+  },
+  "candidate_frozen": false,
+  "candidate_approved": false,
+  "runtime_modified": false,
+  "important_limitation": "The diagnostic recording was inspected during development. A new recording is required after any candidate is frozen."
+}

@@ -1,0 +1,61 @@
+model_name,planned_action,target_type,condition,expected_attention,scheduled_checks,available_checks,positive_checks,positive_three_check_windows,action_would_trigger
+candidate_v1_frozen,Empty camera view,no_person,empty,no_person,12,0,0,0,False
+candidate_v1_frozen,Look at webcam lens,camera_lens,normal,attention,12,12,12,10,True
+candidate_v1_frozen,Look at upper screen,upper_screen,normal,attention,12,12,12,10,True
+candidate_v1_frozen,Look at screen centre,screen_centre,normal,attention,12,12,11,9,True
+candidate_v1_frozen,Look left away from laptop,away_left,normal,away,12,12,0,0,False
+candidate_v1_frozen,Look right away from laptop,away_right,normal,away,12,12,0,0,False
+candidate_v1_frozen,Look above laptop,away_above,normal,away,12,12,10,4,True
+candidate_v1_frozen,Look down at keyboard,away_down,normal,away,12,12,0,0,False
+candidate_v1_frozen,Screen attention from body left,screen_centre,body_left,attention,12,12,11,7,True
+candidate_v1_frozen,Screen attention from body right,screen_centre,body_right,attention,12,12,0,0,False
+candidate_v1_frozen,Screen attention near camera,screen_centre,distance_near,attention,12,12,4,2,True
+candidate_v1_frozen,Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,0,False
+raw_gaze,Empty camera view,no_person,empty,no_person,12,0,0,0,False
+raw_gaze,Look at webcam lens,camera_lens,normal,attention,12,12,3,0,False
+raw_gaze,Look at upper screen,upper_screen,normal,attention,12,12,3,0,False
+raw_gaze,Look at screen centre,screen_centre,normal,attention,12,12,0,0,False
+raw_gaze,Look left away from laptop,away_left,normal,away,12,12,12,10,True
+raw_gaze,Look right away from laptop,away_right,normal,away,12,12,0,0,False
+raw_gaze,Look above laptop,away_above,normal,away,12,12,10,6,True
+raw_gaze,Look down at keyboard,away_down,normal,away,12,12,0,0,False
+raw_gaze,Screen attention from body left,screen_centre,body_left,attention,12,12,0,0,False
+raw_gaze,Screen attention from body right,screen_centre,body_right,attention,12,12,0,0,False
+raw_gaze,Screen attention near camera,screen_centre,distance_near,attention,12,12,2,0,False
+raw_gaze,Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,0,False
+gaze_position_size,Empty camera view,no_person,empty,no_person,12,0,0,0,False
+gaze_position_size,Look at webcam lens,camera_lens,normal,attention,12,12,2,0,False
+gaze_position_size,Look at upper screen,upper_screen,normal,attention,12,12,0,0,False
+gaze_position_size,Look at screen centre,screen_centre,normal,attention,12,12,0,0,False
+gaze_position_size,Look left away from laptop,away_left,normal,away,12,12,0,0,False
+gaze_position_size,Look right away from laptop,away_right,normal,away,12,12,0,0,False
+gaze_position_size,Look above laptop,away_above,normal,away,12,12,1,0,False
+gaze_position_size,Look down at keyboard,away_down,normal,away,12,12,0,0,False
+gaze_position_size,Screen attention from body left,screen_centre,body_left,attention,12,12,0,0,False
+gaze_position_size,Screen attention from body right,screen_centre,body_right,attention,12,12,1,0,False
+gaze_position_size,Screen attention near camera,screen_centre,distance_near,attention,12,12,1,0,False
+gaze_position_size,Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,0,False
+gaze_head_pose,Empty camera view,no_person,empty,no_person,12,0,0,0,False
+gaze_head_pose,Look at webcam lens,camera_lens,normal,attention,12,12,12,10,True
+gaze_head_pose,Look at upper screen,upper_screen,normal,attention,12,12,12,10,True
+gaze_head_pose,Look at screen centre,screen_centre,normal,attention,12,12,10,8,True
+gaze_head_pose,Look left away from laptop,away_left,normal,away,12,12,12,10,True
+gaze_head_pose,Look right away from laptop,away_right,normal,away,12,12,0,0,False
+gaze_head_pose,Look above laptop,away_above,normal,away,12,12,1,0,False
+gaze_head_pose,Look down at keyboard,away_down,normal,away,12,12,0,0,False
+gaze_head_pose,Screen attention from body left,screen_centre,body_left,attention,12,12,11,7,True
+gaze_head_pose,Screen attention from body right,screen_centre,body_right,attention,12,12,0,0,False
+gaze_head_pose,Screen attention near camera,screen_centre,distance_near,attention,12,12,7,3,True
+gaze_head_pose,Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,0,False
+gaze_head_position_size,Empty camera view,no_person,empty,no_person,12,0,0,0,False
+gaze_head_position_size,Look at webcam lens,camera_lens,normal,attention,12,12,12,10,True
+gaze_head_position_size,Look at upper screen,upper_screen,normal,attention,12,12,12,10,True
+gaze_head_position_size,Look at screen centre,screen_centre,normal,attention,12,12,0,0,False
+gaze_head_position_size,Look left away from laptop,away_left,normal,away,12,12,12,10,True
+gaze_head_position_size,Look right away from laptop,away_right,normal,away,12,12,0,0,False
+gaze_head_position_size,Look above laptop,away_above,normal,away,12,12,0,0,False
+gaze_head_position_size,Look down at keyboard,away_down,normal,away,12,12,0,0,False
+gaze_head_position_size,Screen attention from body left,screen_centre,body_left,attention,12,12,1,0,False
+gaze_head_position_size,Screen attention from body right,screen_centre,body_right,attention,12,12,8,5,True
+gaze_head_position_size,Screen attention near camera,screen_centre,distance_near,attention,12,12,2,0,False
+gaze_head_position_size,Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,0,False

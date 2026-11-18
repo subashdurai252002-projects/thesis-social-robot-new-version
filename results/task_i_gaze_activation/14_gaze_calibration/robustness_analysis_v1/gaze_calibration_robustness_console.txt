@@ -1,0 +1,41 @@
+Gaze-calibration robustness analysis
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_input.avi
+Timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv
+Sample interval: 6
+Core window: relative seconds 2.0 to less than 8.0
+Device: cpu
+Calibration/runtime modification: none
+
+Loading YOLOv8n...
+Loading YuNet...
+[ WARN:0@2.807] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+Loading portable MobileOne...
+Warming up models...
+Sampled frames: 100 | gaze predictions: 43
+Sampled frames: 150 | gaze predictions: 93
+Sampled frames: 200 | gaze predictions: 143
+Sampled frames: 250 | gaze predictions: 193
+Sampled frames: 300 | gaze predictions: 243
+Sampled frames: 350 | gaze predictions: 292
+Sampled frames: 450 | gaze predictions: 339
+
+Gaze-calibration robustness analysis completed.
+Processed video frames: 2989
+Sampled frames: 499
+Gaze predictions: 388
+Gaze failures: 0
+
+Core median shifts from baseline centre
+  Baseline centre: yaw 0.0°, pitch 0.0°
+  Body left: yaw -2.8534011840820312°, pitch -6.9992218017578125°
+  Body right: yaw -1.9511184692382812°, pitch 6.446510314941406°
+  Face higher: yaw -3.8470840454101562°, pitch -3.6263046264648438°
+  Face lower: yaw 2.2235107421875°, pitch 0.518707275390625°
+  Near camera: yaw -10.454399108886719°, pitch -1.815673828125°
+  Far from camera: yaw 2.412933349609375°, pitch -0.6428070068359375°
+  Darker face lighting: yaw -8.940193176269531°, pitch -9.223419189453125°
+  Brighter face lighting: yaw 1.8210220336914062°, pitch -0.41436004638671875°
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_samples.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_comparison.png
+Decision: diagnostic only; no calibration created or modified.

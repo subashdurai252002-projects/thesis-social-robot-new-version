@@ -1,0 +1,29 @@
+Athul-style sustained-gaze offline reference evaluation
+Tolerance: 30.0°
+Check interval: 0.5 seconds
+Required consecutive checks: 3
+Runtime modification: none
+
+independent_directional
+  fixed_camera_reference
+    Attention actions triggered: 2/3
+    Away actions incorrectly triggered: 4/4
+    No-person actions triggered: 0/1
+  position_aware_diagnostic
+    Attention actions triggered: 2/3
+    Away actions incorrectly triggered: 4/4
+    No-person actions triggered: 0/1
+robustness_descriptive
+  fixed_camera_reference
+    Attention actions triggered: 8/9
+    Away actions incorrectly triggered: 0/0
+    No-person actions triggered: 0/1
+  position_aware_diagnostic
+    Attention actions triggered: 8/9
+    Away actions incorrectly triggered: 0/0
+    No-person actions triggered: 0/1
+
+Checks: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/athul_sustained_reference_v1/athul_sustained_reference_checks.csv
+Per-action summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/athul_sustained_reference_v1/athul_sustained_reference_actions.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/athul_sustained_reference_v1/athul_sustained_reference_summary.json
+Decision: reference evidence only; no runtime rule approved.

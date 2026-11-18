@@ -1,0 +1,13 @@
+planned_action,target_type,condition,expected_attention,scheduled_checks,available_checks,positive_checks,three_check_windows,positive_three_check_windows,action_would_trigger,first_trigger_relative_seconds
+Empty camera view,no_person,empty,no_person,12,0,0,10,0,False,
+Look at webcam lens,camera_lens,normal,attention,12,12,12,10,10,True,3.0
+Look at upper screen,upper_screen,normal,attention,12,12,12,10,10,True,3.0
+Look at screen centre,screen_centre,normal,attention,12,12,11,10,9,True,3.5
+Look left away from laptop,away_left,normal,away,12,12,0,10,0,False,
+Look right away from laptop,away_right,normal,away,12,12,0,10,0,False,
+Look above laptop,away_above,normal,away,12,12,10,10,4,True,4.5
+Look down at keyboard,away_down,normal,away,12,12,0,10,0,False,
+Screen attention from body left,screen_centre,body_left,attention,12,12,11,10,7,True,3.0
+Screen attention from body right,screen_centre,body_right,attention,12,12,0,10,0,False,
+Screen attention near camera,screen_centre,distance_near,attention,12,12,4,10,2,True,3.5
+Screen attention in darker light,screen_centre,lighting_darker,attention,12,0,0,10,0,False,

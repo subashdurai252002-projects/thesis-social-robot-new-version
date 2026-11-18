@@ -35,9 +35,21 @@ Commands/
 models/**/*.onnx
 models/**/*.onnx.json
 models/**/*.tflite
+gaze_pipeline/models/**/*.task
 
 # Runtime-generated files
 runtime_audio/
+
+# Private participant audio/video datasets (never commit)
+/private_participant_data/
+
+# Generated result media that may contain identifiable participants
+/results/**/*.avi
+/results/**/*.mp4
+/results/**/*.mkv
+/results/**/*.jpg
+/results/**/*.jpeg
+
 # Gaze-pipeline local model weights
 gaze_pipeline/models/*.pt
 gaze_pipeline/models/*.onnx

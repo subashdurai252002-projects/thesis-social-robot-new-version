@@ -1,0 +1,173 @@
+{
+  "status": "PASSED",
+  "input_samples": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z/analysis_v1/rgb_liveness_samples.csv",
+  "passive_results": [
+    {
+      "condition": "empty",
+      "expected": "no_person",
+      "core_samples": 89,
+      "face_samples": 0,
+      "blink_events": 0,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "live_blink",
+      "expected": "live",
+      "core_samples": 89,
+      "face_samples": 89,
+      "blink_events": 3,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "live_head_turn",
+      "expected": "live",
+      "core_samples": 90,
+      "face_samples": 90,
+      "blink_events": 2,
+      "head_turn_events": 1,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 1,
+      "passive_evidence_completed": true,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "live_normal",
+      "expected": "live",
+      "core_samples": 90,
+      "face_samples": 90,
+      "blink_events": 0,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "live_return_blink",
+      "expected": "live",
+      "core_samples": 89,
+      "face_samples": 89,
+      "blink_events": 13,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "live_still",
+      "expected": "live",
+      "core_samples": 90,
+      "face_samples": 90,
+      "blink_events": 0,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "phone_recorded_video",
+      "expected": "spoof_replay",
+      "core_samples": 164,
+      "face_samples": 0,
+      "blink_events": 0,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    },
+    {
+      "condition": "phone_static_photo",
+      "expected": "spoof_static",
+      "core_samples": 165,
+      "face_samples": 0,
+      "blink_events": 0,
+      "head_turn_events": 0,
+      "left_head_turn_events": 0,
+      "right_head_turn_events": 0,
+      "passive_evidence_completed": false,
+      "passive_live_candidate_events": 0
+    }
+  ],
+  "challenge_results": {
+    "live_blink_blink_challenge": {
+      "condition": "live_blink",
+      "challenge": "BLINK",
+      "challenge_requested": true,
+      "challenge_completed": true,
+      "candidate_events": 1,
+      "candidate_latched": true,
+      "challenge_expired": false
+    },
+    "live_return_blink_challenge": {
+      "condition": "live_return_blink",
+      "challenge": "BLINK",
+      "challenge_requested": true,
+      "challenge_completed": true,
+      "candidate_events": 1,
+      "candidate_latched": true,
+      "challenge_expired": false
+    },
+    "head_turn_left_challenge": {
+      "condition": "live_head_turn",
+      "challenge": "TURN_LEFT",
+      "challenge_requested": true,
+      "challenge_completed": true,
+      "candidate_events": 1,
+      "candidate_latched": true,
+      "challenge_expired": false
+    },
+    "head_turn_right_challenge": {
+      "condition": "live_head_turn",
+      "challenge": "TURN_RIGHT",
+      "challenge_requested": true,
+      "challenge_completed": true,
+      "candidate_events": 1,
+      "candidate_latched": true,
+      "challenge_expired": false
+    },
+    "still_wrong_blink_challenge": {
+      "condition": "live_still",
+      "challenge": "BLINK",
+      "challenge_requested": true,
+      "challenge_completed": false,
+      "candidate_events": 0,
+      "candidate_latched": false,
+      "challenge_expired": true
+    }
+  },
+  "checks": {
+    "deliberate_blink_detected": true,
+    "return_blink_detected": true,
+    "head_turn_detected": true,
+    "still_has_no_false_blinks": true,
+    "still_has_no_false_head_turns": true,
+    "static_photo_has_no_accepted_face": true,
+    "recorded_video_has_no_stable_accepted_face": true,
+    "passive_evidence_never_directly_approves": true,
+    "real_blink_challenge_passes": true,
+    "return_blink_challenge_passes": true,
+    "left_head_challenge_passes": true,
+    "right_head_challenge_passes": true,
+    "still_face_does_not_pass_blink_challenge": true
+  },
+  "decision": {
+    "runtime_approved": true,
+    "runtime_integrated": false,
+    "runtime_modified": false,
+    "recorded_video_limit": "The tested replay did not provide a stable accepted face; an accepted-face replay still requires active challenge."
+  },
+  "files": {
+    "condition_results": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/16_rgb_liveness/run_20261117T080341Z/analysis_v1/rgb_liveness_tracker_condition_results.csv"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "status": "TIMELINE_ALIGNMENT_PASSED",
+  "source_video": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_input.avi",
+  "source_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv",
+  "video_frame_count": 2989,
+  "timeline_row_count": 2989,
+  "review_image": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_review.jpg",
+  "review_frames": [
+    {
+      "target_seconds": 5.0,
+      "actual_seconds": 4.988798,
+      "frame_number": 150,
+      "expected_action": "Empty camera view",
+      "planned_action": "Empty camera view",
+      "expected_condition": "empty",
+      "condition": "empty",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 15.0,
+      "actual_seconds": 14.992814,
+      "frame_number": 449,
+      "expected_action": "Baseline centre",
+      "planned_action": "Baseline centre",
+      "expected_condition": "baseline",
+      "condition": "baseline",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 25.0,
+      "actual_seconds": 24.996512,
+      "frame_number": 748,
+      "expected_action": "Body left",
+      "planned_action": "Body left",
+      "expected_condition": "horizontal_left",
+      "condition": "horizontal_left",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 35.0,
+      "actual_seconds": 35.004429,
+      "frame_number": 1047,
+      "expected_action": "Body right",
+      "planned_action": "Body right",
+      "expected_condition": "horizontal_right",
+      "condition": "horizontal_right",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 45.0,
+      "actual_seconds": 45.008217,
+      "frame_number": 1346,
+      "expected_action": "Face higher",
+      "planned_action": "Face higher",
+      "expected_condition": "height_high",
+      "condition": "height_high",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 55.0,
+      "actual_seconds": 55.011938,
+      "frame_number": 1645,
+      "expected_action": "Face lower",
+      "planned_action": "Face lower",
+      "expected_condition": "height_low",
+      "condition": "height_low",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 65.0,
+      "actual_seconds": 65.015655,
+      "frame_number": 1944,
+      "expected_action": "Near camera",
+      "planned_action": "Near camera",
+      "expected_condition": "distance_near",
+      "condition": "distance_near",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 75.0,
+      "actual_seconds": 74.98793,
+      "frame_number": 2242,
+      "expected_action": "Far from camera",
+      "planned_action": "Far from camera",
+      "expected_condition": "distance_far",
+      "condition": "distance_far",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 85.0,
+      "actual_seconds": 84.992327,
+      "frame_number": 2541,
+      "expected_action": "Darker face lighting",
+      "planned_action": "Darker face lighting",
+      "expected_condition": "lighting_darker",
+      "condition": "lighting_darker",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    },
+    {
+      "target_seconds": 95.0,
+      "actual_seconds": 94.996017,
+      "frame_number": 2840,
+      "expected_action": "Brighter face lighting",
+      "planned_action": "Brighter face lighting",
+      "expected_condition": "lighting_brighter",
+      "condition": "lighting_brighter",
+      "timeline_action_matches": true,
+      "timeline_condition_matches": true
+    }
+  ],
+  "purpose": "Visually verify the controlled position, simulated-height, distance, and lighting sections before gaze analysis.",
+  "limitations": [
+    "Representative frames cannot prove that gaze stayed fixed for a full section.",
+    "Height, distance, and illumination conditions were not physically measured.",
+    "This review does not establish gaze accuracy or create calibration."
+  ],
+  "gaze_inference_performed": false,
+  "runtime_or_calibration_modified": false
+}

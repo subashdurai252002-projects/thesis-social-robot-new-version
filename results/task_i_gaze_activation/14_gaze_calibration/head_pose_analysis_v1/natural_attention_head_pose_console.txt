@@ -1,0 +1,50 @@
+Natural-attention raw-head-pose analysis
+Video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_validation_recording_v1/natural_attention_validation_input.avi
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/natural_attention_candidate_validation_v1/natural_attention_candidate_validation_samples.csv
+YOLO/ByteTrack/YuNet/MobileOne rerun: none
+Runtime modification: none
+
+Loading portable landmark estimator...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794850631.014163   23707 face_landmarker_graph.cc:181] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794850631.019434   23711 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794850631.032593   23713 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+Analyzed samples: 50 / 496
+Analyzed samples: 100 / 496
+Analyzed samples: 150 / 496
+Analyzed samples: 200 / 496
+Analyzed samples: 250 / 496
+Analyzed samples: 300 / 496
+Analyzed samples: 350 / 496
+Analyzed samples: 400 / 496
+Analyzed samples: 450 / 496
+
+Natural-attention head-pose analysis completed.
+Video hash verified: True
+Input samples: 496
+Landmark predictions: 496
+Landmark failures: 0
+Mean landmark inference: 10.43 ms
+Median landmark inference: 9.86 ms
+P95 landmark inference: 13.53 ms
+
+Core-window raw medians
+Action | Available | Head yaw | Head pitch | MobileOne yaw | MobileOne pitch
+Empty camera view | 0/0 | N/A | N/A | N/A | N/A
+Look at webcam lens | 30/30 | +0.13° | +4.35° | +5.33° | +6.97°
+Look at upper screen | 30/30 | -0.19° | +4.02° | +5.35° | +4.28°
+Look at screen centre | 30/30 | -0.68° | +4.63° | +4.60° | -2.09°
+Look left away from laptop | 30/30 | +12.64° | +2.12° | -21.96° | +3.41°
+Look right away from laptop | 30/30 | -15.61° | +1.21° | +29.52° | +4.45°
+Look above laptop | 30/30 | -2.77° | +0.94° | +4.96° | +10.71°
+Look down at keyboard | 30/30 | -2.76° | +2.13° | -3.12° | -31.92°
+Screen attention from body left | 30/30 | -5.04° | +1.81° | +10.67° | -1.84°
+Screen attention from body right | 27/27 | +2.73° | -2.35° | +3.15° | -8.37°
+Screen attention near camera | 30/30 | -1.26° | +12.61° | +1.92° | -3.27°
+Screen attention in darker light | 0/0 | N/A | N/A | N/A | N/A
+
+Samples: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/head_pose_analysis_v1/natural_attention_head_pose_samples.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/head_pose_analysis_v1/natural_attention_head_pose_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/head_pose_analysis_v1/natural_attention_head_pose_scatter.png
+Decision: diagnostic only; runtime remains unchanged.

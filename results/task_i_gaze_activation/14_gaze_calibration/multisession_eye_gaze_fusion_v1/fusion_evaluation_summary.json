@@ -1,0 +1,113 @@
+{
+  "purpose": "Compare multi-session MobileOne, iris, eye-look and head-pose fusion families",
+  "input_path": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/multisession_eye_features_v1/multisession_eye_features.csv",
+  "sessions": [
+    "natural_attention_derivation",
+    "robustness_attention",
+    "candidate_v1_known_diagnostic",
+    "candidate_v2_final_diagnostic"
+  ],
+  "cross_validation": "leave_one_complete_session_out",
+  "temporal_rule": {
+    "check_interval_seconds": 0.5,
+    "required_consecutive_checks": 3
+  },
+  "model_comparison": [
+    {
+      "model_name": "eye_blendshapes",
+      "feature_count": 2,
+      "features": "blendshape_horizontal_right_minus_left|blendshape_vertical_down_minus_up",
+      "cross_validated_frame_balanced_accuracy": 0.8474792762633508,
+      "cross_validated_attention_recall": 0.8421807747489239,
+      "cross_validated_away_rejection": 0.8527777777777777,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 22,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 2,
+      "cross_validated_action_balanced_accuracy": 0.875
+    },
+    {
+      "model_name": "iris_and_blendshapes",
+      "feature_count": 4,
+      "features": "mean_iris_horizontal|mean_iris_vertical|blendshape_horizontal_right_minus_left|blendshape_vertical_down_minus_up",
+      "cross_validated_frame_balanced_accuracy": 0.8248286306392476,
+      "cross_validated_attention_recall": 0.7718794835007173,
+      "cross_validated_away_rejection": 0.8777777777777778,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 21,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 2,
+      "cross_validated_action_balanced_accuracy": 0.8541666666666667
+    },
+    {
+      "model_name": "eyes_and_head",
+      "feature_count": 6,
+      "features": "mean_iris_horizontal|mean_iris_vertical|blendshape_horizontal_right_minus_left|blendshape_vertical_down_minus_up|raw_head_yaw_degrees|raw_head_pitch_degrees",
+      "cross_validated_frame_balanced_accuracy": 0.8233779690738083,
+      "cross_validated_attention_recall": 0.7245337159253945,
+      "cross_validated_away_rejection": 0.9222222222222223,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 19,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 1,
+      "cross_validated_action_balanced_accuracy": 0.8541666666666666
+    },
+    {
+      "model_name": "mobileone_and_eyes",
+      "feature_count": 6,
+      "features": "raw_yaw_degrees|raw_pitch_degrees|mean_iris_horizontal|mean_iris_vertical|blendshape_horizontal_right_minus_left|blendshape_vertical_down_minus_up",
+      "cross_validated_frame_balanced_accuracy": 0.8184481109516977,
+      "cross_validated_attention_recall": 0.7202295552367288,
+      "cross_validated_away_rejection": 0.9166666666666666,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 18,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 1,
+      "cross_validated_action_balanced_accuracy": 0.8333333333333333
+    },
+    {
+      "model_name": "all_signals",
+      "feature_count": 8,
+      "features": "raw_yaw_degrees|raw_pitch_degrees|mean_iris_horizontal|mean_iris_vertical|blendshape_horizontal_right_minus_left|blendshape_vertical_down_minus_up|raw_head_yaw_degrees|raw_head_pitch_degrees",
+      "cross_validated_frame_balanced_accuracy": 0.7838016100749243,
+      "cross_validated_attention_recall": 0.6814921090387375,
+      "cross_validated_away_rejection": 0.8861111111111111,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 17,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 1,
+      "cross_validated_action_balanced_accuracy": 0.8125
+    },
+    {
+      "model_name": "iris_only",
+      "feature_count": 2,
+      "features": "mean_iris_horizontal|mean_iris_vertical",
+      "cross_validated_frame_balanced_accuracy": 0.6597481268930336,
+      "cross_validated_attention_recall": 0.697274031563845,
+      "cross_validated_away_rejection": 0.6222222222222222,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 18,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 5,
+      "cross_validated_action_balanced_accuracy": 0.6666666666666667
+    },
+    {
+      "model_name": "mobileone_gaze",
+      "feature_count": 2,
+      "features": "raw_yaw_degrees|raw_pitch_degrees",
+      "cross_validated_frame_balanced_accuracy": 0.6427287581699346,
+      "cross_validated_attention_recall": 0.5882352941176471,
+      "cross_validated_away_rejection": 0.6972222222222222,
+      "attention_actions_measurable": 24,
+      "attention_actions_triggered": 15,
+      "away_actions_measurable": 12,
+      "away_false_triggers": 5,
+      "cross_validated_action_balanced_accuracy": 0.6041666666666667
+    }
+  ],
+  "diagnostic_best_model_family": "eye_blendshapes",
+  "candidate_created": false,
+  "threshold_frozen": false,
+  "runtime_modified": false,
+  "limitation": "All four sessions are now known development evidence. A later frozen candidate would require new independent validation."
+}

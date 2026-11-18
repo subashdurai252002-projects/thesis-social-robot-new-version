@@ -1,0 +1,79 @@
+{
+  "status": "ATHUL_STYLE_OFFLINE_REFERENCE_ONLY",
+  "upstream_reference": "https://github.com/ASN-011/scene-trigger-pkg",
+  "reference_rule": {
+    "calibrated_camera_tolerance_degrees": 30.0,
+    "check_interval_seconds": 0.5,
+    "required_consecutive_checks": 3,
+    "first_to_third_check_span_seconds": 1.0,
+    "core_interval_seconds": [
+      2.0,
+      8.0
+    ],
+    "cooldown_simulated": false
+  },
+  "inputs": {
+    "directional_samples": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_samples.csv",
+    "directional_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv",
+    "robustness_samples": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_analysis_v1/gaze_calibration_robustness_samples.csv",
+    "robustness_timeline": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/robustness_recording_v1/gaze_calibration_robustness_timeline.csv",
+    "diagnostic_reference_model": "/home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/position_aware_discrimination_v1/position_aware_discrimination_summary.json"
+  },
+  "check_count": 432,
+  "action_summary_count": 36,
+  "results": {
+    "independent_directional": {
+      "fixed_camera_reference": {
+        "action_count": 8,
+        "attention_actions_triggered": 2,
+        "attention_action_count": 3,
+        "away_actions_incorrectly_triggered": 4,
+        "away_action_count": 4,
+        "no_person_actions_triggered": 0,
+        "no_person_action_count": 1
+      },
+      "position_aware_diagnostic": {
+        "action_count": 8,
+        "attention_actions_triggered": 2,
+        "attention_action_count": 3,
+        "away_actions_incorrectly_triggered": 4,
+        "away_action_count": 4,
+        "no_person_actions_triggered": 0,
+        "no_person_action_count": 1
+      }
+    },
+    "robustness_descriptive": {
+      "fixed_camera_reference": {
+        "action_count": 10,
+        "attention_actions_triggered": 8,
+        "attention_action_count": 9,
+        "away_actions_incorrectly_triggered": 0,
+        "away_action_count": 0,
+        "no_person_actions_triggered": 0,
+        "no_person_action_count": 1
+      },
+      "position_aware_diagnostic": {
+        "action_count": 10,
+        "attention_actions_triggered": 8,
+        "attention_action_count": 9,
+        "away_actions_incorrectly_triggered": 0,
+        "away_action_count": 0,
+        "no_person_actions_triggered": 0,
+        "no_person_action_count": 1
+      }
+    }
+  },
+  "runtime_modified": false,
+  "runtime_threshold_created": false,
+  "runtime_trigger_approved": false,
+  "interpretation_limits": [
+    "This simulates the documented Athul-style persistence rule on MobileOne predictions; it is not a rerun of Athul's full L2CS architecture.",
+    "A 30-degree yaw/pitch-plane residual is a reference approximation and is not automatically suitable for this camera.",
+    "The robustness dataset contains intended centre gaze and is descriptive; the position-aware model was fitted using its eligible conditions.",
+    "The independent directional recording tests intended target categories without measured physical ground-truth angles.",
+    "Missing or far-distance faces remain gaze unavailable and cannot produce a positive check.",
+    "Natural robot-head and future tablet attention zones require physical robot geometry and later lab validation.",
+    "Speech-direction activation through ReSpeaker is a separate planned route and is not tested here.",
+    "Liveness, interaction ownership and cooldown are not evaluated by this offline script."
+  ]
+}

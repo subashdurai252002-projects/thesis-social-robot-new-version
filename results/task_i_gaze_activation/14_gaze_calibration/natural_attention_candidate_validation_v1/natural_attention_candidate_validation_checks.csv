@@ -1,0 +1,145 @@
+planned_action,target_type,condition,expected_attention,check_index,target_relative_seconds,matched_frame_number,matched_relative_seconds,sample_time_difference_seconds,gaze_available,normalized_yaw_degrees,normalized_pitch_degrees,inside_frozen_zone
+Empty camera view,no_person,empty,no_person,1,2.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,2,2.5,,,,False,,,False
+Empty camera view,no_person,empty,no_person,3,3.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,4,3.5,,,,False,,,False
+Empty camera view,no_person,empty,no_person,5,4.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,6,4.5,,,,False,,,False
+Empty camera view,no_person,empty,no_person,7,5.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,8,5.5,,,,False,,,False
+Empty camera view,no_person,empty,no_person,9,6.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,10,6.5,,,,False,,,False
+Empty camera view,no_person,empty,no_person,11,7.0,,,,False,,,False
+Empty camera view,no_person,empty,no_person,12,7.5,,,,False,,,False
+Look at webcam lens,camera_lens,normal,attention,1,2.0,361,2.040445,0.040445000000000064,True,1.6494239149353547,4.72674997142718,True
+Look at webcam lens,camera_lens,normal,attention,2,2.5,373,2.4451970000000003,0.05480299999999971,True,3.566390066394785,6.064508594396193,True
+Look at webcam lens,camera_lens,normal,attention,3,3.0,391,3.0449290000000016,0.04492900000000155,True,0.9467124802534617,-4.320794332328451,True
+Look at webcam lens,camera_lens,normal,attention,4,3.5,403,3.4496200000000012,0.05037999999999876,True,2.3990018589567335,-0.8938058563363356,True
+Look at webcam lens,camera_lens,normal,attention,5,4.0,421,4.0493130000000015,0.049313000000001495,True,-1.7900818563278627,-1.257419711192945,True
+Look at webcam lens,camera_lens,normal,attention,6,4.5,433,4.449397000000001,0.05060299999999884,True,-1.374841855192134,-2.847364292217896,True
+Look at webcam lens,camera_lens,normal,attention,7,5.0,451,5.053319,0.053319000000000116,True,-0.11023984650847929,2.4164026732688972,True
+Look at webcam lens,camera_lens,normal,attention,8,5.5,463,5.453007000000001,0.04699299999999873,True,-0.5493479711285971,-0.9842564124798239,True
+Look at webcam lens,camera_lens,normal,attention,9,6.0,481,6.057340999999999,0.0573409999999992,True,-1.5106627043534715,2.119807418586886,True
+Look at webcam lens,camera_lens,normal,attention,10,6.5,493,6.457320000000001,0.04267999999999894,True,3.3206793006668747,5.390764364780415,True
+Look at webcam lens,camera_lens,normal,attention,11,7.0,511,7.061071,0.0610710000000001,True,2.33697319124472,1.8570716312349536,True
+Look at webcam lens,camera_lens,normal,attention,12,7.5,523,7.461240000000002,0.03875999999999813,True,-3.867267415623701,-1.314371035556432,True
+Look at upper screen,upper_screen,normal,attention,1,2.0,661,2.0762210000000003,0.07622100000000032,True,2.0859060635462825,-3.2885067142233293,True
+Look at upper screen,upper_screen,normal,attention,2,2.5,673,2.4760880000000007,0.023911999999999267,True,-7.519912729303253,-2.6260147617127556,True
+Look at upper screen,upper_screen,normal,attention,3,3.0,691,3.080109,0.08010900000000021,True,-1.049281583509849,2.4527699090804136,True
+Look at upper screen,upper_screen,normal,attention,4,3.5,703,3.4789139999999996,0.021086000000000382,True,2.8792954554223193,1.1783151547725579,True
+Look at upper screen,upper_screen,normal,attention,5,4.0,721,4.084392000000001,0.08439200000000113,True,-3.1771553314663503,-7.912718563818397,True
+Look at upper screen,upper_screen,normal,attention,6,4.5,733,4.484006000000001,0.015993999999999176,True,-1.4458693394995557,-2.2308492739383796,True
+Look at upper screen,upper_screen,normal,attention,7,5.0,751,5.087689000000001,0.08768900000000102,True,-3.185741818300775,-3.028353427153424,True
+Look at upper screen,upper_screen,normal,attention,8,5.5,763,5.481553999999999,0.01844600000000085,True,-0.9370531648612364,-0.3327651611662885,True
+Look at upper screen,upper_screen,normal,attention,9,6.0,781,6.091937999999999,0.09193799999999896,True,-3.8197258145248583,1.280703171077783,True
+Look at upper screen,upper_screen,normal,attention,10,6.5,793,6.486346000000001,0.013653999999998945,True,-5.975948752574386,-0.6358542455785958,True
+Look at upper screen,upper_screen,normal,attention,11,7.0,811,7.096336999999998,0.09633699999999834,True,3.667183834632464,-4.615666870204442,True
+Look at upper screen,upper_screen,normal,attention,12,7.5,823,7.4957090000000015,0.0042909999999984905,True,-0.5063204503574177,-1.424731207585908,True
+Look at screen centre,screen_centre,normal,attention,1,2.0,955,1.9073399999999978,0.09266000000000219,True,-2.3820434618809543,-15.261555476003306,False
+Look at screen centre,screen_centre,normal,attention,2,2.5,973,2.511797999999999,0.011797999999998865,True,-0.7843397202469085,-9.769418839485354,True
+Look at screen centre,screen_centre,normal,attention,3,3.0,985,2.911752,0.0882480000000001,True,-1.7131040509616646,-10.97170328134699,True
+Look at screen centre,screen_centre,normal,attention,4,3.5,1003,3.5153839999999974,0.0153839999999974,True,-1.8248441883602737,-8.276973264811225,True
+Look at screen centre,screen_centre,normal,attention,5,4.0,1015,3.916077999999999,0.08392200000000116,True,0.2153068063698278,-7.055265711768491,True
+Look at screen centre,screen_centre,normal,attention,6,4.5,1033,4.520049999999998,0.02004999999999768,True,-1.6092171194114222,-11.517668055518492,True
+Look at screen centre,screen_centre,normal,attention,7,5.0,1045,4.919584,0.0804159999999996,True,-1.207951751153061,-11.978435054247882,True
+Look at screen centre,screen_centre,normal,attention,8,5.5,1063,5.523496999999999,0.02349699999999899,True,-6.209952214268306,-9.042672126232596,True
+Look at screen centre,screen_centre,normal,attention,9,6.0,1075,5.923890999999998,0.07610900000000242,True,-2.0054251209414264,-8.985950120172422,True
+Look at screen centre,screen_centre,normal,attention,10,6.5,1093,6.524251999999997,0.024251999999997054,True,-6.334466532490158,-9.984743134140633,True
+Look at screen centre,screen_centre,normal,attention,11,7.0,1105,6.928030999999997,0.07196900000000284,True,-3.5819639877529603,-12.413843497473373,True
+Look at screen centre,screen_centre,normal,attention,12,7.5,1123,7.527969999999996,0.027969999999996276,True,1.5435699665332798,-10.16374398863282,True
+Look left away from laptop,away_left,normal,away,1,2.0,1255,1.9448810000000023,0.0551189999999977,True,-27.027380375072617,-3.9445220969649117,False
+Look left away from laptop,away_left,normal,away,2,2.5,1273,2.545017999999999,0.04501799999999889,True,-28.840033743837278,-1.9233340533674257,False
+Look left away from laptop,away_left,normal,away,3,3.0,1285,2.948794999999997,0.051205000000003054,True,-30.734494729897545,-2.228081044272293,False
+Look left away from laptop,away_left,normal,away,4,3.5,1303,3.5483850000000032,0.04838500000000323,True,-28.764570505776742,-0.616769939268659,False
+Look left away from laptop,away_left,normal,away,5,4.0,1315,3.9480760000000004,0.05192399999999964,True,-29.510189568236783,0.9983472381333174,False
+Look left away from laptop,away_left,normal,away,6,4.5,1333,4.553021999999999,0.05302199999999857,True,-26.200517643157042,-0.20804514389368745,False
+Look left away from laptop,away_left,normal,away,7,5.0,1345,4.952593999999998,0.04740600000000228,True,-23.19081988928683,-2.703612355915304,False
+Look left away from laptop,away_left,normal,away,8,5.5,1363,5.557040999999998,0.05704099999999812,True,-26.13766419486771,3.1449835271517754,False
+Look left away from laptop,away_left,normal,away,9,6.0,1375,5.956985000000003,0.04301499999999692,True,-31.840173722598536,-3.125145467657056,False
+Look left away from laptop,away_left,normal,away,10,6.5,1393,6.560367999999997,0.06036799999999687,True,-32.21103425092997,-5.6518268973840255,False
+Look left away from laptop,away_left,normal,away,11,7.0,1405,6.960675000000002,0.039324999999998056,True,-28.9710373090063,-5.70740183967359,False
+Look left away from laptop,away_left,normal,away,12,7.5,1423,7.564852000000002,0.06485200000000191,True,-28.87006056966531,-1.7790635249658857,False
+Look right away from laptop,away_right,normal,away,1,2.0,1555,1.9721890000000002,0.027810999999999808,True,24.065786239383993,-10.830890532897342,False
+Look right away from laptop,away_right,normal,away,2,2.5,1573,2.5762,0.07620000000000005,True,20.68649875141325,-8.240663317114215,False
+Look right away from laptop,away_right,normal,away,3,3.0,1585,2.9761920000000046,0.02380799999999539,True,22.5169838212483,-0.588266485508611,False
+Look right away from laptop,away_right,normal,away,4,3.5,1603,3.580224000000001,0.08022400000000118,True,24.401884981845964,-2.0418182976905213,False
+Look right away from laptop,away_right,normal,away,5,4.0,1615,3.9798100000000005,0.020189999999999486,True,24.301345704918138,-1.9515183257144981,False
+Look right away from laptop,away_right,normal,away,6,4.5,1633,4.584001000000001,0.08400100000000066,True,25.78412354944229,-2.635015218909335,False
+Look right away from laptop,away_right,normal,away,7,5.0,1645,4.984036000000003,0.01596399999999676,True,15.722222931860514,-2.7434432806038407,False
+Look right away from laptop,away_right,normal,away,8,5.5,1663,5.588301000000001,0.0883010000000013,True,21.78315049571305,-9.55131102313917,False
+Look right away from laptop,away_right,normal,away,9,6.0,1675,5.988069000000003,0.011930999999997027,True,16.320683008729986,-8.61372366669157,False
+Look right away from laptop,away_right,normal,away,10,6.5,1693,6.592017000000006,0.09201700000000557,True,21.756943538045174,-8.8264714415633,False
+Look right away from laptop,away_right,normal,away,11,7.0,1705,6.991817000000005,0.008182999999995388,True,24.415699359797298,-6.780023902057439,False
+Look right away from laptop,away_right,normal,away,12,7.5,1723,7.595483999999999,0.09548399999999901,True,21.41929861541823,-0.9016997016098349,False
+Look above laptop,away_above,normal,away,1,2.0,1855,2.0073970000000045,0.007397000000004539,True,-1.9523425497388853,3.6827636328963127,True
+Look above laptop,away_above,normal,away,2,2.5,1867,2.407648000000002,0.09235199999999821,True,0.09647374700578126,5.573912516283773,True
+Look above laptop,away_above,normal,away,3,3.0,1885,3.012124,0.012124000000000024,True,3.0500047043048895,8.34841967576953,False
+Look above laptop,away_above,normal,away,4,3.5,1897,3.4121650000000017,0.08783499999999833,True,-2.462284547565055,3.645273005125672,True
+Look above laptop,away_above,normal,away,5,4.0,1915,4.016128999999999,0.016128999999999394,True,-4.023929274503521,6.750824463481312,True
+Look above laptop,away_above,normal,away,6,4.5,1927,4.416463,0.08353699999999975,True,-2.791193697575787,4.604309353947267,True
+Look above laptop,away_above,normal,away,7,5.0,1945,5.020288000000001,0.02028800000000075,True,-4.916603944519693,1.5477120676794476,True
+Look above laptop,away_above,normal,away,8,5.5,1957,5.420497000000005,0.07950299999999544,True,-1.0505778026613797,-2.4292546830305124,True
+Look above laptop,away_above,normal,away,9,6.0,1975,6.02420200000001,0.024202000000009605,True,1.0053575126019378,9.556506431694704,False
+Look above laptop,away_above,normal,away,10,6.5,1987,6.423746000000001,0.07625399999999871,True,-0.1706907787536167,6.339097880392272,True
+Look above laptop,away_above,normal,away,11,7.0,2005,7.024451000000006,0.024451000000006218,True,-2.9766463701817187,2.650725260424398,True
+Look above laptop,away_above,normal,away,12,7.5,2017,7.428232999999999,0.07176700000000125,True,0.5972950719554628,1.3594668246503918,True
+Look down at keyboard,away_down,normal,away,1,2.0,2155,2.0722510000000085,0.0722510000000085,True,-5.621181881777337,-35.410280917387794,False
+Look down at keyboard,away_down,normal,away,2,2.5,2167,2.4761350000000135,0.02386499999998648,True,-2.7646941983499573,-36.124989773365705,False
+Look down at keyboard,away_down,normal,away,3,3.0,2185,3.0761460000000085,0.07614600000000848,True,-1.800304935006892,-43.851102026777106,False
+Look down at keyboard,away_down,normal,away,4,3.5,2197,3.4801940000000116,0.019805999999988444,True,-7.204409269092758,-46.0045892951287,False
+Look down at keyboard,away_down,normal,away,5,4.0,2215,4.080330000000004,0.08033000000000357,True,-19.26072093337597,-47.03358121130337,False
+Look down at keyboard,away_down,normal,away,6,4.5,2227,4.483633000000012,0.016366999999988252,True,-22.91241284509107,-52.40638483906199,False
+Look down at keyboard,away_down,normal,away,7,5.0,2245,5.0837080000000014,0.08370800000000145,True,-13.234921726511091,-41.43179226454691,False
+Look down at keyboard,away_down,normal,away,8,5.5,2257,5.4844130000000035,0.015586999999996465,True,-16.611297513667612,-40.719528577193934,False
+Look down at keyboard,away_down,normal,away,9,6.0,2275,6.088090000000008,0.08809000000000822,True,-15.449701920120013,-38.79633601726377,False
+Look down at keyboard,away_down,normal,away,10,6.5,2287,6.488018000000011,0.011981999999989057,True,-11.726978708289142,-39.05257045013554,False
+Look down at keyboard,away_down,normal,away,11,7.0,2305,7.092090000000013,0.0920900000000131,True,-13.375683224550775,-35.18602249453623,False
+Look down at keyboard,away_down,normal,away,12,7.5,2317,7.4918460000000096,0.008153999999990447,True,-2.4506352274876537,-31.214644437398473,False
+Screen attention from body left,screen_centre,body_left,attention,1,2.0,2449,1.9069680000000062,0.09303199999999379,True,-2.579815012450574,0.8272881006890507,True
+Screen attention from body left,screen_centre,body_left,attention,2,2.5,2467,2.507435000000001,0.007435000000000969,True,1.490780931704034,3.661960254540811,True
+Screen attention from body left,screen_centre,body_left,attention,3,3.0,2479,2.912142000000003,0.0878579999999971,True,-1.9156310384888755,-3.066920468501614,True
+Screen attention from body left,screen_centre,body_left,attention,4,3.5,2497,3.512375000000006,0.012375000000005798,True,-2.944865316584554,-0.8145883037434603,True
+Screen attention from body left,screen_centre,body_left,attention,5,4.0,2509,3.9120340000000056,0.08796599999999444,True,9.531704903593958,-5.256782032831759,False
+Screen attention from body left,screen_centre,body_left,attention,6,4.5,2527,4.515433999999999,0.01543399999999906,True,1.238251766389336,-10.67777820518273,True
+Screen attention from body left,screen_centre,body_left,attention,7,5.0,2539,4.915053,0.08494699999999966,True,0.8396279872366037,-4.915693683268136,True
+Screen attention from body left,screen_centre,body_left,attention,8,5.5,2557,5.519294000000002,0.019294000000002143,True,-3.0116897979262642,-1.4072179875048283,True
+Screen attention from body left,screen_centre,body_left,attention,9,6.0,2569,5.919859000000002,0.08014099999999758,True,-3.929068600953416,-7.595969205652419,True
+Screen attention from body left,screen_centre,body_left,attention,10,6.5,2587,6.523614000000009,0.023614000000009128,True,1.6805693677440416,-1.8437033903480446,True
+Screen attention from body left,screen_centre,body_left,attention,11,7.0,2599,6.923755,0.07624500000000012,True,-0.1687804794170269,-5.461903277052488,True
+Screen attention from body left,screen_centre,body_left,attention,12,7.5,2617,7.527420000000006,0.02742000000000644,True,-2.1680937556721815,-8.623458682443214,True
+Screen attention from body right,screen_centre,body_right,attention,1,2.0,2749,1.9388739999999984,0.06112600000000157,True,11.698399675587513,-21.901179866195978,False
+Screen attention from body right,screen_centre,body_right,attention,2,2.5,2761,2.338739000000004,0.1612609999999961,True,7.323315453342747,-20.48111309133574,False
+Screen attention from body right,screen_centre,body_right,attention,3,3.0,2785,3.1433080000000047,0.14330800000000465,True,6.702127611649171,-23.4777517521705,False
+Screen attention from body right,screen_centre,body_right,attention,4,3.5,2797,3.546571,0.04657100000000014,True,-5.226203589145557,-29.411518504992117,False
+Screen attention from body right,screen_centre,body_right,attention,5,4.0,2809,3.9474710000000073,0.05252899999999272,True,-4.930902309541757,-23.6560855006002,False
+Screen attention from body right,screen_centre,body_right,attention,6,4.5,2827,4.551408000000009,0.051408000000009224,True,5.012589787552621,-27.45641230260914,False
+Screen attention from body right,screen_centre,body_right,attention,7,5.0,2839,4.951332000000008,0.04866799999999216,True,-1.0457631741190863,-19.663367690020138,False
+Screen attention from body right,screen_centre,body_right,attention,8,5.5,2857,5.5554830000000095,0.0554830000000095,True,3.254250040815048,-23.49806392659082,False
+Screen attention from body right,screen_centre,body_right,attention,9,6.0,2869,5.955234000000004,0.04476599999999564,True,-5.316916248735444,-21.200805695656957,False
+Screen attention from body right,screen_centre,body_right,attention,10,6.5,2887,6.559317000000007,0.05931700000000717,True,-2.110661481710771,-23.690511100154634,False
+Screen attention from body right,screen_centre,body_right,attention,11,7.0,2899,6.955374000000006,0.04462599999999384,True,-1.082577461232379,-22.00856462805675,False
+Screen attention from body right,screen_centre,body_right,attention,12,7.5,2917,7.558783000000005,0.05878300000000536,True,-10.165635364838275,-27.36982000197492,False
+Screen attention near camera,screen_centre,distance_near,attention,1,2.0,3049,1.9763910000000067,0.02360899999999333,True,-12.593938052725097,-0.8482115353979163,False
+Screen attention near camera,screen_centre,distance_near,attention,2,2.5,3067,2.5767040000000065,0.07670400000000654,True,-4.413394210935358,5.382896358317467,True
+Screen attention near camera,screen_centre,distance_near,attention,3,3.0,3079,2.9805720000000093,0.019427999999990675,True,-3.6220384818758617,-0.16844965315814964,True
+Screen attention near camera,screen_centre,distance_near,attention,4,3.5,3097,3.5813399999999973,0.0813399999999973,True,-4.955047674555953,-8.80262105831946,True
+Screen attention near camera,screen_centre,distance_near,attention,5,4.0,3109,3.9849320000000006,0.015067999999999415,True,-1.6592883847553281,-13.744838239707793,True
+Screen attention near camera,screen_centre,distance_near,attention,6,4.5,3127,4.584591000000003,0.08459100000000319,True,-14.684144171264109,-16.83159329990684,False
+Screen attention near camera,screen_centre,distance_near,attention,7,5.0,3139,4.9891760000000005,0.0108239999999995,True,-13.941063243097242,-9.485820468874497,False
+Screen attention near camera,screen_centre,distance_near,attention,8,5.5,3157,5.588543999999999,0.08854399999999885,True,-11.798756421048406,-14.915800749746936,False
+Screen attention near camera,screen_centre,distance_near,attention,9,6.0,3169,5.98867700000001,0.011322999999990202,True,-13.63571138868913,-14.276072284046773,False
+Screen attention near camera,screen_centre,distance_near,attention,10,6.5,3187,6.59241200000001,0.09241200000001015,True,-13.72502097774099,-11.187167276285763,False
+Screen attention near camera,screen_centre,distance_near,attention,11,7.0,3199,6.993679,0.006320999999999799,True,-7.958910973505926,-20.574336272874366,False
+Screen attention near camera,screen_centre,distance_near,attention,12,7.5,3217,7.596483000000006,0.09648300000000631,True,-4.441853234176042,-14.652461492385818,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,1,2.0,,,0.5922149999999959,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,2,2.5,,,1.092214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,3,3.0,,,1.592214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,4,3.5,,,2.092214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,5,4.0,,,2.592214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,6,4.5,,,3.092214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,7,5.0,,,3.592214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,8,5.5,,,4.092214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,9,6.0,,,4.592214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,10,6.5,,,5.092214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,11,7.0,,,5.592214999999996,False,,,False
+Screen attention in darker light,screen_centre,lighting_darker,attention,12,7.5,,,6.092214999999996,False,,,False

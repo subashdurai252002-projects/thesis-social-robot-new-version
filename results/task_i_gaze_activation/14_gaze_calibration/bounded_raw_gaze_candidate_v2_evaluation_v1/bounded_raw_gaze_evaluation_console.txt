@@ -1,0 +1,30 @@
+Offline bounded raw-gaze candidate-v2 evaluation
+Development: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_preparation_v1/candidate_v2_multi_session_features.csv
+Known diagnostic: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/head_pose_analysis_v1/natural_attention_head_pose_samples.csv
+Position correction: disabled
+Sustained checks: 3 at 0.5 seconds
+Runtime modification: none
+
+Candidate zones to search: 19602
+
+Best bounded raw-gaze zone
+  Yaw: -22.0° to +14.0°
+  Pitch: -22.0° to +10.0°
+  Development action BA: 0.955
+  Diagnostic action BA: 0.875
+  Diagnostic attention actions: 6/6
+  Diagnostic away false triggers: 1/4
+  Screening passed: False
+
+Candidate v1 diagnostic
+  Frame balanced accuracy: 0.749
+  Action balanced accuracy: 0.792
+  Attention actions: 5/6
+  Away false triggers: 1/4
+
+Candidates: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_raw_gaze_candidate_v2_evaluation_v1/bounded_raw_gaze_zone_candidates.csv
+Actions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_raw_gaze_candidate_v2_evaluation_v1/bounded_raw_gaze_action_results.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/bounded_raw_gaze_candidate_v2_evaluation_v1/bounded_raw_gaze_evaluation_summary.json
+Candidate frozen: False
+Candidate approved: False
+Runtime modified: False

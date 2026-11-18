@@ -1,0 +1,74 @@
+Dynamic frame-rate reduction disabled.
+Independent gaze-calibration validation recording
+Candidate v2 remains frozen and is not used during recording.
+Camera: 640x480
+Camera-reported FPS: 30.00
+Output video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_input.avi
+Timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv
+
+Independent calibration-validation recording plan:
+   0-10 s: Empty camera view
+            Remain completely outside the camera view
+  10-20 s: Look at camera centre
+            Sit normally and look directly at the lens
+  20-30 s: Look left of camera
+            Look at the fixed LEFT marker
+  30-40 s: Look right of camera
+            Look at the fixed RIGHT marker
+  40-50 s: Look above camera
+            Look at the fixed ABOVE marker
+  50-60 s: Look below camera
+            Look at the fixed BELOW marker
+  60-70 s: Centre gaze while moving left and right
+            Keep looking at lens; move body slowly left/right
+  70-80 s: Centre gaze while moving closer and farther
+            Keep looking at lens; move slowly closer/farther
+
+Important:
+  1. Use the same fixed target positions for the whole recording.
+  2. Do not look at the screen to read the instruction.
+  3. Follow the printed time schedule using the fixed markers.
+  4. Keep lighting and camera placement unchanged.
+  5. Press q or Esc only if the recording is wrong.
+
+Opening preparation preview...
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+QFontDatabase: Cannot find font directory /home/subash/thesis social robot new version/.venv-gaze/lib/python3.12/site-packages/cv2/qt/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.
+Recording started.
+  0.0 s: Empty camera view
+           Remain completely outside the camera view
+ 10.0 s: Look at camera centre
+           Sit normally and look directly at the lens
+ 20.0 s: Look left of camera
+           Look at the fixed LEFT marker
+ 30.0 s: Look right of camera
+           Look at the fixed RIGHT marker
+ 40.0 s: Look above camera
+           Look at the fixed ABOVE marker
+ 50.0 s: Look below camera
+           Look at the fixed BELOW marker
+ 60.0 s: Centre gaze while moving left and right
+           Keep looking at lens; move body slowly left/right
+ 70.0 s: Centre gaze while moving closer and farther
+           Keep looking at lens; move slowly closer/farther
+
+Validation recording finished safely.
+Stopped early: False
+Recorded frames: 2391
+Failed camera frames: 0
+Elapsed time: 80.17 seconds
+Measured capture FPS: 29.82
+Video SHA-256: 9c75ccc5292c9ff77db17710e5ffecec89d91f4e410a51f175f91e21619d7140
+Saved video: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_input.avi
+Saved timeline: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_timeline.csv
+Saved metadata: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_metadata.json
+Saved hash: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/validation_recording_v1/gaze_calibration_validation_sha256.txt

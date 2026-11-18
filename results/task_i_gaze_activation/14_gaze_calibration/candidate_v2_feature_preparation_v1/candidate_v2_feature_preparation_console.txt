@@ -1,0 +1,45 @@
+Candidate-v2 multi-session feature preparation
+Datasets: natural_attention_derivation, robustness_attention
+YOLO/ByteTrack/YuNet/MobileOne rerun: none
+Candidate selection: none
+Runtime modification: none
+
+Loading portable landmark estimator...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794851459.151542   24214 face_landmarker_graph.cc:181] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794851459.156768   24218 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794851459.169036   24220 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+Processing: natural_attention_derivation
+natural_attention_derivation samples: 50 / 342
+natural_attention_derivation samples: 100 / 342
+natural_attention_derivation samples: 150 / 342
+natural_attention_derivation samples: 200 / 342
+natural_attention_derivation samples: 250 / 342
+natural_attention_derivation samples: 300 / 342
+
+Processing: robustness_attention
+robustness_attention samples: 50 / 388
+robustness_attention samples: 100 / 388
+robustness_attention samples: 150 / 388
+robustness_attention samples: 200 / 388
+robustness_attention samples: 250 / 388
+robustness_attention samples: 300 / 388
+robustness_attention samples: 350 / 388
+
+Candidate-v2 feature preparation completed.
+Combined rows: 730
+Landmark rows: 730
+Landmark failures: 0
+Mean landmark inference: 10.45 ms
+Median landmark inference: 10.10 ms
+P95 landmark inference: 12.79 ms
+
+Per-session results
+  natural_attention_derivation: 342/342 landmarks, 0 failures
+  robustness_attention: 388/388 landmarks, 0 failures
+
+Combined CSV: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_preparation_v1/candidate_v2_multi_session_features.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/candidate_v2_feature_preparation_v1/candidate_v2_feature_preparation_summary.json
+Decision: features prepared only; no candidate or runtime change.

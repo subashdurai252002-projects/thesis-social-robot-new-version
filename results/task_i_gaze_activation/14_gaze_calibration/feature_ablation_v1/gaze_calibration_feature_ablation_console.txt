@@ -1,0 +1,20 @@
+Offline gaze-calibration feature-ablation evaluation
+Cross-validation: leave one complete condition out
+Eligible conditions: Baseline centre, Body left, Body right, Face higher, Face lower, Near camera, Darker face lighting, Brighter face lighting
+Excluded conditions:
+  Empty camera view: No person should be present.
+  Far from camera: Core gaze availability below 70%: 0.06666666666666667
+Runtime modification: none
+
+Overall mean yaw/pitch plane error
+  constant: 8.46°
+  position_only: 7.78°
+  position_and_size: 8.35°
+  quality_only: 8.52°
+  all_features: 7.98°
+Lowest observed error: position_only
+
+Predictions: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/feature_ablation_v1/gaze_calibration_feature_ablation.csv
+Summary: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/feature_ablation_v1/gaze_calibration_feature_ablation_summary.json
+Plot: /home/subash/thesis social robot new version/results/task_i_gaze_activation/14_gaze_calibration/feature_ablation_v1/gaze_calibration_feature_ablation.png
+Decision: diagnostic only; no runtime calibration created.
