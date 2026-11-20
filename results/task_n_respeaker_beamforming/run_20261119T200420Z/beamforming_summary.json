@@ -1,0 +1,43 @@
+{
+  "analysis_type": "offline_delay_and_sum_beamforming_comparison",
+  "base_run_name": "run_20261119T193654Z",
+  "correction_run_name": "run_20261119T194238Z",
+  "whisper_model": "base",
+  "expected_text": "Hello robot, I would like some information.",
+  "logical_recordings": 9,
+  "methods": [
+    {
+      "method": "channel_0",
+      "recordings": 9,
+      "mean_estimated_snr_db": 56.805925028957105,
+      "median_estimated_snr_db": 56.850210315216465,
+      "mean_wer": 0.0,
+      "exact_matches": 9
+    },
+    {
+      "method": "unaligned_average_1_to_4",
+      "recordings": 9,
+      "mean_estimated_snr_db": 38.108333558195746,
+      "median_estimated_snr_db": 37.97608485956356,
+      "mean_wer": 0.0,
+      "exact_matches": 9
+    },
+    {
+      "method": "delay_and_sum_1_to_4",
+      "recordings": 9,
+      "mean_estimated_snr_db": 38.242406101800256,
+      "median_estimated_snr_db": 38.17881930346247,
+      "mean_wer": 0.0,
+      "exact_matches": 9
+    }
+  ],
+  "steering_validation": "Each repetition was processed using steering delays estimated only from the other two repetitions.",
+  "important_limitations": [
+    "Known side labels were used to isolate beamforming quality from direction classification errors.",
+    "One participant, one phrase, one room and one array placement.",
+    "Estimated SNR uses low-energy frames as a noise approximation.",
+    "This experiment does not yet contain simultaneous competing speakers.",
+    "No live-runtime integration was performed."
+  ],
+  "created_utc": "2026-11-19T20:04:38.579996+00:00"
+}

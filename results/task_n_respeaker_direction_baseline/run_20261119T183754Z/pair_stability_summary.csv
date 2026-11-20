@@ -1,0 +1,7 @@
+channel_first,channel_second,negative_side_median_microseconds,centre_absolute_median_microseconds,positive_side_median_microseconds,side_separation_microseconds,mean_within_position_standard_deviation,opposite_side_signs,exploratory_score,rank
+2,4,-125.0,0.0,31.25,156.25,36.64133358686473,True,2.5760328648706174,1
+1,3,-125.0,62.5,0.0,125.0,35.92247040119778,False,0.7767715701129927,2
+1,2,0.0,31.25,-62.5,62.5,0.0,False,0.6666666666666666,3
+3,4,0.0,31.25,62.5,62.5,13.531646934131853,False,0.5825786775847446,4
+1,4,-62.5,62.5,0.0,62.5,6.7658234670659265,False,0.4743263340635631,5
+2,3,-62.5,62.5,0.0,62.5,13.531646934131853,False,0.4511604487725256,6

@@ -1,0 +1,10 @@
+trial_index,side,repetition,target_angle_degrees,source,active_window_start_seconds,delay_1_2_microseconds,delay_1_3_microseconds,delay_1_4_microseconds,delay_2_3_microseconds,delay_2_4_microseconds,delay_3_4_microseconds
+1,centre,1,0.0,base,2.2089375,0.0,-62.5,-62.5,-62.5,-125.0,0.0
+2,left,1,-30.0,base,2.081875,-125.0,-125.0,-62.5,-62.5,62.5,125.0
+3,right,1,30.0,base,1.660875,62.5,62.5,0.0,0.0,0.0,-62.5
+4,right,2,30.0,base,2.7144375,125.0,125.0,0.0,0.0,-62.5,-125.0
+5,centre,2,0.0,base,1.4084375,0.0,-125.0,-125.0,-125.0,-125.0,0.0
+6,left,2,-30.0,base,0.978,-125.0,-125.0,0.0,0.0,62.5,125.0
+7,left,3,-30.0,base,1.2426875,-125.0,-125.0,-62.5,-31.25,62.5,125.0
+8,right,3,30.0,correction,1.20775,125.0,125.0,0.0,0.0,-125.0,-125.0
+9,centre,3,0.0,correction,1.024875,0.0,-62.5,-125.0,-125.0,-156.25,0.0

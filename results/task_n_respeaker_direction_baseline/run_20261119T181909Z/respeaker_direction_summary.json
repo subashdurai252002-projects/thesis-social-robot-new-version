@@ -1,0 +1,55 @@
+{
+  "analysis_type": "preliminary_camera_relative_respeaker_direction_baseline",
+  "source_status": "aborted",
+  "position_reference": "laptop_rgb_camera",
+  "position_is_respeaker_relative": false,
+  "positions_completed": 4,
+  "positions_required": 5,
+  "important_limitation": "Positions are camera-relative, not a final ReSpeaker or robot DOA calibration.",
+  "positions": [
+    {
+      "mark": "A",
+      "target_distance_metres": 1.0,
+      "target_angle_degrees": 0.0,
+      "estimated_distance_metres": 0.988124026286436,
+      "estimated_angle_degrees": -0.3761096294049647,
+      "duration_seconds": 6.0,
+      "active_window_start_seconds": 1.070125,
+      "loudest_channel": 0,
+      "loudest_channel_rms": 0.025638444845950983
+    },
+    {
+      "mark": "B",
+      "target_distance_metres": 1.0,
+      "target_angle_degrees": -30.0,
+      "estimated_distance_metres": 1.0016599718520036,
+      "estimated_angle_degrees": -31.586100384425748,
+      "duration_seconds": 6.0,
+      "active_window_start_seconds": 0.93725,
+      "loudest_channel": 0,
+      "loudest_channel_rms": 0.02566676003304191
+    },
+    {
+      "mark": "C",
+      "target_distance_metres": 1.0,
+      "target_angle_degrees": 30.0,
+      "estimated_distance_metres": 0.9255845309518514,
+      "estimated_angle_degrees": 25.909043493306175,
+      "duration_seconds": 6.0,
+      "active_window_start_seconds": 0.9546875,
+      "loudest_channel": 0,
+      "loudest_channel_rms": 0.034302067652165015
+    },
+    {
+      "mark": "D",
+      "target_distance_metres": 0.5,
+      "target_angle_degrees": 0.0,
+      "estimated_distance_metres": 0.6043072557454237,
+      "estimated_angle_degrees": -1.7546547355082132,
+      "duration_seconds": 6.0,
+      "active_window_start_seconds": 0.7254375,
+      "loudest_channel": 0,
+      "loudest_channel_rms": 0.06887321050146193
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+method,recordings,mean_estimated_snr_db,median_estimated_snr_db,mean_wer,exact_matches
+channel_0,9,56.805925028957105,56.850210315216465,0.0,9
+unaligned_average_1_to_4,9,38.108333558195746,37.97608485956356,0.0,9
+delay_and_sum_1_to_4,9,38.242406101800256,38.17881930346247,0.0,9

@@ -1,0 +1,62 @@
+{
+  "analysis_type": "repeated_respeaker_direction_leave_one_repetition_out",
+  "base_run_name": "run_20261119T193654Z",
+  "correction_run_name": "run_20261119T194238Z",
+  "correction_applied_to_trials": [
+    8,
+    9
+  ],
+  "logical_trial_count": 9,
+  "classes": [
+    "left",
+    "centre",
+    "right"
+  ],
+  "feature_names": [
+    "delay_1_2_microseconds",
+    "delay_1_3_microseconds",
+    "delay_1_4_microseconds",
+    "delay_2_3_microseconds",
+    "delay_2_4_microseconds",
+    "delay_3_4_microseconds"
+  ],
+  "correct_predictions": 9,
+  "total_predictions": 9,
+  "accuracy": 1.0,
+  "per_side_accuracy": {
+    "left": 1.0,
+    "centre": 1.0,
+    "right": 1.0
+  },
+  "confusion_matrix": [
+    {
+      "actual_side": "left",
+      "predicted_left": 3,
+      "predicted_centre": 0,
+      "predicted_right": 0,
+      "total": 3
+    },
+    {
+      "actual_side": "centre",
+      "predicted_left": 0,
+      "predicted_centre": 3,
+      "predicted_right": 0,
+      "total": 3
+    },
+    {
+      "actual_side": "right",
+      "predicted_left": 0,
+      "predicted_centre": 0,
+      "predicted_right": 3,
+      "total": 3
+    }
+  ],
+  "interpretation_required": true,
+  "limitations": [
+    "One participant, one room, one ReSpeaker placement.",
+    "Positions are declared floor marks rather than final robot mounting.",
+    "Physical microphone channel mapping has not yet been confirmed.",
+    "The evaluation supports only left/centre/right classification, not continuous angle estimation."
+  ],
+  "created_utc": "2026-11-19T19:53:21.156203+00:00"
+}

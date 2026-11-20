@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import csv
 import gc
 import re
@@ -12,30 +13,36 @@ import numpy as np
 from faster_whisper import WhisperModel
 
 
-PROMPT_FILE = Path(
-    "benchmark_data/whisper/prompts.csv"
-)
-
-AUDIO_ROOT = Path(
-    "benchmark_data/whisper/audio"
-)
-
-RESULT_ROOT = Path(
-    "results/task_e_whisper_benchmark"
-)
-
-SPEAKER_ID = "S01"
-
-MODELS = [
-    "tiny",
-    "tiny.en",
-    "base",
-    "base.en",
-    "small",
-    "small.en",
-]
-
 SILENCE_STOP_SECONDS = 0.8
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--speaker-id",
+        required=True,
+    )
+    parser.add_argument(
+        "--audio-directory",
+        type=Path,
+        required=True,
+    )
+    parser.add_argument(
+        "--prompt-file",
+        type=Path,
+        required=True,
+    )
+    parser.add_argument(
+        "--output-directory",
+        type=Path,
+        required=True,
+    )
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        required=True,
+    )
+    return parser.parse_args()
 
 
 def normalize_words(text):
@@ -112,8 +119,8 @@ def read_first_channel(path):
     return mono, duration
 
 
-def load_prompts():
-    with PROMPT_FILE.open(
+def load_prompts(prompt_file):
+    with prompt_file.open(
         newline="",
         encoding="utf-8",
     ) as file:
@@ -136,16 +143,47 @@ def write_csv(path, rows, fieldnames):
 
 
 def main():
-    prompts = load_prompts()
+    arguments = parse_arguments()
+    speaker_id = arguments.speaker_id
+    audio_directory = arguments.audio_directory
+    prompt_file = arguments.prompt_file
+    result_directory = arguments.output_directory
+    models = arguments.models
+    result_label = re.sub(
+        r"[^A-Za-z0-9_.-]+",
+        "_",
+        f"{speaker_id}_{audio_directory.name}",
+    ).strip("_")
 
-    audio_directory = (
-        AUDIO_ROOT / SPEAKER_ID
+    if not result_label:
+        raise ValueError("Result label is empty.")
+
+    detail_path = (
+        result_directory
+        / f"whisper_results_{result_label}.csv"
+    )
+    summary_path = (
+        result_directory
+        / f"whisper_summary_{result_label}.csv"
     )
 
-    RESULT_ROOT.mkdir(
+    if detail_path.exists() or summary_path.exists():
+        raise FileExistsError(
+            "Result files already exist; they will not be overwritten."
+        )
+
+    prompts = load_prompts(prompt_file)
+
+    result_directory.mkdir(
         parents=True,
         exist_ok=True,
     )
+
+    print("Speaker:", speaker_id)
+    print("Audio directory:", audio_directory)
+    print("Prompt file:", prompt_file)
+    print("Models:", ", ".join(models))
+    print("Output directory:", result_directory)
 
     audio_data = {}
 
@@ -169,7 +207,7 @@ def main():
     detailed_rows = []
     model_load_times = {}
 
-    for model_name in MODELS:
+    for model_name in models:
         print()
         print("=" * 70)
         print("Loading model:", model_name)
@@ -315,7 +353,7 @@ def main():
 
             detailed_rows.append(
                 {
-                    "speaker_id": SPEAKER_ID,
+                    "speaker_id": speaker_id,
                     "prompt_id": prompt_id,
                     "category": category,
                     "model": model_name,
@@ -347,11 +385,6 @@ def main():
         del model
         gc.collect()
 
-    detail_path = (
-        RESULT_ROOT
-        / f"whisper_results_{SPEAKER_ID}.csv"
-    )
-
     detail_fields = list(
         detailed_rows[0].keys()
     )
@@ -364,7 +397,7 @@ def main():
 
     summary_rows = []
 
-    for model_name in MODELS:
+    for model_name in models:
         rows = [
             row
             for row in detailed_rows
@@ -400,7 +433,7 @@ def main():
         summary_rows.append(
             {
                 "model": model_name,
-                "speaker_id": SPEAKER_ID,
+                "speaker_id": speaker_id,
                 "prompts": len(rows),
                 "exact_matches": exact_matches,
                 "total_reference_words":
@@ -432,11 +465,6 @@ def main():
                     ),
             }
         )
-
-    summary_path = (
-        RESULT_ROOT
-        / f"whisper_summary_{SPEAKER_ID}.csv"
-    )
 
     summary_fields = list(
         summary_rows[0].keys()
