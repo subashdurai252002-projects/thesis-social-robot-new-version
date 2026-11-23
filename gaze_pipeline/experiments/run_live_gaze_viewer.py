@@ -14,7 +14,7 @@ import math
 import secrets
 import sys
 import time
-from collections.abc import Callable
+from collections.abc import Callable, Mapping
 from pathlib import Path
 
 import cv2
@@ -40,6 +40,9 @@ from gaze_estimator import MobileOneGazeEstimator  # noqa: E402
 from gaze_pipeline.runtime.face_landmark_estimator import (  # noqa: E402
     MediaPipeFaceLandmarkEstimator,
 )
+from gaze_pipeline.runtime.interaction_state_controller import (  # noqa: E402
+    PostInteractionRearmGate,
+)
 from gaze_pipeline.runtime.rgb_liveness import (  # noqa: E402
     LivenessChallenge,
     RGBLivenessTracker,
@@ -50,7 +53,9 @@ from gaze_pipeline.runtime.sustained_attention import (  # noqa: E402
 )
 from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     VisualAttentionEvidenceEstimator,
+    conversation_visual_supports_engagement,
     head_pitch_supports_screen_attention,
+    screen_eye_region_supports_attention,
     screen_region_supports_attention,
 )
 from person_tracker import (  # noqa: E402
@@ -85,6 +90,9 @@ LIVENESS_MODES = {
 }
 
 PASSIVE_DIAGNOSTIC_SECONDS = 3.0
+CONVERSATION_VISION_INTERVAL_SECONDS = 0.5
+CONVERSATION_LIP_INTERVAL_SECONDS = 0.1
+MAX_CACHED_OWNER_BOX_AGE_SECONDS = 1.0
 PASSIVE_DIAGNOSTIC_TARGETS = {
     ord("1"): "screen_centre",
     ord("2"): "inside_screen_left",
@@ -194,6 +202,17 @@ def draw_raw_gaze_arrow(
 def main(
     on_live_candidate: Callable[[int], None] | None = None,
     interaction_active: Callable[[], bool] | None = None,
+    active_owner_track_id: Callable[[], int | None] | None = None,
+    on_engagement_observation: (
+        Callable[[int, float, bool, bool, bool], None] | None
+    ) = None,
+    on_lip_observation: (
+        Callable[
+            [int, float, bool, Mapping[str, float] | None],
+            None,
+        ]
+        | None
+    ) = None,
     liveness_mode: str = LIVENESS_MODE_CHALLENGE,
     screen_diagnostic: bool = False,
 ) -> None:
@@ -282,14 +301,40 @@ def main(
     print("Camera window opened. Nothing is being recorded.")
     face_locks: dict[int, FaceContinuityLock] = {}
     last_seen_frame_by_id: dict[int, int] = {}
+    strict_attention_head_yaw_by_id: dict[int, float] = {}
     challenge_started_ids: set[int] = set()
     dispatched_candidate_ids: set[int] = set()
     interaction_was_active = False
+    completed_interaction_owner_id: int | None = None
+    post_interaction_rearm_gates: dict[
+        int,
+        PostInteractionRearmGate,
+    ] = {}
     diagnostic_measurement: dict[str, object] | None = None
     diagnostic_results: dict[str, dict[str, float | int]] = {}
     processed_frames = 0
     previous_loop_time = time.perf_counter()
     smoothed_fps = 0.0
+    last_conversation_vision_time = -math.inf
+    last_conversation_lip_time = -math.inf
+    cached_owner_track_id: int | None = None
+    cached_owner_person_box: tuple[int, int, int, int] | None = None
+    cached_owner_box_timestamp = -math.inf
+
+    def complete_post_interaction_rearm(track_id: int) -> None:
+        """Clear old evidence after one completed owner disengages."""
+
+        attention_tracker.reset_track(track_id)
+        liveness_tracker.reset_track(track_id)
+        challenge_started_ids.discard(track_id)
+        dispatched_candidate_ids.discard(track_id)
+        strict_attention_head_yaw_by_id.pop(track_id, None)
+        post_interaction_rearm_gates.pop(track_id, None)
+        print(
+            f"Completed owner ID {track_id} rearmed after "
+            "sustained disengagement; fresh attention and "
+            "liveness are required."
+        )
 
     try:
         while True:
@@ -304,39 +349,163 @@ def main(
                 interaction_active is not None
                 and interaction_active()
             )
+            owner_track_id: int | None = None
 
             if interaction_is_active:
                 interaction_was_active = True
-                cv2.rectangle(
-                    frame,
-                    (0, 0),
-                    (frame.shape[1], 100),
-                    (0, 0, 0),
-                    -1,
-                )
-                draw_label(
-                    frame,
-                    "CONVERSATION ACTIVE",
-                    (10, 38),
-                    (0, 255, 0),
-                    0.86,
-                )
-                draw_label(
-                    frame,
-                    "Vision inference paused - window remains responsive",
-                    (10, 74),
-                    (0, 255, 255),
-                    0.55,
-                )
-                cv2.imshow(WINDOW_NAME, frame)
-                key = cv2.waitKey(1) & 0xFF
 
-                if key in (ord("q"), 27):
-                    break
+                owner_track_id = (
+                    active_owner_track_id()
+                    if active_owner_track_id is not None
+                    else None
+                )
 
-                continue
+                if owner_track_id is not None:
+                    completed_interaction_owner_id = owner_track_id
 
-            if interaction_was_active:
+                if (
+                    cached_owner_track_id is not None
+                    and cached_owner_track_id != owner_track_id
+                ):
+                    cached_owner_track_id = None
+                    cached_owner_person_box = None
+                    cached_owner_box_timestamp = -math.inf
+                    last_conversation_lip_time = -math.inf
+
+                monitoring_available = bool(
+                    owner_track_id is not None
+                    and on_engagement_observation is not None
+                )
+                conversation_vision_due = bool(
+                    monitoring_available
+                    and observation_time
+                    - last_conversation_vision_time
+                    >= CONVERSATION_VISION_INTERVAL_SECONDS
+                )
+
+                lip_monitoring_available = bool(
+                    owner_track_id is not None
+                    and on_lip_observation is not None
+                )
+                conversation_lip_due = bool(
+                    lip_monitoring_available
+                    and observation_time - last_conversation_lip_time
+                    >= CONVERSATION_LIP_INTERVAL_SECONDS
+                )
+
+                if not conversation_vision_due:
+                    if conversation_lip_due:
+                        last_conversation_lip_time = observation_time
+                        cache_fresh = bool(
+                            cached_owner_track_id == owner_track_id
+                            and cached_owner_person_box is not None
+                            and observation_time
+                            - cached_owner_box_timestamp
+                            <= MAX_CACHED_OWNER_BOX_AGE_SECONDS
+                        )
+
+                        if not cache_fresh:
+                            on_lip_observation(
+                                owner_track_id,
+                                observation_time,
+                                False,
+                                None,
+                            )
+                        else:
+                            try:
+                                if owner_track_id not in face_locks:
+                                    face_locks[owner_track_id] = (
+                                        FaceContinuityLock()
+                                    )
+
+                                lip_detections = face_detector.detect(
+                                    frame,
+                                    cached_owner_person_box,
+                                )
+                                lip_face = face_locks[
+                                    owner_track_id
+                                ].update(
+                                    owner_track_id,
+                                    cached_owner_person_box,
+                                    lip_detections,
+                                )
+
+                                if lip_face is None:
+                                    on_lip_observation(
+                                        owner_track_id,
+                                        observation_time,
+                                        False,
+                                        None,
+                                    )
+                                else:
+                                    lip_crop = safe_face_crop(
+                                        frame,
+                                        lip_face.box,
+                                    )
+                                    lip_prediction = (
+                                        landmark_estimator.predict(
+                                            lip_crop
+                                        )
+                                    )
+                                    on_lip_observation(
+                                        owner_track_id,
+                                        observation_time,
+                                        True,
+                                        lip_prediction.blendshape_scores,
+                                    )
+                            except Exception:
+                                on_lip_observation(
+                                    owner_track_id,
+                                    observation_time,
+                                    False,
+                                    None,
+                                )
+
+                    cv2.rectangle(
+                        frame,
+                        (0, 0),
+                        (frame.shape[1], 100),
+                        (0, 0, 0),
+                        -1,
+                    )
+                    draw_label(
+                        frame,
+                        "CONVERSATION ACTIVE",
+                        (10, 38),
+                        (0, 255, 0),
+                        0.86,
+                    )
+                    status_text = (
+                        "Lightweight owner monitoring active"
+                        if monitoring_available
+                        else (
+                            "Vision inference paused - "
+                            "window remains responsive"
+                        )
+                    )
+                    draw_label(
+                        frame,
+                        status_text,
+                        (10, 74),
+                        (0, 255, 255),
+                        0.55,
+                    )
+                    cv2.imshow(WINDOW_NAME, frame)
+                    key = cv2.waitKey(1) & 0xFF
+
+                    if key in (ord("q"), 27):
+                        break
+
+                    continue
+
+                last_conversation_vision_time = observation_time
+
+            if interaction_was_active and not interaction_is_active:
+                cached_owner_track_id = None
+                cached_owner_person_box = None
+                cached_owner_box_timestamp = -math.inf
+                last_conversation_lip_time = -math.inf
+
                 # A completed conversation must require fresh attention and
                 # fresh liveness before this or another person can start the
                 # next interaction.  Existing detector/tracker identities are
@@ -344,12 +513,35 @@ def main(
                 attention_tracker.clear()
                 liveness_tracker.clear()
                 challenge_started_ids.clear()
-                dispatched_candidate_ids.clear()
+
+                if completed_interaction_owner_id is None:
+                    dispatched_candidate_ids.clear()
+                else:
+                    post_interaction_rearm_gates[
+                        completed_interaction_owner_id
+                    ] = PostInteractionRearmGate(
+                        owner_track_id=completed_interaction_owner_id,
+                        started_at_seconds=observation_time,
+                    )
+                    dispatched_candidate_ids.intersection_update(
+                        post_interaction_rearm_gates.keys()
+                    )
+
                 interaction_was_active = False
                 print(
                     "Conversation finished; fresh attention and "
                     "liveness are required."
                 )
+
+                if completed_interaction_owner_id is not None:
+                    print(
+                        "Completed owner ID",
+                        completed_interaction_owner_id,
+                        "must clearly disengage for 2 seconds "
+                        "before reactivation.",
+                    )
+
+                completed_interaction_owner_id = None
 
             result = yolo_model.track(
                 source=frame,
@@ -398,9 +590,21 @@ def main(
             frame_prompts: list[
                 tuple[int, str, tuple[int, int, int]]
             ] = []
+            conversation_owner_visible = False
+            conversation_owner_face_available = False
+            conversation_owner_robot_directed = False
 
             for track_id, confidence, person_box in candidates:
                 last_seen_frame_by_id[track_id] = processed_frames
+
+                if (
+                    interaction_is_active
+                    and track_id == owner_track_id
+                ):
+                    conversation_owner_visible = True
+                    cached_owner_track_id = track_id
+                    cached_owner_person_box = person_box
+                    cached_owner_box_timestamp = observation_time
 
                 if track_id not in face_locks:
                     face_locks[track_id] = FaceContinuityLock()
@@ -428,6 +632,19 @@ def main(
                 )
 
                 if selected_face is None:
+                    if (
+                        interaction_is_active
+                        and track_id == owner_track_id
+                        and on_lip_observation is not None
+                    ):
+                        last_conversation_lip_time = observation_time
+                        on_lip_observation(
+                            track_id,
+                            observation_time,
+                            False,
+                            None,
+                        )
+
                     attention_tracker.observe(
                         track_id=track_id,
                         timestamp_seconds=observation_time,
@@ -440,7 +657,24 @@ def main(
                         face_available=False,
                     )
                     challenge_started_ids.discard(track_id)
-                    dispatched_candidate_ids.discard(track_id)
+
+                    rearm_gate = post_interaction_rearm_gates.get(
+                        track_id
+                    )
+
+                    if not interaction_is_active and rearm_gate is not None:
+                        rearm_decision = rearm_gate.observe(
+                            track_id,
+                            observation_time,
+                            face_available=False,
+                            robot_directed=False,
+                        )
+
+                        if rearm_decision.rearm_completed_owner:
+                            complete_post_interaction_rearm(track_id)
+                    else:
+                        dispatched_candidate_ids.discard(track_id)
+
                     draw_label(
                         frame,
                         (
@@ -451,6 +685,12 @@ def main(
                         (0, 0, 255),
                     )
                     continue
+
+                if (
+                    interaction_is_active
+                    and track_id == owner_track_id
+                ):
+                    conversation_owner_face_available = True
 
                 fx1, fy1, fx2, fy2 = selected_face.box
                 cv2.rectangle(
@@ -467,6 +707,20 @@ def main(
                     landmark_prediction = landmark_estimator.predict(
                         face_crop
                     )
+
+                    if (
+                        interaction_is_active
+                        and track_id == owner_track_id
+                        and on_lip_observation is not None
+                    ):
+                        last_conversation_lip_time = observation_time
+                        on_lip_observation(
+                            track_id,
+                            observation_time,
+                            True,
+                            landmark_prediction.blendshape_scores,
+                        )
+
                     visual_evidence = visual_estimator.estimate(
                         landmark_prediction.blendshape_scores
                     )
@@ -491,6 +745,66 @@ def main(
                     )
 
                     if (
+                        combined_visual_positive
+                        and not interaction_is_active
+                        and track_id
+                        not in post_interaction_rearm_gates
+                    ):
+                        strict_attention_head_yaw_by_id[track_id] = (
+                            landmark_prediction.raw_head_yaw_degrees
+                        )
+
+                    reference_head_yaw = (
+                        strict_attention_head_yaw_by_id.get(track_id)
+                    )
+                    screen_eye_supported = bool(
+                        visual_evidence.evidence_positive
+                        or screen_eye_region_supports_attention(
+                            visual_evidence.horizontal_right_minus_left,
+                            visual_evidence.vertical_down_minus_up,
+                        )
+                    )
+
+                    if (
+                        interaction_is_active
+                        and track_id == owner_track_id
+                    ):
+                        conversation_owner_robot_directed = bool(
+                            reference_head_yaw is not None
+                            and conversation_visual_supports_engagement(
+                                landmark_prediction.raw_head_yaw_degrees,
+                                reference_head_yaw,
+                                screen_eye_supported,
+                            )
+                        )
+
+                    rearm_gate = post_interaction_rearm_gates.get(
+                        track_id
+                    )
+
+                    if not interaction_is_active and rearm_gate is not None:
+                        post_interaction_robot_directed = bool(
+                            combined_visual_positive
+                            if reference_head_yaw is None
+                            else conversation_visual_supports_engagement(
+                                landmark_prediction.raw_head_yaw_degrees,
+                                reference_head_yaw,
+                                screen_eye_supported,
+                            )
+                        )
+                        rearm_decision = rearm_gate.observe(
+                            track_id,
+                            observation_time,
+                            face_available=True,
+                            robot_directed=(
+                                post_interaction_robot_directed
+                            ),
+                        )
+
+                        if rearm_decision.rearm_completed_owner:
+                            complete_post_interaction_rearm(track_id)
+
+                    if (
                         diagnostic_features is None
                         and visual_evidence.squared_distance is not None
                         and visual_evidence.horizontal_right_minus_left
@@ -505,6 +819,19 @@ def main(
                             combined_visual_positive,
                         )
                 except Exception as error:
+                    if (
+                        interaction_is_active
+                        and track_id == owner_track_id
+                        and on_lip_observation is not None
+                    ):
+                        last_conversation_lip_time = observation_time
+                        on_lip_observation(
+                            track_id,
+                            observation_time,
+                            False,
+                            None,
+                        )
+
                     attention_tracker.observe(
                         track_id=track_id,
                         timestamp_seconds=observation_time,
@@ -517,7 +844,24 @@ def main(
                         face_available=False,
                     )
                     challenge_started_ids.discard(track_id)
-                    dispatched_candidate_ids.discard(track_id)
+
+                    rearm_gate = post_interaction_rearm_gates.get(
+                        track_id
+                    )
+
+                    if not interaction_is_active and rearm_gate is not None:
+                        rearm_decision = rearm_gate.observe(
+                            track_id,
+                            observation_time,
+                            face_available=False,
+                            robot_directed=False,
+                        )
+
+                        if rearm_decision.rearm_completed_owner:
+                            complete_post_interaction_rearm(track_id)
+                    else:
+                        dispatched_candidate_ids.discard(track_id)
+
                     draw_label(
                         frame,
                         (
@@ -792,6 +1136,19 @@ def main(
                     challenge_started_ids.discard(track_id)
                     liveness_tracker.reset_track(track_id)
 
+            if (
+                interaction_is_active
+                and owner_track_id is not None
+                and on_engagement_observation is not None
+            ):
+                on_engagement_observation(
+                    owner_track_id,
+                    observation_time,
+                    conversation_owner_visible,
+                    conversation_owner_face_available,
+                    conversation_owner_robot_directed,
+                )
+
             stale_ids = [
                 track_id
                 for track_id, last_seen in last_seen_frame_by_id.items()
@@ -801,10 +1158,12 @@ def main(
             for track_id in stale_ids:
                 face_locks.pop(track_id, None)
                 last_seen_frame_by_id.pop(track_id, None)
+                strict_attention_head_yaw_by_id.pop(track_id, None)
                 attention_tracker.remove_track(track_id)
                 liveness_tracker.remove_track(track_id)
                 challenge_started_ids.discard(track_id)
                 dispatched_candidate_ids.discard(track_id)
+                post_interaction_rearm_gates.pop(track_id, None)
 
             released_liveness_ids = liveness_tracker.release_stale(
                 observation_time

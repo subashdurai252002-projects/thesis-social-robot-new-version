@@ -5,20 +5,26 @@ import subprocess
 import threading
 import time
 import wave
+from collections.abc import Callable, Mapping
 from pathlib import Path
 
-from faster_whisper import WhisperModel
 from openai import OpenAI
 
 from barge_in_detector import BargeInDetector
 from live_streaming_stt_local_agreement import (
     BLOCK_SECONDS as STREAM_BLOCK_SECONDS,
+    MAX_WAIT_SECONDS as STREAM_MAX_WAIT_SECONDS,
     PARTIAL_INTERVAL_SECONDS,
     capture_audio as capture_streaming_audio,
     matching_prefix,
     normalize_words,
     raw_to_mono,
     transcribe as transcribe_streaming_audio,
+)
+
+CONVERSATION_PARTIAL_INTERVAL_SECONDS = max(
+    PARTIAL_INTERVAL_SECONDS,
+    4.0,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -100,6 +106,7 @@ COMPLEX_OPENAI_MODEL = "gpt-6.1-terra"
 
 SIMPLE_MAX_WORDS = 7
 COMPACTION_THRESHOLD_TOKENS = 4000
+REOPEN_WINDOW_SECONDS = 5.0
 
 COMPLEXITY_WORDS = {
     "explain",
@@ -145,9 +152,73 @@ EXIT_PHRASES = {
     "good bye",
     "bye",
     "but bye",
+    "see you",
+    "see you later",
+    "that is all",
+    "thats all",
+    "that is it",
+    "thats it",
+    "no more questions",
     "stop conversation",
+    "end conversation",
+    "finish conversation",
+    "i am done",
+    "im done",
+    "i am finished",
+    "im finished",
+    "thank you goodbye",
+    "thank you bye",
+    "thanks goodbye",
+    "thanks bye",
     "exit",
     "quit",
+}
+
+REOPEN_EXACT_PHRASES = {
+    "hello again",
+    "hello robot",
+    "hi again",
+    "hi robot",
+    "continue",
+    "continue conversation",
+    "can we continue",
+    "can i continue",
+    "i am not finished",
+    "im not finished",
+    "i forgot something",
+    "one more question",
+    "one more thing",
+    "another question",
+    "another thing",
+}
+
+REOPEN_HIGH_CONFIDENCE_FRAGMENTS = {
+    "one more",
+    "ask something else",
+    "ask you something else",
+    "continue our conversation",
+    "continue the conversation",
+}
+
+REOPEN_REQUEST_FRAGMENTS = {
+    "one more question",
+    "one more thing",
+    "another question",
+    "another thing",
+}
+
+REOPEN_REQUEST_CUES = {
+    "actually",
+    "ask",
+    "can",
+    "could",
+    "forgot",
+    "got",
+    "have",
+    "may",
+    "need",
+    "wait",
+    "want",
 }
 
 GREETING_PHRASES = {
@@ -160,6 +231,11 @@ GREETING_PHRASES = {
 }
 
 GREETING_RESPONSE = "Hello! How can I help you?"
+SILENCE_REMINDER_TEXT = "Take your time. Are you still there?"
+SILENCE_END_TEXT = (
+    "I'll end our conversation for now. "
+    "Look at me if you need help again."
+)
 
 
 def is_exit_phrase(text):
@@ -167,6 +243,35 @@ def is_exit_phrase(text):
 
     normalized_text = " ".join(normalize_words(text))
     return normalized_text in EXIT_PHRASES
+
+
+def is_reopen_intent(text):
+    """Return whether a short phrase requests another interaction."""
+
+    words = normalize_words(text)
+
+    if not words or len(words) > 12:
+        return False
+
+    normalized_text = " ".join(words)
+
+    if normalized_text in REOPEN_EXACT_PHRASES:
+        return True
+
+    if any(
+        fragment in normalized_text
+        for fragment in REOPEN_HIGH_CONFIDENCE_FRAGMENTS
+    ):
+        return True
+
+    has_request_cue = bool(
+        set(words) & REOPEN_REQUEST_CUES
+    )
+
+    return has_request_cue and any(
+        fragment in normalized_text
+        for fragment in REOPEN_REQUEST_FRAGMENTS
+    )
 
 
 def is_greeting_phrase(text):
@@ -348,7 +453,149 @@ def wait_for_acknowledgement(
     timing["finished"] = time.perf_counter()
 
 
-def record_streaming_turn(model):
+def evaluate_utterance_permission(
+    callback: Callable[[float], tuple[bool, str]] | None,
+) -> tuple[bool, str]:
+    """Return one validated engagement decision without speech content."""
+
+    if callback is None:
+        return True, "engagement_check_not_configured"
+
+    result = callback(time.monotonic())
+
+    if (
+        not isinstance(result, tuple)
+        or len(result) != 2
+        or not isinstance(result[0], bool)
+    ):
+        raise ValueError(
+            "The utterance permission callback must return "
+            "(bool, reason)."
+        )
+
+    return result[0], str(result[1])
+
+
+def conversation_may_continue(
+    callback: Callable[[], bool] | None,
+) -> bool:
+    """Return one validated external conversation-continuation decision."""
+
+    if callback is None:
+        return True
+
+    result = callback()
+
+    if not isinstance(result, bool):
+        raise ValueError(
+            "The conversation continuation callback must return a boolean."
+        )
+
+    return result
+
+
+def evaluate_farewell_permission(
+    callback: Callable[[], tuple[bool, str]] | None,
+) -> tuple[bool, str]:
+    """Return one validated robot-directed farewell decision."""
+
+    if callback is None:
+        return True, "farewell_engagement_check_not_configured"
+
+    result = callback()
+
+    if (
+        not isinstance(result, tuple)
+        or len(result) != 2
+        or not isinstance(result[0], bool)
+    ):
+        raise ValueError(
+            "The farewell permission callback must return "
+            "(bool, reason)."
+        )
+
+    return result[0], str(result[1])
+
+
+def evaluate_silence_prompt_permission(
+    callback: Callable[[], tuple[bool, str]] | None,
+) -> tuple[bool, str]:
+    """Return one validated decision for speaking a silence prompt."""
+
+    if callback is None:
+        return True, "silence_prompt_engagement_check_not_configured"
+
+    result = callback()
+
+    if (
+        not isinstance(result, tuple)
+        or len(result) != 2
+        or not isinstance(result[0], bool)
+    ):
+        raise ValueError(
+            "The silence prompt permission callback must return "
+            "(bool, reason)."
+        )
+
+    return result[0], str(result[1])
+
+
+def update_silence_window_count(
+    current_count: int,
+    owner_response_received: bool,
+) -> int:
+    """Reset on an accepted response or advance one silent window."""
+
+    if (
+        not isinstance(current_count, int)
+        or isinstance(current_count, bool)
+        or current_count < 0
+    ):
+        raise ValueError("current_count must be a non-negative integer.")
+
+    if not isinstance(owner_response_received, bool):
+        raise TypeError("owner_response_received must be a Boolean.")
+
+    return 0 if owner_response_received else current_count + 1
+
+
+class CombinedCancelEvent:
+    """Expose one ``is_set`` view over multiple cancellation events."""
+
+    def __init__(self, *events):
+        if not events:
+            raise ValueError("At least one cancellation event is required.")
+
+        for event in events:
+            if not callable(getattr(event, "is_set", None)):
+                raise ValueError(
+                    "Every cancellation event must provide is_set()."
+                )
+
+        self._events = tuple(events)
+
+    def is_set(self) -> bool:
+        """Return true as soon as any underlying event is set."""
+
+        return any(event.is_set() for event in self._events)
+
+
+def record_streaming_turn(
+    model,
+    utterance_permission: (
+        Callable[[float], tuple[bool, str]] | None
+    ) = None,
+    max_wait_seconds: float = STREAM_MAX_WAIT_SECONDS,
+    cancel_event=None,
+):
+    if (
+        cancel_event is not None
+        and not callable(getattr(cancel_event, "is_set", None))
+    ):
+        raise ValueError(
+            "cancel_event must provide an is_set() method."
+        )
+
     recorded_blocks = []
     lock = threading.Lock()
     speech_event = threading.Event()
@@ -363,6 +610,8 @@ def record_streaming_turn(model):
             speech_event,
             finished_event,
             state,
+            max_wait_seconds,
+            cancel_event,
         ),
         daemon=True,
     )
@@ -378,6 +627,13 @@ def record_streaming_turn(model):
             RuntimeError("Audio capture failed."),
         )
 
+        if "Audio capture cancelled" in str(error):
+            print("Audio capture cancelled.")
+            return {
+                "cancelled": True,
+                "rejected": False,
+            }
+
         if "No speech detected" in str(error):
             print(
                 "No speech detected. Listening again."
@@ -386,8 +642,27 @@ def record_streaming_turn(model):
 
         raise RuntimeError(str(error))
 
+    speech_start_accepted, speech_start_reason = (
+        evaluate_utterance_permission(utterance_permission)
+    )
+
+    if not speech_start_accepted:
+        print(
+            "Speech rejected at start:",
+            speech_start_reason,
+        )
+        print(
+            "Waiting for the rejected utterance to finish; "
+            "audio will not be transcribed or saved."
+        )
+        capture_thread.join()
+        return {
+            "rejected": True,
+            "reason": speech_start_reason,
+        }
+
     previous_words = []
-    next_update = PARTIAL_INTERVAL_SECONDS
+    next_update = CONVERSATION_PARTIAL_INTERVAL_SECONDS
 
     while not finished_event.is_set():
         with lock:
@@ -453,12 +728,21 @@ def record_streaming_turn(model):
         )
 
         previous_words = current_words
-        next_update += PARTIAL_INTERVAL_SECONDS
+        next_update += CONVERSATION_PARTIAL_INTERVAL_SECONDS
 
     capture_thread.join()
 
     if "error" in state:
-        raise RuntimeError(str(state["error"]))
+        error = state["error"]
+
+        if "Audio capture cancelled" in str(error):
+            print("Audio capture cancelled.")
+            return {
+                "cancelled": True,
+                "rejected": False,
+            }
+
+        raise RuntimeError(str(error))
 
     with lock:
         raw_audio = b"".join(recorded_blocks)
@@ -468,12 +752,6 @@ def record_streaming_turn(model):
             "No speech audio recorded. Listening again."
         )
         return None
-
-    with wave.open(AUDIO_FILE, "wb") as wav_file:
-        wav_file.setnchannels(CHANNELS)
-        wav_file.setsampwidth(SAMPLE_WIDTH)
-        wav_file.setframerate(SAMPLE_RATE)
-        wav_file.writeframes(raw_audio)
 
     final_started = time.perf_counter()
     final_text = transcribe_streaming_audio(
@@ -524,16 +802,89 @@ def record_streaming_turn(model):
         round(speech_end_to_text, 2),
         "seconds",
     )
-    print("Saved audio:", AUDIO_FILE)
-
     return {
         "text": final_text,
+        "raw_audio": raw_audio,
+        "rejected": False,
         "transcription_finished": (
             transcription_finished
         ),
         "last_speech_at": state[
             "last_speech_at"
         ],
+    }
+
+
+def listen_for_reopen_intent(
+    runtime,
+    utterance_permission=None,
+    cancel_event=None,
+):
+    """Listen briefly for one local post-goodbye reopening request."""
+
+    print(
+        "Reopening window active for",
+        REOPEN_WINDOW_SECONDS,
+        "seconds.",
+    )
+
+    turn = record_streaming_turn(
+        runtime["model"],
+        utterance_permission=utterance_permission,
+        max_wait_seconds=REOPEN_WINDOW_SECONDS,
+        cancel_event=cancel_event,
+    )
+
+    if turn is None:
+        return {
+            "reopen": False,
+            "reason": "window_expired",
+            "text": "",
+        }
+
+    if turn.get("cancelled", False):
+        return {
+            "reopen": False,
+            "reason": "window_cancelled",
+            "text": "",
+        }
+
+    if turn.get("rejected", False):
+        return {
+            "reopen": False,
+            "reason": turn["reason"],
+            "text": "",
+        }
+
+    text = str(turn.get("text", "")).strip()
+
+    if not text or not normalize_words(text):
+        return {
+            "reopen": False,
+            "reason": "no_meaningful_reopening_speech",
+            "text": text,
+            "turn": None,
+        }
+
+    if is_exit_phrase(text):
+        return {
+            "reopen": False,
+            "reason": "repeated_farewell_detected",
+            "text": text,
+            "turn": None,
+        }
+
+    control_only = is_reopen_intent(text)
+
+    return {
+        "reopen": True,
+        "reason": (
+            "reopening_control_speech_detected"
+            if control_only
+            else "direct_reopening_request_detected"
+        ),
+        "text": text,
+        "turn": None if control_only else turn,
     }
 
 
@@ -545,16 +896,12 @@ def prepare_conversation_runtime():
         exist_ok=True,
     )
 
-    print("Loading Faster-Whisper...")
-    model = WhisperModel(
-        "base",
-        device="cpu",
-        compute_type="int8",
-    )
-    print("Model ready.")
-
     print("Loading barge-in detector...")
     barge_in = BargeInDetector()
+    model = barge_in.whisper
+    print(
+        "Main conversation reuses shared Faster-Whisper small.en."
+    )
     print("Shared barge-in detector ready.")
 
     acknowledgement_audio_files = (
@@ -581,13 +928,16 @@ def prepare_conversation_runtime():
     }
 
 
-def speak_fixed_text(runtime, text):
+def speak_fixed_text(runtime, text, *, monitor_barge_in=True):
     """Synthesize and play one fixed greeting or goodbye with Piper."""
 
     spoken_text = str(text).strip()
 
     if not spoken_text:
         raise ValueError("text must contain something to speak.")
+
+    if not isinstance(monitor_barge_in, bool):
+        raise TypeError("monitor_barge_in must be a Boolean.")
 
     print("Generating fixed speech with Piper:", spoken_text)
     subprocess.run(
@@ -604,12 +954,41 @@ def speak_fixed_text(runtime, text):
     )
 
     print("Playing fixed speech...")
-    return runtime["barge_in"].play_and_monitor(
-        PIPER_AUDIO_FILE
+
+    if monitor_barge_in:
+        return runtime["barge_in"].play_and_monitor(
+            PIPER_AUDIO_FILE
+        )
+
+    subprocess.run(
+        ["aplay", PIPER_AUDIO_FILE],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=True,
     )
+    return {
+        "interrupted": False,
+        "transcript": "",
+    }
 
 
-def run_conversation_session(runtime, person_id=None):
+def run_conversation_session(
+    runtime,
+    person_id=None,
+    utterance_permission: (
+        Callable[[float], tuple[bool, str]] | None
+    ) = None,
+    conversation_should_continue: Callable[[], bool] | None = None,
+    farewell_permission: (
+        Callable[[], tuple[bool, str]] | None
+    ) = None,
+    silence_prompt_permission: (
+        Callable[[], tuple[bool, str]] | None
+    ) = None,
+    initial_turn: Mapping | None = None,
+    previous_response_id: str | None = None,
+    cancel_event=None,
+):
     """Run one conversation until an exit phrase or keyboard interrupt."""
 
     if person_id is not None and (
@@ -621,6 +1000,60 @@ def run_conversation_session(runtime, person_id=None):
             "person_id must be a non-negative integer or None."
         )
 
+    if (
+        utterance_permission is not None
+        and not callable(utterance_permission)
+    ):
+        raise ValueError(
+            "utterance_permission must be callable or None."
+        )
+
+    if (
+        conversation_should_continue is not None
+        and not callable(conversation_should_continue)
+    ):
+        raise ValueError(
+            "conversation_should_continue must be callable or None."
+        )
+
+    if (
+        farewell_permission is not None
+        and not callable(farewell_permission)
+    ):
+        raise ValueError(
+            "farewell_permission must be callable or None."
+        )
+
+    if (
+        silence_prompt_permission is not None
+        and not callable(silence_prompt_permission)
+    ):
+        raise ValueError(
+            "silence_prompt_permission must be callable or None."
+        )
+
+    if initial_turn is not None and not isinstance(
+        initial_turn,
+        Mapping,
+    ):
+        raise ValueError("initial_turn must be a mapping or None.")
+
+    if previous_response_id is not None and (
+        not isinstance(previous_response_id, str)
+        or not previous_response_id.strip()
+    ):
+        raise ValueError(
+            "previous_response_id must be a non-empty string or None."
+        )
+
+    if (
+        cancel_event is not None
+        and not callable(getattr(cancel_event, "is_set", None))
+    ):
+        raise ValueError(
+            "cancel_event must provide an is_set() method."
+        )
+
     model = runtime["model"]
     barge_in = runtime["barge_in"]
     acknowledgement_audio_files = runtime[
@@ -630,8 +1063,9 @@ def run_conversation_session(runtime, person_id=None):
         "acknowledgement_positions"
     ]
     openai_client = runtime["openai_client"]
-    previous_response_id = None
+    pending_initial_turn = initial_turn
     completed_turns = 0
+    consecutive_silent_windows = 0
     stop_reason = "exit_phrase"
 
     print(
@@ -653,12 +1087,131 @@ def run_conversation_session(runtime, person_id=None):
 
     try:
         while True:
+            if cancel_event is not None and cancel_event.is_set():
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Active owner was released; ending the current "
+                        "conversation automatically."
+                    )
+                else:
+                    stop_reason = "shutdown_requested"
+                    print("Conversation cancelled by shutdown request.")
+                break
+
+            if not conversation_may_continue(
+                conversation_should_continue
+            ):
+                stop_reason = "owner_released"
+                print(
+                    "Active owner was released; ending the current "
+                    "conversation automatically."
+                )
+                break
+
             print()
             print("-" * 40)
 
-            turn = record_streaming_turn(model)
+            if pending_initial_turn is None:
+                turn = record_streaming_turn(
+                    model,
+                    utterance_permission=utterance_permission,
+                    cancel_event=cancel_event,
+                )
+            else:
+                turn = pending_initial_turn
+                pending_initial_turn = None
+                print(
+                    "Processing preserved reopening utterance:",
+                    turn.get("text", ""),
+                )
 
             if turn is None:
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Active owner was released during silence; "
+                        "ending without a prompt."
+                    )
+                    break
+
+                prompt_allowed, prompt_reason = (
+                    evaluate_silence_prompt_permission(
+                        silence_prompt_permission
+                    )
+                )
+                print(
+                    "Silence prompt decision:",
+                    prompt_reason,
+                )
+
+                if not prompt_allowed:
+                    stop_reason = "silence_visual_unavailable"
+                    print(
+                        "Silence prompt skipped because the owner "
+                        "is not clearly engaged."
+                    )
+                    break
+
+                consecutive_silent_windows = (
+                    update_silence_window_count(
+                        consecutive_silent_windows,
+                        owner_response_received=False,
+                    )
+                )
+
+                if consecutive_silent_windows == 1:
+                    speak_fixed_text(
+                        runtime,
+                        SILENCE_REMINDER_TEXT,
+                        monitor_barge_in=False,
+                    )
+                    continue
+
+                speak_fixed_text(
+                    runtime,
+                    SILENCE_END_TEXT,
+                    monitor_barge_in=False,
+                )
+                stop_reason = "silence_timeout"
+                break
+
+            if turn.get("cancelled", False):
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Audio capture cancelled because the active "
+                        "owner was released."
+                    )
+                else:
+                    stop_reason = "shutdown_requested"
+                    print(
+                        "Conversation audio cancelled by shutdown "
+                        "request."
+                    )
+                break
+
+            if turn.get("rejected", False):
+                print(
+                    "Rejected speech ignored. Listening again."
+                )
+
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Active owner was released; ending the "
+                        "current conversation automatically."
+                    )
+                    break
+
                 continue
 
             text = turn["text"]
@@ -676,7 +1229,69 @@ def run_conversation_session(runtime, person_id=None):
                 )
                 continue
 
-            if is_exit_phrase(text):
+            response_accepted, response_reason = (
+                evaluate_utterance_permission(
+                    utterance_permission
+                )
+            )
+            print(
+                "Engagement speech decision:",
+                response_reason,
+            )
+
+            if not response_accepted:
+                print(
+                    "Transcription rejected before response; "
+                    "audio will not be saved and no robot reply "
+                    "will be generated."
+                )
+
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Active owner was released; ending the "
+                        "current conversation automatically."
+                    )
+                    break
+
+                continue
+
+            consecutive_silent_windows = update_silence_window_count(
+                consecutive_silent_windows,
+                owner_response_received=True,
+            )
+
+            farewell_detected = is_exit_phrase(text)
+
+            if farewell_detected:
+                farewell_accepted, farewell_reason = (
+                    evaluate_farewell_permission(
+                        farewell_permission
+                    )
+                )
+                print(
+                    "Farewell engagement decision:",
+                    farewell_reason,
+                )
+
+                if not farewell_accepted:
+                    print(
+                        "Farewell ignored because it was not "
+                        "clearly directed toward the robot."
+                    )
+                    continue
+
+            with wave.open(AUDIO_FILE, "wb") as wav_file:
+                wav_file.setnchannels(CHANNELS)
+                wav_file.setsampwidth(SAMPLE_WIDTH)
+                wav_file.setframerate(SAMPLE_RATE)
+                wav_file.writeframes(turn["raw_audio"])
+
+            print("Saved audio:", AUDIO_FILE)
+
+            if farewell_detected:
                 print("Exit command detected.")
                 print("Conversation ended.")
                 break

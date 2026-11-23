@@ -8,6 +8,13 @@ Only sources whose use can be recovered from project files, repository metadata,
 |---|---|---|
 | L2CS-Net: Fine-Grained Gaze Estimation in Unconstrained Environments | `https://arxiv.org/abs/2203.03339` | Gaze-estimation method, pitch/yaw formulation and official reference architecture |
 | MobileOne: An Improved One millisecond Mobile Backbone | `https://arxiv.org/abs/2206.04040` | Backbone used by the selected lightweight gaze checkpoint; the paper's sub-millisecond claim concerns an iPhone 12, not this laptop pipeline |
+| Robust Speech Recognition via Large-Scale Weak Supervision | `https://arxiv.org/abs/2212.04356` | Original Whisper model family used through faster-whisper; local benchmark claims remain project-specific |
+| Real-time Facial Surface Geometry from Monocular Video on Mobile GPUs | `https://arxiv.org/abs/1907.06724` | Research foundation for dense monocular face geometry; runtime blendshape behaviour is validated locally rather than inferred from the paper |
+| The Generalized Correlation Method for Estimation of Time Delay | `https://doi.org/10.1109/TASSP.1976.1162830` | Foundation for the GCC/GCC-PHAT time-delay analysis used in the controlled ReSpeaker direction experiment |
+| ByteTrack: Multi-Object Tracking by Associating Every Detection Box | `https://arxiv.org/abs/2110.06864` | Tracking-method reference; local crossing and occlusion limitations are reported from project experiments |
+| YuNet: A Tiny Millisecond-level Face Detector | `https://doi.org/10.1007/s11633-023-1423-y` | Research reference for the lightweight face detector selected by local comparison |
+| Dual-Signal Transformation LSTM Network for Real-Time Noise Suppression | `https://arxiv.org/abs/2005.07551` | DTLN method family used by the local acoustic preprocessing path |
+| Acoustic Echo Cancellation with the Dual-Signal Transformation LSTM Network | `https://arxiv.org/abs/2010.14337` | AEC-specific DTLN reference relevant to playback-reference processing |
 
 The SAM2 repository contains its own citation metadata, but this project used SAM2 primarily through the official repository implementation. Any thesis citation should be generated from that repository's current `CITATION.cff` rather than guessed here.
 
@@ -33,9 +40,27 @@ The SAM2 repository contains its own citation metadata, but this project used SA
 | `resnet50.pt` | `75efe4d8145542b8f070449facd48d8c16aeed58b79ee80f3dbb95207bdae346` |
 | `athul_l2cs_resnet50_gaze360.pkl` | `8a7f3480d868dd48261e1d59f915b0ef0bb33ea12ea00938fb2168f212080665` |
 
-## Speech model provenance
+## Speech and audio-method provenance
 
-The exact speech package versions are pinned in `setup/requirements-laptop.txt`. Whisper model identifiers and Piper voice files are recorded in experiment source/configuration and model directories. No original web URL was recoverable from the inspected DOCX hyperlink records for those downloads; this registry therefore does not invent one. Before final thesis submission, add the official faster-whisper/CTranslate2, OpenAI API and Piper references actually cited in the written thesis and record the access date.
+The exact speech package versions are pinned in
+`setup/requirements-laptop.txt`.  Verified sources used by the implemented
+path are:
+
+| Component | Primary source | Project use/qualification |
+|---|---|---|
+| faster-whisper | `https://github.com/SYSTRAN/faster-whisper` | CTranslate2-based Whisper inference; project benchmarks determine the selected local model |
+| Original Whisper method | `https://arxiv.org/abs/2212.04356` | Model-family research reference |
+| Silero VAD | `https://github.com/snakers4/silero-vad` | Speech-probability evidence for endpointing; local thresholds are project decisions |
+| Piper | `https://github.com/rhasspy/piper` | Archived implementation corresponding to the installed `piper-tts` path; voice model licensing remains model-specific |
+| MediaPipe | `https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker`; `https://github.com/google-ai-edge/mediapipe` | Face landmarks and blendshape evidence; not standalone proof of speech or liveness |
+| ReSpeaker USB 4 Mic Array | `https://github.com/respeaker/usb_4_mic_array` | Six-channel mapping and hardware reference |
+| GCC time-delay method | `https://doi.org/10.1109/TASSP.1976.1162830` | Foundation for microphone-pair delay estimation; local left/centre/right classifier is provisional |
+| openWakeWord | `https://github.com/dscripka/openWakeWord` | Candidate detector used before exact-command Whisper verification; detector score is not treated as a final command |
+| DTLN | `https://github.com/breizhn/DTLN` | Source/model family used for acoustic preprocessing in the barge-in path |
+
+Whisper identifiers and Piper voice files are recorded in experiment
+source/configuration and model directories.  Do not infer that the archived
+Piper repository's current successor was tested in this checkpoint.
 
 ## Source-audit note
 

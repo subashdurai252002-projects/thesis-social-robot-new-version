@@ -26,6 +26,15 @@ Each audited clone contains its upstream license file. This registry records the
 | RetinaFace implementation | `https://github.com/elliottzheng/face-detection.git` | Tested for face detection; audited working commit was `786fbab7095623c348e251f1f0a8b323721c6a84`; later removed from the lean runtime environment |
 | OpenCV Zoo YuNet | `https://github.com/opencv/opencv_zoo` | Source of the selected YuNet face detector |
 | InsightFace | `https://github.com/deepinsight/insightface` | Source ecosystem for SCRFD/buffalo_sc comparison; comparison model later removed |
+| faster-whisper | `https://github.com/SYSTRAN/faster-whisper` | Installed CTranslate2-based Whisper implementation used by the laptop speech path |
+| Silero VAD | `https://github.com/snakers4/silero-vad` | Voice-activity probabilities used by local speech endpointing |
+| MediaPipe | `https://github.com/google-ai-edge/mediapipe` | Face Landmarker, landmarks and blendshape evidence |
+| Piper (archived implementation used) | `https://github.com/rhasspy/piper` | Local neural TTS implementation corresponding to the installed `piper-tts` path; upstream repository is archived |
+| ReSpeaker USB 4 Mic Array | `https://github.com/respeaker/usb_4_mic_array` | Official six-channel hardware/firmware channel reference |
+| openWakeWord | `https://github.com/dscripka/openWakeWord` | Candidate detector used in the two-stage barge-in path |
+| DTLN | `https://github.com/breizhn/DTLN` | Acoustic echo-cancellation model family used before barge-in candidate verification |
+| ByteTrack | `https://github.com/FoundationVision/ByteTrack` | Primary paper/code reference for the tracking method used through Ultralytics |
+| Ultralytics | `https://github.com/ultralytics/ultralytics` | Installed YOLOv8n detection and ByteTrack integration path |
 
 ## Principal installed software
 

@@ -29,6 +29,8 @@ __all__ = [
     "InteractionState",
     "InteractionStateController",
     "InteractionTransition",
+    "PostInteractionRearmDecision",
+    "PostInteractionRearmGate",
 ]
 
 
@@ -206,6 +208,24 @@ class InteractionStateController:
             reason="Conversation completed; goodbye may start.",
         )
 
+    def reopen_after_goodbye(
+        self,
+        track_id: int,
+        timestamp_seconds: float,
+    ) -> InteractionTransition:
+        """Return the same owner from GOODBYE to CONVERSATION."""
+
+        return self._complete_owner_stage(
+            track_id=track_id,
+            timestamp_seconds=timestamp_seconds,
+            required_state=InteractionState.GOODBYE,
+            next_state=InteractionState.CONVERSATION,
+            reason=(
+                "Valid reopening intent accepted; "
+                "conversation may continue."
+            ),
+        )
+
     def complete_goodbye(
         self,
         track_id: int,
@@ -364,4 +384,131 @@ class InteractionStateController:
             last_event_timestamp_seconds=(
                 self._last_event_timestamp_seconds
             ),
+        )
+
+
+@dataclass(frozen=True)
+class PostInteractionRearmDecision:
+    """Immutable result from one post-conversation observation."""
+
+    blocked: bool
+    rearm_completed_owner: bool
+    reason: str
+    disengaged_seconds: float
+
+
+class PostInteractionRearmGate:
+    """Rearm a completed owner after sustained visual disengagement."""
+
+    def __init__(
+        self,
+        owner_track_id: int,
+        started_at_seconds: float,
+        disengagement_seconds: float = 2.0,
+    ) -> None:
+        if (
+            not isinstance(owner_track_id, int)
+            or isinstance(owner_track_id, bool)
+            or owner_track_id < 0
+        ):
+            raise ValueError(
+                "owner_track_id must be a non-negative integer."
+            )
+
+        started_at = float(started_at_seconds)
+        duration = float(disengagement_seconds)
+
+        if not math.isfinite(started_at):
+            raise ValueError("started_at_seconds must be finite.")
+
+        if not math.isfinite(duration) or duration <= 0.0:
+            raise ValueError(
+                "disengagement_seconds must be finite and greater than zero."
+            )
+
+        self._owner_track_id = owner_track_id
+        self._last_timestamp_seconds = started_at
+        self._disengagement_seconds = duration
+        self._disengagement_started_at_seconds: float | None = None
+        self._rearmed = False
+
+    def observe(
+        self,
+        track_id: int,
+        timestamp_seconds: float,
+        face_available: bool,
+        robot_directed: bool,
+    ) -> PostInteractionRearmDecision:
+        """Process one post-conversation visual observation."""
+
+        if (
+            not isinstance(track_id, int)
+            or isinstance(track_id, bool)
+            or track_id < 0
+        ):
+            raise ValueError(
+                "track_id must be a non-negative integer."
+            )
+
+        timestamp = float(timestamp_seconds)
+
+        if not math.isfinite(timestamp):
+            raise ValueError("timestamp_seconds must be finite.")
+
+        if timestamp < self._last_timestamp_seconds:
+            raise ValueError("Rearm timestamps cannot move backwards.")
+
+        if not isinstance(face_available, bool):
+            raise TypeError("face_available must be a Boolean.")
+
+        if not isinstance(robot_directed, bool):
+            raise TypeError("robot_directed must be a Boolean.")
+
+        self._last_timestamp_seconds = timestamp
+
+        if track_id != self._owner_track_id:
+            return PostInteractionRearmDecision(
+                blocked=False,
+                rearm_completed_owner=False,
+                reason="OTHER_PERSON_NOT_BLOCKED",
+                disengaged_seconds=0.0,
+            )
+
+        if self._rearmed:
+            return PostInteractionRearmDecision(
+                blocked=False,
+                rearm_completed_owner=False,
+                reason="COMPLETED_OWNER_ALREADY_REARMED",
+                disengaged_seconds=self._disengagement_seconds,
+            )
+
+        if face_available and robot_directed:
+            self._disengagement_started_at_seconds = None
+            return PostInteractionRearmDecision(
+                blocked=True,
+                rearm_completed_owner=False,
+                reason="COMPLETED_OWNER_STILL_ENGAGED",
+                disengaged_seconds=0.0,
+            )
+
+        if self._disengagement_started_at_seconds is None:
+            self._disengagement_started_at_seconds = timestamp
+
+        elapsed = timestamp - self._disengagement_started_at_seconds
+
+        if elapsed < self._disengagement_seconds:
+            return PostInteractionRearmDecision(
+                blocked=True,
+                rearm_completed_owner=False,
+                reason="COMPLETED_OWNER_DISENGAGEMENT_OBSERVING",
+                disengaged_seconds=elapsed,
+            )
+
+        self._rearmed = True
+
+        return PostInteractionRearmDecision(
+            blocked=False,
+            rearm_completed_owner=True,
+            reason="COMPLETED_OWNER_REARMED",
+            disengaged_seconds=elapsed,
         )

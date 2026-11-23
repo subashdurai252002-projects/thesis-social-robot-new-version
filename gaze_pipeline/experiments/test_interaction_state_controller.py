@@ -23,6 +23,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from gaze_pipeline.runtime.interaction_state_controller import (  # noqa: E402
     InteractionState,
     InteractionStateController,
+    PostInteractionRearmGate,
 )
 
 
@@ -291,11 +292,228 @@ def test_invalid_inputs_are_rejected() -> None:
     )
 
 
+def test_goodbye_reopening_transition() -> None:
+    """Only the same owner may reopen from GOODBYE."""
+
+    controller = InteractionStateController()
+
+    require(
+        controller.begin_from_live_candidate(5, 1.0).accepted,
+        "Person 5 should start the interaction.",
+    )
+    require(
+        controller.complete_greeting(5, 2.0).accepted,
+        "Person 5 should enter CONVERSATION.",
+    )
+    require(
+        controller.complete_conversation(5, 3.0).accepted,
+        "Person 5 should enter GOODBYE.",
+    )
+
+    session_before = controller.get_snapshot().session_number
+
+    wrong_owner = controller.reopen_after_goodbye(9, 4.0)
+    require(
+        not wrong_owner.accepted,
+        "A different person must not reopen the owner's interaction.",
+    )
+    require(
+        controller.get_snapshot().state == InteractionState.GOODBYE,
+        "Wrong-owner rejection must preserve GOODBYE.",
+    )
+
+    reopened = controller.reopen_after_goodbye(5, 5.0)
+    require(
+        reopened.accepted,
+        "The same owner should reopen from GOODBYE.",
+    )
+    require(
+        reopened.previous_state == InteractionState.GOODBYE,
+        "Reopening must start from GOODBYE.",
+    )
+    require(
+        reopened.current_state == InteractionState.CONVERSATION,
+        "Valid reopening must return to CONVERSATION.",
+    )
+    require(
+        reopened.owner_track_id == 5,
+        "The original owner must remain unchanged.",
+    )
+    require(
+        reopened.session_number == session_before,
+        "Reopening must not create a duplicate session.",
+    )
+
+    waiting_controller = InteractionStateController()
+    invalid_state = waiting_controller.reopen_after_goodbye(
+        5,
+        1.0,
+    )
+    require(
+        not invalid_state.accepted,
+        "Reopening while WAITING must be rejected.",
+    )
+    require(
+        invalid_state.current_state == InteractionState.WAITING,
+        "Invalid reopening must preserve WAITING.",
+    )
+
+
+def test_post_interaction_rearm_policy() -> None:
+    """Only sustained disengagement may rearm a completed owner."""
+
+    gate = PostInteractionRearmGate(
+        owner_track_id=4,
+        started_at_seconds=0.0,
+    )
+
+    still_engaged = gate.observe(
+        4,
+        0.5,
+        face_available=True,
+        robot_directed=True,
+    )
+    require(
+        still_engaged.blocked,
+        "A completed owner who remains engaged must stay blocked.",
+    )
+
+    gate.observe(
+        4,
+        1.0,
+        face_available=True,
+        robot_directed=False,
+    )
+    brief_return = gate.observe(
+        4,
+        2.0,
+        face_available=True,
+        robot_directed=True,
+    )
+    require(
+        brief_return.blocked,
+        "A brief look away must not rearm the completed owner.",
+    )
+
+    gate.observe(
+        4,
+        3.0,
+        face_available=True,
+        robot_directed=False,
+    )
+    rearmed = gate.observe(
+        4,
+        5.0,
+        face_available=True,
+        robot_directed=False,
+    )
+    require(
+        rearmed.rearm_completed_owner,
+        "Two seconds of clear disengagement must rearm the owner.",
+    )
+    require(
+        not rearmed.blocked,
+        "A rearmed owner must no longer remain blocked.",
+    )
+
+    other_gate = PostInteractionRearmGate(
+        owner_track_id=4,
+        started_at_seconds=0.0,
+    )
+    other_person = other_gate.observe(
+        8,
+        0.5,
+        face_available=True,
+        robot_directed=True,
+    )
+    require(
+        not other_person.blocked,
+        "A different person must not inherit the completed-owner block.",
+    )
+
+    face_loss_gate = PostInteractionRearmGate(
+        owner_track_id=9,
+        started_at_seconds=0.0,
+    )
+    face_loss_gate.observe(
+        9,
+        1.0,
+        face_available=False,
+        robot_directed=False,
+    )
+    face_loss_rearmed = face_loss_gate.observe(
+        9,
+        3.0,
+        face_available=False,
+        robot_directed=False,
+    )
+    require(
+        face_loss_rearmed.rearm_completed_owner,
+        "Sustained face loss must rearm the completed owner.",
+    )
+
+
+def test_post_interaction_rearm_validation() -> None:
+    """Invalid inputs and mutable results must be rejected."""
+
+    require_raises(
+        ValueError,
+        lambda: PostInteractionRearmGate(-1, 0.0),
+    )
+    require_raises(
+        ValueError,
+        lambda: PostInteractionRearmGate(1, 0.0, 0.0),
+    )
+
+    gate = PostInteractionRearmGate(1, 1.0)
+    decision = gate.observe(
+        1,
+        1.5,
+        face_available=True,
+        robot_directed=True,
+    )
+
+    require_raises(
+        ValueError,
+        lambda: gate.observe(
+            1,
+            1.0,
+            face_available=True,
+            robot_directed=True,
+        ),
+    )
+    require_raises(
+        TypeError,
+        lambda: gate.observe(
+            1,
+            2.0,
+            face_available=1,
+            robot_directed=True,
+        ),
+    )
+    require_raises(
+        FrozenInstanceError,
+        lambda: setattr(decision, "blocked", False),
+    )
+
+
 def main() -> None:
     """Run all deterministic controller tests."""
 
     tests = [
         ("complete_state_sequence", test_complete_state_sequence),
+        (
+            "post_interaction_rearm_policy",
+            test_post_interaction_rearm_policy,
+        ),
+        (
+            "post_interaction_rearm_validation",
+            test_post_interaction_rearm_validation,
+        ),
+        (
+            "goodbye_reopening_transition",
+            test_goodbye_reopening_transition,
+        ),
         (
             "busy_robot_rejects_competing_people",
             test_busy_robot_rejects_competing_people,

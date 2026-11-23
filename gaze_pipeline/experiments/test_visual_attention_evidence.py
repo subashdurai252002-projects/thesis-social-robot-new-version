@@ -25,12 +25,17 @@ from gaze_pipeline.runtime.sustained_attention import (  # noqa: E402
     SustainedAttentionTracker,
 )
 from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
+    CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES,
+    CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES,
     FEATURE_MEAN,
     PROFILE_STATUS,
     SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES,
     SUPPORTING_DISTANCE_THRESHOLD,
     VisualAttentionEvidenceEstimator,
+    conversation_head_pose_supports_engagement,
+    conversation_visual_supports_engagement,
     head_pitch_supports_screen_attention,
+    screen_eye_region_supports_attention,
     screen_region_supports_attention,
 )
 
@@ -262,6 +267,79 @@ def test_head_pitch_rejects_clearly_above_target() -> None:
     require_raises(
         ValueError,
         lambda: head_pitch_supports_screen_attention(float("nan")),
+    )
+
+
+def test_conversation_maintenance_uses_relative_head_pose() -> None:
+    """Different neutral head positions use their own activation reference."""
+
+    require(
+        conversation_head_pose_supports_engagement(10.0, 6.0),
+        "Natural movement from an offset reference was rejected.",
+    )
+    require(
+        conversation_head_pose_supports_engagement(
+            6.0 + CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES,
+            6.0,
+        ),
+        "Inclusive conversation-maintenance boundary was rejected.",
+    )
+    require(
+        not conversation_head_pose_supports_engagement(15.0, 6.0),
+        "Sustained side-facing head pose was accepted.",
+    )
+    require(
+        not conversation_head_pose_supports_engagement(-4.0, 6.0),
+        "Opposite sustained side-facing head pose was accepted.",
+    )
+    require_raises(
+        ValueError,
+        lambda: conversation_head_pose_supports_engagement(
+            float("nan"),
+            0.0,
+        ),
+    )
+
+
+def test_conversation_maintenance_accepts_measured_screen_edges() -> None:
+    """Screen evidence extends maintenance without accepting outside gaze."""
+
+    require(
+        screen_eye_region_supports_attention(-0.647, -0.133),
+        "Measured left-screen eye position was rejected.",
+    )
+    require(
+        screen_eye_region_supports_attention(+0.442, -0.060),
+        "Measured right-screen eye position was rejected.",
+    )
+    require(
+        conversation_visual_supports_engagement(12.0, 0.0, True),
+        "Inside-screen evidence did not tolerate natural head movement.",
+    )
+    require(
+        not conversation_visual_supports_engagement(12.0, 0.0, False),
+        "Outside-screen evidence incorrectly tolerated a head turn.",
+    )
+    require(
+        not conversation_visual_supports_engagement(
+            CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES
+            + 1.0,
+            0.0,
+            True,
+        ),
+        "Extreme head turn passed despite screen-eye evidence.",
+    )
+    require(
+        not screen_eye_region_supports_attention(-0.839, -0.043),
+        "Measured outside-left eye position was accepted.",
+    )
+    require(
+        not screen_eye_region_supports_attention(+0.826, -0.041),
+        "Measured outside-right eye position was accepted.",
+    )
+    require_raises(
+        TypeError,
+        lambda: conversation_visual_supports_engagement(0.0, 0.0, 1),
     )
     require(
         not screen_region_supports_attention(-0.10, +0.35, 0.0),
@@ -564,6 +642,14 @@ def main() -> None:
         (
             "head_pitch_rejects_clearly_above_target",
             test_head_pitch_rejects_clearly_above_target,
+        ),
+        (
+            "conversation_maintenance_uses_relative_head_pose",
+            test_conversation_maintenance_uses_relative_head_pose,
+        ),
+        (
+            "conversation_maintenance_accepts_measured_screen_edges",
+            test_conversation_maintenance_accepts_measured_screen_edges,
         ),
         (
             "unavailable_is_safe_negative",

@@ -3,10 +3,11 @@
 ## Laptop speech path
 
 ```text
-Microphone / ReSpeaker channel
+ReSpeaker six-channel capture
 → audio capture and speech segmentation
-→ faster-whisper on CPU (INT8)
+→ processed channel 0 for Faster-Whisper `small.en` on CPU (INT8)
 → text validity / silence checks
+→ owner-engagement permission at speech start and after transcription
 → rule-based OpenAI model routing
    ├─ simple question → gpt-6-luna
    └─ complex or context-dependent question → gpt-6.1-terra
@@ -17,9 +18,13 @@ Microphone / ReSpeaker channel
 → speaker output
 ```
 
-This path also contains exit/stop handling and protections against acknowledging silence, punctuation-only recognition, or exit commands. The speech system was developed before gaze activation and is later intended to be triggered by the interaction controller.
+This path also contains natural farewell handling, a five-second post-goodbye
+reopening window, two-stage active-conversation silence handling, barge-in
+verification, cancellation, and protections against acknowledging silence,
+punctuation-only recognition, rejected speech or exit commands.  The visual
+interaction controller now starts and ends this path.
 
-## Laptop vision and gaze path completed so far
+## Laptop vision, attention and liveness path
 
 ```text
 RGB webcam (640×480, approximately 30 FPS)
@@ -29,30 +34,52 @@ RGB webcam (640×480, approximately 30 FPS)
 → YuNet face detection (acceptance threshold 0.89)
 → a separate face-continuity state for every person ID
 → accepted face crop
-→ provisional MobileOne-S0 gaze estimator (next runtime component)
-→ yaw and pitch
+→ MediaPipe landmarks, blendshapes and head-pose support
+→ MobileOne-S0 coarse gaze support
+→ bounded multi-signal visual attention
+→ passive RGB liveness evidence
+→ one live interaction candidate
 ```
 
-Person tracking was not replaced by face tracking. ByteTrack supplies person IDs; YuNet and the continuity state associate a face with each person ID. The continuity state reduces abrupt replacement of a real face by a phone-displayed face. It is **not** a liveness detector.
+Person tracking was not replaced by face tracking. ByteTrack supplies person
+IDs; YuNet and the continuity state associate a face with each person ID.
+MediaPipe and MobileOne provide supporting evidence rather than permanent
+identity.  Passive blink/head evidence is not claimed to defeat every replay
+or synthetic-face attack.
 
-## Planned interaction path
+## Implemented laptop interaction path
 
 ```text
-per-person yaw/pitch
-→ camera-position and distance calibration
-→ per-person sustained-looking score
-→ interaction arbitration
-   ├─ track all people continuously
-   ├─ engage one person temporarily
-   └─ release on departure or conversation completion
-→ basic RGB liveness
+per-person sustained visual attention
+→ passive RGB liveness
+→ acquire one conversation owner
 → greeting
-→ Whisper → OpenAI → Piper conversation
-→ goodbye
-→ waiting
+→ low-rate owner engagement monitoring
+→ Whisper → OpenAI → Piper turns
+   ├─ accepted owner speech
+   ├─ rejected unavailable/disengaged speech
+   ├─ silence reminder and timeout
+   └─ natural farewell
+→ optional five-second reopening
+→ per-person post-interaction rearm
+→ full visual waiting
 ```
 
-The 120-frame retained tracking state is for continuity, not a rule that a new user must always wait five seconds. The final interaction lock must have a shorter release policy and must be separate from tracker retention.
+Tracker retention remains separate from conversation ownership.  The completed
+owner is temporarily blocked from immediate accidental reacquisition but can
+rearm after two seconds of clear disengagement and then provide fresh attention
+and liveness.  Other track IDs are not globally blocked.
+
+## Speaker-attribution boundary
+
+Owner engagement does not identify the acoustic speaker.  Runtime lip motion
+is diagnostic shadow evidence only.  ReSpeaker left/centre/right evidence was
+validated offline for one controlled placement but is not connected to speech
+rejection or robot motion.  Final audio-visual attribution requires fixed
+camera/ReSpeaker mounting, calibration and real multi-person laboratory tests.
+
+Detailed current evidence is recorded in
+`20_conversation_ownership_engagement_and_lip_evidence.md`.
 
 ## Reference versus selected laptop implementation
 

@@ -27,6 +27,20 @@
 | Saved-video per-person gaze states | Replayed saved ByteTrack IDs through YuNet, independent face locks and portable MobileOne | `results/task_i_gaze_activation/11_saved_video_gaze_states`; 368/368 predictions, zero failures, detailed report in `gaze_pipeline/docs/saved_video_gaze_state_results.md` |
 | Stage-11 read-only diagnostic | Visual association, empty/leave boundaries, phone faces, stale fields and 120-source-frame release semantics | `12_saved_video_gaze_diagnostic_review.md`; 133/133 missing-face rows had no gaze fields and all eight selected→missing transitions invalidated gaze immediately |
 
+## Interaction ownership and lip evidence
+
+| Experiment/evidence | Inputs/method | Principal output or result | Decision supported |
+|---|---|---|---|
+| Deterministic conversation engagement | Synthetic monotonic owner observations and speech decisions | `test_conversation_engagement.py`; 20/20 passed | Four states, release and conservative utterance permission |
+| Farewell/reopening/silence/cancellation | Synthetic callbacks and mocked capture/speech paths | `test_conversation_exit_phrases.py`; 19/19 passed | Natural ending, bounded reopening, two-window silence and cancellation |
+| Interaction-state/rearm controller | Deterministic per-person state transitions | `test_interaction_state_controller.py`; 10/10 passed | No global cooldown; safe completed-owner rearm |
+| Visual maintenance evidence | Synthetic screen/head/gaze boundaries | `test_visual_attention_evidence.py`; 16/16 passed | Comfortable screen posture must not falsely release ownership |
+| Lip-motion diagnostic | Eight Space-controlled stages; numerical MediaPipe blendshape changes only | `results/task_o_lip_motion_diagnostic/run_20261123T080117Z`; 3,322 frames, 100% face availability | Lip evidence must remain tri-state and supporting only |
+| Live owner lip shadow | Owner-only cached face box, approximately 10 FPS lightweight updates | Speech reached `SUPPORTS_SPEECH`; false supporting motion also observed; one approximately 200.6 ms audio overrun | Keep shadow-only; measure CPU/GPU before control use |
+
+Detailed methods, failure history and permitted claims are in
+`20_conversation_ownership_engagement_and_lip_evidence.md`.
+
 ## Critical stage-09 artifacts
 
 - Recording metadata: `gaze_benchmark_recording_metadata.json`

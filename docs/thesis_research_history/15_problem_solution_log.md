@@ -517,6 +517,65 @@ For every new entry:
 - **Thesis significance:** Conversational continuity is separated from
   returning-user recognition and long-term personal data storage.
 
+## PSL-19: Conversation ownership was not the same as utterance permission
+
+- **Date documented:** 2026-11-23
+- **Subsystem:** Interaction ownership and conversation control
+- **Status:** Implemented on laptop; multi-person laboratory validation pending
+- **Problem observed:** A person could activate the interaction, then become
+  visually unavailable or disengaged while the microphone continued to accept
+  and answer speech.  Conversely, ordinary glances and comfortable screen-side
+  posture could cause false rejection when activation rules were reused too
+  strictly.
+- **Cause:** The original combined runtime had an activation owner but no
+  independent temporal state machine for owner retention, utterance
+  permission, release cancellation and post-interaction rearming.
+- **Changes attempted:** Added explicit engagement states and structured reason
+  codes; checked permission at speech start and after transcription; propagated
+  owner-release/shutdown cancellation into capture; separated activation gaze
+  from screen-aware maintenance; added natural farewell, reopening, silence
+  handling and per-person rearm.
+- **Validation result:** Deterministic suites passed 20/20 engagement tests,
+  19/19 farewell/reopening/silence tests, 10/10 controller tests and 16/16
+  visual-evidence tests.  Live tests covered covered-face release, normal
+  questions, goodbye, five-second reopening, silence timeout, same-person
+  reactivation and `q` shutdown.
+- **Remaining limitation:** Visual ownership does not identify the acoustic
+  speaker.  Real multi-person handover and competing speech require fixed
+  hardware and laboratory trials.
+- **Relevant record:**
+  `20_conversation_ownership_engagement_and_lip_evidence.md`.
+- **Thesis significance:** The architecture makes retention, speech permission
+  and identity evidence explicit instead of treating them as one gaze flag.
+
+## PSL-20: Lip movement could support but not prove speaker identity
+
+- **Date documented:** 2026-11-23
+- **Subsystem:** Audio-visual speaker evidence
+- **Status:** Diagnostic shadow implementation only
+- **Problem observed:** Gaze and track ID cannot prove that a nearby voice came
+  from the visible owner.  Lip movement was proposed as additional evidence,
+  but people smile while speaking, move their mouths silently and speak with
+  different motion amplitudes.
+- **Confirmed evidence:** The valid eight-stage diagnostic produced 3,322
+  frames with complete face availability.  Silent mouth opening had stronger
+  motion than several speech conditions; an exploratory threshold produced
+  balanced accuracy 0.725, sensitivity 0.867 and specificity 0.583.
+- **Decision:** Use `SUPPORTS_SPEECH`, `CLEARLY_STILL` and `UNCERTAIN` shadow
+  states.  Do not connect lip motion to speech rejection, ownership or motor
+  control.  Stabilize terminal reporting without changing raw thresholds.
+- **Validation result:** Synthetic lip tests passed and the live shadow reached
+  support during real speech without blocking the conversation.  It also
+  produced occasional support outside the spoken turn, confirming the need for
+  time-aligned audio and direction evidence.
+- **Remaining limitation:** One participant, one camera/lighting/facial-hair
+  condition and no calibrated multi-person acoustic source.  One audio overrun
+  was observed but not causally attributed.
+- **Relevant results:**
+  `results/task_o_lip_motion_diagnostic/run_20261123T080117Z`.
+- **Thesis significance:** Negative evidence and uncertainty are preserved;
+  an attractive but weak cue is not promoted into an unsafe decision rule.
+
 ---
 
 ## Template for the next problem

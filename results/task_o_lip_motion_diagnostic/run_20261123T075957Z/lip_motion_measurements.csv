@@ -1,0 +1,1 @@
+timestamp_seconds,stage,face_available,motion_mean_abs_delta,motion_max_abs_delta,head_yaw_degrees,head_pitch_degrees,processing_ms,loop_fps,jawOpen,mouthClose,mouthFunnel,mouthPucker,mouthLeft,mouthRight,mouthStretchLeft,mouthStretchRight,mouthLowerDownLeft,mouthLowerDownRight,mouthUpperUpLeft,mouthUpperUpRight

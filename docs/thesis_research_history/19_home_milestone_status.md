@@ -2,6 +2,14 @@
 
 Date: 20 November 2026
 
+> Historical milestone note: this document freezes the status on 20 November
+> 2026.  Conversation ownership, engagement maintenance, ending/reopening,
+> silence handling, post-interaction rearming and lip-shadow evidence were
+> added afterward.  Use
+> `20_conversation_ownership_engagement_and_lip_evidence.md` for the current
+> 23 November status; do not interpret the optional-feature table below as the
+> latest implementation state.
+
 ## Purpose and scope
 
 This document consolidates the status of the laptop/home development stage of
@@ -288,7 +296,9 @@ if time remains after core laboratory validation.
 ## Version-control status at this milestone
 
 The technical history, implementation scripts and non-private result summaries
-were pushed through commit `4252b37` before creation of this document.
+were pushed through commit `4252b37` before creation of this document.  The
+milestone itself was subsequently saved in commit `af775dd`.  Work after that
+commit belongs to the next reviewed checkpoint.
 
 Personal DOCX files remain local and were deliberately not added automatically.
 Earlier review-required visual-attention runs also remain local; the final passed

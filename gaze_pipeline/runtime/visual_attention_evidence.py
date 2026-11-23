@@ -27,6 +27,8 @@ from typing import Mapping
 
 
 __all__ = [
+    "CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES",
+    "CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES",
     "PROFILE_STATUS",
     "REQUIRED_BLENDSHAPES",
     "SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES",
@@ -37,8 +39,11 @@ __all__ = [
     "SCREEN_BAND_VERTICAL_MIN",
     "VisualAttentionEvidence",
     "VisualAttentionEvidenceEstimator",
+    "conversation_head_pose_supports_engagement",
+    "conversation_visual_supports_engagement",
     "head_pitch_supports_screen_attention",
     "screen_region_supports_attention",
+    "screen_eye_region_supports_attention",
 ]
 
 
@@ -89,6 +94,16 @@ SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES = 8.0
 # the fixed laptop-camera setup and must not be treated as universal.
 SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES = 5.0
 
+# Conversation maintenance is deliberately broader than initial activation.
+# The owner's strict-attention head yaw becomes a session-relative reference.
+# The completed natural-attention diagnostic found an 8-degree half-width
+# retained all three attention actions while triggering none of the four
+# sustained away actions. Eye position and head pitch are intentionally not
+# used here, because natural conversation includes eye movement around the
+# screen and small vertical head movement.
+CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES = 8.0
+CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES = 18.0
+
 # Leave-one-session-out evidence for the selected eye-blendshape family.
 CROSS_VALIDATED_FRAME_BALANCED_ACCURACY = 0.847
 CROSS_VALIDATED_ACTION_BALANCED_ACCURACY = 0.875
@@ -133,14 +148,34 @@ def screen_region_supports_attention(
         )
 
     return bool(
+        screen_eye_region_supports_attention(horizontal, vertical)
+        and abs(head_yaw)
+        <= SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES
+    )
+
+
+def screen_eye_region_supports_attention(
+    horizontal_right_minus_left: object,
+    vertical_down_minus_up: object,
+) -> bool:
+    """Return whether eye evidence lies within measured screen bounds."""
+
+    horizontal = float(horizontal_right_minus_left)
+    vertical = float(vertical_down_minus_up)
+
+    if not all(math.isfinite(value) for value in (
+        horizontal,
+        vertical,
+    )):
+        raise ValueError("Screen eye-region values must be finite.")
+
+    return bool(
         SCREEN_BAND_HORIZONTAL_MIN
         <= horizontal
         <= SCREEN_BAND_HORIZONTAL_MAX
         and SCREEN_BAND_VERTICAL_MIN
         <= vertical
         <= SCREEN_BAND_VERTICAL_MAX
-        and abs(head_yaw)
-        <= SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES
     )
 
 
@@ -156,6 +191,69 @@ def head_pitch_supports_screen_attention(
 
     return bool(
         head_pitch >= SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES
+    )
+
+
+def conversation_head_pose_supports_engagement(
+    raw_head_yaw_degrees: object,
+    reference_head_yaw_degrees: object,
+) -> bool:
+    """Return coarse session-relative head support during conversation.
+
+    This is not an activation signal. It is used only after strict sustained
+    attention and liveness have already selected the conversation owner.
+    """
+
+    head_yaw = float(raw_head_yaw_degrees)
+    reference_yaw = float(reference_head_yaw_degrees)
+
+    if not all(math.isfinite(value) for value in (
+        head_yaw,
+        reference_yaw,
+    )):
+        raise ValueError(
+            "Conversation head-yaw values must be finite."
+        )
+
+    return bool(
+        abs(head_yaw - reference_yaw)
+        <= CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES
+    )
+
+
+def conversation_visual_supports_engagement(
+    raw_head_yaw_degrees: object,
+    reference_head_yaw_degrees: object,
+    screen_eye_supported: bool,
+) -> bool:
+    """Combine natural head movement with measured inside-screen evidence."""
+
+    if not isinstance(screen_eye_supported, bool):
+        raise TypeError("screen_eye_supported must be a Boolean.")
+
+    head_yaw = float(raw_head_yaw_degrees)
+    reference_yaw = float(reference_head_yaw_degrees)
+
+    if not all(math.isfinite(value) for value in (
+        head_yaw,
+        reference_yaw,
+    )):
+        raise ValueError(
+            "Conversation head-yaw values must be finite."
+        )
+
+    deviation = abs(head_yaw - reference_yaw)
+
+    if (
+        deviation
+        <= CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES
+    ):
+        return True
+
+    return bool(
+        screen_eye_supported
+        and deviation
+        <= CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES
     )
 
 

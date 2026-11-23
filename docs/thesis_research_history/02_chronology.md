@@ -18,7 +18,14 @@ This chronology combines Git history with saved experiment evidence.
 | L2CS preprocessing diagnostic | Direct 224 input compared with official packaged 224→448 sequence | stage 09 |
 | Portable gaze estimator | Local MobileOne-S0 architecture, licence notices, numerical equivalence, checkpoint verification and standalone real-crop validation | stage 10; `10_mobileone_source_license_review.md` |
 | Saved-video gaze association | Saved ByteTrack IDs replayed through YuNet, independent face locks and MobileOne; 368 finite predictions with zero failures | stage 11; `11_saved_video_gaze_state_review.md` |
-| Current point | Prepare controlled live per-person gaze display integration without activation decisions | stage 12 planning |
+| Saved-video diagnostics | Visual association and stale-field/release semantics reviewed | stage 12; `12_saved_video_gaze_diagnostic_review.md` |
+| Live attention and passive liveness | Bounded multi-signal attention, live validation and passive RGB evidence integrated | commits through `85e6a8a`; stages 13–16 |
+| Complete laptop interaction | Visual activation connected to greeting, Faster-Whisper, OpenAI, Piper, goodbye and waiting | commit `85e6a8a` |
+| ReSpeaker and multi-person evidence | Cocktail-audio baseline, repeated direction validation and beamforming comparison | commits `7173a14`, `4252b37`; tasks M/N |
+| Home milestone and transfer design | Problem log, Jetson/ROS 2 plan, hardware placement and home-status audit | commits `b171eac` through `af775dd` |
+| Conversation ownership and engagement | Four-state owner gate, utterance permission, release cancellation, silence policy, reopening and rearm | uncommitted Task 1 checkpoint; document 20 |
+| Lip-motion evidence | Eight-stage numerical diagnostic and owner-only live shadow integration | `results/task_o_lip_motion_diagnostic`; document 20 |
+| Current point | Laptop implementation complete for tested ownership paths; GPU/robot and multi-person validation pending | 23 November 2026 audit |
 
 ## Repository milestones
 
@@ -30,5 +37,16 @@ This chronology combines Git history with saved experiment evidence.
 - `68eba51` — Add validated laptop webcam pipeline
 - `bb7cdc3` — Complete laptop person detection and tracking
 - `b62780d` — Complete laptop face detection and per-person face tracking
+- `85e6a8a` — Complete laptop attention/liveness interaction milestone
+- `cc69ce1` — Validate laptop visual-attention boundary and latency
+- `b171eac` — Document architecture problems and solutions
+- `7173a14` — Document ReSpeaker direction and beamforming evaluation
+- `552c7e7` — Document Jetson and ROS 2 transfer plan
+- `dabaca3` — Document camera, microphone and speaker placement design
+- `4252b37` — Add audio-direction and multi-person evaluation evidence
+- `af775dd` — Document completed home-development milestone
 
-These hashes describe saved Git milestones. Work after `b62780d`, including the current gaze-model comparison, must be checked and committed separately when the user requests a backup.
+These hashes describe saved Git milestones.  Conversation ownership,
+engagement, reopening, silence, rearming and lip shadow were developed after
+`af775dd` and belong to the next reviewed checkpoint; no commit hash is claimed
+until that checkpoint is actually created.

@@ -1,6 +1,7 @@
 
 #!/usr/bin/env python3
 
+import math
 import re
 import subprocess
 import threading
@@ -10,6 +11,7 @@ from collections import deque
 
 import numpy as np
 from faster_whisper import WhisperModel
+from faster_whisper.vad import get_vad_model
 
 
 AUDIO_FILE = (
@@ -36,6 +38,9 @@ SPEECH_BLOCKS_TO_START = 2
 SILENCE_BLOCKS_TO_STOP = 8
 MAX_WAIT_SECONDS = 15
 MAX_SPEECH_SECONDS = 20
+VAD_SPEECH_THRESHOLD = 0.5
+VAD_WINDOW_BLOCKS = 15
+VAD_RECENT_PROBABILITY_FRAMES = 4
 
 
 def calculate_rms(raw_audio):
@@ -80,6 +85,30 @@ def raw_to_mono(raw_audio):
     )
 
 
+def recent_vad_speech_probability(vad_model, mono_blocks):
+    """Return recent Silero speech probability from rolling mono blocks."""
+
+    if not mono_blocks:
+        return 0.0
+
+    audio = np.concatenate(tuple(mono_blocks)).astype(
+        np.float32,
+        copy=False,
+    )
+    padding = (-audio.size) % 512
+
+    if padding:
+        audio = np.pad(audio, (0, padding))
+
+    probabilities = np.asarray(vad_model(audio)).reshape(-1)
+
+    if probabilities.size == 0:
+        return 0.0
+
+    recent = probabilities[-VAD_RECENT_PROBABILITY_FRAMES:]
+    return float(np.max(recent))
+
+
 def normalize_words(text):
     return re.findall(
         r"[a-zA-Z0-9']+",
@@ -122,7 +151,24 @@ def capture_audio(
     speech_event,
     finished_event,
     state,
+    max_wait_seconds=MAX_WAIT_SECONDS,
+    cancel_event=None,
 ):
+    max_wait = float(max_wait_seconds)
+
+    if not math.isfinite(max_wait) or max_wait <= 0.0:
+        raise ValueError(
+            "max_wait_seconds must be finite and greater than zero."
+        )
+
+    if (
+        cancel_event is not None
+        and not callable(getattr(cancel_event, "is_set", None))
+    ):
+        raise ValueError(
+            "cancel_event must provide an is_set() method."
+        )
+
     recorder = subprocess.Popen(
         [
             "arecord",
@@ -146,6 +192,12 @@ def capture_audio(
         noise_levels = []
 
         for _ in range(10):
+            if (
+                cancel_event is not None
+                and cancel_event.is_set()
+            ):
+                raise RuntimeError("Audio capture cancelled.")
+
             block = recorder.stdout.read(
                 BLOCK_BYTES
             )
@@ -179,6 +231,8 @@ def capture_audio(
         print("SPEAK NOW")
 
         pre_roll = deque(maxlen=5)
+        vad_blocks = deque(maxlen=VAD_WINDOW_BLOCKS)
+        vad_model = get_vad_model()
         speech_started = False
         consecutive_loud_blocks = 0
         silent_blocks = 0
@@ -186,6 +240,12 @@ def capture_audio(
         waiting_started = time.perf_counter()
 
         while True:
+            if (
+                cancel_event is not None
+                and cancel_event.is_set()
+            ):
+                raise RuntimeError("Audio capture cancelled.")
+
             block = recorder.stdout.read(
                 BLOCK_BYTES
             )
@@ -227,16 +287,21 @@ def capture_audio(
                             pre_roll
                         )
 
+                    for recorded_block in pre_roll:
+                        vad_blocks.append(
+                            raw_to_mono(recorded_block)
+                        )
+
                     print("Speech detected.")
                     speech_event.set()
 
                 elif (
                     now - waiting_started
-                    >= MAX_WAIT_SECONDS
+                    >= max_wait
                 ):
                     raise RuntimeError(
                         "No speech detected within "
-                        "15 seconds."
+                        f"{max_wait:g} seconds."
                     )
 
                 continue
@@ -244,7 +309,13 @@ def capture_audio(
             with lock:
                 recorded_blocks.append(block)
 
-            if level >= threshold:
+            vad_blocks.append(raw_to_mono(block))
+            speech_probability = recent_vad_speech_probability(
+                vad_model,
+                vad_blocks,
+            )
+
+            if speech_probability >= VAD_SPEECH_THRESHOLD:
                 state["last_speech_at"] = now
                 silent_blocks = 0
             else:

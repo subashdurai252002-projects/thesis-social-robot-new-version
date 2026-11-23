@@ -1,0 +1,89 @@
+{
+  "run_label": "run_20261123T080117Z",
+  "aborted": false,
+  "saved_video": false,
+  "saved_images": false,
+  "saved_audio": false,
+  "available_mouth_blendshapes": [
+    "jawOpen",
+    "mouthClose",
+    "mouthFunnel",
+    "mouthPucker",
+    "mouthLeft",
+    "mouthRight",
+    "mouthStretchLeft",
+    "mouthStretchRight",
+    "mouthLowerDownLeft",
+    "mouthLowerDownRight",
+    "mouthUpperUpLeft",
+    "mouthUpperUpRight"
+  ],
+  "stage_summaries": {
+    "still": {
+      "frames": 359,
+      "face_available_frames": 359,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.00824029,
+      "motion_p95": 0.02318907999999999,
+      "processing_ms_median": 10.605421
+    },
+    "speech": {
+      "frames": 449,
+      "face_available_frames": 449,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01210851,
+      "motion_p95": 0.03983987599999997,
+      "processing_ms_median": 10.662689
+    },
+    "silent_smile": {
+      "frames": 359,
+      "face_available_frames": 359,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01039874,
+      "motion_p95": 0.031210989999999956,
+      "processing_ms_median": 10.623892
+    },
+    "speech_while_smiling": {
+      "frames": 449,
+      "face_available_frames": 449,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01507044,
+      "motion_p95": 0.04768282599999995,
+      "processing_ms_median": 10.616708
+    },
+    "silent_open_close": {
+      "frames": 359,
+      "face_available_frames": 359,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01395674,
+      "motion_p95": 0.053668165,
+      "processing_ms_median": 10.493098
+    },
+    "quiet_small_mouth_speech": {
+      "frames": 449,
+      "face_available_frames": 449,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01288944,
+      "motion_p95": 0.038926534,
+      "processing_ms_median": 10.659264
+    },
+    "speech_head_movement": {
+      "frames": 449,
+      "face_available_frames": 449,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.0091065,
+      "motion_p95": 0.03339697999999999,
+      "processing_ms_median": 10.708316
+    },
+    "natural_expressive_speech": {
+      "frames": 449,
+      "face_available_frames": 449,
+      "face_availability_percent": 100.0,
+      "motion_median": 0.01440291,
+      "motion_p95": 0.042591627999999965,
+      "processing_ms_median": 10.702926
+    }
+  },
+  "threshold_selected": false,
+  "note": "This diagnostic measures mouth motion only. It does not identify the speaker or select a runtime threshold."
+}
