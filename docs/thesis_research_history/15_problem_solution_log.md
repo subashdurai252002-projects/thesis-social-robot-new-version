@@ -620,6 +620,27 @@ For every new entry:
 - **Thesis significance:** Failed fixes are documented and removed rather than
   hidden, preserving a defensible boundary between Task 2 and Task 8.
 
+## PSL-23: A generic greeting did not explain validated robot capabilities
+
+- **Date documented:** 2026-11-24
+- **Subsystem:** Fresh interaction and user guidance
+- **Status:** Implemented and live-validated on laptop
+- **Problem observed:** The former greeting asked how it could help but did not
+  tell a new user which validated actions were available.
+- **Final solution or decision:** Replace only the fresh-interaction greeting
+  with a concise introduction covering question answering, explanation and
+  faster/slower/normal Piper controls. Keep unsupported memory, recognition,
+  speaker-identification, robot-motion and dashboard claims out of the text.
+- **Validation result:** Three deterministic claim/boundary checks passed. A
+  live fresh interaction spoke the full introduction, accepted goodbye, and a
+  same-conversation reopening did not replay the introduction.
+- **Remaining limitation:** A background sound was transcribed as “Thank you”
+  and caused reopening; this is retained as Task 8 negative evidence rather
+  than hidden by a phrase-specific Task 4 workaround.
+- **Relevant record:** `22_robot_capability_introduction.md`.
+- **Thesis significance:** User guidance now reflects implemented behaviour
+  while keeping capability claims narrow and auditable.
+
 ---
 
 ## Template for the next problem

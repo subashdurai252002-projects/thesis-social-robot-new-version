@@ -27,6 +27,7 @@
 | ADR-023 | Keep Piper speed/clarity profiles interaction-local | Prevents one person's preference leaking to a new owner; persistent preference requires later identity/consent work | Implemented and live-validated |
 | ADR-024 | Handle speed controls locally and preserve combined questions | Avoids unnecessary OpenAI calls and duplicate acknowledgements while retaining the user's substantive request | Implemented and live-validated |
 | ADR-025 | Do not use VAD duration as a hard meaning gate | A genuine goodbye produced only 0.10–0.11 s of VAD duration; non-speech robustness requires Task 8 evidence | Minimum-duration gate rejected |
+| ADR-026 | Speak a bounded capability introduction once per fresh interaction | It tells a new user about validated question/explanation and local speed controls without claiming memory, identity, calibrated speaker attribution, movement or dashboard support | Implemented and live-validated; same-conversation reopening does not replay it |
 
 ## Decisions deliberately not made yet
 

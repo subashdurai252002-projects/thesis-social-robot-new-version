@@ -10,6 +10,7 @@
 | Piper profile rating | 12 generated samples; clarity, comfort and pace ratings | `results/task_p_adaptive_piper_speech/run_20261123T124521Z` | Initial candidates were acceptable but felt too similar |
 | Piper blinded A/B | 6 randomized direct comparisons, 12 generated samples | `results/task_p_adaptive_piper_speech_v2/run_20261123T130006Z` | Adopt provisional 0.70/1.00/1.40 length scales; one-evaluator limitation |
 | Adaptive-speech regression and live validation | Local intent tests, recorder/shutdown tests and focused camera/microphone run | `test_speech_profile.py`, `test_streaming_audio_cleanup.py`, `test_conversation_exit_phrases.py`; document 21 | Interaction-local profiles, combined requests, clarification and clean goodbye/reopening expiry |
+| Capability-introduction regression and live validation | Exact-text/claim-boundary tests plus fresh interaction, goodbye and reopening observation | `test_capability_introduction.py`; document 22 | Fresh users hear the bounded capability introduction once; reopening does not replay it |
 
 ## Vision and gaze
 

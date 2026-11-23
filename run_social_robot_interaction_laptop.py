@@ -43,7 +43,14 @@ from live_streaming_dynamic_openai_conversation_laptop import (
 )
 
 
-GREETING_TEXT = "Hello. How can I help you?"
+CAPABILITY_INTRODUCTION_TEXT = (
+    "Hello. I can answer questions and explain information. "
+    "You can also ask me to speak faster, slower, or normally. "
+    "How can I help you?"
+)
+# A fresh interaction uses the capability introduction once. Reopening the
+# same interaction resumes the conversation loop and does not replay it.
+GREETING_TEXT = CAPABILITY_INTRODUCTION_TEXT
 GOODBYE_TEXT = "Goodbye. It was nice talking with you."
 LIP_SHADOW_REPORT_STABILITY_SECONDS = 0.5
 INTERACTION_WORKER_SHUTDOWN_SECONDS = 30.0

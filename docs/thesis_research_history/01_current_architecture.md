@@ -63,7 +63,7 @@ or synthetic-face attack.
 per-person sustained visual attention
 → passive RGB liveness
 → acquire one conversation owner
-→ greeting
+→ one fresh-interaction capability introduction
 → low-rate owner engagement monitoring
 → Whisper → OpenAI → Piper turns
    ├─ accepted owner speech
@@ -74,6 +74,12 @@ per-person sustained visual attention
 → per-person post-interaction rearm
 → full visual waiting
 ```
+
+The fresh-interaction introduction states only validated laptop capabilities:
+answering questions, explaining information, and accepting faster, slower or
+normal Piper speed requests. It is spoken once after fresh attention and
+liveness. Reopening the same conversation does not replay the introduction.
+Detailed evidence is in `22_robot_capability_introduction.md`.
 
 Tracker retention remains separate from conversation ownership.  The completed
 owner is temporarily blocked from immediate accidental reacquisition but can

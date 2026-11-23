@@ -27,7 +27,8 @@ This folder is the central evidence map for the social-robot thesis. It records 
 19. [Home milestone status](19_home_milestone_status.md)
 20. [Conversation ownership, engagement and lip evidence](20_conversation_ownership_engagement_and_lip_evidence.md)
 21. [Adaptive Piper speech output](21_adaptive_speech_output.md)
-22. [BibTeX references](references.bib)
+22. [Robot capability introduction](22_robot_capability_introduction.md)
+23. [BibTeX references](references.bib)
 
 ## Evidence rules
 

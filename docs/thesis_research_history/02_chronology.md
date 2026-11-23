@@ -27,7 +27,8 @@ This chronology combines Git history with saved experiment evidence.
 | Lip-motion evidence | Eight-stage numerical diagnostic and owner-only live shadow integration | commit `0ef73a0`; `results/task_o_lip_motion_diagnostic`; document 20 |
 | Private research-data sharing | Created a separate access-controlled Git LFS repository containing 30 consented videos, 7 synchronized six-channel WAV files, a manifest and SHA-256 checksums | private dataset commit `40b0965`; no participant media in the public repository |
 | Adaptive Piper speech output | Listening comparison, interaction-local fast/normal/slow profiles, local controls, combined requests, clarification, bounded audio cleanup and focused live validation | Task 2 evidence; `21_adaptive_speech_output.md` |
-| Current point | Tasks 1 and 2 laptop implementations complete; Task 3 demonstration definition is next; GPU/robot and multi-person validation remain pending | 23 November 2026 audit |
+| Robot capability introduction | Added a concise fresh-interaction introduction containing only validated question, explanation and Piper-speed capabilities; deterministic and live fresh/reopening checks passed | Task 4 evidence; `22_robot_capability_introduction.md` |
+| Current point | Tasks 1, 2 and 4 laptop implementations are complete. By user decision, Task 3 final demonstration definition is deferred until dashboard integration; Task 5 is next | 24 November 2026 audit |
 
 ## Repository milestones
 
@@ -48,6 +49,7 @@ This chronology combines Git history with saved experiment evidence.
 - `4252b37` — Add audio-direction and multi-person evaluation evidence
 - `af775dd` — Document completed home-development milestone
 - `0ef73a0` — Complete laptop conversation engagement checkpoint
+- `68cea5d` — Complete adaptive Piper speech output task
 
 These hashes describe saved public-repository Git milestones. Conversation
 ownership, engagement, reopening, silence handling, rearming and diagnostic

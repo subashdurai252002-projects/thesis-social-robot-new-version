@@ -27,30 +27,32 @@
 
 ## Next work in strict order
 
-1. Create the reviewed Task 2 checkpoint for adaptive Piper speech output.
-2. Define the required 30–50-second demonstration using validated behaviour.
-3. Specify the robot capability introduction without unsupported claims.
-4. Define session-local known/unknown-user and preference behaviour before any
+1. Define session-local known/unknown-user and preference behaviour before any
    consent-based persistent identity work.
-5. Continue controlled background-noise, competing-speaker and intended-speaker
+2. Continue controlled background-noise, competing-speaker and intended-speaker
    validation, retaining false triggers and hallucinations as evidence.
-6. Establish a functionally equivalent Jetson/GPU baseline before ROS 2 or
+3. Establish a functionally equivalent Jetson/GPU baseline before ROS 2 or
    TensorRT optimisation.
-7. Fix the camera, ReSpeaker and loudspeaker to their final relative geometry
+4. Fix the camera, ReSpeaker and loudspeaker to their final relative geometry
    and record the measurements/orientation.
-8. Re-record left/centre/right calibration evidence after mounting and map
+5. Re-record left/centre/right calibration evidence after mounting and map
    ReSpeaker-relative direction into camera/robot coordinates.
-9. Test real multi-person ownership, handover, side speech, simultaneous
+6. Test real multi-person ownership, handover, side speech, simultaneous
    speech, exit/re-entry and new-person activation with consent.
-10. Fuse time-aligned speech boundaries, calibrated direction and visual/lip
+7. Fuse time-aligned speech boundaries, calibrated direction and visual/lip
    evidence in shadow mode; retain `UNCERTAIN` rather than forcing a decision.
-11. Enable competing-speaker rejection only after measured false-accept and
+8. Enable competing-speaker rejection only after measured false-accept and
    false-reject results justify it.
-12. Test stationary safe robot orientation before allowing sound-guided motor
+9. Test stationary safe robot orientation before allowing sound-guided motor
    turning during interaction.
-13. Run complete CPU/GPU latency, overrun, FPS and resource comparisons.
-14. Wrap only validated components as ROS 2 nodes and prepare the final
-    demonstration/evaluation artifacts.
+10. Run complete CPU/GPU latency, overrun, FPS and resource comparisons.
+11. Wrap only validated components as ROS 2 nodes.
+12. After the local dashboard is connected, define and validate the final
+    30–50-second demonstration using only completed capabilities.
+
+Tasks 2 and 4 are complete. The user explicitly deferred Task 3's final
+demonstration until the dashboard is connected, so this ordering does not
+replace or renumber the authoritative 12-task plan.
 
 ## Lab/Jetson work
 
