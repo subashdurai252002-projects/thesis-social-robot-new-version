@@ -10,6 +10,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, call, patch
 
+from openai import APIConnectionError
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,6 +26,51 @@ from live_streaming_dynamic_openai_conversation_laptop import (  # noqa: E402
 
 
 class ConversationExitPhraseTests(unittest.TestCase):
+    def test_runtime_closes_openai_after_worker_stops(self) -> None:
+        order = []
+        worker = Mock()
+        worker.is_alive.side_effect = [True, False]
+        worker.join.side_effect = lambda timeout: order.append("join")
+        client = Mock()
+        client.close.side_effect = lambda: order.append("close")
+        runtime = {"openai_client": client}
+
+        closed = conversation_module.close_runtime_after_worker(
+            runtime,
+            worker,
+            3.0,
+        )
+
+        self.assertTrue(closed)
+        self.assertEqual(order, ["join", "close"])
+        worker.join.assert_called_once_with(timeout=3.0)
+        client.close.assert_called_once_with()
+        self.assertIsNone(runtime["openai_client"])
+
+    def test_runtime_stays_open_while_worker_is_active(self) -> None:
+        worker = Mock()
+        worker.is_alive.return_value = True
+        client = Mock()
+        runtime = {"openai_client": client}
+
+        closed = conversation_module.close_runtime_after_worker(
+            runtime,
+            worker,
+            3.0,
+        )
+
+        self.assertFalse(closed)
+        worker.join.assert_called_once_with(timeout=3.0)
+        client.close.assert_not_called()
+
+    def test_runtime_shutdown_timeout_is_validated(self) -> None:
+        with self.assertRaises(ValueError):
+            conversation_module.close_runtime_after_worker(
+                {},
+                None,
+                0.0,
+            )
+
     def test_natural_farewells_are_accepted(self) -> None:
         phrases = [
             "Goodbye.",
@@ -306,6 +353,83 @@ class ConversationExitPhraseTests(unittest.TestCase):
             runtime["model"],
             utterance_permission=None,
             cancel_event=cancel_event,
+        )
+
+    def test_openai_connection_failure_keeps_session_active(self) -> None:
+        runtime = {
+            "model": object(),
+            "barge_in": object(),
+            "acknowledgement_audio_files": {},
+            "acknowledgement_positions": {
+                "simple": 0,
+                "complex": 0,
+                "follow_up": 0,
+            },
+            "openai_client": object(),
+            "speech_profile_name": "slow",
+        }
+        question_turn = {
+            "text": "Tell me about Germany.",
+            "transcription_finished": 2.0,
+            "last_speech_at": 1.0,
+            "raw_audio": b"",
+        }
+        cancelled_turn = {
+            "cancelled": True,
+            "rejected": False,
+        }
+
+        def finish_acknowledgement(_process, timing):
+            timing["returncode"] = 0
+            timing["finished"] = 3.0
+
+        with patch.object(
+            conversation_module,
+            "record_streaming_turn",
+            side_effect=[question_turn, cancelled_turn],
+        ) as recorder, patch.object(
+            conversation_module,
+            "select_acknowledgement",
+            return_value=("simple", "One moment.", "ack.wav"),
+        ), patch.object(
+            conversation_module.subprocess,
+            "Popen",
+            return_value=Mock(),
+        ), patch.object(
+            conversation_module,
+            "wait_for_acknowledgement",
+            side_effect=finish_acknowledgement,
+        ), patch.object(
+            conversation_module,
+            "generate_openai_reply",
+            side_effect=APIConnectionError(request=Mock()),
+        ), patch.object(
+            conversation_module.wave,
+            "open",
+        ), patch.object(
+            conversation_module,
+            "speak_fixed_text",
+        ) as speaker:
+            result = conversation_module.run_conversation_session(
+                runtime,
+            )
+
+        self.assertEqual(recorder.call_count, 2)
+        self.assertEqual(
+            result["stop_reason"],
+            "shutdown_requested",
+        )
+        self.assertEqual(
+            result["speech_profile_name"],
+            "slow",
+        )
+        speaker.assert_called_once_with(
+            runtime,
+            (
+                "I'm sorry, I couldn't reach the online "
+                "service. Please try again."
+            ),
+            monitor_barge_in=False,
         )
 
     def test_owner_release_cancels_active_audio_without_prompt(self) -> None:

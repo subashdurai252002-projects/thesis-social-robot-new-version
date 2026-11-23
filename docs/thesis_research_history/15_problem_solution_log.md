@@ -576,6 +576,50 @@ For every new entry:
 - **Thesis significance:** Negative evidence and uncertainty are preserved;
   an attractive but weak cue is not promoted into an unsafe decision rule.
 
+## PSL-21: Adaptive speech controls could be misrouted or applied globally
+
+- **Date documented:** 2026-11-23
+- **Subsystem:** Piper speech output and conversation control
+- **Status:** Implemented and focused-live-validated on laptop
+- **Problem observed:** Users needed natural slow, fast, normal and clarity
+  controls. Sending these controls to OpenAI produced misleading promises
+  without changing Piper, while global persistence could leak one person's
+  preference into another interaction.
+- **Changes attempted:** Compared Piper candidates, adopted interaction-local
+  0.70/1.00/1.40 length scales, added deterministic local parsing, combined
+  request preservation, conflicting-control clarification, profile-aware fixed
+  speech and fresh-interaction reset.
+- **Validation result:** Both listening diagnostics completed; focused live
+  runs exercised slow, fast, normal, combined and conflicting controls plus an
+  ordinary normal-speed answer and goodbye/reopening expiry.
+- **Remaining limitation:** One evaluator does not establish population-wide
+  preference. Persistent preferences require later consent and identity work.
+- **Relevant record:** `21_adaptive_speech_output.md`.
+- **Thesis significance:** Speech presentation is adapted without outsourcing
+  control semantics or creating unconsented cross-user memory.
+
+## PSL-22: Audio cleanup and ASR workarounds created secondary failures
+
+- **Date documented:** 2026-11-23
+- **Subsystem:** Streaming capture, ASR control parsing and shutdown
+- **Status:** Recorder/shutdown solved; non-speech robustness deferred to Task 8
+- **Problem observed:** Buffered `arecord` cleanup hung; a close-first repair
+  printed broken-pipe errors; ASR truncated or confused speed commands; a
+  minimum-duration workaround later rejected a genuine short goodbye.
+- **Final solution or decision:** Terminate and drain `arecord` with bounded
+  timeout/kill fallback; close only resources with supported cleanup APIs;
+  recover conservatively from short speed-control ASR variants; remove the
+  unreliable duration gate; retain noise hallucinations as negative evidence.
+- **Validation result:** Recorder tests passed 3/3, conversation/shutdown tests
+  23/23, adaptive-profile tests 19/19, and the final live goodbye produced
+  clean reopening-window expiry and shutdown.
+- **Remaining limitation:** Background sounds can still trigger Whisper text;
+  scientific non-speech/noise evaluation belongs to Task 8.
+- **Relevant record:** `21_adaptive_speech_output.md` and
+  `PROJECT_HANDOFF.md`.
+- **Thesis significance:** Failed fixes are documented and removed rather than
+  hidden, preserving a defensible boundary between Task 2 and Task 8.
+
 ---
 
 ## Template for the next problem

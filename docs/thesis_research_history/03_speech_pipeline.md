@@ -69,3 +69,26 @@ Rules include:
 - ReSpeaker beamforming, direction of arrival, multiple voices and intended-speaker selection remain future work.
 - Two false Stop Robot detections and verification delay were recorded as known observations for later correction.
 - OpenAI measurements include network/service variability and are not purely local compute benchmarks.
+
+## Adaptive Piper speech output
+
+Task 2 introduced interaction-local fast, normal and slow/clarity profiles at
+Piper length scales 0.70, 1.00 and 1.40. Two local listening diagnostics first
+showed that the initial candidates felt too similar, then confirmed that all
+six blinded A/B differences were noticeable. Normal was preferred most often
+by the single evaluator; this is provisional engineering evidence only.
+
+Natural control-only requests are handled locally with one confirmation and no
+OpenAI call. Combined speed-plus-question requests preserve the question and
+avoid duplicate acknowledgements. Conflicts request clarification. Every
+Piper output in the interaction uses the active session profile, which resets
+for a fresh owner and is preserved only when the same conversation reopens.
+
+Live validation covered slow, fast, normal, combined, conflicting, ordinary
+question, goodbye and reopening-expiry paths. Recorder cleanup was made
+bounded, and runtime resource shutdown completed cleanly. Non-speech sounds
+that Whisper hallucinates as text remain Task 8 evidence rather than being
+hidden by an unsafe minimum-duration gate.
+
+Detailed methods, failures and evidence are in
+`21_adaptive_speech_output.md`.

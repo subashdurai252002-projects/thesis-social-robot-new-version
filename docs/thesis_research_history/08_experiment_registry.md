@@ -7,6 +7,9 @@
 | OpenAI conversation sessions | Live questions and continuity tests | `results/task_b_openai_conversation` | Conversation path and memory behavior |
 | Whisper S01 benchmark | 10 prompts × 6 models on laptop CPU INT8 | `results/task_e_whisper_benchmark` | Provisional multilingual base choice |
 | OpenAI text benchmark | 4 models, 9 questions, controlled scoring and latency | `results/task_f_openai_benchmark` | Luna/Terra routing |
+| Piper profile rating | 12 generated samples; clarity, comfort and pace ratings | `results/task_p_adaptive_piper_speech/run_20261123T124521Z` | Initial candidates were acceptable but felt too similar |
+| Piper blinded A/B | 6 randomized direct comparisons, 12 generated samples | `results/task_p_adaptive_piper_speech_v2/run_20261123T130006Z` | Adopt provisional 0.70/1.00/1.40 length scales; one-evaluator limitation |
+| Adaptive-speech regression and live validation | Local intent tests, recorder/shutdown tests and focused camera/microphone run | `test_speech_profile.py`, `test_streaming_audio_cleanup.py`, `test_conversation_exit_phrases.py`; document 21 | Interaction-local profiles, combined requests, clarification and clean goodbye/reopening expiry |
 
 ## Vision and gaze
 
@@ -32,7 +35,7 @@
 | Experiment/evidence | Inputs/method | Principal output or result | Decision supported |
 |---|---|---|---|
 | Deterministic conversation engagement | Synthetic monotonic owner observations and speech decisions | `test_conversation_engagement.py`; 20/20 passed | Four states, release and conservative utterance permission |
-| Farewell/reopening/silence/cancellation | Synthetic callbacks and mocked capture/speech paths | `test_conversation_exit_phrases.py`; 19/19 passed | Natural ending, bounded reopening, two-window silence and cancellation |
+| Farewell/reopening/silence/cancellation | Synthetic callbacks and mocked capture/speech paths | `test_conversation_exit_phrases.py`; 23/23 passed | Natural ending, bounded reopening, two-window silence, cancellation and resource shutdown |
 | Interaction-state/rearm controller | Deterministic per-person state transitions | `test_interaction_state_controller.py`; 10/10 passed | No global cooldown; safe completed-owner rearm |
 | Visual maintenance evidence | Synthetic screen/head/gaze boundaries | `test_visual_attention_evidence.py`; 16/16 passed | Comfortable screen posture must not falsely release ownership |
 | Lip-motion diagnostic | Eight Space-controlled stages; numerical MediaPipe blendshape changes only | `results/task_o_lip_motion_diagnostic/run_20261123T080117Z`; 3,322 frames, 100% face availability | Lip evidence must remain tri-state and supporting only |

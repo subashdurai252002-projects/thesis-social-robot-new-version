@@ -26,7 +26,8 @@ This folder is the central evidence map for the social-robot thesis. It records 
 18. [Hardware placement design](18_hardware_placement_design.md)
 19. [Home milestone status](19_home_milestone_status.md)
 20. [Conversation ownership, engagement and lip evidence](20_conversation_ownership_engagement_and_lip_evidence.md)
-21. [BibTeX references](references.bib)
+21. [Adaptive Piper speech output](21_adaptive_speech_output.md)
+22. [BibTeX references](references.bib)
 
 ## Evidence rules
 
@@ -42,6 +43,8 @@ This folder is the central evidence map for the social-robot thesis. It records 
 - Speech results: `results/task_b_openai_conversation`, `results/task_e_whisper_benchmark`, `results/task_f_openai_benchmark`
 - Vision/gaze results: `results/task_i_gaze_activation`
 - Lip-motion evidence: `results/task_o_lip_motion_diagnostic`
+- Adaptive-speech evidence: `results/task_p_adaptive_piper_speech` and
+  `results/task_p_adaptive_piper_speech_v2`
 - Detailed vision reports: `gaze_pipeline/docs`
 - Experiment code: `experiments` and `gaze_pipeline/experiments`
 - Runtime code: `gaze_pipeline/runtime`

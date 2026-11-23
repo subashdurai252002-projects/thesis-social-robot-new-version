@@ -79,7 +79,7 @@ REJECTED_CANDIDATE_COOLDOWN = 0.75
 # Accept only the complete command "Stop robot".
 # "Stop", "Robot", and "Top robot" are rejected.
 COMMAND_PATTERN = re.compile(
-    r"\bstop\s+(?:the\s+)?robot\b"
+    r"stop\s+(?:the\s+)?robot"
 )
 
 
@@ -372,6 +372,7 @@ class BargeInDetector:
         ]
 
         transcripts = []
+        window_matches = []
 
         for label, window_audio in windows:
             segments, _ = self.whisper.transcribe(
@@ -397,28 +398,24 @@ class BargeInDetector:
             transcripts.append(
                 f"{label}: {transcript}"
             )
-
-            if COMMAND_PATTERN.search(normalized):
-                elapsed = (
-                    time.perf_counter()
-                    - started
-                )
-
-                return (
-                    transcript,
-                    True,
-                    elapsed,
-                )
+            window_matches.append(
+                COMMAND_PATTERN.fullmatch(normalized)
+                is not None
+            )
 
         elapsed = time.perf_counter() - started
 
         combined_transcript = " | ".join(
             transcripts
         )
+        verified = bool(
+            window_matches
+            and all(window_matches)
+        )
 
         return (
             combined_transcript,
-            False,
+            verified,
             elapsed,
         )
 

@@ -12,6 +12,7 @@ laboratory work.
 
 from __future__ import annotations
 
+import os
 import threading
 import time
 from collections.abc import Mapping
@@ -33,8 +34,10 @@ from gaze_pipeline.runtime.interaction_state_controller import (
 )
 from live_streaming_dynamic_openai_conversation_laptop import (
     CombinedCancelEvent,
+    close_runtime_after_worker,
     listen_for_reopen_intent,
     prepare_conversation_runtime,
+    reset_speech_profile,
     run_conversation_session,
     speak_fixed_text,
 )
@@ -43,6 +46,14 @@ from live_streaming_dynamic_openai_conversation_laptop import (
 GREETING_TEXT = "Hello. How can I help you?"
 GOODBYE_TEXT = "Goodbye. It was nice talking with you."
 LIP_SHADOW_REPORT_STABILITY_SECONDS = 0.5
+INTERACTION_WORKER_SHUTDOWN_SECONDS = 30.0
+LIP_SHADOW_ENABLED = (
+    os.environ.get(
+        "SOCIAL_ROBOT_ENABLE_LIP_SHADOW",
+        "0",
+    ).strip().lower()
+    in {"1", "true", "yes", "on"}
+)
 
 
 def require_transition(
@@ -73,6 +84,14 @@ def main() -> None:
     print(
         "Low-rate owner engagement monitoring continues during "
         "conversation."
+    )
+    print(
+        "Lip-motion shadow diagnostic:",
+        (
+            "enabled"
+            if LIP_SHADOW_ENABLED
+            else "disabled (opt-in only)"
+        ),
     )
     print(
         "ReSpeaker direction-of-arrival and concurrent Jetson vision "
@@ -316,6 +335,7 @@ def main() -> None:
         )
 
         try:
+            reset_speech_profile(conversation_runtime)
             speak_fixed_text(
                 conversation_runtime,
                 GREETING_TEXT,
@@ -577,7 +597,11 @@ def main() -> None:
                 robot_directed=True,
             )
             last_engagement_event = initial_engagement.event
-            lip_motion_tracker = LipMotionEvidenceTracker()
+            lip_motion_tracker = (
+                LipMotionEvidenceTracker()
+                if LIP_SHADOW_ENABLED
+                else None
+            )
             last_lip_motion_state = None
             pending_lip_motion_state = None
             pending_lip_motion_since = None
@@ -609,29 +633,53 @@ def main() -> None:
             raise
 
     try:
-        run_attention_liveness_viewer(
-            on_live_candidate=handle_live_candidate,
-            interaction_active=interaction_active_event.is_set,
-            active_owner_track_id=get_active_owner_track_id,
-            on_engagement_observation=handle_engagement_observation,
-            on_lip_observation=handle_lip_observation,
-            liveness_mode=LIVENESS_MODE_PASSIVE,
-        )
-    except KeyboardInterrupt:
-        print()
-        print("Shutdown requested; stopping safely.")
-
-    shutdown_event.set()
-    reopening_cancel_event.set()
-
-    if interaction_thread is not None and interaction_thread.is_alive():
-        print("Waiting for the active conversation to finish...")
         try:
-            interaction_thread.join()
+            run_attention_liveness_viewer(
+                on_live_candidate=handle_live_candidate,
+                interaction_active=interaction_active_event.is_set,
+                active_owner_track_id=get_active_owner_track_id,
+                on_engagement_observation=handle_engagement_observation,
+                on_lip_observation=(
+                    handle_lip_observation
+                    if LIP_SHADOW_ENABLED
+                    else None
+                ),
+                liveness_mode=LIVENESS_MODE_PASSIVE,
+            )
         except KeyboardInterrupt:
             print()
-            print("Shutdown interrupt received; allowing cleanup to finish.")
-            interaction_thread.join(timeout=5.0)
+            print("Shutdown requested; stopping safely.")
+    finally:
+        shutdown_event.set()
+        reopening_cancel_event.set()
+
+        if interaction_thread is not None and interaction_thread.is_alive():
+            print("Waiting for the active conversation to finish...")
+
+        try:
+            runtime_closed = close_runtime_after_worker(
+                conversation_runtime,
+                interaction_thread,
+                INTERACTION_WORKER_SHUTDOWN_SECONDS,
+            )
+        except KeyboardInterrupt:
+            print()
+            print(
+                "Shutdown interrupt received; retrying one bounded join."
+            )
+            runtime_closed = close_runtime_after_worker(
+                conversation_runtime,
+                interaction_thread,
+                5.0,
+            )
+
+        if runtime_closed:
+            print("Conversation runtime resources closed safely.")
+        else:
+            print(
+                "Shutdown warning: interaction worker is still active; "
+                "conversation resources were not closed underneath it."
+            )
 
 
 if __name__ == "__main__":

@@ -24,6 +24,9 @@
 | ADR-020 | Treat lip motion as three-state shadow evidence, never a hard gate | Silent mouth movement overlaps speech and subtle speech may have low motion | Implemented in shadow mode |
 | ADR-021 | Reuse the existing six-channel capture for future direction evidence | A second recorder risks ALSA conflicts, duplicate CPU work and unsynchronised evidence | Approved; live direction not connected |
 | ADR-022 | Keep ReSpeaker direction and robot turning disabled until fixed mounting and calibration | Array-relative direction is not automatically camera/robot-relative direction | Required laboratory dependency |
+| ADR-023 | Keep Piper speed/clarity profiles interaction-local | Prevents one person's preference leaking to a new owner; persistent preference requires later identity/consent work | Implemented and live-validated |
+| ADR-024 | Handle speed controls locally and preserve combined questions | Avoids unnecessary OpenAI calls and duplicate acknowledgements while retaining the user's substantive request | Implemented and live-validated |
+| ADR-025 | Do not use VAD duration as a hard meaning gate | A genuine goodbye produced only 0.10–0.11 s of VAD duration; non-speech robustness requires Task 8 evidence | Minimum-duration gate rejected |
 
 ## Decisions deliberately not made yet
 

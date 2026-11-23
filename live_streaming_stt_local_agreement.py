@@ -38,6 +38,9 @@ SPEECH_BLOCKS_TO_START = 2
 SILENCE_BLOCKS_TO_STOP = 8
 MAX_WAIT_SECONDS = 15
 MAX_SPEECH_SECONDS = 20
+ALSA_BUFFER_TIME_MICROSECONDS = 2_000_000
+CALIBRATION_SETTLE_BLOCKS = 5
+CALIBRATION_MEASUREMENT_BLOCKS = 10
 VAD_SPEECH_THRESHOLD = 0.5
 VAD_WINDOW_BLOCKS = 15
 VAD_RECENT_PROBABILITY_FRAMES = 4
@@ -83,6 +86,30 @@ def raw_to_mono(raw_audio):
         samples[:, 0].astype(np.float32)
         / 32768.0
     )
+
+
+def stop_recorder_process(recorder) -> str:
+    """Stop arecord, drain its pipes and return captured stderr text."""
+
+    if recorder is None:
+        return ""
+
+    if recorder.poll() is None:
+        try:
+            recorder.terminate()
+        except ProcessLookupError:
+            pass
+
+    try:
+        _, stderr = recorder.communicate(timeout=2.0)
+    except subprocess.TimeoutExpired:
+        recorder.kill()
+        _, stderr = recorder.communicate(timeout=2.0)
+
+    if isinstance(stderr, bytes):
+        return stderr.decode(errors="replace").strip()
+
+    return str(stderr or "").strip()
 
 
 def recent_vad_speech_probability(vad_model, mono_blocks):
@@ -180,18 +207,35 @@ def capture_audio(
             str(SAMPLE_RATE),
             "-c",
             str(CHANNELS),
+            "--buffer-time",
+            str(ALSA_BUFFER_TIME_MICROSECONDS),
             "-t",
             "raw",
         ],
         stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
     )
 
     try:
-        print("Stay quiet for one second.")
+        print("Stay quiet for one and a half seconds.")
+
+        for _ in range(CALIBRATION_SETTLE_BLOCKS):
+            if (
+                cancel_event is not None
+                and cancel_event.is_set()
+            ):
+                raise RuntimeError("Audio capture cancelled.")
+
+            settle_block = recorder.stdout.read(BLOCK_BYTES)
+
+            if len(settle_block) != BLOCK_BYTES:
+                raise RuntimeError(
+                    "Incomplete calibration-settling audio."
+                )
 
         noise_levels = []
 
-        for _ in range(10):
+        for _ in range(CALIBRATION_MEASUREMENT_BLOCKS):
             if (
                 cancel_event is not None
                 and cancel_event.is_set()
@@ -342,9 +386,10 @@ def capture_audio(
         state["error"] = error
 
     finally:
-        recorder.terminate()
-        recorder.wait()
-        finished_event.set()
+        try:
+            stop_recorder_process(recorder)
+        finally:
+            finished_event.set()
 
 
 def main():

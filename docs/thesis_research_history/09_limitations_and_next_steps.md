@@ -19,27 +19,37 @@
   overrun; repeated baseline comparison is required before attributing cause.
 - The ReSpeaker direction result is tied to one loose array placement and is
   not calibrated to the final camera/robot coordinate system.
+- Adaptive Piper profile preferences come from one evaluator and must not be
+  generalized to all users.
+- Eating/background sounds produced isolated Whisper hallucinations, including
+  “Thank you” during a reopening window. Non-speech rejection remains Task 8;
+  no unreliable minimum-duration gate is used.
 
 ## Next work in strict order
 
-1. Create the reviewed laptop checkpoint for conversation ownership,
-   engagement, ending, rearming and lip shadow.
-2. Establish a functionally equivalent Jetson/GPU baseline before ROS 2 or
+1. Create the reviewed Task 2 checkpoint for adaptive Piper speech output.
+2. Define the required 30–50-second demonstration using validated behaviour.
+3. Specify the robot capability introduction without unsupported claims.
+4. Define session-local known/unknown-user and preference behaviour before any
+   consent-based persistent identity work.
+5. Continue controlled background-noise, competing-speaker and intended-speaker
+   validation, retaining false triggers and hallucinations as evidence.
+6. Establish a functionally equivalent Jetson/GPU baseline before ROS 2 or
    TensorRT optimisation.
-3. Fix the camera, ReSpeaker and loudspeaker to their final relative geometry
+7. Fix the camera, ReSpeaker and loudspeaker to their final relative geometry
    and record the measurements/orientation.
-4. Re-record left/centre/right calibration evidence after mounting and map
+8. Re-record left/centre/right calibration evidence after mounting and map
    ReSpeaker-relative direction into camera/robot coordinates.
-5. Test real multi-person ownership, handover, side speech, simultaneous
+9. Test real multi-person ownership, handover, side speech, simultaneous
    speech, exit/re-entry and new-person activation with consent.
-6. Fuse time-aligned speech boundaries, calibrated direction and visual/lip
+10. Fuse time-aligned speech boundaries, calibrated direction and visual/lip
    evidence in shadow mode; retain `UNCERTAIN` rather than forcing a decision.
-7. Enable competing-speaker rejection only after measured false-accept and
+11. Enable competing-speaker rejection only after measured false-accept and
    false-reject results justify it.
-8. Test stationary safe robot orientation before allowing sound-guided motor
+12. Test stationary safe robot orientation before allowing sound-guided motor
    turning during interaction.
-9. Run complete CPU/GPU latency, overrun, FPS and resource comparisons.
-10. Wrap only validated components as ROS 2 nodes and prepare the final
+13. Run complete CPU/GPU latency, overrun, FPS and resource comparisons.
+14. Wrap only validated components as ROS 2 nodes and prepare the final
     demonstration/evaluation artifacts.
 
 ## Lab/Jetson work

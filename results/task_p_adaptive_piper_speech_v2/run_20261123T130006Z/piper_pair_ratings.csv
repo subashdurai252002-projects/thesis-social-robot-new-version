@@ -1,0 +1,7 @@
+pair_order,pair_key,experiment,text_id,candidate_a,candidate_b,difference_noticeable,clearer_choice,clearer_candidate,comfort_choice,comfort_candidate,preferred_choice,preferred_candidate
+1,default_vs_pause_080,clarity_pause,multi_sentence,default_pause,pause_080,yes,e,equal,e,equal,a,default_pause
+2,multi_normal_vs_fast,speed,multi_sentence,fast_070,normal_100,yes,e,equal,e,equal,b,normal_100
+3,medium_normal_vs_fast,speed,medium,normal_100,fast_070,yes,e,equal,e,equal,a,normal_100
+4,medium_normal_vs_slow,speed,medium,slow_140,normal_100,yes,e,equal,e,equal,a,slow_140
+5,multi_normal_vs_slow,speed,multi_sentence,normal_100,slow_140,yes,e,equal,e,equal,a,normal_100
+6,default_vs_pause_050,clarity_pause,multi_sentence,pause_050,default_pause,yes,e,equal,e,equal,b,default_pause

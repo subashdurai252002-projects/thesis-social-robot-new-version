@@ -8,6 +8,10 @@ ReSpeaker six-channel capture
 → processed channel 0 for Faster-Whisper `small.en` on CPU (INT8)
 → text validity / silence checks
 → owner-engagement permission at speech start and after transcription
+→ local interaction-scoped speech-profile control
+   ├─ fast: Piper length scale 0.70
+   ├─ normal: Piper length scale 1.00
+   └─ slow/clarity: Piper length scale 1.40
 → rule-based OpenAI model routing
    ├─ simple question → gpt-6-luna
    └─ complex or context-dependent question → gpt-6.1-terra
@@ -23,6 +27,12 @@ reopening window, two-stage active-conversation silence handling, barge-in
 verification, cancellation, and protections against acknowledging silence,
 punctuation-only recognition, rejected speech or exit commands.  The visual
 interaction controller now starts and ends this path.
+
+Speech-profile controls are local and do not call OpenAI. A new interaction
+resets to normal; reopening the same conversation preserves the profile.
+Conflicting controls request clarification, and incomplete speed fragments are
+not forwarded to OpenAI. Detailed evidence is in
+`21_adaptive_speech_output.md`.
 
 ## Laptop vision, attention and liveness path
 

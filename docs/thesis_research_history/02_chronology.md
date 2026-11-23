@@ -26,7 +26,8 @@ This chronology combines Git history with saved experiment evidence.
 | Conversation ownership and engagement | Four-state owner gate, utterance permission, release cancellation, silence policy, reopening and rearm | commit `0ef73a0`; document 20 |
 | Lip-motion evidence | Eight-stage numerical diagnostic and owner-only live shadow integration | commit `0ef73a0`; `results/task_o_lip_motion_diagnostic`; document 20 |
 | Private research-data sharing | Created a separate access-controlled Git LFS repository containing 30 consented videos, 7 synchronized six-channel WAV files, a manifest and SHA-256 checksums | private dataset commit `40b0965`; no participant media in the public repository |
-| Current point | Laptop implementation complete for tested ownership paths; GPU/robot and multi-person validation pending | 23 November 2026 audit |
+| Adaptive Piper speech output | Listening comparison, interaction-local fast/normal/slow profiles, local controls, combined requests, clarification, bounded audio cleanup and focused live validation | Task 2 evidence; `21_adaptive_speech_output.md` |
+| Current point | Tasks 1 and 2 laptop implementations complete; Task 3 demonstration definition is next; GPU/robot and multi-person validation remain pending | 23 November 2026 audit |
 
 ## Repository milestones
 

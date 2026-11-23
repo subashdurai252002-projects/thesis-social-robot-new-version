@@ -1,0 +1,50 @@
+{
+  "camera_used": false,
+  "candidate_durations": {
+    "default_pause": {
+      "mean_audio_duration_seconds": 6.0894,
+      "samples": 2
+    },
+    "fast_070": {
+      "mean_audio_duration_seconds": 4.0403,
+      "samples": 2
+    },
+    "normal_100": {
+      "mean_audio_duration_seconds": 5.149,
+      "samples": 4
+    },
+    "pause_050": {
+      "mean_audio_duration_seconds": 6.9791,
+      "samples": 1
+    },
+    "pause_080": {
+      "mean_audio_duration_seconds": 7.3005,
+      "samples": 1
+    },
+    "slow_140": {
+      "mean_audio_duration_seconds": 6.8731,
+      "samples": 2
+    }
+  },
+  "clearer_candidate_counts": {
+    "equal": 6
+  },
+  "comfort_candidate_counts": {
+    "equal": 6
+  },
+  "completed_comparisons": 6,
+  "generated_audio_samples": 12,
+  "microphone_used": false,
+  "noticeable_difference_counts": {
+    "yes": 6
+  },
+  "openai_used": false,
+  "participant_media_used": false,
+  "preferred_candidate_counts": {
+    "default_pause": 2,
+    "normal_100": 3,
+    "slow_140": 1
+  },
+  "random_seed": 20261123,
+  "status": "completed"
+}

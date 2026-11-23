@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import math
 import os
 import subprocess
 import threading
@@ -8,9 +9,19 @@ import wave
 from collections.abc import Callable, Mapping
 from pathlib import Path
 
-from openai import OpenAI
+from openai import APIError, OpenAI
 
 from barge_in_detector import BargeInDetector
+from gaze_pipeline.runtime.speech_profile import (
+    CONFIRMATIONS,
+    SPEECH_PROFILES,
+    combined_request_needs_repetition,
+    get_speech_profile,
+    incomplete_speed_fragment_needs_repetition,
+    parse_speech_profile_clarification,
+    parse_speech_profile_intent,
+    piper_length_scale_arguments,
+)
 from live_streaming_stt_local_agreement import (
     BLOCK_SECONDS as STREAM_BLOCK_SECONDS,
     MAX_WAIT_SECONDS as STREAM_MAX_WAIT_SECONDS,
@@ -59,6 +70,12 @@ ACKNOWLEDGEMENT_AUDIO_DIRECTORY = (
     ROOT
     / "runtime_audio"
     / "acknowledgements"
+)
+
+SPEECH_PROFILE_CONTROL_AUDIO_DIRECTORY = (
+    ROOT
+    / "runtime_audio"
+    / "speech_profile_controls"
 )
 
 ACKNOWLEDGEMENT_PHRASES = {
@@ -236,6 +253,17 @@ SILENCE_END_TEXT = (
     "I'll end our conversation for now. "
     "Look at me if you need help again."
 )
+SPEECH_PROFILE_CLARIFICATION_TEXT = (
+    "Would you like me to speak slower, faster, "
+    "or at normal speed?"
+)
+SPEECH_PROFILE_ALREADY_ACTIVE_TEXT = (
+    "I'm already using that speaking speed."
+)
+SPEECH_PROFILE_REPEAT_REQUEST_TEXT = (
+    "Okay. Please repeat your question. "
+    "I did not hear the complete request."
+)
 
 
 def is_exit_phrase(text):
@@ -377,18 +405,98 @@ def prepare_acknowledgement_audio():
 
     audio_files = {}
 
-    for category, phrases in (
-        ACKNOWLEDGEMENT_PHRASES.items()
-    ):
-        for index, phrase in enumerate(
-            phrases,
-            start=1,
+    for profile_name in SPEECH_PROFILES:
+        profile_directory = (
+            ACKNOWLEDGEMENT_AUDIO_DIRECTORY
+            if profile_name == "normal"
+            else ACKNOWLEDGEMENT_AUDIO_DIRECTORY / profile_name
+        )
+        profile_directory.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        for category, phrases in (
+            ACKNOWLEDGEMENT_PHRASES.items()
         ):
+            for index, phrase in enumerate(
+                phrases,
+                start=1,
+            ):
+                audio_file = (
+                    profile_directory
+                    / f"{category}_{index:02d}.wav"
+                )
+                audio_files[
+                    (profile_name, category, index - 1)
+                ] = str(audio_file)
+
+                if audio_file.is_file():
+                    continue
+
+                print(
+                    "Generating acknowledgement audio:",
+                    profile_name,
+                    category,
+                    f"{index}/{len(phrases)}",
+                )
+                subprocess.run(
+                    [
+                        PIPER_COMMAND,
+                        "--model",
+                        PIPER_MODEL,
+                        *piper_length_scale_arguments(
+                            profile_name
+                        ),
+                        "--output-file",
+                        str(audio_file),
+                    ],
+                    input=phrase,
+                    text=True,
+                    check=True,
+                )
+
+    return audio_files
+
+
+def prepare_speech_profile_control_audio():
+    """Prepare the small fixed set of adaptive-speed control replies."""
+
+    SPEECH_PROFILE_CONTROL_AUDIO_DIRECTORY.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+    audio_files = {}
+
+    controls_by_profile = {
+        profile_name: {
+            "confirmation": CONFIRMATIONS[profile_name],
+            "already_active": SPEECH_PROFILE_ALREADY_ACTIVE_TEXT,
+            "clarification": SPEECH_PROFILE_CLARIFICATION_TEXT,
+            "repeat_request": SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
+        }
+        for profile_name in SPEECH_PROFILES
+    }
+    controls_by_profile["slow"]["clarity_confirmation"] = (
+        CONFIRMATIONS["clarity"]
+    )
+
+    for profile_name, controls in controls_by_profile.items():
+        profile_directory = (
+            SPEECH_PROFILE_CONTROL_AUDIO_DIRECTORY
+            / profile_name
+        )
+        profile_directory.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        for control_name, text in controls.items():
             audio_file = (
-                ACKNOWLEDGEMENT_AUDIO_DIRECTORY
-                / f"{category}_{index:02d}.wav"
+                profile_directory
+                / f"{control_name}.wav"
             )
-            audio_files[(category, index - 1)] = str(
+            audio_files[(profile_name, text)] = str(
                 audio_file
             )
 
@@ -396,19 +504,22 @@ def prepare_acknowledgement_audio():
                 continue
 
             print(
-                "Generating acknowledgement audio:",
-                category,
-                f"{index}/{len(phrases)}",
+                "Generating speech-profile control audio:",
+                profile_name,
+                control_name,
             )
             subprocess.run(
                 [
                     PIPER_COMMAND,
                     "--model",
                     PIPER_MODEL,
+                    *piper_length_scale_arguments(
+                        profile_name
+                    ),
                     "--output-file",
                     str(audio_file),
                 ],
-                input=phrase,
+                input=text,
                 text=True,
                 check=True,
             )
@@ -420,6 +531,7 @@ def select_acknowledgement(
     text,
     positions,
     audio_files,
+    profile_name="normal",
 ):
     selected_model, _, routing_reason = (
         select_openai_model(text)
@@ -437,7 +549,9 @@ def select_acknowledgement(
     phrases = ACKNOWLEDGEMENT_PHRASES[category]
     position = positions[category]
     phrase = phrases[position]
-    audio_file = audio_files[(category, position)]
+    audio_file = audio_files[
+        (profile_name, category, position)
+    ]
     positions[category] = (
         position + 1
     ) % len(phrases)
@@ -753,19 +867,45 @@ def record_streaming_turn(
         )
         return None
 
+    utterance_duration = (
+        state["last_speech_at"]
+        - state["speech_started_at"]
+    )
+
+    diagnostic_audio_seconds = (
+        len(raw_audio)
+        / (SAMPLE_RATE * CHANNELS * SAMPLE_WIDTH)
+    )
+    diagnostic_cpu_started = time.process_time()
+    diagnostic_threads_before = tuple(
+        thread.name for thread in threading.enumerate()
+    )
+
+    try:
+        diagnostic_load_before = os.getloadavg()[0]
+    except (AttributeError, OSError):
+        diagnostic_load_before = None
+
     final_started = time.perf_counter()
     final_text = transcribe_streaming_audio(
         model,
         raw_to_mono(raw_audio),
     )
     transcription_finished = time.perf_counter()
+    diagnostic_process_cpu = (
+        time.process_time() - diagnostic_cpu_started
+    )
+    diagnostic_threads_after = tuple(
+        thread.name for thread in threading.enumerate()
+    )
+
+    try:
+        diagnostic_load_after = os.getloadavg()[0]
+    except (AttributeError, OSError):
+        diagnostic_load_after = None
 
     final_inference = (
         transcription_finished - final_started
-    )
-    utterance_duration = (
-        state["last_speech_at"]
-        - state["speech_started_at"]
     )
     speech_start_to_text = (
         transcription_finished
@@ -786,6 +926,15 @@ def record_streaming_turn(
         "Final inference time:",
         round(final_inference, 2),
         "seconds",
+    )
+    print(
+        "Final inference diagnostics:",
+        f"audio={diagnostic_audio_seconds:.2f}s",
+        f"process_cpu={diagnostic_process_cpu:.2f}s",
+        f"threads_before={diagnostic_threads_before}",
+        f"threads_after={diagnostic_threads_after}",
+        f"load1_before={diagnostic_load_before}",
+        f"load1_after={diagnostic_load_after}",
     )
     print(
         "Utterance duration:",
@@ -907,6 +1056,9 @@ def prepare_conversation_runtime():
     acknowledgement_audio_files = (
         prepare_acknowledgement_audio()
     )
+    speech_profile_control_audio_files = (
+        prepare_speech_profile_control_audio()
+    )
     acknowledgement_positions = {
         category: 0
         for category in ACKNOWLEDGEMENT_PHRASES
@@ -924,8 +1076,117 @@ def prepare_conversation_runtime():
         "barge_in": barge_in,
         "acknowledgement_audio_files": acknowledgement_audio_files,
         "acknowledgement_positions": acknowledgement_positions,
+        "speech_profile_control_audio_files": (
+            speech_profile_control_audio_files
+        ),
+        "speech_profile_name": "normal",
+        "speech_profile_clarification_pending": False,
         "openai_client": openai_client,
     }
+
+
+def close_conversation_runtime(runtime) -> None:
+    """Close only resources with a supported public cleanup method."""
+
+    if not isinstance(runtime, dict):
+        raise TypeError("runtime must be a dictionary.")
+
+    openai_client = runtime.get("openai_client")
+    close_client = getattr(openai_client, "close", None)
+
+    if callable(close_client):
+        close_client()
+        runtime["openai_client"] = None
+
+
+def close_runtime_after_worker(
+    runtime,
+    worker,
+    timeout_seconds: float,
+) -> bool:
+    """Join one worker within a bound, then close supported resources."""
+
+    timeout = float(timeout_seconds)
+
+    if not math.isfinite(timeout) or timeout <= 0.0:
+        raise ValueError(
+            "timeout_seconds must be finite and greater than zero."
+        )
+
+    if worker is not None and worker.is_alive():
+        worker.join(timeout=timeout)
+
+    if worker is not None and worker.is_alive():
+        return False
+
+    close_conversation_runtime(runtime)
+    return True
+
+
+def get_active_speech_profile(runtime) -> str:
+    """Return the validated session-local Piper profile."""
+
+    profile_name = runtime.get(
+        "speech_profile_name",
+        "normal",
+    )
+    get_speech_profile(profile_name)
+    return profile_name
+
+
+def set_active_speech_profile(runtime, profile_name: str) -> None:
+    """Set one validated session-local Piper profile."""
+
+    get_speech_profile(profile_name)
+    runtime["speech_profile_name"] = profile_name
+    print("Active Piper speech profile:", profile_name)
+
+
+def reset_speech_profile(runtime) -> None:
+    """Reset adaptive speech state for a genuinely fresh interaction."""
+
+    runtime["speech_profile_name"] = "normal"
+    runtime["speech_profile_clarification_pending"] = False
+    print("Piper speech profile reset: normal")
+
+
+def synthesize_piper_text(runtime, text, output_file) -> None:
+    """Synthesize text using the active session-local Piper profile."""
+
+    profile_name = get_active_speech_profile(runtime)
+    subprocess.run(
+        [
+            PIPER_COMMAND,
+            "--model",
+            PIPER_MODEL,
+            *piper_length_scale_arguments(profile_name),
+            "--output-file",
+            str(output_file),
+        ],
+        input=str(text),
+        text=True,
+        check=True,
+    )
+
+
+def get_speech_profile_control_audio(runtime, text) -> str:
+    """Return one pre-generated control reply for the active profile."""
+
+    profile_name = get_active_speech_profile(runtime)
+    return runtime["speech_profile_control_audio_files"][
+        (profile_name, str(text))
+    ]
+
+
+def play_speech_profile_control(runtime, text):
+    """Play one local profile response with normal barge-in support."""
+
+    audio_file = get_speech_profile_control_audio(
+        runtime,
+        text,
+    )
+    print("Speech-profile response:", text)
+    return runtime["barge_in"].play_and_monitor(audio_file)
 
 
 def speak_fixed_text(runtime, text, *, monitor_barge_in=True):
@@ -940,17 +1201,10 @@ def speak_fixed_text(runtime, text, *, monitor_barge_in=True):
         raise TypeError("monitor_barge_in must be a Boolean.")
 
     print("Generating fixed speech with Piper:", spoken_text)
-    subprocess.run(
-        [
-            PIPER_COMMAND,
-            "--model",
-            PIPER_MODEL,
-            "--output-file",
-            PIPER_AUDIO_FILE,
-        ],
-        input=spoken_text,
-        text=True,
-        check=True,
+    synthesize_piper_text(
+        runtime,
+        spoken_text,
+        PIPER_AUDIO_FILE,
     )
 
     print("Playing fixed speech...")
@@ -1296,6 +1550,114 @@ def run_conversation_session(
                 print("Conversation ended.")
                 break
 
+            profile_confirmation_text = None
+
+            if runtime.get(
+                "speech_profile_clarification_pending",
+                False,
+            ):
+                clarified_profile = (
+                    parse_speech_profile_clarification(text)
+                )
+                runtime[
+                    "speech_profile_clarification_pending"
+                ] = False
+
+                if clarified_profile is not None:
+                    current_profile = (
+                        get_active_speech_profile(runtime)
+                    )
+                    set_active_speech_profile(
+                        runtime,
+                        clarified_profile,
+                    )
+                    confirmation_text = (
+                        SPEECH_PROFILE_ALREADY_ACTIVE_TEXT
+                        if clarified_profile == current_profile
+                        else CONFIRMATIONS[clarified_profile]
+                    )
+                    play_speech_profile_control(
+                        runtime,
+                        confirmation_text,
+                    )
+                    completed_turns += 1
+                    print("Listening for the next turn...")
+                    continue
+
+            profile_intent = parse_speech_profile_intent(
+                text
+            )
+
+            if profile_intent.ambiguous:
+                runtime[
+                    "speech_profile_clarification_pending"
+                ] = True
+                play_speech_profile_control(
+                    runtime,
+                    SPEECH_PROFILE_CLARIFICATION_TEXT,
+                )
+                completed_turns += 1
+                print("Listening for the clarification...")
+                continue
+
+            if profile_intent.matched:
+                current_profile = get_active_speech_profile(
+                    runtime
+                )
+                requested_profile = (
+                    profile_intent.profile_name
+                )
+                set_active_speech_profile(
+                    runtime,
+                    requested_profile,
+                )
+                profile_confirmation_text = (
+                    SPEECH_PROFILE_ALREADY_ACTIVE_TEXT
+                    if requested_profile == current_profile
+                    else profile_intent.confirmation_text
+                )
+
+                if profile_intent.control_only:
+                    play_speech_profile_control(
+                        runtime,
+                        profile_confirmation_text,
+                    )
+                    completed_turns += 1
+                    print("Listening for the next turn...")
+                    continue
+
+                text = profile_intent.remaining_text
+                print(
+                    "Preserved request after speed control:",
+                    text,
+                )
+
+                if combined_request_needs_repetition(text):
+                    play_speech_profile_control(
+                        runtime,
+                        SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
+                    )
+                    completed_turns += 1
+                    print(
+                        "Incomplete combined request was not sent "
+                        "to OpenAI."
+                    )
+                    print("Listening for the repeated question...")
+                    continue
+
+            if incomplete_speed_fragment_needs_repetition(text):
+                play_speech_profile_control(
+                    runtime,
+                    SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
+                )
+                completed_turns += 1
+                print(
+                    "Incomplete speed-control fragment was not sent "
+                    "to OpenAI."
+                )
+                print("Listening for the complete request...")
+                continue
+
             if is_greeting_phrase(text):
                 print(
                     "Greeting detected; replying directly without "
@@ -1309,15 +1671,28 @@ def run_conversation_session(
                 print("Listening for the next turn...")
                 continue
 
-            (
-                acknowledgement_category,
-                acknowledgement_phrase,
-                acknowledgement_audio_file,
-            ) = select_acknowledgement(
-                text,
-                acknowledgement_positions,
-                acknowledgement_audio_files,
-            )
+            if profile_confirmation_text is not None:
+                acknowledgement_category = "speech_profile"
+                acknowledgement_phrase = (
+                    profile_confirmation_text
+                )
+                acknowledgement_audio_file = (
+                    get_speech_profile_control_audio(
+                        runtime,
+                        profile_confirmation_text,
+                    )
+                )
+            else:
+                (
+                    acknowledgement_category,
+                    acknowledgement_phrase,
+                    acknowledgement_audio_file,
+                ) = select_acknowledgement(
+                    text,
+                    acknowledgement_positions,
+                    acknowledgement_audio_files,
+                    get_active_speech_profile(runtime),
+                )
 
             print(
                 "Acknowledgement category:",
@@ -1369,14 +1744,69 @@ def run_conversation_session(
             print("Generating OpenAI reply...")
             llm_started = time.perf_counter()
 
-            (
-                reply,
-                previous_response_id,
-            ) = generate_openai_reply(
-                openai_client,
-                text,
-                previous_response_id,
-            )
+            try:
+                (
+                    reply,
+                    previous_response_id,
+                ) = generate_openai_reply(
+                    openai_client,
+                    text,
+                    previous_response_id,
+                )
+            except APIError as error:
+                if acknowledgement_waiter is not None:
+                    acknowledgement_waiter.join()
+
+                print(
+                    "OpenAI request failed:",
+                    type(error).__name__,
+                    str(error),
+                )
+
+                if (
+                    cancel_event is not None
+                    and cancel_event.is_set()
+                ):
+                    if not conversation_may_continue(
+                        conversation_should_continue
+                    ):
+                        stop_reason = "owner_released"
+                        print(
+                            "Owner left during the OpenAI request; "
+                            "ending silently."
+                        )
+                    else:
+                        stop_reason = "shutdown_requested"
+                        print(
+                            "Shutdown requested during the "
+                            "OpenAI request."
+                        )
+                    break
+
+                if not conversation_may_continue(
+                    conversation_should_continue
+                ):
+                    stop_reason = "owner_released"
+                    print(
+                        "Owner left during the OpenAI request; "
+                        "ending silently."
+                    )
+                    break
+
+                speak_fixed_text(
+                    runtime,
+                    (
+                        "I'm sorry, I couldn't reach the online "
+                        "service. Please try again."
+                    ),
+                    monitor_barge_in=False,
+                )
+                print(
+                    "Conversation remains active with Piper profile:",
+                    get_active_speech_profile(runtime),
+                )
+                print("Listening for the next turn...")
+                continue
 
             llm_finished = time.perf_counter()
             print("OpenAI reply:", reply)
@@ -1384,17 +1814,10 @@ def run_conversation_session(
             print("Generating speech with Piper...")
             piper_started = time.perf_counter()
 
-            subprocess.run(
-                [
-                    PIPER_COMMAND,
-                    "--model",
-                    PIPER_MODEL,
-                    "--output-file",
-                    PIPER_AUDIO_FILE,
-                ],
-                input=reply,
-                text=True,
-                check=True,
+            synthesize_piper_text(
+                runtime,
+                reply,
+                PIPER_AUDIO_FILE,
             )
 
             piper_finished = time.perf_counter()
@@ -1554,6 +1977,7 @@ def run_conversation_session(
         "completed_turns": completed_turns,
         "stop_reason": stop_reason,
         "previous_response_id": previous_response_id,
+        "speech_profile_name": get_active_speech_profile(runtime),
     }
 
 
