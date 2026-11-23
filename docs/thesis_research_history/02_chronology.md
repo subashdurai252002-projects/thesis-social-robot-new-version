@@ -23,8 +23,9 @@ This chronology combines Git history with saved experiment evidence.
 | Complete laptop interaction | Visual activation connected to greeting, Faster-Whisper, OpenAI, Piper, goodbye and waiting | commit `85e6a8a` |
 | ReSpeaker and multi-person evidence | Cocktail-audio baseline, repeated direction validation and beamforming comparison | commits `7173a14`, `4252b37`; tasks M/N |
 | Home milestone and transfer design | Problem log, Jetson/ROS 2 plan, hardware placement and home-status audit | commits `b171eac` through `af775dd` |
-| Conversation ownership and engagement | Four-state owner gate, utterance permission, release cancellation, silence policy, reopening and rearm | uncommitted Task 1 checkpoint; document 20 |
-| Lip-motion evidence | Eight-stage numerical diagnostic and owner-only live shadow integration | `results/task_o_lip_motion_diagnostic`; document 20 |
+| Conversation ownership and engagement | Four-state owner gate, utterance permission, release cancellation, silence policy, reopening and rearm | commit `0ef73a0`; document 20 |
+| Lip-motion evidence | Eight-stage numerical diagnostic and owner-only live shadow integration | commit `0ef73a0`; `results/task_o_lip_motion_diagnostic`; document 20 |
+| Private research-data sharing | Created a separate access-controlled Git LFS repository containing 30 consented videos, 7 synchronized six-channel WAV files, a manifest and SHA-256 checksums | private dataset commit `40b0965`; no participant media in the public repository |
 | Current point | Laptop implementation complete for tested ownership paths; GPU/robot and multi-person validation pending | 23 November 2026 audit |
 
 ## Repository milestones
@@ -45,8 +46,11 @@ This chronology combines Git history with saved experiment evidence.
 - `dabaca3` — Document camera, microphone and speaker placement design
 - `4252b37` — Add audio-direction and multi-person evaluation evidence
 - `af775dd` — Document completed home-development milestone
+- `0ef73a0` — Complete laptop conversation engagement checkpoint
 
-These hashes describe saved Git milestones.  Conversation ownership,
-engagement, reopening, silence, rearming and lip shadow were developed after
-`af775dd` and belong to the next reviewed checkpoint; no commit hash is claimed
-until that checkpoint is actually created.
+These hashes describe saved public-repository Git milestones. Conversation
+ownership, engagement, reopening, silence handling, rearming and diagnostic
+lip-motion shadow evidence were reviewed and saved in commit `0ef73a0`.
+Consented audiovisual research data is maintained separately in an
+access-controlled private repository at checkpoint `40b0965`; participant
+media and identity documents are excluded from the public repository.

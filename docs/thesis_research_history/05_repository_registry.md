@@ -8,6 +8,24 @@
 | Remote | `git@github.com:subashdurai252002-projects/thesis-social-robot-new-version.git` |
 | Main branch | `main` |
 
+## Private research-data repository
+
+| Item | Value |
+|---|---|
+| Local repository | `/home/subash/social-robot-private-dataset` |
+| Remote | `git@github.com:subashdurai252002-projects/social-robot-private-dataset.git` |
+| Visibility | Private; access restricted to approved collaborators |
+| Dataset checkpoint | `40b09659aa6bcee69c61b665aa1a338c92511a02` |
+| Media selection | 30 videos and 7 synchronized six-channel WAV recordings |
+| Storage | Git LFS for audiovisual files |
+| Integrity evidence | `metadata/SHA256SUMS` |
+| Public-repository policy | No participant recordings, identities or consent documents are stored in the public source repository |
+
+The private dataset contains consented two-person tracking, synchronized
+two-person speaker tests, and attention/liveness recordings. Participant
+identifiers are pseudonymous. Access does not authorize redistribution,
+public forks, public demonstrations or unrelated use.
+
 ## Cloned research repositories
 
 | Repository | Exact URL | Audited commit | Local path | Use |
