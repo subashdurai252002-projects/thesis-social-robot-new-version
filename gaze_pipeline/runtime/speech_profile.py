@@ -49,6 +49,10 @@ SPEECH_PROFILES = {
 
 
 POLITE_PREFIXES = (
+    ("so",),
+    ("okay",),
+    ("ok",),
+    ("well",),
     ("i", "asked"),
     ("i", "said"),
     ("could", "you"),
@@ -166,6 +170,11 @@ REQUEST_PATTERNS = (
     (
         "fast",
         "fast",
+        ("speak", "fastly"),
+    ),
+    (
+        "fast",
+        "fast",
         ("speak", "fast"),
     ),
     (
@@ -191,6 +200,11 @@ REQUEST_PATTERNS = (
     (
         "fast",
         "fast",
+        ("talk", "fastly"),
+    ),
+    (
+        "fast",
+        "fast",
         ("talk", "fast"),
     ),
     (
@@ -202,6 +216,11 @@ REQUEST_PATTERNS = (
         "fast",
         "fast",
         ("speed", "up"),
+    ),
+    (
+        "fast",
+        "fast",
+        ("go", "fastly"),
     ),
     (
         "fast",
@@ -253,6 +272,26 @@ REQUEST_PATTERNS = (
     (
         "normal",
         "normal",
+        ("speak", "at", "medium", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("speak", "in", "medium", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("speak", "at", "a", "medium", "pace"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("speak", "in", "a", "medium", "pace"),
+    ),
+    (
+        "normal",
+        "normal",
         ("speak", "normal"),
     ),
     (
@@ -269,6 +308,16 @@ REQUEST_PATTERNS = (
         "normal",
         "normal",
         ("talk", "in", "normal", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("talk", "at", "medium", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("talk", "in", "medium", "speed"),
     ),
     (
         "normal",
@@ -293,6 +342,11 @@ REQUEST_PATTERNS = (
     (
         "normal",
         "normal",
+        ("use", "medium", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
         ("reset", "your", "speaking", "speed"),
     ),
     (
@@ -304,6 +358,16 @@ REQUEST_PATTERNS = (
         "normal",
         "normal",
         ("normal", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("medium", "speed"),
+    ),
+    (
+        "normal",
+        "normal",
+        ("medium", "pace"),
     ),
 
     # Clarity requests use the tested slow profile.
@@ -363,11 +427,15 @@ CONFLICT_CUES = {
     },
     "fast": {
         ("fast",),
+        ("fastly",),
         ("faster",),
         ("quickly",),
         ("more", "quickly"),
     },
     "normal": {
+        ("medium",),
+        ("medium", "pace"),
+        ("medium", "speed"),
         ("normal",),
         ("normal", "speed"),
         ("usual", "speed"),
@@ -540,12 +608,16 @@ def parse_speech_profile_intent(
 
         if request_word_set & {
             "fast",
+            "fastly",
             "faster",
             "quickly",
         }:
             requested_directions.add("fast")
 
-        if "normal" in request_word_set:
+        if request_word_set & {
+            "medium",
+            "normal",
+        }:
             requested_directions.add("normal")
 
         if len(requested_directions) > 1:

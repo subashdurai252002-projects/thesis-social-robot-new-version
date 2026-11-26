@@ -35,6 +35,7 @@ from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     conversation_head_pose_supports_engagement,
     conversation_visual_supports_engagement,
     head_pitch_supports_screen_attention,
+    mobileone_head_pose_supports_attention,
     screen_eye_region_supports_attention,
     screen_region_supports_attention,
 )
@@ -206,6 +207,7 @@ def test_measured_screen_edges_are_supporting_evidence() -> None:
         (-0.115, -0.075),
         (-0.647, -0.133),
         (+0.442, -0.060),
+        (+0.571, +0.085),
     )
 
     for horizontal, vertical in measured_screen_points:
@@ -225,6 +227,7 @@ def test_measured_outside_targets_are_rejected() -> None:
     measured_outside_points = (
         (-0.839, -0.043),
         (+0.826, -0.041),
+        (+0.760, +0.069),
     )
 
     for horizontal, vertical in measured_outside_points:
@@ -267,6 +270,35 @@ def test_head_pitch_rejects_clearly_above_target() -> None:
     require_raises(
         ValueError,
         lambda: head_pitch_supports_screen_attention(float("nan")),
+    )
+
+
+def test_fused_gaze_requires_bounded_gaze_and_forward_head() -> None:
+    """The preserved cross-cue candidate accepts only its bounded region."""
+
+    require(
+        mobileone_head_pose_supports_attention(-4.0, -10.0, 2.0),
+        "Centred whole-face gaze with a forward head was rejected.",
+    )
+    require(
+        not mobileone_head_pose_supports_attention(-30.0, -10.0, 2.0),
+        "Outside horizontal gaze passed the fused candidate.",
+    )
+    require(
+        not mobileone_head_pose_supports_attention(-4.0, 18.0, 2.0),
+        "Outside vertical gaze passed the fused candidate.",
+    )
+    require(
+        not mobileone_head_pose_supports_attention(-4.0, -10.0, 9.0),
+        "A turned head passed the fused candidate.",
+    )
+    require_raises(
+        ValueError,
+        lambda: mobileone_head_pose_supports_attention(
+            float("nan"),
+            -10.0,
+            0.0,
+        ),
     )
 
 
@@ -467,7 +499,7 @@ def test_visual_evidence_becomes_sustained_candidate() -> None:
 
 
 def test_looking_away_resets_progress() -> None:
-    """Negative visual evidence must immediately reset timing."""
+    """Brief eye motion is tolerated; sustained away evidence resets."""
 
     estimator = VisualAttentionEvidenceEstimator()
     tracker = SustainedAttentionTracker()
@@ -495,7 +527,7 @@ def test_looking_away_resets_progress() -> None:
         0.5,
         centre,
     )
-    reset = observe_visual_evidence(
+    brief = observe_visual_evidence(
         tracker,
         1,
         0.6,
@@ -503,8 +535,24 @@ def test_looking_away_resets_progress() -> None:
     )
 
     require(
+        brief.consecutive_positive_checks == 2,
+        "Brief eye motion unexpectedly reset progress.",
+    )
+    require(
+        brief.state == SustainedAttentionState.ACCUMULATING,
+        "Brief eye motion cleared the attention state.",
+    )
+
+    reset = observe_visual_evidence(
+        tracker,
+        1,
+        1.21,
+        away,
+    )
+
+    require(
         reset.consecutive_positive_checks == 0,
-        "Looking away did not reset progress.",
+        "Sustained looking away did not reset progress.",
     )
     require(
         not reset.candidate_event,
@@ -642,6 +690,10 @@ def main() -> None:
         (
             "head_pitch_rejects_clearly_above_target",
             test_head_pitch_rejects_clearly_above_target,
+        ),
+        (
+            "fused_gaze_requires_bounded_gaze_and_forward_head",
+            test_fused_gaze_requires_bounded_gaze_and_forward_head,
         ),
         (
             "conversation_maintenance_uses_relative_head_pose",

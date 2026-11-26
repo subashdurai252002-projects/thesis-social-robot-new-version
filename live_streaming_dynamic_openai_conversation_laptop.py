@@ -694,6 +694,25 @@ class CombinedCancelEvent:
         return any(event.is_set() for event in self._events)
 
 
+def emit_conversation_event(
+    event_callback: Callable[[str, Mapping[str, object]], None] | None,
+    event_name: str,
+    **payload: object,
+) -> None:
+    """Report sanitized conversation state without controlling the runtime."""
+
+    if event_callback is None:
+        return
+
+    try:
+        event_callback(event_name, payload)
+    except Exception as error:
+        print(
+            "Conversation dashboard callback warning:",
+            f"{type(error).__name__}: {error}",
+        )
+
+
 def record_streaming_turn(
     model,
     utterance_permission: (
@@ -955,6 +974,8 @@ def record_streaming_turn(
         "text": final_text,
         "raw_audio": raw_audio,
         "rejected": False,
+        "whisper_seconds": final_inference,
+        "speech_end_to_text_seconds": speech_end_to_text,
         "transcription_finished": (
             transcription_finished
         ),
@@ -1239,9 +1260,13 @@ def run_conversation_session(
     silence_prompt_permission: (
         Callable[[], tuple[bool, str]] | None
     ) = None,
+    local_command_handler: Callable[[str], str | None] | None = None,
     initial_turn: Mapping | None = None,
     previous_response_id: str | None = None,
     cancel_event=None,
+    event_callback: (
+        Callable[[str, Mapping[str, object]], None] | None
+    ) = None,
 ):
     """Run one conversation until an exit phrase or keyboard interrupt."""
 
@@ -1286,6 +1311,14 @@ def run_conversation_session(
             "silence_prompt_permission must be callable or None."
         )
 
+    if (
+        local_command_handler is not None
+        and not callable(local_command_handler)
+    ):
+        raise ValueError(
+            "local_command_handler must be callable or None."
+        )
+
     if initial_turn is not None and not isinstance(
         initial_turn,
         Mapping,
@@ -1307,6 +1340,9 @@ def run_conversation_session(
         raise ValueError(
             "cancel_event must provide an is_set() method."
         )
+
+    if event_callback is not None and not callable(event_callback):
+        raise ValueError("event_callback must be callable or None.")
 
     model = runtime["model"]
     barge_in = runtime["barge_in"]
@@ -1338,6 +1374,12 @@ def run_conversation_session(
         "Say 'goodbye', 'stop conversation', "
         "'exit', or 'quit' to stop."
     )
+    emit_conversation_event(
+        event_callback,
+        "session_started",
+        speech_profile=get_active_speech_profile(runtime),
+        completed_turns=completed_turns,
+    )
 
     try:
         while True:
@@ -1367,6 +1409,12 @@ def run_conversation_session(
 
             print()
             print("-" * 40)
+            emit_conversation_event(
+                event_callback,
+                "listening",
+                speech_profile=get_active_speech_profile(runtime),
+                completed_turns=completed_turns,
+            )
 
             if pending_initial_turn is None:
                 turn = record_streaming_turn(
@@ -1419,6 +1467,14 @@ def run_conversation_session(
                 )
 
                 if consecutive_silent_windows == 1:
+                    emit_conversation_event(
+                        event_callback,
+                        "speaking",
+                        response=SILENCE_REMINDER_TEXT,
+                        route="LOCAL_SILENCE",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     speak_fixed_text(
                         runtime,
                         SILENCE_REMINDER_TEXT,
@@ -1426,6 +1482,14 @@ def run_conversation_session(
                     )
                     continue
 
+                emit_conversation_event(
+                    event_callback,
+                    "speaking",
+                    response=SILENCE_END_TEXT,
+                    route="LOCAL_SILENCE",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 speak_fixed_text(
                     runtime,
                     SILENCE_END_TEXT,
@@ -1512,6 +1576,18 @@ def run_conversation_session(
 
                 continue
 
+            emit_conversation_event(
+                event_callback,
+                "transcript_accepted",
+                text=text,
+                whisper_seconds=turn.get("whisper_seconds"),
+                speech_end_to_text_seconds=turn.get(
+                    "speech_end_to_text_seconds"
+                ),
+                speech_profile=get_active_speech_profile(runtime),
+                completed_turns=completed_turns,
+            )
+
             consecutive_silent_windows = update_silence_window_count(
                 consecutive_silent_windows,
                 owner_response_received=True,
@@ -1537,6 +1613,42 @@ def run_conversation_session(
                     )
                     continue
 
+            if not farewell_detected and local_command_handler is not None:
+                local_response = local_command_handler(text)
+
+                if local_response is not None:
+                    if (
+                        not isinstance(local_response, str)
+                        or not local_response.strip()
+                    ):
+                        raise TypeError(
+                            "local_command_handler must return a "
+                            "non-empty string or None."
+                        )
+
+                    print(
+                        "Local privacy command handled without "
+                        "OpenAI or audio retention."
+                    )
+                    emit_conversation_event(
+                        event_callback,
+                        "speaking",
+                        response=local_response,
+                        route="LOCAL_PRIVACY",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
+                    speak_fixed_text(runtime, local_response)
+                    completed_turns += 1
+                    emit_conversation_event(
+                        event_callback,
+                        "turn_completed",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
+                    print("Listening for the next turn...")
+                    continue
+
             with wave.open(AUDIO_FILE, "wb") as wav_file:
                 wav_file.setnchannels(CHANNELS)
                 wav_file.setsampwidth(SAMPLE_WIDTH)
@@ -1546,6 +1658,12 @@ def run_conversation_session(
             print("Saved audio:", AUDIO_FILE)
 
             if farewell_detected:
+                emit_conversation_event(
+                    event_callback,
+                    "ending",
+                    text=text,
+                    completed_turns=completed_turns,
+                )
                 print("Exit command detected.")
                 print("Conversation ended.")
                 break
@@ -1576,11 +1694,25 @@ def run_conversation_session(
                         if clarified_profile == current_profile
                         else CONFIRMATIONS[clarified_profile]
                     )
+                    emit_conversation_event(
+                        event_callback,
+                        "speaking",
+                        response=confirmation_text,
+                        route="LOCAL_CONTROL",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     play_speech_profile_control(
                         runtime,
                         confirmation_text,
                     )
                     completed_turns += 1
+                    emit_conversation_event(
+                        event_callback,
+                        "turn_completed",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     print("Listening for the next turn...")
                     continue
 
@@ -1592,11 +1724,25 @@ def run_conversation_session(
                 runtime[
                     "speech_profile_clarification_pending"
                 ] = True
+                emit_conversation_event(
+                    event_callback,
+                    "speaking",
+                    response=SPEECH_PROFILE_CLARIFICATION_TEXT,
+                    route="LOCAL_CONTROL",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 play_speech_profile_control(
                     runtime,
                     SPEECH_PROFILE_CLARIFICATION_TEXT,
                 )
                 completed_turns += 1
+                emit_conversation_event(
+                    event_callback,
+                    "turn_completed",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 print("Listening for the clarification...")
                 continue
 
@@ -1618,11 +1764,25 @@ def run_conversation_session(
                 )
 
                 if profile_intent.control_only:
+                    emit_conversation_event(
+                        event_callback,
+                        "speaking",
+                        response=profile_confirmation_text,
+                        route="LOCAL_CONTROL",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     play_speech_profile_control(
                         runtime,
                         profile_confirmation_text,
                     )
                     completed_turns += 1
+                    emit_conversation_event(
+                        event_callback,
+                        "turn_completed",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     print("Listening for the next turn...")
                     continue
 
@@ -1633,11 +1793,25 @@ def run_conversation_session(
                 )
 
                 if combined_request_needs_repetition(text):
+                    emit_conversation_event(
+                        event_callback,
+                        "speaking",
+                        response=SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
+                        route="LOCAL_CONTROL",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     play_speech_profile_control(
                         runtime,
                         SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
                     )
                     completed_turns += 1
+                    emit_conversation_event(
+                        event_callback,
+                        "turn_completed",
+                        speech_profile=get_active_speech_profile(runtime),
+                        completed_turns=completed_turns,
+                    )
                     print(
                         "Incomplete combined request was not sent "
                         "to OpenAI."
@@ -1646,11 +1820,25 @@ def run_conversation_session(
                     continue
 
             if incomplete_speed_fragment_needs_repetition(text):
+                emit_conversation_event(
+                    event_callback,
+                    "speaking",
+                    response=SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
+                    route="LOCAL_CONTROL",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 play_speech_profile_control(
                     runtime,
                     SPEECH_PROFILE_REPEAT_REQUEST_TEXT,
                 )
                 completed_turns += 1
+                emit_conversation_event(
+                    event_callback,
+                    "turn_completed",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 print(
                     "Incomplete speed-control fragment was not sent "
                     "to OpenAI."
@@ -1663,11 +1851,25 @@ def run_conversation_session(
                     "Greeting detected; replying directly without "
                     "acknowledgement or OpenAI."
                 )
+                emit_conversation_event(
+                    event_callback,
+                    "speaking",
+                    response=GREETING_RESPONSE,
+                    route="LOCAL_GREETING",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 speak_fixed_text(
                     runtime,
                     GREETING_RESPONSE,
                 )
                 completed_turns += 1
+                emit_conversation_event(
+                    event_callback,
+                    "turn_completed",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 print("Listening for the next turn...")
                 continue
 
@@ -1742,6 +1944,12 @@ def run_conversation_session(
                 )
 
             print("Generating OpenAI reply...")
+            emit_conversation_event(
+                event_callback,
+                "thinking",
+                route="OPENAI",
+                completed_turns=completed_turns,
+            )
             llm_started = time.perf_counter()
 
             try:
@@ -1793,12 +2001,21 @@ def run_conversation_session(
                     )
                     break
 
+                service_error_text = (
+                    "I'm sorry, I couldn't reach the online "
+                    "service. Please try again."
+                )
+                emit_conversation_event(
+                    event_callback,
+                    "speaking",
+                    response=service_error_text,
+                    route="LOCAL_ERROR",
+                    speech_profile=get_active_speech_profile(runtime),
+                    completed_turns=completed_turns,
+                )
                 speak_fixed_text(
                     runtime,
-                    (
-                        "I'm sorry, I couldn't reach the online "
-                        "service. Please try again."
-                    ),
+                    service_error_text,
                     monitor_barge_in=False,
                 )
                 print(
@@ -1842,6 +2059,20 @@ def run_conversation_session(
 
             print("Playing generated speech...")
             playback_started = time.perf_counter()
+
+            emit_conversation_event(
+                event_callback,
+                "speaking",
+                response=reply,
+                route="OPENAI",
+                speech_profile=get_active_speech_profile(runtime),
+                openai_seconds=llm_finished - llm_started,
+                piper_seconds=piper_finished - piper_started,
+                response_start_seconds=(
+                    playback_started - transcription_finished
+                ),
+                completed_turns=completed_turns,
+            )
 
             barge_result = barge_in.play_and_monitor(
                 PIPER_AUDIO_FILE
@@ -1963,6 +2194,13 @@ def run_conversation_session(
                 )
 
             completed_turns += 1
+            emit_conversation_event(
+                event_callback,
+                "turn_completed",
+                playback_seconds=playback_time,
+                speech_profile=get_active_speech_profile(runtime),
+                completed_turns=completed_turns,
+            )
             print("Listening for the next turn...")
 
     except KeyboardInterrupt:
@@ -1971,6 +2209,14 @@ def run_conversation_session(
         print(
             "Conversation stopped with Ctrl+C."
         )
+
+    emit_conversation_event(
+        event_callback,
+        "session_ended",
+        stop_reason=stop_reason,
+        speech_profile=get_active_speech_profile(runtime),
+        completed_turns=completed_turns,
+    )
 
     return {
         "person_id": person_id,

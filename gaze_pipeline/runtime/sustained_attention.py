@@ -11,7 +11,8 @@ Default timing follows the completed laptop experiments:
 - evaluate one positive check every 0.5 seconds;
 - require three consecutive positive checks;
 - emit one ATTENTION_CANDIDATE event per uninterrupted sequence;
-- immediately reset on negative or unavailable evidence.
+- tolerate brief available-but-negative evidence caused by natural eye motion;
+- immediately reset when evidence is unavailable.
 
 Every ByteTrack person ID owns an independent state.
 """
@@ -28,6 +29,7 @@ from typing import Mapping
 DEFAULT_CHECK_INTERVAL_SECONDS = 0.5
 DEFAULT_REQUIRED_CONSECUTIVE_CHECKS = 3
 DEFAULT_MAXIMUM_CHECK_GAP_SECONDS = 0.75
+DEFAULT_NEGATIVE_GRACE_SECONDS = 0.6
 DEFAULT_STATE_RELEASE_SECONDS = 2.0
 
 
@@ -95,6 +97,9 @@ class _PersonState:
     last_observation_timestamp_seconds: (
         float | None
     ) = None
+    first_negative_timestamp_seconds: (
+        float | None
+    ) = None
 
 
 class SustainedAttentionTracker:
@@ -110,6 +115,9 @@ class SustainedAttentionTracker:
         ),
         maximum_check_gap_seconds: float = (
             DEFAULT_MAXIMUM_CHECK_GAP_SECONDS
+        ),
+        negative_grace_seconds: float = (
+            DEFAULT_NEGATIVE_GRACE_SECONDS
         ),
         state_release_seconds: float = (
             DEFAULT_STATE_RELEASE_SECONDS
@@ -145,6 +153,12 @@ class SustainedAttentionTracker:
             self._positive_finite_float(
                 maximum_check_gap_seconds,
                 "maximum_check_gap_seconds",
+            )
+        )
+        self.negative_grace_seconds = (
+            self._positive_finite_float(
+                negative_grace_seconds,
+                "negative_grace_seconds",
             )
         )
         self.state_release_seconds = (
@@ -253,6 +267,7 @@ class SustainedAttentionTracker:
             None
         )
         state.last_check_timestamp_seconds = None
+        state.first_negative_timestamp_seconds = None
 
     def _public_state(
         self,
@@ -325,8 +340,8 @@ class SustainedAttentionTracker:
         """Process one person's latest visual evidence.
 
         Positive observations are consumed at the configured cadence.
-        Negative or unavailable evidence resets immediately, including
-        observations that arrive between scheduled checks.
+        Available-but-negative evidence receives a short bounded grace period
+        for natural eye motion. Unavailable evidence always resets immediately.
         """
 
         validated_track_id = self._track_id(
@@ -381,10 +396,27 @@ class SustainedAttentionTracker:
         check_consumed = False
         candidate_event = False
 
-        if not available or not positive:
+        if not available:
             self._reset_sequence(state)
 
+        elif not positive:
+            has_progress = bool(
+                state.consecutive_positive_checks > 0
+                or state.candidate_latched
+            )
+
+            if not has_progress:
+                self._reset_sequence(state)
+            elif state.first_negative_timestamp_seconds is None:
+                state.first_negative_timestamp_seconds = timestamp
+            elif (
+                timestamp - state.first_negative_timestamp_seconds
+                >= self.negative_grace_seconds
+            ):
+                self._reset_sequence(state)
+
         else:
+            state.first_negative_timestamp_seconds = None
             previous_check = (
                 state.last_check_timestamp_seconds
             )
@@ -602,6 +634,7 @@ class SustainedAttentionTracker:
 __all__ = [
     "DEFAULT_CHECK_INTERVAL_SECONDS",
     "DEFAULT_MAXIMUM_CHECK_GAP_SECONDS",
+    "DEFAULT_NEGATIVE_GRACE_SECONDS",
     "DEFAULT_REQUIRED_CONSECUTIVE_CHECKS",
     "DEFAULT_STATE_RELEASE_SECONDS",
     "SustainedAttentionSnapshot",

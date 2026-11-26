@@ -17,11 +17,30 @@ if str(PROJECT_ROOT) not in sys.path:
 
 
 from live_streaming_stt_local_agreement import (  # noqa: E402
+    calculate_speech_threshold,
+    calibration_is_contaminated,
     stop_recorder_process,
 )
 
 
 class StreamingAudioCleanupTests(unittest.TestCase):
+    def test_contaminated_calibration_is_detected(self) -> None:
+        self.assertFalse(calibration_is_contaminated(62.9))
+        self.assertTrue(calibration_is_contaminated(3380.3))
+
+    def test_speech_threshold_is_bounded(self) -> None:
+        self.assertEqual(calculate_speech_threshold(20.0), 300.0)
+        self.assertEqual(calculate_speech_threshold(200.0), 600.0)
+        self.assertEqual(calculate_speech_threshold(3380.3), 3000.0)
+
+    def test_invalid_noise_level_is_rejected(self) -> None:
+        for value in (-1.0, float("inf"), float("nan")):
+            with self.assertRaises(ValueError):
+                calibration_is_contaminated(value)
+
+            with self.assertRaises(ValueError):
+                calculate_speech_threshold(value)
+
     def test_running_recorder_terminates_cleanly(self) -> None:
         recorder = Mock()
         recorder.poll.return_value = None

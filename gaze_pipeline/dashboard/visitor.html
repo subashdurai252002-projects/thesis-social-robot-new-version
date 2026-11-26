@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1626">
+  <title>Social Robot</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-page="visitor">
+  <header class="site-header">
+    <a class="brand" href="/visitor" aria-label="Social Robot visitor screen">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>
+        <strong>Social Robot</strong>
+        <small>Human-aware interaction system</small>
+      </span>
+    </a>
+
+    <div class="connection" id="connectionState">
+      <span class="status-dot"></span>
+      Connecting
+    </div>
+  </header>
+
+  <main class="visitor-main">
+    <section class="visitor-live-layout">
+      <article class="visitor-camera-card">
+        <div class="visitor-camera-stage">
+          <img
+            id="visitorCamera"
+            alt="Live local camera view of the visitor"
+          >
+          <div class="camera-placeholder" id="visitorCameraPlaceholder">
+            <strong>Preparing your camera view</strong>
+            <span>The image is local and is not recorded.</span>
+          </div>
+      </div>
+        <p>Live view · Local only · Not recorded</p>
+      </article>
+
+      <section class="visitor-hero" aria-live="polite">
+        <div class="state-visual" id="stateVisual" data-state="starting"
+             aria-hidden="true">
+          <span class="state-ring ring-one"></span>
+          <span class="state-ring ring-two"></span>
+          <span class="state-core">
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+
+        <p class="eyebrow">Current interaction state</p>
+        <h1 id="visitorPhase">Preparing the robot</h1>
+        <p class="visitor-guidance" id="visitorGuidance">
+          Please wait while the system starts.
+        </p>
+      </section>
+    </section>
+
+    <section class="conversation-grid visitor-speech-grid"
+             aria-label="Accepted user speech">
+      <article class="caption-card user-caption">
+        <div class="caption-heading">
+          <span>You said</span>
+          <span class="caption-source">Accepted speech</span>
+        </div>
+        <p id="visitorTranscript">Your words will appear here.</p>
+      </article>
+    </section>
+
+    <section class="visitor-details">
+      <div class="profile-indicator">
+        <span>Speaking speed</span>
+        <strong id="visitorProfile">Normal</strong>
+      </div>
+
+      <details class="help-panel">
+        <summary>What can I say?</summary>
+        <div class="help-content">
+          <p>Ask a question or request an explanation.</p>
+          <ul>
+            <li>“Speak faster”, “speak slower” or “normal speed”.</li>
+            <li>“Remember me” to hear the optional local privacy process.</li>
+            <li>“Forget me” to request deletion of a saved profile.</li>
+            <li>“Goodbye” to finish the conversation.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <aside class="privacy-banner">
+      <strong>Privacy</strong>
+      <span>
+        This page shows a temporary local camera view but does not save it.
+        It does not store photographs, audio, face embeddings or private
+        profile identifiers.
+      </span>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>Social Robot Thesis Demonstration</span>
+    <a href="/research">Open research dashboard</a>
+  </footer>
+</body>
+</html>

@@ -432,6 +432,62 @@ class ConversationExitPhraseTests(unittest.TestCase):
             monitor_barge_in=False,
         )
 
+    def test_local_privacy_command_skips_audio_save_and_openai(self) -> None:
+        runtime = {
+            "model": object(),
+            "barge_in": object(),
+            "acknowledgement_audio_files": {},
+            "acknowledgement_positions": {},
+            "openai_client": object(),
+            "speech_profile_name": "normal",
+        }
+        privacy_turn = {
+            "text": "Forget me.",
+            "transcription_finished": 2.0,
+            "last_speech_at": 1.0,
+            "raw_audio": b"private command audio",
+        }
+        cancelled_turn = {
+            "cancelled": True,
+            "rejected": False,
+        }
+        handler = Mock(return_value="Please confirm deletion.")
+
+        with patch.object(
+            conversation_module,
+            "record_streaming_turn",
+            side_effect=[privacy_turn, cancelled_turn],
+        ), patch.object(
+            conversation_module,
+            "speak_fixed_text",
+        ) as speaker, patch.object(
+            conversation_module.wave,
+            "open",
+        ) as wave_open, patch.object(
+            conversation_module,
+            "generate_openai_reply",
+        ) as openai_reply:
+            result = conversation_module.run_conversation_session(
+                runtime,
+                local_command_handler=handler,
+            )
+
+        handler.assert_called_once_with("Forget me.")
+        speaker.assert_called_once_with(
+            runtime,
+            "Please confirm deletion.",
+        )
+        wave_open.assert_not_called()
+        openai_reply.assert_not_called()
+        self.assertEqual(result["completed_turns"], 1)
+
+    def test_invalid_local_command_handler_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            conversation_module.run_conversation_session(
+                {},
+                local_command_handler="not callable",
+            )
+
     def test_owner_release_cancels_active_audio_without_prompt(self) -> None:
         shutdown_event = threading.Event()
         owner_released_event = threading.Event()

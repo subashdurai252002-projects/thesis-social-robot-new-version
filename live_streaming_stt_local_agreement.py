@@ -41,6 +41,10 @@ MAX_SPEECH_SECONDS = 20
 ALSA_BUFFER_TIME_MICROSECONDS = 2_000_000
 CALIBRATION_SETTLE_BLOCKS = 5
 CALIBRATION_MEASUREMENT_BLOCKS = 10
+CALIBRATION_MAX_ATTEMPTS = 3
+CALIBRATION_CONTAMINATION_RMS = 1000.0
+MIN_SPEECH_THRESHOLD = 300.0
+MAX_SPEECH_THRESHOLD = 3000.0
 VAD_SPEECH_THRESHOLD = 0.5
 VAD_WINDOW_BLOCKS = 15
 VAD_RECENT_PROBABILITY_FRAMES = 4
@@ -58,6 +62,31 @@ def calculate_rms(raw_audio):
 
     return float(
         np.sqrt(np.mean(mono * mono))
+    )
+
+
+def calibration_is_contaminated(noise_level):
+    """Return whether a supposed quiet measurement is implausibly loud."""
+
+    level = float(noise_level)
+
+    if not math.isfinite(level) or level < 0.0:
+        raise ValueError("noise_level must be finite and non-negative.")
+
+    return level > CALIBRATION_CONTAMINATION_RMS
+
+
+def calculate_speech_threshold(noise_level):
+    """Return one bounded adaptive speech-start threshold."""
+
+    level = float(noise_level)
+
+    if not math.isfinite(level) or level < 0.0:
+        raise ValueError("noise_level must be finite and non-negative.")
+
+    return min(
+        MAX_SPEECH_THRESHOLD,
+        max(MIN_SPEECH_THRESHOLD, level * 3.0),
     )
 
 
@@ -233,36 +262,45 @@ def capture_audio(
                     "Incomplete calibration-settling audio."
                 )
 
-        noise_levels = []
+        noise_level = 0.0
 
-        for _ in range(CALIBRATION_MEASUREMENT_BLOCKS):
-            if (
-                cancel_event is not None
-                and cancel_event.is_set()
-            ):
-                raise RuntimeError("Audio capture cancelled.")
+        for attempt in range(1, CALIBRATION_MAX_ATTEMPTS + 1):
+            noise_levels = []
 
-            block = recorder.stdout.read(
-                BLOCK_BYTES
-            )
+            for _ in range(CALIBRATION_MEASUREMENT_BLOCKS):
+                if (
+                    cancel_event is not None
+                    and cancel_event.is_set()
+                ):
+                    raise RuntimeError("Audio capture cancelled.")
 
-            if len(block) != BLOCK_BYTES:
-                raise RuntimeError(
-                    "Incomplete calibration audio."
+                block = recorder.stdout.read(BLOCK_BYTES)
+
+                if len(block) != BLOCK_BYTES:
+                    raise RuntimeError(
+                        "Incomplete calibration audio."
+                    )
+
+                noise_levels.append(calculate_rms(block))
+
+            noise_level = float(np.median(noise_levels))
+
+            if not calibration_is_contaminated(noise_level):
+                break
+
+            if attempt < CALIBRATION_MAX_ATTEMPTS:
+                print(
+                    "Quiet calibration was contaminated "
+                    f"(level {noise_level:.1f}); stay quiet, retrying "
+                    f"{attempt + 1}/{CALIBRATION_MAX_ATTEMPTS}."
+                )
+            else:
+                print(
+                    "Quiet calibration remained loud; using the "
+                    "bounded safety threshold."
                 )
 
-            noise_levels.append(
-                calculate_rms(block)
-            )
-
-        noise_level = float(
-            np.median(noise_levels)
-        )
-
-        threshold = max(
-            300.0,
-            noise_level * 3.0,
-        )
+        threshold = calculate_speech_threshold(noise_level)
 
         print(
             "Background level:",

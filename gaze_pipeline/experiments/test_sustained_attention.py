@@ -155,15 +155,15 @@ def test_three_checks_and_one_event() -> None:
     )
 
 
-def test_negative_and_missing_reset() -> None:
-    """Require immediate negative and missing resets."""
+def test_brief_negative_grace_and_safe_resets() -> None:
+    """Tolerate brief eye motion but reset persistent or missing evidence."""
 
     tracker = SustainedAttentionTracker()
 
     tracker.observe(2, 0.0, True, True)
     tracker.observe(2, 0.5, True, True)
 
-    negative = tracker.observe(
+    brief_negative = tracker.observe(
         2,
         0.6,
         True,
@@ -171,34 +171,49 @@ def test_negative_and_missing_reset() -> None:
     )
 
     require(
-        negative.state
-        == SustainedAttentionState.NO_EVIDENCE,
-        "Negative evidence did not reset state.",
+        brief_negative.state
+        == SustainedAttentionState.ACCUMULATING,
+        "Brief available negative evidence reset progress.",
     )
     require(
-        negative.consecutive_positive_checks == 0,
-        "Negative evidence did not clear the count.",
+        brief_negative.consecutive_positive_checks == 2,
+        "Brief available negative evidence changed the count.",
     )
 
-    restarted = tracker.observe(
+    resumed = tracker.observe(
         2,
-        0.7,
+        0.8,
         True,
         True,
     )
 
     require(
-        restarted.check_consumed,
-        "Positive evidence did not restart immediately.",
+        not resumed.check_consumed,
+        "Resumed evidence was consumed before its cadence.",
     )
     require(
-        restarted.consecutive_positive_checks == 1,
-        "Restarted sequence has the wrong count.",
+        resumed.consecutive_positive_checks == 2,
+        "Resumed evidence did not preserve progress.",
     )
+
+    tracker.observe(2, 0.9, True, False)
+    persistent_negative = tracker.observe(2, 1.51, True, False)
+
+    require(
+        persistent_negative.state
+        == SustainedAttentionState.NO_EVIDENCE,
+        "Persistent negative evidence did not reset state.",
+    )
+    require(
+        persistent_negative.consecutive_positive_checks == 0,
+        "Persistent negative evidence did not clear the count.",
+    )
+
+    tracker.observe(2, 1.6, True, True)
 
     missing = tracker.observe(
         2,
-        0.8,
+        1.7,
         False,
         False,
     )
@@ -473,6 +488,13 @@ def test_invalid_inputs() -> None:
         ),
         "Maximum gap below interval was accepted.",
     )
+    require_raises(
+        ValueError,
+        lambda: SustainedAttentionTracker(
+            negative_grace_seconds=0.0,
+        ),
+        "Zero negative grace was accepted.",
+    )
 
 
 def main() -> None:
@@ -484,8 +506,8 @@ def main() -> None:
             test_three_checks_and_one_event,
         ),
         (
-            "negative_and_missing_reset",
-            test_negative_and_missing_reset,
+            "brief_negative_grace_and_safe_resets",
+            test_brief_negative_grace_and_safe_resets,
         ),
         (
             "independent_person_ids",

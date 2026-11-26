@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1626">
+  <title>Research Dashboard · Social Robot</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-page="research">
+  <header class="site-header">
+    <a class="brand" href="/research" aria-label="Social Robot research dashboard">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>
+        <strong>Social Robot · Research Dashboard</strong>
+        <small>Live, read-only system evidence</small>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <a class="secondary-link" href="/visitor">Visitor screen</a>
+      <div class="connection" id="connectionState">
+        <span class="status-dot"></span>
+        Connecting
+      </div>
+    </div>
+  </header>
+
+  <main class="research-main">
+    <section class="page-introduction">
+      <div>
+        <p class="eyebrow">Runtime overview</p>
+        <h1>Social robot system state</h1>
+        <p>
+          Decisions shown here come from the existing robot runtime.
+          The dashboard does not control interaction behaviour.
+        </p>
+      </div>
+      <div class="freshness">
+        <span>Last runtime update</span>
+        <strong id="lastUpdated">Waiting for data</strong>
+      </div>
+    </section>
+
+    <section class="summary-grid" aria-label="Runtime summary">
+      <article class="summary-card">
+        <span>Runtime phase</span>
+        <strong id="runtimePhase">Starting</strong>
+        <small id="runtimeMessage">Preparing robot resources</small>
+      </article>
+
+      <article class="summary-card">
+        <span>Identity decision</span>
+        <strong id="identityStatus">Not checked</strong>
+        <small id="recognitionSummary">No decision yet</small>
+      </article>
+
+      <article class="summary-card">
+        <span>Speech profile</span>
+        <strong id="researchProfile">Normal</strong>
+        <small>Current Piper output profile</small>
+      </article>
+
+      <article class="summary-card">
+        <span>Completed turns</span>
+        <strong id="completedTurns">0</strong>
+        <small id="uptime">Runtime starting</small>
+      </article>
+    </section>
+
+    <section class="research-layout">
+      <article class="panel camera-panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-kicker">Live visual evidence</p>
+            <h2>Annotated camera view</h2>
+          </div>
+          <span class="read-only-badge">Local · not recorded</span>
+        </header>
+
+        <div class="camera-stage">
+          <img
+            id="liveCamera"
+            alt="Live annotated social-robot camera view"
+          >
+          <div class="camera-placeholder" id="cameraPlaceholder">
+            <strong>Preparing camera view</strong>
+            <span>The existing vision pipeline will appear here.</span>
+          </div>
+        </div>
+
+        <p class="panel-note">
+          This is the existing annotated runtime frame at a reduced dashboard
+          rate. No second camera process is opened and no frame is saved.
+        </p>
+      </article>
+
+      <article class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-kicker">Visual pathway</p>
+            <h2>Perception and ownership</h2>
+          </div>
+          <span class="read-only-badge">Read only</span>
+        </header>
+
+        <div class="decision-list">
+          <div>
+            <span>Detected people</span>
+            <strong id="detectedPeople">0</strong>
+          </div>
+          <div>
+            <span>Temporary owner track</span>
+            <strong id="ownerTrack">None</strong>
+          </div>
+          <div>
+            <span>Sustained attention</span>
+            <strong id="attentionStatus">Waiting</strong>
+          </div>
+          <div>
+            <span>Passive liveness</span>
+            <strong id="livenessStatus">Waiting</strong>
+          </div>
+          <div>
+            <span>Conversation engagement</span>
+            <strong id="engagementStatus">Waiting</strong>
+          </div>
+          <div>
+            <span>Accepted face evidence</span>
+            <strong id="faceStatus">Unavailable</strong>
+          </div>
+        </div>
+
+        <p class="panel-note">
+          Track numbers are temporary session IDs, not persistent identities.
+          Visual decisions remain controlled by the existing runtime.
+        </p>
+      </article>
+
+      <article class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-kicker">Conversation</p>
+            <h2>Accepted speech and response</h2>
+          </div>
+          <span class="route-badge" id="responseRoute">No route</span>
+        </header>
+
+        <div class="research-conversation">
+          <div>
+            <span>User transcription</span>
+            <p id="researchTranscript">No accepted transcription yet.</p>
+          </div>
+          <div>
+            <span>Robot response</span>
+            <p id="researchResponse">No response yet.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-kicker">Measured performance</p>
+            <h2>Current-turn latency</h2>
+          </div>
+          <span class="panel-help"
+                title="Values remain unavailable until the relevant stage runs.">
+            Actual values only
+          </span>
+        </header>
+
+        <div class="metric-table">
+          <div><span>Returning-user recognition</span><strong id="recognitionMs">—</strong></div>
+          <div><span>Whisper inference</span><strong id="whisperSeconds">—</strong></div>
+          <div><span>Speech end → final text</span><strong id="speechEndTextSeconds">—</strong></div>
+          <div><span>OpenAI response</span><strong id="openaiSeconds">—</strong></div>
+          <div><span>Piper synthesis</span><strong id="piperSeconds">—</strong></div>
+          <div><span>Final text → speaker start</span><strong id="responseStartSeconds">—</strong></div>
+          <div><span>Playback duration</span><strong id="playbackSeconds">—</strong></div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <header class="panel-header">
+          <div>
+            <p class="panel-kicker">Architecture</p>
+            <h2>Module status</h2>
+          </div>
+        </header>
+
+        <div class="module-grid">
+          <div><span>Camera</span><strong data-module="camera">Starting</strong></div>
+          <div><span>Person detection</span><strong data-module="person_detection">Starting</strong></div>
+          <div><span>Face detection</span><strong data-module="face_detection">Starting</strong></div>
+          <div><span>Gaze attention</span><strong data-module="gaze_attention">Starting</strong></div>
+          <div><span>RGB liveness</span><strong data-module="liveness">Starting</strong></div>
+          <div><span>Whisper</span><strong data-module="whisper">Starting</strong></div>
+          <div><span>OpenAI</span><strong data-module="openai">On request</strong></div>
+          <div><span>Piper</span><strong data-module="piper">Starting</strong></div>
+          <div><span>Returning-user recognition</span><strong data-module="returning_user">Starting</strong></div>
+          <div><span>ReSpeaker DOA</span><strong data-module="respeaker_doa">Lab validation pending</strong></div>
+          <div><span>Speaker attribution</span><strong data-module="speaker_attribution">Lab validation pending</strong></div>
+          <div><span>Jetson / ROS 2 / Unitree</span><strong data-module="jetson_ros2_unitree">Not integrated</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel events-panel">
+      <header class="panel-header">
+        <div>
+          <p class="panel-kicker">Sanitized history</p>
+          <h2>Recent runtime events</h2>
+        </div>
+        <span class="panel-help">Maximum 40 in memory</span>
+      </header>
+
+      <ol class="event-list" id="eventList" aria-live="polite">
+        <li class="empty-event">Waiting for runtime events.</li>
+      </ol>
+    </section>
+
+    <aside class="research-boundary">
+      <strong>Research boundary</strong>
+      <span>
+        The annotated camera view is ephemeral and available only on this
+        computer. No frame, audio, embedding, permanent user identifier,
+        API key or participant recording is stored by the dashboard.
+        Unfinished modules remain explicitly labelled.
+      </span>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>Social Robot Thesis · Local dashboard</span>
+    <span>127.0.0.1 · No persistent dashboard storage</span>
+  </footer>
+</body>
+</html>

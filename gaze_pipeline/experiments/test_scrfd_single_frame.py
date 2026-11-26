@@ -5,7 +5,6 @@ import time
 from pathlib import Path
 
 import cv2
-from insightface.model_zoo import get_model
 
 from result_paths import FACE_BENCHMARK_RESULTS, SAM2_RESULTS
 
@@ -47,6 +46,11 @@ DETECTION_INPUT_SIZE = (640, 640)
 
 
 def main():
+    # InsightFace is an optional benchmark dependency. Import it only when
+    # this standalone experiment is executed so unittest discovery can
+    # inspect the repository without requiring the retired detector stack.
+    from insightface.model_zoo import get_model
+
     if not MODEL_PATH.is_file():
         raise FileNotFoundError(
             f"SCRFD model not found: {MODEL_PATH}"

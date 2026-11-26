@@ -29,12 +29,19 @@ from typing import Mapping
 __all__ = [
     "CONVERSATION_MAINTENANCE_MAX_HEAD_YAW_DEVIATION_DEGREES",
     "CONVERSATION_MAINTENANCE_MAX_SCREEN_YAW_DEVIATION_DEGREES",
+    "FUSED_GAZE_MAX_ABS_HEAD_YAW_DEGREES",
+    "FUSED_GAZE_PITCH_MAX_DEGREES",
+    "FUSED_GAZE_PITCH_MIN_DEGREES",
+    "FUSED_GAZE_YAW_MAX_DEGREES",
+    "FUSED_GAZE_YAW_MIN_DEGREES",
     "PROFILE_STATUS",
     "REQUIRED_BLENDSHAPES",
     "SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES",
     "SCREEN_BAND_HORIZONTAL_MAX",
     "SCREEN_BAND_HORIZONTAL_MIN",
     "SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES",
+    "SCREEN_BAND_RIGHT_HORIZONTAL_MIN",
+    "SCREEN_BAND_RIGHT_VERTICAL_MAX",
     "SCREEN_BAND_VERTICAL_MAX",
     "SCREEN_BAND_VERTICAL_MIN",
     "VisualAttentionEvidence",
@@ -42,6 +49,7 @@ __all__ = [
     "conversation_head_pose_supports_engagement",
     "conversation_visual_supports_engagement",
     "head_pitch_supports_screen_attention",
+    "mobileone_head_pose_supports_attention",
     "screen_region_supports_attention",
     "screen_eye_region_supports_attention",
 ]
@@ -86,6 +94,13 @@ SCREEN_BAND_HORIZONTAL_MIN = -0.68
 SCREEN_BAND_HORIZONTAL_MAX = 0.65
 SCREEN_BAND_VERTICAL_MIN = -0.23
 SCREEN_BAND_VERTICAL_MAX = 0.02
+# The 2026-11-24 repeat measurement exposed direction-dependent vertical
+# coupling at the inside-right screen edge (H=+0.571, V=+0.085). The matching
+# outside-right target remained separable by H=+0.760, beyond the unchanged
+# +0.65 horizontal limit. Keep this allowance narrow so central downward gaze
+# does not inherit it.
+SCREEN_BAND_RIGHT_HORIZONTAL_MIN = 0.50
+SCREEN_BAND_RIGHT_VERTICAL_MAX = 0.12
 SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES = 8.0
 
 # The focused webcam/vertical-boundary validation recorded valid webcam and
@@ -93,6 +108,19 @@ SCREEN_BAND_MAX_ABS_HEAD_YAW_DEGREES = 8.0
 # target remained at +0.64 degrees or lower. The midpoint gate is specific to
 # the fixed laptop-camera setup and must not be treated as universal.
 SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES = 5.0
+
+# Provisional cross-cue candidate preserved by the completed bounded-gaze
+# experiment.  MobileOne provides whole-face gaze yaw/pitch and MediaPipe
+# independently supplies head yaw.  This candidate passed the recorded
+# development and diagnostic actions, but it remains supporting evidence and
+# must still pass sustained-attention and liveness stages.  It is additive to
+# the validated eye-blendshape path so visitors are not forced to match one
+# participant's absolute blendshape centre or head-pitch offset.
+FUSED_GAZE_YAW_MIN_DEGREES = -22.0
+FUSED_GAZE_YAW_MAX_DEGREES = 14.0
+FUSED_GAZE_PITCH_MIN_DEGREES = -30.0
+FUSED_GAZE_PITCH_MAX_DEGREES = 10.0
+FUSED_GAZE_MAX_ABS_HEAD_YAW_DEGREES = 6.0
 
 # Conversation maintenance is deliberately broader than initial activation.
 # The owner's strict-attention head yaw becomes a session-relative reference.
@@ -169,13 +197,19 @@ def screen_eye_region_supports_attention(
     )):
         raise ValueError("Screen eye-region values must be finite.")
 
+    vertical_maximum = (
+        SCREEN_BAND_RIGHT_VERTICAL_MAX
+        if horizontal >= SCREEN_BAND_RIGHT_HORIZONTAL_MIN
+        else SCREEN_BAND_VERTICAL_MAX
+    )
+
     return bool(
         SCREEN_BAND_HORIZONTAL_MIN
         <= horizontal
         <= SCREEN_BAND_HORIZONTAL_MAX
         and SCREEN_BAND_VERTICAL_MIN
         <= vertical
-        <= SCREEN_BAND_VERTICAL_MAX
+        <= vertical_maximum
     )
 
 
@@ -191,6 +225,41 @@ def head_pitch_supports_screen_attention(
 
     return bool(
         head_pitch >= SCREEN_ATTENTION_MIN_HEAD_PITCH_DEGREES
+    )
+
+
+def mobileone_head_pose_supports_attention(
+    raw_gaze_yaw_degrees: object,
+    raw_gaze_pitch_degrees: object,
+    raw_head_yaw_degrees: object,
+) -> bool:
+    """Return bounded whole-face gaze supported by a forward head pose.
+
+    This is a second supporting-evidence path for initial attention.  It does
+    not calibrate to, identify or save a visitor, and it cannot directly start
+    an interaction without the existing temporal and liveness gates.
+    """
+
+    gaze_yaw = float(raw_gaze_yaw_degrees)
+    gaze_pitch = float(raw_gaze_pitch_degrees)
+    head_yaw = float(raw_head_yaw_degrees)
+
+    if not all(math.isfinite(value) for value in (
+        gaze_yaw,
+        gaze_pitch,
+        head_yaw,
+    )):
+        raise ValueError("Fused gaze/head-pose values must be finite.")
+
+    return bool(
+        FUSED_GAZE_YAW_MIN_DEGREES
+        <= gaze_yaw
+        <= FUSED_GAZE_YAW_MAX_DEGREES
+        and FUSED_GAZE_PITCH_MIN_DEGREES
+        <= gaze_pitch
+        <= FUSED_GAZE_PITCH_MAX_DEGREES
+        and abs(head_yaw)
+        <= FUSED_GAZE_MAX_ABS_HEAD_YAW_DEGREES
     )
 
 

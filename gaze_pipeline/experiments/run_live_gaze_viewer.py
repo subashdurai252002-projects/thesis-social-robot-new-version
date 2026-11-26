@@ -14,6 +14,7 @@ import math
 import secrets
 import sys
 import time
+from collections import deque
 from collections.abc import Callable, Mapping
 from pathlib import Path
 
@@ -43,6 +44,10 @@ from gaze_pipeline.runtime.face_landmark_estimator import (  # noqa: E402
 from gaze_pipeline.runtime.interaction_state_controller import (  # noqa: E402
     PostInteractionRearmGate,
 )
+from gaze_pipeline.runtime.returning_user_recognition import (  # noqa: E402
+    IDENTITY_OBSERVATIONS_REQUIRED,
+    IdentityObservation,
+)
 from gaze_pipeline.runtime.rgb_liveness import (  # noqa: E402
     LivenessChallenge,
     RGBLivenessTracker,
@@ -55,6 +60,7 @@ from gaze_pipeline.runtime.visual_attention_evidence import (  # noqa: E402
     VisualAttentionEvidenceEstimator,
     conversation_visual_supports_engagement,
     head_pitch_supports_screen_attention,
+    mobileone_head_pose_supports_attention,
     screen_eye_region_supports_attention,
     screen_region_supports_attention,
 )
@@ -92,6 +98,9 @@ LIVENESS_MODES = {
 PASSIVE_DIAGNOSTIC_SECONDS = 3.0
 CONVERSATION_VISION_INTERVAL_SECONDS = 0.5
 CONVERSATION_LIP_INTERVAL_SECONDS = 0.1
+DASHBOARD_FRAME_INTERVAL_SECONDS = 0.15
+VISITOR_FRAME_INTERVAL_SECONDS = 0.20
+ATTENTION_BLOCK_REPORT_INTERVAL_SECONDS = 2.0
 MAX_CACHED_OWNER_BOX_AGE_SECONDS = 1.0
 PASSIVE_DIAGNOSTIC_TARGETS = {
     ord("1"): "screen_centre",
@@ -200,7 +209,9 @@ def draw_raw_gaze_arrow(
 
 
 def main(
-    on_live_candidate: Callable[[int], None] | None = None,
+    on_live_candidate: (
+        Callable[[int, tuple[IdentityObservation, ...]], None] | None
+    ) = None,
     interaction_active: Callable[[], bool] | None = None,
     active_owner_track_id: Callable[[], int | None] | None = None,
     on_engagement_observation: (
@@ -213,10 +224,105 @@ def main(
         ]
         | None
     ) = None,
+    on_viewer_status: (
+        Callable[[Mapping[str, object]], None] | None
+    ) = None,
+    on_dashboard_frame: Callable[[np.ndarray], None] | None = None,
+    on_visitor_frame: Callable[[np.ndarray], None] | None = None,
+    display_window: bool = True,
     liveness_mode: str = LIVENESS_MODE_CHALLENGE,
     screen_diagnostic: bool = False,
 ) -> None:
     """Open the no-save live attention-and-liveness viewer."""
+
+    if on_viewer_status is not None and not callable(on_viewer_status):
+        raise ValueError("on_viewer_status must be callable or None.")
+
+    if on_dashboard_frame is not None and not callable(on_dashboard_frame):
+        raise ValueError("on_dashboard_frame must be callable or None.")
+
+    if on_visitor_frame is not None and not callable(on_visitor_frame):
+        raise ValueError("on_visitor_frame must be callable or None.")
+
+    if not isinstance(display_window, bool):
+        raise TypeError("display_window must be a Boolean.")
+
+    viewer_status_active = on_viewer_status is not None
+    dashboard_frame_active = on_dashboard_frame is not None
+    visitor_frame_active = on_visitor_frame is not None
+    last_dashboard_frame_time = -math.inf
+    last_visitor_frame_time = -math.inf
+
+    def emit_viewer_status(**status: object) -> None:
+        """Report viewer state once; disable a failing optional callback."""
+
+        nonlocal viewer_status_active
+
+        if not viewer_status_active or on_viewer_status is None:
+            return
+
+        try:
+            on_viewer_status(status)
+        except Exception as error:
+            viewer_status_active = False
+            print(
+                "Viewer dashboard callback disabled safely:",
+                f"{type(error).__name__}: {error}",
+            )
+
+    def emit_dashboard_frame(
+        frame: np.ndarray,
+        timestamp_seconds: float,
+    ) -> None:
+        """Send one throttled annotated frame to the local dashboard."""
+
+        nonlocal dashboard_frame_active
+        nonlocal last_dashboard_frame_time
+
+        if (
+            not dashboard_frame_active
+            or on_dashboard_frame is None
+            or timestamp_seconds - last_dashboard_frame_time
+            < DASHBOARD_FRAME_INTERVAL_SECONDS
+        ):
+            return
+
+        try:
+            on_dashboard_frame(frame)
+            last_dashboard_frame_time = timestamp_seconds
+        except Exception as error:
+            dashboard_frame_active = False
+            print(
+                "Dashboard camera callback disabled safely:",
+                f"{type(error).__name__}: {error}",
+            )
+
+    def emit_visitor_frame(
+        frame: np.ndarray,
+        timestamp_seconds: float,
+    ) -> None:
+        """Send one throttled clean frame to the visitor page."""
+
+        nonlocal visitor_frame_active
+        nonlocal last_visitor_frame_time
+
+        if (
+            not visitor_frame_active
+            or on_visitor_frame is None
+            or timestamp_seconds - last_visitor_frame_time
+            < VISITOR_FRAME_INTERVAL_SECONDS
+        ):
+            return
+
+        try:
+            on_visitor_frame(frame)
+            last_visitor_frame_time = timestamp_seconds
+        except Exception as error:
+            visitor_frame_active = False
+            print(
+                "Visitor camera callback disabled safely:",
+                f"{type(error).__name__}: {error}",
+            )
 
     selected_liveness_mode = validate_liveness_mode(liveness_mode)
     passive_liveness = (
@@ -298,10 +404,26 @@ def main(
     camera.set(cv2.CAP_PROP_FRAME_HEIGHT, requested_height)
     camera.set(cv2.CAP_PROP_FPS, requested_fps)
 
-    print("Camera window opened. Nothing is being recorded.")
+    print(
+        (
+            "Camera window opened."
+            if display_window
+            else "Camera opened for the local dashboard."
+        ),
+        "Nothing is being recorded.",
+    )
+    emit_viewer_status(
+        event="ready",
+        detected_people=0,
+    )
     face_locks: dict[int, FaceContinuityLock] = {}
+    identity_observations_by_id: dict[
+        int,
+        deque[IdentityObservation],
+    ] = {}
     last_seen_frame_by_id: dict[int, int] = {}
     strict_attention_head_yaw_by_id: dict[int, float] = {}
+    last_attention_block_report_by_id: dict[int, float] = {}
     challenge_started_ids: set[int] = set()
     dispatched_candidate_ids: set[int] = set()
     interaction_was_active = False
@@ -320,6 +442,7 @@ def main(
     cached_owner_track_id: int | None = None
     cached_owner_person_box: tuple[int, int, int, int] | None = None
     cached_owner_box_timestamp = -math.inf
+    last_viewer_status_time = -math.inf
 
     def complete_post_interaction_rearm(track_id: int) -> None:
         """Clear old evidence after one completed owner disengages."""
@@ -328,6 +451,7 @@ def main(
         liveness_tracker.reset_track(track_id)
         challenge_started_ids.discard(track_id)
         dispatched_candidate_ids.discard(track_id)
+        identity_observations_by_id.pop(track_id, None)
         strict_attention_head_yaw_by_id.pop(track_id, None)
         post_interaction_rearm_gates.pop(track_id, None)
         print(
@@ -343,7 +467,14 @@ def main(
             if not success:
                 continue
 
+            identity_source_frame = (
+                frame.copy()
+                if on_live_candidate is not None
+                else None
+            )
+
             observation_time = time.monotonic()
+            emit_visitor_frame(frame, observation_time)
 
             interaction_is_active = bool(
                 interaction_active is not None
@@ -490,8 +621,12 @@ def main(
                         (0, 255, 255),
                         0.55,
                     )
-                    cv2.imshow(WINDOW_NAME, frame)
-                    key = cv2.waitKey(1) & 0xFF
+                    emit_dashboard_frame(frame, observation_time)
+                    key = -1
+
+                    if display_window:
+                        cv2.imshow(WINDOW_NAME, frame)
+                        key = cv2.waitKey(1) & 0xFF
 
                     if key in (ord("q"), 27):
                         break
@@ -580,10 +715,19 @@ def main(
                         )
                     )
 
+            if observation_time - last_viewer_status_time >= 0.5:
+                emit_viewer_status(
+                    event="frame",
+                    detected_people=len(candidates),
+                )
+                last_viewer_status_time = observation_time
+
             fresh_gaze_count = 0
             attention_candidate_count = 0
             live_candidate_count = 0
-            live_candidate_events: list[int] = []
+            live_candidate_events: list[
+                tuple[int, tuple[IdentityObservation, ...]]
+            ] = []
             diagnostic_features: (
                 tuple[float, float, float, float, bool] | None
             ) = None
@@ -632,6 +776,7 @@ def main(
                 )
 
                 if selected_face is None:
+                    identity_observations_by_id.pop(track_id, None)
                     if (
                         interaction_is_active
                         and track_id == owner_track_id
@@ -736,12 +881,22 @@ def main(
                             landmark_prediction.raw_head_pitch_degrees
                         )
                     )
+                    fused_gaze_positive = (
+                        mobileone_head_pose_supports_attention(
+                            prediction.yaw_degrees,
+                            prediction.pitch_degrees,
+                            landmark_prediction.raw_head_yaw_degrees,
+                        )
+                    )
                     combined_visual_positive = bool(
                         (
-                            visual_evidence.evidence_positive
-                            or screen_band_positive
+                            (
+                                visual_evidence.evidence_positive
+                                or screen_band_positive
+                            )
+                            and head_pitch_positive
                         )
-                        and head_pitch_positive
+                        or fused_gaze_positive
                     )
 
                     if (
@@ -759,6 +914,7 @@ def main(
                     )
                     screen_eye_supported = bool(
                         visual_evidence.evidence_positive
+                        or fused_gaze_positive
                         or screen_eye_region_supports_attention(
                             visual_evidence.horizontal_right_minus_left,
                             visual_evidence.vertical_down_minus_up,
@@ -964,6 +1120,8 @@ def main(
                     )
                     if screen_band_positive:
                         attention_text += " SCREEN"
+                    elif fused_gaze_positive:
+                        attention_text += " FUSED"
                     attention_colour = (0, 165, 255)
                 else:
                     attention_text = (
@@ -986,6 +1144,50 @@ def main(
                 if liveness_snapshot is None:
                     raise RuntimeError(
                         f"Missing liveness state for track {track_id}."
+                    )
+
+                if (
+                    passive_liveness
+                    and not interaction_is_active
+                    and liveness_snapshot.live_candidate_latched
+                    and not combined_visual_positive
+                    and attention_update.state
+                    != SustainedAttentionState.ATTENTION_CANDIDATE
+                    and observation_time
+                    - last_attention_block_report_by_id.get(
+                        track_id,
+                        -math.inf,
+                    )
+                    >= ATTENTION_BLOCK_REPORT_INTERVAL_SECONDS
+                ):
+                    print(
+                        f"ID {track_id} ATTENTION BLOCKED:",
+                        f"centre={visual_evidence.evidence_positive}",
+                        f"screen_eye={screen_eye_supported}",
+                        f"screen_band={screen_band_positive}",
+                        f"pitch_gate={head_pitch_positive}",
+                        f"fused_gaze={fused_gaze_positive}",
+                        (
+                            "H="
+                            f"{visual_evidence.horizontal_right_minus_left:+.3f}"
+                        ),
+                        (
+                            "V="
+                            f"{visual_evidence.vertical_down_minus_up:+.3f}"
+                        ),
+                        (
+                            "head_yaw="
+                            f"{landmark_prediction.raw_head_yaw_degrees:+.1f}"
+                        ),
+                        (
+                            "head_pitch="
+                            f"{landmark_prediction.raw_head_pitch_degrees:+.1f}"
+                        ),
+                        f"gaze_yaw={prediction.yaw_degrees:+.1f}",
+                        f"gaze_pitch={prediction.pitch_degrees:+.1f}",
+                    )
+                    last_attention_block_report_by_id[track_id] = (
+                        observation_time
                     )
 
                 if liveness_snapshot.live_candidate_latched:
@@ -1081,19 +1283,45 @@ def main(
                     activation_ready
                     and track_id not in dispatched_candidate_ids
                 ):
-                    dispatched_candidate_ids.add(track_id)
-                    mode_label = (
-                        "PASSIVE LIVENESS"
-                        if passive_liveness
-                        else "CHALLENGE"
-                    )
-                    print(
-                        f"ID {track_id} ATTENTION + "
-                        f"{mode_label} PASSED"
+                    observations = identity_observations_by_id.setdefault(
+                        track_id,
+                        deque(maxlen=IDENTITY_OBSERVATIONS_REQUIRED),
                     )
 
-                    if on_live_candidate is not None:
-                        live_candidate_events.append(track_id)
+                    if identity_source_frame is not None:
+                        observations.append(
+                            IdentityObservation(
+                                frame=identity_source_frame.copy(),
+                                face=selected_face,
+                            )
+                        )
+
+                    if len(observations) < IDENTITY_OBSERVATIONS_REQUIRED:
+                        liveness_text = (
+                            f"ID {track_id}: IDENTITY CHECK "
+                            f"{len(observations)}/"
+                            f"{IDENTITY_OBSERVATIONS_REQUIRED}"
+                        )
+                    else:
+                        dispatched_candidate_ids.add(track_id)
+                        mode_label = (
+                            "PASSIVE LIVENESS"
+                            if passive_liveness
+                            else "CHALLENGE"
+                        )
+                        print(
+                            f"ID {track_id} ATTENTION + "
+                            f"{mode_label} PASSED"
+                        )
+
+                        if on_live_candidate is not None:
+                            live_candidate_events.append(
+                                (track_id, tuple(observations))
+                            )
+
+                        identity_observations_by_id.pop(track_id, None)
+                else:
+                    identity_observations_by_id.pop(track_id, None)
 
                 draw_label(
                     frame,
@@ -1159,10 +1387,12 @@ def main(
                 face_locks.pop(track_id, None)
                 last_seen_frame_by_id.pop(track_id, None)
                 strict_attention_head_yaw_by_id.pop(track_id, None)
+                last_attention_block_report_by_id.pop(track_id, None)
                 attention_tracker.remove_track(track_id)
                 liveness_tracker.remove_track(track_id)
                 challenge_started_ids.discard(track_id)
                 dispatched_candidate_ids.discard(track_id)
+                identity_observations_by_id.pop(track_id, None)
                 post_interaction_rearm_gates.pop(track_id, None)
 
             released_liveness_ids = liveness_tracker.release_stale(
@@ -1369,14 +1599,22 @@ def main(
                         if passive_liveness
                         else "Attention + active RGB challenge"
                     )
-                    + " - q/Esc stops"
+                    + (
+                        " - q/Esc stops"
+                        if display_window
+                        else " - Ctrl+C stops"
+                    )
                 ),
                 (10, 48),
                 (0, 255, 255),
                 0.48,
             )
-            cv2.imshow(WINDOW_NAME, frame)
-            key = cv2.waitKey(1) & 0xFF
+            emit_dashboard_frame(frame, observation_time)
+            key = -1
+
+            if display_window:
+                cv2.imshow(WINDOW_NAME, frame)
+                key = cv2.waitKey(1) & 0xFF
 
             if key in (ord("q"), 27):
                 break
@@ -1402,16 +1640,21 @@ def main(
                 )
 
             if on_live_candidate is not None:
-                for track_id in live_candidate_events:
+                for track_id, identity_observations in live_candidate_events:
                     print(
                         f"Dispatching LIVE CANDIDATE for ID {track_id}"
                     )
-                    on_live_candidate(track_id)
+                    on_live_candidate(track_id, identity_observations)
 
     finally:
+        emit_viewer_status(
+            event="stopped",
+            detected_people=0,
+        )
         camera.release()
         landmark_estimator.close()
-        cv2.destroyAllWindows()
+        if display_window:
+            cv2.destroyAllWindows()
 
     print("Live viewer stopped safely.")
     print("Saved files: none")

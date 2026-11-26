@@ -22,6 +22,8 @@ class CapabilityIntroductionTests(unittest.TestCase):
             (
                 "Hello. I can answer questions and explain information. "
                 "You can also ask me to speak faster, slower, or normally. "
+                "If you want me to remember your speaking preference for "
+                "future visits, say remember me. This is optional. "
                 "How can I help you?"
             ),
         )
@@ -44,12 +46,13 @@ class CapabilityIntroductionTests(unittest.TestCase):
             "answer questions",
             "explain information",
             "speak faster, slower, or normally",
+            "say remember me",
+            "this is optional",
         ):
             with self.subTest(expected=expected):
                 self.assertIn(expected, normalized)
 
         for unsupported in (
-            "remember you",
             "recognize you",
             "identify the speaker",
             "move the robot",

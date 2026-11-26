@@ -97,6 +97,7 @@ class SpeechProfileTests(unittest.TestCase):
             "Can you talk a little faster?",
             "You are talking too slowly.",
             "You're speaking too slowly.",
+            "Speak fastly.",
         ]
 
         for phrase in phrases:
@@ -124,6 +125,9 @@ class SpeechProfileTests(unittest.TestCase):
             "Speak normal.",
             "Speak normally.",
             "Talk normal.",
+            "Can you speak in medium speed?",
+            "Speak at a medium pace.",
+            "Use medium speed.",
         ]
 
         for phrase in phrases:
@@ -181,6 +185,14 @@ class SpeechProfileTests(unittest.TestCase):
                 "normal",
                 "Okay. I'll use my normal speed.",
             ),
+            "So, speak faster.": (
+                "fast",
+                "Okay. I'll speak faster.",
+            ),
+            "Okay, please speak slower.": (
+                "slow",
+                "Okay. I'll speak more slowly.",
+            ),
         }
 
         for phrase, (
@@ -218,6 +230,10 @@ class SpeechProfileTests(unittest.TestCase):
             "Speak more clearly and explain it again.": (
                 "slow",
                 "explain it again",
+            ),
+            "Go fastly and tell something about social robots.": (
+                "fast",
+                "tell something about social robots",
             ),
         }
 

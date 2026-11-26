@@ -3,7 +3,6 @@ import time
 from pathlib import Path
 
 import cv2
-from face_detection import RetinaFace
 
 from result_paths import FACE_BENCHMARK_RESULTS, SAM2_RESULTS
 
@@ -39,6 +38,11 @@ FACE_MIN_ASPECT_RATIO = 0.60
 
 
 def main():
+    # RetinaFace is an optional benchmark dependency. Import it only when
+    # this standalone experiment is executed so unittest discovery can
+    # inspect the repository without requiring the retired detector stack.
+    from face_detection import RetinaFace
+
     prompt = json.loads(
         PROMPT_PATH.read_text(encoding="utf-8")
     )

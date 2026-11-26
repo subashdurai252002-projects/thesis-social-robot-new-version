@@ -80,3 +80,6 @@ gaze_pipeline/models/**/*.tflite
 results/task_i_gaze_activation/09_gaze_model_comparison/gaze_benchmark_input.avi
 results/task_i_gaze_activation/09_gaze_model_comparison/gaze_face_crops/
 results/task_i_gaze_activation/12_live_multi_person_gaze/*/live_multi_track_gaze_annotated.avi
+
+# Private returning-user biometric profiles
+private_runtime_data/
